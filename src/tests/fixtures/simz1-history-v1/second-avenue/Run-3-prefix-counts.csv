@@ -1,0 +1,5 @@
+run_id,iteration,cutoff_seconds,acceptance,unit,group,scheduled,incorporated,completed,abort_observed,active_at_cutoff,waiting_after_departure,future_scheduled,not_incorporated,aborted_final,due_without_observed_departure
+simz1-9d7db3ba801841f9b501209229f58bfc,0,22224.0,failed/invalid partial,unique_non_public_vehicle,carro,79200,3861,3332,0,529,1499,73840,75339,,0
+simz1-9d7db3ba801841f9b501209229f58bfc,0,22224.0,failed/invalid partial,unique_non_public_vehicle,freight,1800,600,600,0,0,0,1200,1200,,0
+simz1-9d7db3ba801841f9b501209229f58bfc,0,22224.0,failed/invalid partial,unique_non_public_vehicle,moto,99000,4816,4117,0,699,1904,92280,94184,,0
+simz1-9d7db3ba801841f9b501209229f58bfc,0,22224.0,failed/invalid partial,unique_non_public_vehicle,non_public,180000,9277,8049,0,1228,3403,167320,170723,,0

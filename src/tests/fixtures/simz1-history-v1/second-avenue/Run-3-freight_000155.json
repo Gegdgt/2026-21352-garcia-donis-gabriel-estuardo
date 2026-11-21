@@ -1,0 +1,49 @@
+{
+  "run_id": "simz1-9d7db3ba801841f9b501209229f58bfc",
+  "iteration": 0,
+  "evidence": "FOCAL_INTERRUPTED_NOT_ACCEPTED",
+  "expedition": {
+    "vehicle_id": "freight_000155",
+    "departure_seconds": 4091.0,
+    "arrival_seconds": 4639.0,
+    "duration_seconds": 548.0,
+    "route_id": "east-west-14calle"
+  },
+  "gateway": {
+    "front_from_route_start_m": 2197.1548711580454,
+    "time": 4639.0,
+    "link": "osm_384737905_42_forward",
+    "corridor": "osm_384737905_40_forward",
+    "anchor_link": "osm_384737905_42_forward",
+    "reservation_ordinal": "54509",
+    "modeled_front_lower_bound_m": 213.95657821352864,
+    "observed_terminal_time": 4639.0,
+    "exit_distance_from_route_start_m": 2187.5770320838024,
+    "body_length_m": 8.0,
+    "minimum_gap_m": 0.1,
+    "rear_plus_gap_clearance_m": 1.477839074243093
+  },
+  "ledger_exit": {
+    "line": 2594693,
+    "time": "4639.0",
+    "type": "simz1OccupancyReservation",
+    "bodyLengthMeters": "8.0",
+    "modelSlot": "1",
+    "slotUsedMeters": "0.0",
+    "footprintMeters": "8.1",
+    "vehicle": "freight_000155",
+    "link": "osm_384737905_42_forward",
+    "usedMeters": "4.4",
+    "previousModelSlot": "1",
+    "source": "synchronous_QSim_corridor_ledger",
+    "reservationOrdinal": "54509",
+    "capacityMeters": "427.9131564270573",
+    "action": "EXIT",
+    "policy": "corridor-length-v1",
+    "reason": "arrival",
+    "corridor": "osm_384737905_40_forward",
+    "laneObserved": "false",
+    "laneCapacityMeters": "213.95657821352864",
+    "minimumGapMeters": "0.1"
+  }
+}

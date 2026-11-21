@@ -1,0 +1,25 @@
+test_deleted_relations_are_not_active_restrictions (test_simz1_osm_turn_audit.OsmTurnAuditTest) ... ok
+test_direction_and_lane_reachability_detect_gap_without_changing_inputs (test_simz1_osm_turn_audit.OsmTurnAuditTest) ... ok
+test_lane_audit_rejects_disconnected_graph (test_simz1_osm_turn_audit.OsmTurnAuditTest) ... ok
+test_missing_conditional_and_exception_members_are_explicit (test_simz1_osm_turn_audit.OsmTurnAuditTest) ... ok
+test_native_gzip_and_nested_origids_preserve_node_and_way_restrictions (test_simz1_osm_turn_audit.OsmTurnAuditTest) ... ok
+test_pure_inspection_keeps_ordered_multi_way_sequence_and_lane_evidence (test_simz1_osm_turn_audit.OsmTurnAuditTest) ... ok
+test_via_way_direction_and_lane_exclusion_remain_distinct (test_simz1_osm_turn_audit.OsmTurnAuditTest) ... ok
+test_body_clearance_and_native_storage_not_silently_enlarged (test_simz1_balanced_gateway_od.GatewayContractTests) ... ok
+test_capacity_rejection_preserves_hour_class_and_metadata (test_simz1_balanced_gateway_od.GatewayContractTests) ... ok
+test_forbidden_lane_direction_and_disconnection_fail (test_simz1_balanced_gateway_od.GatewayContractTests) ... ok
+test_four_classes_directed_connected_and_real_crossings (test_simz1_balanced_gateway_od.GatewayContractTests) ... ok
+test_native_queue_endpoint_is_not_link_length_when_split (test_simz1_balanced_gateway_od.GatewayContractTests) ... ok
+test_no_interior_proxy_is_accepted_as_real_exit (test_simz1_balanced_gateway_od.GatewayContractTests) ... ok
+test_no_missing_external_continuation_is_invented (test_simz1_balanced_gateway_od.GatewayContractTests) ... ok
+test_only_reviewed_origins_short_connectors_remain_routable (test_simz1_balanced_gateway_od.GatewayContractTests) ... ok
+test_through_gateways_must_be_distinct_even_with_different_link_ids (test_simz1_balanced_gateway_od.GatewayContractTests) ... ok
+test_unreviewed_activity_and_inflated_capacity_rejected (test_simz1_balanced_gateway_od.GatewayContractTests) ... ok
+test_file_loader_verified_synthetic_geometry_provenance_and_hashes (test_simz1_balanced_gateway_od.PerimeterInputTests) ... ok
+test_geojson_bbox_bad_polygon_and_hashes_fail_closed (test_simz1_balanced_gateway_od.PerimeterInputTests) ... ok
+test_missing_inputs_fail_before_creating_any_run (test_simz1_balanced_gateway_od.PerimeterInputTests) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 1.010s
+
+OK

@@ -1,0 +1,42 @@
+{
+  "schema_version": "simz1-freight-weekday-v1",
+  "service_date": "2026-10-23",
+  "vehicles": 12,
+  "gross_weight_tonnes": 12,
+  "pcu": 3.5,
+  "maximum_speed_kmh": 40,
+  "length_m": 12,
+  "width_m": 2.5,
+  "body_contract": "shared-physical-visual-v1",
+  "allowed_windows_seconds": [
+    [
+      0,
+      18000
+    ],
+    [
+      32400,
+      57600
+    ],
+    [
+      75600,
+      104400
+    ]
+  ],
+  "residence_policy": "weekday_overnight_until_05_v2",
+  "departure_slots_seconds": [
+    3600,
+    34200,
+    77400
+  ],
+  "dispatch_spacing_seconds": 120,
+  "clearance_margin_seconds": 1800,
+  "routes_file": "routes.json",
+  "empirical_calibration": false,
+  "quantity_basis": "Quantity derived from non-public N; one expedition per freight vehicle. Synthetic scenario, not measured demand.",
+  "restriction_basis": "user-requested weekday scenario rule; not legal certification",
+  "route_access_basis": "explicit synthetic through corridors on car-access OSM/lane graph; not surveyed freight authorizations",
+  "outside_policy": "boundary_entry_exit; outside travel is not simulated",
+  "visual_size_policy": "same 12 x 2.5 m scenario body as TuBus_RigidProxy, shared by native vehicle length and replay; not measured geometry",
+  "dispatch_policy": "stratified-feasible-windows-v1",
+  "dispatch_basis": "Deterministic equal route quotas and stratified times over feasible allowed windows; free-flow route time plus existing clearance margin, not a guarantee under congestion."
+}

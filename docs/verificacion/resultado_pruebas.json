@@ -1,0 +1,206 @@
+{
+  "date_local": "2026-11-20",
+  "scope": "small unit tests; no MATSim/QSim, no run1K/run10K/run55K",
+  "python": "3.10.11",
+  "interpreter": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\.venv\\Scripts\\python.exe",
+  "working_directory": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\2026-21352-garcia-donis-gabriel-estuardo\\src",
+  "environment": "existing original virtualenv interpreter, copy-only project imports; not a clean installation",
+  "environment_variables": {
+    "PYTHONPATH": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\2026-21352-garcia-donis-gabriel-estuardo\\src\\python",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TEMP": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\2026-21352-garcia-donis-gabriel-estuardo\\src\\runtime\\validacion-entrega\\tmp",
+    "TMP": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\2026-21352-garcia-donis-gabriel-estuardo\\src\\runtime\\validacion-entrega\\tmp",
+    "MPLCONFIGDIR": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\2026-21352-garcia-donis-gabriel-estuardo\\src\\runtime\\validacion-entrega\\matplotlib"
+  },
+  "dependencies": {
+    "pandas": {
+      "version": "2.3.3",
+      "import": "PASS"
+    },
+    "numpy": {
+      "version": "2.2.6",
+      "import": "PASS"
+    },
+    "matplotlib": {
+      "version": "3.10.9",
+      "import": "PASS"
+    },
+    "PyYAML": {
+      "version": "6.0.3",
+      "import": "PASS"
+    },
+    "contextily": {
+      "version": "1.7.1",
+      "import": "PASS"
+    },
+    "pyproj": {
+      "version": "3.7.1",
+      "import": "PASS"
+    },
+    "openpyxl": {
+      "version": "3.1.5",
+      "import": "PASS"
+    },
+    "seaborn": {
+      "version": "0.13.2",
+      "import": "PASS"
+    },
+    "pydeck": {
+      "version": "0.9.3",
+      "import": "PASS"
+    },
+    "Pillow": {
+      "version": "12.3.0",
+      "import": "PASS"
+    },
+    "pytest": {
+      "version": "9.1.1",
+      "import": "PASS"
+    }
+  },
+  "imports": {
+    "prepare_simz1": {
+      "status": "PASS",
+      "relative_path": "python/prepare_simz1.py"
+    },
+    "generate_demand_z1": {
+      "status": "PASS",
+      "relative_path": "python/generate_demand_z1.py"
+    },
+    "generate_montecarlo_z1": {
+      "status": "PASS",
+      "relative_path": "python/generate_montecarlo_z1.py"
+    },
+    "ejecutar_simz1": {
+      "status": "PASS",
+      "relative_path": "python/ejecutar_simz1.py"
+    },
+    "simz1_weekday_transit": {
+      "status": "PASS",
+      "relative_path": "python/simz1_weekday_transit.py"
+    },
+    "simz1_analysis": {
+      "status": "PASS",
+      "relative_path": "python/simz1_analysis.py"
+    },
+    "generar_graficas_z1": {
+      "status": "PASS",
+      "relative_path": "python/generar_graficas_z1.py"
+    },
+    "serve_simz1_continuous": {
+      "status": "PASS",
+      "relative_path": "python/serve_simz1_continuous.py"
+    },
+    "simz1_continuous_replay": {
+      "status": "PASS",
+      "relative_path": "python/simz1_continuous_replay.py"
+    },
+    "simz1_paged_replay": {
+      "status": "PASS",
+      "relative_path": "python/simz1_paged_replay.py"
+    },
+    "simz1_motion": {
+      "status": "PASS",
+      "relative_path": "python/simz1_motion.py"
+    }
+  },
+  "tests": {
+    "modules": [
+      "test_simz1_agent_types",
+      "test_simz1_event_validation",
+      "test_simz1_agent_metadata",
+      "test_simz1_selection_metadata",
+      "test_simz1_daily_window",
+      "test_prepare_simz1",
+      "test_generate_demand_z1"
+    ],
+    "run": 47,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "success": false,
+    "duration_seconds": 3.281,
+    "failures_detail": [
+      {
+        "test": "test_cycle2_config (test_prepare_simz1.SimZ1Tests)",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\2026-21352-garcia-donis-gabriel-estuardo\\src\\python\\test_prepare_simz1.py\", line 76, in test_cycle2_config\n    self.assertEqual(values['qsim']['startTime'], '07:59:00')\nAssertionError: '00:00:00' != '07:59:00'\n- 00:00:00\n+ 07:59:00\n\n"
+      }
+    ],
+    "per_module": {
+      "test_simz1_agent_types": {
+        "passed": 11,
+        "failed": 0
+      },
+      "test_simz1_event_validation": {
+        "passed": 8,
+        "failed": 0
+      },
+      "test_simz1_agent_metadata": {
+        "passed": 5,
+        "failed": 0
+      },
+      "test_simz1_selection_metadata": {
+        "passed": 12,
+        "failed": 0
+      },
+      "test_simz1_daily_window": {
+        "passed": 4,
+        "failed": 0
+      },
+      "test_prepare_simz1": {
+        "passed": 3,
+        "failed": 1
+      },
+      "test_generate_demand_z1": {
+        "passed": 3,
+        "failed": 0
+      }
+    }
+  },
+  "copy_project_modules_loaded": 54,
+  "original_project_modules_loaded": [],
+  "pip_check": {
+    "exit_code": 0,
+    "stdout": "No broken requirements found.",
+    "stderr": ""
+  },
+  "source_copy_comparison": {
+    "python/test_prepare_simz1.py": {
+      "original_sha256": "b8d91c354c626427a7eb724fd9a654790fdebdab208b8e8da2da079599cafefb",
+      "copy_sha256": "b8d91c354c626427a7eb724fd9a654790fdebdab208b8e8da2da079599cafefb",
+      "identical": true
+    },
+    "scenarios/zona1/config-simz1.xml": {
+      "original_sha256": "33e5a3b7ee2c7b31dce3d04d527f686b36d9de6d50734dd107fe410686ffa640",
+      "copy_sha256": "33e5a3b7ee2c7b31dce3d04d527f686b36d9de6d50734dd107fe410686ffa640",
+      "identical": true
+    }
+  },
+  "failed_assertion_context": {
+    "test": "test_prepare_simz1.SimZ1Tests.test_cycle2_config",
+    "expected_startTime": "07:59:00",
+    "actual_startTime": "00:00:00",
+    "expected_endTime_also_in_test": "15:00:00",
+    "actual_endTime": "24:00:00",
+    "action": "Reported source inconsistency; no changes to test or configuration."
+  },
+  "javascript": {
+    "node": "v22.12.0",
+    "suites": [
+      {
+        "command": "node python/test_simz1_vehicle_dimensions.cjs",
+        "exit_code": 0
+      },
+      {
+        "command": "node python/test_simz1_vehicle_card.cjs",
+        "exit_code": 0
+      },
+      {
+        "command": "node python/test_simz1_vehicle_picking_dimensions.cjs",
+        "exit_code": 0
+      }
+    ],
+    "success": true,
+    "browser_or_gpu_executed": false
+  }
+}

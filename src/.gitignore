@@ -1,0 +1,125 @@
+# ============================================================
+# SimZ1 â€” MATSim Traffic Simulation
+# Git ignore rules
+# ============================================================
+
+# ------------------------------------------------------------
+# 1. Build artifacts â€” Java / Maven
+# ------------------------------------------------------------
+target/
+*.class
+*.jar
+!/.mvn/wrapper/maven-wrapper.jar
+*.hprof
+*.jfr
+
+# ------------------------------------------------------------
+# 2. Python environments and caches
+# ------------------------------------------------------------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.Python
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ------------------------------------------------------------
+# 3. Local environment and credentials
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+*.jks
+*.keystore
+
+# ------------------------------------------------------------
+# 4. IDE and operating system
+# ------------------------------------------------------------
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# ------------------------------------------------------------
+# 5. JavaScript dependencies
+# ------------------------------------------------------------
+node_modules/
+
+# ------------------------------------------------------------
+# 6. Test coverage
+# ------------------------------------------------------------
+.coverage
+.coverage.*
+htmlcov/
+coverage/
+coverage.xml
+
+# ------------------------------------------------------------
+# 7. MATSim simulation outputs
+# ------------------------------------------------------------
+/output/
+/scenarios/zona1/output/
+/scenarios/zona1/montecarlo/run-*/
+/scenarios/zona1/montecarlo/verified-*/
+/scenarios/zona1/debug/run-*/
+/scenarios/zona1/historical/run-*/
+
+/scenarios/zona1/montecarlo/latest-successful.json
+/scenarios/zona1/montecarlo/latest-attempt.json
+
+*.output
+*.events.xml
+*.xml.gz
+*.gz
+
+# ------------------------------------------------------------
+# 8. Replay WebGL â€” generated artifacts
+# ------------------------------------------------------------
+/animacion_zona1.html
+/animacion_zona1.provenance.json
+
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+*.db-wal
+*.db-shm
+
+# ------------------------------------------------------------
+# 9. Local runtime and generated evidence
+# ------------------------------------------------------------
+/runtime/
+/audits/
+/evidence/*
+!/evidence/documentation/
+
+# ------------------------------------------------------------
+# 10. Logs and temporary files
+# ------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Generated Monte Carlo archives
+scenarios/zona1/montecarlo/*.zip
+
+# Generated Monte Carlo plans and agent populations
+/scenarios/zona1/montecarlo/**/plans.xml
+/scenarios/zona1/montecarlo/**/inputs/agent-types.jsonl
+
+# Compact historical regression evidence, independently fingerprinted.
+!/tests/fixtures/simz1-history-v1/**/*.log

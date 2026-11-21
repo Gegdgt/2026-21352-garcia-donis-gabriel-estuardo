@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zona 1 — MATSim</title>
+<style>
+html,body,#deck-container{margin:0;width:100%;height:100%;background:#101820}
+#load-status{position:fixed;bottom:12px;left:12px;color:white;z-index:200;font:14px sans-serif}
+/* Separate grid cells keep controls and telemetry from covering each other. */
+#simz1-ui{position:fixed;inset:12px;z-index:100;display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,340px);gap:12px;align-items:start;pointer-events:none;min-height:0;font:12px/1.45 system-ui,sans-serif;color:#fff}
+#simz1-controls,#simz1-active-telemetry{box-sizing:border-box;min-width:0;max-height:100%;overflow:auto;overscroll-behavior:contain;pointer-events:auto;background:#101820ed;border:1px solid #ffffff24;border-radius:8px;padding:10px;overflow-wrap:anywhere}
+#simz1-controls{grid-column:1;grid-row:1;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 10px;width:100%;max-width:720px}
+.simz1-toolbar{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
+#simz1-clock{flex:1 1 300px;font:12px/1.5 monospace}
+.simz1-buttons{display:flex;gap:4px;align-items:center}
+.simz1-buttons button{font:inherit;cursor:pointer;min-height:30px;min-width:38px;padding:4px 8px;border:1px solid #91a6b5;border-radius:4px;background:#e7eef3;color:#101820}
+#simz1-ui :focus-visible{outline:2px solid #a8d5ff;outline-offset:2px}
+#simz1-time-slider{grid-column:1/-1;box-sizing:border-box;width:100%;min-width:0;margin:2px 0;cursor:pointer;accent-color:#a8d5ff}
+#simz1-speed-legend{grid-column:1/-1;font-size:12px;line-height:1.5}
+#simz1-speed-legend span{white-space:nowrap}
+#simz1-run-summary{min-width:0;font-size:11px;color:#bed0dd;align-self:center}
+#simz1-help{min-width:0;font-size:12px}
+#simz1-help summary{cursor:pointer;color:#bed0dd;padding:2px 0}
+#simz1-help[open]{grid-column:1/-1;border-top:1px solid #ffffff24;padding-top:4px}
+#simz1-help-content{margin-top:8px;line-height:1.6;color:#d2dfe8}
+#simz1-help pre{white-space:pre-wrap;overflow-wrap:anywhere;font:11px/1.5 monospace;border-top:1px solid #ffffff24;padding-top:8px;margin-bottom:0}
+.simz1-warning{grid-column:1/-1;background:#fff3cd;color:#422900;padding:8px;border:1px solid #d68b00;border-radius:4px}
+.simz1-block-navigation{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:11px}
+.simz1-block-navigation a{color:#a8d5ff}.simz1-block-navigation select{max-width:100%;font:inherit;background:#e7eef3;color:#101820;border-radius:3px}
+#simz1-active-telemetry{grid-column:2;grid-row:1;white-space:pre-line;font:12px/1.5 monospace}
+@media(max-width:900px){
+  #simz1-ui{inset:8px;gap:8px;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr)}
+  #simz1-controls{max-width:720px;max-height:45vh;max-height:45dvh}
+  #simz1-active-telemetry{grid-column:1;grid-row:2;width:min(100%,720px);max-height:min(100%,35vh);max-height:min(100%,35dvh)}
+}
+@media(max-height:480px) and (min-width:901px){#simz1-ui{inset:6px;gap:6px}#simz1-controls,#simz1-active-telemetry{padding:6px}}
+</style>
+<!-- Bloqueante y version fijada: disponible antes de inicializar el visor. -->
+<script src="https://cdn.jsdelivr.net/npm/deck.gl@9.1.14/dist.min.js"></script>
+</head>
+<body>
+<div id="deck-container"></div>
+<div id="load-status">Cargando visor…</div>
+<script id="replay-data" type="application/json">__PAYLOAD__</script>
+<script>
+(() => {
+  'use strict';
+  const status = document.getElementById('load-status');
+  const reportError = error => { status.hidden=false; status.textContent='No se pudo cargar el visor: '+error.message; console.error(error); };
+  try {
+    const rawPayload = document.getElementById('replay-data').textContent.trim();
+    if (!rawPayload || rawPayload.startsWith('__')) {
+      throw new Error('Esta es la plantilla sin datos. Ejecute python/visualizador_z1.py y abra animacion_zona1.html, o abra el auditor.html generado.');
+    }
+    if (!window.deck) throw new Error('CDN deck.gl no disponible. Verifique la conexion a Internet.');
+    const config = JSON.parse(rawPayload);
+    const replaySegments = config.layers.find(layer => layer.id === 'trips').data;
+    const incidentRecords = config.layers.find(layer => layer.id === 'incidents').data;
+    // Funciones JS explicitas: nunca evaluar cadenas @@= ni expresiones arbitrarias.
+    const accessors = {
+      getPath: d => d.path, getTimestamps: d => d.timestamps,
+      getSourcePosition: d => d.from, getTargetPosition: d => d.to,
+      getPosition: d => d.position, getFillColor: d => d.color, getIcon: d => d.icon,
+      getAngle: d => d.angle
+    };
+    const types = {PathLayer:deck.PathLayer, LineLayer:deck.LineLayer, ScatterplotLayer:deck.ScatterplotLayer, IconLayer:deck.IconLayer};
+    let layers = config.layers.map(spec => {
+      const props = {...spec};
+      const Constructor = types[props['@@type']];
+      delete props['@@type'];
+      if (!Constructor) throw new Error('Tipo de capa no soportado');
+      for (const [name,value] of Object.entries(props)) {
+        if (typeof value === 'string' && value.startsWith('@@=')) {
+          if (!accessors[name]) throw new Error('Accesor no soportado: '+name);
+          props[name] = accessors[name];
+        }
+      }
+      if (props.id === 'trips' || props.id === 'incidents') props.data = [];
+      return new Constructor(props);
+    });
+    const deckInstance = new deck.Deck({parent:document.getElementById('deck-container'),
+      initialViewState:config.initialViewState, controller:true, layers,
+      onLoad:()=>{status.hidden=true;}, onError:reportError});
+    __CONTROLS__
+  } catch (error) { reportError(error); }
+})();
+</script>
+</body>
+</html>

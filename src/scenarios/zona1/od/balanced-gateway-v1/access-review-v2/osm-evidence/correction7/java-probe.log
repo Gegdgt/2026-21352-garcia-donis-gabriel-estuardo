@@ -1,0 +1,41 @@
+2026-11-01T09:52:52,162  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:52,288  INFO Version:21 HV000001: Hibernate Validator 8.0.0.Final
+2026-11-01T09:52:52,518  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:52,518  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:52,518  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:52,518  INFO NetworkImpl:161  link # 4
+PASS A V B rejected
+PASS C V B allowed
+PASS A V other exit allowed
+PASS single link valid
+PASS single occurrence retained
+PASS initial router finds connected legal alternative
+PASS distinct arrival states at V are not merged
+2026-11-01T09:52:52,797  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:52,797  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:52,802  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:52,802  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:52,802  INFO NetworkImpl:161  link # 4
+PASS non-circular alternative survives a cheaper arrival after V
+PASS native prefix A V retained
+PASS native prefix C V retained
+PASS missing native prefix rejected without invented history
+PASS legal full route with repeated link
+PASS first V occurrence preserves C
+PASS second V occurrence rejects B after A
+PASS reroute uses real second occurrence
+PASS both physical pairs retained
+PASS ReRoute retains departure time
+PASS standard MATSim ReRoute rejects forbidden sequence
+PASS ReRoute retains departure time
+PASS standard MATSim ReRoute keeps legal origin
+PASS ReRoute retains departure time
+PASS ReRoute retains experienced delay costs
+PASS experienced turn costs retained
+PASS bus mode also honors no-exception restriction
+PASS no alternative rejects without a circular escape
+PASS other origin remains available in no-alternative fixture
+PASS routing does not change physical link parameters
+PASS Java rejects modified contract bytes
+OSM_PROBE={"status":"PASS","checks":28,"controller_started":false,"qsim_started":false}
+2026-11-01T09:52:52,769  WARN SimZ1SequenceContract:58 MALFORMED_SOURCE_NO_EXECUTABLE_MANEUVER: OSM 17884471 v2 lacks from/via in the authoritative source; no maneuver can be inferred. Historical from-way 381158225 was deleted. This does not establish unrestricted legal access to the destination.

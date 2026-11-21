@@ -1,0 +1,101 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>gt.edu.uvg.sim</groupId>
+    <artifactId>matsim-guatemala</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.release>17</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <matsim.version>15.0</matsim.version>
+        <exec.classpathScope>runtime</exec.classpathScope>
+        <!-- MATSim 15 / Guice 5.1 embeds ASM 9.2. Project bytecode stays Java 17. -->
+        <simz1.mainClass>gt.edu.uvg.sim.zona1.RunZona1Simulation</simz1.mainClass>
+        <simz1.heap>8G</simz1.heap>
+        <simz1.buildDirectory>${project.basedir}/target</simz1.buildDirectory>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>matsim</id>
+            <url>https://repo.matsim.org/repository/matsim/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.matsim.contrib</groupId>
+            <artifactId>signals</artifactId>
+            <version>${matsim.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>31.1-jre</version>
+        </dependency>
+        <dependency>
+            <groupId>org.matsim</groupId>
+            <artifactId>matsim</artifactId>
+            <version>${matsim.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.matsim.contrib</groupId>
+            <artifactId>otfvis</artifactId>
+            <version>${matsim.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.20.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j2-impl</artifactId>
+            <version>2.20.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <directory>${simz1.buildDirectory}</directory>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.6.3</version>
+                <configuration>
+                    <includeProjectDependencies>true</includeProjectDependencies>
+                    <classpathScope>${exec.classpathScope}</classpathScope>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>simz1-fork</id>
+                        <goals><goal>exec</goal></goals>
+                        <configuration>
+                            <!-- Independent JVM: no application threads in Maven's plugin realm. -->
+                            <executable>${java.home}/bin/java</executable>
+                            <longClasspath>true</longClasspath>
+                            <arguments>
+                                <argument>-Xmx${simz1.heap}</argument>
+                                <argument>-classpath</argument>
+                                <classpath/>
+                                <argument>${simz1.mainClass}</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <release>${maven.compiler.release}</release>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,22 @@
+{
+  "fingerprint_copia": "12933cdfb843293e5ba7dcf9bc4cf30a3a8dd92e5aeb08d7d388c6138331d20a",
+  "fingerprint_origen": "12933cdfb843293e5ba7dcf9bc4cf30a3a8dd92e5aeb08d7d388c6138331d20a",
+  "iguales": true,
+  "dependencias_fingerprint": 787,
+  "demanda_prueba": {
+    "run_id": "simz1-a4ee40d1a7e143e0b326db604fecf54a",
+    "status": "prepared",
+    "personas_xml": 10,
+    "counts": {
+      "planned_persons": 10,
+      "planned_trips": 10,
+      "planned_legs": 10,
+      "road_demand_persons": 10,
+      "public_transport_vehicles_configured": 0,
+      "public_transport_departures_scheduled": 0,
+      "transit_drivers_added_to_demand": 0
+    },
+    "carpeta": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\2026-21352-garcia-donis-gabriel-estuardo\\src\\runtime\\entrega-demanda-10-fc8a7546defa4d14adc28fdf825dfd38",
+    "qsim_ejecutado": false
+  }
+}

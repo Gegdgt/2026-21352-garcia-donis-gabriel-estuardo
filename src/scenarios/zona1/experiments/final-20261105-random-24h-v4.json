@@ -1,0 +1,47 @@
+{
+  "acceptance_trial_scenario": "run1000",
+  "base_inputs": {
+    "agent_catalog": "scenarios/zona1/agent-types-balanced-v1.json",
+    "day_policy": "src/main/resources/simz1/day-observation-v1.json",
+    "freight_service": "scenarios/zona1/od/balanced-gateway-v1/access-review-v2/freight/service-composition-v3.json",
+    "od_access_catalog": "scenarios/zona1/od/balanced-gateway-v1/access.json",
+    "od_mix_file": "scenarios/zona1/od/balanced-gateway-v1/mix.json",
+    "source_config": "scenarios/zona1/od/balanced-gateway-v1/access-review-v2/config-l18-local-v1.xml",
+    "transit_service": "scenarios/zona1/transit/weekday-v2/service-fleet-176-93-v1.json",
+    "zone_boundary": "scenarios/zona1/od/balanced-gateway-v1/perimeter.geojson"
+  },
+  "demand_end_seconds": 86400,
+  "demand_seed": 20261023,
+  "derived_from": {
+    "path": "scenarios/zona1/experiments/final-20261104-24h-v3.json",
+    "sha256": "e60478c6bc3a89e541de00e40487401d72a7bd2aee852cdc7df1084947306b38"
+  },
+  "draw_policy": {
+    "algorithm": "sha256-rejection-u256be-v1",
+    "entropy_bytes": 32,
+    "entropy_source": "secrets.token_hex",
+    "inclusive_range": [
+      180000,
+      220000
+    ],
+    "max_attempts": 1000,
+    "reuse": "one selection, one DryRun identity, at most one Run",
+    "version": "system-entropy-single-draw-v1"
+  },
+  "freight_completion_policy": "freight-close-plus3600-v1",
+  "native_qsim_end_seconds": 86399,
+  "observation_end_seconds": 86400,
+  "observation_policy": "fixed-day-24h-v1",
+  "public_vehicles": 269,
+  "scenarios": {
+    "random-full-1": {
+      "iterations": 1,
+      "population_group": "random-full",
+      "total_non_public_vehicles": "from_immutable_selection"
+    }
+  },
+  "schema": "simz1-random-experiment-policy-v1",
+  "service_date": "2026-10-23",
+  "signal_variant": "l18-local-synthetic-offsets-v1",
+  "trial_difference": "N and its composition quotas only; same physical sources and daily policies"
+}

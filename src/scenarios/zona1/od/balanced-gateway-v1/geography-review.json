@@ -1,0 +1,4992 @@
+{
+  "review_date": "2026-11-01",
+  "generated_utc": "2026-11-01T13:37:51.535802+00:00",
+  "source": "https://api.openstreetmap.org/api/0.6/relation/9283360/full",
+  "relation": {
+    "id": "9283360",
+    "visible": "true",
+    "version": "34",
+    "changeset": "188201709",
+    "timestamp": "2026-08-29T14:55:45Z",
+    "user": "Guiso",
+    "uid": "19971730"
+  },
+  "tags": {
+    "admin_level": "8",
+    "boundary": "administrative",
+    "name": "Zona 1",
+    "population": "67489",
+    "postal_code": "01001",
+    "type": "boundary",
+    "wikidata": "Q135457830"
+  },
+  "outer_ways": 59,
+  "missing_outer_ways_in_download": [],
+  "missing_outer_ways_in_local_extract": [
+    "1028513518",
+    "1028513519",
+    "1058042641",
+    "1078931128",
+    "1264280718",
+    "1273924493",
+    "1317915883",
+    "1553431372",
+    "244226326",
+    "30262998",
+    "30263031",
+    "30274222",
+    "30279779",
+    "370803767",
+    "381133551",
+    "381382147",
+    "381382150",
+    "384766457",
+    "384908710",
+    "390137509",
+    "404412301",
+    "404964205",
+    "405680516",
+    "45498034",
+    "642056166",
+    "642056167",
+    "64401273",
+    "667730659",
+    "667737049",
+    "675891013",
+    "679340482",
+    "699530403",
+    "699533696",
+    "699533697",
+    "699533699",
+    "699533705",
+    "699533706",
+    "699533707",
+    "699533708",
+    "699533710",
+    "761388502",
+    "761388508",
+    "930046779"
+  ],
+  "geometry_valid": true,
+  "rfc7946": true,
+  "area_km2": 6.412448522375363,
+  "bbox": [
+    -90.52407,
+    14.6217423,
+    -90.4909239,
+    14.6493244
+  ],
+  "local_osm_bounds": {
+    "minlat": "14.6250000",
+    "minlon": "-90.5220000",
+    "maxlat": "14.6460000",
+    "maxlon": "-90.5050000"
+  },
+  "network_node_count": 4214,
+  "link_counts": {
+    "interior": 5623,
+    "exit_crossing": 27,
+    "external": 504,
+    "complex_or_boundary": 2,
+    "entry_crossing": 27
+  },
+  "crossing_links": [
+    {
+      "link_id": "osm_30263020_51_forward",
+      "from_node": "333831918",
+      "to_node": "579747094",
+      "classification": "exit_crossing",
+      "length_m": 9.442633614523837,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 1.8885267229047669,
+      "osm_way": "30263020",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_30263020_52_forward",
+        "osm_381667651_19_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_30263020_50_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_30263020_52_forward",
+        "osm_381667651_19_forward"
+      ],
+      "interior_observation_links": [
+        "osm_30263020_50_forward"
+      ]
+    },
+    {
+      "link_id": "osm_30263035_0_forward",
+      "from_node": "333531505",
+      "to_node": "14045368121",
+      "classification": "entry_crossing",
+      "length_m": 52.78865636532051,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 10.5577312730641,
+      "osm_way": "30263035",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_30263035_1_forward"
+      ],
+      "allowed_predecessors": [],
+      "existing_exterior_links": [],
+      "interior_observation_links": [
+        "osm_30263035_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_30263036_0_forward",
+      "from_node": "3745025187",
+      "to_node": "12676972230",
+      "classification": "entry_crossing",
+      "length_m": 7.992644363729768,
+      "lanes": 2.0,
+      "capacity_pcu_h": 4000.0,
+      "native_queue_end_m": 1.5985288727459537,
+      "osm_way": "30263036",
+      "highway": "tertiary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_30263036_1_forward"
+      ],
+      "allowed_predecessors": [],
+      "existing_exterior_links": [],
+      "interior_observation_links": [
+        "osm_30263036_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_30279769_73_forward",
+      "from_node": "13571809987",
+      "to_node": "333720818",
+      "classification": "exit_crossing",
+      "length_m": 7.45576539380059,
+      "lanes": 2.0,
+      "capacity_pcu_h": 4000.0,
+      "native_queue_end_m": 1.4911530787601173,
+      "osm_way": "30279769",
+      "highway": "tertiary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_30279769_74_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_30279769_72_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_30279769_74_forward"
+      ],
+      "interior_observation_links": [
+        "osm_30279769_72_forward"
+      ]
+    },
+    {
+      "link_id": "osm_30279782_2_forward",
+      "from_node": "13571809984",
+      "to_node": "333831616",
+      "classification": "entry_crossing",
+      "length_m": 5.8457178766809,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 1.1691435753361796,
+      "osm_way": "30279782",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_30279782_3_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_30279782_1_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_30279782_1_forward"
+      ],
+      "interior_observation_links": [
+        "osm_30279782_3_forward"
+      ]
+    },
+    {
+      "link_id": "osm_30288333_3_forward",
+      "from_node": "579746288",
+      "to_node": "333831521",
+      "classification": "entry_crossing",
+      "length_m": 9.195655134303719,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 1.839131026860743,
+      "osm_way": "30288333",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_30288333_4_forward",
+        "osm_406654687_11_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_30288333_2_forward",
+        "osm_381667651_1_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_30288333_2_forward",
+        "osm_381667651_1_forward"
+      ],
+      "interior_observation_links": [
+        "osm_30288333_4_forward",
+        "osm_406654687_11_forward"
+      ]
+    },
+    {
+      "link_id": "osm_30289506_12_forward",
+      "from_node": "333864553",
+      "to_node": "333864412",
+      "classification": "exit_crossing",
+      "length_m": 102.8985685862184,
+      "lanes": 2.0,
+      "capacity_pcu_h": 4000.0,
+      "native_queue_end_m": 20.579713717243678,
+      "osm_way": "30289506",
+      "highway": "secondary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_30289506_13_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_30289506_11_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_30289506_13_forward"
+      ],
+      "interior_observation_links": [
+        "osm_30289506_11_forward"
+      ]
+    },
+    {
+      "link_id": "osm_58673255_6_forward",
+      "from_node": "13939655856",
+      "to_node": "726943277",
+      "classification": "exit_crossing",
+      "length_m": 60.91341466194588,
+      "lanes": 2.0,
+      "capacity_pcu_h": 4000.0,
+      "native_queue_end_m": 12.18268293238917,
+      "osm_way": "58673255",
+      "highway": "secondary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_58673255_7_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_58673255_5_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_58673255_7_forward"
+      ],
+      "interior_observation_links": [
+        "osm_58673255_5_forward"
+      ]
+    },
+    {
+      "link_id": "osm_58692312_4_forward",
+      "from_node": "333720779",
+      "to_node": "579747103",
+      "classification": "exit_crossing",
+      "length_m": 9.300454479952137,
+      "lanes": 2.0,
+      "capacity_pcu_h": 4000.0,
+      "native_queue_end_m": 1.8600908959904272,
+      "osm_way": "58692312",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_381667651_21_forward",
+        "osm_58692312_5_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_58692312_3_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_381667651_21_forward",
+        "osm_58692312_5_forward"
+      ],
+      "interior_observation_links": [
+        "osm_58692312_3_forward"
+      ]
+    },
+    {
+      "link_id": "osm_58692343_53_forward",
+      "from_node": "4169928315",
+      "to_node": "13571809997",
+      "classification": "exit_crossing",
+      "length_m": 3.948142396784328,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 0.7896284793568653,
+      "osm_way": "58692343",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_58692343_54_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_58692343_52_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_58692343_54_forward"
+      ],
+      "interior_observation_links": [
+        "osm_58692343_52_forward"
+      ]
+    },
+    {
+      "link_id": "osm_59566215_6_forward",
+      "from_node": "2276234278",
+      "to_node": "13575036643",
+      "classification": "entry_crossing",
+      "length_m": 10.642311821241082,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 2.1284623642482163,
+      "osm_way": "59566215",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_59566215_7_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_59566215_5_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_59566215_5_forward"
+      ],
+      "interior_observation_links": [
+        "osm_59566215_7_forward"
+      ]
+    },
+    {
+      "link_id": "osm_59566258_0_forward",
+      "from_node": "738886780",
+      "to_node": "9890753391",
+      "classification": "entry_crossing",
+      "length_m": 28.258159211600187,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 5.651631842320036,
+      "osm_way": "59566258",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_59566258_0_backward",
+        "osm_59566258_1_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_59566258_0_backward"
+      ],
+      "existing_exterior_links": [],
+      "interior_observation_links": [
+        "osm_59566258_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_59566258_0_backward",
+      "from_node": "9890753391",
+      "to_node": "738886780",
+      "classification": "exit_crossing",
+      "length_m": 28.258159211600187,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 5.651631842320036,
+      "osm_way": "59566258",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_59566258_0_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_59566258_0_forward",
+        "osm_59566258_1_backward"
+      ],
+      "existing_exterior_links": [],
+      "interior_observation_links": [
+        "osm_59566258_1_backward"
+      ]
+    },
+    {
+      "link_id": "osm_60237264_2_forward",
+      "from_node": "11101047791",
+      "to_node": "11802702875",
+      "classification": "exit_crossing",
+      "length_m": 63.09531560511681,
+      "lanes": 3.0,
+      "capacity_pcu_h": 6000.0,
+      "native_queue_end_m": 12.619063121023359,
+      "osm_way": "60237264",
+      "highway": "primary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_60237264_3_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_1196283991_0_backward",
+        "osm_60237264_1_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_60237264_3_forward"
+      ],
+      "interior_observation_links": [
+        "osm_1196283991_0_backward",
+        "osm_60237264_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_65754263_0_forward",
+      "from_node": "565304334",
+      "to_node": "4169928313",
+      "classification": "entry_crossing",
+      "length_m": 60.7248098351549,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 12.14496196703098,
+      "osm_way": "65754263",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_65754263_1_forward",
+        "osm_699533700_0_backward",
+        "osm_699533700_1_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_44486997_0_backward"
+      ],
+      "existing_exterior_links": [
+        "osm_44486997_0_backward"
+      ],
+      "interior_observation_links": [
+        "osm_65754263_1_forward",
+        "osm_699533700_0_backward",
+        "osm_699533700_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_65777805_7_forward",
+      "from_node": "13571809992",
+      "to_node": "333720729",
+      "classification": "entry_crossing",
+      "length_m": 3.9633216025881812,
+      "lanes": 2.0,
+      "capacity_pcu_h": 4000.0,
+      "native_queue_end_m": 0.7926643205176362,
+      "osm_way": "65777805",
+      "highway": "tertiary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_65777805_8_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_65777805_6_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_65777805_6_forward"
+      ],
+      "interior_observation_links": [
+        "osm_65777805_8_forward"
+      ]
+    },
+    {
+      "link_id": "osm_65786237_0_forward",
+      "from_node": "333720761",
+      "to_node": "13571707137",
+      "classification": "entry_crossing",
+      "length_m": 209.6501701876519,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 109.6501701876519,
+      "osm_way": "65786237",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_65786237_1_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_65792798_1_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_6_backward"
+      ],
+      "existing_exterior_links": [
+        "osm_65792798_1_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_6_backward"
+      ],
+      "interior_observation_links": [
+        "osm_65786237_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_67112965_0_forward",
+      "from_node": "568190395",
+      "to_node": "410441414",
+      "classification": "entry_crossing",
+      "length_m": 153.51875648669855,
+      "lanes": 3.0,
+      "capacity_pcu_h": 6000.0,
+      "native_queue_end_m": 53.51875648669855,
+      "osm_way": "67112965",
+      "highway": "primary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_1358273945_0_forward",
+        "osm_34994099_0_forward"
+      ],
+      "allowed_predecessors": [],
+      "existing_exterior_links": [],
+      "interior_observation_links": [
+        "osm_1358273945_0_forward",
+        "osm_34994099_0_forward"
+      ]
+    },
+    {
+      "link_id": "osm_142995412_0_forward",
+      "from_node": "1564620804",
+      "to_node": "13571809980",
+      "classification": "entry_crossing",
+      "length_m": 8.293864875031234,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 1.6587729750062463,
+      "osm_way": "142995412",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_142995412_1_forward"
+      ],
+      "allowed_predecessors": [],
+      "existing_exterior_links": [],
+      "interior_observation_links": [
+        "osm_142995412_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_292876837_2_forward",
+      "from_node": "579746178",
+      "to_node": "333720768",
+      "classification": "entry_crossing",
+      "length_m": 9.22643795711153,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 1.8452875914223057,
+      "osm_way": "292876837",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_1273145791_1_forward",
+        "osm_292876837_3_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_292876837_1_forward",
+        "osm_45494968_0_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_292876837_1_forward",
+        "osm_45494968_0_forward"
+      ],
+      "interior_observation_links": [
+        "osm_1273145791_1_forward",
+        "osm_292876837_3_forward"
+      ]
+    },
+    {
+      "link_id": "osm_359045350_9_forward",
+      "from_node": "412201548",
+      "to_node": "12110665382",
+      "classification": "exit_crossing",
+      "length_m": 35.878032104500555,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 7.17560642090011,
+      "osm_way": "359045350",
+      "highway": "tertiary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_359045350_10_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_359045350_8_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_359045350_10_forward"
+      ],
+      "interior_observation_links": [
+        "osm_359045350_8_forward"
+      ]
+    },
+    {
+      "link_id": "osm_363667895_6_forward",
+      "from_node": "410383085",
+      "to_node": "4075450492",
+      "classification": "entry_crossing",
+      "length_m": 247.27390599743296,
+      "lanes": 2.0,
+      "capacity_pcu_h": 4000.0,
+      "native_queue_end_m": 147.27390599743296,
+      "osm_way": "363667895",
+      "highway": "tertiary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_30263025_0_backward",
+        "osm_42840290_0_forward",
+        "osm_762765906_0_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_1342389560_0_forward",
+        "osm_363667895_5_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_1342389560_0_forward",
+        "osm_363667895_5_forward"
+      ],
+      "interior_observation_links": [
+        "osm_42840290_0_forward"
+      ]
+    },
+    {
+      "link_id": "osm_381097595_5_forward",
+      "from_node": "13575018758",
+      "to_node": "333720840",
+      "classification": "entry_crossing",
+      "length_m": 7.5002685313131945,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 1.500053706262639,
+      "osm_way": "381097595",
+      "highway": "primary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_381097595_6_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_381097595_4_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_381097595_4_forward"
+      ],
+      "interior_observation_links": [
+        "osm_381097595_6_forward"
+      ]
+    },
+    {
+      "link_id": "osm_381158277_4_forward",
+      "from_node": "333864569",
+      "to_node": "333864403",
+      "classification": "exit_crossing",
+      "length_m": 104.58885847371272,
+      "lanes": 3.0,
+      "capacity_pcu_h": 6000.0,
+      "native_queue_end_m": 20.91777169474254,
+      "osm_way": "381158277",
+      "highway": "secondary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_381158277_5_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_381158277_3_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_381158277_5_forward"
+      ],
+      "interior_observation_links": [
+        "osm_381158277_3_forward"
+      ]
+    },
+    {
+      "link_id": "osm_381158292_0_forward",
+      "from_node": "333864549",
+      "to_node": "565307547",
+      "classification": "entry_crossing",
+      "length_m": 108.35333281335973,
+      "lanes": 2.0,
+      "capacity_pcu_h": 4000.0,
+      "native_queue_end_m": 21.67066656267194,
+      "osm_way": "381158292",
+      "highway": "primary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_381158292_1_forward",
+        "osm_384747970_0_forward"
+      ],
+      "allowed_predecessors": [],
+      "existing_exterior_links": [],
+      "interior_observation_links": [
+        "osm_381158292_1_forward",
+        "osm_384747970_0_forward"
+      ]
+    },
+    {
+      "link_id": "osm_382465689_1_forward",
+      "from_node": "12889456134",
+      "to_node": "8596019026",
+      "classification": "exit_crossing",
+      "length_m": 3.0183076137806966,
+      "lanes": 2.0,
+      "capacity_pcu_h": 4000.0,
+      "native_queue_end_m": 0.603661522756139,
+      "osm_way": "382465689",
+      "highway": "primary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_382465689_2_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_382465689_0_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_382465689_2_forward"
+      ],
+      "interior_observation_links": [
+        "osm_382465689_0_forward"
+      ]
+    },
+    {
+      "link_id": "osm_382465690_6_forward",
+      "from_node": "12889456133",
+      "to_node": "5305124592",
+      "classification": "exit_crossing",
+      "length_m": 19.73856255152176,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 3.947712510304351,
+      "osm_way": "382465690",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_382465690_7_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_382465690_5_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_382465690_7_forward"
+      ],
+      "interior_observation_links": [
+        "osm_382465690_5_forward"
+      ]
+    },
+    {
+      "link_id": "osm_400043601_9_forward",
+      "from_node": "12889456136",
+      "to_node": "8596019025",
+      "classification": "entry_crossing",
+      "length_m": 1.4146299510268794,
+      "lanes": 2.0,
+      "capacity_pcu_h": 4000.0,
+      "native_queue_end_m": 0.2829259902053758,
+      "osm_way": "400043601",
+      "highway": "primary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_400043601_10_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_400043601_8_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_400043601_8_forward"
+      ],
+      "interior_observation_links": [
+        "osm_400043601_10_forward"
+      ]
+    },
+    {
+      "link_id": "osm_400843677_5_forward",
+      "from_node": "11106080310",
+      "to_node": "11802702874",
+      "classification": "exit_crossing",
+      "length_m": 86.03302620155947,
+      "lanes": 3.0,
+      "capacity_pcu_h": 6000.0,
+      "native_queue_end_m": 17.206605240311887,
+      "osm_way": "400843677",
+      "highway": "primary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_400843677_6_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_400843677_4_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_400843677_6_forward"
+      ],
+      "interior_observation_links": [
+        "osm_400843677_4_forward"
+      ]
+    },
+    {
+      "link_id": "osm_405188986_0_forward",
+      "from_node": "579746301",
+      "to_node": "4074069083",
+      "classification": "entry_crossing",
+      "length_m": 8.752758533070127,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 1.7505517066140248,
+      "osm_way": "405188986",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_405188986_0_backward",
+        "osm_406654687_7_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_1274240312_1_forward",
+        "osm_381667651_3_forward",
+        "osm_405188986_0_backward"
+      ],
+      "existing_exterior_links": [
+        "osm_1274240312_1_forward",
+        "osm_381667651_3_forward"
+      ],
+      "interior_observation_links": [
+        "osm_406654687_7_forward"
+      ]
+    },
+    {
+      "link_id": "osm_405188986_0_backward",
+      "from_node": "4074069083",
+      "to_node": "579746301",
+      "classification": "exit_crossing",
+      "length_m": 8.752758533070127,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 1.7505517066140248,
+      "osm_way": "405188986",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_1274240312_1_backward",
+        "osm_381667651_4_forward",
+        "osm_405188986_0_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_405188986_0_forward",
+        "osm_406654687_6_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_1274240312_1_backward",
+        "osm_381667651_4_forward"
+      ],
+      "interior_observation_links": [
+        "osm_406654687_6_forward"
+      ]
+    },
+    {
+      "link_id": "osm_405703103_1_forward",
+      "from_node": "333864477",
+      "to_node": "333864557",
+      "classification": "exit_crossing",
+      "length_m": 106.68682676289777,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 21.337365352579553,
+      "osm_way": "405703103",
+      "highway": "primary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:equal_direction_split",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_405703103_1_backward"
+      ],
+      "allowed_predecessors": [
+        "osm_384747970_1_forward",
+        "osm_384747970_2_backward",
+        "osm_405703103_0_forward",
+        "osm_405703103_1_backward"
+      ],
+      "existing_exterior_links": [],
+      "interior_observation_links": [
+        "osm_384747970_1_forward",
+        "osm_384747970_2_backward",
+        "osm_405703103_0_forward"
+      ]
+    },
+    {
+      "link_id": "osm_405703103_1_backward",
+      "from_node": "333864557",
+      "to_node": "333864477",
+      "classification": "entry_crossing",
+      "length_m": 106.68682676289777,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 21.337365352579553,
+      "osm_way": "405703103",
+      "highway": "primary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:equal_direction_split",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_384747970_1_backward",
+        "osm_384747970_2_forward",
+        "osm_405703103_0_backward",
+        "osm_405703103_1_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_405703103_1_forward"
+      ],
+      "existing_exterior_links": [],
+      "interior_observation_links": [
+        "osm_384747970_1_backward",
+        "osm_384747970_2_forward",
+        "osm_405703103_0_backward"
+      ]
+    },
+    {
+      "link_id": "osm_406843605_2_forward",
+      "from_node": "579747165",
+      "to_node": "333831869",
+      "classification": "entry_crossing",
+      "length_m": 10.585954162778616,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 2.117190832555723,
+      "osm_way": "406843605",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_406843605_3_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_381667651_16_forward",
+        "osm_406843605_1_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_381667651_16_forward",
+        "osm_406843605_1_forward"
+      ],
+      "interior_observation_links": [
+        "osm_406843605_3_forward"
+      ]
+    },
+    {
+      "link_id": "osm_406872394_3_forward",
+      "from_node": "333864565",
+      "to_node": "333864446",
+      "classification": "exit_crossing",
+      "length_m": 101.82469880531926,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 20.36493976106385,
+      "osm_way": "406872394",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_406872394_3_backward",
+        "osm_406872394_4_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_406872394_2_forward",
+        "osm_406872394_3_backward"
+      ],
+      "existing_exterior_links": [
+        "osm_406872394_4_forward"
+      ],
+      "interior_observation_links": [
+        "osm_406872394_2_forward"
+      ]
+    },
+    {
+      "link_id": "osm_406872394_3_backward",
+      "from_node": "333864446",
+      "to_node": "333864565",
+      "classification": "entry_crossing",
+      "length_m": 101.82469880531926,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 20.36493976106385,
+      "osm_way": "406872394",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_406872394_2_backward",
+        "osm_406872394_3_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_406872394_3_forward",
+        "osm_406872394_4_backward"
+      ],
+      "existing_exterior_links": [
+        "osm_406872394_4_backward"
+      ],
+      "interior_observation_links": [
+        "osm_406872394_2_backward"
+      ]
+    },
+    {
+      "link_id": "osm_420120096_33_forward",
+      "from_node": "333831830",
+      "to_node": "579747190",
+      "classification": "exit_crossing",
+      "length_m": 10.296810078265727,
+      "lanes": 3.0,
+      "capacity_pcu_h": 6000.0,
+      "native_queue_end_m": 2.0593620156531447,
+      "osm_way": "420120096",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_381667651_15_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_420120096_32_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_381667651_15_forward"
+      ],
+      "interior_observation_links": [
+        "osm_420120096_32_forward"
+      ]
+    },
+    {
+      "link_id": "osm_511820719_13_forward",
+      "from_node": "5394510468",
+      "to_node": "2635650544",
+      "classification": "entry_crossing",
+      "length_m": 14.206152026213882,
+      "lanes": 2.0,
+      "capacity_pcu_h": 4000.0,
+      "native_queue_end_m": 2.8412304052427757,
+      "osm_way": "511820719",
+      "highway": "secondary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_511820719_14_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_511820719_12_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_511820719_12_forward"
+      ],
+      "interior_observation_links": [
+        "osm_511820719_14_forward"
+      ]
+    },
+    {
+      "link_id": "osm_699533700_4_forward",
+      "from_node": "11819485116",
+      "to_node": "4169928311",
+      "classification": "exit_crossing",
+      "length_m": 10.898924044830654,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 2.179784808966131,
+      "osm_way": "699533700",
+      "highway": "secondary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_1272103887_0_forward",
+        "osm_30279775_4_backward",
+        "osm_699533700_4_backward",
+        "osm_699533700_5_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_699533700_3_forward",
+        "osm_699533700_4_backward"
+      ],
+      "existing_exterior_links": [
+        "osm_30279775_4_backward",
+        "osm_699533700_5_forward"
+      ],
+      "interior_observation_links": [
+        "osm_699533700_3_forward"
+      ]
+    },
+    {
+      "link_id": "osm_699533700_4_backward",
+      "from_node": "4169928311",
+      "to_node": "11819485116",
+      "classification": "entry_crossing",
+      "length_m": 10.898924044830654,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 2.179784808966131,
+      "osm_way": "699533700",
+      "highway": "secondary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_1272820759_0_forward",
+        "osm_699533700_3_backward",
+        "osm_699533700_4_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_1272103887_0_backward",
+        "osm_30279775_4_forward",
+        "osm_699533700_4_forward",
+        "osm_699533700_5_backward"
+      ],
+      "existing_exterior_links": [
+        "osm_30279775_4_forward",
+        "osm_699533700_5_backward"
+      ],
+      "interior_observation_links": [
+        "osm_699533700_3_backward"
+      ]
+    },
+    {
+      "link_id": "osm_699533700_8_forward",
+      "from_node": "11554751371",
+      "to_node": "4086751520",
+      "classification": "entry_crossing",
+      "length_m": 25.05487129396802,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 5.010974258793603,
+      "osm_way": "699533700",
+      "highway": "secondary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_1275050774_0_forward",
+        "osm_699533700_8_backward"
+      ],
+      "allowed_predecessors": [
+        "osm_699533700_7_forward",
+        "osm_699533700_8_backward"
+      ],
+      "existing_exterior_links": [
+        "osm_699533700_7_forward"
+      ],
+      "interior_observation_links": []
+    },
+    {
+      "link_id": "osm_699533700_8_backward",
+      "from_node": "4086751520",
+      "to_node": "11554751371",
+      "classification": "exit_crossing",
+      "length_m": 25.05487129396802,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 5.010974258793603,
+      "osm_way": "699533700",
+      "highway": "secondary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_699533700_7_backward",
+        "osm_699533700_8_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_1273145791_1_forward",
+        "osm_406701908_35_forward",
+        "osm_699533700_8_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_699533700_7_backward"
+      ],
+      "interior_observation_links": [
+        "osm_1273145791_1_forward",
+        "osm_406701908_35_forward"
+      ]
+    },
+    {
+      "link_id": "osm_732305247_8_forward",
+      "from_node": "13575036647",
+      "to_node": "1903163097",
+      "classification": "exit_crossing",
+      "length_m": 11.237565163854086,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 11.237565163854086,
+      "osm_way": "732305247",
+      "highway": "secondary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [],
+      "allowed_predecessors": [
+        "osm_732305247_7_forward"
+      ],
+      "existing_exterior_links": [],
+      "interior_observation_links": [
+        "osm_732305247_7_forward"
+      ]
+    },
+    {
+      "link_id": "osm_734011348_14_forward",
+      "from_node": "4169928307",
+      "to_node": "565305792",
+      "classification": "exit_crossing",
+      "length_m": 47.44687144561052,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 9.489374289122104,
+      "osm_way": "734011348",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_44487200_0_forward",
+        "osm_734011348_15_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_699533700_2_forward",
+        "osm_699533700_3_backward",
+        "osm_734011348_13_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_44487200_0_forward",
+        "osm_734011348_15_forward"
+      ],
+      "interior_observation_links": [
+        "osm_699533700_2_forward",
+        "osm_699533700_3_backward",
+        "osm_734011348_13_forward"
+      ]
+    },
+    {
+      "link_id": "osm_762765906_0_forward",
+      "from_node": "4075450492",
+      "to_node": "6361386360",
+      "classification": "exit_crossing",
+      "length_m": 29.455442492391022,
+      "lanes": 2.0,
+      "capacity_pcu_h": 4000.0,
+      "native_queue_end_m": 5.891088498478204,
+      "osm_way": "762765906",
+      "highway": "tertiary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_762765906_1_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_30263025_0_forward",
+        "osm_363667895_6_forward",
+        "osm_762765908_3_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_762765906_1_forward"
+      ],
+      "interior_observation_links": [
+        "osm_762765908_3_forward"
+      ]
+    },
+    {
+      "link_id": "osm_917940877_0_forward",
+      "from_node": "579746257",
+      "to_node": "333720775",
+      "classification": "entry_crossing",
+      "length_m": 8.27891759436153,
+      "lanes": 2.0,
+      "capacity_pcu_h": 4000.0,
+      "native_queue_end_m": 1.6557835188723056,
+      "osm_way": "917940877",
+      "highway": "primary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_1273145789_0_forward",
+        "osm_48273209_0_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_1273145790_1_forward",
+        "osm_260936848_14_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_1273145790_1_forward",
+        "osm_260936848_14_forward"
+      ],
+      "interior_observation_links": [
+        "osm_1273145789_0_forward",
+        "osm_48273209_0_forward"
+      ]
+    },
+    {
+      "link_id": "osm_930035054_6_forward",
+      "from_node": "579747083",
+      "to_node": "333831939",
+      "classification": "entry_crossing",
+      "length_m": 9.564889462792172,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 1.912977892558434,
+      "osm_way": "930035054",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_930035054_7_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_381667651_19_forward",
+        "osm_930035054_5_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_381667651_19_forward",
+        "osm_930035054_5_forward"
+      ],
+      "interior_observation_links": [
+        "osm_930035054_7_forward"
+      ]
+    },
+    {
+      "link_id": "osm_1051440046_6_forward",
+      "from_node": "333720830",
+      "to_node": "13575018754",
+      "classification": "exit_crossing",
+      "length_m": 7.024399832834928,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 1.4048799665669849,
+      "osm_way": "1051440046",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_1051440046_7_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_1051440046_5_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_1051440046_7_forward"
+      ],
+      "interior_observation_links": [
+        "osm_1051440046_5_forward"
+      ]
+    },
+    {
+      "link_id": "osm_1270930401_0_forward",
+      "from_node": "333720771",
+      "to_node": "579746202",
+      "classification": "exit_crossing",
+      "length_m": 9.51683182613545,
+      "lanes": 2.0,
+      "capacity_pcu_h": 4000.0,
+      "native_queue_end_m": 1.9033663652270896,
+      "osm_way": "1270930401",
+      "highway": "primary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_1273145790_0_forward",
+        "osm_260940553_0_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_1273145789_0_forward",
+        "osm_734011349_14_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_1273145790_0_forward",
+        "osm_260940553_0_forward"
+      ],
+      "interior_observation_links": [
+        "osm_1273145789_0_forward",
+        "osm_734011349_14_forward"
+      ]
+    },
+    {
+      "link_id": "osm_1272103887_0_forward",
+      "from_node": "4169928311",
+      "to_node": "13571793968",
+      "classification": "entry_crossing",
+      "length_m": 207.38000631995115,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 107.38000631995115,
+      "osm_way": "1272103887",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_1272103887_0_backward",
+        "osm_1272103887_1_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_1272103887_0_backward",
+        "osm_30279775_4_forward",
+        "osm_699533700_4_forward",
+        "osm_699533700_5_backward"
+      ],
+      "existing_exterior_links": [
+        "osm_30279775_4_forward",
+        "osm_699533700_5_backward"
+      ],
+      "interior_observation_links": [
+        "osm_1272103887_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_1272103887_0_backward",
+      "from_node": "13571793968",
+      "to_node": "4169928311",
+      "classification": "exit_crossing",
+      "length_m": 207.38000631995115,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 107.38000631995115,
+      "osm_way": "1272103887",
+      "highway": "residential",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_1272103887_0_forward",
+        "osm_30279775_4_backward",
+        "osm_699533700_4_backward",
+        "osm_699533700_5_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_1272103887_0_forward",
+        "osm_1272103887_1_backward"
+      ],
+      "existing_exterior_links": [
+        "osm_30279775_4_backward",
+        "osm_699533700_5_forward"
+      ],
+      "interior_observation_links": [
+        "osm_1272103887_1_backward"
+      ]
+    },
+    {
+      "link_id": "osm_1272820759_0_forward",
+      "from_node": "11819485116",
+      "to_node": "11819485115",
+      "classification": "exit_crossing",
+      "length_m": 8.7648816680998,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 1.7529763336199595,
+      "osm_way": "1272820759",
+      "highway": "service",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_1272820761_0_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_699533700_3_forward",
+        "osm_699533700_4_backward"
+      ],
+      "existing_exterior_links": [
+        "osm_1272820761_0_forward"
+      ],
+      "interior_observation_links": [
+        "osm_699533700_3_forward"
+      ]
+    },
+    {
+      "link_id": "osm_1275050774_0_forward",
+      "from_node": "4086751520",
+      "to_node": "737575889",
+      "classification": "exit_crossing",
+      "length_m": 9.34466119474446,
+      "lanes": 1.0,
+      "capacity_pcu_h": 2000.0,
+      "native_queue_end_m": 1.8689322389488918,
+      "osm_way": "1275050774",
+      "highway": "primary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "assumed:one_lane",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_1243273719_0_forward",
+        "osm_45494968_0_forward"
+      ],
+      "allowed_predecessors": [
+        "osm_1273145791_1_forward",
+        "osm_406701908_35_forward",
+        "osm_699533700_8_forward"
+      ],
+      "existing_exterior_links": [
+        "osm_1243273719_0_forward",
+        "osm_45494968_0_forward"
+      ],
+      "interior_observation_links": [
+        "osm_1273145791_1_forward",
+        "osm_406701908_35_forward"
+      ]
+    },
+    {
+      "link_id": "osm_1467361288_0_forward",
+      "from_node": "518265473",
+      "to_node": "12120749824",
+      "classification": "entry_crossing",
+      "length_m": 105.28332085896633,
+      "lanes": 2.0,
+      "capacity_pcu_h": 4000.0,
+      "native_queue_end_m": 21.05666417179326,
+      "osm_way": "1467361288",
+      "highway": "primary",
+      "service": null,
+      "car_access": "yes",
+      "lane_source": "osm:lanes",
+      "capacity_model": "ideal_per_lane_times_lanes_times_factor",
+      "capacity_basis": "Unchanged network.xml model parameter; not measured incorporation flow",
+      "activity_access_verified": false,
+      "allowed_successors": [
+        "osm_1308865948_0_forward",
+        "osm_1467361288_1_forward"
+      ],
+      "allowed_predecessors": [],
+      "existing_exterior_links": [],
+      "interior_observation_links": [
+        "osm_1308865948_0_forward",
+        "osm_1467361288_1_forward"
+      ]
+    }
+  ],
+  "possible_entry_chains": 27,
+  "possible_exit_chains": 30,
+  "perimeter_sha256": "441e7ca4fefff91d7b475d26f12a600415c67b862c5bb2195cd13f486b015688",
+  "source_sha256": "80e5595c9b33a94c97144a1d403d278a8b72caf0d7e40d12906006a0966b6bcc",
+  "input_sha256": {
+    "network.xml": "f328c84e34f7b7ba7c3a204bb97bb9907b107dbf77d53c301e3c6c44fe487029",
+    "lanes.xml": "0aa6ab72f694ea239d6de697b051f7a1ffb44b85f063cbbc63b85dca06eaeab7",
+    "map.osm": "707684e17858e305324d72ce5df05a489138e3b819442b3c34e2a21c864d8c6b"
+  },
+  "source_file_hashes": {
+    "item.json": "de64e289e2ff699e5809bf5676183855f0df08e728dbee2cdd1a346f593caecd",
+    "layer.json": "85da2c8d526b400fdee0c83251d4a7b74df1d67d0b406717eaedcb3b3421fe23",
+    "relation-9283360-full.osm": "80e5595c9b33a94c97144a1d403d278a8b72caf0d7e40d12906006a0966b6bcc",
+    "service.json": "04b54b5e943a976e9ce9d7daf79a13f598fd996e2805f6081549a7a42dc23306",
+    "zona1-query.geojson": "edc1fbd359949da347e3f32ef377d535122545da6f46c2a159c5cd87a4c916aa"
+  },
+  "status": "BLOCKED",
+  "reason": "No approved incorporation sites. See directed crossing/continuation inventory; no artificial exterior connectors.",
+  "attribution": "© OpenStreetMap contributors; https://www.openstreetmap.org/copyright; ODbL 1.0",
+  "qualification": "OSM administrative boundary v34, not cadastral/legal municipal certification. Traffic physics remain uncalibrated model parameters.",
+  "directed_turn_review": {
+    "checked": false,
+    "error": "Restricciones OSM pendientes (12): 6008781, 6016436, 17146405, 17146406, 17373677, 17475192, 17478998, 17502672, 17884471, 17947071, 20224530, 20224531. Se requiere una nueva version de red/restricciones; no se publica demanda ni se modifica la historica"
+  },
+  "private_max_body_m": 4.5,
+  "entry_anchor_candidates": [
+    {
+      "id": "entry-osm_30279782_2_forward",
+      "anchor_link": "osm_30279782_1_forward",
+      "crossing_link": "osm_30279782_2_forward",
+      "observation_link": "osm_30279782_3_forward",
+      "link_ids": [
+        "osm_30279782_1_forward",
+        "osm_30279782_2_forward",
+        "osm_30279782_3_forward"
+      ],
+      "exterior_length_m": 38.49622470730201,
+      "useful_length_upper_bound_m": 7.6992449414604,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_30288333_3_forward",
+      "anchor_link": "osm_381667651_0_forward",
+      "crossing_link": "osm_30288333_3_forward",
+      "observation_link": "osm_30288333_4_forward",
+      "link_ids": [
+        "osm_381667651_0_forward",
+        "osm_381667651_1_forward",
+        "osm_30288333_3_forward",
+        "osm_30288333_4_forward"
+      ],
+      "exterior_length_m": 81.46075313879633,
+      "useful_length_upper_bound_m": 15.367432066096114,
+      "native_capacity_upper_bound_pcu_h": 6000.0,
+      "native_lanes": 3.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_30288333_3_forward",
+      "anchor_link": "osm_30288333_1_forward",
+      "crossing_link": "osm_30288333_3_forward",
+      "observation_link": "osm_30288333_4_forward",
+      "link_ids": [
+        "osm_30288333_1_forward",
+        "osm_30288333_2_forward",
+        "osm_30288333_3_forward",
+        "osm_30288333_4_forward"
+      ],
+      "exterior_length_m": 42.82899103507684,
+      "useful_length_upper_bound_m": 7.045130746204297,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_59566215_6_forward",
+      "anchor_link": "osm_59566215_4_forward",
+      "crossing_link": "osm_59566215_6_forward",
+      "observation_link": "osm_59566215_7_forward",
+      "link_ids": [
+        "osm_59566215_4_forward",
+        "osm_59566215_5_forward",
+        "osm_59566215_6_forward",
+        "osm_59566215_7_forward"
+      ],
+      "exterior_length_m": 105.01571187059022,
+      "useful_length_upper_bound_m": 19.051466725077688,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_65754263_0_forward",
+      "anchor_link": "osm_44486997_0_backward",
+      "crossing_link": "osm_65754263_0_forward",
+      "observation_link": "osm_65754263_1_forward",
+      "link_ids": [
+        "osm_44486997_0_backward",
+        "osm_65754263_0_forward",
+        "osm_65754263_1_forward"
+      ],
+      "exterior_length_m": 63.94019560144353,
+      "useful_length_upper_bound_m": 12.788039120288701,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_65777805_7_forward",
+      "anchor_link": "osm_65777805_5_forward",
+      "crossing_link": "osm_65777805_7_forward",
+      "observation_link": "osm_65777805_8_forward",
+      "link_ids": [
+        "osm_65777805_5_forward",
+        "osm_65777805_6_forward",
+        "osm_65777805_7_forward",
+        "osm_65777805_8_forward"
+      ],
+      "exterior_length_m": 71.58335143579258,
+      "useful_length_upper_bound_m": 10.154650382325485,
+      "native_capacity_upper_bound_pcu_h": 4000.0,
+      "native_lanes": 2.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_65786237_0_forward",
+      "anchor_link": "osm_699533700_6_backward",
+      "crossing_link": "osm_65786237_0_forward",
+      "observation_link": "osm_65786237_1_forward",
+      "link_ids": [
+        "osm_699533700_6_backward",
+        "osm_65786237_0_forward",
+        "osm_65786237_1_forward"
+      ],
+      "exterior_length_m": 47.52618732086833,
+      "useful_length_upper_bound_m": 9.505237464173668,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_65786237_0_forward",
+      "anchor_link": "osm_699533700_5_forward",
+      "crossing_link": "osm_65786237_0_forward",
+      "observation_link": "osm_65786237_1_forward",
+      "link_ids": [
+        "osm_699533700_5_forward",
+        "osm_65786237_0_forward",
+        "osm_65786237_1_forward"
+      ],
+      "exterior_length_m": 69.13365051278922,
+      "useful_length_upper_bound_m": 13.826730102557839,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_65786237_0_forward",
+      "anchor_link": "osm_65792798_1_forward",
+      "crossing_link": "osm_65786237_0_forward",
+      "observation_link": "osm_65786237_1_forward",
+      "link_ids": [
+        "osm_65792798_1_forward",
+        "osm_65786237_0_forward",
+        "osm_65786237_1_forward"
+      ],
+      "exterior_length_m": 186.1318839819363,
+      "useful_length_upper_bound_m": 86.13188398193631,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_292876837_2_forward",
+      "anchor_link": "osm_45494968_0_forward",
+      "crossing_link": "osm_292876837_2_forward",
+      "observation_link": "osm_1273145791_1_forward",
+      "link_ids": [
+        "osm_45494968_0_forward",
+        "osm_292876837_2_forward",
+        "osm_1273145791_1_forward"
+      ],
+      "exterior_length_m": 61.20494007265367,
+      "useful_length_upper_bound_m": 12.240988014530728,
+      "native_capacity_upper_bound_pcu_h": 4000.0,
+      "native_lanes": 2.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_292876837_2_forward",
+      "anchor_link": "osm_292876837_1_forward",
+      "crossing_link": "osm_292876837_2_forward",
+      "observation_link": "osm_1273145791_1_forward",
+      "link_ids": [
+        "osm_292876837_1_forward",
+        "osm_292876837_2_forward",
+        "osm_1273145791_1_forward"
+      ],
+      "exterior_length_m": 94.61362579658216,
+      "useful_length_upper_bound_m": 18.92272515931643,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_363667895_6_forward",
+      "anchor_link": "osm_363667895_5_forward",
+      "crossing_link": "osm_363667895_6_forward",
+      "observation_link": "osm_42840290_0_forward",
+      "link_ids": [
+        "osm_363667895_5_forward",
+        "osm_363667895_6_forward",
+        "osm_42840290_0_forward"
+      ],
+      "exterior_length_m": 93.81108819440634,
+      "useful_length_upper_bound_m": 18.762217638881268,
+      "native_capacity_upper_bound_pcu_h": 4000.0,
+      "native_lanes": 2.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_363667895_6_forward",
+      "anchor_link": "osm_762765906_1_forward",
+      "crossing_link": "osm_363667895_6_forward",
+      "observation_link": "osm_42840290_0_forward",
+      "link_ids": [
+        "osm_762765906_1_forward",
+        "osm_762765906_2_forward",
+        "osm_1342389560_0_forward",
+        "osm_363667895_6_forward",
+        "osm_42840290_0_forward"
+      ],
+      "exterior_length_m": 228.31164695272471,
+      "useful_length_upper_bound_m": 95.78774785950094,
+      "native_capacity_upper_bound_pcu_h": 4000.0,
+      "native_lanes": 2.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_381097595_5_forward",
+      "anchor_link": "osm_381097595_4_forward",
+      "crossing_link": "osm_381097595_5_forward",
+      "observation_link": "osm_381097595_6_forward",
+      "link_ids": [
+        "osm_381097595_4_forward",
+        "osm_381097595_5_forward",
+        "osm_381097595_6_forward"
+      ],
+      "exterior_length_m": 27.975968837930484,
+      "useful_length_upper_bound_m": 5.595193767586096,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_400043601_9_forward",
+      "anchor_link": "osm_400043601_5_forward",
+      "crossing_link": "osm_400043601_9_forward",
+      "observation_link": "osm_400043601_10_forward",
+      "link_ids": [
+        "osm_400043601_5_forward",
+        "osm_400043601_6_forward",
+        "osm_400043601_7_forward",
+        "osm_400043601_8_forward",
+        "osm_400043601_9_forward",
+        "osm_400043601_10_forward"
+      ],
+      "exterior_length_m": 67.05165540359774,
+      "useful_length_upper_bound_m": 4.917381816437192,
+      "native_capacity_upper_bound_pcu_h": 4000.0,
+      "native_lanes": 2.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_405188986_0_forward",
+      "anchor_link": "osm_381667651_3_forward",
+      "crossing_link": "osm_405188986_0_forward",
+      "observation_link": "osm_406654687_7_forward",
+      "link_ids": [
+        "osm_381667651_3_forward",
+        "osm_405188986_0_forward",
+        "osm_406654687_7_forward"
+      ],
+      "exterior_length_m": 68.52257349701519,
+      "useful_length_upper_bound_m": 13.704514699403035,
+      "native_capacity_upper_bound_pcu_h": 6000.0,
+      "native_lanes": 3.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_405188986_0_forward",
+      "anchor_link": "osm_1274240312_0_forward",
+      "crossing_link": "osm_405188986_0_forward",
+      "observation_link": "osm_406654687_7_forward",
+      "link_ids": [
+        "osm_1274240312_0_forward",
+        "osm_1274240312_1_forward",
+        "osm_405188986_0_forward",
+        "osm_406654687_7_forward"
+      ],
+      "exterior_length_m": 62.12691348879748,
+      "useful_length_upper_bound_m": 11.176191862159158,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_406843605_2_forward",
+      "anchor_link": "osm_406843605_1_forward",
+      "crossing_link": "osm_406843605_2_forward",
+      "observation_link": "osm_406843605_3_forward",
+      "link_ids": [
+        "osm_406843605_1_forward",
+        "osm_406843605_2_forward",
+        "osm_406843605_3_forward"
+      ],
+      "exterior_length_m": 130.9636125972328,
+      "useful_length_upper_bound_m": 30.96361259723281,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_406843605_2_forward",
+      "anchor_link": "osm_381667651_16_forward",
+      "crossing_link": "osm_406843605_2_forward",
+      "observation_link": "osm_406843605_3_forward",
+      "link_ids": [
+        "osm_381667651_16_forward",
+        "osm_406843605_2_forward",
+        "osm_406843605_3_forward"
+      ],
+      "exterior_length_m": 63.92866244850706,
+      "useful_length_upper_bound_m": 12.78573248970141,
+      "native_capacity_upper_bound_pcu_h": 6000.0,
+      "native_lanes": 3.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_406872394_3_backward",
+      "anchor_link": "osm_406872394_4_backward",
+      "crossing_link": "osm_406872394_3_backward",
+      "observation_link": "osm_406872394_2_backward",
+      "link_ids": [
+        "osm_406872394_4_backward",
+        "osm_406872394_3_backward",
+        "osm_406872394_2_backward"
+      ],
+      "exterior_length_m": 29.63225756712243,
+      "useful_length_upper_bound_m": 5.926451513424485,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_511820719_13_forward",
+      "anchor_link": "osm_511820719_6_forward",
+      "crossing_link": "osm_511820719_13_forward",
+      "observation_link": "osm_511820719_14_forward",
+      "link_ids": [
+        "osm_511820719_6_forward",
+        "osm_511820719_7_forward",
+        "osm_511820719_8_forward",
+        "osm_511820719_9_forward",
+        "osm_511820719_10_forward",
+        "osm_511820719_11_forward",
+        "osm_511820719_12_forward",
+        "osm_511820719_13_forward",
+        "osm_511820719_14_forward"
+      ],
+      "exterior_length_m": 153.92404036957794,
+      "useful_length_upper_bound_m": 18.3037504893325,
+      "native_capacity_upper_bound_pcu_h": 4000.0,
+      "native_lanes": 2.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_699533700_4_backward",
+      "anchor_link": "osm_699533700_5_backward",
+      "crossing_link": "osm_699533700_4_backward",
+      "observation_link": "osm_699533700_3_backward",
+      "link_ids": [
+        "osm_699533700_5_backward",
+        "osm_699533700_4_backward",
+        "osm_699533700_3_backward"
+      ],
+      "exterior_length_m": 69.13365051278922,
+      "useful_length_upper_bound_m": 13.826730102557839,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_699533700_4_backward",
+      "anchor_link": "osm_30279775_3_forward",
+      "crossing_link": "osm_699533700_4_backward",
+      "observation_link": "osm_699533700_3_backward",
+      "link_ids": [
+        "osm_30279775_3_forward",
+        "osm_30279775_4_forward",
+        "osm_699533700_4_backward",
+        "osm_699533700_3_backward"
+      ],
+      "exterior_length_m": 46.46124213758383,
+      "useful_length_upper_bound_m": 6.2508600209478935,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_917940877_0_forward",
+      "anchor_link": "osm_260936848_14_forward",
+      "crossing_link": "osm_917940877_0_forward",
+      "observation_link": "osm_1273145789_0_forward",
+      "link_ids": [
+        "osm_260936848_14_forward",
+        "osm_917940877_0_forward",
+        "osm_1273145789_0_forward"
+      ],
+      "exterior_length_m": 39.390840736190285,
+      "useful_length_upper_bound_m": 7.878168147238057,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_917940877_0_forward",
+      "anchor_link": "osm_1273145790_1_forward",
+      "crossing_link": "osm_917940877_0_forward",
+      "observation_link": "osm_1273145789_0_forward",
+      "link_ids": [
+        "osm_1273145790_1_forward",
+        "osm_917940877_0_forward",
+        "osm_1273145789_0_forward"
+      ],
+      "exterior_length_m": 27.620860510112962,
+      "useful_length_upper_bound_m": 5.52417210202259,
+      "native_capacity_upper_bound_pcu_h": 6000.0,
+      "native_lanes": 3.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_930035054_6_forward",
+      "anchor_link": "osm_930035054_4_forward",
+      "crossing_link": "osm_930035054_6_forward",
+      "observation_link": "osm_930035054_7_forward",
+      "link_ids": [
+        "osm_930035054_4_forward",
+        "osm_930035054_5_forward",
+        "osm_930035054_6_forward",
+        "osm_930035054_7_forward"
+      ],
+      "exterior_length_m": 33.91919658460016,
+      "useful_length_upper_bound_m": 5.398244845899228,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "entry-osm_930035054_6_forward",
+      "anchor_link": "osm_381667651_19_forward",
+      "crossing_link": "osm_930035054_6_forward",
+      "observation_link": "osm_930035054_7_forward",
+      "link_ids": [
+        "osm_381667651_19_forward",
+        "osm_930035054_6_forward",
+        "osm_930035054_7_forward"
+      ],
+      "exterior_length_m": 65.0383627559199,
+      "useful_length_upper_bound_m": 13.00767255118398,
+      "native_capacity_upper_bound_pcu_h": 6000.0,
+      "native_lanes": 3.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    }
+  ],
+  "exit_anchor_candidates": [
+    {
+      "id": "exit-osm_30263020_51_forward",
+      "anchor_link": "osm_381667651_19_forward",
+      "crossing_link": "osm_30263020_51_forward",
+      "observation_link": "osm_30263020_50_forward",
+      "link_ids": [
+        "osm_30263020_50_forward",
+        "osm_30263020_51_forward",
+        "osm_381667651_19_forward"
+      ],
+      "exterior_length_m": 65.0383627559199,
+      "useful_length_upper_bound_m": 13.00767255118398,
+      "native_capacity_upper_bound_pcu_h": 6000.0,
+      "native_lanes": 3.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_30263020_51_forward",
+      "anchor_link": "osm_30263020_52_forward",
+      "crossing_link": "osm_30263020_51_forward",
+      "observation_link": "osm_30263020_50_forward",
+      "link_ids": [
+        "osm_30263020_50_forward",
+        "osm_30263020_51_forward",
+        "osm_30263020_52_forward"
+      ],
+      "exterior_length_m": 34.72932113595444,
+      "useful_length_upper_bound_m": 6.945864227190889,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_30279769_73_forward",
+      "anchor_link": "osm_30279769_75_forward",
+      "crossing_link": "osm_30279769_73_forward",
+      "observation_link": "osm_30279769_72_forward",
+      "link_ids": [
+        "osm_30279769_72_forward",
+        "osm_30279769_73_forward",
+        "osm_30279769_74_forward",
+        "osm_30279769_75_forward"
+      ],
+      "exterior_length_m": 65.65330836982173,
+      "useful_length_upper_bound_m": 12.127057643938933,
+      "native_capacity_upper_bound_pcu_h": 4000.0,
+      "native_lanes": 2.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_30289506_12_forward",
+      "anchor_link": "osm_30289506_13_forward",
+      "crossing_link": "osm_30289506_12_forward",
+      "observation_link": "osm_30289506_11_forward",
+      "link_ids": [
+        "osm_30289506_11_forward",
+        "osm_30289506_12_forward",
+        "osm_30289506_13_forward"
+      ],
+      "exterior_length_m": 105.00917599954217,
+      "useful_length_upper_bound_m": 21.001835199908427,
+      "native_capacity_upper_bound_pcu_h": 4000.0,
+      "native_lanes": 2.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_58673255_6_forward",
+      "anchor_link": "osm_58673255_12_forward",
+      "crossing_link": "osm_58673255_6_forward",
+      "observation_link": "osm_58673255_5_forward",
+      "link_ids": [
+        "osm_58673255_5_forward",
+        "osm_58673255_6_forward",
+        "osm_58673255_7_forward",
+        "osm_58673255_8_forward",
+        "osm_58673255_9_forward",
+        "osm_58673255_10_forward",
+        "osm_58673255_11_forward",
+        "osm_58673255_12_forward"
+      ],
+      "exterior_length_m": 88.39828758238173,
+      "useful_length_upper_bound_m": 6.963549485842815,
+      "native_capacity_upper_bound_pcu_h": 4000.0,
+      "native_lanes": 2.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_58692312_4_forward",
+      "anchor_link": "osm_58692312_5_forward",
+      "crossing_link": "osm_58692312_4_forward",
+      "observation_link": "osm_58692312_3_forward",
+      "link_ids": [
+        "osm_58692312_3_forward",
+        "osm_58692312_4_forward",
+        "osm_58692312_5_forward"
+      ],
+      "exterior_length_m": 33.18024735062474,
+      "useful_length_upper_bound_m": 6.636049470124945,
+      "native_capacity_upper_bound_pcu_h": 4000.0,
+      "native_lanes": 2.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_58692312_4_forward",
+      "anchor_link": "osm_381667651_21_forward",
+      "crossing_link": "osm_58692312_4_forward",
+      "observation_link": "osm_58692312_3_forward",
+      "link_ids": [
+        "osm_58692312_3_forward",
+        "osm_58692312_4_forward",
+        "osm_381667651_21_forward"
+      ],
+      "exterior_length_m": 66.32478509072868,
+      "useful_length_upper_bound_m": 66.32478509072868,
+      "native_capacity_upper_bound_pcu_h": 6000.0,
+      "native_lanes": 3.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_58692343_53_forward",
+      "anchor_link": "osm_58692343_54_forward",
+      "crossing_link": "osm_58692343_53_forward",
+      "observation_link": "osm_58692343_52_forward",
+      "link_ids": [
+        "osm_58692343_52_forward",
+        "osm_58692343_53_forward",
+        "osm_58692343_54_forward"
+      ],
+      "exterior_length_m": 20.427998068959052,
+      "useful_length_upper_bound_m": 20.427998068959052,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_60237264_2_forward",
+      "anchor_link": "osm_60237264_3_forward",
+      "crossing_link": "osm_60237264_2_forward",
+      "observation_link": "osm_1196283991_0_backward",
+      "link_ids": [
+        "osm_1196283991_0_backward",
+        "osm_60237264_2_forward",
+        "osm_60237264_3_forward"
+      ],
+      "exterior_length_m": 67.18423401625463,
+      "useful_length_upper_bound_m": 13.436846803250923,
+      "native_capacity_upper_bound_pcu_h": 6000.0,
+      "native_lanes": 3.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_359045350_9_forward",
+      "anchor_link": "osm_359045350_10_forward",
+      "crossing_link": "osm_359045350_9_forward",
+      "observation_link": "osm_359045350_8_forward",
+      "link_ids": [
+        "osm_359045350_8_forward",
+        "osm_359045350_9_forward",
+        "osm_359045350_10_forward"
+      ],
+      "exterior_length_m": 22.941584735533525,
+      "useful_length_upper_bound_m": 22.941584735533525,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_381158277_4_forward",
+      "anchor_link": "osm_381158277_5_forward",
+      "crossing_link": "osm_381158277_4_forward",
+      "observation_link": "osm_381158277_3_forward",
+      "link_ids": [
+        "osm_381158277_3_forward",
+        "osm_381158277_4_forward",
+        "osm_381158277_5_forward"
+      ],
+      "exterior_length_m": 105.49309341674439,
+      "useful_length_upper_bound_m": 21.098618683348874,
+      "native_capacity_upper_bound_pcu_h": 6000.0,
+      "native_lanes": 3.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_382465689_1_forward",
+      "anchor_link": "osm_382465689_5_forward",
+      "crossing_link": "osm_382465689_1_forward",
+      "observation_link": "osm_382465689_0_forward",
+      "link_ids": [
+        "osm_382465689_0_forward",
+        "osm_382465689_1_forward",
+        "osm_382465689_2_forward",
+        "osm_382465689_3_forward",
+        "osm_382465689_4_forward",
+        "osm_382465689_5_forward"
+      ],
+      "exterior_length_m": 78.03730540165655,
+      "useful_length_upper_bound_m": 7.692734229142587,
+      "native_capacity_upper_bound_pcu_h": 4000.0,
+      "native_lanes": 2.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_382465690_6_forward",
+      "anchor_link": "osm_382465690_8_forward",
+      "crossing_link": "osm_382465690_6_forward",
+      "observation_link": "osm_382465690_5_forward",
+      "link_ids": [
+        "osm_382465690_5_forward",
+        "osm_382465690_6_forward",
+        "osm_382465690_7_forward",
+        "osm_382465690_8_forward"
+      ],
+      "exterior_length_m": 44.18639686822736,
+      "useful_length_upper_bound_m": 39.07199643956523,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_400843677_5_forward",
+      "anchor_link": "osm_400843677_6_forward",
+      "crossing_link": "osm_400843677_5_forward",
+      "observation_link": "osm_400843677_4_forward",
+      "link_ids": [
+        "osm_400843677_4_forward",
+        "osm_400843677_5_forward",
+        "osm_400843677_6_forward"
+      ],
+      "exterior_length_m": 79.74771496455394,
+      "useful_length_upper_bound_m": 15.949542992910786,
+      "native_capacity_upper_bound_pcu_h": 6000.0,
+      "native_lanes": 3.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_405188986_0_backward",
+      "anchor_link": "osm_381667651_4_forward",
+      "crossing_link": "osm_405188986_0_backward",
+      "observation_link": "osm_406654687_6_forward",
+      "link_ids": [
+        "osm_406654687_6_forward",
+        "osm_405188986_0_backward",
+        "osm_381667651_4_forward"
+      ],
+      "exterior_length_m": 95.39083735367849,
+      "useful_length_upper_bound_m": 19.078167470735693,
+      "native_capacity_upper_bound_pcu_h": 6000.0,
+      "native_lanes": 3.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_405188986_0_backward",
+      "anchor_link": "osm_1274240312_0_backward",
+      "crossing_link": "osm_405188986_0_backward",
+      "observation_link": "osm_406654687_6_forward",
+      "link_ids": [
+        "osm_406654687_6_forward",
+        "osm_405188986_0_backward",
+        "osm_1274240312_1_backward",
+        "osm_1274240312_0_backward"
+      ],
+      "exterior_length_m": 62.12691348879748,
+      "useful_length_upper_bound_m": 11.176191862159158,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_406872394_3_forward",
+      "anchor_link": "osm_406872394_4_forward",
+      "crossing_link": "osm_406872394_3_forward",
+      "observation_link": "osm_406872394_2_forward",
+      "link_ids": [
+        "osm_406872394_2_forward",
+        "osm_406872394_3_forward",
+        "osm_406872394_4_forward"
+      ],
+      "exterior_length_m": 29.63225756712243,
+      "useful_length_upper_bound_m": 5.926451513424485,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_420120096_33_forward",
+      "anchor_link": "osm_381667651_15_forward",
+      "crossing_link": "osm_420120096_33_forward",
+      "observation_link": "osm_420120096_32_forward",
+      "link_ids": [
+        "osm_420120096_32_forward",
+        "osm_420120096_33_forward",
+        "osm_381667651_15_forward"
+      ],
+      "exterior_length_m": 75.93641113572356,
+      "useful_length_upper_bound_m": 15.187282227144706,
+      "native_capacity_upper_bound_pcu_h": 6000.0,
+      "native_lanes": 3.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_699533700_4_forward",
+      "anchor_link": "osm_699533700_5_forward",
+      "crossing_link": "osm_699533700_4_forward",
+      "observation_link": "osm_699533700_3_forward",
+      "link_ids": [
+        "osm_699533700_3_forward",
+        "osm_699533700_4_forward",
+        "osm_699533700_5_forward"
+      ],
+      "exterior_length_m": 69.13365051278922,
+      "useful_length_upper_bound_m": 13.826730102557839,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_699533700_4_forward",
+      "anchor_link": "osm_30279775_3_backward",
+      "crossing_link": "osm_699533700_4_forward",
+      "observation_link": "osm_699533700_3_forward",
+      "link_ids": [
+        "osm_699533700_3_forward",
+        "osm_699533700_4_forward",
+        "osm_30279775_4_backward",
+        "osm_30279775_3_backward"
+      ],
+      "exterior_length_m": 46.46124213758383,
+      "useful_length_upper_bound_m": 6.2508600209478935,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_699533700_8_backward",
+      "anchor_link": "osm_699533700_7_backward",
+      "crossing_link": "osm_699533700_8_backward",
+      "observation_link": "osm_1273145791_1_forward",
+      "link_ids": [
+        "osm_1273145791_1_forward",
+        "osm_699533700_8_backward",
+        "osm_699533700_7_backward"
+      ],
+      "exterior_length_m": 25.441161119918775,
+      "useful_length_upper_bound_m": 5.088232223983752,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_734011348_14_forward",
+      "anchor_link": "osm_734011348_16_forward",
+      "crossing_link": "osm_734011348_14_forward",
+      "observation_link": "osm_699533700_2_forward",
+      "link_ids": [
+        "osm_699533700_2_forward",
+        "osm_734011348_14_forward",
+        "osm_734011348_15_forward",
+        "osm_734011348_16_forward"
+      ],
+      "exterior_length_m": 72.12154660785913,
+      "useful_length_upper_bound_m": 56.636896556989,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_734011348_14_forward",
+      "anchor_link": "osm_44486997_1_backward",
+      "crossing_link": "osm_734011348_14_forward",
+      "observation_link": "osm_699533700_2_forward",
+      "link_ids": [
+        "osm_699533700_2_forward",
+        "osm_734011348_14_forward",
+        "osm_734011348_15_forward",
+        "osm_44486997_1_backward"
+      ],
+      "exterior_length_m": 87.51367697253673,
+      "useful_length_upper_bound_m": 14.40580538433332,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_734011348_14_forward",
+      "anchor_link": "osm_44487200_0_forward",
+      "crossing_link": "osm_734011348_14_forward",
+      "observation_link": "osm_699533700_2_forward",
+      "link_ids": [
+        "osm_699533700_2_forward",
+        "osm_734011348_14_forward",
+        "osm_44487200_0_forward"
+      ],
+      "exterior_length_m": 71.97726020347272,
+      "useful_length_upper_bound_m": 14.395452040694543,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_762765906_0_forward",
+      "anchor_link": "osm_762765906_1_forward",
+      "crossing_link": "osm_762765906_0_forward",
+      "observation_link": "osm_762765908_3_forward",
+      "link_ids": [
+        "osm_762765908_3_forward",
+        "osm_762765906_0_forward",
+        "osm_762765906_1_forward"
+      ],
+      "exterior_length_m": 195.78774785950094,
+      "useful_length_upper_bound_m": 95.78774785950094,
+      "native_capacity_upper_bound_pcu_h": 4000.0,
+      "native_lanes": 2.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_1051440046_6_forward",
+      "anchor_link": "osm_1051440046_7_forward",
+      "crossing_link": "osm_1051440046_6_forward",
+      "observation_link": "osm_1051440046_5_forward",
+      "link_ids": [
+        "osm_1051440046_5_forward",
+        "osm_1051440046_6_forward",
+        "osm_1051440046_7_forward"
+      ],
+      "exterior_length_m": 35.834239717756056,
+      "useful_length_upper_bound_m": 35.834239717756056,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_1270930401_0_forward",
+      "anchor_link": "osm_260940553_0_forward",
+      "crossing_link": "osm_1270930401_0_forward",
+      "observation_link": "osm_1273145789_0_forward",
+      "link_ids": [
+        "osm_1273145789_0_forward",
+        "osm_1270930401_0_forward",
+        "osm_260940553_0_forward"
+      ],
+      "exterior_length_m": 52.76308359405135,
+      "useful_length_upper_bound_m": 10.55261671881027,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_1270930401_0_forward",
+      "anchor_link": "osm_1273145790_0_forward",
+      "crossing_link": "osm_1270930401_0_forward",
+      "observation_link": "osm_1273145789_0_forward",
+      "link_ids": [
+        "osm_1273145789_0_forward",
+        "osm_1270930401_0_forward",
+        "osm_1273145790_0_forward"
+      ],
+      "exterior_length_m": 70.14071331304504,
+      "useful_length_upper_bound_m": 14.028142662609007,
+      "native_capacity_upper_bound_pcu_h": 6000.0,
+      "native_lanes": 3.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_1275050774_0_forward",
+      "anchor_link": "osm_45494968_0_forward",
+      "crossing_link": "osm_1275050774_0_forward",
+      "observation_link": "osm_1273145791_1_forward",
+      "link_ids": [
+        "osm_1273145791_1_forward",
+        "osm_1275050774_0_forward",
+        "osm_45494968_0_forward"
+      ],
+      "exterior_length_m": 61.20494007265367,
+      "useful_length_upper_bound_m": 12.240988014530728,
+      "native_capacity_upper_bound_pcu_h": 4000.0,
+      "native_lanes": 2.0,
+      "lane_source": "osm:lanes",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    },
+    {
+      "id": "exit-osm_1275050774_0_forward",
+      "anchor_link": "osm_1243273719_0_forward",
+      "crossing_link": "osm_1275050774_0_forward",
+      "observation_link": "osm_1273145791_1_forward",
+      "link_ids": [
+        "osm_1273145791_1_forward",
+        "osm_1275050774_0_forward",
+        "osm_1243273719_0_forward"
+      ],
+      "exterior_length_m": 98.73883222109114,
+      "useful_length_upper_bound_m": 98.73883222109114,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "native_lanes": 1.0,
+      "lane_source": "assumed:one_lane",
+      "verified_geometry_and_lane_connectivity": true,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Activity/incorporation evidence unavailable; through-link capacity is only an upper bound"
+      }
+    }
+  ],
+  "blocked_crossings": [
+    {
+      "link_id": "osm_30263035_0_forward",
+      "from_node": "333531505",
+      "to_node": "14045368121",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [],
+      "allowed_successors": [
+        "osm_30263035_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_30263036_0_forward",
+      "from_node": "3745025187",
+      "to_node": "12676972230",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [],
+      "allowed_successors": [
+        "osm_30263036_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_59566258_0_forward",
+      "from_node": "738886780",
+      "to_node": "9890753391",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [
+        "osm_59566258_0_backward"
+      ],
+      "allowed_successors": [
+        "osm_59566258_0_backward",
+        "osm_59566258_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_59566258_0_backward",
+      "from_node": "9890753391",
+      "to_node": "738886780",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [
+        "osm_59566258_0_forward",
+        "osm_59566258_1_backward"
+      ],
+      "allowed_successors": [
+        "osm_59566258_0_forward"
+      ]
+    },
+    {
+      "link_id": "osm_67112965_0_forward",
+      "from_node": "568190395",
+      "to_node": "410441414",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [],
+      "allowed_successors": [
+        "osm_1358273945_0_forward",
+        "osm_34994099_0_forward"
+      ]
+    },
+    {
+      "link_id": "osm_142995412_0_forward",
+      "from_node": "1564620804",
+      "to_node": "13571809980",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [],
+      "allowed_successors": [
+        "osm_142995412_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_381158292_0_forward",
+      "from_node": "333864549",
+      "to_node": "565307547",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [],
+      "allowed_successors": [
+        "osm_381158292_1_forward",
+        "osm_384747970_0_forward"
+      ]
+    },
+    {
+      "link_id": "osm_405703103_1_forward",
+      "from_node": "333864477",
+      "to_node": "333864557",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [
+        "osm_384747970_1_forward",
+        "osm_384747970_2_backward",
+        "osm_405703103_0_forward",
+        "osm_405703103_1_backward"
+      ],
+      "allowed_successors": [
+        "osm_405703103_1_backward"
+      ]
+    },
+    {
+      "link_id": "osm_405703103_1_backward",
+      "from_node": "333864557",
+      "to_node": "333864477",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [
+        "osm_405703103_1_forward"
+      ],
+      "allowed_successors": [
+        "osm_384747970_1_backward",
+        "osm_384747970_2_forward",
+        "osm_405703103_0_backward",
+        "osm_405703103_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_699533700_8_forward",
+      "reason": "No immediately connected interior observation respecting lanes"
+    },
+    {
+      "link_id": "osm_732305247_8_forward",
+      "from_node": "13575036647",
+      "to_node": "1903163097",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [
+        "osm_732305247_7_forward"
+      ],
+      "allowed_successors": []
+    },
+    {
+      "link_id": "osm_1467361288_0_forward",
+      "from_node": "518265473",
+      "to_node": "12120749824",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [],
+      "allowed_successors": [
+        "osm_1308865948_0_forward",
+        "osm_1467361288_1_forward"
+      ]
+    }
+  ],
+  "interior_access_candidates": [
+    {
+      "link_id": "osm_390176417_2_forward",
+      "osm_way": "390176417",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 9.895058916140748,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_390176418_0_forward",
+      "osm_way": "390176418",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 10.890789633029435,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_390176418_1_forward",
+      "osm_way": "390176418",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 4.623413217262414,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_390176419_0_forward",
+      "osm_way": "390176419",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 10.828685609315542,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_406701906_3_forward",
+      "osm_way": "406701906",
+      "service": "driveway",
+      "useful_length_upper_bound_m": 6.383091849094342,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_406701907_9_forward",
+      "osm_way": "406701907",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 8.317607221917186,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_406701907_9_backward",
+      "osm_way": "406701907",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 8.317607221917186,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_488464043_0_forward",
+      "osm_way": "488464043",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.665619423080667,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_488464043_0_backward",
+      "osm_way": "488464043",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.665619423080667,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_989735829_1_forward",
+      "osm_way": "989735829",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 5.550541849568997,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_989735831_1_forward",
+      "osm_way": "989735831",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 9.356274286559398,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_989735832_1_forward",
+      "osm_way": "989735832",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 10.396150321879205,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095527693_1_forward",
+      "osm_way": "1095527693",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 11.139094075570405,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095527693_1_backward",
+      "osm_way": "1095527693",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 11.139094075570405,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095527695_0_forward",
+      "osm_way": "1095527695",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.515499692472687,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095527695_0_backward",
+      "osm_way": "1095527695",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.515499692472687,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095551808_0_forward",
+      "osm_way": "1095551808",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.038554126352967,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095551808_0_backward",
+      "osm_way": "1095551808",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.038554126352967,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095551808_2_forward",
+      "osm_way": "1095551808",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.040738777279092,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095551808_2_backward",
+      "osm_way": "1095551808",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.040738777279092,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095551811_1_forward",
+      "osm_way": "1095551811",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 4.813906657614229,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095551811_1_backward",
+      "osm_way": "1095551811",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 4.813906657614229,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095551811_2_forward",
+      "osm_way": "1095551811",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 6.724267976360348,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095551811_2_backward",
+      "osm_way": "1095551811",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 6.724267976360348,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095760001_3_forward",
+      "osm_way": "1095760001",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 6.8445939335693815,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095760001_3_backward",
+      "osm_way": "1095760001",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 6.8445939335693815,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095760094_0_forward",
+      "osm_way": "1095760094",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.482712775991164,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095760094_0_backward",
+      "osm_way": "1095760094",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.482712775991164,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095760124_0_forward",
+      "osm_way": "1095760124",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 12.019104914560842,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1095760124_0_backward",
+      "osm_way": "1095760124",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 12.019104914560842,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1107835856_7_forward",
+      "osm_way": "1107835856",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 5.278878808894699,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1159529860_0_forward",
+      "osm_way": "1159529860",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 5.260211494286203,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1159529860_0_backward",
+      "osm_way": "1159529860",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 5.260211494286203,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1174627092_0_forward",
+      "osm_way": "1174627092",
+      "service": "driveway",
+      "useful_length_upper_bound_m": 4.8405802105050455,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1174627092_0_backward",
+      "osm_way": "1174627092",
+      "service": "driveway",
+      "useful_length_upper_bound_m": 4.8405802105050455,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1196002697_3_forward",
+      "osm_way": "1196002697",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 5.921570407384937,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1196002697_3_backward",
+      "osm_way": "1196002697",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 5.921570407384937,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1196002697_9_forward",
+      "osm_way": "1196002697",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 6.581527373763333,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1196002697_9_backward",
+      "osm_way": "1196002697",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 6.581527373763333,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1196283990_1_forward",
+      "osm_way": "1196283990",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 12.769344149971687,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1196283990_1_backward",
+      "osm_way": "1196283990",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 12.769344149971687,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1196283991_2_forward",
+      "osm_way": "1196283991",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 14.099180053661968,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1196283991_2_backward",
+      "osm_way": "1196283991",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 14.099180053661968,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1197017583_1_forward",
+      "osm_way": "1197017583",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 5.651273132590781,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1214455884_0_forward",
+      "osm_way": "1214455884",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.68581865267107,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1214455884_0_backward",
+      "osm_way": "1214455884",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.68581865267107,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1214455884_4_forward",
+      "osm_way": "1214455884",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.220916221128782,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1214455884_4_backward",
+      "osm_way": "1214455884",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.220916221128782,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1218656796_0_forward",
+      "osm_way": "1218656796",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.211070184628667,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1218656796_2_forward",
+      "osm_way": "1218656796",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 5.967481011877641,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1267242423_1_forward",
+      "osm_way": "1267242423",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.124882541007359,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1272882110_0_forward",
+      "osm_way": "1272882110",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 8.388995060961989,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1272882111_5_forward",
+      "osm_way": "1272882111",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.055918459203539,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1272882111_12_forward",
+      "osm_way": "1272882111",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.845923825181501,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1274275468_3_forward",
+      "osm_way": "1274275468",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 5.170348125281599,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1274275468_3_backward",
+      "osm_way": "1274275468",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 5.170348125281599,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1274275468_9_forward",
+      "osm_way": "1274275468",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 6.034808013206856,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1274275468_9_backward",
+      "osm_way": "1274275468",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 6.034808013206856,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1392432467_0_forward",
+      "osm_way": "1392432467",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.89291412388172,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1392432467_0_backward",
+      "osm_way": "1392432467",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 7.89291412388172,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1392432602_0_forward",
+      "osm_way": "1392432602",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 5.93241480041392,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    },
+    {
+      "link_id": "osm_1392432602_0_backward",
+      "osm_way": "1392432602",
+      "service": "parking_aisle",
+      "useful_length_upper_bound_m": 5.93241480041392,
+      "native_capacity_upper_bound_pcu_h": 2000.0,
+      "activity_allowed": null,
+      "incorporation_capacity_pcu_h": null,
+      "review": {
+        "verified": false,
+        "reason": "Mapped driveway/parking aisle is a candidate, not permission or measured incorporation flow"
+      }
+    }
+  ],
+  "directed_connectivity": [
+    {
+      "entry_anchor": "osm_30279782_1_forward",
+      "reachable_interior_links": 5339,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_381667651_0_forward",
+      "reachable_interior_links": 5334,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_30288333_1_forward",
+      "reachable_interior_links": 5334,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_59566215_4_forward",
+      "reachable_interior_links": 5336,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_44486997_0_backward",
+      "reachable_interior_links": 5334,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_65777805_5_forward",
+      "reachable_interior_links": 5349,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_699533700_6_backward",
+      "reachable_interior_links": 5335,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_699533700_5_forward",
+      "reachable_interior_links": 5335,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_65792798_1_forward",
+      "reachable_interior_links": 5335,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_45494968_0_forward",
+      "reachable_interior_links": 1,
+      "reachable_exit_anchors": [
+        "osm_1243273719_0_forward",
+        "osm_45494968_0_forward",
+        "osm_699533700_7_backward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_292876837_1_forward",
+      "reachable_interior_links": 1,
+      "reachable_exit_anchors": [
+        "osm_1243273719_0_forward",
+        "osm_45494968_0_forward",
+        "osm_699533700_7_backward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_363667895_5_forward",
+      "reachable_interior_links": 5334,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_762765906_1_forward",
+      "reachable_interior_links": 5334,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_381097595_4_forward",
+      "reachable_interior_links": 5340,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_400043601_5_forward",
+      "reachable_interior_links": 5372,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_381667651_3_forward",
+      "reachable_interior_links": 5334,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_1274240312_0_forward",
+      "reachable_interior_links": 5334,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_406843605_1_forward",
+      "reachable_interior_links": 5337,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_381667651_16_forward",
+      "reachable_interior_links": 5337,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_406872394_4_backward",
+      "reachable_interior_links": 5334,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_511820719_6_forward",
+      "reachable_interior_links": 5352,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_699533700_5_backward",
+      "reachable_interior_links": 5334,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_30279775_3_forward",
+      "reachable_interior_links": 5334,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_260936848_14_forward",
+      "reachable_interior_links": 5334,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_1273145790_1_forward",
+      "reachable_interior_links": 5334,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_930035054_4_forward",
+      "reachable_interior_links": 5337,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    },
+    {
+      "entry_anchor": "osm_381667651_19_forward",
+      "reachable_interior_links": 5337,
+      "reachable_exit_anchors": [
+        "osm_1051440046_7_forward",
+        "osm_1243273719_0_forward",
+        "osm_1273145790_0_forward",
+        "osm_1274240312_0_backward",
+        "osm_260940553_0_forward",
+        "osm_30263020_52_forward",
+        "osm_30279769_75_forward",
+        "osm_30279775_3_backward",
+        "osm_30289506_13_forward",
+        "osm_359045350_10_forward",
+        "osm_381158277_5_forward",
+        "osm_381667651_15_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_21_forward",
+        "osm_381667651_4_forward",
+        "osm_400843677_6_forward",
+        "osm_406872394_4_forward",
+        "osm_44486997_1_backward",
+        "osm_44487200_0_forward",
+        "osm_45494968_0_forward",
+        "osm_58673255_12_forward",
+        "osm_58692312_5_forward",
+        "osm_58692343_54_forward",
+        "osm_60237264_3_forward",
+        "osm_699533700_5_forward",
+        "osm_699533700_7_backward",
+        "osm_734011348_16_forward",
+        "osm_762765906_1_forward"
+      ]
+    }
+  ],
+  "eligible_entry_anchor_count": 27,
+  "eligible_exit_anchor_count": 30,
+  "connected_entry_exit_pairs": 706,
+  "missing_conditions": [
+    "Document activity permission and incorporation capacity for specific external anchors and internal sites.",
+    "Resolve OSM turn restrictions in a separately authorized network/lane revision; see osm-turn-evidence.json.",
+    "Native through-link capacities/assumed lanes are not measured incorporation capacities.",
+    "User must run integrated Validate and real 180000 preflight; neither was executed.",
+    "Completed/valid, body-clearance, actual traffic completion and screening require a real run."
+  ]
+}

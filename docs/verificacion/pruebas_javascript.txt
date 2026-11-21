@@ -1,0 +1,19 @@
+Fecha local: 2026-11-20. Pruebas Node en memoria; sin navegador, GPU, servidores ni MATSim/QSim.
+Directorio: C:\Users\gegdg\Documents\.UVG\Sim\2026-21352-garcia-donis-gabriel-estuardo\src
+Node: v22.12.0
+COMMAND: node python/test_simz1_vehicle_dimensions.cjs
+PASS: exact defaults, visual/physical/fallback precedence, malformed-record retention, PCU independence, long rigid curves and honest narrow-turn limits
+EXIT_CODE: 0
+COMMAND: node python/test_simz1_vehicle_card.cjs
+PASS: hover/leave, six fields, real identity, historical type, current/maximum separation and no hover fetch/layer churn
+PASS: hover persists on a stop, leaves with moving vehicle, and paused signal inspection updates only DOM
+PASS: pin priority, changing agent, stale asynchronous response, X/Escape/background and independent population count
+PASS: six backed types, unknown historical type, no inferred category, unknown motion/maximum/estimate and recorded wait 0
+PASS: journey response must preserve selected vehicle as well as run/person/trip identity
+PASS: 1x/120x simulation clock, pause, seek/window/buffering, camera stability, exact arrival and no retrospective prediction
+PASS: hidden CSS keeps an unselected card out of the map
+EXIT_CODE: 0
+COMMAND: node python/test_simz1_vehicle_picking_dimensions.cjs
+PASS: declared body validity, 8/18 CSS-pixel margins, independent PCU/native/envelope, long bodies, rotations and pitched curved poses
+PASS: hover follows the actual body under a stationary mouse across forward/reverse seek
+EXIT_CODE: 0

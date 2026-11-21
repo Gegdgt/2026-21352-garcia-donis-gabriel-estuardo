@@ -1,0 +1,22 @@
+{
+  "utc": "2026-11-02T20:51:03.188944+00:00",
+  "phase": "blocked_for_new_massive_pending_demonstrated_repair_or_explicit_priority_model_revision",
+  "launch_id": "c1c0dda877de4cfbb504f5baf3f82de1",
+  "run_id": "simz1-9d7db3ba801841f9b501209229f58bfc",
+  "native_running": false,
+  "observer_running": false,
+  "observer_exit_code": 0,
+  "run_exit_code": 1,
+  "source_fingerprint": "bb6d1453a566405281d76968e9470615ff0e1d66e8bd50d598511a190bb26563",
+  "coverage_seconds": 22224,
+  "first_window_violations": 13,
+  "evidence": [
+    "Run-3-retention-conclusion.json",
+    "Run-3-prefix-reconciliation.json",
+    "side-priority-pinned-_ui2f7yk/execution.json"
+  ],
+  "next": "Read the causal conclusion and reproduce the pinned native fixture; no further massive without new demonstrated repair or explicit model scope change, plus MinFreeGiB=100",
+  "reproduce_command": "& .\\.venv\\Scripts\\python.exe -B runtime/2avenida-20261102/run_side_priority_check.py",
+  "process_verification": "runtime\\2avenida-20261102\\final-process-check.json",
+  "processes_verified_utc": "2026-11-02T20:53:11.5320856Z"
+}

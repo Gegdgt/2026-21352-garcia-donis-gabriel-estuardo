@@ -1,0 +1,15 @@
+{
+  "schema": "simz1-fixed-day-observation",
+  "version": "fixed-day-24h-v1",
+  "demand_end_seconds_exclusive": 86400,
+  "observation_end_seconds": 86400,
+  "native_qsim_end_seconds": 86399,
+  "native_time_step_seconds": 1,
+  "native_end_interpretation": "onlyUseEndtime",
+  "native_boundary_semantics": "MATSim15 executes endTime plus one step; last physical step is 86400 inclusive",
+  "pre_cleanup_census_required": true,
+  "private_pending_traffic_threshold_seconds_exclusive": 3600,
+  "freight_pending_duration_threshold_seconds": null,
+  "freight_close_plus3600": "historical_indicator_only_not_removal_or_qsim_stop",
+  "historical_runs_reinterpreted": false
+}

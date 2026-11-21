@@ -1,0 +1,99 @@
+{
+  "schema": "simz1-final-experiments-v7",
+  "draw": {
+    "algorithm": "fixed-staged-no-draw-v1",
+    "authorized_non_public_totals": [
+      1000,
+      10000,
+      55000,
+      110000
+    ]
+  },
+  "demand_seed": 20261023,
+  "service_date": "2026-10-23",
+  "public_vehicles": 269,
+  "freight_completion_policy": "freight-entry-and-completion-close-plus3600-v2",
+  "demand_end_seconds": 86400,
+  "observation_end_seconds": 86400,
+  "signal_variant": "l18-local-synthetic-offsets-v1",
+  "scenarios": {
+    "run1000": {
+      "total_non_public_vehicles": 1000,
+      "iterations": 1,
+      "population_group": "origin-gap-1000",
+      "composition": {
+        "carro": 440,
+        "moto": 550,
+        "pesado": 10,
+        "public_transport": 269
+      }
+    },
+    "run10000": {
+      "total_non_public_vehicles": 10000,
+      "iterations": 1,
+      "population_group": "origin-gap-10000",
+      "composition": {
+        "carro": 4400,
+        "moto": 5500,
+        "pesado": 100,
+        "public_transport": 269
+      }
+    },
+    "run55000": {
+      "total_non_public_vehicles": 55000,
+      "iterations": 1,
+      "population_group": "origin-gap-55000",
+      "composition": {
+        "carro": 24200,
+        "moto": 30250,
+        "pesado": 550,
+        "public_transport": 269
+      }
+    },
+    "run110000": {
+      "total_non_public_vehicles": 110000,
+      "iterations": 1,
+      "population_group": "origin-gap-110000",
+      "composition": {
+        "carro": 48400,
+        "moto": 60500,
+        "pesado": 1100,
+        "public_transport": 269
+      }
+    }
+  },
+  "observation_policy": "fixed-day-24h-v1",
+  "native_qsim_end_seconds": 86399,
+  "derived_from": {
+    "path": "scenarios/zona1/experiments/final-20261106-origin-gap-24h-v6.json",
+    "sha256": "3f59e1b4228bbd0471fcd74504b7ea0daf8fce7fe23c77694eeb37172bfe64aa"
+  },
+  "base_inputs": {
+    "source_config": "scenarios/zona1/od/balanced-gateway-v1/access-review-v2/config-l18-local-v1.xml",
+    "agent_catalog": "scenarios/zona1/agent-types-balanced-v1.json",
+    "transit_service": "scenarios/zona1/transit/weekday-v2/service-fleet-176-93-v1.json",
+    "freight_service": "scenarios/zona1/od/balanced-gateway-v1/access-review-v2/freight/service-composition-v3.json",
+    "zone_boundary": "scenarios/zona1/od/balanced-gateway-v1/perimeter.geojson",
+    "od_access_catalog": "scenarios/zona1/od/balanced-gateway-v1/access.json",
+    "od_mix_file": "scenarios/zona1/od/balanced-gateway-v1/mix.json",
+    "day_policy": "src/main/resources/simz1/day-observation-v1.json"
+  },
+  "acceptance_trial_scenario": "run1000",
+  "trial_difference": "N and its composition quotas only; same origin policy and authorized freight entry/completion deadline",
+  "origin_admission_policy": {
+    "version": "physical-gap-origin-v1",
+    "policy_path": "src/main/resources/simz1/origin-admission-v1.json",
+    "policy_sha256": "fe1f0fdcc2b1016ecd32f5353f7a1f8da34300bfe45c5245643ac2fdbfe5c91c"
+  },
+  "postprocessing": {
+    "policy": "native_diagnostic_v1",
+    "replay_preparation": "manual_after_native_validation",
+    "visual_acceptance": "separate_not_certified_by_native_gate"
+  },
+  "freight_timing_policy": {
+    "version": "freight-entry-and-completion-close-plus3600-v2",
+    "policy_path": "src/main/resources/simz1/freight-entry-completion-v2.json",
+    "policy_sha256": "d63a84278a5fe186752b803a01c6f1192d8612142232a2590351a30463a31f8d"
+  },
+  "change_scope": "Freight may enter until its original nominal close plus 3600 seconds inclusive; completion deadline unchanged; no schedule, geometry, OD, physical admission or horizon change"
+}

@@ -1,0 +1,121 @@
+{
+  "schema_version": "simz1-six-v1",
+  "description": "Opt-in proposal for future SimZ1 runs; not a reinterpretation of historical agents.",
+  "denominator": "persons",
+  "horizon_seconds": 86400,
+  "canonical_order": ["Normal", "Motociclista", "Liebre", "Tortuga", "TransportePublico", "TransportePesado"],
+  "allocation": {
+    "rounding": "largest_remainder",
+    "tie_break": "canonical_order",
+    "shuffle": "SimZ1-six-allocation-v1 independent seeded stream",
+    "meaning": "One persistent person category; repeated trips do not change its allocation. Public transport persons are passengers, not service vehicles."
+  },
+  "assumptions": {
+    "source": "User proposal; uncalibrated synthetic parameters",
+    "departure_weight_meaning": "Relative density per second within each half-open interval",
+    "departure_scope": "Planned departures only; no guarantee of arrival or of actual late departures before the horizon",
+    "road_limits": "Effective speed must respect both vehicle maximum and link freespeed; configured link restrictions remain binding",
+    "pcu_scope": "MATSim QSim flow/storage parameter; not a physical footprint or validated motorcycle filtering model",
+    "acceleration": "No profile acceleration integration added to QSim",
+    "motorcycle_filtering": "Not implemented or validated",
+    "municipal_verification": "No PMT restriction or schedule is asserted as verified"
+  },
+  "profiles": {
+    "Normal": {
+      "share_percent": 40,
+      "population_role": "driver",
+      "mode": "car",
+      "vehicle_type": "Normal",
+      "pcu": 1.0,
+      "maximum_speed_kmh": 50.0,
+      "routing_preference": "configured-route-policy",
+      "departure_intervals": [
+        {"start_seconds": 0, "end_seconds": 21600, "weight": 1},
+        {"start_seconds": 21600, "end_seconds": 30600, "weight": 4},
+        {"start_seconds": 30600, "end_seconds": 61200, "weight": 1},
+        {"start_seconds": 61200, "end_seconds": 70200, "weight": 4},
+        {"start_seconds": 70200, "end_seconds": 86400, "weight": 1}
+      ],
+      "access": {"requires_authorized_links": false, "authorized_link_ids": [], "municipal_status": "not_claimed", "source": null}
+    },
+    "Motociclista": {
+      "share_percent": 25,
+      "population_role": "driver",
+      "mode": "car",
+      "vehicle_type": "Motociclista",
+      "pcu": 0.25,
+      "maximum_speed_kmh": 60.0,
+      "routing_preference": "configured-route-policy",
+      "departure_intervals": [{"start_seconds": 0, "end_seconds": 86400, "weight": 1}],
+      "access": {"requires_authorized_links": false, "authorized_link_ids": [], "municipal_status": "not_claimed", "source": null}
+    },
+    "Liebre": {
+      "share_percent": 10,
+      "population_role": "driver",
+      "mode": "car",
+      "vehicle_type": "Liebre",
+      "pcu": 1.0,
+      "maximum_speed_kmh": 90.0,
+      "routing_preference": "fastest-time",
+      "departure_intervals": [{"start_seconds": 0, "end_seconds": 86400, "weight": 1}],
+      "access": {"requires_authorized_links": false, "authorized_link_ids": [], "municipal_status": "not_claimed", "source": null}
+    },
+    "Tortuga": {
+      "share_percent": 10,
+      "population_role": "driver",
+      "mode": "car",
+      "vehicle_type": "Tortuga",
+      "pcu": 1.0,
+      "maximum_speed_kmh": 25.0,
+      "routing_preference": "configured-route-policy",
+      "departure_intervals": [
+        {"start_seconds": 0, "end_seconds": 21600, "weight": 1},
+        {"start_seconds": 21600, "end_seconds": 64800, "weight": 4},
+        {"start_seconds": 64800, "end_seconds": 86400, "weight": 1}
+      ],
+      "access": {"requires_authorized_links": false, "authorized_link_ids": [], "municipal_status": "not_claimed", "source": null}
+    },
+    "TransportePublico": {
+      "share_percent": 10,
+      "population_role": "passenger",
+      "mode": "pt",
+      "vehicle_type": null,
+      "pcu": null,
+      "maximum_speed_kmh": null,
+      "routing_preference": "fixed-route-transit-service-required",
+      "departure_intervals": [{"start_seconds": 18000, "end_seconds": 75600, "weight": 1}],
+      "access": {"requires_authorized_links": false, "authorized_link_ids": [], "municipal_status": "unverified_assumption", "source": null}
+    },
+    "TransportePesado": {
+      "share_percent": 5,
+      "population_role": "driver",
+      "mode": "car",
+      "vehicle_type": "TransportePesado",
+      "pcu": 3.5,
+      "maximum_speed_kmh": null,
+      "routing_preference": "authorized-routes-required",
+      "departure_intervals": [
+        {"start_seconds": 0, "end_seconds": 18000, "weight": 1},
+        {"start_seconds": 32400, "end_seconds": 59400, "weight": 1},
+        {"start_seconds": 75600, "end_seconds": 86400, "weight": 1}
+      ],
+      "access": {"requires_authorized_links": true, "authorized_link_ids": [], "municipal_status": "unverified_assumption", "source": null}
+    }
+  },
+  "transit_service": {
+    "vehicle_type": "TransitBus",
+    "pcu": 3.0,
+    "maximum_speed_kmh": null,
+    "schedule_file": null,
+    "vehicles_file": null,
+    "route_source": null,
+    "stop_source": null,
+    "operation_start_seconds": 18000,
+    "operation_end_seconds": 75600,
+    "operation_status": "unverified_assumption",
+    "frequency": null,
+    "fleet_size": null,
+    "implementation_status": "prepared_missing_verified_routes_stops_and_timetable",
+    "service_termination": "Requires finite departures and vehicle duties ending at their final scheduled stop; no infinite loop or artificial disappearance"
+  }
+}

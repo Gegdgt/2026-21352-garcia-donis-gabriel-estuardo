@@ -1,0 +1,1027 @@
+
+src/main/java/gt/edu/uvg/sim/zona1/SimZ1Freight.java:70
+70:     }
+71:     private static String residencePolicy(Person p) {
+72:         return Objects.toString(p.getAttributes().getAttribute("simz1FreightResidencePolicy"),LEGACY_RESIDENCE_POLICY);
+73:     }
+74:     public static boolean permitted(double start,double end,String policy) {
+75:         if(!Set.of(OVERNIGHT_POLICY,LEGACY_RESIDENCE_POLICY).contains(policy))return false;
+76:         double nightEnd=OVERNIGHT_POLICY.equals(policy)?104400:86400;
+77:         return Double.isFinite(start) && Double.isFinite(end) && start<=end &&
+78:             (start>=0 && end<18000 || start>=32400 && end<57600 || start>=75600 && end<nightEnd);
+79:     }
+80:     public static void configure(Scenario s) {
+
+src/main/java/gt/edu/uvg/sim/zona1/SimZ1Freight.java:153
+153:     private void residence(String id, double time, String kind) {
+154:         Double entry=traffic.get(id);
+155:         if(entry!=null && !permitted(entry,time,residencePolicies.get(id)))
+156:             violations.putIfAbsent(id,new Violation(entry,time,kind,residencePolicies.get(id),
+157:                 Set.of("arrival","stuckAndAbort","vehicle aborts").contains(kind)?"terminal_residence":"traffic_residence"));
+158:     }
+159:     synchronized Map<String,Violation> violations() { return Map.copyOf(violations); }
+160:     synchronized int activeCount() { return active.size(); }
+161:     synchronized boolean approved() {
+162:         return violations.isEmpty() && active.isEmpty() && terminals.size()==fleet.size() &&
+163:             terminals.values().stream().allMatch(t->t.status.equals("completed"));
+164:     }
+165:     synchronized void requireApproved() {
+166:         if(!approved()) throw new IllegalStateException("FREIGHT_NOT_APPROVED: restricted="+violations.size()+
+167:             ", active_or_censored="+active.size()+", completed="+
+168:             terminals.values().stream().filter(t->t.status.equals("completed")).count()+"/"+fleet.size());
+169:     }
+170:     // Runs on the controller thread AFTER QSim cleanup/finishProcessing, never on an event worker.
+171:     @Override public synchronized void notifyAfterMobsim(AfterMobsimEvent event) {
+172:         // MATSim invokes this even when the mobsim threw. IterationEnds may never
+173:         // follow; persist incomplete outcomes without replacing the primary error
+174:         // with requireApproved(). Scientific rejection remains at IterationEnds.
+175:         writeReport(Path.of(event.getServices().getControlerIO().getIterationFilename(event.getIteration(),"simz1-freight-audit.csv")));
+176:     }
+177:     @Override public synchronized void notifyIterationEnds(IterationEndsEvent event) {
+178:         Path report=Path.of(event.getServices().getControlerIO().getIterationFilename(event.getIteration(),"simz1-freight-audit.csv"));
+179:         writeReport(report);
+180:         requireApproved();
+
+src/main/java/gt/edu/uvg/sim/zona1/SimZ1Freight.java:186
+186:                 "residence_policy","departure","traffic_entry","traffic_exit","violation_observed","violation_event","evidence","terminal_time","terminal_sources");
+187:             for(String id:new TreeSet<>(fleet)) {
+188:                 var v=violations.get(id); var t=terminals.get(id);
+189:                 csv.printRecord(2,id,"valid",v!=null?"violated":active.containsKey(id)||!started.contains(id)?"undetermined":"no_violation_observed",
+190:                     t!=null?t.status:active.containsKey(id)?"active_or_censored":"not_departed",residencePolicies.get(id),
+191:                     departures.get(id),entries.get(id),exits.get(id),v!=null?v.observed:null,v!=null?v.eventType:null,
+192:                     v!=null?v.evidence:t!=null&&t.status.equals("aborted_before_departure")?"qsim_cleanup_without_departure":null,
+193:                     t!=null?t.time:null,t!=null?String.join("|",new TreeSet<>(t.sources)):null);
+194:             }
+195:         } catch(IOException ex) { throw new UncheckedIOException(ex); }
+
+src/main/java/gt/edu/uvg/sim/zona1/SimZ1Freight.java:201
+201:             cleanupTime=e.getTime();
+202:             return;
+203:         }
+204:         var a=e.getAttributes();
+205:         String id=a.getOrDefault("person",a.get("vehicle"));
+206:         if (!fleet.contains(id)) return;
+207:         String kind=e.getEventType();
+208:         boolean abort=kind.equals("stuckAndAbort")||kind.equals("vehicle aborts");
+209:         if(!MOVEMENT.contains(kind) && !Set.of("departure","arrival","simz1NativeDecision").contains(kind) && !abort)return;
+210:         double time=e.getTime();
+211:         if(!Double.isFinite(time)||time<lastTimes.getOrDefault(id,Double.NEGATIVE_INFINITY))
+212:             throw new IllegalStateException("Freight invalid/non-monotone event time: "+id);
+213:         lastTimes.put(id,time);
+214:         Person person=scenario.getPopulation().getPersons().get(Id.createPersonId(id));
+215:         var path=Arrays.asList(person.getAttributes().getAttribute("simz1FreightRoute").toString().split(" "));
+216:         if(kind.equals("departure")) {
+217:             double planned=Double.parseDouble(person.getAttributes().getAttribute("simz1FreightDeparture").toString());
+218:             if(started.contains(id)||terminals.containsKey(id)||Math.abs(time-planned)>1.01||!path.get(0).equals(a.get("link")))
+219:                 throw new IllegalStateException("Freight duplicate/late/incorrect departure: "+id);
+220:             started.add(id); active.put(id,time); departures.put(id,time);
+221:         }
+222:         if((MOVEMENT.contains(kind)||kind.equals("departure")||kind.equals("arrival")) && !path.contains(a.get("link")))
+223:             throw new IllegalStateException("Freight outside configured route: "+id);
+224:         if((MOVEMENT.contains(kind)||kind.equals("arrival")) && !active.containsKey(id))
+225:             throw new IllegalStateException("Freight movement/arrival without active departure: "+id);
+226:         if(MOVEMENT.contains(kind)&&!kind.equals("vehicle enters traffic")&&!traffic.containsKey(id))
+227:             throw new IllegalStateException("Freight movement without traffic entry: "+id);
+228:         if(kind.equals("vehicle enters traffic")) {
+229:             if(seen.contains(id)||!id.equals(a.get("vehicle"))||!path.get(0).equals(a.get("link")))
+230:                 throw new IllegalStateException("Freight vehicle/driver identity mismatch: "+id);
+231:             seen.add(id); positions.put(id,0); traffic.put(id,time); entries.put(id,time);
+232:         }
+233:         residence(id,time,kind);
+234:         if(kind.equals("entered link")) {
+235:             int index=positions.getOrDefault(id,-1)+1;
+236:             if(index>=path.size()||!path.get(index).equals(a.get("link")))
+237:                 throw new IllegalStateException("Freight route sequence mismatch: "+id);
+238:             positions.put(id,index);
+239:         }
+240:         if(kind.equals("vehicle leaves traffic")) { traffic.remove(id); exits.put(id,time); }
+241:         if(kind.equals("arrival")) {
+242:             if(positions.getOrDefault(id,-1)!=path.size()-1||!path.get(path.size()-1).equals(a.get("link")))
+243:                 throw new IllegalStateException("Freight incomplete route/arrival: "+id);
+244:             active.remove(id); terminals.put(id,new Terminal("completed",time,new HashSet<>(Set.of(kind))));
+245:         }
+246:         if(abort) {
+247:             var terminal=terminals.get(id);
+248:             if(terminal!=null) {
+249:                 if(!Set.of("aborted","aborted_before_departure").contains(terminal.status)||terminal.time!=time||!terminal.sources.add(kind))
+250:                     throw new IllegalStateException("Freight conflicting/duplicate terminal event: "+id);
+251:             } else {
+252:                 boolean neverStarted=!started.contains(id)&&!active.containsKey(id);
+253:                 if(!active.containsKey(id)&&!(neverStarted&&Double.isFinite(cleanupTime)&&time>=cleanupTime))
+254:                     throw new IllegalStateException("Freight abort without departure: "+id);
+255:                 active.remove(id);
+256:                 terminals.put(id,new Terminal(neverStarted?"aborted_before_departure":"aborted",time,new HashSet<>(Set.of(kind))));
+257:             }
+258:         }
+259:         if(kind.equals("arrival")||abort) { traffic.remove(id); positions.remove(id); }
+260:     }
+261: }
+
+src/main/java/gt/edu/uvg/sim/zona1/CongestionAwareRerouting.java:47
+47:     private Set<Id<Person>> selected=Set.of();
+48:     static <T> Set<T> selectCohort(List<T> sortedIds,double share,long seed) {
+49:         var shuffled=new ArrayList<>(sortedIds); Collections.shuffle(shuffled,new Random(seed));
+50:         return new HashSet<>(shuffled.subList(0,(int)Math.floor(shuffled.size()*share)));
+51:     }
+52:     record Entry(Id<Link> link,double time) { }
+53:     record Observation(double duration,double time) { }
+54:     private record Exit(Entry entry,double time) { }
+55:     private record Turn(Id<Link> from,Id<Link> to) { }
+
+src/main/java/gt/edu/uvg/sim/zona1/CongestionAwareRerouting.java:76
+76:     @Override public void handleEvent(VehicleEntersTrafficEvent e) {
+77:         if (isRegisteredTransitVehicle(e.getVehicleId())) return;
+78:         entries.remove(e.getVehicleId().toString()); pendingTurns.remove(e.getVehicleId().toString());
+79:         traversed.put(e.getVehicleId().toString(),List.of(e.getLinkId()));
+80:     }
+81:     @Override public void handleEvent(VehicleLeavesTrafficEvent e) {
+82:         if (isRegisteredTransitVehicle(e.getVehicleId())) return;
+83:         entries.remove(e.getVehicleId().toString()); pendingTurns.remove(e.getVehicleId().toString());
+84:         traversed.remove(e.getVehicleId().toString());
+85:     }
+86:     @Override public void handleEvent(LinkEnterEvent e) {
+87:         // Stop dwell belongs to the fixed service, not an estimate of car running time.
+88:         if (isRegisteredTransitVehicle(e.getVehicleId())) return;
+89:         Exit previous=pendingTurns.remove(e.getVehicleId().toString());
+90:         if (previous!=null && previous.entry().time()<=previous.time() && previous.time()<=e.getTime()) {
+91:             var from=scenario.getNetwork().getLinks().get(previous.entry().link());
+92:             var to=scenario.getNetwork().getLinks().get(e.getLinkId());
+93:             if (from!=null && to!=null && from.getToNode()==to.getFromNode())
+94:                 turnObservations.put(new Turn(from.getId(),to.getId()),
+95:                     new Observation(e.getTime()-previous.entry().time(),e.getTime()));
+96:         }
+97:         entries.put(e.getVehicleId().toString(),new Entry(e.getLinkId(),e.getTime()));
+98:         traversed.computeIfPresent(e.getVehicleId().toString(),(id,old)->{
+99:             var path=new ArrayList<>(old); path.add(e.getLinkId()); return List.copyOf(path);
+100:         });
+101:     }
+102:     @Override public void handleEvent(LinkLeaveEvent e) {
+103:         if (isRegisteredTransitVehicle(e.getVehicleId())) return;
+104:         Entry entry=entries.remove(e.getVehicleId().toString());
+105:         pendingTurns.remove(e.getVehicleId().toString());
+106:         if (entry!=null && entry.link().equals(e.getLinkId()) && e.getTime()>=entry.time()) {
+107:             observations.put(entry.link(),new Observation(e.getTime()-entry.time(),e.getTime()));
+108:             pendingTurns.put(e.getVehicleId().toString(),new Exit(entry,e.getTime()));
+109:         }
+110:     }
+111:     private static boolean fresh(Observation observation,double now) {
+112:         return observation!=null && now>=observation.time() && now-observation.time()<=300;
+113:     }
+114:     double observedLinkSeconds(Id<Link> link,double now) {
+115:         var observation=observations.get(link);
+116:         return fresh(observation,now)?observation.duration():Double.NaN;
+117:     }
+118:     double observedTurnSeconds(Id<Link> from,Id<Link> to,double now) {
+119:         var observation=turnObservations.get(new Turn(from,to));
+120:         return fresh(observation,now)?observation.duration():Double.NaN;
+121:     }
+122:     static boolean shouldInstall(boolean enabled,double oldCost,double candidateCost) {
+123:         if (!Double.isFinite(oldCost) || oldCost<0 || !Double.isFinite(candidateCost) || candidateCost<0)
+124:             throw new IllegalArgumentException("Invalid estimated rerouting costs");
+125:         return enabled && candidateCost+1e-9<oldCost;
+126:     }
+127:     static boolean needsReroute(boolean enabled,double nominal,double estimate,double baseCapacity,double currentCapacity) {
+128:         if (!Double.isFinite(nominal) || nominal<=0 || !Double.isFinite(estimate) || estimate<0 ||
+129:             !Double.isFinite(baseCapacity) || baseCapacity<=0 || !Double.isFinite(currentCapacity) || currentCapacity<0)
+130:             throw new IllegalArgumentException("Invalid congestion or capacity evidence");
+131:         return enabled && ((estimate>=3*nominal && estimate-nominal>=60) || currentCapacity<=.5*baseCapacity);
+132:     }
+133:     @Override public void notifyMobsimInitialized(MobsimInitializedEvent event) {
+134:         qsim=(QSim)event.getQueueSimulation();
+135:         var config=ConfigUtils.addOrGetModule(scenario.getConfig(),Zona1RoutingConfigGroup.class);
+136:         enabled=Boolean.parseBoolean(config.getEnabled()); budget=config.getMaxReroutesPerStep();
+137:         routingPolicy=config.getRoutingPolicy();
+138:         var ids=new ArrayList<>(scenario.getPopulation().getPersons().keySet()); ids.sort(Comparator.comparing(Object::toString));
+139:         ids.removeIf(id->SimZ1Freight.applies(scenario.getPopulation().getPersons().get(id)));
+140:         selected=selectCohort(ids,config.getAgentShare(),scenario.getConfig().global().getRandomSeed()+iteration);
+141:         last.clear(); times.clear(); turnTimes.clear(); entries.clear(); pendingTurns.clear(); observations.clear(); turnObservations.clear();
+142:         traversed.clear(); next=Double.NEGATIVE_INFINITY; cursor="";
+143:         safety=new SimZ1RouteSafety(scenario);
+144:         router=new SimZ1TurnRouter(scenario.getNetwork(),safety,
+145:             (link,time,person,vehicle)->times.getOrDefault(link.getId(),Double.NaN),
+146:             (from,to,time,person,vehicle)->turnTimes.getOrDefault(new Turn(from.getId(),to.getId()),
+147:                 times.getOrDefault(from.getId(),Double.NaN)),routingPolicy);
+148:         // Already-routed inputs must be valid even when rerouting is switched off.
+149:         for (var person:scenario.getPopulation().getPersons().values()) {
+150:             for (var element:person.getSelectedPlan().getPlanElements()) {
+151:                 if (element instanceof Leg leg && "car".equals(leg.getMode()) && leg.getRoute() instanceof NetworkRoute route) {
+152:                     var full=SimZ1RouteSafety.full(route); String reason=safety.validateNetwork(full);
+153:                     if (reason!=null) {
+154:                         String evidence="person="+person.getId()+" iteration="+iteration+" oldRoute="+full+" reason="+reason;
+155:                         LOG.error("Invalid initial route: {}",evidence);
+
+src/main/java/gt/edu/uvg/sim/zona1/CongestionAwareRerouting.java:232
+232:     private void attempt(MobsimAgent agent,double now,Step step) {
+233:         var leg=WithinDayAgentUtils.getModifiableCurrentLeg(agent);
+234:         var route=(NetworkRoute)leg.getRoute(); var old=SimZ1RouteSafety.full(route);
+235:         int index=WithinDayAgentUtils.getCurrentRouteLinkIdIndex(agent);
+236:         String invalid=safety.validateReplacement(old,old,index,agent.getCurrentLinkId(),route.getEndLinkId(),null);
+237:         if (invalid!=null) fatal(now,agent,index,old,null,invalid);
+238:         Position position=locate((MobsimDriverAgent)agent);
+239:         if (position==null) {
+240:             step.rejected++; evidence(now,"zona1RerouteRejected",agent,index,old,null,null,"physical_vehicle_or_lane_not_ready"); return;
+241:         }
+242:         if (!position.link().equals(agent.getCurrentLinkId())) fatal(now,agent,index,old,position,"agent_vehicle_link_mismatch");
+243:         var history=traversed.get(position.vehicle().getId().toString());
+244:         if (history==null) {
+245:             step.rejected++; evidence(now,"zona1RerouteRejected",agent,index,old,null,position,"physical_history_not_ready"); return;
+246:         }
+247:         if (!history.equals(old.subList(0,index+1))) fatal(now,agent,index,old,position,"traversed_event_prefix_mismatch actual="+history);
+248:         invalid=safety.validateReplacement(old,old,index,position.link(),route.getEndLinkId(),position.lane());
+249:         if (invalid!=null) fatal(now,agent,index,old,position,invalid);
+250:         step.calculations++;
+251:         var person=scenario.getPopulation().getPersons().get(agent.getId());
+252:         var vehicle=scenario.getVehicles().getVehicles().get(position.vehicle().getId());
+253:         Entry entry=entries.get(position.vehicle().getId().toString());
+254:         double enteredAt=entry!=null && entry.link().equals(position.link())?entry.time():Double.NaN;
+255:         List<Id<Link>> suffix;
+256:         try { suffix=router.path(position.link(),route.getEndLinkId(),now,person,vehicle,position.lane(),enteredAt,
+257:                                  List.copyOf(history)); }
+258:         catch (RuntimeException error) {
+259:             evidence(now,"zona1RerouteRejected",agent,index,old,null,position,"calculation_exception: "+error);
+260:             throw error; // keep exception and traceback, rather than disguising an implementation error as no-path
+261:         }
+262:         last.put(agent.getId(),now);
+263:         var candidate=suffix==null?null:SimZ1RouteSafety.splice(old,index,suffix);
+264:         invalid=candidate==null?"no_allowed_path":safety.validateReplacement(old,candidate,index,position.link(),route.getEndLinkId(),position.lane());
+265:         if (invalid!=null) {
+266:             step.rejected++; evidence(now,"zona1RerouteRejected",agent,index,old,candidate,position,invalid); return;
+267:         }
+268:         invalid=org.matsim.core.mobsim.qsim.qnetsimengine.SimZ1CorridorOccupancy.replacementIssue(
+269:             scenario.getConfig().qsim(),position.vehicle().getId(),candidate,index,qsim.getNetsimNetwork());
+270:         if(invalid!=null){step.rejected++;evidence(now,"zona1RerouteRejected",agent,index,old,candidate,position,invalid);return;}
+271:         var oldEstimate=router.evaluate(old.subList(index,old.size()),now,person,vehicle,enteredAt);
+272:         var candidateEstimate=router.evaluate(suffix,now,person,vehicle,enteredAt);
+273:         if (!shouldInstall(enabled,oldEstimate.cost(),candidateEstimate.cost())) {
+274:             step.rejected++; evidence(now,"zona1RerouteRejected",agent,index,old,candidate,position,
+275:                 "no_expected_improvement",oldEstimate,candidateEstimate,enteredAt); return;
+276:         }
+277:         if (!candidate.equals(old)) {
+278:             var replacement=route.clone();
+279:             replacement.setLinkIds(candidate.get(0),candidate.subList(1,Math.max(1,candidate.size()-1)),candidate.get(candidate.size()-1));
+280:             replacement.setDistance(RouteUtils.calcDistance(replacement,1.,1.,scenario.getNetwork()));
+281:             replacement.setTravelTimeUndefined();
+282:             leg.setRoute(replacement);
+283:             // EditRoutes.replanCurrentLeg already resets caches. We replace its splice,
+284:             // so refresh once after our own validated installation.
+285:             WithinDayAgentUtils.resetCaches(agent);
+286:             int after=WithinDayAgentUtils.getCurrentRouteLinkIdIndex(agent);
+287:             var driver=(MobsimDriverAgent)agent;
+288:             boolean nextValid=index==candidate.size()-1 ? driver.isWantingToArriveOnCurrentLink() :
+289:                 Objects.equals(candidate.get(index+1),driver.chooseNextLinkId());
+290:             if (after!=index || !nextValid) {
+291:                 leg.setRoute(route); WithinDayAgentUtils.resetCaches(agent);
+292:                 fatal(now,agent,index,old,position,"post_install_index_or_next_link_mismatch candidate="+candidate);
+293:             }
+294:             step.installed++;
+295:         }
+296:         evidence(now,"zona1WithinDayReroute",agent,index,old,candidate,position,
+297:             "validated_improvement",oldEstimate,candidateEstimate,enteredAt);
+298:     }
+299:     @Override public void notifyMobsimBeforeSimStep(MobsimBeforeSimStepEvent event) {
+300:         double now=event.getSimulationTime(); if (now<next) return; next=now+60;
+301:         var step=new Step(); long wall=System.nanoTime(); var bean=ManagementFactory.getThreadMXBean();
+302:         long cpu=bean.isCurrentThreadCpuTimeSupported()?bean.getCurrentThreadCpuTime():-1;
+303:         try {
+304:             if (!enabled) return;
+305:             Set<Id<Link>> severe=new HashSet<>();
+306:             for (Link link:scenario.getNetwork().getLinks().values()) {
+307:                 double nominal=Math.max(1,link.getLength()/link.getFreespeed());
+308:                 double estimate=link.getLength()/Math.max(.1,link.getFreespeed(now));
+309:                 double observed=observedLinkSeconds(link.getId(),now);
+310:                 if (!Double.isNaN(observed)) estimate=Math.max(estimate,observed);
+311:                 times.put(link.getId(),estimate);
+312:                 if (needsReroute(enabled,nominal,estimate,link.getCapacity(),link.getCapacity(now))) severe.add(link.getId());
+313:             }
+314:             turnTimes.clear();
+315:             turnObservations.forEach((turn,observation)->{
+316:                 if (fresh(observation,now)) {
+317:                     Link from=scenario.getNetwork().getLinks().get(turn.from());
+318:                     double currentFreeflow=from.getLength()/Math.max(.1,from.getFreespeed(now));
+319:                     turnTimes.put(turn,Math.max(currentFreeflow,observation.duration()));
+320:                 }
+321:             });
+322:             if (severe.isEmpty()) return;
+323:             var candidates=new ArrayList<MobsimAgent>();
+324:             for (MobsimAgent agent:qsim.getAgents().values()) {
+325:                 if (SimZ1Freight.applies(scenario.getPopulation().getPersons().get(agent.getId()))) continue;
+326:                 if (agent instanceof org.matsim.core.mobsim.qsim.pt.TransitDriverAgent ||
+327:                     !selected.contains(agent.getId()) || !(agent instanceof MobsimDriverAgent) ||
+328:                     agent.getState()!=MobsimAgent.State.LEG || !"car".equals(agent.getMode()) ||
+329:                     now-last.getOrDefault(agent.getId(),Double.NEGATIVE_INFINITY)<300) continue;
+330:                 if (isRegisteredTransitVehicle(((MobsimDriverAgent)agent).getPlannedVehicleId())) continue;
+331:                 var leg=WithinDayAgentUtils.getModifiableCurrentLeg(agent);
+332:                 if (leg==null || !(leg.getRoute() instanceof NetworkRoute route)) continue;
+333:                 var full=SimZ1RouteSafety.full(route); int index=WithinDayAgentUtils.getCurrentRouteLinkIdIndex(agent);
+334:                 String invalid=safety.validateReplacement(full,full,index,agent.getCurrentLinkId(),route.getEndLinkId(),null);
+335:                 if (invalid!=null) fatal(now,agent,index,full,null,invalid);
+336:                 if (index==full.size()-1) continue; // occurrence/index, not currentLinkId==endLinkId
+337:                 // Preserve the existing downstream trigger: rerouting cannot undo the current link already occupied.
+338:                 if (full.subList(index+1,full.size()).stream().anyMatch(severe::contains)) candidates.add(agent);
+339:             }
+340:             candidates.sort(Comparator.comparing(a->a.getId().toString())); step.candidates=candidates.size();
+341:             // Deterministic cyclic priority avoids starving lexicographically later IDs.
+342:             int first=0; while(first<candidates.size() && candidates.get(first).getId().toString().compareTo(cursor)<=0) first++;
+343:             int attempts=Math.min(budget,candidates.size()); step.deferred=candidates.size()-attempts;
+344:             for (int i=0;i<attempts;i++) {
+345:                 MobsimAgent agent=candidates.get((first+i)%candidates.size()); cursor=agent.getId().toString();
+346:                 attempt(agent,now,step);
+347:             }
+348:         } finally {
+349:             long elapsedCpu=cpu<0?-1:bean.getCurrentThreadCpuTime()-cpu;
+350:             emit(now,"zona1RerouteStep",Map.of("candidates",""+step.candidates,"calculations",""+step.calculations,
+351:                 "installed",""+step.installed,"rejected",""+step.rejected,"deferred",""+step.deferred,
+352:                 "budget",""+budget,"cpuNanos",""+elapsedCpu,"wallNanos",""+(System.nanoTime()-wall),"enabled",""+enabled));
+353:         }
+354:     }
+
+src/main/java/gt/edu/uvg/sim/zona1/Zona1RoutingConfigGroup.java:1
+1: package gt.edu.uvg.sim.zona1;
+2: 
+3: import org.matsim.core.config.ReflectiveConfigGroup;
+4: 
+5: /** Typed config module so MATSim can materialize it in the controller injector. */
+6: public final class Zona1RoutingConfigGroup extends ReflectiveConfigGroup {
+7:     private String enabled = "true";
+8:     private double agentShare = 0.5;
+9:     private int maxReroutesPerStep = 100;
+10:     private String routingPolicy = DrivingProfiles.FASTEST_TIME;
+11:     @StringGetter("routingPolicy") public String getRoutingPolicy() { return routingPolicy; }
+12:     @StringSetter("routingPolicy") public void setRoutingPolicy(String value) {
+13:         routingPolicy = DrivingProfiles.validatePolicy(value);
+14:     }
+15:     @StringGetter("maxReroutesPerStep") public int getMaxReroutesPerStep() { return maxReroutesPerStep; }
+16:     @StringSetter("maxReroutesPerStep") public void setMaxReroutesPerStep(int value) {
+17:         if (value < 1) throw new IllegalArgumentException("maxReroutesPerStep must be positive");
+18:         maxReroutesPerStep = value;
+19:     }
+20:     @StringGetter("agentShare") public double getAgentShare() { return agentShare; }
+21:     @StringSetter("agentShare") public void setAgentShare(double value) {
+22:         if (!Double.isFinite(value) || value < 0 || value > 1)
+23:             throw new IllegalArgumentException("agentShare must be in [0,1]");
+24:         agentShare = value;
+25:     }
+26:     public Zona1RoutingConfigGroup() { super("zona1WithinDayRouting"); }
+27:     @StringGetter("enabled") public String getEnabled() { return enabled; }
+28:     @StringSetter("enabled") public void setEnabled(String value) {
+29:         if (!"true".equals(value) && !"false".equals(value))
+30:             throw new IllegalArgumentException("zona1WithinDayRouting.enabled must be true or false");
+31:         enabled = value;
+32:     }
+33: }
+
+src/main/java/gt/edu/uvg/sim/zona1/SimZ1RouteSafety.java:250
+250:     }
+251: 
+252:     /** Null means valid. The caller must obtain actualCurrent/actualLane from QSim, not the route. */
+253:     public String validateReplacement(List<Id<Link>> old, List<Id<Link>> candidate, int index,
+254:             Id<Link> actualCurrent, Id<Link> destination, Id<Lane> actualLane) {
+255:         String reason = validateNetwork(old);
+256:         if (reason != null) return "old_route " + reason;
+257:         if (index < 0 || index >= old.size()) return "route_index_out_of_bounds index=" + index;
+258:         if (actualCurrent == null || !actualCurrent.equals(old.get(index))) return "current_link_index_mismatch index=" + index;
+259:         if (destination == null || !destination.equals(old.get(old.size()-1))) return "old_destination_mismatch";
+260:         reason = validateNetwork(candidate);
+261:         if (reason != null) return "candidate " + reason;
+262:         if (candidate.size() <= index || !old.subList(0,index+1).equals(candidate.subList(0,index+1)))
+263:             return "traversed_prefix_changed index=" + index;
+264:         if (!destination.equals(candidate.get(candidate.size()-1))) return "destination_changed";
+265:         if (index == old.size()-1 && !old.equals(candidate)) return "route_extended_after_arrival";
+266:         if (actualLane != null && index+1 < candidate.size() && !laneAllows(actualCurrent, actualLane, candidate.get(index+1)))
+267:             return "current_lane_cannot_reach_next lane=" + actualLane + " next=" + candidate.get(index+1);
+268:         return null;
+269:     }
+270: }
+
+src/main/java/gt/edu/uvg/sim/zona1/ExperiencedTimeRouting.java:60
+60:                 // TripRouter and the standard ReRoute PlanRouter both resolve this
+61:                 // car binding. Pair TurnInfos remain a connectivity policy only.
+62:                 addRoutingModuleBinding("car").toProvider(new Provider<RoutingModule>() {
+63:                     @Inject Injector injector;
+64:                     @Override public RoutingModule get() {
+65:                         var times=injector.getInstance(Key.get(TravelTime.class,Names.named("car")));
+66:                         var turns=config.travelTimeCalculator().isCalculateLinkToLinkTravelTimes()
+67:                             ?injector.getInstance(LinkToLinkTravelTime.class):null;
+68:                         return sequenceRouting(controler.getScenario(),times,turns,policy);
+69:                     }
+70:                 });
+
+src/main/java/gt/edu/uvg/sim/zona1/ExperiencedTimeRouting.java:79
+79:     static RoutingModule sequenceRouting(Scenario scenario,TravelTime times,LinkToLinkTravelTime turns,String policy) {
+80:         var safety=new SimZ1RouteSafety(scenario);
+81:         var router=new SimZ1TurnRouter(scenario.getNetwork(),safety,times,turns,policy);
+82:         return request -> {
+83:             var from=request.getFromFacility().getLinkId();
+84:             var to=request.getToFacility().getLinkId();
+85:             var person=request.getPerson();
+86:             double departure=request.getDepartureTime();
+87:             // MATSim's original LinkToLinkRoutingModule passes no vehicle here.
+88:             // Person profile costs still apply; PlanRouter preserves the old ID.
+89:             var path=router.path(from,to,departure,person,null);
+90:             if (path==null) throw new IllegalStateException("No sequence-legal car route from "+from+" to "+to);
+91:             var estimate=router.evaluate(path,departure,person,null,Double.NaN);
+92:             var route=RouteUtils.createNetworkRoute(path);
+93:             route.setTravelTime(estimate.seconds()); route.setTravelCost(estimate.cost());
+94:             route.setDistance(path.size()==1?0:RouteUtils.calcDistance(route,1.,1.,scenario.getNetwork()));
+95:             var leg=scenario.getPopulation().getFactory().createLeg("car");
+96:             leg.setDepartureTime(departure); leg.setTravelTime(estimate.seconds()); leg.setRoute(route);
+97:             return List.of(leg);
+98:         };
+99:     }
+100: }
+
+src/main/java/gt/edu/uvg/sim/zona1/SimZ1TurnRouter.java:74
+74:             Id<Lane> currentLane,double enteredAt,List<Id<Link>> traversedPrefix) {
+75:         validateTime(now,enteredAt);
+76:         if (traversedPrefix==null || traversedPrefix.isEmpty() ||
+77:             !start.equals(traversedPrefix.get(traversedPrefix.size()-1))) return null;
+78:         if (safety.validateNetwork(traversedPrefix)!=null) return null;
+79:         if (!network.getLinks().containsKey(start) || !network.getLinks().containsKey(destination)) return null;
+80:         if (!network.getLinks().get(start).getAllowedModes().contains("car") ||
+81:             !network.getLinks().get(destination).getAllowedModes().contains("car")) return null;
+82:         if (safety.validateNetwork(List.of(start))!=null ||
+83:             safety.validateNetwork(List.of(destination))!=null) return null;
+84:         Map<State,Double> best=new HashMap<>();
+85:         Map<State,State> previous=new HashMap<>();
+86:         var queue=new PriorityQueue<Label>(Comparator.comparingDouble(Label::cost)
+87:             .thenComparing(l->l.state().id().toString()).thenComparingInt(l->l.state().progress())
+88:             .thenComparing(l->l.state().initial()));
+89:         var initial=new State(start,safety.sequenceProgress(traversedPrefix),true,
+90:             safety.sequenceVia(start)?Set.of(start):Set.of());
+91:         queue.add(new Label(initial,0,now)); best.put(initial,0.);
+92:         while (!queue.isEmpty()) {
+93:             Label label=queue.remove();
+94:             if (label.cost()!=best.get(label.state())) continue;
+95:             if (label.state().id().equals(destination)) {
+96:                 var result=new ArrayList<Id<Link>>();
+97:                 for (State state=label.state(); state!=null; state=previous.get(state)) result.add(state.id());
+98:                 Collections.reverse(result); return result;
+99:             }
+100:             for (Id<Link> id:safety.successors(label.state().id())) {
+101:                 if (label.state().visitedVias().contains(id)) continue;
+102:                 int progress=safety.advanceSequence(label.state().progress(),id);
+103:                 if (progress<0) continue;
+104:                 boolean first=label.state().initial();
+105:                 if (first && currentLane!=null && !safety.laneAllows(start,currentLane,id)) continue;
+106:                 var weight=weight(label.state().id(),id,label.time(),person,vehicle,first?enteredAt:Double.NaN);
+107:                 double candidate=label.cost()+weight.cost();
+108:                 double arrival=label.time()+weight.seconds();
+109:                 if (!Double.isFinite(candidate) || !Double.isFinite(arrival))
+110:                     throw new IllegalStateException("Non-finite accumulated routing estimate");
+111:                 // Retain this small extra bit of search history after leaving a
+112:                 // via: a cheaper arrival that already visited V cannot dominate
+
+src/main/java/gt/edu/uvg/sim/zona1/UnsignalizedPriority.java:149
+149:         private double stopSeconds(Link link) {return control(link,settings).equals("stop")?Math.max(STOP_SECONDS,settings.getStopSeconds()):0;}
+150:         /** Passage lookahead never inserts a fictitious queue head. Required
+151:          * stops are accumulated at the upstream holding point before locking
+152:          * the connector; real conflicting offered approaches still have priority. */
+153:         public double passageStopSeconds(Link link){return stopSeconds(link);}
+154:         public boolean passageMayProceed(Link link,Id<Link> next,QVehicle vehicle,QNetwork network,double now) {
+155:             observeHeads(network,now);var movement=new PriorityMovements.Movement(link.getId(),next);
+156:             if(crossed.stream().anyMatch(prior->conflicts.conflicts(movement,prior)))return false;
+157:             if(reservation!=null&&reservation.vehicle!=vehicle&&conflicts.conflicts(movement,reservation.movement)&&
+158:                     canCompete(node.getInLinks().get(reservation.movement.from()),reservation.lane,reservation.movement.to(),network,now))return false;
+159:             // A granted fairness turn has the same meaning for a reserved
+160:             // short-link passage as for an ordinary turn below.
+161:             if(street(link)&&(reservation==null||reservation.vehicle!=vehicle))for(var avenue:avenues)for(var offered:network.getNetsimLinks().get(avenue).getOfferingQLanes()) {
+162:                 if(offered.isNotOfferingVehicle())continue;var head=offered.getFirstVehicle();var target=head.getDriver().chooseNextLinkId();
+163:                 if(head!=vehicle&&target!=null&&canCompete(node.getInLinks().get(avenue),offered,target,network,now)&&
+164:                         conflicts.conflicts(movement,new PriorityMovements.Movement(avenue,target))&&
+165:                         !SimZ1CorridorOccupancy.sameParallelPassageEntrance(receiverConfig,vehicle,head,link.getId(),next))return false;
+166:             }
+167:             return true;
+168:         }
+169:         /** The real queue head consumes a stop credit already held upstream.
+170:          * Keep its native head/ready times unchanged so the audit must verify
+171:          * the ACQUIRE receipt instead of treating this as a local stop. */
+172:         public AcceptTurn passagePermission(Link link,QLaneI lane,Id<Link> next,QVehicle vehicle,double now,Map<String,String> proof) {
+173:             if(lane.isNotOfferingVehicle()||lane.getFirstVehicle()!=vehicle)throw new IllegalStateException("Passage permission outside real queue head");
+174:             head(link,lane,vehicle,now);
+175:             double credit=Double.parseDouble(proof.get("passageStopCreditSeconds"));
+176:             if(Math.abs(credit-stopSeconds(link))>1e-8)throw new IllegalStateException("Passage priority credit differs from control");
+177:             record(link,lane,next,vehicle,now,"GO","preauthorized_passage",proof);return AcceptTurn.GO;
+178:         }
+179:         private Stop head(Link link,QLaneI lane,QVehicle vehicle,double now) {
+180:             Stop stop=heads.get(lane);
+181:             if(stop==null||stop.vehicle!=vehicle) {
+182:                 stop=new Stop(vehicle,now,now+stopSeconds(link),++visits);
+183:                 heads.put(lane,stop);
+184:                 record(link,lane,vehicle.getDriver().chooseNextLinkId(),vehicle,now,"HEAD","queue_head");
+185:             }
+186:             return stop;
+187:         }
+188:         public void observeHeads(QNetwork network,double now) {
+189:             boolean newStep=step!=now;
+190:             if(newStep){step=now;crossed.clear();reservation=null;}
+191:             for(var link:node.getInLinks().values()) if(roadLink(link))
+192:                 for(var lane:network.getNetsimLinks().get(link.getId()).getOfferingQLanes())
+193:                     if(!lane.isNotOfferingVehicle()) head(link,lane,lane.getFirstVehicle(),now);
+194:             if(newStep && settings.getMaxYieldSeconds()>0) {
+195:                 // Select before any crossing this step. Reservation only lasts this
+196:                 // node step and never overrides red, forbidden turns or storage.
+197:                 // Stable ordering makes equal-age choices independent of hash maps.
+198:                 for(var link:node.getInLinks().values().stream().filter(l->roadLink(l)&&street(l))
+199:                         .sorted(Comparator.comparing(l->l.getId().toString())).toList())
+200:                     for(var lane:network.getNetsimLinks().get(link.getId()).getOfferingQLanes().stream()
+201:                             .sorted(Comparator.comparing(l->l.getId().toString())).toList()) {
+202:                         if(lane.isNotOfferingVehicle()) continue;
+203:                         var stop=heads.get(lane); var next=stop.vehicle.getDriver().chooseNextLinkId();
+204:                         if(now-stop.ready<settings.getMaxYieldSeconds() || !canCompete(link,lane,next,network,now)) continue;
+205:                         if(reservation==null || stop.ready<reservation.ready)
+206:                             reservation=new Reservation(lane,stop.vehicle,new PriorityMovements.Movement(link.getId(),next),stop.ready);
+207:                     }
+208:             }
+209:         }
+210:         private boolean canCompete(Link link,QLaneI lane,Id<Link> next,QNetwork network,double now) {
+211:             if(next==null || lane.isNotOfferingVehicle()) return false;
+212:             var target=network.getNetsimLinks().get(next);
+213:             var observed=heads.get(lane);
+214:             return observed!=null && lane.getFirstVehicle()==observed.vehicle && now>=observed.ready &&
+215:                 target!=null && target.getLink().getFromNode()==node && roadLink(target.getLink()) &&
+216:                 (routeSafety==null || routeSafety.laneAllowsVehicle(link.getId(),lane.getId(),next,observed.vehicle.getId())) &&
+217:                 (!(lane instanceof SignalizeableItem signal)||signal.hasGreenForToLink(next)) &&
+218:                 SimZ1CorridorOccupancy.receiverFeasibility(receiverConfig,observed.vehicle,next,
+219:                     target.getAcceptingQLane().getId().toString(),network,now).feasible();
+220:         }
+221:         private AcceptTurn decide(Link link,QLaneI lane,Id<Link> next,QVehicle vehicle,double now,AcceptTurn value,String reason) {
+222:             lastWaitReason=reason;
+223:             record(link,lane,next,vehicle,now,value.name(),reason);
+
+src/main/java/gt/edu/uvg/sim/zona1/PriorityMovements.java:43
+43:     }
+44:     private static double cross(double[] a,double[] b,double[] c){return (b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);}
+45:     private static boolean disjointChords(Node n,Movement a,Movement b) {
+46:         double[][] p={point(n,n.getInLinks().get(a.from).getFromNode()),point(n,n.getOutLinks().get(a.to).getToNode()),
+47:                       point(n,n.getInLinks().get(b.from).getFromNode()),point(n,n.getOutLinks().get(b.to).getToNode())};
+48:         for(int i=0;i<4;i++) for(int j=0;j<i;j++) if(Math.hypot(p[i][0]-p[j][0],p[i][1]-p[j][1])<1e-6) return false;
+49:         double c1=cross(p[0],p[1],p[2]),c2=cross(p[0],p[1],p[3]),c3=cross(p[2],p[3],p[0]),c4=cross(p[2],p[3],p[1]);
+50:         if(Math.min(Math.min(Math.abs(c1),Math.abs(c2)),Math.min(Math.abs(c3),Math.abs(c4)))<1e-6) return false;
+51:         return c1*c2>0 || c3*c4>0;
+52:     }
+53:     private static boolean oppositeThrough(Node n,Movement a,Movement b) {
+54:         var ai=n.getInLinks().get(a.from); var ao=n.getOutLinks().get(a.to);
+55:         var bi=n.getInLinks().get(b.from); var bo=n.getOutLinks().get(b.to);
+56:         // Exact reciprocal topology establishes two existing opposite directions;
+57:         // no direction of circulation is invented from an axis or road name.
+58:         if(ai.getFromNode()!=bo.getToNode()||bi.getFromNode()!=ao.getToNode()) return false;
+59:         var x=point(n,ai.getFromNode()); var y=point(n,bi.getFromNode());
+60:         return x[0]*y[0]+x[1]*y[1] < -Math.cos(Math.toRadians(15));
+61:     }
+62:     public String evidence(Movement a,Movement b) {
+63:         if(a.from.equals(b.from)) return "same_approach_native_queue";
+64:         if(a.to.equals(b.to)) return "shared_exit_merge";
+65:         if(disjoint.contains(Set.of(a,b))) return "verified_node_table";
+66:         if(geometric) {
+67:             try {
+68:                 if(oppositeThrough(node,a,b)) return "reciprocal_opposite_through";
+69:                 if(disjointChords(node,a,b)) return "separated_geometric_chords";
+70:             } catch(IllegalArgumentException | NullPointerException ignored) {
+71:                 // Missing/degenerate geometry cannot prove a safe non-conflict.
+72:             }
+73:         }
+74:         return "conflicting_or_ambiguous";
+75:     }
+76:     public boolean conflicts(Movement a,Movement b) {
+77:         // Same approach is served serially by QSim queues and their flow limits.
+78:         return Set.of("shared_exit_merge","conflicting_or_ambiguous").contains(evidence(a,b));
+79:     }
+80: }
+
+src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/SimZ1CorridorOccupancy.java:456
+456:      * Downstream right of way is still decided only during real admission. */
+457:     public static PhysicalFeasibility receiverFeasibility(QSimConfigGroup config,QVehicle vehicle,
+458:             Id<Link> target,String lane,QNetwork network,double now) {
+459:         var qlink=network.getNetsimLinks().get(target);
+460:         if(qlink==null)return new PhysicalFeasibility(false,"receiver_missing");
+461:         if(!qlink.getAcceptingQLane().isAcceptingFromUpstream())return new PhysicalFeasibility(false,"receiver_native_storage");
+462:         var ledger=config==null?null:get(config);
+463:         if(ledger==null)return new PhysicalFeasibility(true,"receiver_available");
+464:         var plan=ledger.physicalPlan(vehicle,target,lane,network,true);
+465:         String issue=plan.reason;
+466:         if(issue==null&&plan.passage!=null)issue=ledger.passagePhysicalIssue(vehicle,plan.passage,now,null,network);
+467:         return new PhysicalFeasibility(issue==null,issue==null?"receiver_available":issue);
+468:     }
+469:     /** Compatibility metric-only probe for callers without a native network.
+470:      * Priority must use receiverFeasibility, including native receiving queues. */
+471:     public static boolean receiverNotKnownBlocked(QSimConfigGroup config,QVehicle vehicle,Id<Link> target,String lane) {
+472:         var ledger=config==null?null:get(config);
+
+src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/SimZ1CorridorOccupancy.java:478
+478:         boolean own=old!=null&&old.domain==d;
+479:         boolean passage=old!=null&&old.passage!=null&&!old.passage.released&&old.passage.offsets.containsKey(target);
+480:         // A node lock forbids a new entry, not progress of bodies already in
+481:         // the receiving domain or inside their own authorized passage.
+482:         if(!own&&!passage&&lockedByOther(network.getLinks().get(target).getFromNode().getId(),vehicle.getId()))return blocked("passage_node_locked");
+483:         if(!own&&!passage&&routeReach(vehicle,target).front()-d.offsets.get(target)<entryClearanceDistance(vehicle,target)) {
+484:             var description=describePassagePlan(vehicle,target);if(!description.feasible())return description;
+485:             var p=description.passage;
+486:             Integer terminal=laneIndices.getOrDefault(target,Map.of()).get(lane);
+487:             if(terminal!=null&&!terminal.equals(p.slots.get(target)))return blocked("passage_terminal_slot");
+488:             if(p.receipt==null)return new PhysicalPlan(p,old.slot,null);
+489:             var receipt=domains.get(p.receipt.getId());
+490:             int slot=choose(vehicle,p.receipt.getId(),"",s->freeFront(receipt,s,old)>=p.clearFront-1e-8);
+491:             if(slot<0)return blocked("passage_receipt_storage_or_slot");
+492:             if(nativeReceipt) {
+493:                 // Choose among physically usable slots. A blocked terminal in
+494:                 // the least-loaded slot must not hide a free compatible lane.
+495:                 slot=choose(vehicle,p.receipt.getId(),"",s->freeFront(receipt,s,old)>=p.clearFront-1e-8&&receiptQueuesClear(p,s,qnet));
+496:                 if(slot<0)return blocked("passage_receipt_native_queue");
+497:             }
+498:             p.freeFront=freeFront(receipt,slot,old);
+499:             return new PhysicalPlan(p,slot,null);
+500:         }
+501:         int slot=choose(vehicle,target,lane);
+502:         return slot<0?blocked("receiver_storage_or_terminal_slot"):new PhysicalPlan(null,slot,null);
+503:     }
+504:     /** Parallel heads of the same entrance movement are arbitrated by the real
+505:      * node before either acquires its whole passage. Looking ahead to a return
+506:      * at that same node must not make those equivalent requests veto each
+507:      * other. This only recognizes identical connector/receipt paths, with
+
+src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/SimZ1CorridorOccupancy.java:548
+548:     private boolean canEnter(QVehicle vehicle,Id<Link> target,String lane,double now,String activityBufferQueue) {
+549:         var d=domains.get(target);var plan=physicalPlan(vehicle,target,lane,null,true);
+550:         String issue=plan.reason;
+551:         if(issue==null&&plan.passage!=null)issue=preparePassage(vehicle,target,plan.passage,now,activityBufferQueue);
+552:         if(issue==null) {
+553:             if(plan.slot==-2)return true;
+554:             waitReasons.remove(vehicle.getId());
+555:             if(plan.passage!=null)pendingPassages.put(vehicle.getId(),plan.passage);
+556:             pending.put(vehicle.getId(),new Pending(target,lane,plan.slot));return true;
+557:         }
+558:         // Emit when the cause changes too; a previous stop hold must not hide
+559:         // a subsequently discovered impossible route or occupied receipt.
+560:         String cause=d.id+"\0"+issue;
+561:         if(!cause.equals(waitReasons.put(vehicle.getId(),cause)))transaction(now,"WAIT",vehicle.getId(),target,new Reservation(d,-1,length(vehicle),0,target),-1,issue);
+562:         return false;
+563:     }
+564:     boolean activity(QVehicle vehicle,Id<Link> link,String lane,double now) {
+
+src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/SimZ1CorridorOccupancy.java:648
+648:         var l=network.getLinks().get(link);double offset=r.passage!=null&&r.passage.offsets.containsKey(link)?r.passage.offsets.get(link):r.domain.offsets.get(link);
+649:         double bound=offset+queueEnds.getOrDefault(link,Map.of()).getOrDefault(lane,l.getLength());
+650:         return r.passage==null||r.passage.receipt!=null?Math.min(r.domain.capacity,bound):bound;
+651:     }
+652:     private void progress(QVehicle vehicle,Id<Link> link,String lane,double now,String reason) {
+653:         var r=active.get(vehicle.getId());if(r==null)return;
+654:         r.nativeFront=Math.max(r.nativeFront,queueEndpoint(r,link,lane));r.nativeQueue=lane;
+655:         if(reason.equals("native_earliest_exit_reached"))recompute(r.domain,r.slot,now,reason,vehicle.getId(),vehicle.getEarliestLinkExitTime());
+656:         else recompute(r.domain,r.slot,now,reason);
+657:     }
+658:     private double freeFront(Domain d,int slot,Reservation exclude){double bound=d.capacity;for(var r:d.reservations.get(slot).values())if(r!=exclude)bound=Math.min(bound,r.frontBound-r.footprint);return bound;}
+
+src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/SimZ1CorridorOccupancy.java:820
+820:     private String preparePassage(QVehicle vehicle,Id<Link> target,Passage p,double now,String activityBufferQueue) {
+821:         String physicalIssue=passagePhysicalIssue(vehicle,p,now,activityBufferQueue,null);
+822:         if(physicalIssue!=null)return physicalIssue;
+823:         var old=active.get(vehicle.getId());var connectors=p.links;var slots=p.slots;var receipt=p.receipt;
+824:         double wait=0;
+825:         for(int i=0;i<connectors.size();i++) {
+826:             var from=connectors.get(i);var to=i+1<connectors.size()?connectors.get(i+1):receipt;
+827:             if(to==null)continue; // final activity/gateway leaves native traffic
+828:             var node=nativeNodes.get(from.getToNode().getId());if(node==null)return "passage_native_node_missing";
+829:             if(!node.passageClear(vehicle,from,to,slots.get(from.getId()),now))return "passage_control_or_crossing_wait";
+830:             double seconds=node.passageStopSeconds(from);wait+=seconds;p.stopCredits.put(from.getId(),seconds);
+831:         }
+832:         Double first=passageRequestTime.get(vehicle.getId());
+833:         if(first==null){first=now;passageRequestTime.put(vehicle.getId(),first);
+834:             p.holdStart=first;p.requiredStop=wait;var attrs=new LinkedHashMap<String,String>();
+835:             attrs.put("vehicle",vehicle.getId().toString());attrs.put("link",old==null?target.toString():old.link.toString());attrs.put("requestedLink",target.toString());
+836:             attrs.put("source","native_admission_hold");attrs.put("positionsObserved","false");addStopCredit(attrs,p);attrs.remove("passageAuthorizedTime");emit(now,"simz1OccupancyPassageHold",attrs);
+837:         }
+838:         if(now<first+wait)return "passage_stop_hold";
+839:         p.holdStart=first;p.authorizedTime=now;p.requiredStop=wait;
+840:         double speed=Math.min(vehicle.getVehicle().getType().getMaximumVelocity(),connectors.stream().mapToDouble(l->l.getFreespeed(now)).min().orElse(1));
+841:         p.notBefore=now+(connectors.stream().mapToDouble(Link::getLength).sum()+(receipt==null?length(vehicle)+GAP:entryClearanceDistance(vehicle,receipt.getId())))/speed;
+842:         return null;
+843:     }
+844:     /** Read native physical constraints only. No passageClear/priority callback:
+
+src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/SimZ1CorridorOccupancy.java:846
+846:     private String passagePhysicalIssue(QVehicle vehicle,Passage p,double now,String activityBufferQueue,QNetwork qnet) {
+847:         double traversal=0;
+848:         for(int i=0;i<p.links.size();i++) {
+849:             var from=p.links.get(i);var to=i+1<p.links.size()?p.links.get(i+1):p.receipt;
+850:             if(to==null)continue;
+851:             int slot=p.slots.get(from.getId());
+852:             var node=nativeNodes.get(from.getToNode().getId());
+853:             if(qnet!=null) {
+854:                 var qfrom=qnet.getNetsimLinks().get(from.getId());var qto=qnet.getNetsimLinks().get(to.getId());
+855:                 if(qfrom==null||qto==null)return "passage_native_link_missing";
+856:                 if(!qto.getAcceptingQLane().isAcceptingFromUpstream())return "passage_native_storage";
+857:                 var offered=qfrom.getOfferingQLanes();
+858:                 var selected=offered.stream().filter(l->offered.size()==1||l.getId().toString().endsWith(".lane."+slot)).findFirst().orElse(null);
+859:                 if(selected==null)return "passage_native_lane_missing";
+860:                 if(selected instanceof org.matsim.core.mobsim.qsim.interfaces.SignalizeableItem signal&&!signal.hasGreenForToLink(to.getId()))return "passage_signal_not_green";
+861:             }
+862:             if(node!=null) {
+863:                 traversal+=node.passageTraversalUpperBound(vehicle,from,slot,now,i==0?activityBufferQueue:null);
+864:                 if(!Double.isFinite(traversal))return "passage_traversal_unavailable";
+865:                 double remaining=node.passageGreenRemaining(from,to,slot,now);
+866:                 if(!(remaining>0))return "passage_signal_not_green";
+867:                 if(remaining<=traversal)return "passage_signal_window_too_short";
+868:                 if(Double.isFinite(remaining)) {
+869:                     p.greenWindows.put(from.getId(),remaining);p.traversalBudgets.put(from.getId(),traversal);
+870:                 }
+871:             }else return "passage_native_node_missing";
+872:         }
+873:         return null;
+874:     }
+
+src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/Zona1QNodeImpl.java:489
+489: 		if (nextQueueLane.isAcceptingFromUpstream() && (occupancy==null ||
+490:                 occupancy.canEnter(veh,nextLinkId,nextQueueLane.getId().toString(),now))) {
+491: 			moveVehicleFromInlinkToOutlink(veh, currentLink.getId(), fromLane, nextLinkId, nextQueueLane);
+492:             if(occupancy!=null && !passage && !java.util.Objects.equals(occupancy.corridorId(currentLink.getId()),occupancy.corridorId(nextLinkId))) {
+493:                 double distance=occupancy.entryClearanceDistance(veh,nextLinkId);
+494:                 double velocity=Math.min(veh.getVehicle().getType().getMaximumVelocity(),Math.min(currentLink.getFreespeed(now),nextQueueLink.getLink().getFreespeed(now)));
+495:                 if(!(velocity>0)||!Double.isFinite(velocity))throw new IllegalStateException("Invalid crossing clearance speed");
+496:                 crossings.add(new Crossing(movement,veh.getId(),occupancy.corridorId(nextLinkId),occupancy.offset(nextLinkId)+distance,now+distance/velocity));
+497:             }
+498:             if (admissionConflicts != null) {
+499:                 admitted.add(movement);
+500:                 diagnostics.admitted(currentLink, fromLane, nextLinkId, veh, now, nextQueueLane);
+501:             }
+502:             if(turnAcceptanceLogic instanceof gt.edu.uvg.sim.zona1.UnsignalizedPriority.StopAndYield priority) {
+503:                 if(passage)priority.crossedPassage(currentLink,fromLane,nextLinkId,veh,netsimEngine.getNetsimNetwork(),now,passageProof);
+504:                 else priority.crossed(currentLink,fromLane,nextLinkId,veh,netsimEngine.getNetsimNetwork(),now,false);
+505:             }
+506: 			return true;
+507: 		}
+508: 		// else, i.e. next link or lane is jammed
+509: 		if(occupancy!=null)occupancy.passageStorageWait(veh,currentLink.getId(),fromLane.getId().toString(),nextLinkId,nextQueueLane,now);
+510: 		this.atLeastOneOutgoingLaneIsJammed = true;
+
+src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/Zona1QNodeImpl.java:532
+532:         // Strict admission never turns a rejected receiver into FORCE/ABORT.
+533:         // Preserve the source queue even beyond stuckTime (also defensively if
+534:         // removeStuckVehicles was enabled). Gridlock may persist; this does not
+535:         // promise eventual movement or silently change native storage capacity.
+536: 		diagnostics.storage(currentLink, fromLane, nextLinkId, veh, now, "storage_wait", "WAIT", nextQueueLink, nextQueueLane);
+537:         if(turnAcceptanceLogic instanceof gt.edu.uvg.sim.zona1.UnsignalizedPriority.StopAndYield priority)
+538:             priority.storageWait(currentLink,fromLane,nextLinkId,veh,now);
+539: 		return false;
+
+src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/Zona1QNodeImpl.java:570
+570:     boolean passageClear(QVehicle vehicle,Link from,Link to,int modelSlot,double now) {
+571:         var occupancy=SimZ1CorridorOccupancy.get(context.qsimConfig);
+572:         crossings.removeIf(c->occupancy.crossingCleared(c.vehicle(),c.corridor(),c.clearFront(),c.notBefore(),now));
+573:         var movement=new PriorityMovements.Movement(from.getId(),to.getId());
+574:         for(var c:crossings)if(movement.equals(c.movement())||admissionConflicts.conflicts(movement,c.movement()))return false;
+575:         if(admissionStep==now)for(var prior:admitted)if(movement.equals(prior)||admissionConflicts.conflicts(movement,prior))return false;
+576:         var qnet=netsimEngine.getNetsimNetwork();var qfrom=qnet.getNetsimLinks().get(from.getId());var qto=qnet.getNetsimLinks().get(to.getId());
+577:         if(qfrom==null||qto==null||!qto.getAcceptingQLane().isAcceptingFromUpstream())return false;
+578:         QLaneI selected=null;for(var lane:qfrom.getOfferingQLanes())if(qfrom.getOfferingQLanes().size()==1||lane.getId().toString().endsWith(".lane."+modelSlot)){selected=lane;break;}
+579:         if(selected==null)return false;
+580:         if(routeSafety!=null&&!routeSafety.laneAllowsVehicle(from.getId(),selected.getId(),to.getId(),vehicle.getId()))return false;
+581:         if(selected instanceof org.matsim.core.mobsim.qsim.interfaces.SignalizeableItem signal&&!signal.hasGreenForToLink(to.getId()))return false;
+582:         return !(turnAcceptanceLogic instanceof gt.edu.uvg.sim.zona1.UnsignalizedPriority.StopAndYield priority)||priority.passageMayProceed(from,to.getId(),vehicle,qnet,now);
+583:     }
+584: 
+585: 	private static int wrnCnt = 0 ;
+
+src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/QueueWithBuffer.java:349
+349: 			updateFastFlowAccumulation();
+350: 		}
+351: 
+352: 		return flowcap_accumulate.getValue() > 0.0 || veh.getVehicle().getType()
+353: 				.getPcuEquivalents() <= context.qsimConfig.getPcuThresholdForFlowCapacityEasing();
+354: 	}
+
+src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/QueueWithBuffer.java:373
+373: 
+374: 	private void updateSlowFlowAccumulation(){
+375: 		double remainingFlowCapThisTimeStep = subtractConsumptionOfVehiclesThatAreAlreadyInTheBuffer();
+376: 		
+377: 		if (this.thisTimeStepGreen
+378: 				&& this.flowcap_accumulate.getValue() < remainingFlowCapThisTimeStep){
+379: 			double newFlowCap = Math.min(flowcap_accumulate.getValue() + flowCapacityPerTimeStep,
+380: 					remainingFlowCapThisTimeStep);
+381: 			flowcap_accumulate.setValue(newFlowCap);
+382: 		}
+383: 	}
+384: 
+385: 	private double subtractConsumptionOfVehiclesThatAreAlreadyInTheBuffer() {
+386: 		// A SimZ1 original queue multiplexes independently reserved lanes. A
+387: 		// retained grant in another slot must not permanently freeze the native
+388: 		// travelling head before originalSlotHeads() can even observe it. Keep
+389: 		// the accumulated debt and its ordinary rate/ceiling: this changes only
+390: 		// the ceiling imposed by old, blocked buffer entries, never grants flow.
+391: 		if (independentOriginalHeadMayAccumulate()) return flowCapacityPerTimeStep;
+392: 		double remainingFlowCapThisTimeStep = flowCapacityPerTimeStep;
+393: 		for (Pair<QVehicle,Double> vehEfficiencyPair : buffer) {
+394: 			// Subtract size of vehicles that are already in the buffer (from previous time steps)
+395: 			remainingFlowCapThisTimeStep -= vehEfficiencyPair.getValue();
+396: 		}
+397: 		return remainingFlowCapThisTimeStep;
+398: 	}
+399: 
+400:     private boolean independentOriginalHeadMayAccumulate() {
+401:         if(effectiveNumberOfLanesUsedInQsim<2||!(vehQueue instanceof FIFOVehicleQ)
+402:                 ||context.qsimConfig.getTrafficDynamics()!=QSimConfigGroup.TrafficDynamics.queue
+403:                 ||!id.toString().equals(qLink.getId()+".original")||buffer.isEmpty())return false;
+404:         var ledger=occupancy();var head=vehQueue.peek();double now=context.getSimTimer().getTimeOfDay();
+405:         if(ledger==null||head==null||head.getEarliestLinkExitTime()>now
+406:                 ||lastBufferEntry==null||lastBufferEntry.getValue()>=now)return false;
+407:         int slot=ledger.originalSlot(head,qLink.getId(),id.toString());if(slot<0)return false;
+408:         for(var entry:buffer) {
+409:             int bufferedSlot=ledger.originalSlot(entry.getKey(),qLink.getId(),id.toString());
+410:             // Unresolved bodies and a predecessor in the same lane remain
+411:             // barriers. In particular, no connector passage is bypassed.
+412:             if(bufferedSlot<0||bufferedSlot==slot)return false;
+413:         }
+414:         return true;
+415:     }
+416: 
+417: 	@Override
+
+src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/QueueWithBuffer.java:775
+775: 	public final boolean isAcceptingFromUpstream() {
+776: 		boolean storageOk = usedStorageCapacity < storageCapacity ;
+777: 
+778: 		if ( context.qsimConfig.getTrafficDynamics()==TrafficDynamics.queue )  {
+779: 			return storageOk ;
+780: 		}
+781: 		// (continue only if HOLES and/or inflow constraint)
+782: 
+783: 		if ( context.qsimConfig.getTrafficDynamics() != TrafficDynamics.queue
+
+src/main/java/gt/edu/uvg/sim/zona1/SimZ1Diagnostics.java:47
+47:     }
+48:     @Override public void handleEvent(Event event) {
+49:         if (event instanceof LinkEnterEvent) links.incrementAndGet();
+50:         else if (event instanceof PersonArrivalEvent) arrivals.incrementAndGet();
+51:         else if (event instanceof VehicleEntersTrafficEvent) active.incrementAndGet();
+52:         else if (event instanceof VehicleLeavesTrafficEvent) active.decrementAndGet();
+53:         else if (event.getEventType().equals("zona1RerouteStep")) routing.addAndGet(Long.parseLong(event.getAttributes().get("calculations")));
+54:         else if (event.getEventType().equals("simz1NativeDecision"))
+55:             decisions.computeIfAbsent(event.getAttributes().get("reason"),key->new AtomicLong()).incrementAndGet();
+56:     }
+57:     private static long cpu() {
+58:         var bean=ManagementFactory.getOperatingSystemMXBean();
+
+src/main/java/gt/edu/uvg/sim/zona1/SimZ1Diagnostics.java:112
+112:     }
+113:     private long delta(String reason) {
+114:         long count=decisions.getOrDefault(reason,new AtomicLong()).get();
+115:         long before=previousDecisions.getOrDefault(reason,0L); previousDecisions.put(reason,count); return count-before;
+116:     }
+117:     private void report(double now,String phase) {
+118:         long wall=System.nanoTime(), currentCpu=cpu(), currentLinks=links.get(), currentArrivals=arrivals.get(), currentRouting=routing.get();
+119:         var data=new TreeMap<String,String>();
+120:         long signal=delta("signal_red")+delta("signal_yellow")+delta("signal_redyellow")+delta("signal_not_green")+
+121:             delta("signal_queue_not_green");
+122:         long storage=delta("storage_wait"), priority=delta("priority_stop")+delta("priority_yield")+
+123:             delta("priority_yield_conflict")+delta("priority_conflict_executed")+delta("priority_fairness")+
+124:             delta("intersection_conflict")+delta("admission_conflict_executed");
+125:         long congestion=delta("congestion_queue"), restrictions=delta("turn_restriction");
+126:         data.put("iteration",""+iteration); data.put("elapsedSimSeconds",""+(now-previousTime)); data.put("stepCount",""+stepCount);
+127:         data.put("observationPhase",phase);
+128:         data.put("lastCompletedStepTime",stepCount==0?"unknown":Double.toString(simulatedTime));
+129:         data.put("processCpuNanos",""+(currentCpu<0||previousCpu<0?-1:currentCpu-previousCpu)); data.put("wallNanos",""+(wall-previousWall));
+130:         data.put("linkTransitions",""+(currentLinks-previousLinks)); data.put("arrivals",""+(currentArrivals-previousArrivals));
+131:         data.put("activeVehicles",""+active.get()); data.put("rerouteCalculations",""+(currentRouting-previousRouting));
+132:         data.put("waitSignal",""+signal); data.put("waitStorage",""+storage); data.put("waitPriority",""+priority);
+133:         data.put("waitCongestion",""+congestion); data.put("turnRestrictions",""+restrictions);
+134:         data.put("forcedMoves",""+delta("storage_forced_move")); data.put("threadDeadlocks",""+deadlockedThreads);
+135:         data.put("storageStuckRemovals",""+delta("storage_stuck_removal"));
+136:         data.put("classification",classifyProgress(deadlockedThreads>0?new long[]{1}:null,0,currentCpu-previousCpu,currentLinks-previousLinks,signal+storage+priority+congestion));
+137:         qsim.getEventsManager().processEvent(new Event(now) {
+138:             @Override public String getEventType() { return "simz1Progress"; }
+139:             @Override public Map<String,String> getAttributes() { var attributes=super.getAttributes(); attributes.putAll(data); return attributes; }
+140:         });
+
+python/simz1_balanced_od_audit.py:274
+274:         for key, table in ((record['origin_gateway'], self.model.entry_gateways),
+275:                            (record['destination_gateway'], self.model.exit_gateways)):
+276:             if key:
+277:                 result.update(table[key]['link_ids'])
+278:         return result
+279: 
+280:     def validate_observed_route(self, ident, path, *, complete=False):
+281:         row = self.records[ident]
+282:         if not path or path[0] != row['origin_link'] or any(k not in self.allowed(row) for k in path):
+283:             raise ValueError('Private observed route escaped its selected gateways/interior')
+284:         self.model.validate_route(path)
+285:         if row['origin_gateway']:
+286:             chain = self.model.entry_gateways[row['origin_gateway']]['link_ids']
+287:             n = min(len(path), len(chain))
+288:             if path[:n] != chain[:n]:
+289:                 raise ValueError('Private route skipped part of its verified entry chain')
+290:         if row['destination_gateway']:
+291:             chain = self.model.exit_gateways[row['destination_gateway']]['link_ids']
+292:             # Until entering the crossing, a reroute may revisit the interior
+293:             # observation. Once crossing, its entire suffix is compulsory.
+294:             cut = row['exit_crossing_link']
+295:             if cut in path:
+296:                 start = path.index(cut)-chain.index(cut)
+297:                 tail = path[start:] if start >= 0 else []
+298:                 if start < 0 or tail != chain[:len(tail)]:
+299:                     raise ValueError('Private route skipped part of its verified exit chain')
+300:         crossings = [k for k in path if self.model.classification[k] in ('entry_crossing','exit_crossing')]
+301:         expected = [k for k in (row['entry_crossing_link'], row['exit_crossing_link']) if k]
+302:         if crossings != expected[:len(crossings)] or len(crossings) > len(expected):
+303:             raise ValueError('Private route used an undeclared/repeated perimeter crossing')
+304:         if complete and (path[-1] != row['destination_link'] or crossings != expected or
+305:                 not set(path) & set(self.model.internal_links)):
+306:             raise ValueError('Private trip did not complete its directed interior/gateway route')
+
+python/simz1_balanced_od_audit.py:339
+339:             return  # Freight and public transport keep their existing audits.
+340:         time = self.number(event,'time')
+341:         if time < 0 or time < self.last_time:
+342:             raise ValueError('Private OD events out of chronological order')
+343:         self.last_time = time
+344:         row = self.records[ident]
+
+python/simz1_balanced_od_audit.py:371
+371:             self.inserted.add(ident)
+372:             self.initial_enter.add(ident)
+373:         elif kind == 'left link':
+374:             if (ident not in self.inserted or ident in self.left or ident in self.aborted or
+375:                     ident in self.pending_leave or event.get('link') != self.paths[ident][-1]):
+376:                 raise ValueError('Private LinkLeave without matching active link')
+377:             self.initial_enter.discard(ident)
+378:             self.pending_leave[ident] = event['link']
+379:         elif kind == 'entered link':
+380:             if ident not in self.inserted or ident in self.left or ident in self.aborted:
+381:                 raise ValueError('Private link movement without active insertion')
+382:             # MATSim may repeat the origin as LinkEnter after traffic insertion.
+383:             # It is evidence of the same link, not a second traversal.
+384:             if ident in self.initial_enter and event.get('link') == row['origin_link']:
+385:                 self.initial_enter.discard(ident)
+386:                 return
+387:             if self.pending_leave.pop(ident,None) != self.paths[ident][-1]:
+388:                 raise ValueError('Private LinkEnter lacks its preceding LinkLeave')
+389:             self.paths[ident].append(event['link'])
+390:             self.validate_observed_route(ident,self.paths[ident])
+391:             self.link_entries += 1
+392:         elif kind == 'vehicle leaves traffic':
+393:             self.validate_observed_route(ident,self.paths.get(ident,[]),complete=True)
+394:             if event.get('link') != row['destination_link'] or ident in self.left:
+395:                 raise ValueError('Wrong/duplicate native private exit')
+396:             if row['destination_gateway']:
+397:                 gateway = self.model.exit_gateways[row['destination_gateway']]
+
+python/simz1_balanced_launch_report.py:113
+113:             current_partial_minute=self.row(self.minute,self.minute_counts,False),
+114:             last_complete_hour=self.hours[-1] if self.hours else None,
+115:             current_partial_hour=self.row(self.hour,self.hour_counts,False),
+116:             verified_exits_by_gateway=dict(self.gateway_exits))
+117: 
+118: 
+119: def context(run, manifest):
+120:     contract = validate_manifest(run, manifest)
+121:     if contract is None:
+122:         raise ValueError('Se requiere balanced-gateway-v1; no se etiqueta network como OD balanceado')
+123:     from simz1_freight import verified_contract
+124:     cargo = verified_contract(run, manifest)
+125:     bus_file = checked_path(run, manifest['inputs']['transit_vehicles'])
+126:     buses = {v.get('id') for v in ET.parse(bus_file).getroot().findall('{*}vehicle')}
+127:     return Observation(*contract, freight_ids=cargo, bus_ids=buses), cargo
+128: 
+129: 
+130: def write_csv(path, rows):
+
+python/simz1_balanced_launch_report.py:231
+231: 
+232: def watch(run, interval):
+233:     """Tail ONE explicit run. Does not write files or start native processes."""
+234:     run = Path(run).resolve()
+235:     reader = None
+236:     observation = None
+237:     cargo = None
+238:     try:
+239:         while True:
+240:             path = run/'run-manifest.json'
+241:             if not path.exists():
+242:                 print(json.dumps(dict(status='waiting_for_manifest',run=str(run))), flush=True)
+243:                 time.sleep(interval); continue
+244:             manifest = load_manifest(run)
+245:             if (manifest.get('spatial_demand') or {}).get('mode') != VARIANT:
+246:                 raise ValueError('El manifiesto no corresponde a balanced-gateway-v1')
+247:             events = run/'output/ITERS/it.0/0.events.xml.gz'
+248:             if observation is None and events.is_file():
+249:                 observation, freight_contract = context(run,manifest)
+250:                 from simz1_freight import FreightAudit
+251:                 cargo = FreightAudit(freight_contract)
+252:                 reader = GrowingEvents(events)
+253:             if reader is not None:
+254:                 for event in reader.poll():
+255:                     observation.consume(event)
+256:                     cargo.consume(ET.Element('event',event))
+257:             value = dict(status=manifest['status'], phase=manifest.get('phase'), run_id=manifest['run_id'],
+258:                 evidence='LIVE_PROVISIONAL_NOT_VALIDATION', first_causal_error=manifest.get('first_causal_error'),
+259:                 error=manifest.get('error'), events=str(events),
+260:                 observed=observation.view() if observation else None,
+261:                 freight_observed=(dict(completed=len(cargo.finished), restricted_window_vehicles=len(cargo.violations),
+262:                     native_active=len(cargo.traffic),waiting_to_incorporate=len(set(cargo.active)-cargo.seen)) if cargo else None),
+263:                 compressed_bytes_consumed=reader.stream.tell() if reader else 0,
+264:                 compressed_bytes_available=events.stat().st_size if events.is_file() else 0)
+265:             print(json.dumps(value,ensure_ascii=False),flush=True)
+266:             if manifest['status'] in ('completed','failed','interrupted'):
+267:                 if reader is None or reader.stream.tell() >= events.stat().st_size:
+268:                     return
+269:             time.sleep(interval)
+270:     finally:

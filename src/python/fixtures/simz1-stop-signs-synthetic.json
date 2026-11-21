@@ -1,0 +1,21 @@
+{
+  "schema_version": "simz1-stop-display-v1",
+  "synthetic": true,
+  "scope": "Synthetic renderer fixture only; no real stops, coordinates, source verification or service activation.",
+  "identity": {"run_id": "synthetic-stop-signs", "iteration": 0, "run_manifest_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+  "available": true,
+  "status": "synthetic_fixture",
+  "review_date": "2026-10-22",
+  "issues": [],
+  "records": [
+    {"transit_stop": true, "stop_id": "synthetic-east", "name": "Parada sintética A", "position": [0.0001, 0.00001], "Link_ID": "east", "direction": "Este", "bearing_degrees": 90,
+     "services": [{"service_id": "transmetro-fixture", "system": "transmetro", "service": "Transmetro", "line": "F1", "direction": "Este", "operator": "Operador compartido sintético"}],
+     "transfer": null, "opposed_stop_ids": ["synthetic-west"], "review_date": "2026-10-22", "sources": [{"source_id": "synthetic-only", "url": "https://example.invalid/synthetic"}]},
+    {"transit_stop": true, "stop_id": "synthetic-west", "name": "Parada sintética B", "position": [0.0001, -0.00001], "Link_ID": "west", "direction": "Oeste", "bearing_degrees": 270,
+     "services": [{"service_id": "tubus-fixture", "system": "tubus", "service": "TuBus", "line": "F2", "direction": "Oeste", "operator": "Operador compartido sintético"}],
+     "transfer": null, "opposed_stop_ids": ["synthetic-east"], "review_date": "2026-10-22", "sources": [{"source_id": "synthetic-only", "url": "https://example.invalid/synthetic"}]},
+    {"transit_stop": true, "stop_id": "synthetic-transfer", "name": "Intercambio sintético", "position": [0.001, 0.00001], "Link_ID": "east", "direction": "Este", "bearing_degrees": 90,
+     "services": [{"service_id": "transmetro-fixture", "system": "transmetro", "service": "Transmetro", "line": "F1", "direction": "Este"}, {"service_id": "tubus-fixture", "system": "tubus", "service": "TuBus", "line": "F2", "direction": "Este"}],
+     "transfer": {"id": "synthetic-hub", "name": "Transbordo sintético"}, "opposed_stop_ids": [], "review_date": "2026-10-22", "sources": [{"source_id": "synthetic-only", "url": "https://example.invalid/synthetic"}]}
+  ]
+}

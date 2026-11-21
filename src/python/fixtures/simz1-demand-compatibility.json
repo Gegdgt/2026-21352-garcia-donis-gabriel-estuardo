@@ -1,0 +1,435 @@
+{
+  "source": "6edc130, pre-Prompt-1A; semantic plans, fixed=10 or range=10..20",
+  "cases": {
+    "fixed": {
+      "seed": 20261004,
+      "count": 10,
+      "people": [
+        {
+          "id": "z1_00001",
+          "profile": "Tortuga",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_761388514_1_forward",
+              "x": "767270.272708",
+              "y": "1618348.839343",
+              "end_time": "25734"
+            },
+            {
+              "type": "work",
+              "link": "osm_45497717_3_forward",
+              "x": "767632.099989",
+              "y": "1618977.910744"
+            }
+          ]
+        },
+        {
+          "id": "z1_00002",
+          "profile": "Tortuga",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_381667651_10_forward",
+              "x": "766887.75853",
+              "y": "1619749.891259",
+              "end_time": "67502"
+            },
+            {
+              "type": "work",
+              "link": "osm_420120096_21_forward",
+              "x": "767354.364934",
+              "y": "1619461.185977"
+            }
+          ]
+        },
+        {
+          "id": "z1_00003",
+          "profile": "Normal",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_699533700_3_forward",
+              "x": "767017.726595",
+              "y": "1620609.931412",
+              "end_time": "63138"
+            },
+            {
+              "type": "work",
+              "link": "osm_1305763177_0_backward",
+              "x": "767580.989012",
+              "y": "1618974.616183"
+            }
+          ]
+        },
+        {
+          "id": "z1_00004",
+          "profile": "Normal",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_381667651_1_forward",
+              "x": "766931.893378",
+              "y": "1620071.518414",
+              "end_time": "25067"
+            },
+            {
+              "type": "work",
+              "link": "osm_381382167_0_forward",
+              "x": "768679.914379",
+              "y": "1620133.358422"
+            }
+          ]
+        },
+        {
+          "id": "z1_00005",
+          "profile": "Tortuga",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_749676931_4_forward",
+              "x": "768188.561174",
+              "y": "1620575.106132",
+              "end_time": "26360"
+            },
+            {
+              "type": "work",
+              "link": "osm_34994087_3_forward",
+              "x": "767716.981876",
+              "y": "1618478.739631"
+            }
+          ]
+        },
+        {
+          "id": "z1_00006",
+          "profile": "Liebre",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_44487311_1_forward",
+              "x": "766890.148386",
+              "y": "1619175.402477",
+              "end_time": "25079"
+            },
+            {
+              "type": "work",
+              "link": "osm_1095527693_1_backward",
+              "x": "768465.517448",
+              "y": "1619857.808568"
+            }
+          ]
+        },
+        {
+          "id": "z1_00007",
+          "profile": "Normal",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_406654687_10_forward",
+              "x": "766939.382892",
+              "y": "1620058.858183",
+              "end_time": "61674"
+            },
+            {
+              "type": "work",
+              "link": "osm_42841172_3_forward",
+              "x": "767448.590765",
+              "y": "1618909.476869"
+            }
+          ]
+        },
+        {
+          "id": "z1_00008",
+          "profile": "Liebre",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_699533700_4_forward",
+              "x": "767008.787326",
+              "y": "1620550.229855",
+              "end_time": "68858"
+            },
+            {
+              "type": "work",
+              "link": "osm_382357585_4_forward",
+              "x": "767316.867551",
+              "y": "1618484.199286"
+            }
+          ]
+        },
+        {
+          "id": "z1_00009",
+          "profile": "Normal",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_699533700_2_backward",
+              "x": "767017.726595",
+              "y": "1620609.931412",
+              "end_time": "67917"
+            },
+            {
+              "type": "work",
+              "link": "osm_930035053_4_forward",
+              "x": "767553.634211",
+              "y": "1619079.630606"
+            }
+          ]
+        },
+        {
+          "id": "z1_00010",
+          "profile": "Normal",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_65754263_21_forward",
+              "x": "767646.562058",
+              "y": "1620654.994486",
+              "end_time": "26046"
+            },
+            {
+              "type": "work",
+              "link": "osm_39931896_1_forward",
+              "x": "767631.106413",
+              "y": "1618932.842684"
+            }
+          ]
+        }
+      ]
+    },
+    "range": {
+      "seed": 20261004,
+      "count": 12,
+      "people": [
+        {
+          "id": "z1_00001",
+          "profile": "Tortuga",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_406654687_5_forward",
+              "x": "766912.102151",
+              "y": "1619859.799803",
+              "end_time": "69192"
+            },
+            {
+              "type": "work",
+              "link": "osm_1256935236_2_backward",
+              "x": "768708.847958",
+              "y": "1619602.451856"
+            }
+          ]
+        },
+        {
+          "id": "z1_00002",
+          "profile": "Tortuga",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_406872394_2_backward",
+              "x": "766773.379034",
+              "y": "1618608.092148",
+              "end_time": "67579"
+            },
+            {
+              "type": "work",
+              "link": "osm_1256935236_1_backward",
+              "x": "768706.780852",
+              "y": "1619582.645852"
+            }
+          ]
+        },
+        {
+          "id": "z1_00003",
+          "profile": "Normal",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_699533700_3_forward",
+              "x": "767017.726595",
+              "y": "1620609.931412",
+              "end_time": "63250"
+            },
+            {
+              "type": "work",
+              "link": "osm_1305763175_10_forward",
+              "x": "767244.379899",
+              "y": "1619290.569292"
+            }
+          ]
+        },
+        {
+          "id": "z1_00004",
+          "profile": "Normal",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_381667651_1_forward",
+              "x": "766931.893378",
+              "y": "1620071.518414",
+              "end_time": "24830"
+            },
+            {
+              "type": "work",
+              "link": "osm_1187726656_1_forward",
+              "x": "768325.939801",
+              "y": "1619773.730989"
+            }
+          ]
+        },
+        {
+          "id": "z1_00005",
+          "profile": "Tortuga",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_749676932_2_forward",
+              "x": "767985.531997",
+              "y": "1620605.045977",
+              "end_time": "26103"
+            },
+            {
+              "type": "work",
+              "link": "osm_1057416059_4_forward",
+              "x": "767750.517997",
+              "y": "1618539.574631"
+            }
+          ]
+        },
+        {
+          "id": "z1_00006",
+          "profile": "Liebre",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_44487311_1_forward",
+              "x": "766890.148386",
+              "y": "1619175.402477",
+              "end_time": "24841"
+            },
+            {
+              "type": "work",
+              "link": "osm_1095527691_2_forward",
+              "x": "768499.161905",
+              "y": "1619890.781718"
+            }
+          ]
+        },
+        {
+          "id": "z1_00007",
+          "profile": "Normal",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_406654687_10_forward",
+              "x": "766939.382892",
+              "y": "1620058.858183",
+              "end_time": "61736"
+            },
+            {
+              "type": "work",
+              "link": "osm_398276347_26_forward",
+              "x": "768399.010756",
+              "y": "1618959.891684"
+            }
+          ]
+        },
+        {
+          "id": "z1_00008",
+          "profile": "Liebre",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_699533700_4_forward",
+              "x": "767008.787326",
+              "y": "1620550.229855",
+              "end_time": "68910"
+            },
+            {
+              "type": "work",
+              "link": "osm_1214455884_0_backward",
+              "x": "768596.74401",
+              "y": "1619322.525747"
+            }
+          ]
+        },
+        {
+          "id": "z1_00009",
+          "profile": "Normal",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_699533700_2_backward",
+              "x": "767017.726595",
+              "y": "1620609.931412",
+              "end_time": "67987"
+            },
+            {
+              "type": "work",
+              "link": "osm_1187726649_7_forward",
+              "x": "768533.760395",
+              "y": "1619740.059282"
+            }
+          ]
+        },
+        {
+          "id": "z1_00010",
+          "profile": "Normal",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_34979717_7_forward",
+              "x": "767105.853301",
+              "y": "1618451.480191",
+              "end_time": "25794"
+            },
+            {
+              "type": "work",
+              "link": "osm_1480467097_1_backward",
+              "x": "768108.801827",
+              "y": "1619739.206726"
+            }
+          ]
+        },
+        {
+          "id": "z1_00011",
+          "profile": "Normal",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_381667651_17_forward",
+              "x": "766839.461809",
+              "y": "1619397.631185",
+              "end_time": "69171"
+            },
+            {
+              "type": "work",
+              "link": "osm_1280244545_0_backward",
+              "x": "768142.45997",
+              "y": "1619975.037214"
+            }
+          ]
+        },
+        {
+          "id": "z1_00012",
+          "profile": "Tortuga",
+          "activities": [
+            {
+              "type": "home",
+              "link": "osm_44487311_4_forward",
+              "x": "766918.048396",
+              "y": "1619387.010209",
+              "end_time": "62757"
+            },
+            {
+              "type": "work",
+              "link": "osm_1310639967_3_backward",
+              "x": "768252.444044",
+              "y": "1618751.028334"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

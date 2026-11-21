@@ -1,0 +1,16 @@
+{
+  "schema": "simz1-freight-completion-policy",
+  "version": "freight-close-plus3600-v1",
+  "assumption_status": "synthetic_experiment_not_legal_permission",
+  "nominal_windows_seconds": [[0, 18000], [32400, 57600], [75600, 104400]],
+  "tolerance_seconds": 3600,
+  "deadline_inclusive": true,
+  "window_assignment": "original_roster_planned_departure",
+  "entry_policy": "original_assigned_nominal_window_only",
+  "demand_end_seconds_exclusive": 86400,
+  "observation_end_seconds": 108000,
+  "completion_requires": ["native_arrival", "traffic_exit", "native_body_plus_0.10m_clearance"],
+  "nominal_violation_retained": true,
+  "deadline_does_not_interrupt_qsim": true,
+  "historical_runs_reinterpreted": false
+}

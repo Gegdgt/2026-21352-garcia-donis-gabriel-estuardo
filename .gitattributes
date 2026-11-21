@@ -1,0 +1,7 @@
+# Mantener los bytes de las fuentes auditadas al crear commits y clonar.
+/src/** -text
+/docs/*.gz -text
+*.mp4 -text
+*.pdf -text
+*.png -text
+*.jpg -text

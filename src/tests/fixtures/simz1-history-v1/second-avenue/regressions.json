@@ -1,0 +1,58 @@
+[
+  {
+    "utc": "2026-11-02T18:51:45.700782+00:00",
+    "phase": "focused_regression",
+    "check": "SimZ1LaneHeadArbitrationCheck",
+    "exit_code": 0,
+    "seconds": 1.3937443000031635,
+    "log": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\runtime\\2avenida-20261102\\SimZ1LaneHeadArbitrationCheck.log"
+  },
+  {
+    "utc": "2026-11-02T18:51:47.108212+00:00",
+    "phase": "focused_regression",
+    "check": "SimZ1IndependentLaneDischargeCheck",
+    "exit_code": 0,
+    "seconds": 1.4054942999937339,
+    "log": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\runtime\\2avenida-20261102\\SimZ1IndependentLaneDischargeCheck.log"
+  },
+  {
+    "utc": "2026-11-02T18:51:54.661990+00:00",
+    "phase": "focused_regression",
+    "check": "SimZ1ParallelOriginalFifoCheck",
+    "exit_code": 0,
+    "seconds": 7.553100699995412,
+    "log": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\runtime\\2avenida-20261102\\SimZ1ParallelOriginalFifoCheck.log"
+  },
+  {
+    "utc": "2026-11-02T18:52:01.605806+00:00",
+    "phase": "focused_regression",
+    "check": "SimZ1ArrivalClearanceCheck",
+    "exit_code": 0,
+    "seconds": 6.942814800000633,
+    "log": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\runtime\\2avenida-20261102\\SimZ1ArrivalClearanceCheck.log"
+  },
+  {
+    "utc": "2026-11-02T18:52:06.954923+00:00",
+    "phase": "focused_regression",
+    "check": "SimZ1BlockingStopCheck",
+    "exit_code": 0,
+    "seconds": 5.3468175000016345,
+    "log": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\runtime\\2avenida-20261102\\SimZ1BlockingStopCheck.log"
+  },
+  {
+    "utc": "2026-11-02T18:52:13.691308+00:00",
+    "phase": "focused_regression",
+    "check": "SimZ1CrossingClearanceCheck",
+    "exit_code": 0,
+    "seconds": 6.735966899999767,
+    "log": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\runtime\\2avenida-20261102\\SimZ1CrossingClearanceCheck.log"
+  },
+  {
+    "utc": "2026-11-02T18:52:14.928665+00:00",
+    "phase": "focused_regression",
+    "check": "SimZ1PriorityReceiverCheck",
+    "exit_code": 0,
+    "seconds": 1.235690400004387,
+    "log": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\runtime\\2avenida-20261102\\SimZ1PriorityReceiverCheck.log"
+  }
+]

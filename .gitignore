@@ -1,0 +1,53 @@
+# Productos de preparacion y verificacion locales
+/.entrega-work/
+/src/runtime/
+/src/target/
+/src/build/
+/src/output/
+/src/audits/
+/src/evidence/
+/src/tmp/
+/src/temp/
+/src/scenarios/zona1/montecarlo/
+/src/scenarios/zona1/audit-*/
+
+# Dependencias instaladas, caches y compilados
+**/.venv/
+**/venv/
+**/node_modules/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+*.py[cod]
+*.class
+*.hprof
+*.jfr
+
+# Credenciales y configuracion personal
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
+
+# Nuevos resultados de ejecucion (las fixtures versionadas se conservan)
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.db-wal
+*.db-shm
+*.tmp
+*.bak
+
+# No ignorar XML/OSM/JSON: contienen entradas legitimas.
+# No ignorar capturas, demo/demo.mp4 ni docs/*.pdf.

@@ -1,0 +1,582 @@
+{
+  "schema_version": "simz1-catalog-stop-annotations-v1",
+  "synthetic": false,
+  "review_date": "2026-10-22",
+  "catalog_sha256": "1e01579328ca817f563f6fec59eec30dffdc099767e6c4c0e91ef8f219fc7886",
+  "source_registry_sha256": "9d0d7ddd2cd76026606b9b04fdcbd653ad7c5945cb1151626182c2df5a66070e",
+  "scope": "Dated catalog references only. No current operating validity, native stop linkage, service authorization, timetable or simulated usage is asserted.",
+  "coordinate_policy": "Use exact OSM platform points, never a route centroid or nearest lane. Named Transmetro pairings additionally require municipal coordinates within 25 m. Download rectangle is not an approved transit domain.",
+  "stops": [
+    {
+      "stop_id": "osm:node:2642147371",
+      "name": "San Sebastián",
+      "services": [
+        {
+          "service_id": "transmetro-l1",
+          "official_stop_evidence": {
+            "status": "verified",
+            "sources": [
+              "tm-l1-2025"
+            ]
+          },
+          "review_note": "Named station in dated municipal article and municipal GIS; manually paired with the same named OSM platform. Source directions only.",
+          "relation_ids": [
+            "14034049",
+            "14099833"
+          ],
+          "municipal_feature_id": 1
+        },
+        {
+          "service_id": "transmetro-l2",
+          "official_stop_evidence": {
+            "status": "verified",
+            "sources": [
+              "tm-l2-2025"
+            ]
+          },
+          "review_note": "Named station in dated municipal article and municipal GIS; manually paired with the same named OSM platform. Source directions only.",
+          "relation_ids": [
+            "14110814",
+            "14110815"
+          ],
+          "municipal_feature_id": 87
+        }
+      ],
+      "transfer": {
+        "id": "san-sebastian-l1-l2",
+        "name": "San Sebastián · L1/L2",
+        "status": "verified",
+        "sources": [
+          "tm-l1-2025",
+          "tm-l2-2025"
+        ]
+      }
+    },
+    {
+      "stop_id": "osm:node:4735674022",
+      "name": "Parque Centenario",
+      "services": [
+        {
+          "service_id": "transmetro-l1",
+          "official_stop_evidence": {
+            "status": "verified",
+            "sources": [
+              "tm-l1-2025"
+            ]
+          },
+          "review_note": "Named station in dated municipal article and municipal GIS; manually paired with the same named OSM platform. Source directions only.",
+          "relation_ids": [
+            "14034049"
+          ],
+          "municipal_feature_id": 29
+        }
+      ]
+    },
+    {
+      "stop_id": "osm:node:4735676121",
+      "name": "Correos",
+      "services": [
+        {
+          "service_id": "transmetro-l1",
+          "official_stop_evidence": {
+            "status": "verified",
+            "sources": [
+              "tm-l1-2025"
+            ]
+          },
+          "review_note": "Named station in dated municipal article and municipal GIS; manually paired with the same named OSM platform. Source directions only.",
+          "relation_ids": [
+            "14099833"
+          ],
+          "municipal_feature_id": 27
+        }
+      ]
+    },
+    {
+      "stop_id": "osm:node:5859958886",
+      "name": "San Agustín",
+      "services": [
+        {
+          "service_id": "transmetro-l1",
+          "official_stop_evidence": {
+            "status": "verified",
+            "sources": [
+              "tm-l1-2025"
+            ]
+          },
+          "review_note": "Named station in dated municipal article and municipal GIS; manually paired with the same named OSM platform. Source directions only.",
+          "relation_ids": [
+            "14034049"
+          ],
+          "municipal_feature_id": 30
+        }
+      ]
+    },
+    {
+      "stop_id": "osm:node:5859958985",
+      "name": "Gómez Carrillo",
+      "services": [
+        {
+          "service_id": "transmetro-l1",
+          "official_stop_evidence": {
+            "status": "verified",
+            "sources": [
+              "tm-l1-2025"
+            ]
+          },
+          "review_note": "Named station in dated municipal article and municipal GIS; manually paired with the same named OSM platform. Source directions only.",
+          "relation_ids": [
+            "14034049"
+          ],
+          "municipal_feature_id": 31
+        }
+      ]
+    },
+    {
+      "stop_id": "osm:node:6076315285",
+      "name": "Mercado Central",
+      "services": [
+        {
+          "service_id": "transmetro-l1",
+          "official_stop_evidence": {
+            "status": "verified",
+            "sources": [
+              "tm-l1-2025"
+            ]
+          },
+          "review_note": "Named station in dated municipal article and municipal GIS; manually paired with the same named OSM platform. Source directions only.",
+          "relation_ids": [
+            "14099833"
+          ],
+          "municipal_feature_id": 28
+        }
+      ]
+    },
+    {
+      "stop_id": "osm:node:6670504886",
+      "name": "Paseo de las Letras",
+      "services": [
+        {
+          "service_id": "transmetro-l1",
+          "official_stop_evidence": {
+            "status": "verified",
+            "sources": [
+              "tm-l1-2025"
+            ]
+          },
+          "review_note": "Named station in dated municipal article and municipal GIS; manually paired with the same named OSM platform. Source directions only.",
+          "relation_ids": [
+            "14099833"
+          ],
+          "municipal_feature_id": 37
+        }
+      ]
+    },
+    {
+      "stop_id": "osm:node:9662312674",
+      "name": "Centro Cívico",
+      "services": [
+        {
+          "service_id": "transmetro-l1",
+          "official_stop_evidence": {
+            "status": "verified",
+            "sources": [
+              "tm-l1-2025"
+            ]
+          },
+          "review_note": "Named station in dated municipal article and municipal GIS; manually paired with the same named OSM platform. Source directions only.",
+          "relation_ids": [
+            "14034049",
+            "14099833"
+          ],
+          "municipal_feature_id": 35
+        }
+      ]
+    },
+    {
+      "stop_id": "osm:node:9662312675",
+      "name": "Sur 2",
+      "services": [
+        {
+          "service_id": "transmetro-l1",
+          "official_stop_evidence": {
+            "status": "verified",
+            "sources": [
+              "tm-l1-2025"
+            ]
+          },
+          "review_note": "Named station in dated municipal article and municipal GIS; manually paired with the same named OSM platform. Source directions only.",
+          "relation_ids": [
+            "14034049"
+          ],
+          "municipal_feature_id": 36
+        }
+      ]
+    },
+    {
+      "stop_id": "osm:node:4735676221",
+      "name": "Parque Colón",
+      "services": [
+        {
+          "service_id": "tubus-5",
+          "osm_line": "R5",
+          "official_stop_evidence": {
+            "status": "verified",
+            "sources": [
+              "tubus-article-2025"
+            ]
+          },
+          "review_note": "Municipal article names Parque Colón as route 5 endpoint; OSM platform names TuBus and belongs to both R5 directions (municipal 5, OSM R5). No official point geometry or native lane assignment claimed.",
+          "relation_ids": [
+            "18672965",
+            "18672966"
+          ]
+        }
+      ]
+    }
+  ],
+  "pending": [
+    {
+      "stop_id": "osm:node:4201078676",
+      "service_ids": [
+        "transmetro-l1"
+      ],
+      "name": "Beatas de Belén",
+      "reason": "municipal_osm_position_conflict",
+      "detail": "Municipal feature 99 and OSM platform differ by about 62 m; municipal article and GIS street addresses also differ. Reconcile before display; neither coordinate is moved."
+    },
+    {
+      "service_id": "transmetro-l6",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown",
+        "source_stop_order_geometry_and_current_variant_reconciliation_pending"
+      ],
+      "sources": [
+        "transmetro-routes-gis",
+        "tm-l6-2025",
+        "transmetro-stations-gis",
+        "osm-snapshot",
+        "tm-map-2024-02"
+      ]
+    },
+    {
+      "service_id": "transmetro-l7",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown",
+        "source_stop_order_geometry_and_current_variant_reconciliation_pending"
+      ],
+      "sources": [
+        "transmetro-routes-gis",
+        "tm-l7-2019",
+        "transmetro-stations-gis",
+        "osm-snapshot",
+        "contrast-tm-l7"
+      ]
+    },
+    {
+      "service_id": "transmetro-l12",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown",
+        "source_stop_order_geometry_and_current_variant_reconciliation_pending"
+      ],
+      "sources": [
+        "transmetro-routes-gis",
+        "tm-l12-2025",
+        "transmetro-stations-gis",
+        "osm-snapshot",
+        "tm-map-2024-02"
+      ]
+    },
+    {
+      "service_id": "transmetro-l13",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown",
+        "source_stop_order_geometry_and_current_variant_reconciliation_pending"
+      ],
+      "sources": [
+        "transmetro-routes-gis",
+        "tm-map-2023-11",
+        "transmetro-stations-gis",
+        "osm-snapshot",
+        "tm-memo-2021",
+        "contrast-tm-l13",
+        "tm-map-2024-02"
+      ]
+    },
+    {
+      "service_id": "transmetro-l18",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown",
+        "source_stop_order_geometry_and_current_variant_reconciliation_pending"
+      ],
+      "sources": [
+        "transmetro-routes-gis",
+        "tm-memo-2023",
+        "transmetro-stations-gis",
+        "osm-snapshot",
+        "tm-map-2024-02",
+        "contrast-tm-l18"
+      ]
+    },
+    {
+      "service_id": "transmetro-l12-directo-amate",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown",
+        "express_stopping_pattern_and_variant_mapping_unknown"
+      ],
+      "sources": [
+        "transmetro-routes-gis",
+        "transmetro-stations-gis",
+        "tm-l12-2025",
+        "contrast-tm-l12-express",
+        "osm-snapshot"
+      ]
+    },
+    {
+      "service_id": "transmetro-l12-directo-trebol",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown",
+        "express_stopping_pattern_and_variant_mapping_unknown",
+        "directo_trebol_schedule_not_established_do_not_borrow_amate_windows"
+      ],
+      "sources": [
+        "transmetro-routes-gis",
+        "transmetro-stations-gis",
+        "tm-l12-2025",
+        "contrast-tm-l12-express"
+      ]
+    },
+    {
+      "service_id": "transmetro-l18-directo-plaza-barrios",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown",
+        "express_stopping_pattern_and_variant_mapping_unknown"
+      ],
+      "sources": [
+        "transmetro-routes-gis",
+        "transmetro-stations-gis"
+      ]
+    },
+    {
+      "service_id": "transmetro-l18-directo-san-rafael",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown",
+        "express_stopping_pattern_and_variant_mapping_unknown"
+      ],
+      "sources": [
+        "transmetro-routes-gis",
+        "transmetro-stations-gis"
+      ]
+    },
+    {
+      "service_id": "transmetro-l13-extension",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown"
+      ],
+      "sources": [
+        "contrast-tm-l13-extension",
+        "tm-map-2023-11",
+        "transmetro-routes-gis"
+      ]
+    },
+    {
+      "service_id": "tubus-104",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown"
+      ],
+      "sources": [
+        "tubus-routes-gis",
+        "tubus-104-v8",
+        "tubus-article-2025"
+      ]
+    },
+    {
+      "service_id": "tubus-802",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown"
+      ],
+      "sources": [
+        "tubus-routes-gis",
+        "tubus-802-v4",
+        "tubus-article-2025"
+      ]
+    },
+    {
+      "service_id": "tubus-105",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown"
+      ],
+      "sources": [
+        "tubus-routes-gis",
+        "tubus-105-v1",
+        "tubus-article-2025"
+      ]
+    },
+    {
+      "service_id": "transurbano-282",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown",
+        "current_operator_route_and_public_boarding_unverified"
+      ],
+      "sources": [
+        "contrast-transurbano",
+        "contrast-transurbano-2026",
+        "municipal-operators-2026"
+      ]
+    },
+    {
+      "service_id": "transurbano-285",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown",
+        "current_operator_route_and_public_boarding_unverified"
+      ],
+      "sources": [
+        "contrast-transurbano",
+        "contrast-transurbano-2026",
+        "municipal-operators-2026"
+      ]
+    },
+    {
+      "service_id": "transurbano-287",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown",
+        "current_operator_route_and_public_boarding_unverified"
+      ],
+      "sources": [
+        "contrast-transurbano",
+        "contrast-transurbano-2026",
+        "municipal-operators-2026"
+      ]
+    },
+    {
+      "service_id": "litegua-z1-agency-lead",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown",
+        "agency_does_not_establish_a_service_or_public_stop"
+      ],
+      "sources": [
+        "litegua-agencies"
+      ]
+    },
+    {
+      "service_id": "tmb-z1-centra-norte-transfer",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown"
+      ],
+      "sources": [
+        "tmb-transfer",
+        "tmb-agencies",
+        "tmb-schedules",
+        "osm-snapshot"
+      ]
+    },
+    {
+      "service_id": "fuente-del-norte-z1-station-lead",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown",
+        "station_does_not_establish_specific_route"
+      ],
+      "sources": [
+        "fdn-stations"
+      ]
+    },
+    {
+      "service_id": "urbanos-z1-unidentified",
+      "reason": "stop_platform_and_direction_review_pending",
+      "blockers": [
+        "approved_domain_not_supplied",
+        "current_operating_version_not_certified",
+        "directed_network_route_and_stop_mapping_pending",
+        "departure_calendar_fleet_and_exterior_times_unknown",
+        "specific_line_operator_and_route_evidence_missing"
+      ],
+      "sources": [
+        "municipal-operators-2026"
+      ]
+    },
+    {
+      "service_id": "transmetro-l2",
+      "reason": "remaining_platform_coordinates_missing_in_snapshot"
+    },
+    {
+      "service_id": "tubus-5",
+      "reason": "remaining_platform_coordinates_missing_in_snapshot"
+    }
+  ]
+}

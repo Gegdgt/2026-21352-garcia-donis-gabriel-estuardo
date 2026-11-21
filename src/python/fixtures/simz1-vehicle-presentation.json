@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "synthetic_catalog_contract_not_a_run",
+  "aliases": [
+    {"input":{"Profile":"Normal"},"label":"Carro","family":"car","profile":"Normal"},
+    {"input":{"Profile":"Liebre"},"label":"Carro liebre","family":"car","profile":"Liebre"},
+    {"input":{"Profile":"Tortuga"},"label":"Carro Tortuga","family":"car","profile":"Tortuga"},
+    {"input":{"Vehicle_Type":"Motocicleta lenta"},"label":"Moto tortuga","family":"motorcycle","profile":"Tortuga"},
+    {"input":{"Vehicle_Type":"Motocicleta normal"},"label":"Moto","family":"motorcycle","profile":"Normal"},
+    {"input":{"Vehicle_Type":"Motocicleta rápida"},"label":"Moto Liebre","family":"motorcycle","profile":"Liebre"},
+    {"input":{"Agent_Type":"Motociclista","Profile":"Tortuga"},"label":"Moto tortuga","family":"motorcycle","profile":"Tortuga"},
+    {"input":{"Agent_Type":"Motociclista","Profile":"Liebre"},"label":"Moto Liebre","family":"motorcycle","profile":"Liebre"},
+    {"input":{"Agent_Type":"Motociclista"},"label":"Moto","family":"motorcycle","profile":"Normal"},
+    {"input":{"Vehicle_Type":"TransportePesado"},"label":"Transporte pesado","family":"truck","profile":null},
+    {"input":{"Vehicle_Type":"TransitBus","Transit_Operator":"Operador fixture","Transit_Service":"Ruta fixture"},"label":"Transporte público","family":"bus","profile":null},
+    {"input":{"Vehicle_Type":"Transporte público"},"label":"Transporte público","family":"bus","profile":null},
+    {"input":{"Agent_Type":"TransportePublico"},"label":"Transporte público","family":"passenger","profile":null},
+    {"input":{"Vehicle_Type":"Tipo-desconocido","Profile":"Normal","Vehicle_PCU":0.25},"label":"Tipo-desconocido","family":"unknown","profile":"Normal"},
+    {"input":{"vehicle":"moto-001","Agent_ID":"bus-002","Vehicle_PCU":3.5},"label":"No registrado","family":"unknown","profile":null},
+    {"input":{"Profile":"constructor"},"label":"No registrado","family":"unknown","profile":null}
+  ],
+  "mixed_queue": [
+    {"vehicle":"bus","Agent_ID":"p-bus","Vehicle_Type":"TransitBus","Profile":"Normal","Vehicle_PCU":2.75,"expected_dimensions_m":[12,2.5]},
+    {"vehicle":"truck","Agent_ID":"p-truck","Vehicle_Type":"TransportePesado","Profile":"Tortuga","Vehicle_PCU":3.5,"expected_dimensions_m":[10,2.5]},
+    {"vehicle":"moto","Agent_ID":"p-moto","Vehicle_Type":"Motociclista","Profile":"Liebre","Vehicle_PCU":0.25,"expected_dimensions_m":[2.1,0.8]},
+    {"vehicle":"car","Agent_ID":"p-car","Vehicle_Type":"Normal","Profile":"Normal","Vehicle_PCU":1,"expected_dimensions_m":[4.5,1.8]}
+  ]
+}

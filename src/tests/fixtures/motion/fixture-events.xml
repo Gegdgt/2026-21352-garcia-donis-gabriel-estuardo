@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<events version="1.0">
+  <event type="departure" time="0.0" person="person_free" link="free_a" />
+  <event type="vehicle enters traffic" time="0.0" person="person_free" vehicle="vehicle_free" link="free_a" relativePosition="0" />
+  <event type="vehicle leaves traffic" time="20.0" person="person_free" vehicle="vehicle_free" link="free_a" relativePosition="1" />
+  <event type="arrival" time="20.0" person="person_free" link="free_a" />
+  <event type="departure" time="30.0" person="person_red" link="red_a" />
+  <event type="vehicle enters traffic" time="30.0" person="person_red" vehicle="vehicle_red" link="red_a" relativePosition="0" />
+  <event type="simz1NativeDecision" time="45.0" vehicle="vehicle_red" person="person_red" link="red_a" decision="WAIT" reason="signal_red" source="MATSim15_QNode_native_branch" lane="red_a" signalState="RED" />
+  <event type="simz1NativeDecision" time="46.0" vehicle="vehicle_red" person="person_red" link="red_a" decision="WAIT" reason="signal_red" source="MATSim15_QNode_native_branch" lane="red_a" signalState="RED" />
+  <event type="simz1NativeDecision" time="47.0" vehicle="vehicle_red" person="person_red" link="red_a" decision="WAIT" reason="signal_red" source="MATSim15_QNode_native_branch" lane="red_a" signalState="RED" />
+  <event type="simz1NativeDecision" time="48.0" vehicle="vehicle_red" person="person_red" link="red_a" decision="WAIT" reason="signal_red" source="MATSim15_QNode_native_branch" lane="red_a" signalState="RED" />
+  <event type="simz1NativeDecision" time="49.0" vehicle="vehicle_red" person="person_red" link="red_a" decision="WAIT" reason="signal_red" source="MATSim15_QNode_native_branch" lane="red_a" signalState="RED" />
+  <event type="simz1NativeDecision" time="50.0" vehicle="vehicle_red" person="person_red" link="red_a" decision="WAIT" reason="signal_red" source="MATSim15_QNode_native_branch" lane="red_a" signalState="RED" />
+  <event type="simz1NativeDecision" time="51.0" vehicle="vehicle_red" person="person_red" link="red_a" decision="WAIT" reason="signal_red" source="MATSim15_QNode_native_branch" lane="red_a" signalState="RED" />
+  <event type="simz1NativeDecision" time="52.0" vehicle="vehicle_red" person="person_red" link="red_a" decision="WAIT" reason="signal_red" source="MATSim15_QNode_native_branch" lane="red_a" signalState="RED" />
+  <event type="simz1NativeDecision" time="53.0" vehicle="vehicle_red" person="person_red" link="red_a" decision="WAIT" reason="signal_red" source="MATSim15_QNode_native_branch" lane="red_a" signalState="RED" />
+  <event type="simz1NativeDecision" time="54.0" vehicle="vehicle_red" person="person_red" link="red_a" decision="WAIT" reason="signal_red" source="MATSim15_QNode_native_branch" lane="red_a" signalState="RED" />
+  <event type="left link" time="55.0" vehicle="vehicle_red" link="red_a" />
+  <event type="entered link" time="55.0" vehicle="vehicle_red" link="red_b" />
+  <event type="departure" time="70.0" person="person_stop" link="stop_a" />
+  <event type="vehicle enters traffic" time="70.0" person="person_stop" vehicle="vehicle_stop" link="stop_a" relativePosition="0" />
+  <event type="vehicle leaves traffic" time="75.0" person="person_red" vehicle="vehicle_red" link="red_b" relativePosition="1" />
+  <event type="arrival" time="75.0" person="person_red" link="red_b" />
+  <event type="simz1NativeDecision" time="85.0" vehicle="vehicle_stop" person="person_stop" link="stop_a" decision="WAIT" reason="priority_stop" source="MATSim15_QNode_native_branch" lane="stop_a" signalState="UNSIGNALIZED" />
+  <event type="simz1NativeDecision" time="86.0" vehicle="vehicle_stop" person="person_stop" link="stop_a" decision="WAIT" reason="priority_stop" source="MATSim15_QNode_native_branch" lane="stop_a" signalState="UNSIGNALIZED" />
+  <event type="simz1NativeDecision" time="87.0" vehicle="vehicle_stop" person="person_stop" link="stop_a" decision="WAIT" reason="priority_stop" source="MATSim15_QNode_native_branch" lane="stop_a" signalState="UNSIGNALIZED" />
+  <event type="simz1NativeDecision" time="88.0" vehicle="vehicle_stop" person="person_stop" link="stop_a" decision="WAIT" reason="priority_stop" source="MATSim15_QNode_native_branch" lane="stop_a" signalState="UNSIGNALIZED" />
+  <event type="simz1NativeDecision" time="89.0" vehicle="vehicle_stop" person="person_stop" link="stop_a" decision="WAIT" reason="priority_stop" source="MATSim15_QNode_native_branch" lane="stop_a" signalState="UNSIGNALIZED" />
+  <event type="vehicle leaves traffic" time="90.0" person="person_stop" vehicle="vehicle_stop" link="stop_a" relativePosition="1" />
+  <event type="arrival" time="90.0" person="person_stop" link="stop_a" />
+  <event type="departure" time="100.0" person="person_congestion" link="congestion_a" />
+  <event type="vehicle enters traffic" time="100.0" person="person_congestion" vehicle="vehicle_congestion" link="congestion_a" relativePosition="0" />
+  <event type="simz1NativeDecision" time="115.0" vehicle="vehicle_congestion" person="person_congestion" link="congestion_a" decision="WAIT" reason="congestion_queue" source="MATSim15_queue_post_step" lane="congestion_a" signalState="UNSIGNALIZED" />
+  <event type="simz1NativeDecision" time="116.0" vehicle="vehicle_congestion" person="person_congestion" link="congestion_a" decision="WAIT" reason="congestion_queue" source="MATSim15_queue_post_step" lane="congestion_a" signalState="UNSIGNALIZED" />
+  <event type="simz1NativeDecision" time="117.0" vehicle="vehicle_congestion" person="person_congestion" link="congestion_a" decision="WAIT" reason="congestion_queue" source="MATSim15_queue_post_step" lane="congestion_a" signalState="UNSIGNALIZED" />
+  <event type="simz1NativeDecision" time="118.0" vehicle="vehicle_congestion" person="person_congestion" link="congestion_a" decision="WAIT" reason="congestion_queue" source="MATSim15_queue_post_step" lane="congestion_a" signalState="UNSIGNALIZED" />
+  <event type="simz1NativeDecision" time="119.0" vehicle="vehicle_congestion" person="person_congestion" link="congestion_a" decision="WAIT" reason="congestion_queue" source="MATSim15_queue_post_step" lane="congestion_a" signalState="UNSIGNALIZED" />
+  <event type="simz1NativeDecision" time="120.0" vehicle="vehicle_congestion" person="person_congestion" link="congestion_a" decision="WAIT" reason="congestion_queue" source="MATSim15_queue_post_step" lane="congestion_a" signalState="UNSIGNALIZED" />
+  <event type="simz1NativeDecision" time="121.0" vehicle="vehicle_congestion" person="person_congestion" link="congestion_a" decision="WAIT" reason="congestion_queue" source="MATSim15_queue_post_step" lane="congestion_a" signalState="UNSIGNALIZED" />
+  <event type="simz1NativeDecision" time="122.0" vehicle="vehicle_congestion" person="person_congestion" link="congestion_a" decision="WAIT" reason="congestion_queue" source="MATSim15_queue_post_step" lane="congestion_a" signalState="UNSIGNALIZED" />
+  <event type="simz1NativeDecision" time="123.0" vehicle="vehicle_congestion" person="person_congestion" link="congestion_a" decision="WAIT" reason="congestion_queue" source="MATSim15_queue_post_step" lane="congestion_a" signalState="UNSIGNALIZED" />
+  <event type="simz1NativeDecision" time="124.0" vehicle="vehicle_congestion" person="person_congestion" link="congestion_a" decision="WAIT" reason="congestion_queue" source="MATSim15_queue_post_step" lane="congestion_a" signalState="UNSIGNALIZED" />
+  <event type="simz1NativeDecision" time="125.0" vehicle="vehicle_congestion" person="person_congestion" link="congestion_a" decision="WAIT" reason="congestion_queue" source="MATSim15_queue_post_step" lane="congestion_a" signalState="UNSIGNALIZED" />
+  <event type="vehicle leaves traffic" time="130.0" person="person_congestion" vehicle="vehicle_congestion" link="congestion_a" relativePosition="1" />
+  <event type="arrival" time="130.0" person="person_congestion" link="congestion_a" />
+  <event type="departure" time="140.0" person="person_slow10" link="slow10_a" />
+  <event type="vehicle enters traffic" time="140.0" person="person_slow10" vehicle="vehicle_slow10" link="slow10_a" relativePosition="0" />
+  <event type="vehicle leaves traffic" time="176.0" person="person_slow10" vehicle="vehicle_slow10" link="slow10_a" relativePosition="1" />
+  <event type="arrival" time="176.0" person="person_slow10" link="slow10_a" />
+  <event type="departure" time="190.0" person="person_insufficient" link="insufficient_a" />
+  <event type="vehicle enters traffic" time="190.0" person="person_insufficient" vehicle="vehicle_insufficient" link="insufficient_a" relativePosition="0" />
+  <event type="vehicle leaves traffic" time="215.0" person="person_insufficient" vehicle="vehicle_insufficient" link="insufficient_a" relativePosition="1" />
+  <event type="arrival" time="215.0" person="person_insufficient" link="insufficient_a" />
+  <event type="departure" time="86395.0" person="person_midnight" link="midnight_a" />
+  <event type="vehicle enters traffic" time="86395.0" person="person_midnight" vehicle="vehicle_midnight" link="midnight_a" relativePosition="0" />
+  <event type="vehicle leaves traffic" time="86415.0" person="person_midnight" vehicle="vehicle_midnight" link="midnight_a" relativePosition="1" />
+  <event type="arrival" time="86415.0" person="person_midnight" link="midnight_a" />
+</events>

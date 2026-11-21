@@ -1,0 +1,1573 @@
+{
+  "policy": "l18-local-synthetic-offsets-v1",
+  "observed_timing": false,
+  "scope": [
+    "579787032",
+    "333531372"
+  ],
+  "profiles": [
+    [
+      "FreightTruck",
+      8.0,
+      11.11111111111111,
+      "car"
+    ],
+    [
+      "Liebre",
+      4.5,
+      25.0,
+      "car"
+    ],
+    [
+      "MotocicletaLenta",
+      2.1,
+      8.333333333333334,
+      "car"
+    ],
+    [
+      "MotocicletaRapida",
+      2.1,
+      19.444444444444443,
+      "car"
+    ],
+    [
+      "Motociclista",
+      2.1,
+      13.88888888888889,
+      "car"
+    ],
+    [
+      "Normal",
+      4.5,
+      13.88888888888889,
+      "car"
+    ],
+    [
+      "Tortuga",
+      4.5,
+      6.944444444444445,
+      "car"
+    ],
+    [
+      "Transmetro_RigidProxy",
+      13.5,
+      13.8888888889,
+      "bus"
+    ],
+    [
+      "TransportePesado",
+      10.0,
+      13.88888888888889,
+      "car"
+    ],
+    [
+      "TuBus_RigidProxy",
+      12.0,
+      13.8888888889,
+      "bus"
+    ]
+  ],
+  "exhaustive_assignments": 6400,
+  "feasible_assignments": 5360,
+  "selected_offsets": {
+    "579787032": 0,
+    "333531372": 60
+  },
+  "score": [
+    -1,
+    18,
+    236,
+    -20
+  ],
+  "enumeration": {
+    "paths": 1852153,
+    "maximum_links": 42,
+    "repeated_link_branches_excluded": 1803563
+  },
+  "local": [
+    {
+      "rows": [
+        [
+          "579787032",
+          "avenida",
+          0.0,
+          true
+        ]
+      ],
+      "witnesses": [
+        {
+          "profile": "FreightTruck",
+          "body": 8.0,
+          "speed": 11.11111111111111,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Liebre",
+          "body": 4.5,
+          "speed": 25.0,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "MotocicletaLenta",
+          "body": 2.1,
+          "speed": 8.333333333333334,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "MotocicletaLenta",
+          "body": 2.1,
+          "speed": 8.333333333333334,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "MotocicletaRapida",
+          "body": 2.1,
+          "speed": 19.444444444444443,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "MotocicletaRapida",
+          "body": 2.1,
+          "speed": 19.444444444444443,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Motociclista",
+          "body": 2.1,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Motociclista",
+          "body": 2.1,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Normal",
+          "body": 4.5,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Tortuga",
+          "body": 4.5,
+          "speed": 6.944444444444445,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Transmetro_RigidProxy",
+          "body": 13.5,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "TransportePesado",
+          "body": 10.0,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "TuBus_RigidProxy",
+          "body": 12.0,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        }
+      ],
+      "before_ticks": 47,
+      "after_ticks": 47
+    },
+    {
+      "rows": [
+        [
+          "579787032",
+          "avenida",
+          0.0,
+          true
+        ],
+        [
+          "333531372",
+          "avenida",
+          4.0,
+          false
+        ]
+      ],
+      "witnesses": [
+        {
+          "profile": "FreightTruck",
+          "body": 8.0,
+          "speed": 11.11111111111111,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "FreightTruck",
+          "body": 8.0,
+          "speed": 11.11111111111111,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward",
+            "osm_60237267_1_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "FreightTruck",
+          "body": 8.0,
+          "speed": 11.11111111111111,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Liebre",
+          "body": 4.5,
+          "speed": 25.0,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Liebre",
+          "body": 4.5,
+          "speed": 25.0,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward",
+            "osm_60237267_1_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Liebre",
+          "body": 4.5,
+          "speed": 25.0,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Normal",
+          "body": 4.5,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Normal",
+          "body": 4.5,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward",
+            "osm_60237267_1_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Normal",
+          "body": 4.5,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Tortuga",
+          "body": 4.5,
+          "speed": 6.944444444444445,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Tortuga",
+          "body": 4.5,
+          "speed": 6.944444444444445,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward",
+            "osm_60237267_1_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Tortuga",
+          "body": 4.5,
+          "speed": 6.944444444444445,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Transmetro_RigidProxy",
+          "body": 13.5,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "Transmetro_RigidProxy",
+          "body": 13.5,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "TransportePesado",
+          "body": 10.0,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "TransportePesado",
+          "body": 10.0,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward",
+            "osm_60237267_1_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "TransportePesado",
+          "body": 10.0,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "TuBus_RigidProxy",
+          "body": 12.0,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        },
+        {
+          "profile": "TuBus_RigidProxy",
+          "body": 12.0,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward"
+          ],
+          "source_lane": "osm_381144599_3_forward.lane.0"
+        }
+      ],
+      "before_ticks": 39,
+      "after_ticks": 19
+    },
+    {
+      "rows": [
+        [
+          "579787032",
+          "calle",
+          0.0,
+          true
+        ]
+      ],
+      "witnesses": [
+        {
+          "profile": "FreightTruck",
+          "body": 8.0,
+          "speed": 11.11111111111111,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Liebre",
+          "body": 4.5,
+          "speed": 25.0,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "MotocicletaLenta",
+          "body": 2.1,
+          "speed": 8.333333333333334,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "MotocicletaLenta",
+          "body": 2.1,
+          "speed": 8.333333333333334,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "MotocicletaRapida",
+          "body": 2.1,
+          "speed": 19.444444444444443,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "MotocicletaRapida",
+          "body": 2.1,
+          "speed": 19.444444444444443,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Motociclista",
+          "body": 2.1,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Motociclista",
+          "body": 2.1,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Normal",
+          "body": 4.5,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Tortuga",
+          "body": 4.5,
+          "speed": 6.944444444444445,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Transmetro_RigidProxy",
+          "body": 13.5,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "TransportePesado",
+          "body": 10.0,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "TuBus_RigidProxy",
+          "body": 12.0,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        }
+      ],
+      "before_ticks": 29,
+      "after_ticks": 29
+    },
+    {
+      "rows": [
+        [
+          "579787032",
+          "calle",
+          0.0,
+          true
+        ],
+        [
+          "333531372",
+          "avenida",
+          4.0,
+          false
+        ]
+      ],
+      "witnesses": [
+        {
+          "profile": "FreightTruck",
+          "body": 8.0,
+          "speed": 11.11111111111111,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "FreightTruck",
+          "body": 8.0,
+          "speed": 11.11111111111111,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward",
+            "osm_60237267_1_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "FreightTruck",
+          "body": 8.0,
+          "speed": 11.11111111111111,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Liebre",
+          "body": 4.5,
+          "speed": 25.0,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Liebre",
+          "body": 4.5,
+          "speed": 25.0,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward",
+            "osm_60237267_1_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Liebre",
+          "body": 4.5,
+          "speed": 25.0,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Normal",
+          "body": 4.5,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Normal",
+          "body": 4.5,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward",
+            "osm_60237267_1_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Normal",
+          "body": 4.5,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Tortuga",
+          "body": 4.5,
+          "speed": 6.944444444444445,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Tortuga",
+          "body": 4.5,
+          "speed": 6.944444444444445,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward",
+            "osm_60237267_1_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Tortuga",
+          "body": 4.5,
+          "speed": 6.944444444444445,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Transmetro_RigidProxy",
+          "body": 13.5,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "Transmetro_RigidProxy",
+          "body": 13.5,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "TransportePesado",
+          "body": 10.0,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "TransportePesado",
+          "body": 10.0,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward",
+            "osm_60237267_1_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "TransportePesado",
+          "body": 10.0,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "TuBus_RigidProxy",
+          "body": 12.0,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        },
+        {
+          "profile": "TuBus_RigidProxy",
+          "body": 12.0,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward"
+          ],
+          "source_lane": "osm_420120098_2_forward.lane.0"
+        }
+      ],
+      "before_ticks": 0,
+      "after_ticks": 18
+    },
+    {
+      "rows": [
+        [
+          "333531372",
+          "avenida",
+          0.0,
+          true
+        ]
+      ],
+      "witnesses": [
+        {
+          "profile": "FreightTruck",
+          "body": 8.0,
+          "speed": 11.11111111111111,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "FreightTruck",
+          "body": 8.0,
+          "speed": 11.11111111111111,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward",
+            "osm_60237267_1_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "FreightTruck",
+          "body": 8.0,
+          "speed": 11.11111111111111,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "Liebre",
+          "body": 4.5,
+          "speed": 25.0,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "Liebre",
+          "body": 4.5,
+          "speed": 25.0,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward",
+            "osm_60237267_1_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "Liebre",
+          "body": 4.5,
+          "speed": 25.0,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "MotocicletaLenta",
+          "body": 2.1,
+          "speed": 8.333333333333334,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "MotocicletaLenta",
+          "body": 2.1,
+          "speed": 8.333333333333334,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "MotocicletaLenta",
+          "body": 2.1,
+          "speed": 8.333333333333334,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "MotocicletaRapida",
+          "body": 2.1,
+          "speed": 19.444444444444443,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "MotocicletaRapida",
+          "body": 2.1,
+          "speed": 19.444444444444443,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "MotocicletaRapida",
+          "body": 2.1,
+          "speed": 19.444444444444443,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "Motociclista",
+          "body": 2.1,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "Motociclista",
+          "body": 2.1,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "Motociclista",
+          "body": 2.1,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "Normal",
+          "body": 4.5,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "Normal",
+          "body": 4.5,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward",
+            "osm_60237267_1_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "Normal",
+          "body": 4.5,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "Tortuga",
+          "body": 4.5,
+          "speed": 6.944444444444445,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "Tortuga",
+          "body": 4.5,
+          "speed": 6.944444444444445,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward",
+            "osm_60237267_1_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "Tortuga",
+          "body": 4.5,
+          "speed": 6.944444444444445,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "Transmetro_RigidProxy",
+          "body": 13.5,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "Transmetro_RigidProxy",
+          "body": 13.5,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "TransportePesado",
+          "body": 10.0,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "TransportePesado",
+          "body": 10.0,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237267_0_forward",
+            "osm_60237267_1_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "TransportePesado",
+          "body": 10.0,
+          "speed": 13.88888888888889,
+          "mode": "car",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "TuBus_RigidProxy",
+          "body": 12.0,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        },
+        {
+          "profile": "TuBus_RigidProxy",
+          "body": 12.0,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": "osm_420138103_0_forward.lane.0"
+        }
+      ],
+      "before_ticks": 47,
+      "after_ticks": 47
+    },
+    {
+      "rows": [
+        [
+          "333531372",
+          "avenida",
+          6.0,
+          false
+        ]
+      ],
+      "witnesses": [
+        {
+          "profile": "Transmetro_RigidProxy",
+          "body": 13.5,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "transit_osm_1057416028_1_forward",
+            "transit_osm_1057416028_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": null
+        },
+        {
+          "profile": "Transmetro_RigidProxy",
+          "body": 13.5,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "transit_osm_1057416028_1_forward",
+            "transit_osm_1057416028_2_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward"
+          ],
+          "source_lane": null
+        },
+        {
+          "profile": "TuBus_RigidProxy",
+          "body": 12.0,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "transit_osm_1057416028_1_forward",
+            "transit_osm_1057416028_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": null
+        },
+        {
+          "profile": "TuBus_RigidProxy",
+          "body": 12.0,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "transit_osm_1057416028_1_forward",
+            "transit_osm_1057416028_2_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward"
+          ],
+          "source_lane": null
+        }
+      ],
+      "before_ticks": 37,
+      "after_ticks": 37
+    },
+    {
+      "rows": [
+        [
+          "333531372",
+          "avenida",
+          4.0,
+          false
+        ]
+      ],
+      "witnesses": [
+        {
+          "profile": "Transmetro_RigidProxy",
+          "body": 13.5,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "transit_osm_1057416028_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": null
+        },
+        {
+          "profile": "Transmetro_RigidProxy",
+          "body": 13.5,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "transit_osm_1057416028_2_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward"
+          ],
+          "source_lane": null
+        },
+        {
+          "profile": "TuBus_RigidProxy",
+          "body": 12.0,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "transit_osm_1057416028_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward"
+          ],
+          "source_lane": null
+        },
+        {
+          "profile": "TuBus_RigidProxy",
+          "body": 12.0,
+          "speed": 13.8888888889,
+          "mode": "bus",
+          "path": [
+            "transit_osm_1057416028_2_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward"
+          ],
+          "source_lane": null
+        }
+      ],
+      "before_ticks": 39,
+      "after_ticks": 39
+    }
+  ],
+  "fixed_routes": [
+    {
+      "route": "L1_14034049_part1",
+      "body_m": 13.5,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "L1_14099833_part1",
+      "body_m": 13.5,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "L2_14110814_part1",
+      "body_m": 13.5,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "L2_14110815_part1",
+      "body_m": 13.5,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "L6_14091640_part1",
+      "body_m": 13.5,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "L6_14091641_part1",
+      "body_m": 13.5,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "L7_10123492_part1",
+      "body_m": 13.5,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "L7_14100221_part1",
+      "body_m": 13.5,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "L12_906046_part1",
+      "body_m": 13.5,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "L12_14106867_part1",
+      "body_m": 13.5,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "L13_936950_part1",
+      "body_m": 13.5,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "L13_14107352_part1",
+      "body_m": 13.5,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "L18_6245758_part1",
+      "body_m": 13.5,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "L18_14099910_part1",
+      "body_m": 13.5,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "TuBus_104_part1",
+      "body_m": 12.0,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "TuBus_104_part2",
+      "body_m": 12.0,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "TuBus_105_part1",
+      "body_m": 12.0,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "TuBus_105_part2",
+      "body_m": 12.0,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "TuBus_105_part3",
+      "body_m": 12.0,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "TuBus_105_part4",
+      "body_m": 12.0,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "TuBus_802_part1",
+      "body_m": 12.0,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "R5_18672965_part1",
+      "body_m": 12.0,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "R5_18672966_part1",
+      "body_m": 12.0,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "R5_18672966_part2",
+      "body_m": 12.0,
+      "speed_mps": 13.8888888889
+    },
+    {
+      "route": "south-north-7avenida",
+      "body_m": 8.0,
+      "speed_mps": 11.11111111111111
+    },
+    {
+      "route": "north-south-2avenida",
+      "body_m": 8.0,
+      "speed_mps": 11.11111111111111
+    },
+    {
+      "route": "east-west-14calle",
+      "body_m": 8.0,
+      "speed_mps": 11.11111111111111
+    },
+    {
+      "route": "west-north-elena",
+      "body_m": 8.0,
+      "speed_mps": 11.11111111111111
+    }
+  ],
+  "fixed_all_compatible": true,
+  "previously_compatible_became_impossible": 0,
+  "source_control": "signalControl.xml",
+  "variant_control": "signalControl-l18-local-v1.xml",
+  "source_config": "config-simz1.xml",
+  "variant_config": "config-l18-local-v1.xml",
+  "source_hashes": {
+    "signalControl.xml": "192c50b9bf42935b7aa7126cc601a787e671da67c5fa60e25cb8c65e0d95ea50",
+    "signalSystems.xml": "ded58aa884a4424e67100c31b379556c221e295e9687eca315b235daf0389233",
+    "signalGroups.xml": "d29f8d1a05eec8361e801430d543879dcb09223621d804a588cc3a0e30f72416",
+    "network.xml": "f328c84e34f7b7ba7c3a204bb97bb9907b107dbf77d53c301e3c6c44fe487029",
+    "lanes.xml": "e86e9a4f8055b737af3652f13b0aa2e0073c7c67e3e39a3965482d99fca469b6",
+    "map.osm": "707684e17858e305324d72ce5df05a489138e3b819442b3c34e2a21c864d8c6b",
+    "config-simz1.xml": "33e5a3b7ee2c7b31dce3d04d527f686b36d9de6d50734dd107fe410686ffa640"
+  },
+  "variant_hashes": {
+    "signalControl-l18-local-v1.xml": "dbfc0558f77026f16773d85fa722a46d26b2de95617b4505bc8228fe52ef1468",
+    "config-l18-local-v1.xml": "accf4ecba0aa0d3c3b9d2552064ccfc99cd72d09ff1fb6cb3f99be465a0acfc4"
+  },
+  "hypothesis": "Local synthetic coordination, not field-observed timing; one offset changed; cycles, phase durations, amber and all-red intervals unchanged.",
+  "provenance": "TrafficLightsGenerator assigns orientation-based synthetic phases 0-47 / 49-78, cycle 80 and zero offsets. Saved OSM 6245758 supports the unchanged L18 path; both junction nodes have traffic_signals tags.",
+  "limitations": [
+    "Preserves feasibility, not capacity: existing avenue passage decreases from 39 to 19 admissible ticks while L18 street passage increases from 0 to 18.",
+    "No claim of empirical calibration or unchanged congestion.",
+    "Includes unused legacy 10m type as a conservative extra probe; configured compact freight remains 8m."
+  ]
+}

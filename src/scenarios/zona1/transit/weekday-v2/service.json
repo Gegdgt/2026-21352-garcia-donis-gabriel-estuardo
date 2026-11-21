@@ -1,0 +1,191 @@
+{
+  "schema_version": "simz1-weekday-transit-v2",
+  "scenario_version": "weekday-fixed-fleet-2026-10-v2",
+  "service_date": "2026-10-23",
+  "scenario_assumptions_acknowledged": true,
+  "passengers_modeled": false,
+  "closing_policy": "no_new_departures_finish_active",
+  "outside_policy": "timed_off_network_v2",
+  "domain_scope": "computational_network",
+  "routes_file": "route-bundle.json",
+  "fleet_counts": {
+    "transmetro": 80,
+    "tubus": 40
+  },
+  "dwell_seconds": 25,
+  "stop_occupancy_policy": "blocking_queue_v1",
+  "stop_placement_policy": "body_before_conflict_proxy_v1",
+  "stop_queue_policy": "service_original_endpoint_before_conflict_v1",
+  "services": [
+    {
+      "service_id": "transmetro_L1",
+      "system": "transmetro",
+      "line": "L1",
+      "buses": 8,
+      "opens": "05:00",
+      "closes": "20:00",
+      "vehicle_type": "Transmetro_RigidProxy",
+      "hours_basis": "user_requested_weekday_window",
+      "allocation_basis": "explicit_synthetic_split_of_80_units_not_observed_line_fleet"
+    },
+    {
+      "service_id": "transmetro_L2",
+      "system": "transmetro",
+      "line": "L2",
+      "buses": 5,
+      "opens": "05:30",
+      "closes": "20:00",
+      "vehicle_type": "Transmetro_RigidProxy",
+      "hours_basis": "dated_catalog_sources_scenario_selection_not_current_service_certification",
+      "allocation_basis": "explicit_synthetic_split_of_80_units_not_observed_line_fleet"
+    },
+    {
+      "service_id": "transmetro_L6",
+      "system": "transmetro",
+      "line": "L6",
+      "buses": 12,
+      "opens": "05:00",
+      "closes": "21:00",
+      "vehicle_type": "Transmetro_RigidProxy",
+      "hours_basis": "dated_catalog_sources_scenario_selection_not_current_service_certification",
+      "allocation_basis": "explicit_synthetic_split_of_80_units_not_observed_line_fleet"
+    },
+    {
+      "service_id": "transmetro_L7",
+      "system": "transmetro",
+      "line": "L7",
+      "buses": 12,
+      "opens": "05:00",
+      "closes": "21:00",
+      "vehicle_type": "Transmetro_RigidProxy",
+      "hours_basis": "dated_catalog_sources_scenario_selection_not_current_service_certification",
+      "allocation_basis": "explicit_synthetic_split_of_80_units_not_observed_line_fleet"
+    },
+    {
+      "service_id": "transmetro_L12",
+      "system": "transmetro",
+      "line": "L12",
+      "buses": 20,
+      "opens": "04:30",
+      "closes": "22:00",
+      "vehicle_type": "Transmetro_RigidProxy",
+      "hours_basis": "user_requested_weekday_window",
+      "allocation_basis": "explicit_synthetic_split_of_80_units_not_observed_line_fleet"
+    },
+    {
+      "service_id": "transmetro_L13",
+      "system": "transmetro",
+      "line": "L13",
+      "buses": 10,
+      "opens": "05:00",
+      "closes": "21:00",
+      "vehicle_type": "Transmetro_RigidProxy",
+      "hours_basis": "dated_catalog_sources_scenario_selection_not_current_service_certification",
+      "allocation_basis": "explicit_synthetic_split_of_80_units_not_observed_line_fleet"
+    },
+    {
+      "service_id": "transmetro_L18",
+      "system": "transmetro",
+      "line": "L18",
+      "buses": 13,
+      "opens": "05:00",
+      "closes": "21:00",
+      "vehicle_type": "Transmetro_RigidProxy",
+      "hours_basis": "user_requested_weekday_window",
+      "allocation_basis": "explicit_synthetic_split_of_80_units_not_observed_line_fleet"
+    },
+    {
+      "service_id": "tubus_104",
+      "system": "tubus",
+      "line": "104",
+      "buses": 12,
+      "opens": "05:30",
+      "closes": "19:00",
+      "vehicle_type": "TuBus_RigidProxy",
+      "hours_basis": "user_requested_weekday_window",
+      "allocation_basis": "explicit_synthetic_split_of_40_units_not_observed_line_fleet"
+    },
+    {
+      "service_id": "tubus_105",
+      "system": "tubus",
+      "line": "105",
+      "buses": 8,
+      "opens": "05:30",
+      "closes": "19:00",
+      "vehicle_type": "TuBus_RigidProxy",
+      "hours_basis": "user_requested_weekday_window",
+      "allocation_basis": "explicit_synthetic_split_of_40_units_not_observed_line_fleet"
+    },
+    {
+      "service_id": "tubus_802",
+      "system": "tubus",
+      "line": "802",
+      "buses": 12,
+      "opens": "05:30",
+      "closes": "19:00",
+      "vehicle_type": "TuBus_RigidProxy",
+      "hours_basis": "user_requested_weekday_window",
+      "allocation_basis": "explicit_synthetic_split_of_40_units_not_observed_line_fleet"
+    },
+    {
+      "service_id": "tubus_R5",
+      "system": "tubus",
+      "line": "R5",
+      "buses": 8,
+      "opens": "05:30",
+      "closes": "19:00",
+      "vehicle_type": "TuBus_RigidProxy",
+      "hours_basis": "user_requested_weekday_window",
+      "allocation_basis": "explicit_synthetic_split_of_40_units_not_observed_line_fleet"
+    }
+  ],
+  "vehicle_types": [
+    {
+      "type_id": "Transmetro_RigidProxy",
+      "length_m": 13.5,
+      "width_m": 2.5,
+      "pcu": 3.0,
+      "max_speed_mps": 13.8888888889,
+      "seats": 40,
+      "standing": 40,
+      "body_model": "rigid",
+      "dimensions_provenance": {
+        "status": "scenario_assumption_not_unit_measurement"
+      },
+      "physics_provenance": {
+        "status": "scenario_assumption_not_empirical_calibration"
+      }
+    },
+    {
+      "type_id": "TuBus_RigidProxy",
+      "length_m": 12,
+      "width_m": 2.5,
+      "pcu": 2.5,
+      "max_speed_mps": 13.8888888889,
+      "seats": 40,
+      "standing": 40,
+      "body_model": "rigid",
+      "dimensions_provenance": {
+        "status": "scenario_assumption_not_unit_measurement"
+      },
+      "physics_provenance": {
+        "status": "scenario_assumption_not_empirical_calibration"
+      }
+    }
+  ],
+  "route_assumptions_require_explicit_cli_acceptance": true,
+  "assumptions": [
+    "80 Transmetro + 40 TuBus are fixed scenario counts, not measured simultaneous in-domain traffic and not official operator fleet allocation.",
+    "N road-demand persons excludes public vehicles and their internal transit drivers; the same B=120 is used with N=1,120,250000.",
+    "Schedules are weekday operating windows, not published headways. Departures are derived from finite reusable vehicle rosters.",
+    "L12 closes at 22:00 by user scenario instruction; an external secondary timetable lists 21:00. This is not reconciled as fact.",
+    "Download coverage/network is the computational domain, not a verified administrative Zona 1 polygon.",
+    "Exterior circulation and depot time are timed off-network activities, assumed 1800s; local terminal turns 180s. No exterior trajectory or speed is invented.",
+    "Four dated OSM bus relation directions contradict generic one-way tags on three ways. Activating these bus-only directions requires explicit --accept-transit-route-assumptions.",
+    "TuBus104/105/802 paths are directed bounded GIS map matches. 802 uses reversed vertex order consistent with local printed stop order and road direction.",
+    "TuBus305 is not included because the supplied source does not establish a path in this domain. Its vehicles are not invented.",
+    "Stops without a spatial source remain unmodeled; endpoint gateway facilities are not passenger stops. Dwell is 25s assumed; stop coordinates may be link endpoint proxies.",
+    "Bus articulation, passengers, boarding demand and calibrated fleet frequencies are not modeled. Vehicles use rigid envelopes 13.5m/12m by 2.5m.",
+    "An actual delayed bus is never duplicated to meet a planned departure. New departures stop at closing; active trips may finish afterwards and are reported separately."
+  ]
+}

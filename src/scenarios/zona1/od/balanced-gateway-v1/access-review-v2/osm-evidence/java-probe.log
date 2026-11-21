@@ -1,0 +1,7 @@
+2026-11-01T09:07:27,219  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:07:27,303  INFO Version:21 HV000001: Hibernate Validator 8.0.0.Final
+2026-11-01T09:07:27,498  INFO NetworkImpl:165  node # 1
+2026-11-01T09:07:27,498  INFO NetworkImpl:165  node # 4
+2026-11-01T09:07:27,501  INFO NetworkImpl:161  link # 1
+2026-11-01T09:07:27,501  INFO NetworkImpl:161  link # 4
+OSM_PROBE={"forbidden_route_accepted":true,"legal_other_origin_accepted":true,"generated_forbidden_sequence":true,"reroute_reintroduced_sequence":true,"replacement_validator_accepted":true,"primary_pair_graph_admits_both":true,"controller_started":false,"qsim_started":false}

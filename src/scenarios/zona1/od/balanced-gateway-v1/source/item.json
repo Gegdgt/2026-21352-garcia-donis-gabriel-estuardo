@@ -1,0 +1,71 @@
+{
+  "id": "0b5c8c8aaf9b4854b9b8a2ac9dcbf2c3",
+  "owner": "eupen001_wur_wr",
+  "ownerId": "d39abfc3f9cc49978f895a70aeea330e",
+  "orgId": "D7W6tpPbci66mak0",
+  "created": 1730194527000,
+  "modified": 1730194546000,
+  "guid": null,
+  "name": "Guatemala_City_Límites",
+  "title": "Guatemala_City_Límites",
+  "type": "Feature Service",
+  "typeKeywords": [
+    "ArcGIS Server",
+    "Data",
+    "Feature Access",
+    "Feature Service",
+    "Multilayer",
+    "Service",
+    "source-63f42412efd942839417ab8e73d6a43e",
+    "Hosted Service"
+  ],
+  "description": null,
+  "tags": [
+    "Mapa Base",
+    "sourceId-25be2f67b1c741c499fa85b242051710",
+    "copied with ago-assistant"
+  ],
+  "snippet": null,
+  "thumbnail": null,
+  "documentation": null,
+  "extent": [
+    [
+      -91.20706235425189,
+      14.230027369154293
+    ],
+    [
+      -90.15740747840677,
+      15.087954167509114
+    ]
+  ],
+  "categories": [],
+  "spatialReference": "32615",
+  "accessInformation": null,
+  "classification": null,
+  "licenseInfo": null,
+  "culture": "",
+  "properties": null,
+  "advancedSettings": null,
+  "url": "https://services-eu1.arcgis.com/D7W6tpPbci66mak0/arcgis/rest/services/Guatemala_City_Límites/FeatureServer",
+  "proxyFilter": null,
+  "access": "public",
+  "size": 28106752,
+  "subInfo": 0,
+  "appCategories": [],
+  "industries": [],
+  "languages": [],
+  "largeThumbnail": null,
+  "banner": null,
+  "screenshots": [],
+  "listed": false,
+  "commentsEnabled": true,
+  "numComments": 0,
+  "numRatings": 0,
+  "avgRating": 0,
+  "numViews": 606,
+  "scoreCompleteness": 33,
+  "groupDesignations": null,
+  "apiToken1ExpirationDate": -1,
+  "apiToken2ExpirationDate": -1,
+  "lastViewed": 1793520000000
+}

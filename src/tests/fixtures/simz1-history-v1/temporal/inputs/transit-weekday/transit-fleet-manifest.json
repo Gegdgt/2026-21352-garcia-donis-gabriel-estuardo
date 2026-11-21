@@ -1,0 +1,1165 @@
+{
+  "schema_version": "simz1-weekday-transit-v2",
+  "road_demand_persons": 178200,
+  "public_transport_vehicles_configured": 269,
+  "fleet_by_system": {
+    "transmetro": 176,
+    "tubus": 93
+  },
+  "public_transport_departures_scheduled": 15336,
+  "transit_drivers_added_to_demand": 0,
+  "service_date": "2026-10-23",
+  "empirical_calibration": false,
+  "stop_proxy": {
+    "enabled": true,
+    "policy": "body_before_conflict_proxy_v1",
+    "passenger_stops_checked": 62,
+    "relocated_stops": 29,
+    "scope": "configured individual-link body capacity before nominal conflict area; not observed microscopic positions"
+  },
+  "stop_proxy_manifest_sha256": "54aa507c93480f69e19242cb00a63e281ea67404edfa23ca761be76af551f813",
+  "stop_queues": {
+    "enabled": true,
+    "policy": "service_original_endpoint_before_conflict_v1",
+    "adjusted_links": 46,
+    "adjustments": [
+      {
+        "link_id": "osm_1051440047_1_forward",
+        "original_queue_id": "osm_1051440047_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_1051440047_1_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_1_L1_14034049_part1"
+        ],
+        "link_length_m": 84.9701428132235,
+        "old_native_service_endpoint_m": 16.9940285626447,
+        "new_native_service_endpoint_m": 82.9701428132235,
+        "old_terminal_starts_m": {
+          "osm_1051440047_1_forward.lane.0": 67.9761142505788
+        },
+        "new_terminal_starts_m": {
+          "osm_1051440047_1_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_1057486080_1_forward",
+        "original_queue_id": "osm_1057486080_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_1057486080_1_forward.lane.0",
+          "osm_1057486080_1_forward.lane.1",
+          "osm_1057486080_1_forward.lane.2"
+        ],
+        "stop_ids": [
+          "gis_station_41_L12_14106867_part1"
+        ],
+        "link_length_m": 78.84125001045511,
+        "old_native_service_endpoint_m": 15.768250002091023,
+        "new_native_service_endpoint_m": 76.84125001045511,
+        "old_terminal_starts_m": {
+          "osm_1057486080_1_forward.lane.0": 63.07300000836409,
+          "osm_1057486080_1_forward.lane.1": 63.07300000836409,
+          "osm_1057486080_1_forward.lane.2": 63.07300000836409
+        },
+        "new_terminal_starts_m": {
+          "osm_1057486080_1_forward.lane.0": 2.0,
+          "osm_1057486080_1_forward.lane.1": 2.0,
+          "osm_1057486080_1_forward.lane.2": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_1159234896_3_forward",
+        "original_queue_id": "osm_1159234896_3_forward.original",
+        "terminal_queue_ids": [
+          "osm_1159234896_3_forward.lane.0",
+          "osm_1159234896_3_forward.lane.1"
+        ],
+        "stop_ids": [
+          "gis_station_163_L7_14100221_part1"
+        ],
+        "link_length_m": 53.18390575878066,
+        "old_native_service_endpoint_m": 10.636781151756132,
+        "new_native_service_endpoint_m": 51.18390575878066,
+        "old_terminal_starts_m": {
+          "osm_1159234896_3_forward.lane.0": 42.54712460702453,
+          "osm_1159234896_3_forward.lane.1": 42.54712460702453
+        },
+        "new_terminal_starts_m": {
+          "osm_1159234896_3_forward.lane.0": 2.0,
+          "osm_1159234896_3_forward.lane.1": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 5.002585358311905,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_1159234897_0_forward",
+        "original_queue_id": "osm_1159234897_0_forward.original",
+        "terminal_queue_ids": [
+          "osm_1159234897_0_forward.lane.0",
+          "osm_1159234897_0_forward.lane.1"
+        ],
+        "stop_ids": [
+          "osm:node:4735676221_R5_18672965_part1"
+        ],
+        "link_length_m": 99.82695938370972,
+        "old_native_service_endpoint_m": 19.965391876741933,
+        "new_native_service_endpoint_m": 94.8249537277854,
+        "old_terminal_starts_m": {
+          "osm_1159234897_0_forward.lane.0": 79.86156750696779,
+          "osm_1159234897_0_forward.lane.1": 79.86156750696779
+        },
+        "new_terminal_starts_m": {
+          "osm_1159234897_0_forward.lane.0": 5.002005655924323,
+          "osm_1159234897_0_forward.lane.1": 5.002005655924323
+        },
+        "end_setback_m": 5.002005655924323,
+        "entry_setback_m": 5.002691718530711,
+        "maximum_bus_body_m": 12
+      },
+      {
+        "link_id": "osm_1274975831_1_forward",
+        "original_queue_id": "osm_1274975831_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_1274975831_1_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_76_L13_14107352_part1"
+        ],
+        "link_length_m": 78.44496564351508,
+        "old_native_service_endpoint_m": 15.68899312870301,
+        "new_native_service_endpoint_m": 71.94396643189023,
+        "old_terminal_starts_m": {
+          "osm_1274975831_1_forward.lane.0": 62.755972514812065
+        },
+        "new_terminal_starts_m": {
+          "osm_1274975831_1_forward.lane.0": 6.500999211624848
+        },
+        "end_setback_m": 6.500999211624848,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_30262982_13_forward",
+        "original_queue_id": "osm_30262982_13_forward.original",
+        "terminal_queue_ids": [
+          "osm_30262982_13_forward.lane.0",
+          "osm_30262982_13_forward.lane.1"
+        ],
+        "stop_ids": [
+          "gis_station_27_L1_14099833_part1"
+        ],
+        "link_length_m": 61.43459159405421,
+        "old_native_service_endpoint_m": 12.28691831881084,
+        "new_native_service_endpoint_m": 59.43459159405421,
+        "old_terminal_starts_m": {
+          "osm_30262982_13_forward.lane.0": 49.14767327524337,
+          "osm_30262982_13_forward.lane.1": 49.14767327524337
+        },
+        "new_terminal_starts_m": {
+          "osm_30262982_13_forward.lane.0": 2.0,
+          "osm_30262982_13_forward.lane.1": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 3.5059838517455555,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_30279769_11_forward",
+        "original_queue_id": "osm_30279769_11_forward.original",
+        "terminal_queue_ids": [
+          "osm_30279769_11_forward.lane.0",
+          "osm_30279769_11_forward.lane.1"
+        ],
+        "stop_ids": [
+          "published_123_TuBus_802_part1"
+        ],
+        "link_length_m": 62.67554530490268,
+        "old_native_service_endpoint_m": 12.535109060980531,
+        "new_native_service_endpoint_m": 57.63366398166282,
+        "old_terminal_starts_m": {
+          "osm_30279769_11_forward.lane.0": 50.140436243922146,
+          "osm_30279769_11_forward.lane.1": 50.140436243922146
+        },
+        "new_terminal_starts_m": {
+          "osm_30279769_11_forward.lane.0": 5.04188132323986,
+          "osm_30279769_11_forward.lane.1": 5.04188132323986
+        },
+        "end_setback_m": 5.04188132323986,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 12
+      },
+      {
+        "link_id": "osm_30279769_1_forward",
+        "original_queue_id": "osm_30279769_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_30279769_1_forward.lane.0",
+          "osm_30279769_1_forward.lane.1"
+        ],
+        "stop_ids": [
+          "published_122_TuBus_802_part1"
+        ],
+        "link_length_m": 105.72112653216152,
+        "old_native_service_endpoint_m": 21.144225306432304,
+        "new_native_service_endpoint_m": 102.22071413421025,
+        "old_terminal_starts_m": {
+          "osm_30279769_1_forward.lane.0": 84.57690122572922,
+          "osm_30279769_1_forward.lane.1": 84.57690122572922
+        },
+        "new_terminal_starts_m": {
+          "osm_30279769_1_forward.lane.0": 3.5004123979512616,
+          "osm_30279769_1_forward.lane.1": 3.5004123979512616
+        },
+        "end_setback_m": 3.5004123979512616,
+        "entry_setback_m": 5.000178289704602,
+        "maximum_bus_body_m": 12
+      },
+      {
+        "link_id": "osm_30279769_24_forward",
+        "original_queue_id": "osm_30279769_24_forward.original",
+        "terminal_queue_ids": [
+          "osm_30279769_24_forward.lane.0",
+          "osm_30279769_24_forward.lane.1"
+        ],
+        "stop_ids": [
+          "published_124_TuBus_802_part1"
+        ],
+        "link_length_m": 54.5312733864761,
+        "old_native_service_endpoint_m": 10.906254677295216,
+        "new_native_service_endpoint_m": 52.5312733864761,
+        "old_terminal_starts_m": {
+          "osm_30279769_24_forward.lane.0": 43.625018709180885,
+          "osm_30279769_24_forward.lane.1": 43.625018709180885
+        },
+        "new_terminal_starts_m": {
+          "osm_30279769_24_forward.lane.0": 2.0,
+          "osm_30279769_24_forward.lane.1": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 12
+      },
+      {
+        "link_id": "osm_30279769_39_forward",
+        "original_queue_id": "osm_30279769_39_forward.original",
+        "terminal_queue_ids": [
+          "osm_30279769_39_forward.lane.0",
+          "osm_30279769_39_forward.lane.1"
+        ],
+        "stop_ids": [
+          "published_125_TuBus_802_part1"
+        ],
+        "link_length_m": 63.145905842880275,
+        "old_native_service_endpoint_m": 12.629181168576054,
+        "new_native_service_endpoint_m": 59.6451933076567,
+        "old_terminal_starts_m": {
+          "osm_30279769_39_forward.lane.0": 50.51672467430422,
+          "osm_30279769_39_forward.lane.1": 50.51672467430422
+        },
+        "new_terminal_starts_m": {
+          "osm_30279769_39_forward.lane.0": 3.500712535223574,
+          "osm_30279769_39_forward.lane.1": 3.500712535223574
+        },
+        "end_setback_m": 3.500712535223574,
+        "entry_setback_m": 5.019315986988703,
+        "maximum_bus_body_m": 12
+      },
+      {
+        "link_id": "osm_30279769_51_forward",
+        "original_queue_id": "osm_30279769_51_forward.original",
+        "terminal_queue_ids": [
+          "osm_30279769_51_forward.lane.0",
+          "osm_30279769_51_forward.lane.1"
+        ],
+        "stop_ids": [
+          "published_126_TuBus_802_part1"
+        ],
+        "link_length_m": 59.299091027265646,
+        "old_native_service_endpoint_m": 11.859818205453124,
+        "new_native_service_endpoint_m": 57.299091027265646,
+        "old_terminal_starts_m": {
+          "osm_30279769_51_forward.lane.0": 47.43927282181252,
+          "osm_30279769_51_forward.lane.1": 47.43927282181252
+        },
+        "new_terminal_starts_m": {
+          "osm_30279769_51_forward.lane.0": 2.0,
+          "osm_30279769_51_forward.lane.1": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 12
+      },
+      {
+        "link_id": "osm_30289506_5_forward",
+        "original_queue_id": "osm_30289506_5_forward.original",
+        "terminal_queue_ids": [
+          "osm_30289506_5_forward.lane.0",
+          "osm_30289506_5_forward.lane.1"
+        ],
+        "stop_ids": [
+          "published_168_TuBus_105_part2"
+        ],
+        "link_length_m": 78.01834100186007,
+        "old_native_service_endpoint_m": 15.603668200372013,
+        "new_native_service_endpoint_m": 73.01699983643768,
+        "old_terminal_starts_m": {
+          "osm_30289506_5_forward.lane.0": 62.41467280148805,
+          "osm_30289506_5_forward.lane.1": 62.41467280148805
+        },
+        "new_terminal_starts_m": {
+          "osm_30289506_5_forward.lane.0": 5.0013411654223905,
+          "osm_30289506_5_forward.lane.1": 5.0013411654223905
+        },
+        "end_setback_m": 5.0013411654223905,
+        "entry_setback_m": 5.000106781458905,
+        "maximum_bus_body_m": 12
+      },
+      {
+        "link_id": "osm_34994240_5_forward",
+        "original_queue_id": "osm_34994240_5_forward.original",
+        "terminal_queue_ids": [
+          "osm_34994240_5_forward.lane.0",
+          "osm_34994240_5_forward.lane.1",
+          "osm_34994240_5_forward.lane.2"
+        ],
+        "stop_ids": [
+          "gis_station_42_L13_936950_part1"
+        ],
+        "link_length_m": 61.2316273227524,
+        "old_native_service_endpoint_m": 12.24632546455048,
+        "new_native_service_endpoint_m": 59.2316273227524,
+        "old_terminal_starts_m": {
+          "osm_34994240_5_forward.lane.0": 48.98530185820192,
+          "osm_34994240_5_forward.lane.1": 48.98530185820192,
+          "osm_34994240_5_forward.lane.2": 48.98530185820192
+        },
+        "new_terminal_starts_m": {
+          "osm_34994240_5_forward.lane.0": 2.0,
+          "osm_34994240_5_forward.lane.1": 2.0,
+          "osm_34994240_5_forward.lane.2": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_381097595_10_forward",
+        "original_queue_id": "osm_381097595_10_forward.original",
+        "terminal_queue_ids": [
+          "osm_381097595_10_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_1_L2_14110815_part1"
+        ],
+        "link_length_m": 101.17368804365604,
+        "old_native_service_endpoint_m": 20.23473760873121,
+        "new_native_service_endpoint_m": 99.17368804365604,
+        "old_terminal_starts_m": {
+          "osm_381097595_10_forward.lane.0": 80.93895043492483
+        },
+        "new_terminal_starts_m": {
+          "osm_381097595_10_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_381144599_1_forward",
+        "original_queue_id": "osm_381144599_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_381144599_1_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_40_L13_14107352_part1"
+        ],
+        "link_length_m": 33.065257919811835,
+        "old_native_service_endpoint_m": 6.613051583962367,
+        "new_native_service_endpoint_m": 28.05698097585333,
+        "old_terminal_starts_m": {
+          "osm_381144599_1_forward.lane.0": 26.452206335849468
+        },
+        "new_terminal_starts_m": {
+          "osm_381144599_1_forward.lane.0": 5.008276943958503
+        },
+        "end_setback_m": 5.008276943958503,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_384731375_2_forward",
+        "original_queue_id": "osm_384731375_2_forward.original",
+        "terminal_queue_ids": [
+          "osm_384731375_2_forward.lane.0",
+          "osm_384731375_2_forward.lane.1"
+        ],
+        "stop_ids": [
+          "gis_station_8_L18_6245758_part1",
+          "gis_station_8_L6_14091640_part1"
+        ],
+        "link_length_m": 33.24144560677604,
+        "old_native_service_endpoint_m": 6.648289121355205,
+        "new_native_service_endpoint_m": 31.24144560677604,
+        "old_terminal_starts_m": {
+          "osm_384731375_2_forward.lane.0": 26.593156485420835,
+          "osm_384731375_2_forward.lane.1": 26.593156485420835
+        },
+        "new_terminal_starts_m": {
+          "osm_384731375_2_forward.lane.0": 2.0,
+          "osm_384731375_2_forward.lane.1": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 5.014724550579546,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_384762167_11_forward",
+        "original_queue_id": "osm_384762167_11_forward.original",
+        "terminal_queue_ids": [
+          "osm_384762167_11_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_164_L7_10123492_part1"
+        ],
+        "link_length_m": 28.54776735055964,
+        "old_native_service_endpoint_m": 5.709553470111928,
+        "new_native_service_endpoint_m": 26.54776735055964,
+        "old_terminal_starts_m": {
+          "osm_384762167_11_forward.lane.0": 22.83821388044771
+        },
+        "new_terminal_starts_m": {
+          "osm_384762167_11_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_384762167_1_forward",
+        "original_queue_id": "osm_384762167_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_384762167_1_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_38_L7_10123492_part1"
+        ],
+        "link_length_m": 52.44251317329641,
+        "old_native_service_endpoint_m": 10.488502634659277,
+        "new_native_service_endpoint_m": 50.44251317329641,
+        "old_terminal_starts_m": {
+          "osm_384762167_1_forward.lane.0": 41.954010538637135
+        },
+        "new_terminal_starts_m": {
+          "osm_384762167_1_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_384766442_5_forward",
+        "original_queue_id": "osm_384766442_5_forward.original",
+        "terminal_queue_ids": [
+          "osm_384766442_5_forward.lane.0"
+        ],
+        "stop_ids": [
+          "osm:node:4735676221_R5_18672966_part2"
+        ],
+        "link_length_m": 43.27164246722226,
+        "old_native_service_endpoint_m": 8.654328493444453,
+        "new_native_service_endpoint_m": 41.27164246722226,
+        "old_terminal_starts_m": {
+          "osm_384766442_5_forward.lane.0": 34.617313973777804
+        },
+        "new_terminal_starts_m": {
+          "osm_384766442_5_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 5.00000546781075,
+        "maximum_bus_body_m": 12
+      },
+      {
+        "link_id": "osm_39931882_0_forward",
+        "original_queue_id": "osm_39931882_0_forward.original",
+        "terminal_queue_ids": [
+          "osm_39931882_0_forward.lane.0",
+          "osm_39931882_0_forward.lane.1",
+          "osm_39931882_0_forward.lane.2"
+        ],
+        "stop_ids": [
+          "gis_station_35_L1_14034049_part1"
+        ],
+        "link_length_m": 56.10867444089819,
+        "old_native_service_endpoint_m": 11.221734888179633,
+        "new_native_service_endpoint_m": 54.10867444089819,
+        "old_terminal_starts_m": {
+          "osm_39931882_0_forward.lane.0": 44.88693955271856,
+          "osm_39931882_0_forward.lane.1": 44.88693955271856,
+          "osm_39931882_0_forward.lane.2": 44.88693955271856
+        },
+        "new_terminal_starts_m": {
+          "osm_39931882_0_forward.lane.0": 2.0,
+          "osm_39931882_0_forward.lane.1": 2.0,
+          "osm_39931882_0_forward.lane.2": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_405158906_1_forward",
+        "original_queue_id": "osm_405158906_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_405158906_1_forward.lane.0"
+        ],
+        "stop_ids": [
+          "published_166_TuBus_105_part2"
+        ],
+        "link_length_m": 78.96407778778062,
+        "old_native_service_endpoint_m": 15.792815557556125,
+        "new_native_service_endpoint_m": 73.96406086882699,
+        "old_terminal_starts_m": {
+          "osm_405158906_1_forward.lane.0": 63.1712622302245
+        },
+        "new_terminal_starts_m": {
+          "osm_405158906_1_forward.lane.0": 5.000016918953635
+        },
+        "end_setback_m": 5.000016918953635,
+        "entry_setback_m": 3.5001126294811744,
+        "maximum_bus_body_m": 12
+      },
+      {
+        "link_id": "osm_420120095_1_forward",
+        "original_queue_id": "osm_420120095_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_420120095_1_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_7_L18_6245758_part1",
+          "gis_station_7_L1_14099833_part1",
+          "gis_station_7_L6_14091640_part1"
+        ],
+        "link_length_m": 108.80663237933554,
+        "old_native_service_endpoint_m": 21.761326475867108,
+        "new_native_service_endpoint_m": 103.80659849124386,
+        "old_terminal_starts_m": {
+          "osm_420120095_1_forward.lane.0": 87.04530590346843
+        },
+        "new_terminal_starts_m": {
+          "osm_420120095_1_forward.lane.0": 5.000033888091684
+        },
+        "end_setback_m": 5.000033888091684,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_420120097_1_forward",
+        "original_queue_id": "osm_420120097_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_420120097_1_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_37_L1_14099833_part1"
+        ],
+        "link_length_m": 34.42419180202393,
+        "old_native_service_endpoint_m": 6.884838360404785,
+        "new_native_service_endpoint_m": 29.42304157049188,
+        "old_terminal_starts_m": {
+          "osm_420120097_1_forward.lane.0": 27.53935344161914
+        },
+        "new_terminal_starts_m": {
+          "osm_420120097_1_forward.lane.0": 5.001150231532048
+        },
+        "end_setback_m": 5.001150231532048,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_420120098_1_forward",
+        "original_queue_id": "osm_420120098_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_420120098_1_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_6_L18_6245758_part1"
+        ],
+        "link_length_m": 87.96464124650282,
+        "old_native_service_endpoint_m": 17.592928249300556,
+        "new_native_service_endpoint_m": 85.96464124650282,
+        "old_terminal_starts_m": {
+          "osm_420120098_1_forward.lane.0": 70.37171299720227
+        },
+        "new_terminal_starts_m": {
+          "osm_420120098_1_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_420120099_8_forward",
+        "original_queue_id": "osm_420120099_8_forward.original",
+        "terminal_queue_ids": [
+          "osm_420120099_8_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_19_L18_14099910_part1",
+          "gis_station_19_L6_14091641_part1"
+        ],
+        "link_length_m": 53.8650243860602,
+        "old_native_service_endpoint_m": 10.773004877212038,
+        "new_native_service_endpoint_m": 51.8650243860602,
+        "old_terminal_starts_m": {
+          "osm_420120099_8_forward.lane.0": 43.09201950884816
+        },
+        "new_terminal_starts_m": {
+          "osm_420120099_8_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_420138102_2_forward",
+        "original_queue_id": "osm_420138102_2_forward.original",
+        "terminal_queue_ids": [
+          "osm_420138102_2_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_6_L6_14091641_part1"
+        ],
+        "link_length_m": 46.74351424402371,
+        "old_native_service_endpoint_m": 9.348702848804741,
+        "new_native_service_endpoint_m": 44.74351424402371,
+        "old_terminal_starts_m": {
+          "osm_420138102_2_forward.lane.0": 37.394811395218966
+        },
+        "new_terminal_starts_m": {
+          "osm_420138102_2_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 5.000991617513753,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_420138111_10_forward",
+        "original_queue_id": "osm_420138111_10_forward.original",
+        "terminal_queue_ids": [
+          "osm_420138111_10_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_38_L18_14099910_part1",
+          "gis_station_38_L6_14091641_part1"
+        ],
+        "link_length_m": 62.08005613654007,
+        "old_native_service_endpoint_m": 12.416011227308012,
+        "new_native_service_endpoint_m": 60.08005613654007,
+        "old_terminal_starts_m": {
+          "osm_420138111_10_forward.lane.0": 49.66404490923206
+        },
+        "new_terminal_starts_m": {
+          "osm_420138111_10_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_420138111_8_forward",
+        "original_queue_id": "osm_420138111_8_forward.original",
+        "terminal_queue_ids": [
+          "osm_420138111_8_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_38_L7_14100221_part1"
+        ],
+        "link_length_m": 24.341592705462535,
+        "old_native_service_endpoint_m": 4.868318541092506,
+        "new_native_service_endpoint_m": 22.341592705462535,
+        "old_terminal_starts_m": {
+          "osm_420138111_8_forward.lane.0": 19.47327416437003
+        },
+        "new_terminal_starts_m": {
+          "osm_420138111_8_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_45497702_1_forward",
+        "original_queue_id": "osm_45497702_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_45497702_1_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_6_L18_14099910_part1"
+        ],
+        "link_length_m": 49.89268058076895,
+        "old_native_service_endpoint_m": 9.97853611615379,
+        "new_native_service_endpoint_m": 47.89268058076895,
+        "old_terminal_starts_m": {
+          "osm_45497702_1_forward.lane.0": 39.91414446461516
+        },
+        "new_terminal_starts_m": {
+          "osm_45497702_1_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_48273209_8_forward",
+        "original_queue_id": "osm_48273209_8_forward.original",
+        "terminal_queue_ids": [
+          "osm_48273209_8_forward.lane.0",
+          "osm_48273209_8_forward.lane.1"
+        ],
+        "stop_ids": [
+          "gis_station_162_L7_14100221_part1"
+        ],
+        "link_length_m": 67.95854754021565,
+        "old_native_service_endpoint_m": 13.591709508043124,
+        "new_native_service_endpoint_m": 65.95854754021565,
+        "old_terminal_starts_m": {
+          "osm_48273209_8_forward.lane.0": 54.366838032172524,
+          "osm_48273209_8_forward.lane.1": 54.366838032172524
+        },
+        "new_terminal_starts_m": {
+          "osm_48273209_8_forward.lane.0": 2.0,
+          "osm_48273209_8_forward.lane.1": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_48553870_26_forward",
+        "original_queue_id": "osm_48553870_26_forward.original",
+        "terminal_queue_ids": [
+          "osm_48553870_26_forward.lane.0",
+          "osm_48553870_26_forward.lane.1"
+        ],
+        "stop_ids": [
+          "gis_station_30_L1_14034049_part1"
+        ],
+        "link_length_m": 35.48255114107841,
+        "old_native_service_endpoint_m": 7.096510228215681,
+        "new_native_service_endpoint_m": 33.48255114107841,
+        "old_terminal_starts_m": {
+          "osm_48553870_26_forward.lane.0": 28.38604091286273,
+          "osm_48553870_26_forward.lane.1": 28.38604091286273
+        },
+        "new_terminal_starts_m": {
+          "osm_48553870_26_forward.lane.0": 2.0,
+          "osm_48553870_26_forward.lane.1": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_48553870_8_forward",
+        "original_queue_id": "osm_48553870_8_forward.original",
+        "terminal_queue_ids": [
+          "osm_48553870_8_forward.lane.0",
+          "osm_48553870_8_forward.lane.1"
+        ],
+        "stop_ids": [
+          "gis_station_31_L1_14034049_part1"
+        ],
+        "link_length_m": 85.00068052862643,
+        "old_native_service_endpoint_m": 17.00013610572529,
+        "new_native_service_endpoint_m": 83.00068052862643,
+        "old_terminal_starts_m": {
+          "osm_48553870_8_forward.lane.0": 68.00054442290114,
+          "osm_48553870_8_forward.lane.1": 68.00054442290114
+        },
+        "new_terminal_starts_m": {
+          "osm_48553870_8_forward.lane.0": 2.0,
+          "osm_48553870_8_forward.lane.1": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_51770227_9_forward",
+        "original_queue_id": "osm_51770227_9_forward.original",
+        "terminal_queue_ids": [
+          "osm_51770227_9_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_28_L1_14099833_part1"
+        ],
+        "link_length_m": 18.277659839402755,
+        "old_native_service_endpoint_m": 3.6555319678805507,
+        "new_native_service_endpoint_m": 16.277659839402755,
+        "old_terminal_starts_m": {
+          "osm_51770227_9_forward.lane.0": 14.622127871522205
+        },
+        "new_terminal_starts_m": {
+          "osm_51770227_9_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_51780527_10_forward",
+        "original_queue_id": "osm_51780527_10_forward.original",
+        "terminal_queue_ids": [
+          "osm_51780527_10_forward.lane.0",
+          "osm_51780527_10_forward.lane.1"
+        ],
+        "stop_ids": [
+          "gis_station_39_L6_14091640_part1"
+        ],
+        "link_length_m": 65.15172151536375,
+        "old_native_service_endpoint_m": 13.030344303072745,
+        "new_native_service_endpoint_m": 63.15172151536375,
+        "old_terminal_starts_m": {
+          "osm_51780527_10_forward.lane.0": 52.121377212291,
+          "osm_51780527_10_forward.lane.1": 52.121377212291
+        },
+        "new_terminal_starts_m": {
+          "osm_51780527_10_forward.lane.0": 2.0,
+          "osm_51780527_10_forward.lane.1": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 3.5003710781053545,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_60237269_1_forward",
+        "original_queue_id": "osm_60237269_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_60237269_1_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_40_L12_906046_part1"
+        ],
+        "link_length_m": 87.87846353629993,
+        "old_native_service_endpoint_m": 17.57569270725999,
+        "new_native_service_endpoint_m": 85.87846353629993,
+        "old_terminal_starts_m": {
+          "osm_60237269_1_forward.lane.0": 70.30277082903994
+        },
+        "new_terminal_starts_m": {
+          "osm_60237269_1_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_643204393_1_forward",
+        "original_queue_id": "osm_643204393_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_643204393_1_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_18_L7_14100221_part1"
+        ],
+        "link_length_m": 55.19183776515647,
+        "old_native_service_endpoint_m": 11.038367553031293,
+        "new_native_service_endpoint_m": 50.19183765088528,
+        "old_terminal_starts_m": {
+          "osm_643204393_1_forward.lane.0": 44.15347021212518
+        },
+        "new_terminal_starts_m": {
+          "osm_643204393_1_forward.lane.0": 5.00000011427119
+        },
+        "end_setback_m": 5.00000011427119,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_734011347_1_forward",
+        "original_queue_id": "osm_734011347_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_734011347_1_forward.lane.0"
+        ],
+        "stop_ids": [
+          "published_117_TuBus_802_part1"
+        ],
+        "link_length_m": 129.0942513248705,
+        "old_native_service_endpoint_m": 29.0942513248705,
+        "new_native_service_endpoint_m": 127.0942513248705,
+        "old_terminal_starts_m": {
+          "osm_734011347_1_forward.lane.0": 100.0
+        },
+        "new_terminal_starts_m": {
+          "osm_734011347_1_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 12
+      },
+      {
+        "link_id": "osm_734011348_12_forward",
+        "original_queue_id": "osm_734011348_12_forward.original",
+        "terminal_queue_ids": [
+          "osm_734011348_12_forward.lane.0"
+        ],
+        "stop_ids": [
+          "published_128_TuBus_802_part1"
+        ],
+        "link_length_m": 102.3895227602474,
+        "old_native_service_endpoint_m": 20.47790455204948,
+        "new_native_service_endpoint_m": 97.38809811534908,
+        "old_terminal_starts_m": {
+          "osm_734011348_12_forward.lane.0": 81.91161820819792
+        },
+        "new_terminal_starts_m": {
+          "osm_734011348_12_forward.lane.0": 5.001424644898316
+        },
+        "end_setback_m": 5.001424644898316,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 12
+      },
+      {
+        "link_id": "osm_734011348_6_forward",
+        "original_queue_id": "osm_734011348_6_forward.original",
+        "terminal_queue_ids": [
+          "osm_734011348_6_forward.lane.0"
+        ],
+        "stop_ids": [
+          "published_127_TuBus_802_part1"
+        ],
+        "link_length_m": 60.70565603500152,
+        "old_native_service_endpoint_m": 12.1411312070003,
+        "new_native_service_endpoint_m": 58.70565603500152,
+        "old_terminal_starts_m": {
+          "osm_734011348_6_forward.lane.0": 48.56452482800122
+        },
+        "new_terminal_starts_m": {
+          "osm_734011348_6_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 5.000633785624869,
+        "maximum_bus_body_m": 12
+      },
+      {
+        "link_id": "osm_734011349_9_forward",
+        "original_queue_id": "osm_734011349_9_forward.original",
+        "terminal_queue_ids": [
+          "osm_734011349_9_forward.lane.0",
+          "osm_734011349_9_forward.lane.1"
+        ],
+        "stop_ids": [
+          "gis_station_165_L7_10123492_part1"
+        ],
+        "link_length_m": 37.32263010587053,
+        "old_native_service_endpoint_m": 7.464526021174105,
+        "new_native_service_endpoint_m": 35.32263010587053,
+        "old_terminal_starts_m": {
+          "osm_734011349_9_forward.lane.0": 29.858104084696425,
+          "osm_734011349_9_forward.lane.1": 29.858104084696425
+        },
+        "new_terminal_starts_m": {
+          "osm_734011349_9_forward.lane.0": 2.0,
+          "osm_734011349_9_forward.lane.1": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 5.006179532173041,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_734011350_15_forward",
+        "original_queue_id": "osm_734011350_15_forward.original",
+        "terminal_queue_ids": [
+          "osm_734011350_15_forward.lane.0"
+        ],
+        "stop_ids": [
+          "published_119_TuBus_802_part1"
+        ],
+        "link_length_m": 36.4911762439195,
+        "old_native_service_endpoint_m": 7.298235248783897,
+        "new_native_service_endpoint_m": 34.4911762439195,
+        "old_terminal_starts_m": {
+          "osm_734011350_15_forward.lane.0": 29.1929409951356
+        },
+        "new_terminal_starts_m": {
+          "osm_734011350_15_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 5.009180319089275,
+        "maximum_bus_body_m": 12
+      },
+      {
+        "link_id": "osm_734011350_35_forward",
+        "original_queue_id": "osm_734011350_35_forward.original",
+        "terminal_queue_ids": [
+          "osm_734011350_35_forward.lane.0"
+        ],
+        "stop_ids": [
+          "published_120_TuBus_802_part1"
+        ],
+        "link_length_m": 50.51937983482419,
+        "old_native_service_endpoint_m": 10.103875966964836,
+        "new_native_service_endpoint_m": 48.51937983482419,
+        "old_terminal_starts_m": {
+          "osm_734011350_35_forward.lane.0": 40.41550386785936
+        },
+        "new_terminal_starts_m": {
+          "osm_734011350_35_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 5.012779039340546,
+        "maximum_bus_body_m": 12
+      },
+      {
+        "link_id": "osm_734011350_6_forward",
+        "original_queue_id": "osm_734011350_6_forward.original",
+        "terminal_queue_ids": [
+          "osm_734011350_6_forward.lane.0"
+        ],
+        "stop_ids": [
+          "published_118_TuBus_802_part1"
+        ],
+        "link_length_m": 66.22468446277878,
+        "old_native_service_endpoint_m": 13.244936892555756,
+        "new_native_service_endpoint_m": 64.22468446277878,
+        "old_terminal_starts_m": {
+          "osm_734011350_6_forward.lane.0": 52.979747570223026
+        },
+        "new_terminal_starts_m": {
+          "osm_734011350_6_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 12
+      },
+      {
+        "link_id": "osm_749676932_1_forward",
+        "original_queue_id": "osm_749676932_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_749676932_1_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_1_L1_14099833_part1",
+          "gis_station_1_L2_14110814_part1"
+        ],
+        "link_length_m": 70.36452147381642,
+        "old_native_service_endpoint_m": 14.072904294763283,
+        "new_native_service_endpoint_m": 68.36452147381642,
+        "old_terminal_starts_m": {
+          "osm_749676932_1_forward.lane.0": 56.29161717905314
+        },
+        "new_terminal_starts_m": {
+          "osm_749676932_1_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 3.5002844134983757,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_930035053_1_forward",
+        "original_queue_id": "osm_930035053_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_930035053_1_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_36_L1_14034049_part1"
+        ],
+        "link_length_m": 34.76654076899572,
+        "old_native_service_endpoint_m": 6.953308153799142,
+        "new_native_service_endpoint_m": 32.76654076899572,
+        "old_terminal_starts_m": {
+          "osm_930035053_1_forward.lane.0": 27.813232615196576
+        },
+        "new_terminal_starts_m": {
+          "osm_930035053_1_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      },
+      {
+        "link_id": "osm_930035058_1_forward",
+        "original_queue_id": "osm_930035058_1_forward.original",
+        "terminal_queue_ids": [
+          "osm_930035058_1_forward.lane.0"
+        ],
+        "stop_ids": [
+          "gis_station_169_L7_10123492_part1"
+        ],
+        "link_length_m": 59.124133062481675,
+        "old_native_service_endpoint_m": 11.82482661249633,
+        "new_native_service_endpoint_m": 57.124133062481675,
+        "old_terminal_starts_m": {
+          "osm_930035058_1_forward.lane.0": 47.299306449985345
+        },
+        "new_terminal_starts_m": {
+          "osm_930035058_1_forward.lane.0": 2.0
+        },
+        "end_setback_m": 2.0,
+        "entry_setback_m": 2.0,
+        "maximum_bus_body_m": 13.5
+      }
+    ],
+    "scope": "new_run_snapshot_only; queue_split_not_link_geometry_or_observed_lane",
+    "preserved": [
+      "link_length",
+      "lane_ids",
+      "leads_to",
+      "represented_lanes",
+      "flow_capacity",
+      "alignment"
+    ],
+    "body_capacity_basis": "native_corridor_length_reservation_across_internal_queues",
+    "nominal_lane_width_m": 3.0,
+    "source_lanes_sha256": "e86e9a4f8055b737af3652f13b0aa2e0073c7c67e3e39a3965482d99fca469b6",
+    "generated_lanes_file": "lanes.xml",
+    "generated_lanes_sha256": "a09fe2aa1534c6a1980f3b054807a346c26fae89b8fb5daf9120c270235d1c00"
+  },
+  "artifacts": [
+    {
+      "path": "route-bundle.json",
+      "sha256": "499103238698f9ae1771f00e39bad95295a7c2da1b79caf613b46d5c9198a1c8",
+      "bytes": 125196
+    },
+    {
+      "path": "transitVehicles.xml",
+      "sha256": "afeaae06d1b2823cec663850caa5085dc5adff1da1f4da6fa973b27ba1fa14f3",
+      "bytes": 20500
+    },
+    {
+      "path": "network.xml",
+      "sha256": "ad898adaf82108aa60e59214311d94b2e54ed14ee1519e1d987ef58740cf4839",
+      "bytes": 7779197
+    },
+    {
+      "path": "roster.json",
+      "sha256": "02974a548ffcbe0b0206a3d0187e91a88291e5cbf9a782b664f36003035af413",
+      "bytes": 5193657
+    },
+    {
+      "path": "stops.json",
+      "sha256": "54aa507c93480f69e19242cb00a63e281ea67404edfa23ca761be76af551f813",
+      "bytes": 154495
+    },
+    {
+      "path": "lanes.xml",
+      "sha256": "a09fe2aa1534c6a1980f3b054807a346c26fae89b8fb5daf9120c270235d1c00",
+      "bytes": 5510159
+    },
+    {
+      "path": "weekday-policy.json",
+      "sha256": "007cb9a7555496ec19883f830cb8787010c93d09609db2fd2a7cadea3abc42d2",
+      "bytes": 48674
+    },
+    {
+      "path": "transitSchedule.xml",
+      "sha256": "a37eea48d3c73848cb10a26344d4cdacfad1c734bc76bb9c703f6f23d69e264e",
+      "bytes": 7841289
+    }
+  ]
+}

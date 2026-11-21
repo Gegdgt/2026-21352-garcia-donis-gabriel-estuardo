@@ -1,0 +1,71 @@
+{
+  "status": "BLOCKED",
+  "scope": "Only new artifacts in this directory; no production input modifications. This manifest does not hash itself.",
+  "files": {
+    "attempt-1-focused-tests.log": {
+      "sha256": "768e45174f88cca2125ae107b53ddcf68c3f610cf9884d8903618ea72ffe2b90",
+      "bytes": 263793
+    },
+    "attempt-1-java-probe-compile.log": {
+      "sha256": "71acef9bc045cb91b74ec5ab48636dffd111bc6924766f9cce85cd720f4ff52f",
+      "bytes": 8088
+    },
+    "attempt-1-remaining-osm-review.json": {
+      "sha256": "7a67ae9fe94767ef38c19bc5402e3f562ea7c01b3ae3fa9dda45171705a93594",
+      "bytes": 2818
+    },
+    "CIERRE_DOS_RESTRICCIONES.md": {
+      "sha256": "84ba0939daa1edfccfd6efa50a5fae500aef4f5885efa5037969d5781f6d9b3c",
+      "bytes": 9482
+    },
+    "focused-tests.log": {
+      "sha256": "1184997655d12600623a47c1cbf90c4acf2400f1f59d487e76103579abb46332",
+      "bytes": 1561
+    },
+    "java-probe-compile.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "java-probe.log": {
+      "sha256": "0bf256b54468a5ad0afb468b70afd09ea2eb83366a4e34e8b142aed47b7a7350",
+      "bytes": 710
+    },
+    "preserved-input-hashes.json": {
+      "sha256": "cccb52f3484bc614e238eaf2cf44c5e2b62dc7f5a586400bb04d15ea083cb8c2",
+      "bytes": 15351
+    },
+    "relation-17478998-full.osm": {
+      "sha256": "5c59f1b6df35c2a0578248756e6726dfaf6934e249766a32a9bc806e8abae56a",
+      "bytes": 2743
+    },
+    "relation-17884471-full.osm": {
+      "sha256": "a8c6cebc9f000db4d22cf91c89baf922bb3986f000462f3118e8945da947f977",
+      "bytes": 1284
+    },
+    "relation-17884471-history.osm": {
+      "sha256": "0de8189aa2b375ac227a599e97aae84bde26c1e5a2f32af3297d82067ff254ad",
+      "bytes": 947
+    },
+    "remaining-osm-review.json": {
+      "sha256": "e5535220c5b156e0fbd7aee405828669ad10cb930042b4cadad7b6d8a4d1e742",
+      "bytes": 4096
+    },
+    "Restriction17478998Probe.java": {
+      "sha256": "619988c3406769cc90edcb2d6955494575642e9961dbf6b488677b18dc7fb7f4",
+      "bytes": 3070
+    },
+    "source-provenance.json": {
+      "sha256": "a79e9083b16d643b6ec91b714ff44e8c81fc2e0ee1f9a1c447ab95f2eb9ac188",
+      "bytes": 1059
+    },
+    "test_remaining_osm.py": {
+      "sha256": "db12ab7bc3d59db12971e5a34e37bbbb8845aece0e4c2d11f7dae071ad2d4001",
+      "bytes": 17851
+    },
+    "way-381158225-history.osm": {
+      "sha256": "b9e7713f22785de5ce2836a4bd13d42035d0d4b48d7e1288441d48e00d5258e6",
+      "bytes": 4880
+    }
+  },
+  "manifest_file": "final-evidence-hashes.json"
+}

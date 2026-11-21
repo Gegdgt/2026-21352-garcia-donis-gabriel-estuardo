@@ -1,0 +1,79 @@
+{
+  "status": "BLOCKED",
+  "production_exemptions_activated": false,
+  "simulation_started": false,
+  "massive_preflight_executed": false,
+  "17884471": {
+    "status": "MALFORMED_SOURCE_NO_EXECUTABLE_MANEUVER",
+    "activation": "PREPARED_NOT_ACTIVATED_IN_PRODUCTION",
+    "relation_id": "17884471",
+    "version": 2,
+    "changeset": "178612606",
+    "warning": "OSM 17884471 v2 lacks from/via in the authoritative source; no maneuver can be inferred. Historical from-way 381158225 was deleted. This does not establish unrestricted legal access to the destination.",
+    "relation": {
+      "attributes": {
+        "id": "17884471",
+        "visible": "true",
+        "version": "2",
+        "changeset": "178612606",
+        "timestamp": "2026-02-16T06:36:31Z",
+        "user": "Guiso",
+        "uid": "19971730"
+      },
+      "members": [
+        {
+          "type": "way",
+          "ref": "34993910",
+          "role": "to"
+        }
+      ],
+      "tags": [
+        {
+          "k": "restriction",
+          "v": "no_straight_on"
+        },
+        {
+          "k": "type",
+          "v": "restriction"
+        }
+      ]
+    },
+    "source_sha256": {
+      "relation-17478998-full.osm": "5c59f1b6df35c2a0578248756e6726dfaf6934e249766a32a9bc806e8abae56a",
+      "relation-17884471-full.osm": "a8c6cebc9f000db4d22cf91c89baf922bb3986f000462f3118e8945da947f977",
+      "relation-17884471-history.osm": "0de8189aa2b375ac227a599e97aae84bde26c1e5a2f32af3297d82067ff254ad",
+      "way-381158225-history.osm": "b9e7713f22785de5ce2836a4bd13d42035d0d4b48d7e1288441d48e00d5258e6"
+    },
+    "source_repair_applied": false,
+    "global_target_ban": false
+  },
+  "freight_routes_connected": 4,
+  "preserved_file_count": 115,
+  "validation_binding": {
+    "receipt_sha256": "cec20a291daa3dcac86149c8fe75cfde91795d421a307098c6563a48babfd349",
+    "approved_fingerprint": "a9b9206b703abb8bde1f74541d8f277ccb741323707d7f8110235663fca59a01",
+    "current_fingerprint": "0e90642a28041355f9af92645987f7ad4345c004b8eaec43b193f7076ee8707c",
+    "matches": false,
+    "validate_executed": false,
+    "receipt_modified": false
+  },
+  "tests": {
+    "run": 15,
+    "failures": 2,
+    "errors": 1,
+    "skipped": 0,
+    "diagnostics_passed": false,
+    "scope": "Static source, hash, route diagnostics; passing reproductions are NOT restriction enforcement"
+  },
+  "17478998": {
+    "status": "BLOCKED_ROUTER_HAS_NO_SEQUENCE_STATE",
+    "required_enforcement_checks": {
+      "forbidden_sequence_rejected_by_router": false,
+      "initial_route_avoids_sequence": false,
+      "reroute_cannot_reintroduce_sequence": false
+    },
+    "production_loader_fail_closed": true,
+    "java_engine_modified": false
+  },
+  "required_enforcement_checks_proven": false
+}

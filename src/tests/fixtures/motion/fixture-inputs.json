@@ -1,0 +1,49 @@
+{
+  "vehicle_limits_mps": {
+    "vehicle_free": 10.0,
+    "vehicle_red": 10.0,
+    "vehicle_stop": 10.0,
+    "vehicle_congestion": 10.0,
+    "vehicle_slow10": 2.7777777777777777,
+    "vehicle_midnight": 10.0
+  },
+  "profiles": {
+    "person_free": "Normal",
+    "person_red": "Normal",
+    "person_stop": "Normal",
+    "person_congestion": "Normal",
+    "person_slow10": "Tortuga",
+    "person_insufficient": "Normal",
+    "person_midnight": "Normal"
+  },
+  "vehicle_person_assignments": {
+    "vehicle_free": "person_free",
+    "vehicle_red": "person_red",
+    "vehicle_stop": "person_stop",
+    "vehicle_congestion": "person_congestion",
+    "vehicle_slow10": "person_slow10",
+    "vehicle_insufficient": "person_insufficient",
+    "vehicle_midnight": "person_midnight"
+  },
+  "use_lanes": false,
+  "visual_settings": {
+    "enabled": true,
+    "profiles": {
+      "Tortuga": {
+        "acceleration_mps2": 1.0,
+        "deceleration_mps2": 1.5
+      },
+      "Normal": {
+        "acceleration_mps2": 1.5,
+        "deceleration_mps2": 2.5
+      },
+      "Liebre": {
+        "acceleration_mps2": 2.0,
+        "deceleration_mps2": 3.5
+      }
+    },
+    "max_rate_multiplier": 4.0,
+    "minimum_ramp_seconds": 0.15
+  },
+  "source": "authored unit fixture, not calibrated vehicle measurements"
+}

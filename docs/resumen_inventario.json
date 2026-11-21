@@ -1,0 +1,20 @@
+{
+  "fecha": "2026-11-20",
+  "archivos_origen": 250472,
+  "bytes_origen": 140597655969,
+  "errores_metadata": 0,
+  "seleccionados": 937,
+  "bytes_seleccionados": 131191301,
+  "excluidos": 249535,
+  "bytes_excluidos": 140466464668,
+  "categorias": {
+    "configuracion": 80,
+    "herramienta-compilacion": 2,
+    "documentacion-tecnica": 51,
+    "script-auxiliar": 55,
+    "codigo-fuente": 232,
+    "test": 468,
+    "recurso-estatico": 27,
+    "entrada-escenario": 22
+  }
+}

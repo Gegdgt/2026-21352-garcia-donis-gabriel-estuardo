@@ -1,0 +1,986 @@
+{
+  "schema": "simz1-implementation-evidence-v1",
+  "generated_utc": "2026-10-27T05:42:26.221664+00:00",
+  "scope": "Independent freight plus partial physical/visual occupancy correction; not a global microscopic-spacing certificate",
+  "global_occupancy_acceptance": false,
+  "massive_run_ready": false,
+  "run_id": "simz1-1e340868234a4341bfcfe957bb70408c",
+  "run_directory": "scenarios\\zona1\\montecarlo\\run-occupancy-freight-20261026-v3",
+  "run_status": "completed",
+  "validation": {
+    "status": "valid",
+    "checks": [
+      "hashes",
+      "complete_xml",
+      "population",
+      "network",
+      "effective_options",
+      "completed_iterations",
+      "physical_transitions",
+      "enabled_lane_movements",
+      "route_failure_events",
+      "persisted_signal_plans",
+      "native_signal_events",
+      "freight_identity_files_counts",
+      "freight_fixed_route",
+      "freight_weekday_residence_windows"
+    ],
+    "physical_stability": {
+      "status": "no_interventions_observed",
+      "proven": false,
+      "interventions": 0,
+      "forced_storage_moves": 0,
+      "storage_stuck_removals": 0,
+      "counting_unit": "native_decisions_across_iterations_not_unique_vehicles"
+    }
+  },
+  "configured": {
+    "planned_persons": 1000,
+    "planned_trips": 1000,
+    "planned_legs": 1000,
+    "road_demand_persons": 1000,
+    "public_transport_vehicles_configured": 120,
+    "public_transport_departures_scheduled": 6915,
+    "transit_drivers_added_to_demand": 0,
+    "freight_vehicles_configured": 12,
+    "freight_departures_scheduled": 12
+  },
+  "private_observed": {
+    "planned_persons": 1000,
+    "planned_trips": 1000,
+    "planned_legs": 1000,
+    "observed_departures": 1000,
+    "observed_arrivals": 999,
+    "observed_persons": 1000,
+    "completed_legs": 999,
+    "incomplete_legs": 1,
+    "pending_legs_at_horizon": 1,
+    "aborted_legs": 1,
+    "aborted_before_horizon": 0,
+    "horizon_abort_events": 1,
+    "observed_abort_events": 2,
+    "unstarted_legs": 0,
+    "physical_transitions": 420336,
+    "invalid_physical_transitions": 0,
+    "reroute_rejections": 0,
+    "reroute_installations": 0,
+    "reroute_validated_candidates": 0,
+    "invalid_current_route_events": 0
+  },
+  "freight_observed": {
+    "vehicles_observed": 12,
+    "departures_observed": 12,
+    "arrivals_observed": 12,
+    "fleet_vehicle_ids": [
+      "freight_000001",
+      "freight_000002",
+      "freight_000003",
+      "freight_000004",
+      "freight_000005",
+      "freight_000006",
+      "freight_000007",
+      "freight_000008",
+      "freight_000009",
+      "freight_000010",
+      "freight_000011",
+      "freight_000012"
+    ],
+    "restricted_window_violations": 0,
+    "completed_duration_seconds": [
+      309.0,
+      442.0,
+      404.0,
+      468.0,
+      468.0,
+      309.0,
+      442.0,
+      484.0,
+      444.0,
+      508.0,
+      291.0,
+      467.0
+    ],
+    "expeditions": [
+      {
+        "vehicle_id": "freight_000001",
+        "departure_seconds": 3600.0,
+        "arrival_seconds": 4042.0,
+        "duration_seconds": 442.0,
+        "route_id": "west-east"
+      },
+      {
+        "vehicle_id": "freight_000002",
+        "departure_seconds": 34200.0,
+        "arrival_seconds": 34668.0,
+        "duration_seconds": 468.0,
+        "route_id": "west-east-reverse"
+      },
+      {
+        "vehicle_id": "freight_000003",
+        "departure_seconds": 77400.0,
+        "arrival_seconds": 77844.0,
+        "duration_seconds": 444.0,
+        "route_id": "south-north"
+      },
+      {
+        "vehicle_id": "freight_000004",
+        "departure_seconds": 3720.0,
+        "arrival_seconds": 4029.0,
+        "duration_seconds": 309.0,
+        "route_id": "south-north-reverse"
+      },
+      {
+        "vehicle_id": "freight_000005",
+        "departure_seconds": 34320.0,
+        "arrival_seconds": 34762.0,
+        "duration_seconds": 442.0,
+        "route_id": "west-east"
+      },
+      {
+        "vehicle_id": "freight_000006",
+        "departure_seconds": 77520.0,
+        "arrival_seconds": 78028.0,
+        "duration_seconds": 508.0,
+        "route_id": "west-east-reverse"
+      },
+      {
+        "vehicle_id": "freight_000007",
+        "departure_seconds": 3840.0,
+        "arrival_seconds": 4244.0,
+        "duration_seconds": 404.0,
+        "route_id": "south-north"
+      },
+      {
+        "vehicle_id": "freight_000008",
+        "departure_seconds": 34440.0,
+        "arrival_seconds": 34749.0,
+        "duration_seconds": 309.0,
+        "route_id": "south-north-reverse"
+      },
+      {
+        "vehicle_id": "freight_000009",
+        "departure_seconds": 77640.0,
+        "arrival_seconds": 78107.0,
+        "duration_seconds": 467.0,
+        "route_id": "west-east"
+      },
+      {
+        "vehicle_id": "freight_000010",
+        "departure_seconds": 3960.0,
+        "arrival_seconds": 4428.0,
+        "duration_seconds": 468.0,
+        "route_id": "west-east-reverse"
+      },
+      {
+        "vehicle_id": "freight_000011",
+        "departure_seconds": 34560.0,
+        "arrival_seconds": 35044.0,
+        "duration_seconds": 484.0,
+        "route_id": "south-north"
+      },
+      {
+        "vehicle_id": "freight_000012",
+        "departure_seconds": 77760.0,
+        "arrival_seconds": 78051.0,
+        "duration_seconds": 291.0,
+        "route_id": "south-north-reverse"
+      }
+    ]
+  },
+  "public_observed": {
+    "road_demand_persons": 1000,
+    "public_transport_vehicles_configured": 120,
+    "public_transport_departures_scheduled": 6915,
+    "observed_expedition_starts": 5750,
+    "transit_drivers_internal_observed": 120,
+    "transit_drivers_added_to_demand": 0,
+    "active_public_vehicles_network": 0,
+    "active_public_vehicles_inside_domain": 0,
+    "active_public_vehicle_location_unknown": 0,
+    "peak_active_public_vehicles_network": 54,
+    "peak_public_vehicles_on_known_domain_links": 54,
+    "domain_counter_scope": "computational_network",
+    "counting_basis": "native traffic events; parked fleet is not active; no inferred boundary",
+    "network_mode_basis": "fingerprinted transit VehicleType; native event attributes retained",
+    "event_counts": {
+      "boundary_entry": 5750,
+      "TransitDriverStarts": 5750,
+      "departure": 5750,
+      "PersonEntersVehicle": 5750,
+      "vehicle enters traffic": 5750,
+      "VehicleArrivesAtFacility": 24791,
+      "VehicleDepartsAtFacility": 24791,
+      "simz1NativeDecision": 826908,
+      "left link": 357554,
+      "entered link": 357554,
+      "simz1Admission": 357554,
+      "entered lane": 648551,
+      "left lane": 649346,
+      "simz1Priority": 266529,
+      "vehicle leaves traffic": 5750,
+      "PersonLeavesVehicle": 5750,
+      "arrival": 5750,
+      "boundary_terminal_start": 3865,
+      "boundary_outside_start": 1885,
+      "boundary_cancelled_duty_after_closing": 1165,
+      "boundary_service_finished": 120
+    },
+    "trips": {
+      "departures": 5750,
+      "arrivals": 5750,
+      "completed_trips": 5750,
+      "incomplete_trips": 0,
+      "unmatched_arrivals": 0,
+      "ignored_events": 3537863,
+      "aborted_trips": 0,
+      "aborted_before_horizon": 0,
+      "horizon_abort_events": 0,
+      "pending_trips_at_horizon": 0,
+      "anomalies": {},
+      "terminal_reconciliation_version": 2,
+      "terminal_reconciliation": {
+        "driver_boardings_observed": 5750
+      },
+      "censoring_breakdown": {},
+      "completion_rate": 1.0,
+      "by_departure_hour": {
+        "0": {
+          "departures": 0,
+          "completed": 0,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "1": {
+          "departures": 0,
+          "completed": 0,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "2": {
+          "departures": 0,
+          "completed": 0,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "3": {
+          "departures": 0,
+          "completed": 0,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "4": {
+          "departures": 60,
+          "completed": 60,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "5": {
+          "departures": 289,
+          "completed": 289,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "6": {
+          "departures": 353,
+          "completed": 353,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "7": {
+          "departures": 367,
+          "completed": 367,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "8": {
+          "departures": 367,
+          "completed": 367,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "9": {
+          "departures": 368,
+          "completed": 368,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "10": {
+          "departures": 363,
+          "completed": 363,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "11": {
+          "departures": 361,
+          "completed": 361,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "12": {
+          "departures": 365,
+          "completed": 365,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "13": {
+          "departures": 366,
+          "completed": 366,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "14": {
+          "departures": 371,
+          "completed": 371,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "15": {
+          "departures": 365,
+          "completed": 365,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "16": {
+          "departures": 364,
+          "completed": 364,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "17": {
+          "departures": 360,
+          "completed": 360,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "18": {
+          "departures": 366,
+          "completed": 366,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "19": {
+          "departures": 293,
+          "completed": 293,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "20": {
+          "departures": 244,
+          "completed": 244,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "21": {
+          "departures": 128,
+          "completed": 128,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "22": {
+          "departures": 0,
+          "completed": 0,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        },
+        "23": {
+          "departures": 0,
+          "completed": 0,
+          "aborted_before_horizon": 0,
+          "censored": 0,
+          "horizon_abort_events": 0
+        }
+      },
+      "by_event_hour": {
+        "0": {
+          "departures": 0,
+          "arrivals": 0,
+          "abort_events": 0
+        },
+        "1": {
+          "departures": 0,
+          "arrivals": 0,
+          "abort_events": 0
+        },
+        "2": {
+          "departures": 0,
+          "arrivals": 0,
+          "abort_events": 0
+        },
+        "3": {
+          "departures": 0,
+          "arrivals": 0,
+          "abort_events": 0
+        },
+        "4": {
+          "departures": 60,
+          "arrivals": 47,
+          "abort_events": 0
+        },
+        "5": {
+          "departures": 289,
+          "arrivals": 259,
+          "abort_events": 0
+        },
+        "6": {
+          "departures": 353,
+          "arrivals": 351,
+          "abort_events": 0
+        },
+        "7": {
+          "departures": 367,
+          "arrivals": 368,
+          "abort_events": 0
+        },
+        "8": {
+          "departures": 367,
+          "arrivals": 363,
+          "abort_events": 0
+        },
+        "9": {
+          "departures": 368,
+          "arrivals": 373,
+          "abort_events": 0
+        },
+        "10": {
+          "departures": 363,
+          "arrivals": 364,
+          "abort_events": 0
+        },
+        "11": {
+          "departures": 361,
+          "arrivals": 362,
+          "abort_events": 0
+        },
+        "12": {
+          "departures": 365,
+          "arrivals": 364,
+          "abort_events": 0
+        },
+        "13": {
+          "departures": 366,
+          "arrivals": 362,
+          "abort_events": 0
+        },
+        "14": {
+          "departures": 371,
+          "arrivals": 369,
+          "abort_events": 0
+        },
+        "15": {
+          "departures": 365,
+          "arrivals": 367,
+          "abort_events": 0
+        },
+        "16": {
+          "departures": 364,
+          "arrivals": 367,
+          "abort_events": 0
+        },
+        "17": {
+          "departures": 360,
+          "arrivals": 364,
+          "abort_events": 0
+        },
+        "18": {
+          "departures": 366,
+          "arrivals": 364,
+          "abort_events": 0
+        },
+        "19": {
+          "departures": 293,
+          "arrivals": 298,
+          "abort_events": 0
+        },
+        "20": {
+          "departures": 244,
+          "arrivals": 247,
+          "abort_events": 0
+        },
+        "21": {
+          "departures": 128,
+          "arrivals": 147,
+          "abort_events": 0
+        },
+        "22": {
+          "departures": 0,
+          "arrivals": 14,
+          "abort_events": 0
+        },
+        "23": {
+          "departures": 0,
+          "arrivals": 0,
+          "abort_events": 0
+        }
+      },
+      "departures_after_demand_window": 0,
+      "hour_semantics": "Absolute hours, never modulo 24. Cohorts use actual departure hour; arrivals also counted at their own event hour."
+    }
+  },
+  "blocking_stops": {
+    "schema": "simz1-native-blocking-stop-audit-v1",
+    "blocking_stop_intervals": 18800,
+    "unlocated_intervals": 8417,
+    "following_vehicle_exposures": 424,
+    "illegal_follower_exits": 0,
+    "violations": [],
+    "continuous_physical_spacing_observed": false,
+    "scope": "FIFO exits during native blocking facility dwell; equal-entry-time order is not inferred"
+  },
+  "configuration": {
+    "status": "valid",
+    "matsim_version": "15.0",
+    "use_lanes": true,
+    "signals_enabled": true,
+    "incidents_enabled": false,
+    "qsim_threads": 4,
+    "remove_stuck_vehicles": false,
+    "incident_consequences": {
+      "requested_enabled": false,
+      "installed": false,
+      "implementation": "fixture_only",
+      "duration_seconds": 1800,
+      "physics_effect": "none",
+      "production_activation": "rejected",
+      "pending": [
+        "native_lane_residency_adapter",
+        "native_paired_observer",
+        "verified_conflict_registry"
+      ]
+    },
+    "lane_policy": {
+      "requested_enabled": false,
+      "installed": false,
+      "implementation": "isolated_decision_component",
+      "production_activation": "rejected",
+      "parameters": {
+        "minimumAdvanceM": 8.0,
+        "minimumGapM": 2.0,
+        "slowSpeedMps": 8.33,
+        "lookaheadSeconds": 5.0
+      },
+      "pending": [
+        "native_microscopic_lane_state",
+        "vehicle_aware_storage",
+        "atomic_swept_envelope_reservation_and_transfer",
+        "network_lane_rule_import",
+        "committed_lane_change_events"
+      ]
+    },
+    "unsignalized_priority": {
+      "enabled": true,
+      "classification": "osm-hierarchy",
+      "conflicts": "geometric",
+      "stop_seconds": 5.0,
+      "max_yield_seconds": 30.0
+    },
+    "admission_policy": "strict-receiver-v1",
+    "whole_vehicle_reservation": false,
+    "using_fast_capacity_update": false,
+    "stuck_time_seconds": 10.0,
+    "link_to_link_routing": true,
+    "calculate_link_to_link_travel_times": true,
+    "separate_travel_time_modes": false,
+    "physical_stability_proven": false,
+    "note": "strict-receiver-v1 conserva WAIT cuando el receptor rechaza; stuckTime no autoriza FORCE. La consistencia de configuracion no demuestra distancias continuas ni ausencia de gridlock"
+  },
+  "synthetic_geometry": {
+    "cases": 40,
+    "minimum_gap_m": 0.09999999999997655,
+    "minimum_stop_clearance_m": -9.769962616701378e-15,
+    "tolerance_m": 1e-07,
+    "unresolved_overlaps": 0,
+    "report": "runtime/validation/occupancy-fixtures.json"
+  },
+  "analysis": "scenarios\\zona1\\montecarlo\\run-occupancy-freight-20261026-v3\\analysis\\it.0",
+  "package": "scenarios\\zona1\\montecarlo\\run-occupancy-freight-20261026-v3\\entregables\\run-occupancy-freight-20261026-v3",
+  "commands": {
+    "java_home": "$env:JAVA_HOME='C:\\Program Files\\Java\\jdk-17'",
+    "small_run": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run_simz1_with_analysis.ps1 -MinAgents 1000 -MaxAgents 1000 -Seed 20261026 -Iterations 1 -ServiceDate '2026-10-23' -AcceptTransitRouteAssumptions -FreightVehicles 12 -NewRunDir 'scenarios\\zona1\\montecarlo\\run-occupancy-freight-20261026-v3' -MinFreeGiB 1",
+    "revalidate": ".\\.venv\\Scripts\\python.exe -B python/revalidar_simz1.py --run-dir scenarios\\zona1\\montecarlo\\run-occupancy-freight-20261026-v3 --refresh-valid --apply",
+    "analysis_package": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run_simz1_with_analysis.ps1 -AnalysisOnly -RunDir scenarios\\zona1\\montecarlo\\run-occupancy-freight-20261026-v3",
+    "replay_prepare": ".\\.venv\\Scripts\\python.exe -B scripts/replay/prepare_replay.py --run-dir scenarios\\zona1\\montecarlo\\run-occupancy-freight-20261026-v3 --iteration 0",
+    "start_viewer": ".\\.venv\\Scripts\\python.exe -B scripts/replay/start_replay.py --run-dir scenarios\\zona1\\montecarlo\\run-occupancy-freight-20261026-v3 --iteration 0 --port 8795 --no-browser",
+    "browser_test": "node scripts/validation/check_simz1_transit_browser.cjs http://127.0.0.1:8795 runtime/validation/occupancy-browser-final runtime/validation/occupancy-native-samples.json",
+    "native_samples": ".\\.venv\\Scripts\\python.exe -B scripts/validation/sample_simz1_transit_replay.py --run-dir scenarios\\zona1\\montecarlo\\run-occupancy-freight-20261026-v3 --output runtime/validation/occupancy-native-samples.json"
+  },
+  "tests": [
+    {
+      "command": "$env:PYTHONPATH='python'; .\\.venv\\Scripts\\python.exe -B -m unittest test_simz1_run test_simz1_revalidate test_simz1_analysis test_simz1_report_package test_simz1_continuous_hud -v",
+      "count": 80,
+      "result": "passed",
+      "log": "runtime/occupancy-output-regressions.log"
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -B -m unittest test_simz1_blocking_occupancy test_simz1_freight test_simz1_transit_events test_simz1_weekday_transit test_simz1_admission test_simz1_transit_sqlite_integration -v",
+      "count": 63,
+      "result": "passed",
+      "log": "runtime/occupancy-final-regressions.log"
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -B -m unittest test_simz1_queue_context test_simz1_continuous_hud test_simz1_transit_sqlite_integration -v",
+      "count": 15,
+      "result": "passed",
+      "log": "runtime/occupancy-context-tests.log"
+    },
+    {
+      "command": "node <each RUN file recorded in log>",
+      "count": 13,
+      "result": "passed",
+      "log": "runtime/occupancy-js-final.log"
+    },
+    {
+      "command": "node <each RUN file recorded in log>",
+      "count": 4,
+      "result": "passed",
+      "log": "runtime/occupancy-render-regressions.log"
+    },
+    {
+      "command": ".\\mvnw.cmd --offline --batch-mode --no-transfer-progress -DskipTests -Dsimz1.buildDirectory=runtime/freight-check test-compile",
+      "result": "BUILD SUCCESS",
+      "log": "runtime/occupancy-build-final.log"
+    },
+    {
+      "command": "& 'C:\\Program Files\\Java\\jdk-17\\bin\\java.exe' '@runtime/freight-check/checks.args' <check class>",
+      "checks": [
+        "SimZ1VehicleReservationCheck",
+        "SimZ1AdmissionCheck",
+        "SimZ1StorageBranchCheck",
+        "SimZ1StorageObservationCheck",
+        "SimZ1AdmissionConcurrencyCheck",
+        "SimZ1TransitFleetCheck",
+        "SimZ1FreightCheck"
+      ],
+      "result": "passed",
+      "log": "runtime/occupancy-native-tests.log"
+    }
+  ],
+  "baseline_browser": {
+    "run_id": "simz1-552d0e9d951544dd817a764e29ef8527",
+    "checks": 64,
+    "result": "passed",
+    "report": "runtime/validation/freight-browser/browser-results.json"
+  },
+  "final_browser": {
+    "status": "passed",
+    "checks": 68,
+    "real_browser": true,
+    "url": "http://127.0.0.1:8795",
+    "report": "runtime/validation/occupancy-browser-final/browser-results.json",
+    "tracked_summary": "evidence/documentation/simz1-20261026/browser-evidence.json",
+    "occupancy": {
+      "counts": {
+        "active": 3,
+        "visible": 3,
+        "omitted": 0,
+        "omissionReasons": {},
+        "waitingEvidence": 1,
+        "positioned": 1,
+        "overflow": 0,
+        "unrepresentable": 1,
+        "redistributed": 1,
+        "unknownPositionWait": 0,
+        "bodyUnrepresentable": 0,
+        "overlapping": 0,
+        "following": 0,
+        "overlapsDetected": 0,
+        "overlapsResolved": 0,
+        "unresolvedOverlaps": 0,
+        "queued": 1,
+        "unsupportedPosition": 0,
+        "incompatiblePosition": 1,
+        "warningReasons": {
+          "shared_upstream_queue_position_unknown": 1
+        },
+        "incompleteHoldContext": 0
+      },
+      "records": [
+        {
+          "vehicle_id": "ptbus_transmetro_L12_001",
+          "time": 16320.5,
+          "visible": true,
+          "reason": "visible",
+          "link_id": "transit_osm_1274975829_0_forward",
+          "lane": 0,
+          "synthetic_incident": null,
+          "position": [
+            -90.51445652475763,
+            14.630830403690872
+          ],
+          "heading": 172.18766900851563,
+          "native_position": [
+            -90.5145371,
+            14.6308411
+          ],
+          "spacing_compatible": true,
+          "stop_line_m": 14.115371941531325,
+          "stop_line_source": "inferred_road_strip_and_visual_setback",
+          "dimensions_m": [
+            13.5,
+            2.5
+          ],
+          "presentation": {
+            "catalog_version": "simz1-vehicle-presentation-v1",
+            "family": "bus",
+            "driving_profile": null,
+            "driving_profile_source": "not_recorded",
+            "recorded_driving_profile": "No disponible",
+            "label": "Transporte pÃºblico",
+            "recorded_vehicle_type": "Transmetro_RigidProxy",
+            "recorded_agent_type": null,
+            "dimensions": {
+              "length_m": 13.5,
+              "width_m": 2.5,
+              "source": "verified_transit_vehicles:scenario_assumption_not_unit_measurement",
+              "assumed": true,
+              "provenance": {
+                "vehicle_type": "Transmetro_RigidProxy",
+                "artifact_source": "verified_transit_vehicles",
+                "artifact_sha256": "600cf55dce271c5142a2beb7d5b04449c92c41db099acb72f5082e626306e336"
+              }
+            },
+            "dimensions_origin": "recorded_visual",
+            "dimension_diagnostics": [],
+            "operator": "transmetro",
+            "service": "transmetro_L12",
+            "body_model": "rigid",
+            "limitation": null,
+            "physical": {
+              "pcu": 3,
+              "maximum_speed_mps": 13.8888888889,
+              "dimensions": {
+                "length_m": 13.5,
+                "width_m": 2.5,
+                "source": "MATSim_VehicleType_XML",
+                "assumed": null,
+                "provenance": {
+                  "vehicle_type": "Transmetro_RigidProxy",
+                  "artifact_source": "verified_transit_vehicles",
+                  "artifact_path": "inputs/transit-weekday/transitVehicles.xml",
+                  "artifact_sha256": "600cf55dce271c5142a2beb7d5b04449c92c41db099acb72f5082e626306e336"
+                },
+                "nature": "configured",
+                "measurement_status": "not_established_by_vehicle_type"
+              },
+              "dimensions_status": "recorded"
+            }
+          },
+          "envelope": {
+            "length_m": 15.5,
+            "width_m": 2.7,
+            "gap_m": 2,
+            "lateral_clearance_m": 0.1
+          },
+          "interval": [
+            16308,
+            16333
+          ],
+          "source": "estimated_spacing_native_wait",
+          "queue_state": "queued",
+          "display_link": "transit_osm_1274975829_0_forward",
+          "body_support": "current_link",
+          "lane_source": "estimated_single_lane_blocking_stop",
+          "observed_lane_id": null,
+          "observed_lane_entry_time": null,
+          "longitudinal_station_m": 7.3653719415313255,
+          "display_station_m": 7.3653719415313255,
+          "stop_margin_m": 2,
+          "stop_boundary": {
+            "available": true,
+            "source": "inferred_road_strip_and_visual_setback",
+            "explicit": false,
+            "Link_ID": "transit_osm_1274975829_0_forward",
+            "lane_index": 0,
+            "station_m": 14.115371941531325,
+            "position": [
+              -90.51451868280175,
+              14.630838655129342
+            ],
+            "forward": [
+              -0.9907186093097724,
+              0.13592879447457265
+            ],
+            "geometric_setback_m": 0,
+            "configured_setback_m": 2
+          },
+          "stop_clearance_m": 5.746674247575356e-10,
+          "native_queue_extent": null,
+          "queue_extent_projection": null,
+          "head_stop_projection": null,
+          "facility_footprint_projection": {
+            "source": "estimated_body_behind_native_service_endpoint",
+            "native_endpoint": [
+              -90.5145371,
+              14.6308411
+            ],
+            "native_station_m": 16.115371941531325,
+            "continuous_position_observed": false
+          },
+          "dimension_contract": {
+            "physical_dimensions": {
+              "length_m": 13.5,
+              "width_m": 2.5,
+              "source": "MATSim_VehicleType_XML",
+              "assumed": null,
+              "provenance": {
+                "vehicle_type": "Transmetro_RigidProxy",
+                "artifact_source": "verified_transit_vehicles",
+                "artifact_path": "inputs/transit-weekday/transitVehicles.xml",
+                "artifact_sha256": "600cf55dce271c5142a2beb7d5b04449c92c41db099acb72f5082e626306e336"
+              },
+              "nature": "configured",
+              "measurement_status": "not_established_by_vehicle_type"
+            },
+            "pcu": 3,
+            "visual_body": {
+              "length_m": 13.5,
+              "width_m": 2.5,
+              "origin": "recorded_visual",
+              "source": "verified_transit_vehicles:scenario_assumption_not_unit_measurement",
+              "assumed": true,
+              "provenance": {
+                "vehicle_type": "Transmetro_RigidProxy",
+                "artifact_source": "verified_transit_vehicles",
+                "artifact_sha256": "600cf55dce271c5142a2beb7d5b04449c92c41db099acb72f5082e626306e336"
+              }
+            },
+            "safety_envelope": {
+              "length_m": 15.5,
+              "width_m": 2.7,
+              "gap_m": 2,
+              "lateral_clearance_m": 0.1
+            },
+            "dimension_diagnostics": [],
+            "continuous_physical_spacing_observed": false
+          },
+          "native_position_source": "estimated_link_interpolation_from_recorded_interval",
+          "body_geometry_source": "rigid_presentation_envelope_on_inferred_pose"
+        }
+      ]
+    },
+    "screenshots": [
+      "evidence/documentation/simz1-20261026/car-selected.png",
+      "evidence/documentation/simz1-20261026/moto-selected.png",
+      "evidence/documentation/simz1-20261026/bus-selected.png",
+      "evidence/documentation/simz1-20261026/freight-selected.png"
+    ]
+  },
+  "retained_failed_experiments": [
+    {
+      "directory": "scenarios/zona1/montecarlo/run-occupancy-freight-20261026",
+      "reason": "validator required explicit aggregate stop blocking"
+    },
+    {
+      "directory": "scenarios/zona1/montecarlo/run-occupancy-freight-20261026-v2",
+      "reason": "full-body storage cannot fit short receiving domain; freight guard stopped at 05:00"
+    }
+  ],
+  "limitations": [
+    "QSim does not record centimetric continuous positions",
+    "Short links require body reservation spanning multiple links; experimental wholeVehicleReservation remains disabled",
+    "Aggregate lateral membership and missing stop-lane observations remain explicitly unresolved",
+    "Visible incompatibilities are retained, not hidden"
+  ],
+  "files_modified": [
+    "README.md",
+    "docs/README.md",
+    "pom.xml",
+    "python/ejecutar_simz1.py",
+    "python/generate_montecarlo_z1.py",
+    "python/procesar_eventos_z1.py",
+    "python/revalidar_simz1.py",
+    "python/simz1_analysis.py",
+    "python/simz1_config_validation.py",
+    "python/simz1_continuous_hud.js",
+    "python/simz1_continuous_loader.js",
+    "python/simz1_continuous_replay.py",
+    "python/simz1_experiment_preflight.py",
+    "python/simz1_motion.py",
+    "python/simz1_queue_context.py",
+    "python/simz1_render_fixtures.cjs",
+    "python/simz1_report_package.py",
+    "python/simz1_run.py",
+    "python/simz1_transit_events.py",
+    "python/simz1_transit_replay.py",
+    "python/simz1_visual_lanes.js",
+    "python/simz1_visual_lanes.py",
+    "python/simz1_visual_queues.js",
+    "python/simz1_weekday_transit.py",
+    "python/simz1_workflow_state.py",
+    "python/test_simz1_queue_context.py",
+    "python/test_simz1_render_performance.cjs",
+    "python/test_simz1_revalidate.py",
+    "python/test_simz1_visual_queues.cjs",
+    "python/test_simz1_weekday_transit.py",
+    "python/visualizador_z1_controls.js",
+    "scenarios/zona1/transit/weekday-v2/service.json",
+    "scripts/installation/simz1-required-files.json",
+    "scripts/prepare_simz1_runtime.ps1",
+    "scripts/run_simz1_with_analysis.ps1",
+    "scripts/simz1_workflow.ps1",
+    "scripts/validation/check_simz1_transit_browser.cjs",
+    "scripts/validation/sample_simz1_transit_replay.py",
+    "src/main/java/gt/edu/uvg/sim/zona1/CongestionAwareRerouting.java",
+    "src/main/java/gt/edu/uvg/sim/zona1/DrivingProfiles.java",
+    "src/main/java/gt/edu/uvg/sim/zona1/RoadVehicleProfiles.java",
+    "src/main/java/gt/edu/uvg/sim/zona1/RunZona1Simulation.java",
+    "src/main/java/gt/edu/uvg/sim/zona1/SimZ1.java",
+    "src/main/java/gt/edu/uvg/sim/zona1/SimZ1AdmissionConfigGroup.java",
+    "src/main/java/gt/edu/uvg/sim/zona1/SimZ1TransitDiagnostics.java",
+    "src/main/java/gt/edu/uvg/sim/zona1/SimZ1TransitFleet.java",
+    "src/main/java/gt/edu/uvg/sim/zona1/TripTableExporter.java",
+    "src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/Zona1NativeDiagnostics.java",
+    "src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/Zona1PriorityNetworkFactory.java",
+    "src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/Zona1QNodeImpl.java"
+  ],
+  "files_new": [
+    "docs/simz1-freight.md",
+    "docs/simz1-occupancy.md",
+    "docs/simz1-verification-20261026.json",
+    "evidence/documentation/simz1-20261026/browser-evidence.json",
+    "evidence/documentation/simz1-20261026/bus-selected.png",
+    "evidence/documentation/simz1-20261026/car-selected.png",
+    "evidence/documentation/simz1-20261026/freight-selected.png",
+    "evidence/documentation/simz1-20261026/moto-selected.png",
+    "evidence/documentation/simz1-20261026/occupancy-fixtures.json",
+    "python/prepare_simz1_freight_routes.py",
+    "python/simz1_blocking_occupancy.py",
+    "python/simz1_freight.py",
+    "python/test_simz1_blocking_occupancy.cjs",
+    "python/test_simz1_blocking_occupancy.py",
+    "python/test_simz1_freight.py",
+    "python/test_simz1_freight_replay.cjs",
+    "scenarios/zona1/freight/weekday-v1/routes.json",
+    "scenarios/zona1/freight/weekday-v1/service.json",
+    "src/main/java/gt/edu/uvg/sim/zona1/SimZ1Freight.java",
+    "src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/SimZ1VehicleReservation.java",
+    "src/test/java/gt/edu/uvg/sim/zona1/SimZ1FreightCheck.java",
+    "src/test/java/org/matsim/core/mobsim/qsim/qnetsimengine/SimZ1VehicleReservationCheck.java"
+  ],
+  "replay_directory": "scenarios\\zona1\\montecarlo\\run-occupancy-freight-20261026-v3/webgl-continuo",
+  "run_manifest_sha256": "35936ea0818f460ffd2a3d0a91556754f7a24e1866a2881f98d39337f7bef64f",
+  "replay_manifest_sha256": "3f5c6085b3642ba322f74a9368fa84451ab3ca64a2df868e68b105778ad4177e",
+  "test_fixture_repair": "The existing render performance fixture failed on HEAD as well: it omitted the required complete queue-context contract. Fixture now supplies its known bounded roster; all safety assertions retained and tests pass."
+}

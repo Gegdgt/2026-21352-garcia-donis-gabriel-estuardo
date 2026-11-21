@@ -1,0 +1,142 @@
+{
+  "free_a": {
+    "length": 100.0,
+    "freespeed": 10.0,
+    "from_node": "free_a_from",
+    "to_node": "free_a_to",
+    "from": [
+      -90.518,
+      14.636
+    ],
+    "to": [
+      -90.518,
+      14.636899999999999
+    ]
+  },
+  "red_a": {
+    "length": 100.0,
+    "freespeed": 10.0,
+    "from_node": "red_a_from",
+    "to_node": "red_a_to",
+    "from": [
+      -90.51650000000001,
+      14.636
+    ],
+    "to": [
+      -90.51650000000001,
+      14.636899999999999
+    ]
+  },
+  "red_b": {
+    "length": 100.0,
+    "freespeed": 10.0,
+    "from_node": "red_a_to",
+    "to_node": "red_b_to",
+    "from": [
+      -90.51650000000001,
+      14.636899999999999
+    ],
+    "to": [
+      -90.51650000000001,
+      14.637799999999999
+    ]
+  },
+  "stop_a": {
+    "length": 100.0,
+    "freespeed": 10.0,
+    "from_node": "stop_a_from",
+    "to_node": "stop_a_to",
+    "from": [
+      -90.515,
+      14.636
+    ],
+    "to": [
+      -90.515,
+      14.636899999999999
+    ]
+  },
+  "congestion_a": {
+    "length": 100.0,
+    "freespeed": 10.0,
+    "from_node": "congestion_a_from",
+    "to_node": "congestion_a_to",
+    "from": [
+      -90.51350000000001,
+      14.636
+    ],
+    "to": [
+      -90.51350000000001,
+      14.636899999999999
+    ]
+  },
+  "slow10_a": {
+    "length": 100.0,
+    "freespeed": 10.0,
+    "from_node": "slow10_a_from",
+    "to_node": "slow10_a_to",
+    "from": [
+      -90.512,
+      14.636
+    ],
+    "to": [
+      -90.512,
+      14.636899999999999
+    ]
+  },
+  "insufficient_a": {
+    "length": 100.0,
+    "freespeed": 10.0,
+    "from_node": "insufficient_a_from",
+    "to_node": "insufficient_a_to",
+    "from": [
+      -90.51050000000001,
+      14.636
+    ],
+    "to": [
+      -90.51050000000001,
+      14.636899999999999
+    ]
+  },
+  "midnight_a": {
+    "length": 100.0,
+    "freespeed": 10.0,
+    "from_node": "midnight_a_from",
+    "to_node": "midnight_a_to",
+    "from": [
+      -90.509,
+      14.636
+    ],
+    "to": [
+      -90.509,
+      14.636899999999999
+    ]
+  },
+  "math40_braking": {
+    "length": 24.691358024691358,
+    "freespeed": 11.11111111111111,
+    "from_node": "math_from",
+    "to_node": "math_to",
+    "from": [
+      -90.513,
+      14.639
+    ],
+    "to": [
+      -90.513,
+      14.639222222444443
+    ]
+  },
+  "math40_hold": {
+    "length": 0,
+    "freespeed": 11.11111111111111,
+    "from_node": "math_from",
+    "to_node": "math_to",
+    "from": [
+      -90.513,
+      14.639222222444443
+    ],
+    "to": [
+      -90.513,
+      14.639222222444443
+    ]
+  }
+}

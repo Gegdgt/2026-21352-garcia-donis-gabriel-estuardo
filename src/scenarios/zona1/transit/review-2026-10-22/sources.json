@@ -1,0 +1,450 @@
+{
+  "schema_version": "simz1-transit-sources-v1",
+  "review_date": "2026-10-22",
+  "sources": [
+    {
+      "source_id": "transmetro-routes-gis",
+      "url": "https://gis2.muniguate.com/datos/dataset/rutas-sistema-transmetro-2025",
+      "kind": "municipal_open_data",
+      "accessed_on": "2026-10-22",
+      "published_on": "2025-12-17",
+      "license": {
+        "id": "CC-BY-4.0",
+        "status": "explicit_dataset_license"
+      },
+      "notes": "Detail page updated 2025-12-18. Publication is not an operational validity period. Attribution: Municipalidad de Guatemala, DMU / DIGM. Informational data, not municipal permission. Query URL and response hashes in municipal-gis.json. Portal CRS EPSG:32615 differs from layer metadata EPSG:3857; query explicitly requested EPSG:4326."
+    },
+    {
+      "source_id": "transmetro-stations-gis",
+      "url": "https://gis2.muniguate.com/datos/dataset/estaciones-transmetro-2025",
+      "kind": "municipal_open_data",
+      "accessed_on": "2026-10-22",
+      "published_on": "2025-12-17",
+      "license": {
+        "id": "CC-BY-4.0",
+        "status": "explicit_dataset_license"
+      },
+      "notes": "Detail page updated 2025-12-18. Publication is not an operational validity period. Attribution: Municipalidad de Guatemala, DMU / DIGM. Informational data, not municipal permission. Query URL and response hashes in municipal-gis.json. Portal CRS EPSG:32615 differs from layer metadata EPSG:3857; query explicitly requested EPSG:4326."
+    },
+    {
+      "source_id": "tubus-routes-gis",
+      "url": "https://gis2.muniguate.com/datos/dataset/rutas-sistema-tubus-2025",
+      "kind": "municipal_open_data",
+      "accessed_on": "2026-10-22",
+      "published_on": "2025-12-17",
+      "license": {
+        "id": "CC-BY-4.0",
+        "status": "explicit_dataset_license"
+      },
+      "notes": "Detail page updated 2025-12-18. Publication is not an operational validity period. Attribution: Municipalidad de Guatemala, DMU / DIGM. Informational data, not municipal permission. Query URL and response hashes in municipal-gis.json. Portal CRS EPSG:32615 differs from layer metadata EPSG:3857; query explicitly requested EPSG:4326."
+    },
+    {
+      "source_id": "osm-snapshot",
+      "url": "https://www.openstreetmap.org/copyright",
+      "kind": "community_snapshot",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": "ODbL-1.0",
+        "status": "explicit_database_license"
+      },
+      "notes": "Local scenarios/zona1/map.osm, hash in osm-evidence.json; acquisition date unknown. Element timestamps do not date the download. Attribution: OpenStreetMap contributors. Relations are partial; community records do not certify current operation."
+    },
+    {
+      "source_id": "tm-map-2024-02",
+      "url": "https://www.muniguate.com/movilidadurbana/wp-content/uploads/sites/33/2024/02/FEB24-Transmetro.pdf",
+      "kind": "municipal_schematic_map",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "Version FEB24 in filename; station inventory and schematic, not exact geometry or stop sequence. Exact publication day unknown."
+    },
+    {
+      "source_id": "tm-map-2024-11",
+      "url": "https://www.muniguate.com/movilidadurbana/wp-content/uploads/sites/33/2024/11/NOVIEMBRE-MAPA-TRANSMETRO-2024-impresion-oficio.pdf",
+      "kind": "municipal_schematic_map",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "Linked by municipal Transmetro page; November 2024 filename. Metadata only: visual contents not verified in this review. Not adopted as current route evidence."
+    },
+    {
+      "source_id": "tm-map-2023-11",
+      "url": "https://www.muniguate.com/movilidadurbana/wp-content/uploads/sites/33/2023/11/NOV23-Transmetro.pdf",
+      "kind": "municipal_schematic_map",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "Version NOV23; L13 Hangares / Tipografía. Schematic only."
+    },
+    {
+      "source_id": "tm-l1-2025",
+      "url": "https://muniguatealfrente.com/linea1yfestivalcentrohistorico/",
+      "kind": "municipal_article",
+      "accessed_on": "2026-10-22",
+      "published_on": "2025-10-01",
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "Dated publication; current validity and exceptions remain unconfirmed."
+    },
+    {
+      "source_id": "tm-l2-2025",
+      "url": "https://muniguatealfrente.com/linea2transmetro/",
+      "kind": "municipal_article",
+      "accessed_on": "2026-10-22",
+      "published_on": "2025-11-07",
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "Dated publication; current validity and exceptions remain unconfirmed."
+    },
+    {
+      "source_id": "tm-l6-2025",
+      "url": "https://muniguatealfrente.com/linea6transmetro/",
+      "kind": "municipal_article",
+      "accessed_on": "2026-10-22",
+      "published_on": "2025-10-24",
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "Dated publication; current validity and exceptions remain unconfirmed."
+    },
+    {
+      "source_id": "tm-l12-2025",
+      "url": "https://muniguatealfrente.com/linea-12-del-transmetro/",
+      "kind": "municipal_article",
+      "accessed_on": "2026-10-22",
+      "published_on": "2025-09-05",
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "Dated publication; no machine-readable validity end, departures or exact geometry. L12 page also displays update 2025-09-09."
+    },
+    {
+      "source_id": "tm-l7-2019",
+      "url": "https://www.muniguate.com/blog/2019/10/01/inauguracion-de-la-linea-7-del-transmetro/",
+      "kind": "municipal_article",
+      "accessed_on": "2026-10-22",
+      "published_on": "2019-10-01",
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "Initial service version, not a current timetable."
+    },
+    {
+      "source_id": "tm-memo-2021",
+      "url": "https://docs.muniguate.com/2022/memoria/arch/MEMORIA_DE_LABORES_2021_EMPRESA_MUNICIPAL_DE_TRANSPORTE_EMT.pdf",
+      "kind": "municipal_annual_report",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "Report covers 2021. L13 endpoints differ from later map; do not merge versions."
+    },
+    {
+      "source_id": "tm-memo-2023",
+      "url": "https://docs.muniguate.com/2024/memoria/arch/62_MLEMT2023.pdf",
+      "kind": "municipal_annual_report",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "Report covers 2023; L18 Atlántida / FEGUA. Evidence from indexed excerpt; complete PDF download not obtained because of size."
+    },
+    {
+      "source_id": "tm-l18-page",
+      "url": "https://www.muniguate.com/movilidadurbana/linea-18/",
+      "kind": "municipal_service_page",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "Publication and operational validity dates not identified."
+    },
+    {
+      "source_id": "tm-holyweek-2026",
+      "url": "https://gis.muniguate.com/procesiones/actividades/transmetro/",
+      "kind": "municipal_special_calendar",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "Semana Santa 2026 only; not the regular annual calendar."
+    },
+    {
+      "source_id": "contrast-tm-l1",
+      "url": "https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-line-l%C3%8Dnea_1-Ciudad_de_Guatemala-6097-1892811-250300857-0",
+      "kind": "third_party_contrast",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "all_rights_reserved_no_open_license_identified"
+      },
+      "notes": "Access date only; dynamic page version 250300857. Contrast, not permission, exact geometry or operator certification."
+    },
+    {
+      "source_id": "contrast-tm-l2",
+      "url": "https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-line-l%C3%8Dnea_2-Ciudad_de_Guatemala-6097-1892811-249917609-0",
+      "kind": "third_party_contrast",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "all_rights_reserved_no_open_license_identified"
+      },
+      "notes": "Access date only; dynamic page version 249917609. Contrast, not permission, exact geometry or operator certification."
+    },
+    {
+      "source_id": "contrast-tm-l12",
+      "url": "https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-line-l%C3%8Dnea_12-Ciudad_de_Guatemala-6097-1892811-250300861-0",
+      "kind": "third_party_contrast",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "all_rights_reserved_no_open_license_identified"
+      },
+      "notes": "Access date only; dynamic page version 250300861. Contrast, not permission, exact geometry or operator certification."
+    },
+    {
+      "source_id": "contrast-tm-l12-express",
+      "url": "https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-line-l%C3%8Dnea_12_expreso-Ciudad_de_Guatemala-6097-1892811-250528001-0",
+      "kind": "third_party_contrast",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "all_rights_reserved_no_open_license_identified"
+      },
+      "notes": "Access date only; dynamic page version 250528001. Contrast, not permission, exact geometry or operator certification."
+    },
+    {
+      "source_id": "contrast-tm-l13",
+      "url": "https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-line-l%C3%8Dnea_13-Ciudad_de_Guatemala-6097-1892811-251703136-0",
+      "kind": "third_party_contrast",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "all_rights_reserved_no_open_license_identified"
+      },
+      "notes": "Access date only; dynamic page version 251703136. Contrast, not permission, exact geometry or operator certification."
+    },
+    {
+      "source_id": "contrast-tm-l13-extension",
+      "url": "https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-line-l%C3%8Dnea_13-Ciudad_de_Guatemala-6097-1892811-251703137-0",
+      "kind": "third_party_contrast",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "all_rights_reserved_no_open_license_identified"
+      },
+      "notes": "Access date only; dynamic page version 251703137. Contrast, not permission, exact geometry or operator certification."
+    },
+    {
+      "source_id": "contrast-tm-l18",
+      "url": "https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-line-l%C3%8Dnea_18-Ciudad_de_Guatemala-6097-1892811-251703138-0",
+      "kind": "third_party_contrast",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "all_rights_reserved_no_open_license_identified"
+      },
+      "notes": "Access date only; dynamic page version 251703138. Contrast, not permission, exact geometry or operator certification."
+    },
+    {
+      "source_id": "contrast-tm-l7",
+      "url": "https://appassets.mvtdev.com/map/188/l/6097/250300860.pdf",
+      "kind": "third_party_contrast",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "all_rights_reserved_no_open_license_identified"
+      },
+      "notes": "Dynamic route sheet; title Colón and circuit includes Merced. Not treated as a current municipal amendment."
+    },
+    {
+      "source_id": "tubus-article-2025",
+      "url": "https://muniguatealfrente.com/tubus-transporte-municipal-que-conecta-distintas-zonas/",
+      "kind": "municipal_article",
+      "accessed_on": "2026-10-22",
+      "published_on": "2025-09-05",
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "105 heading and body conflict with each other and linked PDF. Preserve both."
+    },
+    {
+      "source_id": "tubus-104-v8",
+      "url": "https://www.muniguate.com/movilidadurbana/wp-content/uploads/sites/33/2024/11/V8-Ruta-104-Tubus_compressed.pdf",
+      "kind": "municipal_route_sheet",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "V8 filename. Scanned sheet: no complete ordered stop extraction adopted."
+    },
+    {
+      "source_id": "tubus-5-v1",
+      "url": "https://muniguatealfrente.com/wp-content/uploads/V1-Ruta-5-Tubus_compressed.pdf",
+      "kind": "municipal_route_sheet",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "V1 filename. No complete ordered stop extraction adopted."
+    },
+    {
+      "source_id": "tubus-802-v4",
+      "url": "https://www.muniguate.com/movilidadurbana/wp-content/uploads/sites/33/2025/06/V4-Mapa-y-Rutero-individual-Ruta-802-c.pdf",
+      "kind": "municipal_route_sheet",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "V4; printed effective month March 2025. Folder June 2025 does not replace printed validity. Page 3 ordered local fragment; direction label not explicit. Endpoint opening hours are not departures."
+    },
+    {
+      "source_id": "tubus-105-v1",
+      "url": "https://muniguatealfrente.com/wp-content/uploads/V1-Mapa-y-Rutero-individual-Ruta-105-c.pdf",
+      "kind": "municipal_route_sheet",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "V1; printed effective month March 2025. Page 3 ordered local fragment; direction label not explicit. No open PDF license identified."
+    },
+    {
+      "source_id": "contrast-transurbano",
+      "url": "https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-lines-Ciudad_de_Guatemala-6097-1892809",
+      "kind": "third_party_contrast",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "all_rights_reserved_no_open_license_identified"
+      },
+      "notes": "282/285/287 listed to Parque Central. No operator confirmation of current service."
+    },
+    {
+      "source_id": "municipal-operators-2026",
+      "url": "https://muniguatealfrente.com/contratosmuniguateytransportistas/",
+      "kind": "municipal_article",
+      "accessed_on": "2026-10-22",
+      "published_on": "2026-05-08",
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "Transition of operators; eight planned routes for January 2027 are not current services on review date."
+    },
+    {
+      "source_id": "contrast-transurbano-2026",
+      "url": "https://www.ojoconmipisto.com/muniguate-16-operadores-rutas-que-transurbano/",
+      "kind": "press_contrast",
+      "accessed_on": "2026-10-22",
+      "published_on": "2026-09-10",
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "Reported statement restricts remaining Transurbano coverage to Canalitos/Fiscal/Centra Norte; conflicts with third-party route listings. Not a route authorization."
+    },
+    {
+      "source_id": "litegua-agencies",
+      "url": "https://sistemas.litegua.com/LiteguaWeb/Home/Agencias",
+      "kind": "operator_agency_directory",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "15 Calle 10-40 Zona 1 is an agency listing. Generic footer departure frequency is not assigned to this agency or a specific service."
+    },
+    {
+      "source_id": "tmb-transfer",
+      "url": "https://www.tmb.com.gt/ayuda.html",
+      "kind": "operator_service_description",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "all_rights_reserved"
+      },
+      "notes": "Coaster transfer Centra Norte / 8a Avenida 15-16 Zona 1, paid ticket required at Zona 1 boarding. Municipal Pullman restriction is an operator statement; legal instrument not verified."
+    },
+    {
+      "source_id": "tmb-agencies",
+      "url": "https://www.tmb.com.gt/agencias/",
+      "kind": "operator_agency_directory",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "all_rights_reserved"
+      },
+      "notes": "Agency opening hours must not become departures."
+    },
+    {
+      "source_id": "tmb-schedules",
+      "url": "https://www.tmb.com.gt/horarios.html",
+      "kind": "operator_timetable",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "all_rights_reserved"
+      },
+      "notes": "Guatemala / Cobán mainline table; applicability to Zona 1 coaster transfer unconfirmed."
+    },
+    {
+      "source_id": "fdn-stations",
+      "url": "https://transportesfuentedelnorte.com/estacion",
+      "kind": "operator_station_directory",
+      "accessed_on": "2026-10-22",
+      "published_on": null,
+      "license": {
+        "id": null,
+        "status": "not_identified"
+      },
+      "notes": "Zona 1 station 17 Calle 8-46; distinct from Zona 12 station. Street route, boarding permissions and operational calendar unconfirmed."
+    }
+  ]
+}

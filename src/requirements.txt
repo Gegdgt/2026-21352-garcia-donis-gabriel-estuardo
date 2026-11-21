@@ -1,0 +1,11 @@
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+pyyaml>=6.0
+contextily>=1.6,<2
+pyproj>=3.6,<4
+openpyxl>=3.1,<4
+seaborn>=0.13,<0.14
+pydeck>=0.9.3,<0.10
+# Imported directly by the SimZ1 viewer (PIL).
+Pillow>=10

@@ -1,0 +1,274 @@
+{
+  "archivos_comparados": 250447,
+  "cambios": [
+    {
+      "ruta": ".git/COMMIT_EDITMSG",
+      "bytes_antes": 19,
+      "bytes_despues": 65,
+      "mtime_antes": 1794205837143896700,
+      "mtime_despues": 1795231969238272900
+    },
+    {
+      "ruta": ".git/FETCH_HEAD",
+      "bytes_antes": 102,
+      "bytes_despues": 102,
+      "mtime_antes": 1794205841179116600,
+      "mtime_despues": 1795231975890335000
+    },
+    {
+      "ruta": ".git/index",
+      "bytes_antes": 309016,
+      "bytes_despues": 309416,
+      "mtime_antes": 1794205837136891600,
+      "mtime_despues": 1795231969235277200
+    },
+    {
+      "ruta": ".git/ORIG_HEAD",
+      "bytes_antes": 41,
+      "bytes_despues": 41,
+      "mtime_antes": 1794205841273307000,
+      "mtime_despues": 1795231975968198700
+    },
+    {
+      "ruta": ".git/gk/config",
+      "bytes_antes": 158,
+      "bytes_despues": 158,
+      "mtime_antes": 1795226876992020300,
+      "mtime_despues": 1795231969871020500
+    },
+    {
+      "ruta": ".git/logs/HEAD",
+      "bytes_antes": 18302,
+      "bytes_despues": 18525,
+      "mtime_antes": 1794205837151892000,
+      "mtime_despues": 1795231969244281300
+    },
+    {
+      "ruta": ".git/logs/refs/heads/main",
+      "bytes_antes": 16102,
+      "bytes_despues": 16325,
+      "mtime_antes": 1794205837152891600,
+      "mtime_despues": 1795231969245274400
+    },
+    {
+      "ruta": ".git/logs/refs/remotes/origin/main",
+      "bytes_antes": 8966,
+      "bytes_despues": 9131,
+      "mtime_antes": 1794205850827766600,
+      "mtime_despues": 1795231977940019600
+    },
+    {
+      "ruta": ".git/objects/37/00dcb6a58006fd879ab66b968266bce2540125",
+      "bytes_antes": 8085,
+      "bytes_despues": 8085,
+      "mtime_antes": 1794331802625046100,
+      "mtime_despues": 1795231969143344700
+    },
+    {
+      "ruta": ".git/objects/3d/8bf0efcf48e5e38eb547cce93ec13dccbefea2",
+      "bytes_antes": 238987,
+      "bytes_despues": 238987,
+      "mtime_antes": 1794331801412205500,
+      "mtime_despues": 1795231969140381200
+    },
+    {
+      "ruta": ".git/objects/59/a69834838cbe94bbb773786ef5262e6631ad0f",
+      "bytes_antes": 6520,
+      "bytes_despues": 6520,
+      "mtime_antes": 1794331802620181600,
+      "mtime_despues": 1795231969141422900
+    },
+    {
+      "ruta": ".git/objects/73/32d6f3f29aa064f2ca8bdd1df9db8fb844b348",
+      "bytes_antes": 769,
+      "bytes_despues": 769,
+      "mtime_antes": 1794331802812435800,
+      "mtime_despues": 1795231969232270000
+    },
+    {
+      "ruta": ".git/objects/7c/d785fd5e71f4f4dfc2717113db73ce14669225",
+      "bytes_antes": 6494,
+      "bytes_despues": 6494,
+      "mtime_antes": 1794331802622019300,
+      "mtime_despues": 1795231969142372300
+    },
+    {
+      "ruta": ".git/objects/80/0b4fba817d383a0b6f0e4440ef2bef1bc6f7b1",
+      "bytes_antes": 1643,
+      "bytes_despues": 1643,
+      "mtime_antes": 1794331802790625500,
+      "mtime_despues": 1795231969225275100
+    },
+    {
+      "ruta": ".git/objects/ab/3cfff31b06c8f297ac4add24b556e51890912a",
+      "bytes_antes": 1086,
+      "bytes_despues": 1086,
+      "mtime_antes": 1794331802814174100,
+      "mtime_despues": 1795231969233268100
+    },
+    {
+      "ruta": ".git/objects/cb/7901c34036d158d4febdcbe7fd5db41b3e1639",
+      "bytes_antes": 2845,
+      "bytes_despues": 2845,
+      "mtime_antes": 1794331802624058700,
+      "mtime_despues": 1795231969143344700
+    },
+    {
+      "ruta": ".git/objects/e2/5fb22fec710b6b90df031aaa7593631a657729",
+      "bytes_antes": 13444,
+      "bytes_despues": 13444,
+      "mtime_antes": 1794331802811355200,
+      "mtime_despues": 1795231969231270800
+    },
+    {
+      "ruta": ".git/objects/info/commit-graphs/commit-graph-chain",
+      "bytes_antes": 123,
+      "bytes_despues": 164,
+      "mtime_antes": 1794205840061075700,
+      "mtime_despues": 1795231971939100700
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/09fa6420b4e0e64317fd445b5df8bd12/14afc2d65b887021a75c00ec2104d43e/1793858228416/80a3b3c5-9a6c-4994-81c6-30604ef45660",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\09fa6420b4e0e64317fd445b5df8bd12\\\\14afc2d65b887021a75c00ec2104d43e\\\\1793858228416\\\\80a3b3c5-9a6c-4994-81c6-30604ef45660'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/144010fadef7e27f41319c2767c85063/5772fe3761c94b5d851528a4708bc56d/1794016350341/228998be-a571-4194-8c29-e6e5ef39c7db",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\144010fadef7e27f41319c2767c85063\\\\5772fe3761c94b5d851528a4708bc56d\\\\1794016350341\\\\228998be-a571-4194-8c29-e6e5ef39c7db'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/1580086537a2fd51475e8595e6e89aa3/e11c0c67e2aa21337af5f6d442cb6522/1793755426344/3c325ebf-da5d-4615-b005-449493a2a06c",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\1580086537a2fd51475e8595e6e89aa3\\\\e11c0c67e2aa21337af5f6d442cb6522\\\\1793755426344\\\\3c325ebf-da5d-4615-b005-449493a2a06c'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/264f776d2db381f94400a145c41017ef/272fffa6f1cc009c441be5c7a8b0d537/1794144130787/0eb58b5e-f34d-49f5-bdd6-a568e222baeb",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\264f776d2db381f94400a145c41017ef\\\\272fffa6f1cc009c441be5c7a8b0d537\\\\1794144130787\\\\0eb58b5e-f34d-49f5-bdd6-a568e222baeb'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/3978f6d70b0732bcfe283df710bed1d1/eb13f8bc1217b4897a259edef7d7df8e/1794162660402/3e9f7336-60c8-41c6-8f4f-97a6fccc4e80",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\3978f6d70b0732bcfe283df710bed1d1\\\\eb13f8bc1217b4897a259edef7d7df8e\\\\1794162660402\\\\3e9f7336-60c8-41c6-8f4f-97a6fccc4e80'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/3b08d3d896b92247e59ae845bf654f45/cc2ab4b9d0391040c1d4714299e19f1c/1794166915725/1c62753c-9e3e-4189-a96a-0fd4c118be88",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\3b08d3d896b92247e59ae845bf654f45\\\\cc2ab4b9d0391040c1d4714299e19f1c\\\\1794166915725\\\\1c62753c-9e3e-4189-a96a-0fd4c118be88'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/47e33c7c4ce3877cdb04f037fac4b8d2/a49ddd187138799ac49b26f571cb4309/1793760391093/13c5fc69-11cf-406d-bef1-d41a2f377fff",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\47e33c7c4ce3877cdb04f037fac4b8d2\\\\a49ddd187138799ac49b26f571cb4309\\\\1793760391093\\\\13c5fc69-11cf-406d-bef1-d41a2f377fff'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/4ce4aff7338bd82656f02cf7fec801a8/56f12aaa91570ae96111e1165148c860/1794049722784/06177e41-7503-4c7d-a83a-fa7b92fccc72",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\4ce4aff7338bd82656f02cf7fec801a8\\\\56f12aaa91570ae96111e1165148c860\\\\1794049722784\\\\06177e41-7503-4c7d-a83a-fa7b92fccc72'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/5ce97ebfe6bb6ed245838d5d658fdc29/6c4c72dad390a493e961486bc9212558/1794331803056/335f95cd-64cd-4cfa-bc70-9384533c822a",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\5ce97ebfe6bb6ed245838d5d658fdc29\\\\6c4c72dad390a493e961486bc9212558\\\\1794331803056\\\\335f95cd-64cd-4cfa-bc70-9384533c822a'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/782ddf04595a0da5751079a6d94b3c93/056c754e4e2072c82ab46384f7de14f3/1793846635270/1198daba-77c0-41ad-bf81-0e20099e2679",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\782ddf04595a0da5751079a6d94b3c93\\\\056c754e4e2072c82ab46384f7de14f3\\\\1793846635270\\\\1198daba-77c0-41ad-bf81-0e20099e2679'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/8dd94aa70864480f3978fffa29ae9760/6d33468f7c0e56c6b2d0b837da11f064/1793919849365/1da52d52-434f-4a51-9acd-63431c76714c",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\8dd94aa70864480f3978fffa29ae9760\\\\6d33468f7c0e56c6b2d0b837da11f064\\\\1793919849365\\\\1da52d52-434f-4a51-9acd-63431c76714c'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/9bac37b62f79a4e4c6a73aca19639acf/6c36a357d91b01a3c4c8c87d54d45265/1794159635741/1794b006-8283-4368-b457-f8077b8e3d2a",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\9bac37b62f79a4e4c6a73aca19639acf\\\\6c36a357d91b01a3c4c8c87d54d45265\\\\1794159635741\\\\1794b006-8283-4368-b457-f8077b8e3d2a'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/9c7ea8a04d9912d8743abb4ee1f19e3e/cc8394e4a4e8f51c5e7c51fb7290dd9d/1793910758547/5a33ffda-d637-49e2-a5b2-27068418da90",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\9c7ea8a04d9912d8743abb4ee1f19e3e\\\\cc8394e4a4e8f51c5e7c51fb7290dd9d\\\\1793910758547\\\\5a33ffda-d637-49e2-a5b2-27068418da90'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/ab86bd40cefba863c43173bf6f55ef61/036c4225d44805869bae5528b4618b90/1793980089281/f1588485-b2a3-48c1-acf9-39d1dfa49590",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\ab86bd40cefba863c43173bf6f55ef61\\\\036c4225d44805869bae5528b4618b90\\\\1793980089281\\\\f1588485-b2a3-48c1-acf9-39d1dfa49590'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/b6603e168b1b275e51759f0783543873/9568d4cff03138181268bab1d75c08fa/1793944668374/f58bb420-3cac-4468-b5ca-5cde4947ef5f",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\b6603e168b1b275e51759f0783543873\\\\9568d4cff03138181268bab1d75c08fa\\\\1793944668374\\\\f58bb420-3cac-4468-b5ca-5cde4947ef5f'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/bbe442cf0ae8c5ed355256a0a7321558/151f862985bab085a5b70a624aa24cc6/1793862190327/690ea6ab-5e9c-4f44-b529-e4745b8173d4",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\bbe442cf0ae8c5ed355256a0a7321558\\\\151f862985bab085a5b70a624aa24cc6\\\\1793862190327\\\\690ea6ab-5e9c-4f44-b529-e4745b8173d4'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/c08c1a05f53d124ff52fd39cbeb1996e/545b1fb07baf42ab395b2848331b235b/1794203136259/e1aca742-3a13-457b-93df-a65e217d4445",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\c08c1a05f53d124ff52fd39cbeb1996e\\\\545b1fb07baf42ab395b2848331b235b\\\\1794203136259\\\\e1aca742-3a13-457b-93df-a65e217d4445'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/d1e38b9e21ce57503409b1494abbf811/6ecd33a216dc0b974bf6c9f3e933c9c9/1794017544157/17535bd3-f433-448a-ab0c-2acf0e23f507",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\d1e38b9e21ce57503409b1494abbf811\\\\6ecd33a216dc0b974bf6c9f3e933c9c9\\\\1794017544157\\\\17535bd3-f433-448a-ab0c-2acf0e23f507'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/f4fb61418e34b59a6eb4fb7f9f5cfdb3/58db5816defd8589cbc082cceb209523/1794148402550/5685e7d0-805b-4178-8b6e-943f877a150b",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\f4fb61418e34b59a6eb4fb7f9f5cfdb3\\\\58db5816defd8589cbc082cceb209523\\\\1794148402550\\\\5685e7d0-805b-4178-8b6e-943f877a150b'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/f5d60dfe7208f653cc24741da92836f8/171bf4b283282abc4a52ccaffe2b518b/1793728480914/9ef2c039-dbaa-42a0-9ff9-2ba3f05fac43",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\f5d60dfe7208f653cc24741da92836f8\\\\171bf4b283282abc4a52ccaffe2b518b\\\\1793728480914\\\\9ef2c039-dbaa-42a0-9ff9-2ba3f05fac43'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/f8d3a1dd7a589c3e3360d78b3cda748a/8a801f4a9707d6bbb680a34ff815e601/1794015027339/ba17b525-1afc-437c-810e-273545589235",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\f8d3a1dd7a589c3e3360d78b3cda748a\\\\8a801f4a9707d6bbb680a34ff815e601\\\\1794015027339\\\\ba17b525-1afc-437c-810e-273545589235'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/f96c40916f3a37f0c56439aff101c114/663ac7e90d45614397cb464fc6b8f8e6/1794190015616/31e0f057-9672-494d-b572-08c48f1e1db3",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\f96c40916f3a37f0c56439aff101c114\\\\663ac7e90d45614397cb464fc6b8f8e6\\\\1794190015616\\\\31e0f057-9672-494d-b572-08c48f1e1db3'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/fb89e7d88643cf8c32f5b5bb75999c9b/69eaba037bd9bb78f45bc18d7cb6505e/1794209164244/153e1e1b-b815-425d-8422-b8490c0de98d",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\fb89e7d88643cf8c32f5b5bb75999c9b\\\\69eaba037bd9bb78f45bc18d7cb6505e\\\\1794209164244\\\\153e1e1b-b815-425d-8422-b8490c0de98d'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/fba76e2dcb6397999f8e28b8fe246cfc/e9810e96eacd6eb59e8bffb67c698cd7/1793928630344/96cf9360-bc0a-497d-a7f1-9b66380585cb",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\fba76e2dcb6397999f8e28b8fe246cfc\\\\e9810e96eacd6eb59e8bffb67c698cd7\\\\1793928630344\\\\96cf9360-bc0a-497d-a7f1-9b66380585cb'"
+    },
+    {
+      "ruta": ".git/refs/codex/turn-diffs/checkpoints/fe18ab88a3beae5dd888b7ffeff6c882/5e7421563bd1b658ae36d0bf5d8df0fe/1794193852233/000b87bb-157b-420d-8f86-20ae8181c7ef",
+      "error": "[WinError 3] The system cannot find the path specified: '\\\\\\\\?\\\\C:\\\\Users\\\\gegdg\\\\Documents\\\\.UVG\\\\Sim\\\\matsim-guatemala\\\\.git\\\\refs\\\\codex\\\\turn-diffs\\\\checkpoints\\\\fe18ab88a3beae5dd888b7ffeff6c882\\\\5e7421563bd1b658ae36d0bf5d8df0fe\\\\1794193852233\\\\000b87bb-157b-420d-8f86-20ae8181c7ef'"
+    },
+    {
+      "ruta": ".git/refs/heads/main",
+      "bytes_antes": 41,
+      "bytes_despues": 41,
+      "mtime_antes": 1794205837149892200,
+      "mtime_despues": 1795231969244281300
+    },
+    {
+      "ruta": ".git/refs/remotes/origin/main",
+      "bytes_antes": 41,
+      "bytes_despues": 41,
+      "mtime_antes": 1794205850825756100,
+      "mtime_despues": 1795231977938016300
+    },
+    {
+      "ruta": "runtime/viewers/services/run1000-backend.json",
+      "bytes_antes": 2202,
+      "bytes_despues": 2203,
+      "mtime_antes": 1794331641182099500,
+      "mtime_despues": 1795232236695091300
+    },
+    {
+      "ruta": "runtime/viewers/services/run1000-presentation.json",
+      "bytes_antes": 2308,
+      "bytes_despues": 2310,
+      "mtime_antes": 1794331646341245000,
+      "mtime_despues": 1795232241317605600
+    },
+    {
+      "ruta": "runtime/viewers/services/run10k-backend.json",
+      "bytes_antes": 2197,
+      "bytes_despues": 2198,
+      "mtime_antes": 1794331686931726000,
+      "mtime_despues": 1795232263623056300
+    },
+    {
+      "ruta": "runtime/viewers/services/run10k-presentation.json",
+      "bytes_antes": 2290,
+      "bytes_despues": 2291,
+      "mtime_antes": 1794331692608070900,
+      "mtime_despues": 1795232268423330200
+    }
+  ],
+  "alcance": "Tamano y mtime de todos los archivos del inventario inicial. No se rehashean bases/eventos multi-GB."
+}

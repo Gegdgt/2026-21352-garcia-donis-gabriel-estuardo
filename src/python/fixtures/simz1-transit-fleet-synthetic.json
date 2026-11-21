@@ -1,0 +1,107 @@
+{
+  "schema_version": "simz1-transit-fleet-v1",
+  "scenario_version": "simz1-transit-development-synthetic-v1",
+  "synthetic": true,
+  "synthetic_reason": "Development fixture only: invented metric topology, two invented buses, invented times. No real service or Zona 1 geography is represented.",
+  "service_date": "2026-10-22",
+  "service_day_end_s": 86400,
+  "monte_carlo_persons": 3,
+  "model_passengers": false,
+  "network_crs": "synthetic_local_meters_not_GIS",
+  "fleet_provenance": {
+    "status": "scenario_assumption",
+    "source": "synthetic development fixture",
+    "reason": "B=2 is a test input, not an observed fleet size."
+  },
+  "dwell_provenance": {
+    "status": "scenario_assumption",
+    "source": "synthetic development fixture",
+    "reason": "Ten simulation seconds at each stop, with no passenger demand or boarding observations."
+  },
+  "domain": {
+    "approved": false,
+    "synthetic": true,
+    "source": "Synthetic test topology only; not an approved Zona 1 polygon.",
+    "link_ids": ["a_terminal", "a_to_b", "b_terminal", "b_to_a"]
+  },
+  "synthetic_network": {
+    "nodes": [
+      {"node_id": "a_in", "x": 0, "y": 0},
+      {"node_id": "a_out", "x": 30, "y": 0},
+      {"node_id": "b_in", "x": 230, "y": 0},
+      {"node_id": "b_out", "x": 260, "y": 0}
+    ],
+    "links": [
+      {"link_id": "a_terminal", "from_node": "a_in", "to_node": "a_out", "length_m": 30, "free_speed_mps": 10, "capacity_per_hour": 1800, "lanes": 1, "modes": ["car", "bus"]},
+      {"link_id": "a_to_b", "from_node": "a_out", "to_node": "b_in", "length_m": 200, "free_speed_mps": 10, "capacity_per_hour": 1800, "lanes": 1, "modes": ["car", "bus"]},
+      {"link_id": "b_terminal", "from_node": "b_in", "to_node": "b_out", "length_m": 30, "free_speed_mps": 10, "capacity_per_hour": 1800, "lanes": 1, "modes": ["car", "bus"]},
+      {"link_id": "b_to_a", "from_node": "b_out", "to_node": "a_in", "length_m": 260, "free_speed_mps": 10, "capacity_per_hour": 1800, "lanes": 1, "modes": ["car", "bus"]}
+    ]
+  },
+  "vehicle_types": [
+    {
+      "type_id": "synthetic_rigid_bus",
+      "body_model": "rigid",
+      "length_m": 12,
+      "width_m": 2.5,
+      "pcu": 2.5,
+      "max_speed_mps": 10,
+      "seats": 30,
+      "standing": 30,
+      "dimensions_provenance": {"status": "scenario_assumption", "source": "synthetic development fixture", "reason": "Explicit generic dimensions, not measurements of a local operator bus."},
+      "physics_provenance": {"status": "scenario_assumption", "source": "synthetic development fixture", "reason": "PCU and maximum speed are independent test inputs, not filtering or acceleration claims."}
+    }
+  ],
+  "vehicles": [
+    {"vehicle_id": "synthetic_bus_01", "type_id": "synthetic_rigid_bus"},
+    {"vehicle_id": "synthetic_bus_02", "type_id": "synthetic_rigid_bus"}
+  ],
+  "stops": [
+    {"stop_id": "synthetic_terminal_a", "link_id": "a_terminal", "x": 30, "y": 0, "stop_kind": "bay", "blocking_lane": false, "dwell_seconds": 10},
+    {"stop_id": "synthetic_terminal_b", "link_id": "b_terminal", "x": 260, "y": 0, "stop_kind": "in_lane", "blocking_lane": true, "dwell_seconds": 10}
+  ],
+  "services": [
+    {
+      "service_id": "synthetic_test_service",
+      "catalog_service_id": null,
+      "vehicle_ids": ["synthetic_bus_01", "synthetic_bus_02"],
+      "operator": "Synthetic development fixture, no real operator",
+      "calendar": {"start_date": "2026-10-22", "end_date": "2026-10-22", "weekdays": [3], "added_dates": [], "removed_dates": []},
+      "routes": [
+        {
+          "route_id": "synthetic_outbound",
+          "direction": "Terminal A to terminal B",
+          "traffic_regime": "mixed",
+          "link_ids": ["a_terminal", "a_to_b", "b_terminal"],
+          "terminal_time_s": 20,
+          "turnaround_time_s": 10,
+          "stops": [
+            {"stop_id": "synthetic_terminal_a", "link_index": 0, "arrival_offset_s": 0, "departure_offset_s": 10},
+            {"stop_id": "synthetic_terminal_b", "link_index": 2, "arrival_offset_s": 100, "departure_offset_s": 110}
+          ],
+          "departures": [
+            {"departure_id": "synthetic_out_01", "time_s": 0, "vehicle_id": "synthetic_bus_01"},
+            {"departure_id": "synthetic_out_02", "time_s": 30, "vehicle_id": "synthetic_bus_02"}
+          ]
+        },
+        {
+          "route_id": "synthetic_inbound",
+          "direction": "Terminal B to terminal A",
+          "traffic_regime": "mixed",
+          "link_ids": ["b_terminal", "b_to_a", "a_terminal"],
+          "terminal_time_s": 20,
+          "turnaround_time_s": 10,
+          "stops": [
+            {"stop_id": "synthetic_terminal_b", "link_index": 0, "arrival_offset_s": 0, "departure_offset_s": 10},
+            {"stop_id": "synthetic_terminal_a", "link_index": 2, "arrival_offset_s": 100, "departure_offset_s": 110}
+          ],
+          "departures": [
+            {"departure_id": "synthetic_back_01", "time_s": 160, "vehicle_id": "synthetic_bus_01"},
+            {"departure_id": "synthetic_back_02", "time_s": 190, "vehicle_id": "synthetic_bus_02"}
+          ]
+        }
+      ]
+    }
+  ],
+  "transfers": []
+}

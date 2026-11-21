@@ -1,0 +1,49 @@
+test_01_forbidden_and_legal_sequences_all_modes (__main__.SequenceRegressionTests) ... ok
+test_02_search_alternative_and_distinct_arrivals (__main__.SequenceRegressionTests) ... ok
+test_03_prefix_and_exit_chain_boundaries (__main__.SequenceRegressionTests) ... ok
+test_04_no_alternative_no_circular_escape (__main__.SequenceRegressionTests) ... ok
+test_05_repeated_occurrences_and_single_link (__main__.SequenceRegressionTests) ... ok
+test_06_production_guard_closes_both_only_with_verified_evidence (__main__.SequenceRegressionTests) ... ok
+test_07_malformed_exact_identity_and_warning (__main__.SequenceRegressionTests) ... ok
+test_08_version_members_tags_and_identity_mutations_block (__main__.SequenceRegressionTests) ... ok
+test_09_contract_and_each_source_hash_mutation_block (__main__.SequenceRegressionTests) ... ok
+test_10_other_incomplete_record_is_not_exempt (__main__.SequenceRegressionTests) ... ok
+test_11_ten_pair_corrections_and_unfixed_pair_still_block (__main__.SequenceRegressionTests) ... ok
+test_12_all_existing_115_private_pairs_full_routes (__main__.SequenceRegressionTests) ... ok
+test_13_existing_generator_99_trips_four_classes_and_same_times (__main__.SequenceRegressionTests) ... FAIL
+test_14_fixed_freight_buses_and_l12_l13_unchanged (__main__.SequenceRegressionTests) ... ok
+test_15_protected_sources_physics_composition_receipt (__main__.SequenceRegressionTests) ... FAIL
+test_16_java_probe_and_standard_reroute_no_simulation (__main__.SequenceRegressionTests) ... ok
+
+======================================================================
+FAIL: test_13_existing_generator_99_trips_four_classes_and_same_times (__main__.SequenceRegressionTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\python\test_simz1_sequence_contract.py", line 189, in test_13_existing_generator_99_trips_four_classes_and_same_times
+    self.assertEqual(set(report['balanced_od_audit']['private_class_counts']),{'EE','EI','IE','II'})
+AssertionError: Items in the first set but not the second:
+'INTERNAL_EXTERNAL'
+'EXTERNAL_INTERNAL'
+'INTERNAL_INTERNAL'
+'EXTERNAL_EXTERNAL_THROUGH'
+Items in the second set but not the first:
+'EE'
+'EI'
+'II'
+'IE'
+
+======================================================================
+FAIL: test_15_protected_sources_physics_composition_receipt (__main__.SequenceRegressionTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\python\test_simz1_sequence_contract.py", line 229, in test_15_protected_sources_physics_composition_receipt
+    self.assertEqual(sha(ROOT/path),value,path);checked+=1
+AssertionError: '291f3f4e65191009b541fdda08d5e959945da2203585228b62c10cf8dcc2bbf3' != '02efcfb71ac312e2e3f581f1d1afbc5925ce9a01cd2bfcf592b6e03b3c664a99'
+- 291f3f4e65191009b541fdda08d5e959945da2203585228b62c10cf8dcc2bbf3
++ 02efcfb71ac312e2e3f581f1d1afbc5925ce9a01cd2bfcf592b6e03b3c664a99
+ : python/simz1_balanced_od.py
+
+----------------------------------------------------------------------
+Ran 16 tests in 74.797s
+
+FAILED (failures=2)

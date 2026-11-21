@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SimZ1 — Replay continuo</title>
+<style>
+html,body{margin:0;width:100%;height:100%;background:#101820}
+body{box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr);gap:10px;padding:10px;height:100vh;height:100dvh;overflow:hidden;font:12px/1.45 system-ui,sans-serif;color:#fff}
+#deck-container{position:relative;grid-column:1;grid-row:2;width:100%;height:100%;min-width:0;min-height:0;overflow:hidden;border-radius:8px;background:#101820}
+#load-status{position:fixed;bottom:12px;left:12px;max-width:calc(100% - 24px);max-height:28vh;overflow:auto;white-space:pre-wrap;background:#17232d;color:white;z-index:200;font:12px/1.4 monospace}
+/* Only the toolbar reserves space; compact overlays share the map cell. */
+#simz1-ui{display:contents}
+#simz1-ui [hidden]{display:none!important}
+#simz1-show-bar{grid-column:1/-1;grid-row:1;justify-self:start;align-self:start;position:relative;z-index:201;font:inherit;cursor:pointer;min-height:30px;padding:4px 8px;border:1px solid #91a6b5;border-radius:4px;background:#17232d;color:#fff}
+#simz1-controls,#simz1-active-telemetry{box-sizing:border-box;min-width:0;min-height:0;overflow:auto;overscroll-behavior:contain;background:#17232d;border:1px solid #ffffff24;border-radius:8px;padding:10px;overflow-wrap:anywhere;scrollbar-gutter:stable}
+#simz1-controls{grid-column:1/-1;grid-row:1;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;width:100%;max-height:34vh;max-height:34dvh;align-content:start}
+.simz1-toolbar{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
+#simz1-clock{flex:1 1 420px;font:12px/1.5 monospace;font-variant-numeric:tabular-nums;overflow-wrap:normal}
+.simz1-buttons{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.simz1-buttons button{font:inherit;cursor:pointer;min-height:30px;min-width:38px;padding:4px 8px;border:1px solid #91a6b5;border-radius:4px;background:#e7eef3;color:#101820}
+#simz1-ui :focus-visible{outline:2px solid #a8d5ff;outline-offset:2px}
+#simz1-time-slider{grid-column:1/-1;box-sizing:border-box;width:100%;min-width:0;margin:2px 0;cursor:pointer;accent-color:#a8d5ff}
+#simz1-speed-legend{grid-column:1/-1;font-size:12px;line-height:1.5}
+#simz1-speed-legend span{white-space:nowrap}
+#simz1-route-legend{grid-column:1/-1;color:#eadfff;font-size:12px;pointer-events:none}
+#simz1-route-legend span{display:inline-block;vertical-align:middle;width:22px;margin:0 5px 2px 10px;background:#e0aaff;box-shadow:0 0 0 1px #171225}
+#simz1-run-summary{min-width:0;font-size:11px;color:#bed0dd;align-self:center}
+#simz1-help{min-width:0;font-size:12px}
+#simz1-help summary{cursor:pointer;color:#bed0dd;padding:2px 0}
+#simz1-help[open]{grid-column:1/-1;border-top:1px solid #ffffff24;padding-top:4px;max-height:18vh;max-height:18dvh;overflow:auto;overscroll-behavior:contain}
+#simz1-help-content{margin-top:8px;line-height:1.6;color:#d2dfe8}
+#simz1-help pre{white-space:pre-wrap;overflow-wrap:anywhere;font:11px/1.5 monospace;border-top:1px solid #ffffff24;padding-top:8px;margin-bottom:0}
+.simz1-warning{grid-column:1/-1;background:#fff3cd;color:#422900;padding:8px;border:1px solid #d68b00;border-radius:4px}
+.simz1-block-navigation{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:11px}
+.simz1-block-navigation a{color:#a8d5ff}.simz1-block-navigation select{max-width:100%;font:inherit;background:#e7eef3;color:#101820;border-radius:3px}
+#simz1-active-telemetry{max-width:100%;margin-top:8px;white-space:pre-line;font:12px/1.5 monospace}
+#simz1-run-panel{grid-column:1;grid-row:2;place-self:end end;z-index:1;box-sizing:border-box;width:max-content;max-width:calc(100% - 20px);min-width:0;min-height:0;margin:10px;padding:6px 10px;background:#17232d;border:1px solid #ffffff24;border-radius:8px;font-size:12px;overflow-wrap:anywhere;pointer-events:none}
+#simz1-count-private_vehicles,#simz1-fixed-public-fleet{font-variant-numeric:tabular-nums;font-weight:600}
+/* Vehicle details float above the map without reserving a grid cell. */
+#simz1-vehicle-card{position:fixed;z-index:190;box-sizing:border-box;width:280px;max-width:calc(100vw - 16px);max-height:calc(100vh - 16px);max-height:calc(100dvh - 16px);overflow:auto;overscroll-behavior:contain;padding:10px 12px;border:1px solid #ffffff32;border-radius:8px;background:#17232df5;color:#fff;box-shadow:0 4px 18px #0006;font:12px/1.45 system-ui,sans-serif;overflow-wrap:anywhere;pointer-events:none}
+#simz1-vehicle-card[hidden]{display:none!important}
+#simz1-vehicle-card[data-pinned="true"]{pointer-events:auto;padding-top:32px}
+#simz1-vehicle-card dl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:6px 10px;margin:0}
+#simz1-vehicle-card dt{min-width:0;color:#bed0dd}
+#simz1-vehicle-card dd{min-width:0;margin:0;font-variant-numeric:tabular-nums}
+#simz1-vehicle-card-close{display:none;position:absolute;top:4px;right:5px;width:26px;height:26px;padding:0;border:0;border-radius:4px;background:transparent;color:#d2dfe8;font:20px/1 system-ui,sans-serif;cursor:pointer}
+#simz1-vehicle-card[data-pinned="true"] #simz1-vehicle-card-close{display:block}
+#simz1-vehicle-card-close:hover{background:#ffffff18;color:#fff}
+#simz1-vehicle-card :focus-visible{outline:2px solid #a8d5ff;outline-offset:2px}
+#simz1-technical-totals{display:grid;grid-template-columns:minmax(0,1fr) minmax(60px,1fr);gap:4px 10px;margin:8px 0}
+#simz1-technical-totals dt{min-width:0;color:#cbd9e3}
+#simz1-technical-totals dd{margin:0;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+#simz1-run-scope{font-size:11px;line-height:1.4;color:#bed0dd;margin:8px 0 0;border-top:1px solid #ffffff24;padding-top:6px}
+#simz1-run-error{font-size:11px;line-height:1.4;color:#ffe1aa;margin:6px 0 0}
+#simz1-queue-status{font-size:11px;line-height:1.4;color:#ffe1aa;border-top:1px solid #ffffff24;margin-top:6px;padding-top:6px;white-space:pre-line}
+#simz1-run-retry{font:inherit;cursor:pointer;margin-top:6px;min-height:30px;padding:4px 8px;border:1px solid #91a6b5;border-radius:4px;background:#e7eef3;color:#101820}
+#simz1-aggregate-view{grid-column:1/-1;min-width:0;border-top:1px solid #ffffff24;padding-top:7px;color:#dce8ef}
+.simz1-aggregate-bar{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
+.simz1-aggregate-bar label{display:flex;align-items:center;gap:4px;cursor:pointer}
+.simz1-aggregate-bar select{max-width:310px;min-width:120px}
+.simz1-aggregate-bar input[type=search]{width:180px;min-width:90px}
+.simz1-aggregate-bar button,.simz1-aggregate-bar select,.simz1-aggregate-bar input[type=search],#simz1-aggregate-view>button{font:inherit;min-height:28px;border:1px solid #91a6b5;border-radius:4px;background:#e7eef3;color:#101820;padding:3px 6px}
+#simz1-aggregate-status{font-variant-numeric:tabular-nums;margin-top:5px}
+.simz1-aggregate-legend{font-size:11px;color:#bed0dd;margin:4px 0}
+#simz1-aggregate-details summary{cursor:pointer;padding:4px 0}
+.simz1-aggregate-detail-body{max-height:200px;overflow:auto;overscroll-behavior:contain;font-size:11px}
+.simz1-aggregate-detail-body table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+.simz1-aggregate-detail-body th,.simz1-aggregate-detail-body td{text-align:right;padding:4px 7px;border-bottom:1px solid #ffffff20;white-space:nowrap}
+.simz1-aggregate-detail-body th:first-child,.simz1-aggregate-detail-body td:first-child{text-align:left}
+.simz1-aggregate-detail-body p{margin:5px 0}
+@media(max-width:760px){
+  body{gap:6px;padding:6px}
+  #simz1-controls{padding:8px;max-height:34vh;max-height:34dvh}
+  #simz1-clock{flex-basis:100%;font-size:11px}
+  #simz1-speed-legend{font-size:11px}
+  #simz1-active-telemetry{font-size:11px;padding:8px}
+  #simz1-run-panel{font-size:11px}
+  #simz1-help[open]{max-height:14vh;max-height:14dvh}
+}
+@media(max-height:480px) and (min-width:761px){body{gap:6px;padding:6px}#simz1-controls,#simz1-active-telemetry{padding:6px}}
+</style>
+<!-- Bloqueante y version fijada: disponible antes de inicializar el visor. -->
+<script src="https://cdn.jsdelivr.net/npm/deck.gl@9.1.14/dist.min.js"></script>
+</head>
+<body>
+<div id="deck-container"></div>
+<div id="load-status" role="alert">Cargando visor…</div>
+<script>
+(async () => {
+  'use strict';
+  const status = document.getElementById('load-status');
+  const viewerErrors=window.simz1Errors=[];
+  const reportError = (error,source='inicializacion') => {
+    // Reporting must not call Deck, remove controls, or mask the original error.
+    const detail=error?.stack || error?.message || String(error);
+    const cause=error?.cause ? '\nCausa: '+(error.cause.stack || error.cause.message || String(error.cause)) : '';
+    const message=source+': '+detail+cause;
+    if(!viewerErrors.some(entry=>entry.message===message)) {
+      if(viewerErrors.length>=20)viewerErrors.splice(1,1); // Retain the first failure.
+      viewerErrors.push({source,message});console.error('[SimZ1 '+source+']',error);
+    }
+    status.hidden=false;status.textContent='Errores del visor:\n'+viewerErrors.map(entry=>entry.message).join('\n\n');
+  };
+  window.addEventListener('error',event=>reportError(event.error || event.message,'JavaScript'));
+  window.addEventListener('unhandledrejection',event=>reportError(event.reason,'promesa no controlada'));
+  try {
+    if (!window.deck) throw new Error('CDN deck.gl no disponible. Verifique la conexion a Internet.');
+    const response=await fetch('./api/config',{cache:'no-store'});
+    if(!response.ok)throw new Error('Configuracion local HTTP '+response.status);
+    const config=await response.json();
+    if(!config.continuous || config.continuous.run_id!==config.hud?.run_id ||
+        config.continuous.iteration!==config.hud?.iteration ||
+        !/^[a-f\d]{64}$/i.test(config.continuous.source_version || '') ||
+        config.continuous.source_version!==config.replay_source?.source_manifest_sha256)
+      throw new Error('Configuracion de identidad incompatible');
+    const requested=new URLSearchParams(window.location?.search || '');
+    for(const key of ['run_id','iteration','run_manifest_sha256','source_version','visual_policy']) {
+      if(requested.has(key) && (requested.getAll(key).length!==1 || requested.get(key)!==String(config.continuous[key])))
+        throw new Error('Identidad solicitada '+key+'='+requested.get(key)+'; servidor='+config.continuous[key]);
+    }
+    __LOADER__
+    __VISUAL_LANES__
+    __VISUAL_QUEUES__
+    __VEHICLE_PICKING__
+    __SPATIAL_VIEW__
+    __SIGNAL_GEOMETRY__
+    __ARRIVAL_EFFECTS__
+    __INCIDENT_EFFECTS__
+    __TRANSIT_STOPS__
+    const spatialView=config.spatial_demand ? new SimZ1SpatialView(config.spatial_demand,config.continuous) : null;
+    const staticFeaturePerformance={};let featureStarted=performance.now();
+    const transitStops=new SimZ1TransitStops(config.transit_stops,config.continuous,spatialView);
+    staticFeaturePerformance.stopsGeometryMs=performance.now()-featureStarted;
+    if(config.visual_lanes?.available && ['run_id','iteration','run_manifest_sha256'].some(
+        key=>config.visual_lanes.identity?.[key]!==config.continuous[key]))
+      throw new Error('Identidad de geometria de carriles incompatible');
+    const laneRenderer=new SimZ1VisualLanes(config.visual_lanes);
+    const sourceSignals=config.layers.find(layer=>layer.id==='signals')?.data || [];
+    featureStarted=performance.now();
+    const signalGeometry=new SimZ1SignalGeometry(sourceSignals,laneRenderer,spatialView);
+    staticFeaturePerformance.signalsGeometryMs=performance.now()-featureStarted;
+    let visualRoads=config.visual_lanes?.available ? laneRenderer.roads() : [];
+    let visualConnectors=config.visual_lanes?.available ? laneRenderer.connectors() : [];
+    if(spatialView)visualRoads=spatialView.paths(visualRoads.filter(row=>spatialView.allowed.has(row.Link_ID)));
+    if(spatialView)visualConnectors=spatialView.paths(visualConnectors.filter(row=>
+      spatialView.allowed.has(row.Link_ID) && spatialView.allowed.has(row.To_Link_ID)));
+    const replaySegments = config.layers.find(layer => layer.id === 'trips').data;
+    const incidentRecords = [...config.layers.find(layer => layer.id === 'incidents').data];
+    // Funciones JS explicitas: nunca evaluar cadenas @@= ni expresiones arbitrarias.
+    const accessors = {
+      getPath: d => d.path, getTimestamps: d => d.timestamps,
+      getSourcePosition: d => d.from, getTargetPosition: d => d.to,
+      getPosition: d => d.position, getFillColor: d => d.color, getIcon: d => d.icon,
+      getAngle: d => d.angle
+    };
+    const types = {PathLayer:deck.PathLayer, LineLayer:deck.LineLayer, ScatterplotLayer:deck.ScatterplotLayer, IconLayer:deck.IconLayer};
+    let layers = config.layers.map(spec => {
+      const props = {...spec};
+      const Constructor = types[props['@@type']];
+      delete props['@@type'];
+      if (!Constructor) throw new Error('Tipo de capa no soportado');
+      for (const [name,value] of Object.entries(props)) {
+        if (typeof value === 'string' && value.startsWith('@@=')) {
+          if (!accessors[name]) throw new Error('Accesor no soportado: '+name);
+          props[name] = accessors[name];
+        }
+      }
+      if (props.id === 'trips' || props.id === 'incidents') props.data = [];
+      // Screen widths never participate in metric vehicle placement.
+      if (props.id === 'selected-history' || props.id === 'selected-future') Object.assign(props,{
+        getColor:props.id==='selected-history' ? [213,135,255,255] : [243,225,255,255],
+        getWidth:props.id==='selected-history' ? 4 : 2,widthUnits:'pixels',widthMinPixels:0,widthMaxPixels:4,
+        billboard:true,capRounded:true,jointRounded:true,pickable:false,
+        parameters:{depthCompare:'always',depthWriteEnabled:false}});
+      if(props.id==='selected-origin')Object.assign(props,{getRadius:5,radiusUnits:'pixels',radiusMaxPixels:5,pickable:false});
+      if(props.id==='selected-destination')Object.assign(props,{getSize:16,sizeUnits:'pixels',sizeMaxPixels:16,pickable:false});
+      if(['selected-origin','selected-destination'].includes(props.id))props.parameters={depthCompare:'always',depthWriteEnabled:false};
+      if(props.id==='trips')props.parameters={depthCompare:'always',depthWriteEnabled:false};
+      if(spatialView && props.id==='signals')props.data=spatialView.positions(props.data);
+      if(spatialView && props.id==='roads' && !visualRoads.length) {
+        const rows=spatialView.paths(props.data.map(row=>({...row,path:[row.from,row.to]})));
+        return new deck.PathLayer({id:'roads',data:rows,getPath:d=>d.path,getColor:[70,80,90],getWidth:1,widthUnits:'meters',widthMinPixels:0,pickable:false});
+      }
+      if (props.id === 'roads' && visualRoads.length) return new deck.PathLayer({
+        id:'roads',data:visualRoads,getPath:d=>d.path,getWidth:d=>d.width_m,
+        getColor:[70,80,90],widthUnits:'meters',widthMinPixels:0,pickable:false});
+      if (props.id === 'trips' && visualRoads.length) return new deck.PathLayer({
+        id:'trips',data:[],getPath:d=>d.Visual_Body_Path,getWidth:d=>d.Visual_Body_Width_Meters,
+        getColor:d=>{const alpha=(d.Visual_Queue_Opacity ?? 1)*(d.Visual_Body_Opacity ?? 1);
+          return [...d.color.slice(0,3),alpha>0 ? Math.max(1,Math.round(255*alpha)) : 0];},
+        widthUnits:'meters',widthMinPixels:0,pickable:true,
+        parameters:{depthCompare:'always',depthWriteEnabled:false}});
+      return new Constructor(props);
+    });
+    // A fixed number of instanced meshes replaces the historical billboard.
+    // Network-derived display anchors never overwrite source positions/group IDs.
+    featureStarted=performance.now();
+    const signalContainer=document.getElementById('deck-container');
+    const initialSignalViewport=new deck.WebMercatorViewport({...config.initialViewState,
+      width:signalContainer.clientWidth || 900,height:signalContainer.clientHeight || 600});
+    layers=layers.flatMap(layer=>layer.id==='signals' ? signalGeometry.layers(deck,initialSignalViewport) : [layer]);
+    staticFeaturePerformance.signalsLayersMs=performance.now()-featureStarted;
+    if(visualRoads.length) layers.splice(1,0,new deck.PathLayer({
+      id:'visual-lane-centers',data:visualRoads,getPath:d=>d.path,getWidth:d=>Math.min(0.12,d.width_m*.2),
+      getColor:[130,145,155],widthUnits:'meters',widthMinPixels:0,pickable:false}));
+    if(visualConnectors.length) layers.splice(1,0,new deck.PathLayer({
+      id:'visual-turn-connectors',data:visualConnectors,getPath:d=>d.path,getWidth:d=>d.width_m,
+      getColor:[60,70,80],widthUnits:'meters',widthMinPixels:0,pickable:false}));
+    if(visualRoads.length) layers.splice(layers.findIndex(layer=>layer.id==='trips'),0,new deck.TextLayer({
+      id:'map-labels',data:[],getPosition:d=>d.position,getText:d=>d.name,getAngle:d=>d.angle,
+      getPixelOffset:d=>d.pixelOffset,
+      getSize:d=>d.kind==='landmark' ? 12 : 13,sizeUnits:'pixels',billboard:true,
+      getColor:d=>d.kind==='landmark' ? [221,205,155] : [211,222,229],
+      background:false,
+      fontFamily:'system-ui, sans-serif',characterSet:'auto',pickable:false}));
+    // Both casings precede both strokes: a repeated link can show the wide
+    // observed stroke around the narrow, later recorded stroke. No z-fighting.
+    const routeIds=['selected-history','selected-future','selected-origin','selected-destination'];
+    const routeLayers=routeIds.map(id=>layers.find(layer=>layer.id===id)).filter(Boolean);
+    const routeCasings=routeLayers.filter(layer=>['selected-history','selected-future'].includes(layer.id)).map(layer=>
+      layer.clone({id:layer.id+'-casing',getColor:[23,18,37,240],getWidth:layer.id==='selected-history' ? 6 : 4,widthMaxPixels:6}));
+    layers=layers.filter(layer=>!routeIds.includes(layer.id));
+    layers.splice(layers.findIndex(layer=>layer.id==='trips'),0,...routeCasings,...routeLayers);
+    // Static stop signs precede traffic; they never replace traffic-light layers.
+    featureStarted=performance.now();
+    layers.splice(layers.findIndex(layer=>layer.id==='trips'),0,...transitStops.layers(deck,config.initialViewState.zoom));
+    staticFeaturePerformance.stopsLayersMs=performance.now()-featureStarted;
+    // Only up to two contours (pinned + hover), never a copy of the fleet.
+    // Traffic draws over the inward half of each stroke, preserving speed colour
+    // even when a car is narrower than the contour in a zoomed-out view.
+    const focusLayers=[true,false].map(halo=>new deck.PathLayer({
+      id:halo ? 'vehicle-focus-halo' : 'vehicle-focus-outline',data:[],
+      getPath:d=>d.outline,getColor:d=>[...d.color,halo ? 45 : 255],
+      getWidth:d=>halo ? 5 : d.mode==='pinned' ? 1.75 : 1.25,
+      widthUnits:'pixels',widthMinPixels:0,billboard:false,jointRounded:false,capRounded:false,
+      pickable:false,parameters:{depthCompare:'always',depthWriteEnabled:false}}));
+    layers.splice(layers.findIndex(layer=>layer.id==='trips'),0,...focusLayers);
+    // Arrival annotations have their own lifetime and never enter traffic data.
+    layers.push(SimZ1ArrivalEffects.layer(deck));
+    layers.push(SimZ1IncidentEffects.layer(deck));
+    const deckInstance = new deck.Deck({parent:document.getElementById('deck-container'),
+      viewState:config.initialViewState, controller:{doubleClickZoom:false}, layers,
+      onLoad:()=>{status.hidden=viewerErrors.length===0;},
+      onError:(error,layer)=>reportError(error,'deck.gl'+(layer?.id ? ' / '+layer.id : ''))});
+    __AGGREGATE_VIEW__
+    __HUD__
+    __CONTROLS__
+    // Optional native counts remain separate from the body renderer and HUD.
+    if(config.aggregate_view?.available && typeof SimZ1AggregateView==='function') {
+      let aggregateView=null;
+      const syncAggregateLayers=()=>{
+        if(!aggregateView)return;
+        layers=layers.filter(layer=>!layer.id.startsWith('simz1-aggregate-'));
+        const roadEnd=layers.findIndex(layer=>layer.id==='selected-history-casing');
+        const insertion=roadEnd>=0?roadEnd:Math.max(0,layers.findIndex(layer=>layer.id==='trips'));
+        layers.splice(insertion,0,...aggregateView.layers(deck));
+        deckInstance.setProps({layers});
+      };
+      aggregateView=new SimZ1AggregateView({identity:config.continuous,
+        endpoint:config.aggregate_view.endpoint || '/api/aggregate',
+        persistenceSeconds:config.aggregate_view.persistence_seconds ?? 300,
+        geometry:config.visual_lanes?.links || {},spatial:spatialRenderer,
+        document,fetch:(...args)=>fetch(...args),onChange:syncAggregateLayers});
+      const baseRender=render;
+      render=function(timestamp){
+        aggregateView.update(current,{paused,family:typeFilter.value,route:routeFilter.value.trim()});
+        return baseRender(timestamp);
+      };
+      const baseRequestContinuousTime=requestContinuousTime;
+      requestContinuousTime=function(time,seek=false){
+        if(seek)aggregateView.seek(Math.max(INITIAL,Math.min(FINAL,time)));
+        return baseRequestContinuousTime(time,seek);
+      };
+      const baseClick=deckInstance.props.onClick,baseTooltip=deckInstance.props.getTooltip;
+      deckInstance.setProps({
+        onClick:(info,event)=>aggregateView.click(info)?true:baseClick?.(info,event),
+        getTooltip:info=>aggregateView.tooltip(info)||baseTooltip?.(info)});
+      window.simz1Aggregate={getState:()=>aggregateView.snapshot(),
+        selectOrigin:id=>aggregateView.select('origin',id),selectLink:id=>aggregateView.select('link',id),
+        retry:()=>aggregateView.request(aggregateView.time,true)};
+      render();
+    }
+  } catch (error) { reportError(error); }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "agents": 1,
+  "trips": 1,
+  "seed": 20261002,
+  "network_sha256": "f328c84e34f7b7ba7c3a204bb97bb9907b107dbf77d53c301e3c6c44fe487029",
+  "plans_sha256": "57e2bbaba6126aa26b48650b4c47ef7e772b1420ffe95a79f87bdfb14d2a9a74",
+  "core_nodes": 3470,
+  "eligible_links": 5195,
+  "excluded_links": 988,
+  "car_strong_components": 514,
+  "departure_distribution": "fixed debug departure",
+  "debug_agent": "agente_prueba_01",
+  "origin_link": "osm_30262980_15_forward",
+  "destination_link": "osm_384746799_0_forward",
+  "controlled_approach": "osm_1174627094_0_forward",
+  "traffic_signal_node": "579787183",
+  "window_seconds": [
+    28740,
+    54000
+  ],
+  "departure_min": 28800,
+  "departure_max": 28800,
+  "sampled_mean_seconds": 28800,
+  "departures_by_hour": {
+    "08:00": 1
+  },
+  "od_distribution": "fixed distinct directed links inside the largest car SCC",
+  "dtd": "population_v6.dtd (MATSim 15)",
+  "limitations": [
+    "Departure window does not guarantee arrival before 15:00",
+    "Graph reachability excludes unimplemented turn restrictions",
+    "Temporary debug demand; seed and sigma do not affect the fixed trip"
+  ]
+}

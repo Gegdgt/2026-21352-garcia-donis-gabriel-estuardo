@@ -1,0 +1,17 @@
+﻿{
+    "modo":  "aplicado",
+    "origen":  "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala",
+    "destino":  "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\2026-21352-garcia-donis-gabriel-estuardo",
+    "remoto":  "https://github.com/Gegdgt/2026-21352-garcia-donis-gabriel-estuardo",
+    "archivos_seleccionados":  937,
+    "bytes":  131191301,
+    "para_copiar":  0,
+    "identicos":  937,
+    "entradas_excluidas":  32,
+    "bloqueados":  0,
+    "adaptaciones_empaquetado":  [
+                                     "src/scenarios/.gitattributes",
+                                     "src/scenarios/.gitignore"
+                                 ],
+    "aviso":  "Los subarboles de Git, entornos y caches se reportan agrupados. No hubo simulacion, commit, push ni PR."
+}

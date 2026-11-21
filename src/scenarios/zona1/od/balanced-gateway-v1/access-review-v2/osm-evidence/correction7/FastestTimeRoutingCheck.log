@@ -1,0 +1,21 @@
+2026-11-01T09:52:55,223  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:55,319  INFO Version:21 HV000001: Hibernate Validator 8.0.0.Final
+2026-11-01T09:52:55,525  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:55,525  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:55,541  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:55,541  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:55,541  INFO PopulationImpl:107  person # 1
+2026-11-01T09:52:55,541  INFO Counter:70 [VehiclesImpl] added vehicle # 1
+2026-11-01T09:52:55,541  INFO Counter:70 [VehiclesImpl] added vehicle # 2
+2026-11-01T09:52:55,810  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:55,810  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:55,810  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:55,810  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:55,810  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:55,810  INFO PopulationImpl:107  person # 1
+2026-11-01T09:52:55,810  INFO Counter:70 [VehiclesImpl] added vehicle # 1
+2026-11-01T09:52:55,810  INFO Counter:70 [VehiclesImpl] added vehicle # 2
+PASS: all three profiles choose fastest expected time, observed delay reverses choice, explicit legacy policy remains separate
+PASS: FROM-link/turn timing, no double-counted delay, current-link residual, forbidden turn and actual lane constraints
+PASS: pure rerouting off/on improvement gate; no QSim or claim of physical paired-run outcomes
+2026-11-01T09:52:55,788  WARN SimZ1SequenceContract:58 MALFORMED_SOURCE_NO_EXECUTABLE_MANEUVER: OSM 17884471 v2 lacks from/via in the authoritative source; no maneuver can be inferred. Historical from-way 381158225 was deleted. This does not establish unrestricted legal access to the destination.

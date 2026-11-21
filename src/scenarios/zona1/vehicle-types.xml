@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vehicleDefinitions xmlns="http://www.matsim.org/files/dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.matsim.org/files/dtd http://www.matsim.org/files/dtd/vehicleDefinitions_v2.0.xsd">
+
+	<vehicleType id="Liebre">
+		<attributes>
+			<attribute name="accelerationModel" class="java.lang.String">metadata only; standard QSim does not integrate acceleration</attribute>
+			<attribute name="desiredAccelerationMps2" class="java.lang.Double">3.0</attribute>
+		</attributes>
+		<capacity seats="0" standingRoomInPersons="0">
+
+		</capacity>
+		<length meter="4.5"/>
+		<width meter="1.8"/>
+		<maximumVelocity meterPerSecond="25.0"/>
+		<costInformation>
+
+		</costInformation>
+		<passengerCarEquivalents pce="1.0"/>
+		<networkMode networkMode="car"/>
+		<flowEfficiencyFactor factor="1.0"/>
+	</vehicleType>
+
+	<vehicleType id="Normal">
+		<attributes>
+			<attribute name="accelerationModel" class="java.lang.String">metadata only; standard QSim does not integrate acceleration</attribute>
+			<attribute name="desiredAccelerationMps2" class="java.lang.Double">2.0</attribute>
+		</attributes>
+		<capacity seats="0" standingRoomInPersons="0">
+
+		</capacity>
+		<length meter="4.5"/>
+		<width meter="1.8"/>
+		<maximumVelocity meterPerSecond="13.88888888888889"/>
+		<costInformation>
+
+		</costInformation>
+		<passengerCarEquivalents pce="1.0"/>
+		<networkMode networkMode="car"/>
+		<flowEfficiencyFactor factor="1.0"/>
+	</vehicleType>
+
+	<vehicleType id="Tortuga">
+		<attributes>
+			<attribute name="accelerationModel" class="java.lang.String">metadata only; standard QSim does not integrate acceleration</attribute>
+			<attribute name="desiredAccelerationMps2" class="java.lang.Double">0.8</attribute>
+		</attributes>
+		<capacity seats="0" standingRoomInPersons="0">
+
+		</capacity>
+		<length meter="4.5"/>
+		<width meter="1.8"/>
+		<maximumVelocity meterPerSecond="5.555555555555555"/>
+		<costInformation>
+
+		</costInformation>
+		<passengerCarEquivalents pce="1.0"/>
+		<networkMode networkMode="car"/>
+		<flowEfficiencyFactor factor="1.0"/>
+	</vehicleType>
+
+		
+
+</vehicleDefinitions>

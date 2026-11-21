@@ -1,0 +1,26 @@
+{
+  "schema_version": "simz1-verified-private-access-v1",
+  "notice": "PLANTILLA INHABILITADA. No contiene gateways ni geometria verificados. No cambiar verified sin revision real.",
+  "review": {
+    "verified": false,
+    "version": "PENDIENTE",
+    "source": "PENDIENTE",
+    "reviewed_by": "PENDIENTE",
+    "reviewed_at": "PENDIENTE"
+  },
+  "perimeter": {
+    "schema_version": "simz1-verified-perimeter-v1",
+    "verified": false,
+    "version": "PENDIENTE",
+    "source": "PENDIENTE",
+    "reviewed_by": "PENDIENTE",
+    "reviewed_at": "PENDIENTE",
+    "sha256": null
+  },
+  "network_sha256": null,
+  "lanes_sha256": null,
+  "osm_sha256": null,
+  "entry_gateways": [],
+  "exit_gateways": [],
+  "internal_origins": []
+}

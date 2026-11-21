@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "case_id": "hold_anchor_depends_on_departed_window_roster",
+  "evidence_kind": "synthetic_minimal_code_path; reproduction_not_executed",
+  "run_id": "fixture:window-roster",
+  "iteration": 0,
+  "replay_source": "in_memory_native_interval_fixture",
+  "classification": "Datos aun no cargados (contexto historico de cola)",
+  "causal_note": "At t=30 the same stopped follower is at 89 m when its already departed predecessor is retained, and 95.5 m without that predecessor. The 6.5 m difference is the reference length 4.5 plus gap 2, not native motion. Window queries only add the adjacent interval of the same vehicle, so they cannot guarantee other vehicles that occupied the lane at hold_start are present.",
+  "links": {
+    "road": {"from_node":"a","to_node":"b","path_m":[[0,0],[100,0]],"allowed_to_links":[]}
+  },
+  "segments": [
+    {"vehicle_id":"departed-leader","person_id":"leader-person","trip_id":"leader-trip","link_id":"road","start":0,"end":20,"hold":10},
+    {"vehicle_id":"stopped-follower","person_id":"follower-person","trip_id":"follower-trip","link_id":"road","start":1,"end":100,"hold":11}
+  ],
+  "probes": [
+    {"time":30,"vehicle_id":"stopped-follower","context_vehicle_ids":["departed-leader","stopped-follower"],"expected_visible":true,"expected_reason":"queued","expected_station_m":89},
+    {"time":30,"vehicle_id":"stopped-follower","context_vehicle_ids":["stopped-follower"],"expected_visible":true,"expected_reason":"queued","expected_station_m":95.5}
+  ]
+}

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehicleDefinitions xmlns="http://www.matsim.org/files/dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.matsim.org/files/dtd http://www.matsim.org/files/dtd/vehicleDefinitions_v2.0.xsd">
+  <vehicleType id="Transmetro_RigidProxy">
+    <attributes>
+      <attribute name="simz1:family" class="java.lang.String">public_transport</attribute>
+      <attribute name="simz1:bodyModel" class="java.lang.String">rigid</attribute>
+      <attribute name="simz1:dimensionsBasis" class="java.lang.String">scenario_assumption_not_unit_measurement</attribute>
+      <attribute name="simz1:physicsBasis" class="java.lang.String">scenario_assumption_not_empirical_calibration</attribute>
+    </attributes>
+    <capacity seats="40" standingRoomInPersons="40" />
+    <length meter="13.5" />
+    <width meter="2.5" />
+    <maximumVelocity meterPerSecond="13.8888888889" />
+    <passengerCarEquivalents pce="3.0" />
+    <networkMode networkMode="bus" />
+    <flowEfficiencyFactor factor="1.0" />
+  </vehicleType>
+  <vehicleType id="TuBus_RigidProxy">
+    <attributes>
+      <attribute name="simz1:family" class="java.lang.String">public_transport</attribute>
+      <attribute name="simz1:bodyModel" class="java.lang.String">rigid</attribute>
+      <attribute name="simz1:dimensionsBasis" class="java.lang.String">scenario_assumption_not_unit_measurement</attribute>
+      <attribute name="simz1:physicsBasis" class="java.lang.String">scenario_assumption_not_empirical_calibration</attribute>
+    </attributes>
+    <capacity seats="40" standingRoomInPersons="40" />
+    <length meter="12" />
+    <width meter="2.5" />
+    <maximumVelocity meterPerSecond="13.8888888889" />
+    <passengerCarEquivalents pce="2.5" />
+    <networkMode networkMode="bus" />
+    <flowEfficiencyFactor factor="1.0" />
+  </vehicleType>
+  <vehicle id="ptbus_transmetro_L1_001" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_002" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_003" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_004" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_005" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_006" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_007" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_008" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_009" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_010" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_011" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_012" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_013" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_014" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_015" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_016" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_017" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L1_018" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L2_001" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L2_002" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L2_003" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L2_004" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L2_005" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L2_006" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L2_007" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L2_008" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L2_009" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L2_010" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L2_011" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_001" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_002" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_003" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_004" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_005" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_006" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_007" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_008" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_009" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_010" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_011" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_012" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_013" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_014" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_015" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_016" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_017" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_018" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_019" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_020" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_021" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_022" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_023" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_024" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_025" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L6_026" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_001" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_002" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_003" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_004" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_005" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_006" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_007" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_008" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_009" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_010" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_011" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_012" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_013" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_014" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_015" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_016" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_017" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_018" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_019" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_020" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_021" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_022" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_023" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_024" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_025" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L7_026" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_001" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_002" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_003" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_004" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_005" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_006" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_007" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_008" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_009" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_010" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_011" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_012" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_013" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_014" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_015" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_016" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_017" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_018" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_019" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_020" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_021" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_022" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_023" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_024" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_025" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_026" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_027" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_028" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_029" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_030" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_031" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_032" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_033" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_034" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_035" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_036" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_037" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_038" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_039" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_040" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_041" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_042" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_043" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L12_044" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_001" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_002" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_003" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_004" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_005" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_006" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_007" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_008" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_009" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_010" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_011" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_012" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_013" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_014" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_015" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_016" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_017" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_018" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_019" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_020" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_021" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L13_022" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_001" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_002" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_003" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_004" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_005" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_006" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_007" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_008" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_009" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_010" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_011" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_012" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_013" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_014" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_015" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_016" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_017" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_018" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_019" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_020" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_021" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_022" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_023" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_024" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_025" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_026" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_027" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_028" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_transmetro_L18_029" type="Transmetro_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_001" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_002" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_003" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_004" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_005" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_006" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_007" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_008" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_009" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_010" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_011" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_012" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_013" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_014" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_015" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_016" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_017" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_018" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_019" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_020" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_021" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_022" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_023" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_024" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_025" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_026" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_027" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_104_028" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_001" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_002" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_003" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_004" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_005" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_006" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_007" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_008" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_009" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_010" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_011" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_012" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_013" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_014" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_015" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_016" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_017" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_018" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_105_019" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_001" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_002" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_003" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_004" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_005" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_006" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_007" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_008" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_009" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_010" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_011" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_012" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_013" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_014" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_015" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_016" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_017" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_018" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_019" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_020" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_021" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_022" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_023" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_024" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_025" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_026" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_027" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_802_028" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_001" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_002" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_003" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_004" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_005" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_006" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_007" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_008" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_009" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_010" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_011" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_012" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_013" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_014" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_015" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_016" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_017" type="TuBus_RigidProxy" />
+  <vehicle id="ptbus_tubus_R5_018" type="TuBus_RigidProxy" />
+</vehicleDefinitions>

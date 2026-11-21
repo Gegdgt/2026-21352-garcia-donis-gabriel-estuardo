@@ -1,0 +1,208 @@
+{
+  "schema": "simz1-run1000-postprocessing-compatibility-v1",
+  "base_source_fingerprint": "c13e4f73ec792c64b3c899d769ff964e381b0d45dbe5cead4c770562e722309d",
+  "native_source_fingerprint": "290af1f6a3640fb2fe2d33520124f1d9810cb0b1ddc22de4dc2c83b609500ea1",
+  "run_id": "simz1-90e8f9a5c3e54c5594a15c2a9b8bd1af",
+  "manifest_sha256": "750e8c363f8fa8fa2114cc62af39e8194c9be7a935016b0bdda22a7538e31596",
+  "base_file_count": 701,
+  "changes": {
+    "python/revalidar_simz1.py": {
+      "before": "a7e60dd4469ed1169779156e59cefe74f67b47d61bc9b592a43d49d38e4e0eb4",
+      "after": "d919ada408de2185a430f47bf0758cbc065142cf5385392cbc50a20d9dda3c9a"
+    },
+    "python/serve_simz1_continuous.py": {
+      "before": "f9501ae74a696d0528b44e8553c2eea535d3da3437e4818be887d07b8dfd589c",
+      "after": "a454e0e570b8a1fb92ba88e01ec35755a98e09da0bbea4367fce73be27968312"
+    },
+    "python/simz1_balanced_od_audit.py": {
+      "before": "55882fb7d132530ca29752d6bfe764355bae2f998038909085da56591586c396",
+      "after": "22502d813c04019a5a85dc394744dae2f7683bbfa75e827bf0c0362ed815fee6"
+    },
+    "python/simz1_blocking_occupancy.py": {
+      "before": "0c8c6f62b921f90c2324efc01a632e011e574f1bc4fd1992dacd05aeafb6cbb9",
+      "after": "e315e5682b58ae82bfdbb923d08ec14f5cb81925760ea0a10bfb98c764662966"
+    },
+    "python/simz1_continuous_loader.js": {
+      "before": "aea4b3a3cf1dd207786f81ddac1533f0ac749a5e64301a3feecc16ec615be720",
+      "after": "03b99f8585d176130abe2de461630c674e2cb24231e121e21ebf074609a95c81"
+    },
+    "python/simz1_continuous_replay.py": {
+      "before": "a04c5a9d45ea08ee35015307a27800b5879229d0a97539cdd5532975a095a89a",
+      "after": "878ce2e491c63fc61c3e6883bf7d0997f2567d1bdd4b4c0e5dc01d8872cbe072"
+    },
+    "python/simz1_queue_context.py": {
+      "before": "cdeb89a27538b60d42551ce64499f60397edefce8cf6fade42785f1fbf3b482d",
+      "after": "92dbef3cd8e827f122afa308bbe5cf632340a06ec38487ed8db824320a7a437c"
+    },
+    "python/simz1_replay_workers.py": {
+      "before": "d94e32b7a7bfd4163c448b27026b4cd98b3342ce596ace769eaae8274961dc12",
+      "after": "04ba95ed73906869b5eb1399eb2374195cfd8024534bf212aae79913fa756add"
+    },
+    "python/simz1_run.py": {
+      "before": "7451f1663670102327f35662203727f294de58f2204a271c34aac22f5d70660b",
+      "after": "682f2e4f39571512de1cb3fd1a392c9beb849246f79c54fd0e473c681e53b3af"
+    },
+    "python/simz1_scale_contract.py": {
+      "before": "838b0e6a1c6871f299b16adbde193c4e248bb4138683f1688c6a4f86e252f707",
+      "after": "685f845a8823656aae5b5b5720090ba4e6d0bfc1bb7c42de2b68bb02a71325d8"
+    },
+    "python/simz1_visual_queues.js": {
+      "before": "bed4fa8b0b226454e17ab4a06fb0a0eb7535563bc9db43901e03b099de316102",
+      "after": "6fa64ffa1532947e27bf8e7b3b3a4e8465a9b8cbbc3ca92fd5179fd0fd424d1d"
+    },
+    "python/simz1_window_cache.py": {
+      "before": "dcea96a1336d5d82c2b618da93589f96d35314dad76a2c20aaaa1804e46bdea3",
+      "after": "bca7a893de4ce1ab349ebe0349556226bf02f99f565c3433d56af48f152c33a0"
+    },
+    "python/simz1_workflow_state.py": {
+      "before": "09ffaa6e5aa9d9d6710f9fef77b1168d3654d3562f00ec912bc47e9910ff151d",
+      "after": "5a167f387e56cadcadffc9644b940ae89e26e417ddb71af8a2a4fc6785f9803a"
+    },
+    "python/test_simz1_continuous_replay.py": {
+      "before": "d4942a7d287f759a5bac40aef3ab6fb2985541b7ccbcce03b7cf439e0d106fb4",
+      "after": "1e7140e644b7ab3d4e19325d70b6aec315170dfa25e06b703f84b888bd0c9d6f"
+    },
+    "python/test_simz1_freight_version.py": {
+      "before": "ef4e01fd335ba2ddc1b96cf4d797bfbe2938c51206a652b3e9b4f765c1cc41d7",
+      "after": "98022626e2ace8d49b615883d32d85052bd44d0778e10ca01219871e91947539"
+    },
+    "python/test_simz1_replay_workers.py": {
+      "before": "5f655f5eeb502579eb29971cee04fe0e903d54cf96929ec157e727669b19578b",
+      "after": "f5181aeb2c93a0327d1304814ca8fcdaf0afa3103d1c3c9c8056386bc2262a08"
+    },
+    "python/test_simz1_revalidate.py": {
+      "before": "29bce836811869b4136bf5f7383f1cdc0dfb174dcafa5fd22f409b296331f295",
+      "after": "6fe44adc32956c1bb654c89562513d6dcc25fe89ef4e5c43ef35ffe58d3670ff"
+    },
+    "python/test_simz1_window_cache.py": {
+      "before": "db33ad7875f87604c4c3d4b18037a2475c75255a82976b61df8b0ed9ae16a790",
+      "after": "3970eb09bd2620aa40b240f1829b7359a54d7ee9c5e19005a47ef92e96abf4d9"
+    },
+    "python/test_simz1_window_identity.cjs": {
+      "before": "5b49a46a50d3217cb28b4a67a12c5f250db61bbc217722fbbeef3ca5461e14a8",
+      "after": "8997265ec22379d5b1923aa8b7ba44b90b5dff0cadd73e0ca43ce54bf8a049b0"
+    },
+    "python/visualizador_z1_controls.js": {
+      "before": "0e54eae42b58a595752bca7a4c4028251f5d2294f51ec45072d848bbb38cb357",
+      "after": "a733680ff4beb9fac53c227a868787e8f20f0eb73b4944f9d457aceafed82901"
+    },
+    "scripts/replay/start_replay.py": {
+      "before": "c090c47daa3a05e7d95f7a5beaabf79de1c44f23a0067b66100f70d6bd9b64e6",
+      "after": "8ed3099c53969acba1525843cb458277082f387847ebe131cdc8d2f6da21191f"
+    },
+    "scripts/run_massive_z1_pasante_10it.ps1": {
+      "before": "8aecb5821165d4f3489bae7d403ca122860dadba5aa51cd655d7fb2981c944d1",
+      "after": "c497ab34112f386a252461ac0f9228b9d1d460c4bf8d0d687e4458da5138200f"
+    },
+    "scripts/run_simz1_180k_balanced_gateway.ps1": {
+      "before": "c006740fbba6e8efddf3bd469f8fabddc9b6417c000bc63a4311aee1fb965603",
+      "after": "d5c74210214f044cc58f89c73e7f2898d29919a7142c3a04da45b03a5eecd386"
+    },
+    "scripts/simz1_launch_contract.ps1": {
+      "before": "292fb3ab5103f7b3f202fecbc690183204896e0f4c77ca650fab406d88f8781b",
+      "after": "d39ec636b71a3482070c4d8bfd3c4c1c477acabf7a1b3a0f26af266bafe00c94"
+    },
+    "scripts/simz1_workflow.ps1": {
+      "before": "07c46ee78d8fc6c2a0a5d3e9fcfe5f339c64a23c688762776b37496df045aac7",
+      "after": "802d2b753c2aa539c200d91c9a0bc032e784cbdbff65515ea0234028b63a79ba"
+    },
+    "scripts/watch_simz1_110k.ps1": {
+      "before": "bcb995657d73a3019f963f82f16b30f6e34ac3f96df30f57e225dae4be857b3c",
+      "after": "db850c0db36a30e12681d1eb1a8191538019703ed3c818a2bcc81d7c622dc7bf"
+    },
+    "python/generate_montecarlo_z1.py": {
+      "before": "1f58a783a0c87958b2aea188163c2b34c8b93dc48218e65f5fcb22ea93d2235d",
+      "after": "94027912819cf571665478f37d571be38f539a1450e7e5abb8dbf863f4c48d1f"
+    },
+    "python/visualizador_z1_continuous.html": {
+      "before": "9c84ed27bf0f19a5a5fb62571e2a3a382f2020ccfa0c5bc02d9861bbe11449e7",
+      "after": "d03f62fbf3ac346942c721ddc71bb19af4743b1b3c802717c23cd474fbacb13c"
+    },
+    "scripts/replay/start_replay.ps1": {
+      "before": "8ab694f19c11262b9ccf0b792f7d48ea2029fcb54524e6bd8b5fdd3b7c50d38d",
+      "after": "255cd608c8a09472c2f5bc7c26f93f68c993440ac0fe9f2397ab7ed5c329e3ce"
+    },
+    "python/simz1_continuous_hud.js": {
+      "before": "f76cab2a27b3d6cdddc6beadf8d13b3d285b84e59e3ad9003e502021dac92b0f",
+      "after": "e96a3d5374da6513d55b069ad46034794234d61e210b7437e461fba904b27e29"
+    }
+  },
+  "additions": {
+    "python/simz1_queue_checkpoint.cjs": "079a9fac4c44024ae3fedae15417df7febcaf00bac8771270f699608a114ecc4",
+    "python/simz1_queue_checkpoint.py": "b0d48a0cf73be83bb7e7a83f6173247ec1134c5d817a511c0666710e1466396a",
+    "python/simz1_queue_checkpoint_library.py": "a29f6d85ba4035a7674d8c1212347d10742be136694ff14cb52d57ce2e33848a",
+    "python/simz1_queue_checkpoints.py": "6b0759e1000da6057bc407e12123e65a2a9991cfd80488280ad3c2f92dc0d0b2",
+    "python/simz1_queue_component_schedule.py": "372fd8bff1abe0c75e4d2d01d99ecba2a86c131f09a2efc874f91be58397e8bd",
+    "python/simz1_queue_result_trust.py": "2b7198528c629dfa2d30074e4703ff18fc27680ec91d664fbf002b01206d5808",
+    "python/simz1_queue_support.py": "e937032ccdf0c83d54bebfd09a91388a406d956233a07b55e95a2e5bc9e27aab",
+    "python/simz1_replay_spatial_cache.py": "dcf4e7c5561a631e1743bcfce303445e4f69a8b647ff7ce29c21f8f631207471",
+    "python/test_simz1_blocking_occupancy_single_queue.py": "c52af38b1d0bfc77e161cb38bb97a5dbd0493e4adc793bf941b502ed9ae22cdd",
+    "python/test_simz1_causal_queue_context.cjs": "0e27f7bfae8d0a6b9f1015eee06b32748295d045c87bea158c823b1a56108d91",
+    "python/test_simz1_causal_support_graph.py": "22523a0b680104f0156c8b4bb8add40aa5eb103f36ae692edc4524d1769ce88c",
+    "python/test_simz1_checkpoint_contract.py": "af96dcb533ac332b869074440fb6a9b10613ca4c511c0383c103b033a61878c1",
+    "python/test_simz1_checkpoint_library.py": "7978e7d71ad847c8d3986f1d712e2ee8cd16d75eefad029fd4a3983270f5587c",
+    "python/test_simz1_checkpoint_loader.cjs": "8acc983c497db690d798e9c11f14018948882e1a35f569cc9af5575197bfd9ae",
+    "python/test_simz1_checkpoint_pipeline.py": "551cc738f09fa0c374964faa24ff4504f4827fa87208d4d390285a15efebc997",
+    "python/test_simz1_queue_anchor_propagation.cjs": "7222026d124034875d536fc359e4c74b1af3fd4ffcb76e49ff2ff6e2e40e72a0",
+    "python/test_simz1_queue_checkpoints.cjs": "949d9d16006be64c658c42d10fe0ed09e3cd2bcf221965358c977e6995088b1d",
+    "python/test_simz1_queue_component_schedule.py": "6c98b911666c70bdf1f148fca08505e9c90fad477590f151fd8e8c58a2c32a7b",
+    "python/test_simz1_queue_result_trust.py": "6d68eaf19d276ad7c0f3db634f4e79592cf8ec383e35c56c53bc5314d18af0b9",
+    "python/test_simz1_queue_support.py": "8e5dbbf8e702d6a81f93ff6c2337b08e23b51fa4af3e8fdd0c702f739d32b27b",
+    "python/test_simz1_queue_support_integration.py": "63551431d68e270a1e5e793aba626e21bbde9446371fec919fb2b349825d2e25",
+    "python/test_simz1_random_experiment.py": "b6e8a908fbc0893b93e84e2e49c87ef2715776c69b22bd3d3da9a97099d1a9b7",
+    "python/test_simz1_random_launch.py": "b8c798049de8349bec6044e847b30eee403d737edb8d449a09b0581b7025e46c",
+    "python/test_simz1_replay_spatial_cache.py": "861f2cb0a885de9c5b31bfec8a5811f546f8d003f0abc6e5658939bd9c839a47",
+    "python/test_simz1_run10k_diagnostic.py": "2e74697e2e0d5f65a59fe2982264ad510cecfef15940d0c5b9db6f061abbdd4f",
+    "python/test_simz1_run10k_experiment.py": "551908aa598c4bb25690fe6d340ae08ee12b3d9e1374f905d49232d22fc7bc01",
+    "python/test_simz1_run10k_launch.py": "fefebab127fe536b63d6b17f5b98613513958efc7a6951de370b3312bb9948b6",
+    "scenarios/zona1/experiments/final-20261105-random-24h-v4.json": "79b91dc2764ab50a27cf8ed52c1e75a75d75e8c01bb75352d6ab7f8ddb649ca3",
+    "scenarios/zona1/experiments/final-20261105-run10k-24h-v5.json": "d5f2dc6ea1cbbb66b483c4ddece83c661afcd0302c573faf7e7bc13c59a7157e",
+    "python/test_simz1_preparation_identity.py": "fe149256f802092d5cbb91923f39efb7d694483101f47c86a727de692b49ea70",
+    "python/test_simz1_dryrun_identity.py": "aff94fc6ac23e21b665017468a0a92ebf45d207c87cdc910138e3bb23c9f0f2a",
+    "python/test_simz1_partial_visual.cjs": "a04fd2fec6a07dee7df06df1c3e873af0864e725de2b3dd989ff6f756e3b823e",
+    "python/test_simz1_partial_replay.py": "e973de6712c17d24807dec10ff7bbc605a03c9ff75fa2b33af81e429ffd3743d",
+    "python/test_simz1_load_scale.py": "c963e6d3d1848e95a477d87dadb3723e94d19076e9ee5eefd585341d7e99e027"
+  },
+  "previous_native_changes": {
+    "python/revalidar_simz1.py": {
+      "before": "146108b2785377bae6f6d1c4a4bc6bbe39fcf42c32065d4ccbe7be75de4332f8",
+      "after": "a7e60dd4469ed1169779156e59cefe74f67b47d61bc9b592a43d49d38e4e0eb4"
+    },
+    "python/simz1_balanced_launch_report.py": {
+      "before": "790b00133a5a5eb5422687d6d319337b8e080c30d1bef43ee8d36a179bf37c5c",
+      "after": "162ee7ff8dacc3b6bd6ea995c328e6bd2234555bd864c0fcc68a93187baf63ff"
+    },
+    "python/simz1_balanced_od_audit.py": {
+      "before": "143e68f6e2e097c094e80d790f4903bb45c348f2020613f832d952f12312c6c8",
+      "after": "55882fb7d132530ca29752d6bfe764355bae2f998038909085da56591586c396"
+    },
+    "python/simz1_run.py": {
+      "before": "767ffd045b7768656c27a631013cc2510501a13c619175ddfb35924a6df5b978",
+      "after": "7451f1663670102327f35662203727f294de58f2204a271c34aac22f5d70660b"
+    },
+    "python/simz1_temporal_passage.py": {
+      "before": "c19cc21777c13af3f7fadcd4c4563a6eafd0ee82b43e3384e118940b08058b05",
+      "after": "77ab1fafbd87a28a29f590598a0f3b56ddd2d398482a28a98a724009a2069a12"
+    },
+    "python/simz1_workflow_state.py": {
+      "before": "491a38fc8fdcaa30dfa6647180a5ca25866392d6794fe8f2e8b2aaeed442ed33",
+      "after": "09ffaa6e5aa9d9d6710f9fef77b1168d3654d3562f00ec912bc47e9910ff151d"
+    },
+    "python/test_simz1_fixed_day_reports.py": {
+      "before": "77902e5e50dc463d8ceaa45d580bacea430d27168d1362de7f3ac1adf894a4a4",
+      "after": "fc6c9908f36476f69d2875960a0825a0da006ed9944b9a69da1d3b7cc2eeec9b"
+    },
+    "python/test_simz1_revalidate.py": {
+      "before": "7e5fd8fb7673096b8de6d07b43b1c114ddc4f876f42322823c5be9bb31dddb79",
+      "after": "29bce836811869b4136bf5f7383f1cdc0dfb174dcafa5fd22f409b296331f295"
+    },
+    "python/test_simz1_temporal_passage.py": {
+      "before": "742ae2c20aab4e47ce20ba8d8297080c3a606fd4e26c73d5164a2c199a33c702",
+      "after": "2909c27d99701591fca2709f23b58b82491f047092025fd5db84aeffdb58efc9"
+    },
+    "python/test_simz1_trial_experiment.py": {
+      "before": "5b3648138e7c62232f03b4f1d76551e9fc0e54291e000b87a12eae72cc515ede",
+      "after": "26d761bf9f3c0bf4e2cb1b20d6717a4d02e4f77fa6cdfda80e87f0ca61411c63"
+    }
+  }
+}

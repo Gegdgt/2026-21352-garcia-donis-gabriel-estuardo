@@ -1,0 +1,1609 @@
+{
+  "provenance": {
+    "run_id": "simz1-ca9b7469f9bb480fb8764daf6a582455",
+    "iteration": 0,
+    "source_version": "1caa14e1c5e122ff56acbcdcc31b4b3b592499c202c147352bcf0b2537c4bf5e",
+    "note": "Three actual source boundary fragments omitted despite an available body before queue fallback correction."
+  },
+  "visual_lanes": {
+    "schema_version": 1,
+    "available": true,
+    "lane_width_m": 3,
+    "links": {
+      "osm_1196675344_0_backward": {
+        "num_lanes": 1,
+        "path": [
+          [
+            -90.51270320000123,
+            14.628247200000818
+          ],
+          [
+            -90.51264000000424,
+            14.628238400004534
+          ]
+        ],
+        "geometry_source": "effective_link_chord",
+        "length_m": 6.881415667162941,
+        "from_node": "11103901138",
+        "to_node": "11838259490",
+        "native_lanes": {
+          "osm_1196675344_0_backward.lane.0": {
+            "index": 0,
+            "represented_lanes": 1.0,
+            "start_m": 5.505132533730354,
+            "to_links": [
+              "osm_1196675344_0_forward",
+              "osm_60237266_2_forward"
+            ],
+            "to_lanes": []
+          },
+          "osm_1196675344_0_backward.original": {
+            "index": null,
+            "represented_lanes": 1.0,
+            "start_m": 6.881415667162941,
+            "to_links": [],
+            "to_lanes": [
+              "osm_1196675344_0_backward.lane.0"
+            ]
+          }
+        },
+        "source_way": "1196675344",
+        "reverse_link": "osm_1196675344_0_forward",
+        "opposing_lanes": 1,
+        "offset_eligible": true,
+        "lane_width_m": 3.0,
+        "width_source": "nominal_visual_estimate",
+        "lane_count_source": "effective_network_permlanes",
+        "lane_import_source": "assumed:one_lane",
+        "osm_tags": {
+          "highway": "service"
+        },
+        "missing_osm_tags": [
+          "oneway",
+          "lanes",
+          "lanes:forward",
+          "lanes:backward",
+          "lanes:both_ways",
+          "motorcar",
+          "motor_vehicle",
+          "vehicle",
+          "access",
+          "bridge",
+          "tunnel",
+          "layer",
+          "width",
+          "name"
+        ],
+        "pairing": "shared_axis_reverse_pair",
+        "movement_source": "effective_lane_definitions",
+        "allowed_to_links": [
+          "osm_1196675344_0_forward",
+          "osm_60237266_2_forward"
+        ]
+      },
+      "osm_1057486080_1_forward": {
+        "num_lanes": 3,
+        "path": [
+          [
+            -90.51587739999968,
+            14.627613699995944
+          ],
+          [
+            -90.51597979999976,
+            14.626908499995626
+          ]
+        ],
+        "geometry_source": "effective_link_chord",
+        "length_m": 78.84125001045511,
+        "from_node": "9717106095",
+        "to_node": "11101047780",
+        "native_lanes": {
+          "osm_1057486080_1_forward.lane.0": {
+            "index": 0,
+            "represented_lanes": 1.0,
+            "start_m": 63.07300000836409,
+            "to_links": [
+              "osm_1057486080_2_forward"
+            ],
+            "to_lanes": []
+          },
+          "osm_1057486080_1_forward.lane.1": {
+            "index": 1,
+            "represented_lanes": 1.0,
+            "start_m": 63.07300000836409,
+            "to_links": [
+              "osm_1057486080_2_forward"
+            ],
+            "to_lanes": []
+          },
+          "osm_1057486080_1_forward.lane.2": {
+            "index": 2,
+            "represented_lanes": 1.0,
+            "start_m": 63.07300000836409,
+            "to_links": [
+              "osm_1057486080_2_forward"
+            ],
+            "to_lanes": []
+          },
+          "osm_1057486080_1_forward.original": {
+            "index": null,
+            "represented_lanes": 3.0,
+            "start_m": 78.84125001045511,
+            "to_links": [],
+            "to_lanes": [
+              "osm_1057486080_1_forward.lane.0",
+              "osm_1057486080_1_forward.lane.1",
+              "osm_1057486080_1_forward.lane.2"
+            ]
+          }
+        },
+        "source_way": "1057486080",
+        "reverse_link": null,
+        "opposing_lanes": 0,
+        "offset_eligible": true,
+        "lane_width_m": 3.0,
+        "width_source": "nominal_visual_estimate",
+        "lane_count_source": "effective_network_permlanes",
+        "lane_import_source": "osm:lanes",
+        "osm_tags": {
+          "oneway": "yes",
+          "lanes": "3",
+          "highway": "primary",
+          "name": "6a Avenida"
+        },
+        "missing_osm_tags": [
+          "lanes:forward",
+          "lanes:backward",
+          "lanes:both_ways",
+          "motorcar",
+          "motor_vehicle",
+          "vehicle",
+          "access",
+          "bridge",
+          "tunnel",
+          "layer",
+          "width"
+        ],
+        "pairing": "unpaired_directed_link",
+        "movement_source": "effective_lane_definitions",
+        "allowed_to_links": [
+          "osm_1057486080_2_forward"
+        ]
+      },
+      "osm_30279769_41_forward": {
+        "num_lanes": 2,
+        "path": [
+          [
+            -90.5171676999982,
+            14.640834399997786
+          ],
+          [
+            -90.51715840000385,
+            14.640898200000066
+          ]
+        ],
+        "geometry_source": "effective_link_chord",
+        "length_m": 7.133363556815663,
+        "from_node": "13571721616",
+        "to_node": "333720828",
+        "native_lanes": {
+          "osm_30279769_41_forward.lane.0": {
+            "index": 0,
+            "represented_lanes": 1.0,
+            "start_m": 5.706690845452531,
+            "to_links": [
+              "osm_30279769_42_forward",
+              "osm_48273209_15_forward"
+            ],
+            "to_lanes": []
+          },
+          "osm_30279769_41_forward.lane.1": {
+            "index": 1,
+            "represented_lanes": 1.0,
+            "start_m": 5.706690845452531,
+            "to_links": [
+              "osm_30279769_42_forward",
+              "osm_48273209_15_forward"
+            ],
+            "to_lanes": []
+          },
+          "osm_30279769_41_forward.original": {
+            "index": null,
+            "represented_lanes": 2.0,
+            "start_m": 7.133363556815663,
+            "to_links": [],
+            "to_lanes": [
+              "osm_30279769_41_forward.lane.0",
+              "osm_30279769_41_forward.lane.1"
+            ]
+          }
+        },
+        "source_way": "30279769",
+        "reverse_link": null,
+        "opposing_lanes": 0,
+        "offset_eligible": true,
+        "lane_width_m": 3.0,
+        "width_source": "nominal_visual_estimate",
+        "lane_count_source": "effective_network_permlanes",
+        "lane_import_source": "osm:lanes",
+        "osm_tags": {
+          "oneway": "yes",
+          "lanes": "2",
+          "highway": "tertiary",
+          "name": "3a Avenida"
+        },
+        "missing_osm_tags": [
+          "lanes:forward",
+          "lanes:backward",
+          "lanes:both_ways",
+          "motorcar",
+          "motor_vehicle",
+          "vehicle",
+          "access",
+          "bridge",
+          "tunnel",
+          "layer",
+          "width"
+        ],
+        "pairing": "unpaired_directed_link",
+        "movement_source": "effective_lane_definitions",
+        "allowed_to_links": [
+          "osm_30279769_42_forward",
+          "osm_48273209_15_forward"
+        ]
+      }
+    }
+  },
+  "temporal_policy": {
+    "schema_version": "simz1-weekday-continuous-v1",
+    "policy_sha256": "337a3be384a1a05d208509dbfa8ad6f3cfe793f2e29dfd95e666a37e8ac28e32",
+    "configuration": {
+      "schema_version": "simz1-weekday-continuous-v1",
+      "assumption_status": "synthetic_not_calibrated",
+      "timezone": "America/Guatemala",
+      "study_date": "2026-10-28",
+      "temporal_seed": 20261028,
+      "departure_adaptation": "fixed",
+      "windows": {
+        "warmup_seconds": 21600,
+        "study_seconds": 86400,
+        "post_demand_seconds": 21600,
+        "drain_seconds": 7200
+      },
+      "intensity": {
+        "interpolation": "linear",
+        "step_seconds": 900,
+        "knots": [
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.1772949017,
+          0.3272949017,
+          0.6018331172,
+          1.0015642766,
+          1.4197311594,
+          1.8202688406,
+          2.1811408217,
+          2.4308719811,
+          2.52,
+          2.52,
+          2.52,
+          2.52,
+          2.52,
+          2.52,
+          2.4657233587,
+          2.3094399988,
+          2.07,
+          1.7762833599,
+          1.4637166401,
+          1.17,
+          0.9305600012,
+          0.7742766413,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.72,
+          0.7640491353,
+          0.8918847051,
+          1.0909932729,
+          1.3418847051,
+          1.62,
+          1.8981152949,
+          2.1490067271,
+          2.3481152949,
+          2.4759508647,
+          2.52,
+          2.52,
+          2.52,
+          2.52,
+          2.52,
+          2.52,
+          2.52,
+          2.5063269777,
+          2.4657233587,
+          2.3994228634,
+          2.3094399988,
+          2.1985088487,
+          2.07,
+          1.9175958769,
+          1.736090981,
+          1.5321320344,
+          1.3137166401,
+          1.0898275845,
+          0.87,
+          0.6638454378,
+          0.4805600012,
+          0.3284451022,
+          0.2144690202,
+          0.1438952744,
+          0.12,
+          0.12,
+          0.12
+        ],
+        "minimum_intensity": 0.12,
+        "reference_windows_local": [
+          "05:30-08:45",
+          "16:30-20:30"
+        ]
+      },
+      "profile_multipliers": {},
+      "assumptions": [
+        "Synthetic relative intensity, not official counts or calibrated shares.",
+        "Base0.12 plus daytime0.6 and two peak additions1.8. Knots approximate cosine ramps at15-minute resolution; exact sampling uses their linear interpolation.",
+        "Morning peak ramps04:45-06:30 and07:45-10:00. Evening peak ramps15:00-17:30 and19:00-23:30; daytime baseline ramps04:15-05:30 and20:30-23:30.",
+        "All six road profiles share this curve by default; explicit periodic per-profile multiplier knots may override shape without changing N/profile allocations.",
+        "Six hours warmup and six hours next-day demand followed by two hours no-new-demand drain are configurable experiment assumptions, not proof that initialization/final-censoring bias disappears.",
+        "Context count equals main-cohort intensity rate integrated over each auxiliary window, rounded by largest remainders with half-up aggregate.",
+        "Study is Wednesday2026-10-28; technical origin Tuesday18:00 local, so the simulated service dates are weekdays."
+      ]
+    },
+    "timezone": "America/Guatemala",
+    "study_date": "2026-10-28",
+    "temporal_seed": 20261028,
+    "departure_adaptation": "fixed",
+    "windows": {
+      "warmup": {
+        "start_seconds": 0,
+        "end_seconds": 21600
+      },
+      "study": {
+        "start_seconds": 21600,
+        "end_seconds": 108000
+      },
+      "post_demand": {
+        "start_seconds": 108000,
+        "end_seconds": 129600
+      },
+      "drain": {
+        "start_seconds": 129600,
+        "end_seconds": 136800
+      },
+      "simulation": {
+        "start_seconds": 0,
+        "end_seconds": 136800
+      }
+    },
+    "technical_origin_local": "2026-10-27T18:00:00-06:00",
+    "study_origin_local": "2026-10-28T00:00:00-06:00",
+    "technical_end_local": "2026-10-29T08:00:00-06:00",
+    "civil_utc_offset_seconds": -21600,
+    "intensity": {
+      "interpolation": "linear",
+      "step_seconds": 900,
+      "knots": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.1772949017,
+        0.3272949017,
+        0.6018331172,
+        1.0015642766,
+        1.4197311594,
+        1.8202688406,
+        2.1811408217,
+        2.4308719811,
+        2.52,
+        2.52,
+        2.52,
+        2.52,
+        2.52,
+        2.52,
+        2.4657233587,
+        2.3094399988,
+        2.07,
+        1.7762833599,
+        1.4637166401,
+        1.17,
+        0.9305600012,
+        0.7742766413,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.72,
+        0.7640491353,
+        0.8918847051,
+        1.0909932729,
+        1.3418847051,
+        1.62,
+        1.8981152949,
+        2.1490067271,
+        2.3481152949,
+        2.4759508647,
+        2.52,
+        2.52,
+        2.52,
+        2.52,
+        2.52,
+        2.52,
+        2.52,
+        2.5063269777,
+        2.4657233587,
+        2.3994228634,
+        2.3094399988,
+        2.1985088487,
+        2.07,
+        1.9175958769,
+        1.736090981,
+        1.5321320344,
+        1.3137166401,
+        1.0898275845,
+        0.87,
+        0.6638454378,
+        0.4805600012,
+        0.3284451022,
+        0.2144690202,
+        0.1438952744,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "minimum_intensity": 0.12,
+      "reference_windows_local": [
+        "05:30-08:45",
+        "16:30-20:30"
+      ]
+    },
+    "profile_multipliers": {},
+    "context_count_method": "Per-profile expected intensity mass relative to main; largest remainder, half-up total",
+    "assumptions": [
+      "Synthetic relative intensity, not official counts or calibrated shares.",
+      "Base0.12 plus daytime0.6 and two peak additions1.8. Knots approximate cosine ramps at15-minute resolution; exact sampling uses their linear interpolation.",
+      "Morning peak ramps04:45-06:30 and07:45-10:00. Evening peak ramps15:00-17:30 and19:00-23:30; daytime baseline ramps04:15-05:30 and20:30-23:30.",
+      "All six road profiles share this curve by default; explicit periodic per-profile multiplier knots may override shape without changing N/profile allocations.",
+      "Six hours warmup and six hours next-day demand followed by two hours no-new-demand drain are configurable experiment assumptions, not proof that initialization/final-censoring bias disappears.",
+      "Context count equals main-cohort intensity rate integrated over each auxiliary window, rounded by largest remainders with half-up aggregate.",
+      "Study is Wednesday2026-10-28; technical origin Tuesday18:00 local, so the simulated service dates are weekdays."
+    ]
+  },
+  "cases": [
+    {
+      "time": 90000,
+      "segment": {
+        "vehicle": "z1_00607",
+        "Agent_ID": "z1_00607",
+        "Link_ID": "osm_1196675344_0_backward",
+        "Profile": "normal",
+        "Speed_kmh": 0.0,
+        "Agent_Type": "Normal",
+        "Agent_Schema": "simz1-road-profiles-v1",
+        "Vehicle_Type": "Normal",
+        "Vehicle_Type_Source": "effective_vehicles",
+        "Vehicle_PCU": 1.0,
+        "Vehicle_Dimensions": {
+          "length_m": 4.5,
+          "width_m": 1.8,
+          "source": "Explicit synthetic scenario assumption; not measured geometry",
+          "assumed": true,
+          "provenance": {
+            "vehicle_type": "Normal",
+            "artifact_source": "effective_vehicles",
+            "artifact_sha256": "f148af0f94a00b74a15796d84a6992b87b80f1e32a7f5471d8300ebea8329dd7"
+          }
+        },
+        "Driving_Profile": "normal",
+        "Vehicle_Physical_Dimensions": {
+          "length_m": 4.5,
+          "width_m": 1.8,
+          "source": "MATSim_VehicleType_XML",
+          "nature": "configured",
+          "measurement_status": "not_established_by_vehicle_type",
+          "assumed": true,
+          "provenance": {
+            "vehicle_type": "Normal",
+            "artifact_source": "effective_vehicles",
+            "artifact_path": "output/output_vehicles.xml.gz",
+            "artifact_sha256": "f148af0f94a00b74a15796d84a6992b87b80f1e32a7f5471d8300ebea8329dd7"
+          }
+        },
+        "color": [
+          255,
+          255,
+          255
+        ],
+        "path": [
+          [
+            -90.51264000000424,
+            14.628238400004534
+          ],
+          [
+            -90.51264000000424,
+            14.628238400004534
+          ]
+        ],
+        "timestamps": [
+          89999.0,
+          90006.0
+        ],
+        "Inferred": false,
+        "Distance_m": 0.0,
+        "Boundary_Provenance": {
+          "start": "vehicle enters traffic",
+          "end": "left link",
+          "start_relative": 1.0,
+          "end_relative": 1,
+          "distance": "network_length_fraction"
+        },
+        "Movement_End": 89999.0,
+        "Motion_Speed_kmh": 0,
+        "Wait_Evidence": "fixed_visual_geometry",
+        "Observed_Waits": {
+          "priority_stop": {
+            "first": 90001.0,
+            "last": 90005.0,
+            "attempts": 5,
+            "sources": [
+              "SimZ1_QNode_strict_receiver_v1"
+            ],
+            "position_evidence": "queue_exit",
+            "wait_category": "mandatory_stop"
+          }
+        },
+        "Motion_Provenance": {
+          "method": "zero_distance_boundary",
+          "fallback_reason": null,
+          "vehicle_limit_mps": 13.88888888888889,
+          "link_speed_at_entry_mps": 4.166666666666667,
+          "minimum_link_speed_in_interval_mps": 4.166666666666667,
+          "changes_inside_interval": false,
+          "continuous_position_observed": false
+        },
+        "Replay_Journey_Key": "60c753ceeba37763a42584b54795d716fb0a841ebb04b7a98ade3448d194369d",
+        "Motion_Plan": {
+          "version": 1,
+          "phases": [
+            [
+              89999.0,
+              90006.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "distance_m": 0.0,
+          "start_time": 89999.0,
+          "end_time": 90006.0,
+          "cap_mps": 4.166666666666667,
+          "acceleration_mps2": 1.5,
+          "deceleration_mps2": 2.5,
+          "reference_acceleration_mps2": 1.5,
+          "reference_deceleration_mps2": 2.5,
+          "rate_adaptation_factor": 1.0,
+          "source": "native_wait",
+          "fallback_reason": null,
+          "feasible": true,
+          "continuous_position_observed": false,
+          "hold_start": null,
+          "status": "stationary",
+          "entry_speed_mps": 0.0,
+          "exit_speed_mps": 0.0,
+          "profile": "Normal",
+          "profile_source": "default_visual_reference",
+          "recorded_profile": "normal",
+          "rate_model": "visual_interpolation_only_not_qsim_acceleration",
+          "limits_complete": true,
+          "native_wait_boundary": 90001.0,
+          "entry_continuity": "unobserved_boundary",
+          "exit_continuity": "matched"
+        },
+        "Max_Speed_kmh": 0.0
+      },
+      "trip": {
+        "Departure": 89999.0,
+        "Trip_ID": "z1_00607:trip:0001",
+        "Person_ID": "z1_00607",
+        "Trip_Index": 1,
+        "Status": "completed",
+        "Abort": null,
+        "Last_Observed_Time": 90249.0,
+        "Observation_End": 136800.0,
+        "Observation_End_Provenance": "configured_horizon",
+        "Origin_Node": "11838259490",
+        "Destination_Node": "12093678851",
+        "Arrival": 90249.0,
+        "Origin_Position": [
+          -90.51264000000424,
+          14.628238400004534
+        ],
+        "Destination_Position": [
+          -90.51962500000333,
+          14.631947500000697
+        ],
+        "Traffic_Entry": 89999.0,
+        "Traffic_Exit": 90249.0,
+        "Traffic_Retirement": null,
+        "Traffic_Intervals": [
+          {
+            "vehicle": "z1_00607",
+            "start": 89999.0,
+            "end": 90249.0,
+            "start_event": "vehicle enters traffic",
+            "end_event": "vehicle leaves traffic",
+            "entry_link": "osm_1196675344_0_backward"
+          }
+        ],
+        "Agent_Type": "Normal",
+        "Agent_Schema": "simz1-road-profiles-v1",
+        "Vehicle_Type": "Normal",
+        "Vehicle_Type_Source": "person_attribute",
+        "Vehicle_PCU": null
+      }
+    },
+    {
+      "time": 90000,
+      "segment": {
+        "vehicle": "ptbus_transmetro_L12_017",
+        "Agent_ID": null,
+        "Link_ID": "osm_1057486080_1_forward",
+        "Profile": "No disponible",
+        "Speed_kmh": 32.43754286144439,
+        "Agent_Type": null,
+        "Agent_Schema": null,
+        "Vehicle_Type": "Transmetro_RigidProxy",
+        "Vehicle_Type_Source": "verified_transit_vehicles",
+        "Vehicle_PCU": 3.0,
+        "Vehicle_Dimensions": {
+          "length_m": 13.5,
+          "width_m": 2.5,
+          "source": "verified_transit_vehicles:scenario_assumption_not_unit_measurement",
+          "assumed": true,
+          "articulated": false,
+          "provenance": {
+            "vehicle_type": "Transmetro_RigidProxy",
+            "artifact_source": "verified_transit_vehicles",
+            "artifact_sha256": "600cf55dce271c5142a2beb7d5b04449c92c41db099acb72f5082e626306e336"
+          }
+        },
+        "Driving_Profile": null,
+        "Vehicle_Physical_Dimensions": {
+          "length_m": 13.5,
+          "width_m": 2.5,
+          "source": "MATSim_VehicleType_XML",
+          "nature": "configured",
+          "measurement_status": "not_established_by_vehicle_type",
+          "assumed": null,
+          "provenance": {
+            "vehicle_type": "Transmetro_RigidProxy",
+            "artifact_source": "verified_transit_vehicles",
+            "artifact_path": "inputs/transit-weekday/transitVehicles.xml",
+            "artifact_sha256": "600cf55dce271c5142a2beb7d5b04449c92c41db099acb72f5082e626306e336"
+          }
+        },
+        "Vehicle_Family": "bus",
+        "Driver_ID": "pt_ptbus_transmetro_L12_017_Transmetro_RigidProxy",
+        "color": [
+          255,
+          210,
+          40
+        ],
+        "path": [
+          [
+            -90.5158978799997,
+            14.627472659995881
+          ],
+          [
+            -90.51597979999976,
+            14.626908499995626
+          ]
+        ],
+        "timestamps": [
+          89995.0,
+          90002.0
+        ],
+        "Inferred": false,
+        "Distance_m": 63.07300000836409,
+        "Boundary_Provenance": {
+          "start": "VehicleDepartsAtFacility",
+          "end": "left link",
+          "start_relative": 0.19999999999999996,
+          "end_relative": 1,
+          "distance": "network_length_fraction"
+        },
+        "Movement_End": 90002.0,
+        "Motion_Speed_kmh": 32.43754286144439,
+        "Wait_Evidence": "none_estimated",
+        "Observed_Waits": {},
+        "Motion_Provenance": {
+          "method": "minimum_link_vehicle_speed_at_queue_entry",
+          "fallback_reason": null,
+          "vehicle_limit_mps": 13.8888888889,
+          "link_speed_at_entry_mps": 11.11111111111111,
+          "minimum_link_speed_in_interval_mps": 11.11111111111111,
+          "changes_inside_interval": false,
+          "continuous_position_observed": false
+        },
+        "Replay_Journey_Key": "98271d433cd8529114adc37bd3204776eb5f2a531029f8f0ecb9b0c360b58c68",
+        "Motion_Plan": {
+          "version": 1,
+          "phases": [
+            [
+              89995.0,
+              89997.6468600002,
+              0.0,
+              0.0,
+              4.197846168768592
+            ],
+            [
+              89997.6468600002,
+              90002.0,
+              14.704777778895117,
+              11.11111111111111,
+              0.0
+            ]
+          ],
+          "distance_m": 63.07300000836409,
+          "start_time": 89995.0,
+          "end_time": 90002.0,
+          "cap_mps": 11.11111111111111,
+          "acceleration_mps2": 4.197846168768592,
+          "deceleration_mps2": 6.996410281280987,
+          "reference_acceleration_mps2": 1.5,
+          "reference_deceleration_mps2": 2.5,
+          "rate_adaptation_factor": 2.798564112512395,
+          "source": "continuous_link",
+          "fallback_reason": null,
+          "feasible": true,
+          "continuous_position_observed": false,
+          "hold_start": null,
+          "status": "kinematic",
+          "entry_speed_mps": 0.0,
+          "exit_speed_mps": 11.11111111111111,
+          "profile": "Normal",
+          "profile_source": "default_visual_reference",
+          "recorded_profile": "No disponible",
+          "rate_model": "visual_interpolation_only_not_qsim_acceleration",
+          "limits_complete": true,
+          "native_wait_boundary": null,
+          "entry_continuity": "matched",
+          "exit_continuity": "matched"
+        },
+        "Max_Speed_kmh": 56.76570000752767
+      },
+      "trip": {
+        "Departure": 89833.0,
+        "Trip_ID": "transit:[\"ptbus_transmetro_L12_017\",\"transmetro_L12__20261028\",\"L12_14106867_part1__20261028\",\"ptbus_transmetro_L12_017_d0092__20261028\"]",
+        "Person_ID": null,
+        "Trip_Index": 117,
+        "Status": "completed",
+        "Abort": null,
+        "Last_Observed_Time": 90209.0,
+        "Observation_End": 136800.0,
+        "Observation_End_Provenance": "configured_horizon",
+        "Origin_Node": "12093678827",
+        "Destination_Node": "9716086546",
+        "Arrival": 90209.0,
+        "Origin_Position": [
+          -90.52158180000193,
+          14.625537800001165
+        ],
+        "Destination_Position": [
+          -90.5122661,
+          14.630137899999998
+        ],
+        "Traffic_Entry": 89833.0,
+        "Traffic_Exit": 90209.0,
+        "Traffic_Retirement": null,
+        "Traffic_Intervals": [
+          {
+            "vehicle": "ptbus_transmetro_L12_017",
+            "start": 89833.0,
+            "end": 90209.0,
+            "start_event": "vehicle enters traffic",
+            "end_event": "vehicle leaves traffic",
+            "entry_link": "osm_1057416056_0_forward"
+          }
+        ],
+        "Agent_Type": null,
+        "Agent_Schema": null,
+        "Vehicle_Type": "Transmetro_RigidProxy",
+        "Vehicle_Type_Source": "verified_transit_vehicles",
+        "Vehicle_PCU": 3.0,
+        "Vehicle_Dimensions": {
+          "length_m": 13.5,
+          "width_m": 2.5,
+          "source": "verified_transit_vehicles:scenario_assumption_not_unit_measurement",
+          "assumed": true,
+          "articulated": false,
+          "provenance": {
+            "vehicle_type": "Transmetro_RigidProxy",
+            "artifact_source": "verified_transit_vehicles",
+            "artifact_sha256": "600cf55dce271c5142a2beb7d5b04449c92c41db099acb72f5082e626306e336"
+          }
+        },
+        "Driving_Profile": null,
+        "Vehicle_Physical_Dimensions": {
+          "length_m": 13.5,
+          "width_m": 2.5,
+          "source": "MATSim_VehicleType_XML",
+          "nature": "configured",
+          "measurement_status": "not_established_by_vehicle_type",
+          "assumed": null,
+          "provenance": {
+            "vehicle_type": "Transmetro_RigidProxy",
+            "artifact_source": "verified_transit_vehicles",
+            "artifact_path": "inputs/transit-weekday/transitVehicles.xml",
+            "artifact_sha256": "600cf55dce271c5142a2beb7d5b04449c92c41db099acb72f5082e626306e336"
+          }
+        },
+        "Vehicle_Family": "bus",
+        "Driver_ID": "pt_ptbus_transmetro_L12_017_Transmetro_RigidProxy",
+        "Transit": {
+          "schema": "simz1-transit-replay-v1",
+          "vehicle_id": "ptbus_transmetro_L12_017",
+          "driver_id": "pt_ptbus_transmetro_L12_017_Transmetro_RigidProxy",
+          "line_id": "transmetro_L12__20261028",
+          "route_id": "L12_14106867_part1__20261028",
+          "departure_id": "ptbus_transmetro_L12_017_d0092__20261028",
+          "operator": "transmetro",
+          "service_id": "transmetro_L12__20261028",
+          "domain_scope": "computational_network",
+          "source": {
+            "schedule_sha256": "729e84b34322c09c433a2ba87eb83e9cad3b6f80e54df50a8a41b469874cb0fe",
+            "vehicles_sha256": "600cf55dce271c5142a2beb7d5b04449c92c41db099acb72f5082e626306e336",
+            "lanes_sha256": "9ce9b1191173408fbf1b77a211f1b7677b9ff092eb2760cf5439bf2ca48ce251"
+          },
+          "route_links": [
+            "osm_1057416056_0_forward",
+            "osm_1057416056_1_forward",
+            "osm_792918640_0_forward",
+            "osm_381158282_0_forward",
+            "osm_381158282_1_forward",
+            "osm_381158282_2_forward",
+            "osm_381158282_3_forward",
+            "osm_381158282_4_forward",
+            "osm_381158282_5_forward",
+            "osm_1521208741_0_forward",
+            "osm_1521208741_1_forward",
+            "osm_1521208741_2_forward",
+            "osm_1521208741_3_forward",
+            "osm_64387808_0_forward",
+            "osm_64387808_1_forward",
+            "osm_64387808_2_forward",
+            "osm_64387808_3_forward",
+            "osm_60237257_0_forward",
+            "osm_60237257_1_forward",
+            "osm_60237257_2_forward",
+            "osm_60237257_3_forward",
+            "osm_60237257_4_forward",
+            "osm_60237257_5_forward",
+            "osm_64387809_0_forward",
+            "osm_64387809_1_forward",
+            "osm_64387809_2_forward",
+            "osm_64387809_3_forward",
+            "osm_64387809_4_forward",
+            "osm_64387809_5_forward",
+            "osm_64387809_6_forward",
+            "osm_64387809_7_forward",
+            "osm_60237259_0_forward",
+            "osm_60237259_1_forward",
+            "osm_60237259_2_forward",
+            "osm_400843678_0_forward",
+            "osm_1521207432_0_forward",
+            "osm_60237256_0_forward",
+            "osm_1057486080_0_forward",
+            "osm_1057486080_1_forward",
+            "osm_1057486080_2_forward",
+            "osm_34994087_0_forward",
+            "osm_34994087_1_forward",
+            "osm_34994087_2_forward",
+            "osm_34994087_3_forward",
+            "osm_34994087_4_forward",
+            "osm_34994087_5_forward",
+            "osm_1241482280_0_forward",
+            "osm_1241482280_1_forward",
+            "osm_1305621751_0_forward",
+            "osm_1057416059_0_forward",
+            "osm_1057416059_1_forward",
+            "osm_1057416059_2_forward",
+            "osm_1057416059_3_forward",
+            "osm_1057416059_4_forward",
+            "osm_1057416059_5_forward",
+            "osm_1057416059_6_forward",
+            "osm_1057416059_7_forward",
+            "osm_1057416059_8_forward",
+            "osm_34993910_0_forward",
+            "osm_1304369291_0_forward",
+            "osm_1304369291_1_forward",
+            "osm_1304369291_2_forward",
+            "osm_1304369291_3_forward",
+            "osm_1304369291_4_forward",
+            "osm_1479114531_0_forward",
+            "osm_60237266_0_forward",
+            "osm_60237266_1_forward",
+            "osm_60237266_2_forward",
+            "osm_60237266_3_forward",
+            "osm_60237266_4_forward",
+            "osm_60237266_5_forward",
+            "osm_60237266_6_forward",
+            "osm_60237266_7_forward",
+            "osm_60237266_8_forward",
+            "transit_osm_1057416062_0_forward",
+            "transit_osm_1057066512_0_forward",
+            "transit_osm_1057066512_1_forward"
+          ],
+          "stop_ids": [
+            "L12_14106867_part1_entry_L12_14106867_part1",
+            "gis_station_41_L12_14106867_part1",
+            "gis_station_40_L12_14106867_part1"
+          ],
+          "activity_intervals": [
+            {
+              "start": 89833.0,
+              "end": 89833.0,
+              "state": "stop",
+              "facility_id": "L12_14106867_part1_entry_L12_14106867_part1",
+              "source": "native_facility_events",
+              "link_id": "osm_1057416056_0_forward",
+              "placement": "nonblocking_proxy",
+              "dwell_basis": "explicit_scenario_assumption",
+              "is_blocking_lane": false,
+              "position_source": "MATSim15_single_queue_exit_or_native_traffic_entry",
+              "relative_position": 1
+            },
+            {
+              "start": 89970.0,
+              "end": 89995.0,
+              "state": "stop",
+              "facility_id": "gis_station_41_L12_14106867_part1",
+              "source": "native_facility_events",
+              "link_id": "osm_1057486080_1_forward",
+              "placement": "nonblocking_proxy",
+              "dwell_basis": "explicit_scenario_assumption",
+              "is_blocking_lane": false,
+              "position_source": "native_lane_membership_and_verified_lane_endpoint",
+              "relative_position": 0.19999999999999996,
+              "lane_id": "osm_1057486080_1_forward.original"
+            },
+            {
+              "start": 90184.0,
+              "end": 90209.0,
+              "state": "stop",
+              "facility_id": "gis_station_40_L12_14106867_part1",
+              "source": "native_facility_events",
+              "link_id": "transit_osm_1057066512_1_forward",
+              "placement": "nonblocking_proxy",
+              "dwell_basis": "explicit_scenario_assumption",
+              "is_blocking_lane": false,
+              "position_source": "MATSim15_QLinkImpl_single_queue_exit_verified_no_lane_assignment",
+              "relative_position": 1
+            }
+          ],
+          "terminal_status": "between_services",
+          "service_end_confirmed": false,
+          "completion_source": "native_driver_arrival_after_traffic_exit"
+        }
+      }
+    },
+    {
+      "time": 129600,
+      "segment": {
+        "vehicle": "ptbus_tubus_802_006",
+        "Agent_ID": null,
+        "Link_ID": "osm_30279769_41_forward",
+        "Profile": "No disponible",
+        "Speed_kmh": 10.272043521814556,
+        "Agent_Type": null,
+        "Agent_Schema": null,
+        "Vehicle_Type": "TuBus_RigidProxy",
+        "Vehicle_Type_Source": "verified_transit_vehicles",
+        "Vehicle_PCU": 2.5,
+        "Vehicle_Dimensions": {
+          "length_m": 12.0,
+          "width_m": 2.5,
+          "source": "verified_transit_vehicles:scenario_assumption_not_unit_measurement",
+          "assumed": true,
+          "articulated": false,
+          "provenance": {
+            "vehicle_type": "TuBus_RigidProxy",
+            "artifact_source": "verified_transit_vehicles",
+            "artifact_sha256": "600cf55dce271c5142a2beb7d5b04449c92c41db099acb72f5082e626306e336"
+          }
+        },
+        "Driving_Profile": null,
+        "Vehicle_Physical_Dimensions": {
+          "length_m": 12.0,
+          "width_m": 2.5,
+          "source": "MATSim_VehicleType_XML",
+          "nature": "configured",
+          "measurement_status": "not_established_by_vehicle_type",
+          "assumed": null,
+          "provenance": {
+            "vehicle_type": "TuBus_RigidProxy",
+            "artifact_source": "verified_transit_vehicles",
+            "artifact_path": "inputs/transit-weekday/transitVehicles.xml",
+            "artifact_sha256": "600cf55dce271c5142a2beb7d5b04449c92c41db099acb72f5082e626306e336"
+          }
+        },
+        "Vehicle_Family": "bus",
+        "Driver_ID": "pt_ptbus_tubus_802_006_TuBus_RigidProxy",
+        "color": [
+          245,
+          65,
+          65
+        ],
+        "path": [
+          [
+            -90.51716583999932,
+            14.640847159998241
+          ],
+          [
+            -90.51715840000385,
+            14.640898200000066
+          ]
+        ],
+        "timestamps": [
+          129600.0,
+          129602.0
+        ],
+        "Inferred": false,
+        "Distance_m": 5.706690845452531,
+        "Boundary_Provenance": {
+          "start": "VehicleDepartsAtFacility",
+          "end": "left link",
+          "start_relative": 0.19999999999999996,
+          "end_relative": 1,
+          "distance": "network_length_fraction"
+        },
+        "Movement_End": 129602.0,
+        "Motion_Speed_kmh": 10.272043521814556,
+        "Wait_Evidence": "none_estimated",
+        "Observed_Waits": {},
+        "Motion_Provenance": {
+          "method": "minimum_link_vehicle_speed_at_queue_entry",
+          "fallback_reason": null,
+          "vehicle_limit_mps": 13.8888888889,
+          "link_speed_at_entry_mps": 8.333333333333334,
+          "minimum_link_speed_in_interval_mps": 8.333333333333334,
+          "changes_inside_interval": false,
+          "continuous_position_observed": false
+        },
+        "Replay_Journey_Key": "e7ec47ae70f197f0b850e864037c1da860cec4bc90289d94f3b6d93e06685622",
+        "Motion_Plan": {
+          "version": 1,
+          "phases": [
+            [
+              129600.0,
+              129601.58113883075,
+              0.0,
+              0.0,
+              3.231286802329123
+            ],
+            [
+              129601.58113883075,
+              129602.0,
+              4.039108506283291,
+              5.109113036433721,
+              -5.385478003881872
+            ]
+          ],
+          "distance_m": 5.706690845452531,
+          "start_time": 129600.0,
+          "end_time": 129602.0,
+          "cap_mps": 8.333333333333334,
+          "acceleration_mps2": 3.231286802329123,
+          "deceleration_mps2": 5.385478003881872,
+          "reference_acceleration_mps2": 1.5,
+          "reference_deceleration_mps2": 2.5,
+          "rate_adaptation_factor": 2.1541912015527487,
+          "source": "continuous_link",
+          "fallback_reason": null,
+          "feasible": true,
+          "continuous_position_observed": false,
+          "hold_start": null,
+          "status": "kinematic",
+          "entry_speed_mps": 0.0,
+          "exit_speed_mps": 2.8533454227262656,
+          "profile": "Normal",
+          "profile_source": "default_visual_reference",
+          "recorded_profile": "No disponible",
+          "rate_model": "visual_interpolation_only_not_qsim_acceleration",
+          "limits_complete": true,
+          "native_wait_boundary": null,
+          "entry_continuity": "matched",
+          "exit_continuity": "matched"
+        },
+        "Max_Speed_kmh": 45.126392619529916
+      },
+      "trip": {
+        "Departure": 128847.0,
+        "Trip_ID": "transit:[\"ptbus_tubus_802_006\",\"tubus_802__20261029\",\"TuBus_802_part1__20261029\",\"ptbus_tubus_802_006_d0001__20261029\"]",
+        "Person_ID": null,
+        "Trip_Index": 19,
+        "Status": "completed",
+        "Abort": null,
+        "Last_Observed_Time": 129875.0,
+        "Observation_End": 136800.0,
+        "Observation_End_Provenance": "configured_horizon",
+        "Origin_Node": "13571707117",
+        "Destination_Node": "4169928307",
+        "Arrival": 129875.0,
+        "Origin_Position": [
+          -90.5153181000033,
+          14.644956199998596
+        ],
+        "Destination_Position": [
+          -90.52100089999828,
+          14.645783899996024
+        ],
+        "Traffic_Entry": 128847.0,
+        "Traffic_Exit": 129875.0,
+        "Traffic_Retirement": null,
+        "Traffic_Intervals": [
+          {
+            "vehicle": "ptbus_tubus_802_006",
+            "start": 128847.0,
+            "end": 129875.0,
+            "start_event": "vehicle enters traffic",
+            "end_event": "vehicle leaves traffic",
+            "entry_link": "osm_142995412_7_forward"
+          }
+        ],
+        "Agent_Type": null,
+        "Agent_Schema": null,
+        "Vehicle_Type": "TuBus_RigidProxy",
+        "Vehicle_Type_Source": "verified_transit_vehicles",
+        "Vehicle_PCU": 2.5,
+        "Vehicle_Dimensions": {
+          "length_m": 12.0,
+          "width_m": 2.5,
+          "source": "verified_transit_vehicles:scenario_assumption_not_unit_measurement",
+          "assumed": true,
+          "articulated": false,
+          "provenance": {
+            "vehicle_type": "TuBus_RigidProxy",
+            "artifact_source": "verified_transit_vehicles",
+            "artifact_sha256": "600cf55dce271c5142a2beb7d5b04449c92c41db099acb72f5082e626306e336"
+          }
+        },
+        "Driving_Profile": null,
+        "Vehicle_Physical_Dimensions": {
+          "length_m": 12.0,
+          "width_m": 2.5,
+          "source": "MATSim_VehicleType_XML",
+          "nature": "configured",
+          "measurement_status": "not_established_by_vehicle_type",
+          "assumed": null,
+          "provenance": {
+            "vehicle_type": "TuBus_RigidProxy",
+            "artifact_source": "verified_transit_vehicles",
+            "artifact_path": "inputs/transit-weekday/transitVehicles.xml",
+            "artifact_sha256": "600cf55dce271c5142a2beb7d5b04449c92c41db099acb72f5082e626306e336"
+          }
+        },
+        "Vehicle_Family": "bus",
+        "Driver_ID": "pt_ptbus_tubus_802_006_TuBus_RigidProxy",
+        "Transit": {
+          "schema": "simz1-transit-replay-v1",
+          "vehicle_id": "ptbus_tubus_802_006",
+          "driver_id": "pt_ptbus_tubus_802_006_TuBus_RigidProxy",
+          "line_id": "tubus_802__20261029",
+          "route_id": "TuBus_802_part1__20261029",
+          "departure_id": "ptbus_tubus_802_006_d0001__20261029",
+          "operator": "tubus",
+          "service_id": "tubus_802__20261029",
+          "domain_scope": "computational_network",
+          "source": {
+            "schedule_sha256": "729e84b34322c09c433a2ba87eb83e9cad3b6f80e54df50a8a41b469874cb0fe",
+            "vehicles_sha256": "600cf55dce271c5142a2beb7d5b04449c92c41db099acb72f5082e626306e336",
+            "lanes_sha256": "9ce9b1191173408fbf1b77a211f1b7677b9ff092eb2760cf5439bf2ca48ce251"
+          },
+          "route_links": [
+            "osm_142995412_7_forward",
+            "osm_142995412_8_forward",
+            "osm_734011347_0_forward",
+            "osm_734011347_1_forward",
+            "osm_734011347_2_forward",
+            "osm_734011347_3_forward",
+            "osm_734011347_4_forward",
+            "osm_734011347_5_forward",
+            "osm_930035058_0_forward",
+            "osm_930035058_1_forward",
+            "osm_930035058_2_forward",
+            "osm_930035058_3_forward",
+            "osm_930035058_4_forward",
+            "osm_930035058_5_forward",
+            "osm_734011350_0_forward",
+            "osm_734011350_1_forward",
+            "osm_734011350_2_forward",
+            "osm_734011350_3_forward",
+            "osm_734011350_4_forward",
+            "osm_734011350_5_forward",
+            "osm_734011350_6_forward",
+            "osm_734011350_7_forward",
+            "osm_734011350_8_forward",
+            "osm_734011350_9_forward",
+            "osm_734011350_10_forward",
+            "osm_734011350_11_forward",
+            "osm_734011350_12_forward",
+            "osm_734011350_13_forward",
+            "osm_734011350_14_forward",
+            "osm_734011350_15_forward",
+            "osm_734011350_16_forward",
+            "osm_734011350_17_forward",
+            "osm_734011350_18_forward",
+            "osm_734011350_19_forward",
+            "osm_734011350_20_forward",
+            "osm_734011350_21_forward",
+            "osm_734011350_22_forward",
+            "osm_734011350_23_forward",
+            "osm_734011350_24_forward",
+            "osm_734011350_25_forward",
+            "osm_734011350_26_forward",
+            "osm_734011350_27_forward",
+            "osm_734011350_28_forward",
+            "osm_734011350_29_forward",
+            "osm_734011350_30_forward",
+            "osm_734011350_31_forward",
+            "osm_734011350_32_forward",
+            "osm_734011350_33_forward",
+            "osm_734011350_34_forward",
+            "osm_734011350_35_forward",
+            "osm_734011350_36_forward",
+            "osm_734011350_37_forward",
+            "osm_734011350_38_forward",
+            "osm_734011350_39_forward",
+            "osm_734011350_40_forward",
+            "osm_734011350_41_forward",
+            "osm_734011350_42_forward",
+            "osm_734011350_43_forward",
+            "osm_734011350_44_forward",
+            "osm_734011350_45_forward",
+            "osm_734011350_46_forward",
+            "osm_381158231_0_forward",
+            "osm_381158231_1_forward",
+            "osm_381158231_2_forward",
+            "osm_381158233_0_forward",
+            "osm_381158233_1_forward",
+            "osm_381158233_2_forward",
+            "osm_381158233_3_forward",
+            "osm_658310050_0_forward",
+            "osm_658310050_1_forward",
+            "osm_381158230_0_forward",
+            "osm_30289506_0_forward",
+            "osm_30289506_1_forward",
+            "osm_30279769_1_forward",
+            "osm_30279769_2_forward",
+            "osm_30279769_3_forward",
+            "osm_30279769_4_forward",
+            "osm_30279769_5_forward",
+            "osm_30279769_6_forward",
+            "osm_30279769_7_forward",
+            "osm_30279769_8_forward",
+            "osm_30279769_9_forward",
+            "osm_30279769_10_forward",
+            "osm_30279769_11_forward",
+            "osm_30279769_12_forward",
+            "osm_30279769_13_forward",
+            "osm_30279769_14_forward",
+            "osm_30279769_15_forward",
+            "osm_30279769_16_forward",
+            "osm_30279769_17_forward",
+            "osm_30279769_18_forward",
+            "osm_30279769_19_forward",
+            "osm_30279769_20_forward",
+            "osm_30279769_21_forward",
+            "osm_30279769_22_forward",
+            "osm_30279769_23_forward",
+            "osm_30279769_24_forward",
+            "osm_30279769_25_forward",
+            "osm_30279769_26_forward",
+            "osm_30279769_27_forward",
+            "osm_30279769_28_forward",
+            "osm_30279769_29_forward",
+            "osm_30279769_30_forward",
+            "osm_30279769_31_forward",
+            "osm_30279769_32_forward",
+            "osm_30279769_33_forward",
+            "osm_30279769_34_forward",
+            "osm_30279769_35_forward",
+            "osm_30279769_36_forward",
+            "osm_30279769_37_forward",
+            "osm_30279769_38_forward",
+            "osm_30279769_39_forward",
+            "osm_30279769_40_forward",
+            "osm_30279769_41_forward",
+            "osm_30279769_42_forward",
+            "osm_30279769_43_forward",
+            "osm_30279769_44_forward",
+            "osm_30279769_45_forward",
+            "osm_30279769_46_forward",
+            "osm_30279769_47_forward",
+            "osm_30279769_48_forward",
+            "osm_30279769_49_forward",
+            "osm_30279769_50_forward",
+            "osm_30279769_51_forward",
+            "osm_30279769_52_forward",
+            "osm_30279769_53_forward",
+            "osm_30279769_54_forward",
+            "osm_30279769_55_forward",
+            "osm_30279769_56_forward",
+            "osm_30279769_57_forward",
+            "osm_30279769_58_forward",
+            "osm_30279769_59_forward",
+            "osm_734011348_4_forward",
+            "osm_734011348_5_forward",
+            "osm_734011348_6_forward",
+            "osm_734011348_7_forward",
+            "osm_734011348_8_forward",
+            "osm_734011348_9_forward",
+            "osm_734011348_10_forward",
+            "osm_734011348_11_forward",
+            "osm_734011348_12_forward",
+            "osm_734011348_13_forward"
+          ],
+          "stop_ids": [
+            "TuBus_802_part1_entry_TuBus_802_part1",
+            "published_117_TuBus_802_part1",
+            "published_118_TuBus_802_part1",
+            "published_119_TuBus_802_part1",
+            "published_120_TuBus_802_part1",
+            "published_122_TuBus_802_part1",
+            "published_123_TuBus_802_part1",
+            "published_124_TuBus_802_part1",
+            "published_125_TuBus_802_part1",
+            "published_126_TuBus_802_part1",
+            "published_127_TuBus_802_part1",
+            "published_128_TuBus_802_part1"
+          ],
+          "activity_intervals": [
+            {
+              "start": 128847.0,
+              "end": 128847.0,
+              "state": "stop",
+              "facility_id": "TuBus_802_part1_entry_TuBus_802_part1",
+              "source": "native_facility_events",
+              "link_id": "osm_142995412_7_forward",
+              "placement": "nonblocking_proxy",
+              "dwell_basis": "explicit_scenario_assumption",
+              "is_blocking_lane": false,
+              "position_source": "MATSim15_single_queue_exit_or_native_traffic_entry",
+              "relative_position": 1
+            },
+            {
+              "start": 128899.0,
+              "end": 128924.0,
+              "state": "stop",
+              "facility_id": "published_117_TuBus_802_part1",
+              "source": "native_facility_events",
+              "link_id": "osm_734011347_2_forward",
+              "placement": "nonblocking_proxy",
+              "dwell_basis": "explicit_scenario_assumption",
+              "is_blocking_lane": false,
+              "position_source": "native_lane_membership_and_verified_lane_endpoint",
+              "relative_position": 0.19999999999999996,
+              "lane_id": "osm_734011347_2_forward.original"
+            },
+            {
+              "start": 128988.0,
+              "end": 129013.0,
+              "state": "stop",
+              "facility_id": "published_118_TuBus_802_part1",
+              "source": "native_facility_events",
+              "link_id": "osm_734011350_7_forward",
+              "placement": "nonblocking_proxy",
+              "dwell_basis": "explicit_scenario_assumption",
+              "is_blocking_lane": false,
+              "position_source": "native_lane_membership_and_verified_lane_endpoint",
+              "relative_position": 0.19999999999999996,
+              "lane_id": "osm_734011350_7_forward.original"
+            },
+            {
+              "start": 129040.0,
+              "end": 129065.0,
+              "state": "stop",
+              "facility_id": "published_119_TuBus_802_part1",
+              "source": "native_facility_events",
+              "link_id": "osm_734011350_16_forward",
+              "placement": "nonblocking_proxy",
+              "dwell_basis": "explicit_scenario_assumption",
+              "is_blocking_lane": false,
+              "position_source": "native_lane_membership_and_verified_lane_endpoint",
+              "relative_position": 0.20000000000000007,
+              "lane_id": "osm_734011350_16_forward.original"
+            },
+            {
+              "start": 129134.0,
+              "end": 129159.0,
+              "state": "stop",
+              "facility_id": "published_120_TuBus_802_part1",
+              "source": "native_facility_events",
+              "link_id": "osm_734011350_36_forward",
+              "placement": "nonblocking_proxy",
+              "dwell_basis": "explicit_scenario_assumption",
+              "is_blocking_lane": false,
+              "position_source": "native_lane_membership_and_verified_lane_endpoint",
+              "relative_position": 0.19999999999999996,
+              "lane_id": "osm_734011350_36_forward.original"
+            },
+            {
+              "start": 129244.0,
+              "end": 129269.0,
+              "state": "stop",
+              "facility_id": "published_122_TuBus_802_part1",
+              "source": "native_facility_events",
+              "link_id": "osm_30279769_1_forward",
+              "placement": "nonblocking_proxy",
+              "dwell_basis": "explicit_scenario_assumption",
+              "is_blocking_lane": false,
+              "position_source": "native_lane_membership_and_verified_lane_endpoint",
+              "relative_position": 0.19999999999999996,
+              "lane_id": "osm_30279769_1_forward.original"
+            },
+            {
+              "start": 129324.0,
+              "end": 129349.0,
+              "state": "stop",
+              "facility_id": "published_123_TuBus_802_part1",
+              "source": "native_facility_events",
+              "link_id": "osm_30279769_11_forward",
+              "placement": "nonblocking_proxy",
+              "dwell_basis": "explicit_scenario_assumption",
+              "is_blocking_lane": false,
+              "position_source": "native_lane_membership_and_verified_lane_endpoint",
+              "relative_position": 0.19999999999999996,
+              "lane_id": "osm_30279769_11_forward.original"
+            },
+            {
+              "start": 129450.0,
+              "end": 129475.0,
+              "state": "stop",
+              "facility_id": "published_124_TuBus_802_part1",
+              "source": "native_facility_events",
+              "link_id": "osm_30279769_25_forward",
+              "placement": "nonblocking_proxy",
+              "dwell_basis": "explicit_scenario_assumption",
+              "is_blocking_lane": false,
+              "position_source": "native_lane_membership_and_verified_lane_endpoint",
+              "relative_position": 0.19999999999999996,
+              "lane_id": "osm_30279769_25_forward.original"
+            },
+            {
+              "start": 129575.0,
+              "end": 129600.0,
+              "state": "stop",
+              "facility_id": "published_125_TuBus_802_part1",
+              "source": "native_facility_events",
+              "link_id": "osm_30279769_41_forward",
+              "placement": "nonblocking_proxy",
+              "dwell_basis": "explicit_scenario_assumption",
+              "is_blocking_lane": false,
+              "position_source": "native_lane_membership_and_verified_lane_endpoint",
+              "relative_position": 0.19999999999999996,
+              "lane_id": "osm_30279769_41_forward.original"
+            },
+            {
+              "start": 129642.0,
+              "end": 129667.0,
+              "state": "stop",
+              "facility_id": "published_126_TuBus_802_part1",
+              "source": "native_facility_events",
+              "link_id": "osm_30279769_52_forward",
+              "placement": "nonblocking_proxy",
+              "dwell_basis": "explicit_scenario_assumption",
+              "is_blocking_lane": false,
+              "position_source": "native_lane_membership_and_verified_lane_endpoint",
+              "relative_position": 0.19999999999999996,
+              "lane_id": "osm_30279769_52_forward.original"
+            },
+            {
+              "start": 129740.0,
+              "end": 129765.0,
+              "state": "stop",
+              "facility_id": "published_127_TuBus_802_part1",
+              "source": "native_facility_events",
+              "link_id": "osm_734011348_7_forward",
+              "placement": "nonblocking_proxy",
+              "dwell_basis": "explicit_scenario_assumption",
+              "is_blocking_lane": false,
+              "position_source": "native_lane_membership_and_verified_lane_endpoint",
+              "relative_position": 0.19999999999999984,
+              "lane_id": "osm_734011348_7_forward.original"
+            },
+            {
+              "start": 129850.0,
+              "end": 129875.0,
+              "state": "stop",
+              "facility_id": "published_128_TuBus_802_part1",
+              "source": "native_facility_events",
+              "link_id": "osm_734011348_13_forward",
+              "placement": "nonblocking_proxy",
+              "dwell_basis": "explicit_scenario_assumption",
+              "is_blocking_lane": false,
+              "position_source": "native_lane_membership_and_verified_lane_endpoint",
+              "relative_position": 0.19999999999999996,
+              "lane_id": "osm_734011348_13_forward.original"
+            }
+          ],
+          "terminal_status": "service_finished",
+          "service_end_confirmed": true,
+          "completion_source": "native_driver_arrival_after_traffic_exit",
+          "service_end_source": "native_boundary_service_end",
+          "service_end_time": 129875.0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "schema": "simz1-historical-fixtures-v1",
+  "created_utc": "2026-11-02T21:41:41.106126+00:00",
+  "scope": "Exact historical fragments and inputs; no accepted run or complete events claim",
+  "files": {
+    "cursor/historical-manifest.json": {
+      "run_id": "simz1-8545ef106cbe43ce8fabb81bf0bc0a41",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-dd9e2a9d64fc4764835fed6602faf191/run-manifest.json",
+      "source_sha256": "69f2ea48bbddf85e771879834c43fa440c5d5536f743d503f440f0263116ef65",
+      "sha256": "69f2ea48bbddf85e771879834c43fa440c5d5536f743d503f440f0263116ef65",
+      "bytes": 1301480
+    },
+    "cursor/historical.xml": {
+      "run_id": "simz1-8545ef106cbe43ce8fabb81bf0bc0a41",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-dd9e2a9d64fc4764835fed6602faf191/plans.xml",
+      "source_sha256": "809d3c6713914258d7fce378d937e0d0e31bd894e23a5bdaaf0ca15bb57ea5ec",
+      "manifest_sha256": "69f2ea48bbddf85e771879834c43fa440c5d5536f743d503f440f0263116ef65",
+      "person_id": "z1_97936",
+      "source_byte_offset": 602922296,
+      "fragment_sha256": "594cb88e1e2e36c0526292aae68af32d517e6998e25ba499b1a66b20cf7c8f98",
+      "fixture_sha256": "5663bfd65cc19fc346dbd69fd85368e939609d343eb6956ad697a44f2923caa2",
+      "persons_extracted": 1,
+      "xml_population_loaded": false,
+      "sha256": "5663bfd65cc19fc346dbd69fd85368e939609d343eb6956ad697a44f2923caa2",
+      "bytes": 6663
+    },
+    "cursor/matsim-run.log": {
+      "run_id": "simz1-8545ef106cbe43ce8fabb81bf0bc0a41",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-dd9e2a9d64fc4764835fed6602faf191/matsim-run.log",
+      "source_sha256": "f986ce076a40f3659936572d52ee222e0c312a96a1a891bce4366b40c0cde367",
+      "sha256": "f986ce076a40f3659936572d52ee222e0c312a96a1a891bce4366b40c0cde367",
+      "bytes": 318995
+    },
+    "cursor/roster.json": {
+      "run_id": "simz1-8545ef106cbe43ce8fabb81bf0bc0a41",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-dd9e2a9d64fc4764835fed6602faf191/inputs/freight-weekday/roster.json",
+      "source_sha256": "89fb0f443a9b671745ae5e9200b4ecf9346924a96293a49a49d6d93c9d94f2e2",
+      "sha256": "0c6cead051f0312c17d732cfccfbd4b4b5b43e6a60a1260c5c4fdc5e524abbd7",
+      "bytes": 4138
+    },
+    "c529/historical-manifest.json": {
+      "run_id": "simz1-309d75ccb2d947629807a89d2e826987",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-c52934de7de1435ebc85867e0b728f50/run-manifest.json",
+      "source_sha256": "3890675f467629e8a1cdea006eba8ccb3f7e91509eed86fca9e68d12a7fffd25",
+      "sha256": "3890675f467629e8a1cdea006eba8ccb3f7e91509eed86fca9e68d12a7fffd25",
+      "bytes": 1329946
+    },
+    "c529/inputs/signalsystems-signalsystems.xml": {
+      "run_id": "simz1-309d75ccb2d947629807a89d2e826987",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-c52934de7de1435ebc85867e0b728f50/inputs/signalsystems-signalsystems.xml",
+      "source_sha256": "ded58aa884a4424e67100c31b379556c221e295e9687eca315b235daf0389233",
+      "sha256": "ded58aa884a4424e67100c31b379556c221e295e9687eca315b235daf0389233",
+      "bytes": 79627
+    },
+    "c529/inputs/od-access-catalog.json": {
+      "run_id": "simz1-309d75ccb2d947629807a89d2e826987",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-c52934de7de1435ebc85867e0b728f50/inputs/od-access-catalog.json",
+      "source_sha256": "3ef90aa7e3ad4a7351e84fdd870a441ca625d68f6866dd114ba2395c5476e540",
+      "sha256": "3ef90aa7e3ad4a7351e84fdd870a441ca625d68f6866dd114ba2395c5476e540",
+      "bytes": 210214
+    },
+    "c529/inputs/signalsystems-signalcontrol.xml": {
+      "run_id": "simz1-309d75ccb2d947629807a89d2e826987",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-c52934de7de1435ebc85867e0b728f50/inputs/signalsystems-signalcontrol.xml",
+      "source_sha256": "192c50b9bf42935b7aa7126cc601a787e671da67c5fa60e25cb8c65e0d95ea50",
+      "sha256": "192c50b9bf42935b7aa7126cc601a787e671da67c5fa60e25cb8c65e0d95ea50",
+      "bytes": 120295
+    },
+    "c529/inputs/od-source.osm": {
+      "run_id": "simz1-309d75ccb2d947629807a89d2e826987",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-c52934de7de1435ebc85867e0b728f50/inputs/od-source.osm",
+      "source_sha256": "707684e17858e305324d72ce5df05a489138e3b819442b3c34e2a21c864d8c6b",
+      "sha256": "707684e17858e305324d72ce5df05a489138e3b819442b3c34e2a21c864d8c6b",
+      "bytes": 4289056
+    },
+    "c529/inputs/transit-weekday/lanes.xml": {
+      "run_id": "simz1-309d75ccb2d947629807a89d2e826987",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-c52934de7de1435ebc85867e0b728f50/inputs/transit-weekday/lanes.xml",
+      "source_sha256": "a09fe2aa1534c6a1980f3b054807a346c26fae89b8fb5daf9120c270235d1c00",
+      "sha256": "a09fe2aa1534c6a1980f3b054807a346c26fae89b8fb5daf9120c270235d1c00",
+      "bytes": 5510159
+    },
+    "c529/inputs/transit-weekday/network.xml": {
+      "run_id": "simz1-309d75ccb2d947629807a89d2e826987",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-c52934de7de1435ebc85867e0b728f50/inputs/transit-weekday/network.xml",
+      "source_sha256": "ad898adaf82108aa60e59214311d94b2e54ed14ee1519e1d987ef58740cf4839",
+      "sha256": "ad898adaf82108aa60e59214311d94b2e54ed14ee1519e1d987ef58740cf4839",
+      "bytes": 7779197
+    },
+    "c529/inputs/zone-boundary.geojson": {
+      "run_id": "simz1-309d75ccb2d947629807a89d2e826987",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-c52934de7de1435ebc85867e0b728f50/inputs/zone-boundary.geojson",
+      "source_sha256": "441e7ca4fefff91d7b475d26f12a600415c67b862c5bb2195cd13f486b015688",
+      "sha256": "441e7ca4fefff91d7b475d26f12a600415c67b862c5bb2195cd13f486b015688",
+      "bytes": 33498
+    },
+    "c529/inputs/signalsystems-signalgroups.xml": {
+      "run_id": "simz1-309d75ccb2d947629807a89d2e826987",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-c52934de7de1435ebc85867e0b728f50/inputs/signalsystems-signalgroups.xml",
+      "source_sha256": "d29f8d1a05eec8361e801430d543879dcb09223621d804a588cc3a0e30f72416",
+      "sha256": "d29f8d1a05eec8361e801430d543879dcb09223621d804a588cc3a0e30f72416",
+      "bytes": 43923
+    },
+    "c529/config-simz1.xml": {
+      "run_id": "simz1-309d75ccb2d947629807a89d2e826987",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-c52934de7de1435ebc85867e0b728f50/config-simz1.xml",
+      "source_sha256": "0da279402c10e14a13ce8afb1d38b730b7d74be39ded96f45b6cae08057bd012",
+      "sha256": "0da279402c10e14a13ce8afb1d38b730b7d74be39ded96f45b6cae08057bd012",
+      "bytes": 6662
+    },
+    "temporal/historical-manifest.json": {
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/run-manifest.json",
+      "source_sha256": "fcb8c85945da186efd6304bc4e7d6846ff1994e5a6fe03a8373c64e1603ea2c6",
+      "sha256": "fcb8c85945da186efd6304bc4e7d6846ff1994e5a6fe03a8373c64e1603ea2c6",
+      "bytes": 1330312
+    },
+    "temporal/inputs/transit-weekday/transitSchedule.xml": {
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/transit-weekday/transitSchedule.xml",
+      "source_sha256": "a37eea48d3c73848cb10a26344d4cdacfad1c734bc76bb9c703f6f23d69e264e",
+      "sha256": "a37eea48d3c73848cb10a26344d4cdacfad1c734bc76bb9c703f6f23d69e264e",
+      "bytes": 7841289
+    },
+    "temporal/inputs/signalsystems-signalsystems.xml": {
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/signalsystems-signalsystems.xml",
+      "source_sha256": "ded58aa884a4424e67100c31b379556c221e295e9687eca315b235daf0389233",
+      "sha256": "ded58aa884a4424e67100c31b379556c221e295e9687eca315b235daf0389233",
+      "bytes": 79627
+    },
+    "temporal/inputs/od-access-catalog.json": {
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/od-access-catalog.json",
+      "source_sha256": "3ef90aa7e3ad4a7351e84fdd870a441ca625d68f6866dd114ba2395c5476e540",
+      "sha256": "3ef90aa7e3ad4a7351e84fdd870a441ca625d68f6866dd114ba2395c5476e540",
+      "bytes": 210214
+    },
+    "temporal/inputs/transit-weekday/transitVehicles.xml": {
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/transit-weekday/transitVehicles.xml",
+      "source_sha256": "afeaae06d1b2823cec663850caa5085dc5adff1da1f4da6fa973b27ba1fa14f3",
+      "sha256": "afeaae06d1b2823cec663850caa5085dc5adff1da1f4da6fa973b27ba1fa14f3",
+      "bytes": 20500
+    },
+    "temporal/inputs/signalsystems-signalcontrol.xml": {
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/signalsystems-signalcontrol.xml",
+      "source_sha256": "192c50b9bf42935b7aa7126cc601a787e671da67c5fa60e25cb8c65e0d95ea50",
+      "sha256": "192c50b9bf42935b7aa7126cc601a787e671da67c5fa60e25cb8c65e0d95ea50",
+      "bytes": 120295
+    },
+    "temporal/inputs/od-source.osm": {
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/od-source.osm",
+      "source_sha256": "707684e17858e305324d72ce5df05a489138e3b819442b3c34e2a21c864d8c6b",
+      "sha256": "707684e17858e305324d72ce5df05a489138e3b819442b3c34e2a21c864d8c6b",
+      "bytes": 4289056
+    },
+    "temporal/inputs/freight-weekday/routes.json": {
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/freight-weekday/routes.json",
+      "source_sha256": "757bc6de7fa7ac2762edb9da2f5eaef7718624a5932f9c9e83f7e9c86ef570b2",
+      "sha256": "757bc6de7fa7ac2762edb9da2f5eaef7718624a5932f9c9e83f7e9c86ef570b2",
+      "bytes": 15077
+    },
+    "temporal/inputs/effective-access-review.json": {
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/effective-access-review.json",
+      "source_sha256": "02d2b21f2c523564928d0a1e3e4c2f337f23646902bd25ec6a12472591873e7c",
+      "sha256": "02d2b21f2c523564928d0a1e3e4c2f337f23646902bd25ec6a12472591873e7c",
+      "bytes": 246434
+    },
+    "temporal/inputs/transit-weekday/lanes.xml": {
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/transit-weekday/lanes.xml",
+      "source_sha256": "a09fe2aa1534c6a1980f3b054807a346c26fae89b8fb5daf9120c270235d1c00",
+      "sha256": "a09fe2aa1534c6a1980f3b054807a346c26fae89b8fb5daf9120c270235d1c00",
+      "bytes": 5510159
+    },
+    "temporal/inputs/transit-weekday/network.xml": {
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/transit-weekday/network.xml",
+      "source_sha256": "ad898adaf82108aa60e59214311d94b2e54ed14ee1519e1d987ef58740cf4839",
+      "sha256": "ad898adaf82108aa60e59214311d94b2e54ed14ee1519e1d987ef58740cf4839",
+      "bytes": 7779197
+    },
+    "temporal/inputs/zone-boundary.geojson": {
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/zone-boundary.geojson",
+      "source_sha256": "441e7ca4fefff91d7b475d26f12a600415c67b862c5bb2195cd13f486b015688",
+      "sha256": "441e7ca4fefff91d7b475d26f12a600415c67b862c5bb2195cd13f486b015688",
+      "bytes": 33498
+    },
+    "temporal/inputs/network-laneDefinitionsFile.xml": {
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/network-laneDefinitionsFile.xml",
+      "source_sha256": "e86e9a4f8055b737af3652f13b0aa2e0073c7c67e3e39a3965482d99fca469b6",
+      "sha256": "e86e9a4f8055b737af3652f13b0aa2e0073c7c67e3e39a3965482d99fca469b6",
+      "bytes": 6298420
+    },
+    "temporal/inputs/signalsystems-signalgroups.xml": {
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/signalsystems-signalgroups.xml",
+      "source_sha256": "d29f8d1a05eec8361e801430d543879dcb09223621d804a588cc3a0e30f72416",
+      "sha256": "d29f8d1a05eec8361e801430d543879dcb09223621d804a588cc3a0e30f72416",
+      "bytes": 43923
+    },
+    "temporal/inputs/network-inputNetworkFile.xml": {
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/network-inputNetworkFile.xml",
+      "source_sha256": "f328c84e34f7b7ba7c3a204bb97bb9907b107dbf77d53c301e3c6c44fe487029",
+      "sha256": "f328c84e34f7b7ba7c3a204bb97bb9907b107dbf77d53c301e3c6c44fe487029",
+      "bytes": 7826179
+    },
+    "temporal/config-simz1.xml": {
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "historical subset; never an accepted run",
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/config-simz1.xml",
+      "source_sha256": "a81eb4063c64393cdf0f2e716a31a0a74d2b51147c1ca3d57fcae46fa8d88f97",
+      "sha256": "a81eb4063c64393cdf0f2e716a31a0a74d2b51147c1ca3d57fcae46fa8d88f97",
+      "bytes": 6662
+    },
+    "c529-evidence/early_dependency.json": {
+      "source": "runtime/diagnostics/c529-a27d8bae5d/early_dependency.json",
+      "source_sha256": "7d6945444a26210f73b4bf3a2c327601708df1ed9207867d6cfe923c915605aa",
+      "sha256": "7d6945444a26210f73b4bf3a2c327601708df1ed9207867d6cfe923c915605aa",
+      "bytes": 790900
+    },
+    "c529-evidence/early_cases_minimal.json": {
+      "source": "runtime/diagnostics/c529-a27d8bae5d/early_cases_minimal.json",
+      "source_sha256": "5d1baea4e17a6cc8ac44b12de32b9223e7de121f56ceaab246da2f3fe55fad97",
+      "sha256": "5d1baea4e17a6cc8ac44b12de32b9223e7de121f56ceaab246da2f3fe55fad97",
+      "bytes": 81163
+    },
+    "c529-evidence/early_case_plans.json": {
+      "source": "runtime/diagnostics/c529-a27d8bae5d/early_case_plans.json",
+      "source_sha256": "9594132e02ecda9950972348c91d1a89ec2d3becacfdc838cc7d41bda9596eb6",
+      "sha256": "9594132e02ecda9950972348c91d1a89ec2d3becacfdc838cc7d41bda9596eb6",
+      "bytes": 45965
+    },
+    "c529-evidence/focus_dependency_evidence.json": {
+      "source": "runtime/diagnostics/c529-a27d8bae5d/focus_dependency_evidence.json",
+      "source_sha256": "134a9ec27f7453bd3c4fdb55530a410dab09e51fd2cd45d62f415e57b251a826",
+      "sha256": "134a9ec27f7453bd3c4fdb55530a410dab09e51fd2cd45d62f415e57b251a826",
+      "bytes": 136669
+    },
+    "c529-evidence/focus_state_history.json": {
+      "source": "runtime/diagnostics/c529-a27d8bae5d/focus_state_history.json",
+      "source_sha256": "4284bebc5ebe4179e3f185f760b92c20f366df72179130b366e9ea0f8fd5b4e3",
+      "sha256": "4284bebc5ebe4179e3f185f760b92c20f366df72179130b366e9ea0f8fd5b4e3",
+      "bytes": 1323013
+    },
+    "c529-evidence/code_excerpts.txt": {
+      "source": "runtime/diagnostics/c529-a27d8bae5d/code_excerpts.txt",
+      "source_sha256": "0639297648413f3567c29b22e1312b608fd3ed5119efe70802a22aa4f5cf0be5",
+      "sha256": "0639297648413f3567c29b22e1312b608fd3ed5119efe70802a22aa4f5cf0be5",
+      "bytes": 74915
+    },
+    "c529-evidence/code_sources.json": {
+      "source": "runtime/diagnostics/c529-a27d8bae5d/code_sources.json",
+      "source_sha256": "05233ec0af20e0482ebb266c3b9920d49e9ea4667945f15ef2a25bf43bd60f3f",
+      "sha256": "05233ec0af20e0482ebb266c3b9920d49e9ea4667945f15ef2a25bf43bd60f3f",
+      "bytes": 4211
+    },
+    "c529-evidence/effective_config_summary.json": {
+      "source": "runtime/diagnostics/c529-a27d8bae5d/effective_config_summary.json",
+      "source_sha256": "a517d149f2458582b49ce043cfddfad52f9a3e0b73d04d4e7f5c274aa328a998",
+      "sha256": "a517d149f2458582b49ce043cfddfad52f9a3e0b73d04d4e7f5c274aa328a998",
+      "bytes": 5799
+    },
+    "c529-evidence/monitor_first_rejection.json": {
+      "source": "runtime/diagnostics/c529-a27d8bae5d/monitor_first_rejection.json",
+      "source_sha256": "46339667db4c78ae23c1e68f70adfaa5e7bb3a9f8b3cdc268014905c7cb1ef60",
+      "sha256": "46339667db4c78ae23c1e68f70adfaa5e7bb3a9f8b3cdc268014905c7cb1ef60",
+      "bytes": 12941
+    },
+    "c529-evidence/DIAGNOSTICO_C529.md": {
+      "source": "runtime/diagnostics/c529-a27d8bae5d/DIAGNOSTICO_C529.md",
+      "source_sha256": "d77aa4619ea504824395445b89e7b004f6ee0a592bea50a860e9d9b56cf88779",
+      "sha256": "d77aa4619ea504824395445b89e7b004f6ee0a592bea50a860e9d9b56cf88779",
+      "bytes": 43678
+    },
+    "c529-evidence/rerouting_decisions_summary.json": {
+      "source": "runtime/diagnostics/c529-a27d8bae5d/rerouting_decisions_summary.json",
+      "source_sha256": "726a4d1f71c902d396b81e63bce83f71621e677d171c70db055d298d972151f2",
+      "sha256": "726a4d1f71c902d396b81e63bce83f71621e677d171c70db055d298d972151f2",
+      "bytes": 16308
+    },
+    "temporal-evidence/signal_fixture_input.json": {
+      "source": "runtime/diagnostics/5906-h0kzpokz/signal_fixture_input.json",
+      "source_sha256": "4b5e61a919944865ae8f6c677ee6850f555e73f2a2d51dadbe16cff2d2fa8273",
+      "sha256": "4b5e61a919944865ae8f6c677ee6850f555e73f2a2d51dadbe16cff2d2fa8273",
+      "bytes": 4509
+    },
+    "second-avenue/current-checkpoint.json": {
+      "source": "runtime/2avenida-20261102/current-checkpoint.json",
+      "source_sha256": "a1abdab5b7ad7e192a77668ee659e39992a55bd204d88dda02492d31ed83cb48",
+      "sha256": "a1abdab5b7ad7e192a77668ee659e39992a55bd204d88dda02492d31ed83cb48",
+      "bytes": 1125
+    },
+    "second-avenue/Run-3-retention-conclusion.json": {
+      "source": "runtime/2avenida-20261102/Run-3-retention-conclusion.json",
+      "source_sha256": "b1e1d4fc27945c189c42e5cb118a2a397bc03d47218c54c465c85475f3b702c2",
+      "sha256": "b1e1d4fc27945c189c42e5cb118a2a397bc03d47218c54c465c85475f3b702c2",
+      "bytes": 3390
+    },
+    "second-avenue/Run-3-first-window-violations.json": {
+      "source": "runtime/2avenida-20261102/Run-3-first-window-violations.json",
+      "source_sha256": "a299156ca6608dda615cc62a2d815cde32e3f5823431098cf7f523bb28b79b53",
+      "sha256": "a299156ca6608dda615cc62a2d815cde32e3f5823431098cf7f523bb28b79b53",
+      "bytes": 5912
+    },
+    "second-avenue/Run-3-first-window-freight.json": {
+      "source": "runtime/2avenida-20261102/Run-3-first-window-freight.json",
+      "source_sha256": "6da95b9e0c4a28168cd4658a97f9c4ccb329697f27f8ca22157866cff19eb966",
+      "sha256": "6da95b9e0c4a28168cd4658a97f9c4ccb329697f27f8ca22157866cff19eb966",
+      "bytes": 876014
+    },
+    "second-avenue/Run-3-prefix-reconciliation.json": {
+      "source": "runtime/2avenida-20261102/Run-3-prefix-reconciliation.json",
+      "source_sha256": "ef3b95bdb1b5b4a3cd08096fae6d33328450b9b3be3adb0e702fc71e009c918e",
+      "sha256": "ef3b95bdb1b5b4a3cd08096fae6d33328450b9b3be3adb0e702fc71e009c918e",
+      "bytes": 3067
+    },
+    "second-avenue/Run-3-prefix-counts.csv": {
+      "source": "runtime/2avenida-20261102/Run-3-prefix-counts.csv",
+      "source_sha256": "e1c05afb4bb7277d0243f843d8a504ad9dc5b4f6dc9f3e3f864e7be0ecbd7893",
+      "sha256": "e1c05afb4bb7277d0243f843d8a504ad9dc5b4f6dc9f3e3f864e7be0ecbd7893",
+      "bytes": 811
+    },
+    "second-avenue/Run-3-freight_000155.json": {
+      "source": "runtime/2avenida-20261102/Run-3-freight_000155.json",
+      "source_sha256": "eca350eb14db1c2483be97f225800ff694974f967860249aad8228e302a087eb",
+      "sha256": "eca350eb14db1c2483be97f225800ff694974f967860249aad8228e302a087eb",
+      "bytes": 1585
+    },
+    "second-avenue/Run-3-freight_000426.json": {
+      "source": "runtime/2avenida-20261102/Run-3-freight_000426.json",
+      "source_sha256": "52139344975211be3589ab7057b43241a3e45489a251439f485ec21f0e94208a",
+      "sha256": "52139344975211be3589ab7057b43241a3e45489a251439f485ec21f0e94208a",
+      "bytes": 1590
+    },
+    "second-avenue/Run-3-L18-first-duty.json": {
+      "source": "runtime/2avenida-20261102/Run-3-L18-first-duty.json",
+      "source_sha256": "a563807771a7f564315760862734985382116d2c4f4ef57b81fdde15b7e5027a",
+      "sha256": "a563807771a7f564315760862734985382116d2c4f4ef57b81fdde15b7e5027a",
+      "bytes": 2770
+    },
+    "second-avenue/regressions.json": {
+      "source": "runtime/2avenida-20261102/regressions.json",
+      "source_sha256": "4ea9b49cef7b49d0c31fecd218ff93397a6ee6b8cbac2bfd198f4d5d2723d16d",
+      "sha256": "4ea9b49cef7b49d0c31fecd218ff93397a6ee6b8cbac2bfd198f4d5d2723d16d",
+      "bytes": 2312
+    },
+    "second-avenue/Validate-identities.json": {
+      "source": "runtime/2avenida-20261102/Validate-identities.json",
+      "source_sha256": "5d37aab85f9c1aafdfa15223ee64cd85cbadc2c2ffd61835b109ea98a0df9556",
+      "sha256": "5d37aab85f9c1aafdfa15223ee64cd85cbadc2c2ffd61835b109ea98a0df9556",
+      "bytes": 2317
+    },
+    "second-avenue/final-process-check.json": {
+      "source": "runtime/2avenida-20261102/final-process-check.json",
+      "source_sha256": "df9ff75b080e0731962380b01d24fd083736895eb4b3ffb8e22149e71df9e362",
+      "sha256": "df9ff75b080e0731962380b01d24fd083736895eb4b3ffb8e22149e71df9e362",
+      "bytes": 183
+    },
+    "temporal/inputs/transit-weekday/roster.json": {
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/transit-weekday/roster.json",
+      "source_sha256": "02974a548ffcbe0b0206a3d0187e91a88291e5cbf9a782b664f36003035af413",
+      "sha256": "02974a548ffcbe0b0206a3d0187e91a88291e5cbf9a782b664f36003035af413",
+      "bytes": 5193657,
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "Native policy/derivation dependencies; no accepted subset"
+    },
+    "temporal/inputs/transit-weekday/route-bundle.json": {
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/transit-weekday/route-bundle.json",
+      "source_sha256": "499103238698f9ae1771f00e39bad95295a7c2da1b79caf613b46d5c9198a1c8",
+      "sha256": "499103238698f9ae1771f00e39bad95295a7c2da1b79caf613b46d5c9198a1c8",
+      "bytes": 125196,
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "Native policy/derivation dependencies; no accepted subset"
+    },
+    "temporal/inputs/transit-weekday/source-service.json": {
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/transit-weekday/source-service.json",
+      "source_sha256": "119941bfdc132389632c33be20e0a13e91e1403c0447668cfeb948b0614493d5",
+      "sha256": "119941bfdc132389632c33be20e0a13e91e1403c0447668cfeb948b0614493d5",
+      "bytes": 8195,
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "Native policy/derivation dependencies; no accepted subset"
+    },
+    "temporal/inputs/transit-weekday/stops.json": {
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/transit-weekday/stops.json",
+      "source_sha256": "54aa507c93480f69e19242cb00a63e281ea67404edfa23ca761be76af551f813",
+      "sha256": "54aa507c93480f69e19242cb00a63e281ea67404edfa23ca761be76af551f813",
+      "bytes": 154495,
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "Native policy/derivation dependencies; no accepted subset"
+    },
+    "temporal/inputs/transit-weekday/transit-fleet-manifest.json": {
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/transit-weekday/transit-fleet-manifest.json",
+      "source_sha256": "bf3b3bf07f5ae58ea0ec6b3fa866359a4ce4e222a85ad5808dbc1a35d83af677",
+      "sha256": "bf3b3bf07f5ae58ea0ec6b3fa866359a4ce4e222a85ad5808dbc1a35d83af677",
+      "bytes": 42752,
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "Native policy/derivation dependencies; no accepted subset"
+    },
+    "temporal/inputs/transit-weekday/weekday-policy.json": {
+      "source": "scenarios/zona1/montecarlo/run-bg180-590679ae2497441c84440d14f9530e83/inputs/transit-weekday/weekday-policy.json",
+      "source_sha256": "007cb9a7555496ec19883f830cb8787010c93d09609db2fd2a7cadea3abc42d2",
+      "sha256": "007cb9a7555496ec19883f830cb8787010c93d09609db2fd2a7cadea3abc42d2",
+      "bytes": 48674,
+      "run_id": "simz1-3ddfb6868aee4c2591f48c09134a7051",
+      "scope": "Native policy/derivation dependencies; no accepted subset"
+    },
+    "c529-evidence/routing_observation_summary.json": {
+      "source": "runtime/diagnostics/c529-a27d8bae5d/routing_observation_summary.json",
+      "source_sha256": "8868225bf11d04d4beeafb0169a9d30549cf125bac5fc260cc8ca7b99e364256",
+      "sha256": "8868225bf11d04d4beeafb0169a9d30549cf125bac5fc260cc8ca7b99e364256",
+      "bytes": 317625,
+      "run_id": "simz1-309d75ccb2d947629807a89d2e826987",
+      "scope": "Exact existing causal summary; no event rescan or accepted-run claim"
+    },
+    "c529-evidence/reroute_trigger_timeline.csv": {
+      "source": "runtime/diagnostics/c529-a27d8bae5d/reroute_trigger_timeline.csv",
+      "source_sha256": "137ebaf675f8bc321f64f9dfe71449f2912f7608af0a932014254869e30e8a1f",
+      "sha256": "137ebaf675f8bc321f64f9dfe71449f2912f7608af0a932014254869e30e8a1f",
+      "bytes": 55017,
+      "run_id": "simz1-309d75ccb2d947629807a89d2e826987",
+      "scope": "Exact existing causal summary; no event rescan or accepted-run claim"
+    }
+  }
+}

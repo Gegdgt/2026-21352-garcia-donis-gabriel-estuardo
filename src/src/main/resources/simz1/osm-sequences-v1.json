@@ -1,0 +1,1084 @@
+{
+  "schema": "simz1-osm-sequences",
+  "version": 1,
+  "policy": "motor_vehicle restrictions without exceptions apply to car (including motorcycles and compact freight) and bus; other semantics fail closed",
+  "sources": {
+    "scenarios/zona1/od/balanced-gateway-v1/access-review-v2/map.osm": {
+      "sha256": "707684e17858e305324d72ce5df05a489138e3b819442b3c34e2a21c864d8c6b",
+      "role": "isolated_source_osm"
+    },
+    "scenarios/zona1/od/balanced-gateway-v1/access-review-v2/network.xml": {
+      "sha256": "f328c84e34f7b7ba7c3a204bb97bb9907b107dbf77d53c301e3c6c44fe487029",
+      "role": "directed_mapping"
+    },
+    "scenarios/zona1/od/balanced-gateway-v1/access-review-v2/lanes.xml": {
+      "sha256": "e86e9a4f8055b737af3652f13b0aa2e0073c7c67e3e39a3965482d99fca469b6",
+      "role": "ten_preserved_lane_corrections"
+    },
+    "scenarios/zona1/od/balanced-gateway-v1/access-review-v2/osm-evidence/relation-17478998-full.osm": {
+      "url": "https://api.openstreetmap.org/api/0.6/relation/17478998/full",
+      "sha256": "5c59f1b6df35c2a0578248756e6726dfaf6934e249766a32a9bc806e8abae56a",
+      "bytes": 2743,
+      "role": "official_osm_evidence"
+    },
+    "scenarios/zona1/od/balanced-gateway-v1/access-review-v2/osm-evidence/relation-17884471-full.osm": {
+      "url": "https://api.openstreetmap.org/api/0.6/relation/17884471/full",
+      "sha256": "a8c6cebc9f000db4d22cf91c89baf922bb3986f000462f3118e8945da947f977",
+      "bytes": 1284,
+      "role": "official_osm_evidence"
+    },
+    "scenarios/zona1/od/balanced-gateway-v1/access-review-v2/osm-evidence/relation-17884471-history.osm": {
+      "url": "https://api.openstreetmap.org/api/0.6/relation/17884471/history",
+      "sha256": "0de8189aa2b375ac227a599e97aae84bde26c1e5a2f32af3297d82067ff254ad",
+      "bytes": 947,
+      "role": "official_osm_evidence"
+    },
+    "scenarios/zona1/od/balanced-gateway-v1/access-review-v2/osm-evidence/way-381158225-history.osm": {
+      "url": "https://api.openstreetmap.org/api/0.6/way/381158225/history",
+      "sha256": "b9e7713f22785de5ce2836a4bd13d42035d0d4b48d7e1288441d48e00d5258e6",
+      "bytes": 4880,
+      "role": "official_osm_evidence"
+    },
+    "scenarios/zona1/od/balanced-gateway-v1/access-review-v2/osm-evidence/source-provenance.json": {
+      "sha256": "a79e9083b16d643b6ec91b714ff44e8c81fc2e0ee1f9a1c447ab95f2eb9ac188",
+      "role": "retrieval_provenance"
+    }
+  },
+  "restrictions": [
+    {
+      "relation_id": "6008781",
+      "relation": {
+        "attributes": {
+          "id": "6008781",
+          "visible": "true",
+          "version": "4",
+          "changeset": "155396384",
+          "timestamp": "2024-08-18T04:32:31Z",
+          "user": "Lewatoto",
+          "uid": "1143767"
+        },
+        "members": [
+          {
+            "type": "node",
+            "ref": "631824824",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "400252217",
+            "role": "to"
+          },
+          {
+            "type": "way",
+            "ref": "1308544716",
+            "role": "from"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_left_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "restriction": "no_left_turn",
+      "sequences": [
+        [
+          "osm_1308544716_0_forward",
+          "osm_400252217_0_forward"
+        ]
+      ],
+      "modes": [
+        "car",
+        "bus"
+      ],
+      "vehicle_classes": [
+        "car",
+        "motorcycle",
+        "compact_truck",
+        "bus"
+      ],
+      "exceptions": [],
+      "conditional": null,
+      "provenance": "isolated_source_osm",
+      "enforcement": "existing_lanes_and_sequence_automaton"
+    },
+    {
+      "relation_id": "6016436",
+      "relation": {
+        "attributes": {
+          "id": "6016436",
+          "visible": "true",
+          "version": "1",
+          "changeset": "37528393",
+          "timestamp": "2016-02-29T19:22:17Z",
+          "user": "Canyonsrcool",
+          "uid": "126508"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "400252217",
+            "role": "from"
+          },
+          {
+            "type": "node",
+            "ref": "410442286",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "400843678",
+            "role": "to"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_left_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "restriction": "no_left_turn",
+      "sequences": [
+        [
+          "osm_400252217_0_forward",
+          "osm_400843678_0_forward"
+        ]
+      ],
+      "modes": [
+        "car",
+        "bus"
+      ],
+      "vehicle_classes": [
+        "car",
+        "motorcycle",
+        "compact_truck",
+        "bus"
+      ],
+      "exceptions": [],
+      "conditional": null,
+      "provenance": "isolated_source_osm",
+      "enforcement": "existing_lanes_and_sequence_automaton"
+    },
+    {
+      "relation_id": "17146405",
+      "relation": {
+        "attributes": {
+          "id": "17146405",
+          "visible": "true",
+          "version": "1",
+          "changeset": "147039599",
+          "timestamp": "2024-02-04T02:37:58Z",
+          "user": "Guiso",
+          "uid": "19971730"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "403151302",
+            "role": "from"
+          },
+          {
+            "type": "node",
+            "ref": "410437788",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "559513165",
+            "role": "to"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_left_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "restriction": "no_left_turn",
+      "sequences": [
+        [
+          "osm_403151302_0_forward",
+          "osm_559513165_0_forward"
+        ]
+      ],
+      "modes": [
+        "car",
+        "bus"
+      ],
+      "vehicle_classes": [
+        "car",
+        "motorcycle",
+        "compact_truck",
+        "bus"
+      ],
+      "exceptions": [],
+      "conditional": null,
+      "provenance": "isolated_source_osm",
+      "enforcement": "existing_lanes_and_sequence_automaton"
+    },
+    {
+      "relation_id": "17146406",
+      "relation": {
+        "attributes": {
+          "id": "17146406",
+          "visible": "true",
+          "version": "1",
+          "changeset": "147039599",
+          "timestamp": "2024-02-04T02:37:58Z",
+          "user": "Guiso",
+          "uid": "19971730"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "403151302",
+            "role": "from"
+          },
+          {
+            "type": "node",
+            "ref": "410437788",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "64387808",
+            "role": "to"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_left_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "restriction": "no_left_turn",
+      "sequences": [
+        [
+          "osm_403151302_0_forward",
+          "osm_64387808_0_forward"
+        ]
+      ],
+      "modes": [
+        "car",
+        "bus"
+      ],
+      "vehicle_classes": [
+        "car",
+        "motorcycle",
+        "compact_truck",
+        "bus"
+      ],
+      "exceptions": [],
+      "conditional": null,
+      "provenance": "isolated_source_osm",
+      "enforcement": "existing_lanes_and_sequence_automaton"
+    },
+    {
+      "relation_id": "17373677",
+      "relation": {
+        "attributes": {
+          "id": "17373677",
+          "visible": "true",
+          "version": "2",
+          "changeset": "150355692",
+          "timestamp": "2024-04-22T16:25:40Z",
+          "user": "GbabethemapGod",
+          "uid": "15314242"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "1265232222",
+            "role": "to"
+          },
+          {
+            "type": "node",
+            "ref": "11583002439",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "1274975828",
+            "role": "from"
+          }
+        ],
+        "tags": [
+          {
+            "k": "implicit",
+            "v": "yes"
+          },
+          {
+            "k": "restriction",
+            "v": "no_right_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "restriction": "no_right_turn",
+      "sequences": [
+        [
+          "osm_1274975828_1_forward",
+          "osm_1265232222_0_forward"
+        ]
+      ],
+      "modes": [
+        "car",
+        "bus"
+      ],
+      "vehicle_classes": [
+        "car",
+        "motorcycle",
+        "compact_truck",
+        "bus"
+      ],
+      "exceptions": [],
+      "conditional": null,
+      "provenance": "isolated_source_osm",
+      "enforcement": "existing_lanes_and_sequence_automaton"
+    },
+    {
+      "relation_id": "17475192",
+      "relation": {
+        "attributes": {
+          "id": "17475192",
+          "visible": "true",
+          "version": "1",
+          "changeset": "150047325",
+          "timestamp": "2024-04-15T16:19:21Z",
+          "user": "GbabethemapGod",
+          "uid": "15314242"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "1272828335",
+            "role": "from"
+          },
+          {
+            "type": "node",
+            "ref": "333864438",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "1272828334",
+            "role": "to"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_left_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "restriction": "no_left_turn",
+      "sequences": [
+        [
+          "osm_1272828335_0_forward",
+          "osm_1272828334_0_forward"
+        ]
+      ],
+      "modes": [
+        "car",
+        "bus"
+      ],
+      "vehicle_classes": [
+        "car",
+        "motorcycle",
+        "compact_truck",
+        "bus"
+      ],
+      "exceptions": [],
+      "conditional": null,
+      "provenance": "isolated_source_osm",
+      "enforcement": "existing_lanes_and_sequence_automaton"
+    },
+    {
+      "relation_id": "17478998",
+      "relation": {
+        "attributes": {
+          "id": "17478998",
+          "visible": "true",
+          "version": "1",
+          "changeset": "150095663",
+          "timestamp": "2024-04-16T17:18:54Z",
+          "user": "Corban8",
+          "uid": "4240913"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "1273145789",
+            "role": "from"
+          },
+          {
+            "type": "way",
+            "ref": "1270930401",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "1273145790",
+            "role": "to"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_u_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "restriction": "no_u_turn",
+      "sequences": [
+        [
+          "osm_1273145789_0_forward",
+          "osm_1270930401_0_forward",
+          "osm_1273145790_0_forward"
+        ]
+      ],
+      "modes": [
+        "car",
+        "bus"
+      ],
+      "vehicle_classes": [
+        "car",
+        "motorcycle",
+        "compact_truck",
+        "bus"
+      ],
+      "exceptions": [],
+      "conditional": null,
+      "provenance": "isolated_source_osm",
+      "enforcement": "sequence_automaton"
+    },
+    {
+      "relation_id": "17502672",
+      "relation": {
+        "attributes": {
+          "id": "17502672",
+          "visible": "true",
+          "version": "1",
+          "changeset": "150355692",
+          "timestamp": "2024-04-22T16:25:39Z",
+          "user": "GbabethemapGod",
+          "uid": "15314242"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "60237269",
+            "role": "from"
+          },
+          {
+            "type": "node",
+            "ref": "333531343",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "1274975830",
+            "role": "to"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_left_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "restriction": "no_left_turn",
+      "sequences": [
+        [
+          "osm_60237269_2_forward",
+          "osm_1274975830_0_forward"
+        ]
+      ],
+      "modes": [
+        "car",
+        "bus"
+      ],
+      "vehicle_classes": [
+        "car",
+        "motorcycle",
+        "compact_truck",
+        "bus"
+      ],
+      "exceptions": [],
+      "conditional": null,
+      "provenance": "isolated_source_osm",
+      "enforcement": "existing_lanes_and_sequence_automaton"
+    },
+    {
+      "relation_id": "17947071",
+      "relation": {
+        "attributes": {
+          "id": "17947071",
+          "visible": "true",
+          "version": "1",
+          "changeset": "155396384",
+          "timestamp": "2024-08-18T04:32:31Z",
+          "user": "Lewatoto",
+          "uid": "1143767"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "1274975827",
+            "role": "from"
+          },
+          {
+            "type": "node",
+            "ref": "631824824",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "559513163",
+            "role": "to"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_right_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "restriction": "no_right_turn",
+      "sequences": [
+        [
+          "osm_1274975827_3_forward",
+          "osm_559513163_0_forward"
+        ]
+      ],
+      "modes": [
+        "car",
+        "bus"
+      ],
+      "vehicle_classes": [
+        "car",
+        "motorcycle",
+        "compact_truck",
+        "bus"
+      ],
+      "exceptions": [],
+      "conditional": null,
+      "provenance": "isolated_source_osm",
+      "enforcement": "existing_lanes_and_sequence_automaton"
+    },
+    {
+      "relation_id": "20224530",
+      "relation": {
+        "attributes": {
+          "id": "20224530",
+          "visible": "true",
+          "version": "1",
+          "changeset": "178612606",
+          "timestamp": "2026-02-16T06:36:31Z",
+          "user": "Guiso",
+          "uid": "19971730"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "258164128",
+            "role": "from"
+          },
+          {
+            "type": "node",
+            "ref": "9716924073",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "1479114530",
+            "role": "to"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_right_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "restriction": "no_right_turn",
+      "sequences": [
+        [
+          "osm_258164128_5_forward",
+          "osm_1479114530_0_forward"
+        ]
+      ],
+      "modes": [
+        "car",
+        "bus"
+      ],
+      "vehicle_classes": [
+        "car",
+        "motorcycle",
+        "compact_truck",
+        "bus"
+      ],
+      "exceptions": [],
+      "conditional": null,
+      "provenance": "isolated_source_osm",
+      "enforcement": "existing_lanes_and_sequence_automaton"
+    },
+    {
+      "relation_id": "20224531",
+      "relation": {
+        "attributes": {
+          "id": "20224531",
+          "visible": "true",
+          "version": "1",
+          "changeset": "178612606",
+          "timestamp": "2026-02-16T06:36:31Z",
+          "user": "Guiso",
+          "uid": "19971730"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "39931882",
+            "role": "from"
+          },
+          {
+            "type": "node",
+            "ref": "11583002439",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "1265264312",
+            "role": "to"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_left_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "restriction": "no_left_turn",
+      "sequences": [
+        [
+          "osm_39931882_2_forward",
+          "osm_1265264312_0_forward"
+        ]
+      ],
+      "modes": [
+        "car",
+        "bus"
+      ],
+      "vehicle_classes": [
+        "car",
+        "motorcycle",
+        "compact_truck",
+        "bus"
+      ],
+      "exceptions": [],
+      "conditional": null,
+      "provenance": "isolated_source_osm",
+      "enforcement": "existing_lanes_and_sequence_automaton"
+    }
+  ],
+  "malformed_source_treatments": [
+    {
+      "status": "MALFORMED_SOURCE_NO_EXECUTABLE_MANEUVER",
+      "relation_id": "17884471",
+      "version": 2,
+      "changeset": "178612606",
+      "warning": "OSM 17884471 v2 lacks from/via in the authoritative source; no maneuver can be inferred. Historical from-way 381158225 was deleted. This does not establish unrestricted legal access to the destination.",
+      "relation": {
+        "attributes": {
+          "id": "17884471",
+          "visible": "true",
+          "version": "2",
+          "changeset": "178612606",
+          "timestamp": "2026-02-16T06:36:31Z",
+          "user": "Guiso",
+          "uid": "19971730"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "34993910",
+            "role": "to"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_straight_on"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "source_sha256": {
+        "relation-17478998-full.osm": "5c59f1b6df35c2a0578248756e6726dfaf6934e249766a32a9bc806e8abae56a",
+        "relation-17884471-full.osm": "a8c6cebc9f000db4d22cf91c89baf922bb3986f000462f3118e8945da947f977",
+        "relation-17884471-history.osm": "0de8189aa2b375ac227a599e97aae84bde26c1e5a2f32af3297d82067ff254ad",
+        "way-381158225-history.osm": "b9e7713f22785de5ce2836a4bd13d42035d0d4b48d7e1288441d48e00d5258e6"
+      },
+      "source_repair_applied": false,
+      "global_target_ban": false,
+      "activation": "EXACT_HASH_BOUND_DATA_QUALITY_TREATMENT"
+    }
+  ],
+  "unrepresented_relations": [
+    {
+      "relation_id": "14106857",
+      "relation": {
+        "attributes": {
+          "id": "14106857",
+          "visible": "true",
+          "version": "1",
+          "changeset": "120560590",
+          "timestamp": "2022-05-04T20:45:11Z",
+          "user": "Lewatoto",
+          "uid": "1143767"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "60237261",
+            "role": "from"
+          },
+          {
+            "type": "node",
+            "ref": "410439024",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "1057416031",
+            "role": "to"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_left_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "audit_status": "not_in_network",
+      "policy": "no currently mapped executable movement; production guard still reviews source and graph"
+    },
+    {
+      "relation_id": "17275374",
+      "relation": {
+        "attributes": {
+          "id": "17275374",
+          "visible": "true",
+          "version": "1",
+          "changeset": "147953558",
+          "timestamp": "2024-02-27T00:39:01Z",
+          "user": "JAAS",
+          "uid": "3321532"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "1255067107",
+            "role": "from"
+          },
+          {
+            "type": "way",
+            "ref": "59566215",
+            "role": "to"
+          },
+          {
+            "type": "node",
+            "ref": "738886567",
+            "role": "via"
+          }
+        ],
+        "tags": [
+          {
+            "k": "implicit",
+            "v": "yes"
+          },
+          {
+            "k": "restriction",
+            "v": "no_left_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "audit_status": "not_in_network",
+      "policy": "no currently mapped executable movement; production guard still reviews source and graph"
+    },
+    {
+      "relation_id": "17354173",
+      "relation": {
+        "attributes": {
+          "id": "17354173",
+          "visible": "true",
+          "version": "1",
+          "changeset": "148757763",
+          "timestamp": "2024-03-17T05:09:19Z",
+          "user": "Guiso",
+          "uid": "19971730"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "1057486085",
+            "role": "from"
+          },
+          {
+            "type": "node",
+            "ref": "479440976",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "1241242280",
+            "role": "to"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_left_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "audit_status": "not_in_network",
+      "policy": "no currently mapped executable movement; production guard still reviews source and graph"
+    },
+    {
+      "relation_id": "20224473",
+      "relation": {
+        "attributes": {
+          "id": "20224473",
+          "visible": "true",
+          "version": "2",
+          "changeset": "178615107",
+          "timestamp": "2026-02-16T07:42:23Z",
+          "user": "Guiso",
+          "uid": "19971730"
+        },
+        "members": [
+          {
+            "type": "node",
+            "ref": "13568832045",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "1479108617",
+            "role": "to"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_left_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "audit_status": "incomplete_or_unsupported_members",
+      "policy": "no currently mapped executable movement; production guard still reviews source and graph"
+    },
+    {
+      "relation_id": "20739957",
+      "relation": {
+        "attributes": {
+          "id": "20739957",
+          "visible": "true",
+          "version": "1",
+          "changeset": "183139615",
+          "timestamp": "2026-05-25T06:59:57Z",
+          "user": "Guiso",
+          "uid": "19971730"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "1521202575",
+            "role": "from"
+          },
+          {
+            "type": "node",
+            "ref": "13875377567",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "1521202580",
+            "role": "to"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_left_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "audit_status": "not_in_network",
+      "policy": "no currently mapped executable movement; production guard still reviews source and graph"
+    },
+    {
+      "relation_id": "20739958",
+      "relation": {
+        "attributes": {
+          "id": "20739958",
+          "visible": "true",
+          "version": "1",
+          "changeset": "183139615",
+          "timestamp": "2026-05-25T06:59:57Z",
+          "user": "Guiso",
+          "uid": "19971730"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "1521202579",
+            "role": "from"
+          },
+          {
+            "type": "node",
+            "ref": "13875377567",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "1521202581",
+            "role": "to"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_right_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "audit_status": "not_in_network",
+      "policy": "no currently mapped executable movement; production guard still reviews source and graph"
+    },
+    {
+      "relation_id": "20739983",
+      "relation": {
+        "attributes": {
+          "id": "20739983",
+          "visible": "true",
+          "version": "1",
+          "changeset": "183139976",
+          "timestamp": "2026-05-25T07:10:22Z",
+          "user": "Guiso",
+          "uid": "19971730"
+        },
+        "members": [
+          {
+            "type": "way",
+            "ref": "400843678",
+            "role": "from"
+          },
+          {
+            "type": "node",
+            "ref": "13875437303",
+            "role": "via"
+          },
+          {
+            "type": "way",
+            "ref": "1521207433",
+            "role": "to"
+          }
+        ],
+        "tags": [
+          {
+            "k": "restriction",
+            "v": "no_right_turn"
+          },
+          {
+            "k": "type",
+            "v": "restriction"
+          }
+        ]
+      },
+      "audit_status": "not_in_network",
+      "policy": "no currently mapped executable movement; production guard still reviews source and graph"
+    }
+  ]
+}

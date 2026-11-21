@@ -1,0 +1,25 @@
+2026-11-01T09:52:53,733  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:53,828  INFO Version:21 HV000001: Hibernate Validator 8.0.0.Final
+2026-11-01T09:52:54,035  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:54,035  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:54,051  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:54,051  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:54,290  INFO EventsManagerImpl:115  event # 1
+2026-11-01T09:52:54,290  INFO EventsManagerImpl:115  event # 1
+2026-11-01T09:52:54,290  INFO EventsManagerImpl:115  event # 1
+2026-11-01T09:52:54,290  INFO EventsManagerImpl:115  event # 1
+2026-11-01T09:52:54,321  INFO EditRoutes:324 linkIds at join: -c--d-
+2026-11-01T09:52:54,321  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:54,321  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:54,321  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:54,321  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:54,321  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:54,321  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:54,338  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:54,338  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:54,338  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:54,338  INFO NetworkImpl:161  link # 4
+PASS: first/last link, full route index, single/short/impossible route, repeated links, return to origin, immutable prefix/destination, car modes
+PASS: MATSim 15 EditRoutes loop-splice regression reproduced; candidate continuity rejection
+PASS: restricted turns, actual terminal/intermediate lane reachability, deterministic successors, lane cycles, lanes off
+2026-11-01T09:52:54,274  WARN SimZ1SequenceContract:58 MALFORMED_SOURCE_NO_EXECUTABLE_MANEUVER: OSM 17884471 v2 lacks from/via in the authoritative source; no maneuver can be inferred. Historical from-way 381158225 was deleted. This does not establish unrestricted legal access to the destination.

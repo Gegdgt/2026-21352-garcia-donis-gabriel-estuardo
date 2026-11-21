@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE population SYSTEM "http://www.matsim.org/files/dtd/population_v6.dtd">
+<population>
+  <person id="simz1_smoke">
+    <plan selected="yes">
+      <activity type="home" link="osm_30262980_0_forward" facility="smoke_home" end_time="09:01:00" />
+      <leg mode="car" />
+      <activity type="work" link="osm_1057416059_3_forward" facility="smoke_work" />
+    </plan>
+  </person>
+</population>

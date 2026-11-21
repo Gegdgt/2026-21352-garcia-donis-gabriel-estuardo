@@ -1,0 +1,113 @@
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:24: error: package RoadVehicleProfiles does not exist
+        if (schema==null || RoadVehicleProfiles.SCHEMA.equals(schema.toString())) return false;
+                                               ^
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:36: error: cannot find symbol
+        if (SimZ1Freight.applies(person)) return "Normal"; // routing cost only; native type/PCU remain freight
+            ^
+  symbol:   variable SimZ1Freight
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:37: error: cannot find symbol
+        if (RoadVehicleProfiles.applies(person)) return RoadVehicleProfiles.profile(person);
+            ^
+  symbol:   variable RoadVehicleProfiles
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:37: error: cannot find symbol
+        if (RoadVehicleProfiles.applies(person)) return RoadVehicleProfiles.profile(person);
+                                                        ^
+  symbol:   variable RoadVehicleProfiles
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:54: error: cannot find symbol
+        if (RoadVehicleProfiles.applies(person)) return RoadVehicleProfiles.maximumVelocity(person);
+            ^
+  symbol:   variable RoadVehicleProfiles
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:54: error: cannot find symbol
+        if (RoadVehicleProfiles.applies(person)) return RoadVehicleProfiles.maximumVelocity(person);
+                                                        ^
+  symbol:   variable RoadVehicleProfiles
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:116: error: cannot find symbol
+            if (SimZ1Freight.applies(person)) continue;
+                ^
+  symbol:   variable SimZ1Freight
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:118: error: cannot find symbol
+            else if (RoadVehicleProfiles.applies(person)) road=true;
+                     ^
+  symbol:   variable RoadVehicleProfiles
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:130: error: cannot find symbol
+            RoadVehicleProfiles.validateCatalog(vehicles);
+            ^
+  symbol:   variable RoadVehicleProfiles
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:133: error: cannot find symbol
+                if (SimZ1Freight.applies(person)) continue;
+                    ^
+  symbol:   variable SimZ1Freight
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:134: error: cannot find symbol
+                RoadVehicleProfiles.validateVehicle(person,vehicles);
+                ^
+  symbol:   variable RoadVehicleProfiles
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:135: error: cannot find symbol
+                motorcycles |= RoadVehicleProfiles.motorcycle(person);
+                               ^
+  symbol:   variable RoadVehicleProfiles
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:146: error: cannot find symbol
+                if (SimZ1Freight.applies(person)) continue;
+                    ^
+  symbol:   variable SimZ1Freight
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:159: error: cannot find symbol
+            if (SimZ1Freight.applies(person)) continue;
+                ^
+  symbol:   variable SimZ1Freight
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:160: error: cannot find symbol
+            String name=RoadVehicleProfiles.applies(person)?RoadVehicleProfiles.vehicleType(person):profile(person);
+                        ^
+  symbol:   variable RoadVehicleProfiles
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:160: error: cannot find symbol
+            String name=RoadVehicleProfiles.applies(person)?RoadVehicleProfiles.vehicleType(person):profile(person);
+                                                            ^
+  symbol:   variable RoadVehicleProfiles
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:166: error: cannot find symbol
+        SimZ1Freight.configure(scenario);
+        ^
+  symbol:   variable SimZ1Freight
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:215: error: cannot find symbol
+        if (RoadVehicleProfiles.applies(person)) {
+            ^
+  symbol:   variable RoadVehicleProfiles
+  location: class DrivingProfiles
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:216: error: package RoadVehicleProfiles does not exist
+            if (RoadVehicleProfiles.SHORTEST_DISTANCE.equals(RoadVehicleProfiles.routingPolicy(person))) {
+                                   ^
+C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\src\main\java\gt\edu\uvg\sim\zona1\DrivingProfiles.java:216: error: cannot find symbol
+            if (RoadVehicleProfiles.SHORTEST_DISTANCE.equals(RoadVehicleProfiles.routingPolicy(person))) {
+                                                             ^
+  symbol:   variable RoadVehicleProfiles
+  location: class DrivingProfiles
+20 errors
+An exception has occurred in the compiler (17.0.12). Please file a bug against the Java compiler via the Java bug reporting page (https://bugreport.java.com) after checking the Bug Database (https://bugs.java.com) for duplicates. Include your program, the following diagnostic, and the parameters passed to the Java compiler in your report. Thank you.
+java.nio.file.AccessDeniedException: C:\Users\gegdg\.m2\repository\net\sf\trove4j\trove4j\3.0.3\trove4j-3.0.3.jar
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:96)
+	at java.base/sun.nio.fs.WindowsLinkSupport.getRealPath(WindowsLinkSupport.java:258)
+	at java.base/sun.nio.fs.WindowsPath.toRealPath(WindowsPath.java:933)
+	at java.base/sun.nio.fs.WindowsPath.toRealPath(WindowsPath.java:42)
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.lambda$removeFileSystem$0(ZipFileSystemProvider.java:322)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.removeFileSystem(ZipFileSystemProvider.java:324)
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.close(ZipFileSystem.java:536)
+	at jdk.compiler/com.sun.tools.javac.file.JavacFileManager$ArchiveContainer.close(JavacFileManager.java:670)
+	at jdk.compiler/com.sun.tools.javac.file.JavacFileManager.close(JavacFileManager.java:748)
+	at jdk.compiler/com.sun.tools.javac.main.Main.compile(Main.java:180)
+	at jdk.compiler/com.sun.tools.javac.Main.compile(Main.java:64)
+	at jdk.compiler/com.sun.tools.javac.Main.main(Main.java:50)

@@ -1,0 +1,55 @@
+{
+  "schema": "simz1-final-experiments-v2",
+  "draw": {
+    "seed": "SIMZ1-final-20261102-N-v1",
+    "algorithm": "sha256-rejection-u256be-v1",
+    "counter": 0,
+    "sha256": "d26c0aa68f54f18bc747b8777eb6cfe548fa0a1a52a5fd8b75f815b953c4f837",
+    "inclusive_range": [
+      180000,
+      220000
+    ],
+    "selected_non_public_vehicles": 204186
+  },
+  "demand_seed": 20261023,
+  "service_date": "2026-10-23",
+  "public_vehicles": 269,
+  "freight_completion_policy": "freight-close-plus3600-v1",
+  "demand_end_seconds": 86400,
+  "observation_end_seconds": 86400,
+  "signal_variant": "l18-local-synthetic-offsets-v1",
+  "scenarios": {
+    "buses": {
+      "total_non_public_vehicles": 0,
+      "iterations": 1,
+      "population_group": "buses"
+    },
+    "half": {
+      "total_non_public_vehicles": 110000,
+      "iterations": 1,
+      "population_group": "half"
+    },
+    "quarter": {
+      "total_non_public_vehicles": 55000,
+      "iterations": 1,
+      "population_group": "quarter"
+    },
+    "full-1": {
+      "total_non_public_vehicles": 204186,
+      "iterations": 1,
+      "population_group": "full-shared"
+    },
+    "full-10": {
+      "total_non_public_vehicles": 204186,
+      "iterations": 10,
+      "population_group": "full-shared"
+    },
+    "max-test": {
+      "total_non_public_vehicles": 220000,
+      "iterations": 1,
+      "population_group": "max-test"
+    }
+  },
+  "observation_policy": "fixed-day-24h-v1",
+  "native_qsim_end_seconds": 86399
+}

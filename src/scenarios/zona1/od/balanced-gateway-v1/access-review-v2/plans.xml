@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE population SYSTEM "http://www.matsim.org/files/dtd/population_v6.dtd">
+<population desc="SimZ1 temporary single-agent microscopic debugging">
+  <person id="agente_prueba_01">
+    <plan selected="yes">
+      <activity type="home" link="osm_30262980_15_forward" end_time="08:00:00" />
+      <leg mode="car" />
+      <activity type="work" link="osm_384746799_0_forward" />
+    </plan>
+  </person>
+</population>

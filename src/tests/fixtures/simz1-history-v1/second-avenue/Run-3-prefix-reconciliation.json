@@ -1,0 +1,89 @@
+{
+  "utc": "2026-11-02T20:49:28.251334+00:00",
+  "run_id": "simz1-9d7db3ba801841f9b501209229f58bfc",
+  "iteration": 0,
+  "status": "interrupted_failed_invalid_diagnostic_prefix",
+  "source": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\scenarios\\zona1\\montecarlo\\run-bg180-c1c0dda877de4cfbb504f5baf3f82de1\\output\\ITERS\\it.0\\0.events.xml.gz",
+  "source_sha256": "b89b750442264f7127216e83391e49305ffc4bff72ff4c465e857557317b0c99",
+  "source_bytes": 455653636,
+  "source_unchanged": true,
+  "last_complete_event_seconds": 22224.0,
+  "last_complete_event_line": 14688236,
+  "lines_visited": 14688236,
+  "lifecycle_events_selected": 40743,
+  "xml_closed": false,
+  "gzip_complete": false,
+  "gzip_error": "EOFError('Compressed file ended before the end-of-stream marker was reached')",
+  "unit": "distinct non-public vehicle, except public expeditions separately",
+  "rows": [
+    {
+      "group": "carro",
+      "scheduled": 79200,
+      "incorporated": 3861,
+      "completed": 3332,
+      "abort_observed": 0,
+      "active_at_cutoff": 529,
+      "waiting_after_departure": 1499,
+      "future_scheduled": 73840,
+      "not_incorporated": 75339,
+      "aborted_final": null,
+      "due_without_observed_departure": 0
+    },
+    {
+      "group": "freight",
+      "scheduled": 1800,
+      "incorporated": 600,
+      "completed": 600,
+      "abort_observed": 0,
+      "active_at_cutoff": 0,
+      "waiting_after_departure": 0,
+      "future_scheduled": 1200,
+      "not_incorporated": 1200,
+      "aborted_final": null,
+      "due_without_observed_departure": 0
+    },
+    {
+      "group": "moto",
+      "scheduled": 99000,
+      "incorporated": 4816,
+      "completed": 4117,
+      "abort_observed": 0,
+      "active_at_cutoff": 699,
+      "waiting_after_departure": 1904,
+      "future_scheduled": 92280,
+      "not_incorporated": 94184,
+      "aborted_final": null,
+      "due_without_observed_departure": 0
+    },
+    {
+      "group": "non_public",
+      "scheduled": 180000,
+      "incorporated": 9277,
+      "completed": 8049,
+      "abort_observed": 0,
+      "active_at_cutoff": 1228,
+      "waiting_after_departure": 3403,
+      "future_scheduled": 167320,
+      "not_incorporated": 170723,
+      "aborted_final": null,
+      "due_without_observed_departure": 0
+    }
+  ],
+  "public": {
+    "configured_vehicles": 269,
+    "incorporated_unique": 240,
+    "unique_with_arrival": 219,
+    "expeditions_incorporated": 586,
+    "expeditions_completed": 463,
+    "expeditions_abort_observed": 0,
+    "active_at_cutoff": 123,
+    "scheduled_expeditions": 15336
+  },
+  "limitations": [
+    "No cleanup occurred; final abortions unknown, not zero.",
+    "The last event is complete; its timestamp need not contain every event of that native tick.",
+    "Lifecycle reconciliation does not replace OD, body clearance or final native acceptance audits.",
+    "Future scheduled vehicles are neither aborted nor omitted."
+  ],
+  "elapsed_seconds": 107.53100000000268
+}

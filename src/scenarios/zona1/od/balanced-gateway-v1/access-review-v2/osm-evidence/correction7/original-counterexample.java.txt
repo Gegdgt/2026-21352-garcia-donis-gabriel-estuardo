@@ -1,0 +1,48 @@
+package gt.edu.uvg.sim.zona1;
+
+import java.util.*;
+import org.matsim.api.core.v01.*;
+import org.matsim.api.core.v01.network.*;
+import org.matsim.core.config.ConfigUtils;
+import org.matsim.core.scenario.ScenarioUtils;
+
+/** Six-link diagnostic only. No controller, QSim, agents, or scenario writes.
+ * Reproduces the missing history state in the unchanged production router.
+ * This is a counterexample, NOT an implementation of the OSM restriction. */
+public final class Restriction17478998Probe {
+    private static Id<Link> id(String s) { return Id.createLinkId(s); }
+    private static void link(Network n, String name, String from, String to, double length) {
+        var l = n.getFactory().createLink(id(name), n.getNodes().get(Id.createNodeId(from)),
+            n.getNodes().get(Id.createNodeId(to)));
+        l.setLength(length); l.setFreespeed(10); l.setCapacity(4000);
+        l.setNumberOfLanes(2); l.setAllowedModes(Set.of("car")); n.addLink(l);
+    }
+    public static void main(String[] args) {
+        try {
+            var s = ScenarioUtils.createScenario(ConfigUtils.createConfig());
+            var n = s.getNetwork();
+            for (String key : List.of("a", "c", "j", "v", "m", "end"))
+                n.addNode(n.getFactory().createNode(Id.createNodeId(key), new Coord(n.getNodes().size()*10, 0)));
+            // A->V->B forbidden; C->V->B legal. D is a costly legal alternative.
+            link(n,"A","a","j",98); link(n,"C","c","j",36);
+            link(n,"V","j","v",9.5); link(n,"B","v","m",70);
+            link(n,"D","v","m",200); link(n,"E","m","end",20);
+            var safety = new SimZ1RouteSafety(s);
+            var router = new SimZ1TurnRouter(n,safety,(l,t,p,v)->l.getLength()/l.getFreespeed());
+            var prohibited = List.of(id("A"),id("V"),id("B"),id("E"));
+            var legal = List.of(id("C"),id("V"),id("B"),id("E"));
+            var old = List.of(id("A"),id("V"),id("D"),id("E"));
+            var generated = router.path(id("A"),id("E"),0,null,null);
+            var suffix = router.path(id("V"),id("E"),0,null,null);
+            var replacement = SimZ1RouteSafety.splice(old,1,suffix);
+            System.out.println("OSM_PROBE={\"forbidden_route_accepted\":"+(safety.validateNetwork(prohibited)==null)
+                +",\"legal_other_origin_accepted\":"+(safety.validateNetwork(legal)==null)
+                +",\"generated_forbidden_sequence\":"+prohibited.equals(generated)
+                +",\"reroute_reintroduced_sequence\":"+prohibited.equals(replacement)
+                +",\"replacement_validator_accepted\":"+(safety.validateReplacement(old,replacement,1,id("V"),id("E"),null)==null)
+                +",\"primary_pair_graph_admits_both\":"+(safety.allowedTurnInfos().get(id("A")).stream().anyMatch(t->t.getToLinkId().equals(id("V")))
+                    && safety.allowedTurnInfos().get(id("V")).stream().anyMatch(t->t.getToLinkId().equals(id("B"))))
+                +",\"controller_started\":false,\"qsim_started\":false}");
+        } finally { org.apache.logging.log4j.LogManager.shutdown(); }
+    }
+}

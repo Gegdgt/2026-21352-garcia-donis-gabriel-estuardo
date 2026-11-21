@@ -1,0 +1,239 @@
+{
+  "status": "PASS",
+  "contract_sha256": "2dc457548aaf57a5551d09928688be8bdc2b84cdbf383fda691f3eb5a4b7d254",
+  "controller_started": false,
+  "qsim_started": false,
+  "validate_executed": false,
+  "dry_run_executed": false,
+  "massive_generation_executed": false,
+  "osm_guard": {
+    "source": "OSM restriction relations; effective directed car/lane graph",
+    "relations": [
+      {
+        "relation_id": "6008781",
+        "restriction": "no_left_turn",
+        "via_ways": [],
+        "status": "no_admitted_prohibited_sequence",
+        "admitted_prohibited_sequences": []
+      },
+      {
+        "relation_id": "6016436",
+        "restriction": "no_left_turn",
+        "via_ways": [],
+        "status": "no_admitted_prohibited_sequence",
+        "admitted_prohibited_sequences": []
+      },
+      {
+        "relation_id": "14106857",
+        "restriction": "no_left_turn",
+        "via_ways": [],
+        "status": "not_represented_in_car_network"
+      },
+      {
+        "relation_id": "17146405",
+        "restriction": "no_left_turn",
+        "via_ways": [],
+        "status": "no_admitted_prohibited_sequence",
+        "admitted_prohibited_sequences": []
+      },
+      {
+        "relation_id": "17146406",
+        "restriction": "no_left_turn",
+        "via_ways": [],
+        "status": "no_admitted_prohibited_sequence",
+        "admitted_prohibited_sequences": []
+      },
+      {
+        "relation_id": "17275374",
+        "restriction": "no_left_turn",
+        "via_ways": [],
+        "status": "not_represented_in_car_network"
+      },
+      {
+        "relation_id": "17354173",
+        "restriction": "no_left_turn",
+        "via_ways": [],
+        "status": "not_represented_in_car_network"
+      },
+      {
+        "relation_id": "17373677",
+        "restriction": "no_right_turn",
+        "via_ways": [],
+        "status": "no_admitted_prohibited_sequence",
+        "admitted_prohibited_sequences": []
+      },
+      {
+        "relation_id": "17475192",
+        "restriction": "no_left_turn",
+        "via_ways": [],
+        "status": "no_admitted_prohibited_sequence",
+        "admitted_prohibited_sequences": []
+      },
+      {
+        "relation_id": "17478998",
+        "restriction": "no_u_turn",
+        "via_ways": [
+          "1270930401"
+        ],
+        "status": "enforced_by_shared_sequence_contract",
+        "admitted_prohibited_sequences": [
+          [
+            "osm_1273145789_0_forward",
+            "osm_1270930401_0_forward",
+            "osm_1273145790_0_forward"
+          ]
+        ],
+        "contract_version": 1,
+        "sequences": [
+          [
+            "osm_1273145789_0_forward",
+            "osm_1270930401_0_forward",
+            "osm_1273145790_0_forward"
+          ]
+        ]
+      },
+      {
+        "relation_id": "17502672",
+        "restriction": "no_left_turn",
+        "via_ways": [],
+        "status": "no_admitted_prohibited_sequence",
+        "admitted_prohibited_sequences": []
+      },
+      {
+        "relation_id": "17884471",
+        "restriction": "no_straight_on",
+        "via_ways": [],
+        "status": "MALFORMED_SOURCE_NO_EXECUTABLE_MANEUVER",
+        "warning": "OSM 17884471 v2 lacks from/via in the authoritative source; no maneuver can be inferred. Historical from-way 381158225 was deleted. This does not establish unrestricted legal access to the destination.",
+        "executable_maneuver_identified": false,
+        "unrestricted_access_verified": false
+      },
+      {
+        "relation_id": "17947071",
+        "restriction": "no_right_turn",
+        "via_ways": [],
+        "status": "no_admitted_prohibited_sequence",
+        "admitted_prohibited_sequences": []
+      },
+      {
+        "relation_id": "20224473",
+        "restriction": "no_left_turn",
+        "via_ways": [],
+        "status": "not_represented_in_car_network"
+      },
+      {
+        "relation_id": "20224530",
+        "restriction": "no_right_turn",
+        "via_ways": [],
+        "status": "no_admitted_prohibited_sequence",
+        "admitted_prohibited_sequences": []
+      },
+      {
+        "relation_id": "20224531",
+        "restriction": "no_left_turn",
+        "via_ways": [],
+        "status": "no_admitted_prohibited_sequence",
+        "admitted_prohibited_sequences": []
+      },
+      {
+        "relation_id": "20739957",
+        "restriction": "no_left_turn",
+        "via_ways": [],
+        "status": "not_represented_in_car_network"
+      },
+      {
+        "relation_id": "20739958",
+        "restriction": "no_right_turn",
+        "via_ways": [],
+        "status": "not_represented_in_car_network"
+      },
+      {
+        "relation_id": "20739983",
+        "restriction": "no_right_turn",
+        "via_ways": [],
+        "status": "not_represented_in_car_network"
+      }
+    ],
+    "count": 19,
+    "checked": true,
+    "sequence_contract_version": 1,
+    "limitation": "No extrapolation of missing OSM data; via-way restrictions are not flattened"
+  },
+  "malformed_treatment": {
+    "status": "MALFORMED_SOURCE_NO_EXECUTABLE_MANEUVER",
+    "relation_id": "17884471",
+    "version": 2,
+    "changeset": "178612606",
+    "warning": "OSM 17884471 v2 lacks from/via in the authoritative source; no maneuver can be inferred. Historical from-way 381158225 was deleted. This does not establish unrestricted legal access to the destination.",
+    "relation": {
+      "attributes": {
+        "id": "17884471",
+        "visible": "true",
+        "version": "2",
+        "changeset": "178612606",
+        "timestamp": "2026-02-16T06:36:31Z",
+        "user": "Guiso",
+        "uid": "19971730"
+      },
+      "members": [
+        {
+          "type": "way",
+          "ref": "34993910",
+          "role": "to"
+        }
+      ],
+      "tags": [
+        {
+          "k": "restriction",
+          "v": "no_straight_on"
+        },
+        {
+          "k": "type",
+          "v": "restriction"
+        }
+      ]
+    },
+    "source_sha256": {
+      "relation-17478998-full.osm": "5c59f1b6df35c2a0578248756e6726dfaf6934e249766a32a9bc806e8abae56a",
+      "relation-17884471-full.osm": "a8c6cebc9f000db4d22cf91c89baf922bb3986f000462f3118e8945da947f977",
+      "relation-17884471-history.osm": "0de8189aa2b375ac227a599e97aae84bde26c1e5a2f32af3297d82067ff254ad",
+      "way-381158225-history.osm": "b9e7713f22785de5ce2836a4bd13d42035d0d4b48d7e1288441d48e00d5258e6"
+    },
+    "source_repair_applied": false,
+    "global_target_ban": false,
+    "activation": "EXACT_HASH_BOUND_DATA_QUALITY_TREATMENT"
+  },
+  "existing_private_pairs_checked": 115,
+  "bounded_generated_private_trips_checked": 99,
+  "freight_routes_checked": 4,
+  "transit_parts_checked": 24,
+  "l12_l13_target_preserved": true,
+  "preserved_previous_evidence_hashes": 108,
+  "unchanged_starting_validate_receipt_sha256": "765cbd1fe8eb7d1e407a479f5332bdf5aa2a67c273da2aa594519931f5d52178",
+  "java_regression": {
+    "status": "PASS",
+    "checks": 28,
+    "controller_started": false,
+    "qsim_started": false
+  },
+  "existing_java_routing_regressions_passed": [
+    "RouteSafetyCheck",
+    "FastestTimeRoutingCheck",
+    "GatewayRouteSafetyCheck"
+  ],
+  "java_source_sha256": {
+    "src/main/java/gt/edu/uvg/sim/zona1/SimZ1SequenceContract.java": "2573d9a0c20af6eff8fff00cf00c808b7fd71a1649fb44aab0b8fa17b9d73a59",
+    "src/main/java/gt/edu/uvg/sim/zona1/SimZ1RouteSafety.java": "323102eafde262881b44a24e7db24395176bb760fd48ed78d44635e4e34b3ce7",
+    "src/main/java/gt/edu/uvg/sim/zona1/SimZ1TurnRouter.java": "43e787803802f09c08989456b3edb2c45b6fbe961feb01fa513ffccc82a11f2c",
+    "src/main/java/gt/edu/uvg/sim/zona1/CongestionAwareRerouting.java": "e3de1c295f18e17b95de6f58e3860b1796ac3d1cf8435891850ccdb3114a7897",
+    "src/main/java/gt/edu/uvg/sim/zona1/ExperiencedTimeRouting.java": "08abb5460c8d5d2675ac3aae974aec8bf46dc50933acc5275c7c226701092136",
+    "src/main/java/gt/edu/uvg/sim/zona1/DrivingProfiles.java": "24fdc7de3f5a780a154de698982a634323904c6cc3f26e5b56bb5c48e4766634"
+  },
+  "tests": {
+    "run": 16,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "scope": "routing regressions only; not integrated Validate, DryRun, capacity acceptance or 180K execution"
+}

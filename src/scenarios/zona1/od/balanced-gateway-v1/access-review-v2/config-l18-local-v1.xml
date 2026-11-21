@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE config SYSTEM "http://www.matsim.org/files/dtd/config_v2.dtd">
+<config>
+  <module name="vehicles">
+    <param name="vehiclesFile" value="vehicle-types.xml" />
+  </module>
+  <module name="signalsystems">
+    <param name="useSignalsystems" value="true" />
+    <param name="signalsystems" value="signalSystems.xml" />
+    <param name="signalgroups" value="signalGroups.xml" />
+    <param name="signalcontrol" value="signalControl-l18-local-v1.xml" />
+    <param name="useAmbertimes" value="true" />
+    <param name="useIntergreentimes" value="false" />
+  </module>
+  <!-- Custom within-trip controller installed by RunZona1Simulation. -->
+  <module name="zona1Priority">
+    <param name="enabled" value="true" />
+    <param name="stopSeconds" value="5" />
+    <param name="maxYieldSeconds" value="30" />
+    <param name="classification" value="osm-hierarchy" />
+    <param name="conflicts" value="geometric" />
+  </module>
+  <module name="zona1WithinDayRouting">
+    <param name="enabled" value="true" />
+    <param name="agentShare" value="0.5" />
+    <param name="routingPolicy" value="fastest-time" />
+  </module>
+  <module name="global">
+    <param name="coordinateSystem" value="EPSG:32615" />
+    <param name="randomSeed" value="20261002" />
+    <param name="numberOfThreads" value="12" />
+  </module>
+  <module name="network">
+    <param name="inputNetworkFile" value="network.xml" />
+    <param name="laneDefinitionsFile" value="lanes.xml" />
+    <param name="timeVariantNetwork" value="true" />
+  </module>
+  <module name="facilities">
+    <param name="inputFacilitiesFile" value="facilities.xml" />
+  </module>
+  <module name="plans">
+    <param name="inputPlansFile" value="plans.xml" />
+  </module>
+  <module name="controler">
+    <param name="outputDirectory" value="output/simz1-master" />
+    <param name="lastIteration" value="49" />
+    <param name="overwriteFiles" value="failIfDirectoryExists" />
+    <param name="firstIteration" value="0" />
+    <param name="routingAlgorithmType" value="Dijkstra" />
+    <param name="enableLinkToLinkRouting" value="true" />
+    <param name="writeEventsInterval" value="10" />
+    <param name="writePlansInterval" value="10" />
+  </module>
+  <module name="qsim">
+    <param name="useLanes" value="true" />
+    <param name="usingFastCapacityUpdate" value="false" />
+    <param name="startTime" value="00:00:00" />
+    <param name="endTime" value="24:00:00" />
+    <param name="numberOfThreads" value="4" />
+    <param name="simStarttimeInterpretation" value="onlyUseStarttime" />
+    <param name="simEndtimeInterpretation" value="onlyUseEndtime" />
+    <param name="flowCapacityFactor" value="1.0" />
+    <param name="storageCapacityFactor" value="1.0" />
+  </module>
+  <module name="planCalcScore">
+    <parameterset type="activityParams">
+      <param name="activityType" value="home" />
+      <param name="typicalDuration" value="06:00:00" />
+      <param name="scoringThisActivityAtAll" value="false" />
+    </parameterset>
+    <parameterset type="activityParams">
+      <param name="activityType" value="work" />
+      <param name="typicalDuration" value="06:00:00" />
+      <param name="scoringThisActivityAtAll" value="false" />
+    </parameterset>
+    <parameterset type="modeParams">
+      <param name="mode" value="car" />
+      <param name="marginalUtilityOfTraveling_util_hr" value="-6" />
+      <param name="monetaryDistanceRate" value="0" />
+      <param name="marginalUtilityOfDistance_util_m" value="0" />
+      <param name="constant" value="0" />
+    </parameterset>
+  </module>
+  <module name="travelTimeCalculator">
+    <param name="calculateLinkTravelTimes" value="true" />
+    <param name="calculateLinkToLinkTravelTimes" value="true" />
+    <param name="separateModes" value="false" />
+    <param name="travelTimeBinSize" value="60" />
+    <param name="maxTime" value="86400" />
+  </module>
+  <module name="strategy">
+    <param name="maxAgentPlanMemorySize" value="5" />
+    <param name="fractionOfIterationsToDisableInnovation" value="0.8" />
+    <parameterset type="strategysettings">
+      <param name="strategyName" value="ChangeExpBeta" />
+      <param name="weight" value="0.8" />
+    </parameterset>
+    <parameterset type="strategysettings">
+      <param name="strategyName" value="ReRoute" />
+      <param name="weight" value="0.2" />
+    </parameterset>
+  </module>
+</config>

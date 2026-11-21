@@ -1,0 +1,1106 @@
+[
+  {
+    "vehicle": "vehicle_free",
+    "Agent_ID": "person_free",
+    "Link_ID": "free_a",
+    "Trip": {
+      "Departure": 0.0,
+      "Trip_ID": "person_free:trip:0001",
+      "Person_ID": "person_free",
+      "Trip_Index": 1,
+      "Status": "completed",
+      "Abort": null,
+      "Last_Observed_Time": 20.0,
+      "Observation_End": 86430,
+      "Observation_End_Provenance": "configured_horizon",
+      "Origin_Node": "free_a_from",
+      "Destination_Node": "free_a_to",
+      "Arrival": 20.0,
+      "Origin_Position": [
+        -90.518,
+        14.636
+      ],
+      "Destination_Position": [
+        -90.518,
+        14.636899999999999
+      ]
+    },
+    "Profile": "Normal",
+    "Speed_kmh": 18.0,
+    "color": [
+      255,
+      210,
+      40
+    ],
+    "path": [
+      [
+        -90.518,
+        14.636
+      ],
+      [
+        -90.518,
+        14.636899999999999
+      ]
+    ],
+    "timestamps": [
+      0.0,
+      20.0
+    ],
+    "Inferred": false,
+    "Distance_m": 100.0,
+    "Boundary_Provenance": {
+      "start": "vehicle enters traffic",
+      "end": "vehicle leaves traffic",
+      "start_relative": 0.0,
+      "end_relative": 1.0,
+      "distance": "network_length_fraction"
+    },
+    "Movement_End": 10.0,
+    "Motion_Speed_kmh": 36.0,
+    "Wait_Evidence": "estimated_residual_unknown_cause",
+    "Observed_Waits": {},
+    "Motion_Provenance": {
+      "method": "minimum_link_vehicle_speed_at_queue_entry",
+      "fallback_reason": null,
+      "vehicle_limit_mps": 10.0,
+      "link_speed_at_entry_mps": 10.0,
+      "minimum_link_speed_in_interval_mps": 10.0,
+      "changes_inside_interval": false,
+      "continuous_position_observed": false
+    },
+    "Motion_Plan": {
+      "version": 1,
+      "phases": [
+        [
+          4.7369515717340014e-14,
+          19.99999999999997,
+          0.0,
+          5.000000000000071,
+          0.0
+        ]
+      ],
+      "distance_m": 100.0,
+      "start_time": 0.0,
+      "end_time": 20.0,
+      "cap_mps": 10.0,
+      "acceleration_mps2": 1.5,
+      "deceleration_mps2": 2.5,
+      "reference_acceleration_mps2": 1.5,
+      "reference_deceleration_mps2": 2.5,
+      "rate_adaptation_factor": 1.0,
+      "source": "continuous_link",
+      "fallback_reason": null,
+      "feasible": true,
+      "continuous_position_observed": false,
+      "hold_start": null,
+      "status": "constant",
+      "entry_speed_mps": 5.0,
+      "exit_speed_mps": 5.0,
+      "profile": "Normal",
+      "profile_source": "recorded_profile",
+      "limits_complete": true,
+      "native_wait_boundary": null,
+      "entry_continuity": "unobserved_boundary",
+      "exit_continuity": "unobserved_boundary"
+    }
+  },
+  {
+    "vehicle": "vehicle_red",
+    "Agent_ID": "person_red",
+    "Link_ID": "red_a",
+    "Trip": {
+      "Departure": 30.0,
+      "Trip_ID": "person_red:trip:0001",
+      "Person_ID": "person_red",
+      "Trip_Index": 1,
+      "Status": "completed",
+      "Abort": null,
+      "Last_Observed_Time": 75.0,
+      "Observation_End": 86430,
+      "Observation_End_Provenance": "configured_horizon",
+      "Origin_Node": "red_a_from",
+      "Destination_Node": "red_b_to",
+      "Arrival": 75.0,
+      "Origin_Position": [
+        -90.51650000000001,
+        14.636
+      ],
+      "Destination_Position": [
+        -90.51650000000001,
+        14.637799999999999
+      ]
+    },
+    "Profile": "Normal",
+    "Speed_kmh": 14.4,
+    "color": [
+      245,
+      65,
+      65
+    ],
+    "path": [
+      [
+        -90.51650000000001,
+        14.636
+      ],
+      [
+        -90.51650000000001,
+        14.636899999999999
+      ]
+    ],
+    "timestamps": [
+      30.0,
+      55.0
+    ],
+    "Inferred": false,
+    "Distance_m": 100.0,
+    "Boundary_Provenance": {
+      "start": "vehicle enters traffic",
+      "end": "left link",
+      "start_relative": 0.0,
+      "end_relative": 1,
+      "distance": "network_length_fraction"
+    },
+    "Movement_End": 45.0,
+    "Motion_Speed_kmh": 24.0,
+    "Wait_Evidence": "native_wait_observation",
+    "Observed_Waits": {
+      "signal_red": {
+        "first": 45.0,
+        "last": 54.0,
+        "attempts": 10,
+        "sources": [
+          "MATSim15_QNode_native_branch"
+        ],
+        "position_evidence": "queue_exit"
+      }
+    },
+    "Motion_Provenance": {
+      "method": "native_queue_wait_boundary",
+      "fallback_reason": null,
+      "vehicle_limit_mps": 10.0,
+      "link_speed_at_entry_mps": 10.0,
+      "minimum_link_speed_in_interval_mps": 10.0,
+      "changes_inside_interval": false,
+      "continuous_position_observed": false
+    },
+    "Motion_Plan": {
+      "version": 1,
+      "phases": [
+        [
+          30.0,
+          34.0,
+          0.0,
+          10.0,
+          -0.6818181818181818
+        ],
+        [
+          34.0,
+          41.0,
+          34.54545454545455,
+          7.272727272727273,
+          0.0
+        ],
+        [
+          41.0,
+          45.0,
+          85.45454545454545,
+          7.272727272727273,
+          -1.8181818181818183
+        ],
+        [
+          45.0,
+          55.0,
+          100.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "distance_m": 100.0,
+      "start_time": 30.0,
+      "end_time": 55.0,
+      "cap_mps": 10.0,
+      "acceleration_mps2": 1.5,
+      "deceleration_mps2": 2.5,
+      "reference_acceleration_mps2": 1.5,
+      "reference_deceleration_mps2": 2.5,
+      "rate_adaptation_factor": 1.0,
+      "source": "native_wait",
+      "fallback_reason": null,
+      "feasible": true,
+      "continuous_position_observed": false,
+      "hold_start": 45.0,
+      "status": "kinematic",
+      "entry_speed_mps": 10.0,
+      "exit_speed_mps": 0.0,
+      "profile": "Normal",
+      "profile_source": "recorded_profile",
+      "limits_complete": true,
+      "native_wait_boundary": 45.0,
+      "entry_continuity": "unobserved_boundary",
+      "exit_continuity": "matched"
+    }
+  },
+  {
+    "vehicle": "vehicle_red",
+    "Agent_ID": "person_red",
+    "Link_ID": "red_b",
+    "Trip": {
+      "Departure": 30.0,
+      "Trip_ID": "person_red:trip:0001",
+      "Person_ID": "person_red",
+      "Trip_Index": 1,
+      "Status": "completed",
+      "Abort": null,
+      "Last_Observed_Time": 75.0,
+      "Observation_End": 86430,
+      "Observation_End_Provenance": "configured_horizon",
+      "Origin_Node": "red_a_from",
+      "Destination_Node": "red_b_to",
+      "Arrival": 75.0,
+      "Origin_Position": [
+        -90.51650000000001,
+        14.636
+      ],
+      "Destination_Position": [
+        -90.51650000000001,
+        14.637799999999999
+      ]
+    },
+    "Profile": "Normal",
+    "Speed_kmh": 18.0,
+    "color": [
+      255,
+      210,
+      40
+    ],
+    "path": [
+      [
+        -90.51650000000001,
+        14.636899999999999
+      ],
+      [
+        -90.51650000000001,
+        14.637799999999999
+      ]
+    ],
+    "timestamps": [
+      55.0,
+      75.0
+    ],
+    "Inferred": false,
+    "Distance_m": 100.0,
+    "Boundary_Provenance": {
+      "start": "entered link",
+      "end": "vehicle leaves traffic",
+      "start_relative": 0,
+      "end_relative": 1.0,
+      "distance": "network_length_fraction"
+    },
+    "Movement_End": 65.0,
+    "Motion_Speed_kmh": 36.0,
+    "Wait_Evidence": "estimated_residual_unknown_cause",
+    "Observed_Waits": {},
+    "Motion_Provenance": {
+      "method": "minimum_link_vehicle_speed_at_queue_entry",
+      "fallback_reason": null,
+      "vehicle_limit_mps": 10.0,
+      "link_speed_at_entry_mps": 10.0,
+      "minimum_link_speed_in_interval_mps": 10.0,
+      "changes_inside_interval": false,
+      "continuous_position_observed": false
+    },
+    "Motion_Plan": {
+      "version": 1,
+      "phases": [
+        [
+          55.0,
+          58.67217781462685,
+          0.0,
+          0.0,
+          1.5
+        ],
+        [
+          58.67217781462685,
+          74.79669331122389,
+          10.113667426678216,
+          5.508266721940274,
+          0.0
+        ],
+        [
+          74.79669331122389,
+          75.0,
+          98.93179954399395,
+          5.508266721940274,
+          -2.5
+        ]
+      ],
+      "distance_m": 100.0,
+      "start_time": 55.0,
+      "end_time": 75.0,
+      "cap_mps": 10.0,
+      "acceleration_mps2": 1.5,
+      "deceleration_mps2": 2.5,
+      "reference_acceleration_mps2": 1.5,
+      "reference_deceleration_mps2": 2.5,
+      "rate_adaptation_factor": 1.0,
+      "source": "continuous_link",
+      "fallback_reason": null,
+      "feasible": true,
+      "continuous_position_observed": false,
+      "hold_start": null,
+      "status": "kinematic",
+      "entry_speed_mps": 0.0,
+      "exit_speed_mps": 5.0,
+      "profile": "Normal",
+      "profile_source": "recorded_profile",
+      "limits_complete": true,
+      "native_wait_boundary": null,
+      "entry_continuity": "matched",
+      "exit_continuity": "unobserved_boundary"
+    }
+  },
+  {
+    "vehicle": "vehicle_stop",
+    "Agent_ID": "person_stop",
+    "Link_ID": "stop_a",
+    "Trip": {
+      "Departure": 70.0,
+      "Trip_ID": "person_stop:trip:0001",
+      "Person_ID": "person_stop",
+      "Trip_Index": 1,
+      "Status": "completed",
+      "Abort": null,
+      "Last_Observed_Time": 90.0,
+      "Observation_End": 86430,
+      "Observation_End_Provenance": "configured_horizon",
+      "Origin_Node": "stop_a_from",
+      "Destination_Node": "stop_a_to",
+      "Arrival": 90.0,
+      "Origin_Position": [
+        -90.515,
+        14.636
+      ],
+      "Destination_Position": [
+        -90.515,
+        14.636899999999999
+      ]
+    },
+    "Profile": "Normal",
+    "Speed_kmh": 18.0,
+    "color": [
+      255,
+      210,
+      40
+    ],
+    "path": [
+      [
+        -90.515,
+        14.636
+      ],
+      [
+        -90.515,
+        14.636899999999999
+      ]
+    ],
+    "timestamps": [
+      70.0,
+      90.0
+    ],
+    "Inferred": false,
+    "Distance_m": 100.0,
+    "Boundary_Provenance": {
+      "start": "vehicle enters traffic",
+      "end": "vehicle leaves traffic",
+      "start_relative": 0.0,
+      "end_relative": 1.0,
+      "distance": "network_length_fraction"
+    },
+    "Movement_End": 85.0,
+    "Motion_Speed_kmh": 24.0,
+    "Wait_Evidence": "native_wait_observation",
+    "Observed_Waits": {
+      "priority_stop": {
+        "first": 85.0,
+        "last": 89.0,
+        "attempts": 5,
+        "sources": [
+          "MATSim15_QNode_native_branch"
+        ],
+        "position_evidence": "queue_exit"
+      }
+    },
+    "Motion_Provenance": {
+      "method": "native_queue_wait_boundary",
+      "fallback_reason": null,
+      "vehicle_limit_mps": 10.0,
+      "link_speed_at_entry_mps": 10.0,
+      "minimum_link_speed_in_interval_mps": 10.0,
+      "changes_inside_interval": false,
+      "continuous_position_observed": false
+    },
+    "Motion_Plan": {
+      "version": 1,
+      "phases": [
+        [
+          70.0,
+          74.0,
+          0.0,
+          10.0,
+          -0.6818181818181818
+        ],
+        [
+          74.0,
+          81.0,
+          34.54545454545455,
+          7.272727272727273,
+          0.0
+        ],
+        [
+          81.0,
+          85.0,
+          85.45454545454545,
+          7.272727272727273,
+          -1.8181818181818183
+        ],
+        [
+          85.0,
+          90.0,
+          100.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "distance_m": 100.0,
+      "start_time": 70.0,
+      "end_time": 90.0,
+      "cap_mps": 10.0,
+      "acceleration_mps2": 1.5,
+      "deceleration_mps2": 2.5,
+      "reference_acceleration_mps2": 1.5,
+      "reference_deceleration_mps2": 2.5,
+      "rate_adaptation_factor": 1.0,
+      "source": "native_wait",
+      "fallback_reason": null,
+      "feasible": true,
+      "continuous_position_observed": false,
+      "hold_start": 85.0,
+      "status": "kinematic",
+      "entry_speed_mps": 10.0,
+      "exit_speed_mps": 0.0,
+      "profile": "Normal",
+      "profile_source": "recorded_profile",
+      "limits_complete": true,
+      "native_wait_boundary": 85.0,
+      "entry_continuity": "unobserved_boundary",
+      "exit_continuity": "unobserved_boundary"
+    }
+  },
+  {
+    "vehicle": "vehicle_congestion",
+    "Agent_ID": "person_congestion",
+    "Link_ID": "congestion_a",
+    "Trip": {
+      "Departure": 100.0,
+      "Trip_ID": "person_congestion:trip:0001",
+      "Person_ID": "person_congestion",
+      "Trip_Index": 1,
+      "Status": "completed",
+      "Abort": null,
+      "Last_Observed_Time": 130.0,
+      "Observation_End": 86430,
+      "Observation_End_Provenance": "configured_horizon",
+      "Origin_Node": "congestion_a_from",
+      "Destination_Node": "congestion_a_to",
+      "Arrival": 130.0,
+      "Origin_Position": [
+        -90.51350000000001,
+        14.636
+      ],
+      "Destination_Position": [
+        -90.51350000000001,
+        14.636899999999999
+      ]
+    },
+    "Profile": "Normal",
+    "Speed_kmh": 12.0,
+    "color": [
+      245,
+      65,
+      65
+    ],
+    "path": [
+      [
+        -90.51350000000001,
+        14.636
+      ],
+      [
+        -90.51350000000001,
+        14.636899999999999
+      ]
+    ],
+    "timestamps": [
+      100.0,
+      130.0
+    ],
+    "Inferred": false,
+    "Distance_m": 100.0,
+    "Boundary_Provenance": {
+      "start": "vehicle enters traffic",
+      "end": "vehicle leaves traffic",
+      "start_relative": 0.0,
+      "end_relative": 1.0,
+      "distance": "network_length_fraction"
+    },
+    "Movement_End": 110.0,
+    "Motion_Speed_kmh": 36.0,
+    "Wait_Evidence": "native_queue_delay_position_unknown",
+    "Observed_Waits": {
+      "congestion_queue": {
+        "first": 115.0,
+        "last": 125.0,
+        "attempts": 11,
+        "sources": [
+          "MATSim15_queue_post_step"
+        ],
+        "position_evidence": "unknown_queue_position"
+      }
+    },
+    "Motion_Provenance": {
+      "method": "minimum_link_vehicle_speed_at_queue_entry",
+      "fallback_reason": null,
+      "vehicle_limit_mps": 10.0,
+      "link_speed_at_entry_mps": 10.0,
+      "minimum_link_speed_in_interval_mps": 10.0,
+      "changes_inside_interval": false,
+      "continuous_position_observed": false
+    },
+    "Motion_Plan": {
+      "version": 1,
+      "phases": [
+        [
+          100.00000000000006,
+          129.99999999999997,
+          0.0,
+          3.333333333333428,
+          0.0
+        ]
+      ],
+      "distance_m": 100.0,
+      "start_time": 100.0,
+      "end_time": 130.0,
+      "cap_mps": 10.0,
+      "acceleration_mps2": 1.5,
+      "deceleration_mps2": 2.5,
+      "reference_acceleration_mps2": 1.5,
+      "reference_deceleration_mps2": 2.5,
+      "rate_adaptation_factor": 1.0,
+      "source": "queue_delay_estimate",
+      "fallback_reason": null,
+      "feasible": true,
+      "continuous_position_observed": false,
+      "hold_start": null,
+      "status": "constant",
+      "entry_speed_mps": 3.3333333333333335,
+      "exit_speed_mps": 3.3333333333333335,
+      "profile": "Normal",
+      "profile_source": "recorded_profile",
+      "limits_complete": true,
+      "native_wait_boundary": null,
+      "entry_continuity": "unobserved_boundary",
+      "exit_continuity": "unobserved_boundary"
+    }
+  },
+  {
+    "vehicle": "vehicle_slow10",
+    "Agent_ID": "person_slow10",
+    "Link_ID": "slow10_a",
+    "Trip": {
+      "Departure": 140.0,
+      "Trip_ID": "person_slow10:trip:0001",
+      "Person_ID": "person_slow10",
+      "Trip_Index": 1,
+      "Status": "completed",
+      "Abort": null,
+      "Last_Observed_Time": 176.0,
+      "Observation_End": 86430,
+      "Observation_End_Provenance": "configured_horizon",
+      "Origin_Node": "slow10_a_from",
+      "Destination_Node": "slow10_a_to",
+      "Arrival": 176.0,
+      "Origin_Position": [
+        -90.512,
+        14.636
+      ],
+      "Destination_Position": [
+        -90.512,
+        14.636899999999999
+      ]
+    },
+    "Profile": "Tortuga",
+    "Speed_kmh": 10.0,
+    "color": [
+      245,
+      65,
+      65
+    ],
+    "path": [
+      [
+        -90.512,
+        14.636
+      ],
+      [
+        -90.512,
+        14.636899999999999
+      ]
+    ],
+    "timestamps": [
+      140.0,
+      176.0
+    ],
+    "Inferred": false,
+    "Distance_m": 100.0,
+    "Boundary_Provenance": {
+      "start": "vehicle enters traffic",
+      "end": "vehicle leaves traffic",
+      "start_relative": 0.0,
+      "end_relative": 1.0,
+      "distance": "network_length_fraction"
+    },
+    "Movement_End": 176.0,
+    "Motion_Speed_kmh": 10.0,
+    "Wait_Evidence": "none_estimated",
+    "Observed_Waits": {},
+    "Motion_Provenance": {
+      "method": "minimum_link_vehicle_speed_at_queue_entry",
+      "fallback_reason": null,
+      "vehicle_limit_mps": 2.7777777777777777,
+      "link_speed_at_entry_mps": 10.0,
+      "minimum_link_speed_in_interval_mps": 10.0,
+      "changes_inside_interval": false,
+      "continuous_position_observed": false
+    },
+    "Motion_Plan": {
+      "version": 1,
+      "phases": [
+        [
+          140.0,
+          176.0,
+          0.0,
+          2.7777777777777777,
+          0.0
+        ]
+      ],
+      "distance_m": 100.0,
+      "start_time": 140.0,
+      "end_time": 176.0,
+      "cap_mps": 2.7777777777777777,
+      "acceleration_mps2": 1.0,
+      "deceleration_mps2": 1.5,
+      "reference_acceleration_mps2": 1.0,
+      "reference_deceleration_mps2": 1.5,
+      "rate_adaptation_factor": 1.0,
+      "source": "continuous_link",
+      "fallback_reason": null,
+      "feasible": true,
+      "continuous_position_observed": false,
+      "hold_start": null,
+      "status": "constant",
+      "entry_speed_mps": 2.7777777777777777,
+      "exit_speed_mps": 2.7777777777777777,
+      "profile": "Tortuga",
+      "profile_source": "recorded_profile",
+      "limits_complete": true,
+      "native_wait_boundary": null,
+      "entry_continuity": "unobserved_boundary",
+      "exit_continuity": "unobserved_boundary"
+    }
+  },
+  {
+    "vehicle": "vehicle_insufficient",
+    "Agent_ID": "person_insufficient",
+    "Link_ID": "insufficient_a",
+    "Trip": {
+      "Departure": 190.0,
+      "Trip_ID": "person_insufficient:trip:0001",
+      "Person_ID": "person_insufficient",
+      "Trip_Index": 1,
+      "Status": "completed",
+      "Abort": null,
+      "Last_Observed_Time": 215.0,
+      "Observation_End": 86430,
+      "Observation_End_Provenance": "configured_horizon",
+      "Origin_Node": "insufficient_a_from",
+      "Destination_Node": "insufficient_a_to",
+      "Arrival": 215.0,
+      "Origin_Position": [
+        -90.51050000000001,
+        14.636
+      ],
+      "Destination_Position": [
+        -90.51050000000001,
+        14.636899999999999
+      ]
+    },
+    "Profile": "Normal",
+    "Speed_kmh": 14.4,
+    "color": [
+      245,
+      65,
+      65
+    ],
+    "path": [
+      [
+        -90.51050000000001,
+        14.636
+      ],
+      [
+        -90.51050000000001,
+        14.636899999999999
+      ]
+    ],
+    "timestamps": [
+      190.0,
+      215.0
+    ],
+    "Inferred": false,
+    "Distance_m": 100.0,
+    "Boundary_Provenance": {
+      "start": "vehicle enters traffic",
+      "end": "vehicle leaves traffic",
+      "start_relative": 0.0,
+      "end_relative": 1.0,
+      "distance": "network_length_fraction"
+    },
+    "Movement_End": 215.0,
+    "Motion_Speed_kmh": 14.4,
+    "Wait_Evidence": "none_estimated",
+    "Observed_Waits": {},
+    "Motion_Provenance": {
+      "method": "bounded_interval_fallback",
+      "fallback_reason": "unknown_vehicle_limit",
+      "vehicle_limit_mps": null,
+      "link_speed_at_entry_mps": 10.0,
+      "minimum_link_speed_in_interval_mps": 10.0,
+      "changes_inside_interval": false,
+      "continuous_position_observed": false
+    },
+    "Motion_Plan": {
+      "version": 1,
+      "phases": [
+        [
+          190.0,
+          215.0,
+          0.0,
+          4.0,
+          0.0
+        ]
+      ],
+      "distance_m": 100.0,
+      "start_time": 190.0,
+      "end_time": 215.0,
+      "cap_mps": 10.0,
+      "acceleration_mps2": 1.5,
+      "deceleration_mps2": 2.5,
+      "reference_acceleration_mps2": 1.5,
+      "reference_deceleration_mps2": 2.5,
+      "rate_adaptation_factor": 1.0,
+      "source": "boundary_preserving_fallback",
+      "fallback_reason": "missing_speed_limit",
+      "feasible": false,
+      "continuous_position_observed": false,
+      "hold_start": null,
+      "status": "fallback",
+      "entry_speed_mps": 4.0,
+      "exit_speed_mps": 4.0,
+      "profile": "Normal",
+      "profile_source": "recorded_profile",
+      "limits_complete": false,
+      "native_wait_boundary": null,
+      "entry_continuity": "unobserved_boundary",
+      "exit_continuity": "unobserved_boundary"
+    }
+  },
+  {
+    "vehicle": "vehicle_midnight",
+    "Agent_ID": "person_midnight",
+    "Link_ID": "midnight_a",
+    "Trip": {
+      "Departure": 86395.0,
+      "Trip_ID": "person_midnight:trip:0001",
+      "Person_ID": "person_midnight",
+      "Trip_Index": 1,
+      "Status": "completed",
+      "Abort": null,
+      "Last_Observed_Time": 86415.0,
+      "Observation_End": 86430,
+      "Observation_End_Provenance": "configured_horizon",
+      "Origin_Node": "midnight_a_from",
+      "Destination_Node": "midnight_a_to",
+      "Arrival": 86415.0,
+      "Origin_Position": [
+        -90.509,
+        14.636
+      ],
+      "Destination_Position": [
+        -90.509,
+        14.636899999999999
+      ]
+    },
+    "Profile": "Normal",
+    "Speed_kmh": 18.0,
+    "color": [
+      255,
+      210,
+      40
+    ],
+    "path": [
+      [
+        -90.509,
+        14.636
+      ],
+      [
+        -90.509,
+        14.636899999999999
+      ]
+    ],
+    "timestamps": [
+      86395.0,
+      86415.0
+    ],
+    "Inferred": false,
+    "Distance_m": 100.0,
+    "Boundary_Provenance": {
+      "start": "vehicle enters traffic",
+      "end": "vehicle leaves traffic",
+      "start_relative": 0.0,
+      "end_relative": 1.0,
+      "distance": "network_length_fraction"
+    },
+    "Movement_End": 86405.0,
+    "Motion_Speed_kmh": 36.0,
+    "Wait_Evidence": "estimated_residual_unknown_cause",
+    "Observed_Waits": {},
+    "Motion_Provenance": {
+      "method": "minimum_link_vehicle_speed_at_queue_entry",
+      "fallback_reason": null,
+      "vehicle_limit_mps": 10.0,
+      "link_speed_at_entry_mps": 10.0,
+      "minimum_link_speed_in_interval_mps": 10.0,
+      "changes_inside_interval": false,
+      "continuous_position_observed": false
+    },
+    "Motion_Plan": {
+      "version": 1,
+      "phases": [
+        [
+          86395.0,
+          86415.0,
+          0.0,
+          5.000000000000071,
+          0.0
+        ]
+      ],
+      "distance_m": 100.0,
+      "start_time": 86395.0,
+      "end_time": 86415.0,
+      "cap_mps": 10.0,
+      "acceleration_mps2": 1.5,
+      "deceleration_mps2": 2.5,
+      "reference_acceleration_mps2": 1.5,
+      "reference_deceleration_mps2": 2.5,
+      "rate_adaptation_factor": 1.0,
+      "source": "continuous_link",
+      "fallback_reason": null,
+      "feasible": true,
+      "continuous_position_observed": false,
+      "hold_start": null,
+      "status": "constant",
+      "entry_speed_mps": 5.0,
+      "exit_speed_mps": 5.0,
+      "profile": "Normal",
+      "profile_source": "recorded_profile",
+      "limits_complete": true,
+      "native_wait_boundary": null,
+      "entry_continuity": "unobserved_boundary",
+      "exit_continuity": "unobserved_boundary"
+    }
+  },
+  {
+    "vehicle": "math40",
+    "Agent_ID": "mathematical40",
+    "Link_ID": "math40_braking",
+    "Trip": {
+      "Departure": 300,
+      "Arrival": 309.44444444444446,
+      "Trip_ID": "math40:assumed-entry-speed",
+      "Status": "completed",
+      "Person_ID": "mathematical40",
+      "Trip_Index": 1,
+      "Abort": null,
+      "Last_Observed_Time": 309.44444444444446,
+      "Observation_End": 86430,
+      "Origin_Position": [
+        -90.513,
+        14.639
+      ],
+      "Destination_Position": [
+        -90.513,
+        14.639222222444443
+      ],
+      "Origin_Node": "math_from",
+      "Destination_Node": "math_to"
+    },
+    "Profile": "Supuesto matematico: entrada a 40 km/h",
+    "Speed_kmh": 19.999999999999943,
+    "color": [
+      255,
+      210,
+      40
+    ],
+    "path": [
+      [
+        -90.513,
+        14.639
+      ],
+      [
+        -90.513,
+        14.639222222444443
+      ]
+    ],
+    "timestamps": [
+      300,
+      304.44444444444446
+    ],
+    "Inferred": true,
+    "Distance_m": 24.691358024691358,
+    "Movement_End": 304.44444444444446,
+    "Motion_Speed_kmh": 19.999999999999943,
+    "Observed_Waits": {},
+    "Wait_Evidence": "mathematical_fixture_not_observed",
+    "Motion_Plan": {
+      "version": 1,
+      "phases": [
+        [
+          300.0,
+          304.44444444444446,
+          0.0,
+          11.11111111111111,
+          -2.5
+        ]
+      ],
+      "distance_m": 24.691358024691358,
+      "start_time": 300.0,
+      "end_time": 304.44444444444446,
+      "cap_mps": 11.11111111111111,
+      "acceleration_mps2": 2.0,
+      "deceleration_mps2": 2.5,
+      "reference_acceleration_mps2": 2.0,
+      "reference_deceleration_mps2": 2.5,
+      "rate_adaptation_factor": 1.0,
+      "source": "mathematical_fixture_assumed_entry_speed",
+      "fallback_reason": null,
+      "feasible": true,
+      "continuous_position_observed": false,
+      "hold_start": null,
+      "status": "kinematic",
+      "entry_speed_mps": 11.11111111111111,
+      "exit_speed_mps": 0.0
+    },
+    "Motion_Provenance": {
+      "method": "mathematical_reference",
+      "initial_speed_assumption_mps": 11.11111111111111,
+      "continuous_position_observed": false,
+      "vehicle_limit_mps": 11.11111111111111,
+      "link_speed_at_entry_mps": 11.11111111111111
+    }
+  },
+  {
+    "vehicle": "math40",
+    "Agent_ID": "mathematical40",
+    "Link_ID": "math40_hold",
+    "Trip": {
+      "Departure": 300,
+      "Arrival": 309.44444444444446,
+      "Trip_ID": "math40:assumed-entry-speed",
+      "Status": "completed",
+      "Person_ID": "mathematical40",
+      "Trip_Index": 1,
+      "Abort": null,
+      "Last_Observed_Time": 309.44444444444446,
+      "Observation_End": 86430,
+      "Origin_Position": [
+        -90.513,
+        14.639
+      ],
+      "Destination_Position": [
+        -90.513,
+        14.639222222444443
+      ],
+      "Origin_Node": "math_from",
+      "Destination_Node": "math_to"
+    },
+    "Profile": "Supuesto matematico: entrada a 40 km/h",
+    "Speed_kmh": 0.0,
+    "color": [
+      255,
+      210,
+      40
+    ],
+    "path": [
+      [
+        -90.513,
+        14.639222222444443
+      ],
+      [
+        -90.513,
+        14.639222222444443
+      ]
+    ],
+    "timestamps": [
+      304.44444444444446,
+      309.44444444444446
+    ],
+    "Inferred": true,
+    "Distance_m": 0,
+    "Movement_End": 309.44444444444446,
+    "Motion_Speed_kmh": 0.0,
+    "Observed_Waits": {},
+    "Wait_Evidence": "mathematical_fixture_not_observed",
+    "Motion_Plan": {
+      "version": 1,
+      "phases": [
+        [
+          304.44444444444446,
+          309.44444444444446,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "distance_m": 0.0,
+      "start_time": 304.44444444444446,
+      "end_time": 309.44444444444446,
+      "cap_mps": 11.11111111111111,
+      "acceleration_mps2": 2.0,
+      "deceleration_mps2": 2.5,
+      "reference_acceleration_mps2": 2.0,
+      "reference_deceleration_mps2": 2.5,
+      "rate_adaptation_factor": 1.0,
+      "source": "mathematical_fixture_assumed_entry_speed",
+      "fallback_reason": null,
+      "feasible": true,
+      "continuous_position_observed": false,
+      "hold_start": null,
+      "status": "stationary",
+      "entry_speed_mps": 0.0,
+      "exit_speed_mps": 0.0
+    },
+    "Motion_Provenance": {
+      "method": "mathematical_reference",
+      "initial_speed_assumption_mps": 0,
+      "continuous_position_observed": false,
+      "vehicle_limit_mps": 11.11111111111111,
+      "link_speed_at_entry_mps": 11.11111111111111
+    }
+  }
+]

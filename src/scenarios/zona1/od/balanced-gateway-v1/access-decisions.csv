@@ -1,0 +1,120 @@
+role,id,anchor_link,link_id,crossing_link,status,reason,selected_anchor,selected_link,budget_pcu_h,useful_length_m,component
+entry,entry-osm_292876837_2_forward,osm_292876837_1_forward,,osm_292876837_2_forward,REJECTED,Local chain exists but no whole-body connected OD pair from/to the modeled interior,,,2000.0,18.92272515931643,
+entry,entry-osm_292876837_2_forward,osm_45494968_0_forward,,osm_292876837_2_forward,REJECTED,Alternative of a crossing with no whole-body connected OD pair; no additional capacity,,,,,
+entry,entry-osm_30279782_2_forward,osm_30279782_1_forward,,osm_30279782_2_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [[0.9999999761606478, 1.0]], ""inventory_classification"": ""entry_crossing"", ""link_id"": ""osm_30279782_2_forward"", ""start_inside"": false}]",,,,,
+entry,entry-osm_30288333_3_forward,osm_30288333_1_forward,,osm_30288333_3_forward,REJECTED,Alternative of an already selected physical crossing/anchor; no additional capacity,osm_381667651_0_forward,,,,
+entry,entry-osm_30288333_3_forward,osm_381667651_0_forward,,osm_30288333_3_forward,APPROVED_MODEL_ONLY,,,,2000.0,15.367432066096114,
+entry,entry-osm_363667895_6_forward,osm_363667895_5_forward,,osm_363667895_6_forward,REJECTED,Alternative of an already selected physical crossing/anchor; no additional capacity,osm_762765906_1_forward,,,,
+entry,entry-osm_363667895_6_forward,osm_762765906_1_forward,,osm_363667895_6_forward,APPROVED_MODEL_ONLY,,,,2000.0,95.78774785950094,
+entry,entry-osm_381097595_5_forward,osm_381097595_4_forward,,osm_381097595_5_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [[0.9999999702549036, 1.0]], ""inventory_classification"": ""entry_crossing"", ""link_id"": ""osm_381097595_5_forward"", ""start_inside"": false}]",,,,,
+entry,entry-osm_400043601_9_forward,osm_400043601_5_forward,,osm_400043601_9_forward,APPROVED_MODEL_ONLY,,,,4000.0,4.917381816437192,
+entry,entry-osm_405188986_0_forward,osm_1274240312_0_forward,,osm_405188986_0_forward,REJECTED,Alternative of an already selected physical crossing/anchor; no additional capacity,osm_381667651_3_forward,,,,
+entry,entry-osm_405188986_0_forward,osm_381667651_3_forward,,osm_405188986_0_forward,APPROVED_MODEL_ONLY,,,,2000.0,13.704514699403035,
+entry,entry-osm_406843605_2_forward,osm_381667651_16_forward,,osm_406843605_2_forward,REJECTED,Alternative of an already selected physical crossing/anchor; no additional capacity,osm_406843605_1_forward,,,,
+entry,entry-osm_406843605_2_forward,osm_406843605_1_forward,,osm_406843605_2_forward,APPROVED_MODEL_ONLY,,,,2000.0,30.96361259723281,
+entry,entry-osm_406872394_3_backward,osm_406872394_4_backward,,osm_406872394_3_backward,APPROVED_MODEL_ONLY,,,,2000.0,5.926451513424485,
+entry,entry-osm_511820719_13_forward,osm_511820719_6_forward,,osm_511820719_13_forward,APPROVED_MODEL_ONLY,,,,4000.0,18.3037504893325,
+entry,entry-osm_59566215_6_forward,osm_59566215_4_forward,,osm_59566215_6_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [], ""inventory_classification"": ""external"", ""link_id"": ""osm_59566215_5_forward"", ""start_inside"": false}]",,,,,
+entry,entry-osm_65754263_0_forward,osm_44486997_0_backward,,osm_65754263_0_forward,APPROVED_MODEL_ONLY,,,,2000.0,12.788039120288701,
+entry,entry-osm_65777805_7_forward,osm_65777805_5_forward,,osm_65777805_7_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [[0.9999999034647835, 1.0]], ""inventory_classification"": ""entry_crossing"", ""link_id"": ""osm_65777805_7_forward"", ""start_inside"": false}]",,,,,
+entry,entry-osm_65786237_0_forward,osm_65792798_1_forward,,osm_65786237_0_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [], ""inventory_classification"": ""external"", ""link_id"": ""osm_65792798_1_forward"", ""start_inside"": false}]",,,,,
+entry,entry-osm_65786237_0_forward,osm_699533700_5_forward,,osm_65786237_0_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [[5.905360849029958e-09, 1.0]], ""inventory_classification"": ""external"", ""link_id"": ""osm_699533700_5_forward"", ""start_inside"": false}]",,,,,
+entry,entry-osm_65786237_0_forward,osm_699533700_6_backward,,osm_65786237_0_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [[0.0, 1.0]], ""inventory_classification"": ""external"", ""link_id"": ""osm_699533700_6_backward"", ""start_inside"": false}]",,,,,
+entry,entry-osm_699533700_4_backward,osm_30279775_3_forward,,osm_699533700_4_backward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [[0.0, 1.0]], ""inventory_classification"": ""entry_crossing"", ""link_id"": ""osm_699533700_4_backward"", ""start_inside"": false}, {""end_inside"": true, ""intervals"": [[0.0, 1.0]], ""inventory_classification"": ""interior"", ""link_id"": ""osm_699533700_3_backward"", ""start_inside"": false}]",,,,,
+entry,entry-osm_699533700_4_backward,osm_699533700_5_backward,,osm_699533700_4_backward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [[0.0, 0.999999994094639]], ""inventory_classification"": ""external"", ""link_id"": ""osm_699533700_5_backward"", ""start_inside"": false}, {""end_inside"": false, ""intervals"": [[0.0, 1.0]], ""inventory_classification"": ""entry_crossing"", ""link_id"": ""osm_699533700_4_backward"", ""start_inside"": false}, {""end_inside"": true, ""intervals"": [[0.0, 1.0]], ""inventory_classification"": ""interior"", ""link_id"": ""osm_699533700_3_backward"", ""start_inside"": false}]",,,,,
+entry,entry-osm_917940877_0_forward,osm_1273145790_1_forward,,osm_917940877_0_forward,REJECTED,Alternative of an already selected physical crossing/anchor; no additional capacity,osm_260936848_14_forward,,,,
+entry,entry-osm_917940877_0_forward,osm_260936848_14_forward,,osm_917940877_0_forward,APPROVED_MODEL_ONLY,,,,2000.0,7.878168147238057,
+entry,entry-osm_930035054_6_forward,osm_381667651_19_forward,,osm_930035054_6_forward,APPROVED_MODEL_ONLY,,,,2000.0,13.00767255118398,
+entry,entry-osm_930035054_6_forward,osm_930035054_4_forward,,osm_930035054_6_forward,REJECTED,Alternative of an already selected physical crossing/anchor; no additional capacity,osm_381667651_19_forward,,,,
+exit,exit-osm_1051440046_6_forward,osm_1051440046_7_forward,,osm_1051440046_6_forward,APPROVED_MODEL_ONLY,,,,2000.0,35.834239717756056,
+exit,exit-osm_1270930401_0_forward,osm_1273145790_0_forward,,osm_1270930401_0_forward,REJECTED,Violates via-way restriction 17478998,,,,,
+exit,exit-osm_1270930401_0_forward,osm_260940553_0_forward,,osm_1270930401_0_forward,APPROVED_MODEL_ONLY,,,,2000.0,10.55261671881027,
+exit,exit-osm_1275050774_0_forward,osm_1243273719_0_forward,,osm_1275050774_0_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [[0.0, 1.5678454859688376e-08]], ""inventory_classification"": ""exit_crossing"", ""link_id"": ""osm_1275050774_0_forward"", ""start_inside"": false}]",,,,,
+exit,exit-osm_1275050774_0_forward,osm_45494968_0_forward,,osm_1275050774_0_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [[0.0, 1.5678454859688376e-08]], ""inventory_classification"": ""exit_crossing"", ""link_id"": ""osm_1275050774_0_forward"", ""start_inside"": false}]",,,,,
+exit,exit-osm_30263020_51_forward,osm_30263020_52_forward,,osm_30263020_51_forward,REJECTED,Alternative of an already selected physical crossing/anchor; no additional capacity,osm_381667651_19_forward,,,,
+exit,exit-osm_30263020_51_forward,osm_381667651_19_forward,,osm_30263020_51_forward,APPROVED_MODEL_ONLY,,,,2000.0,13.00767255118398,
+exit,exit-osm_30279769_73_forward,osm_30279769_75_forward,,osm_30279769_73_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [], ""inventory_classification"": ""external"", ""link_id"": ""osm_30279769_74_forward"", ""start_inside"": false}]",,,,,
+exit,exit-osm_30289506_12_forward,osm_30289506_13_forward,,osm_30289506_12_forward,APPROVED_MODEL_ONLY,,,,4000.0,21.001835199908427,
+exit,exit-osm_359045350_9_forward,osm_359045350_10_forward,,osm_359045350_9_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [[0.0, 5.6441276173647165e-09]], ""inventory_classification"": ""exit_crossing"", ""link_id"": ""osm_359045350_9_forward"", ""start_inside"": false}]",,,,,
+exit,exit-osm_381158277_4_forward,osm_381158277_5_forward,,osm_381158277_4_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [[0.0, 2.2067416544346483e-09]], ""inventory_classification"": ""exit_crossing"", ""link_id"": ""osm_381158277_4_forward"", ""start_inside"": false}]",,,,,
+exit,exit-osm_382465689_1_forward,osm_382465689_5_forward,,osm_382465689_1_forward,REJECTED,Local chain exists but no whole-body connected OD pair from/to the modeled interior,,,4000.0,7.692734229142587,
+exit,exit-osm_382465690_6_forward,osm_382465690_8_forward,,osm_382465690_6_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [], ""inventory_classification"": ""external"", ""link_id"": ""osm_382465690_7_forward"", ""start_inside"": false}]",,,,,
+exit,exit-osm_400843677_5_forward,osm_400843677_6_forward,,osm_400843677_5_forward,APPROVED_MODEL_ONLY,,,,6000.0,15.949542992910786,
+exit,exit-osm_405188986_0_backward,osm_1274240312_0_backward,,osm_405188986_0_backward,REJECTED,Alternative of an already selected physical crossing/anchor; no additional capacity,osm_381667651_4_forward,,,,
+exit,exit-osm_405188986_0_backward,osm_381667651_4_forward,,osm_405188986_0_backward,APPROVED_MODEL_ONLY,,,,2000.0,19.078167470735693,
+exit,exit-osm_406872394_3_forward,osm_406872394_4_forward,,osm_406872394_3_forward,APPROVED_MODEL_ONLY,,,,2000.0,5.926451513424485,
+exit,exit-osm_420120096_33_forward,osm_381667651_15_forward,,osm_420120096_33_forward,APPROVED_MODEL_ONLY,,,,6000.0,15.187282227144706,
+exit,exit-osm_58673255_6_forward,osm_58673255_12_forward,,osm_58673255_6_forward,APPROVED_MODEL_ONLY,,,,4000.0,6.963549485842815,
+exit,exit-osm_58692312_4_forward,osm_381667651_21_forward,,osm_58692312_4_forward,APPROVED_MODEL_ONLY,,,,4000.0,66.32478509072868,
+exit,exit-osm_58692312_4_forward,osm_58692312_5_forward,,osm_58692312_4_forward,REJECTED,Alternative of an already selected physical crossing/anchor; no additional capacity,osm_381667651_21_forward,,,,
+exit,exit-osm_58692343_53_forward,osm_58692343_54_forward,,osm_58692343_53_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [[0.0, 9.694337478491844e-09]], ""inventory_classification"": ""exit_crossing"", ""link_id"": ""osm_58692343_53_forward"", ""start_inside"": false}]",,,,,
+exit,exit-osm_60237264_2_forward,osm_60237264_3_forward,,osm_60237264_2_forward,APPROVED_MODEL_ONLY,,,,2000.0,13.436846803250923,
+exit,exit-osm_699533700_4_forward,osm_30279775_3_backward,,osm_699533700_4_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [[0.0, 1.0]], ""inventory_classification"": ""interior"", ""link_id"": ""osm_699533700_3_forward"", ""start_inside"": true}, {""end_inside"": false, ""intervals"": [[0.0, 1.0]], ""inventory_classification"": ""exit_crossing"", ""link_id"": ""osm_699533700_4_forward"", ""start_inside"": false}]",,,,,
+exit,exit-osm_699533700_4_forward,osm_699533700_5_forward,,osm_699533700_4_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [[0.0, 1.0]], ""inventory_classification"": ""interior"", ""link_id"": ""osm_699533700_3_forward"", ""start_inside"": true}, {""end_inside"": false, ""intervals"": [[0.0, 1.0]], ""inventory_classification"": ""exit_crossing"", ""link_id"": ""osm_699533700_4_forward"", ""start_inside"": false}, {""end_inside"": false, ""intervals"": [[5.905360849029958e-09, 1.0]], ""inventory_classification"": ""external"", ""link_id"": ""osm_699533700_5_forward"", ""start_inside"": false}]",,,,,
+exit,exit-osm_699533700_8_backward,osm_699533700_7_backward,,osm_699533700_8_backward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": false, ""intervals"": [[0.0, 1.0]], ""inventory_classification"": ""exit_crossing"", ""link_id"": ""osm_699533700_8_backward"", ""start_inside"": false}, {""end_inside"": false, ""intervals"": [[0.0, 1.0]], ""inventory_classification"": ""external"", ""link_id"": ""osm_699533700_7_backward"", ""start_inside"": false}]",,,,,
+exit,exit-osm_734011348_14_forward,osm_44486997_1_backward,,osm_734011348_14_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": true, ""intervals"": [[0.0, 1.0]], ""inventory_classification"": ""interior"", ""link_id"": ""osm_699533700_2_forward"", ""start_inside"": false}]",,,,,
+exit,exit-osm_734011348_14_forward,osm_44487200_0_forward,,osm_734011348_14_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": true, ""intervals"": [[0.0, 1.0]], ""inventory_classification"": ""interior"", ""link_id"": ""osm_699533700_2_forward"", ""start_inside"": false}]",,,,,
+exit,exit-osm_734011348_14_forward,osm_734011348_16_forward,,osm_734011348_14_forward,REJECTED,"Unclassified in effective boundary contract: [{""end_inside"": true, ""intervals"": [[0.0, 1.0]], ""inventory_classification"": ""interior"", ""link_id"": ""osm_699533700_2_forward"", ""start_inside"": false}]",,,,,
+exit,exit-osm_762765906_0_forward,osm_762765906_1_forward,,osm_762765906_0_forward,APPROVED_MODEL_ONLY,,,,4000.0,95.78774785950094,
+internal_origin,,,osm_1095527693_1_backward,,APPROVED_MODEL_ONLY,,,,2000.0,11.139094075570405,osm_1095527693_0_backward
+internal_origin,,,osm_1095527693_1_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1095527693_1_backward,,,osm_1095527693_0_backward
+internal_origin,,,osm_1095527695_0_backward,,APPROVED_MODEL_ONLY,,,,2000.0,7.515499692472687,osm_1095527695_0_backward
+internal_origin,,,osm_1095527695_0_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1095527695_0_backward,,,osm_1095527695_0_backward
+internal_origin,,,osm_1095551808_0_backward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1095551808_2_backward,,,osm_1095551807_0_backward
+internal_origin,,,osm_1095551808_0_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1095551808_2_backward,,,osm_1095551807_0_backward
+internal_origin,,,osm_1095551808_2_backward,,APPROVED_MODEL_ONLY,,,,2000.0,7.040738777279092,osm_1095551807_0_backward
+internal_origin,,,osm_1095551808_2_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1095551808_2_backward,,,osm_1095551807_0_backward
+internal_origin,,,osm_1095551811_1_backward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1095551811_2_backward,,,osm_1095551811_0_backward
+internal_origin,,,osm_1095551811_1_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1095551811_2_backward,,,osm_1095551811_0_backward
+internal_origin,,,osm_1095551811_2_backward,,APPROVED_MODEL_ONLY,,,,2000.0,6.724267976360348,osm_1095551811_0_backward
+internal_origin,,,osm_1095551811_2_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1095551811_2_backward,,,osm_1095551811_0_backward
+internal_origin,,,osm_1095760001_3_backward,,APPROVED_MODEL_ONLY,,,,2000.0,6.8445939335693815,osm_1095760001_0_backward
+internal_origin,,,osm_1095760001_3_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1095760001_3_backward,,,osm_1095760001_0_backward
+internal_origin,,,osm_1095760094_0_backward,,APPROVED_MODEL_ONLY,,,,2000.0,7.482712775991164,osm_1095760094_0_backward
+internal_origin,,,osm_1095760094_0_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1095760094_0_backward,,,osm_1095760094_0_backward
+internal_origin,,,osm_1095760124_0_backward,,APPROVED_MODEL_ONLY,,,,2000.0,12.019104914560842,osm_1095760123_0_backward
+internal_origin,,,osm_1095760124_0_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1095760124_0_backward,,,osm_1095760123_0_backward
+internal_origin,,,osm_1107835856_7_forward,,APPROVED_MODEL_ONLY,,,,2000.0,5.278878808894699,osm_1107835856_0_forward
+internal_origin,,,osm_1159529860_0_backward,,APPROVED_MODEL_ONLY,,,,2000.0,5.260211494286203,osm_1159529859_0_backward
+internal_origin,,,osm_1159529860_0_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1159529860_0_backward,,,osm_1159529859_0_backward
+internal_origin,,,osm_1174627092_0_backward,,APPROVED_MODEL_ONLY,,,,2000.0,4.8405802105050455,osm_1174627092_0_backward
+internal_origin,,,osm_1174627092_0_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1174627092_0_backward,,,osm_1174627092_0_backward
+internal_origin,,,osm_1196002697_3_backward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1196002697_9_backward,,,osm_1196002697_0_backward
+internal_origin,,,osm_1196002697_3_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1196002697_9_backward,,,osm_1196002697_0_backward
+internal_origin,,,osm_1196002697_9_backward,,APPROVED_MODEL_ONLY,,,,2000.0,6.581527373763333,osm_1196002697_0_backward
+internal_origin,,,osm_1196002697_9_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1196002697_9_backward,,,osm_1196002697_0_backward
+internal_origin,,,osm_1196283990_1_backward,,REJECTED,No directed interior path from this service component to the street network,,,,,
+internal_origin,,,osm_1196283990_1_forward,,REJECTED,No directed interior path from this service component to the street network,,,,,
+internal_origin,,,osm_1196283991_2_backward,,REJECTED,No directed interior path from this service component to the street network,,,,,
+internal_origin,,,osm_1196283991_2_forward,,REJECTED,No directed interior path from this service component to the street network,,,,,
+internal_origin,,,osm_1197017583_1_forward,,APPROVED_MODEL_ONLY,,,,2000.0,5.651273132590781,osm_1197017583_0_forward
+internal_origin,,,osm_1214455884_0_backward,,APPROVED_MODEL_ONLY,,,,2000.0,7.68581865267107,osm_1214455884_0_backward
+internal_origin,,,osm_1214455884_0_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1214455884_0_backward,,,osm_1214455884_0_backward
+internal_origin,,,osm_1214455884_4_backward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1214455884_0_backward,,,osm_1214455884_0_backward
+internal_origin,,,osm_1214455884_4_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1214455884_0_backward,,,osm_1214455884_0_backward
+internal_origin,,,osm_1218656796_0_forward,,APPROVED_MODEL_ONLY,,,,2000.0,7.211070184628667,osm_1218656796_0_forward
+internal_origin,,,osm_1218656796_2_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1218656796_0_forward,,,osm_1218656796_0_forward
+internal_origin,,,osm_1267242423_1_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_989735832_1_forward,,,osm_1267242423_0_forward
+internal_origin,,,osm_1272882110_0_forward,,APPROVED_MODEL_ONLY,,,,2000.0,8.388995060961989,osm_1272882110_0_forward
+internal_origin,,,osm_1272882111_12_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1272882110_0_forward,,,osm_1272882110_0_forward
+internal_origin,,,osm_1272882111_5_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1272882110_0_forward,,,osm_1272882110_0_forward
+internal_origin,,,osm_1274275468_3_backward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1274275468_9_backward,,,osm_1274275468_0_backward
+internal_origin,,,osm_1274275468_3_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1274275468_9_backward,,,osm_1274275468_0_backward
+internal_origin,,,osm_1274275468_9_backward,,APPROVED_MODEL_ONLY,,,,2000.0,6.034808013206856,osm_1274275468_0_backward
+internal_origin,,,osm_1274275468_9_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1274275468_9_backward,,,osm_1274275468_0_backward
+internal_origin,,,osm_1392432467_0_backward,,APPROVED_MODEL_ONLY,,,,2000.0,7.89291412388172,osm_1392432467_0_backward
+internal_origin,,,osm_1392432467_0_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1392432467_0_backward,,,osm_1392432467_0_backward
+internal_origin,,,osm_1392432602_0_backward,,APPROVED_MODEL_ONLY,,,,2000.0,5.93241480041392,osm_1392432602_0_backward
+internal_origin,,,osm_1392432602_0_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_1392432602_0_backward,,,osm_1392432602_0_backward
+internal_origin,,,osm_390176417_2_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_390176418_0_forward,,,osm_390176415_0_forward
+internal_origin,,,osm_390176418_0_forward,,APPROVED_MODEL_ONLY,,,,2000.0,10.890789633029435,osm_390176415_0_forward
+internal_origin,,,osm_390176418_1_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_390176418_0_forward,,,osm_390176415_0_forward
+internal_origin,,,osm_390176419_0_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_390176418_0_forward,,,osm_390176415_0_forward
+internal_origin,,,osm_406701906_3_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_406701907_9_backward,,,osm_1430102759_0_forward
+internal_origin,,,osm_406701907_9_backward,,APPROVED_MODEL_ONLY,,,,2000.0,8.317607221917186,osm_1430102759_0_forward
+internal_origin,,,osm_406701907_9_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_406701907_9_backward,,,osm_1430102759_0_forward
+internal_origin,,,osm_488464043_0_backward,,APPROVED_MODEL_ONLY,,,,2000.0,7.665619423080667,osm_488464043_0_backward
+internal_origin,,,osm_488464043_0_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_488464043_0_backward,,,osm_488464043_0_backward
+internal_origin,,,osm_989735829_1_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_989735832_1_forward,,,osm_1267242423_0_forward
+internal_origin,,,osm_989735831_1_forward,,REJECTED,Same connected service facility; only one modeled origin/budget,,osm_989735832_1_forward,,,osm_1267242423_0_forward
+internal_origin,,,osm_989735832_1_forward,,APPROVED_MODEL_ONLY,,,,2000.0,10.396150321879205,osm_1267242423_0_forward

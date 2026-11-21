@@ -1,0 +1,5948 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "bounded historical SQLite extraction; not a browser trace",
+  "source": {
+    "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+    "iteration": 0,
+    "source_type": "sqlite-direct-v1",
+    "manifest": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\runtime\\simz1-227187-direct\\webgl-continuo\\continuous-manifest.json",
+    "manifest_sha256": "2d0c323fc2505628c4f51cb94d393c4b953b9644bd5ef24c49a7d7b72487780b",
+    "database": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\scenarios\\zona1\\montecarlo\\run-massive-fixed-97e840b02c044fc39497debc91300a6d\\webgl-source\\replay.sqlite",
+    "database_bytes": 24926273536,
+    "database_mtime_ns": 1792508669790016400,
+    "database_hash": "not_computed",
+    "export_identity": {
+      "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+      "iteration": "0",
+      "run_manifest_sha256": "2d93aa7cd197200761917e6cf0c1c7d2848aaeb5102b502e744799bd8814f456"
+    }
+  },
+  "limits": {
+    "vehicles": 3,
+    "cases": 3,
+    "segments": 7,
+    "lane_events_per_case_max": 33,
+    "sqlite_instruction_budget": 1000000
+  },
+  "selection_inspection": {
+    "description": "Earlier bounded PK inspection used to select fixed cases; not repeated by this CLI",
+    "primary_key_range": [
+      1,
+      2048
+    ],
+    "rows_read": 2048,
+    "compressed_payload_bytes": 2049135,
+    "unavailable_positive_duration_terminal": 2,
+    "unavailable_zero_duration_terminal": 4,
+    "native_holds_under_4_5_m": 18,
+    "unavailable_nonterminal_found": 0
+  },
+  "client_loaded_version": "unknown; browser not opened",
+  "scope": "Candidate historical replay only; no supplied screenshot identity",
+  "effective_geometry_excerpt": {
+    "provenance": "Effective historical XML excerpt, not generated visual_lanes or rendered geometry",
+    "coordinate_system": "EPSG:32615; raw effective coordinates",
+    "sources": {
+      "network": {
+        "path": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\scenarios\\zona1\\montecarlo\\run-massive-fixed-97e840b02c044fc39497debc91300a6d\\output\\output_network.xml.gz",
+        "sha256": "33c4dcbf7da9cd1f3e2df1cbbdff597802a5a4dce31472c15a6acb4fdcf512f3",
+        "bytes": 267614
+      },
+      "lanes": {
+        "path": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\scenarios\\zona1\\montecarlo\\run-massive-fixed-97e840b02c044fc39497debc91300a6d\\output\\output_lanes.xml.gz",
+        "sha256": "114e0e2da087b578961674455eb2305f3724a293dfe7a37edc3b834e22ee449e",
+        "bytes": 280029
+      }
+    },
+    "links": {
+      "osm_1187726650_0_backward": {
+        "attributes": {
+          "id": "osm_1187726650_0_backward",
+          "from": "11685273344",
+          "to": "4077433638",
+          "length": "7.130718214287347",
+          "freespeed": "4.166666666666667",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "1187726650",
+          "osm:highway": "service",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "15",
+          "physical:speedSource": "assumed:highway_default",
+          "storageCapacityUsedInQsim": "0.7606099428573171"
+        }
+      },
+      "osm_1187726650_0_forward": {
+        "attributes": {
+          "id": "osm_1187726650_0_forward",
+          "from": "4077433638",
+          "to": "11685273344",
+          "length": "7.130718214287347",
+          "freespeed": "4.166666666666667",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "1187726650",
+          "osm:highway": "service",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "15",
+          "physical:speedSource": "assumed:highway_default",
+          "storageCapacityUsedInQsim": "0.7606099428573171"
+        }
+      },
+      "osm_1204808699_5_forward": {
+        "attributes": {
+          "id": "osm_1204808699_5_forward",
+          "from": "13575296453",
+          "to": "11166229843",
+          "length": "5.2593932420199705",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "1204808699",
+          "osm:highway": "residential",
+          "osm:name": "14 Avenida",
+          "osm:oneway": "yes",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_1204808699_6_forward": {
+        "attributes": {
+          "id": "osm_1204808699_6_forward",
+          "from": "11166229843",
+          "to": "13575296450",
+          "length": "7.235781147828371",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "1204808699",
+          "osm:highway": "residential",
+          "osm:name": "14 Avenida",
+          "osm:oneway": "yes",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_293327433_3_forward": {
+        "attributes": {
+          "id": "osm_293327433_3_forward",
+          "from": "13575296451",
+          "to": "2969173544",
+          "length": "6.762229559692381",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "293327433",
+          "osm:highway": "residential",
+          "osm:name": "14 Avenida",
+          "osm:oneway": "yes",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_293327433_4_forward": {
+        "attributes": {
+          "id": "osm_293327433_4_forward",
+          "from": "2969173544",
+          "to": "13575296452",
+          "length": "5.270367578508903",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "293327433",
+          "osm:highway": "residential",
+          "osm:name": "14 Avenida",
+          "osm:oneway": "yes",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_390137502_6_forward": {
+        "attributes": {
+          "id": "osm_390137502_6_forward",
+          "from": "13575296480",
+          "to": "11166229843",
+          "length": "4.855074583753081",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "390137502",
+          "osm:highway": "residential",
+          "osm:name": "12 Calle",
+          "osm:oneway": "yes",
+          "osm:surface": "concrete",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_390137502_7_forward": {
+        "attributes": {
+          "id": "osm_390137502_7_forward",
+          "from": "11166229843",
+          "to": "11884173159",
+          "length": "3.479108176640924",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "390137502",
+          "osm:highway": "residential",
+          "osm:name": "12 Calle",
+          "osm:oneway": "yes",
+          "osm:surface": "concrete",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_390137502_8_forward": {
+        "attributes": {
+          "id": "osm_390137502_8_forward",
+          "from": "11884173159",
+          "to": "2969173544",
+          "length": "2.6509706225884355",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "390137502",
+          "osm:highway": "residential",
+          "osm:name": "12 Calle",
+          "osm:oneway": "yes",
+          "osm:surface": "concrete",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_404273844_0_forward": {
+        "attributes": {
+          "id": "osm_404273844_0_forward",
+          "from": "2969173544",
+          "to": "4077433638",
+          "length": "9.95830076105197",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "404273844",
+          "osm:highway": "residential",
+          "osm:name": "12 Calle",
+          "osm:oneway": "yes",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_404273844_1_forward": {
+        "attributes": {
+          "id": "osm_404273844_1_forward",
+          "from": "4077433638",
+          "to": "13574817725",
+          "length": "90.63677449022363",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "404273844",
+          "osm:highway": "residential",
+          "osm:name": "12 Calle",
+          "osm:oneway": "yes",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_405565815_0_backward": {
+        "attributes": {
+          "id": "osm_405565815_0_backward",
+          "from": "4077433639",
+          "to": "4077433638",
+          "length": "67.97212944011525",
+          "freespeed": "4.166666666666667",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "405565815",
+          "osm:highway": "service",
+          "osm:oneway": "no",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "15",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_405565815_0_forward": {
+        "attributes": {
+          "id": "osm_405565815_0_forward",
+          "from": "4077433638",
+          "to": "4077433639",
+          "length": "67.97212944011525",
+          "freespeed": "4.166666666666667",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "405565815",
+          "osm:highway": "service",
+          "osm:oneway": "no",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "15",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_406843605_10_forward": {
+        "attributes": {
+          "id": "osm_406843605_10_forward",
+          "from": "4076046676",
+          "to": "333831865",
+          "length": "28.074920248592797",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "406843605",
+          "osm:highway": "residential",
+          "osm:name": "15 Calle",
+          "osm:oneway": "yes",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_406843605_11_forward": {
+        "attributes": {
+          "id": "osm_406843605_11_forward",
+          "from": "333831865",
+          "to": "333831995",
+          "length": "70.5039573045002",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "406843605",
+          "osm:highway": "residential",
+          "osm:name": "15 Calle",
+          "osm:oneway": "yes",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_420120096_26_forward": {
+        "attributes": {
+          "id": "osm_420120096_26_forward",
+          "from": "333831990",
+          "to": "333831825",
+          "length": "68.32764610464461",
+          "freespeed": "11.11111111111111",
+          "capacity": "6000.0",
+          "permlanes": "3.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "420120096",
+          "osm:highway": "residential",
+          "osm:lanes": "3",
+          "osm:maxspeed": "40",
+          "osm:name": "14 Calle",
+          "osm:oneway": "yes",
+          "osm:surface": "concrete",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "osm:lanes",
+          "physical:modeledMaxSpeedKmh": "40.0",
+          "physical:speedSource": "osm:maxspeed"
+        }
+      },
+      "osm_420120096_27_forward": {
+        "attributes": {
+          "id": "osm_420120096_27_forward",
+          "from": "333831825",
+          "to": "727294263",
+          "length": "29.658155800901667",
+          "freespeed": "11.11111111111111",
+          "capacity": "6000.0",
+          "permlanes": "3.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "420120096",
+          "osm:highway": "residential",
+          "osm:lanes": "3",
+          "osm:maxspeed": "40",
+          "osm:name": "14 Calle",
+          "osm:oneway": "yes",
+          "osm:surface": "concrete",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "osm:lanes",
+          "physical:modeledMaxSpeedKmh": "40.0",
+          "physical:speedSource": "osm:maxspeed"
+        }
+      },
+      "osm_420120096_28_forward": {
+        "attributes": {
+          "id": "osm_420120096_28_forward",
+          "from": "727294263",
+          "to": "727294302",
+          "length": "23.336775855968483",
+          "freespeed": "11.11111111111111",
+          "capacity": "6000.0",
+          "permlanes": "3.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "420120096",
+          "osm:highway": "residential",
+          "osm:lanes": "3",
+          "osm:maxspeed": "40",
+          "osm:name": "14 Calle",
+          "osm:oneway": "yes",
+          "osm:surface": "concrete",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "osm:lanes",
+          "physical:modeledMaxSpeedKmh": "40.0",
+          "physical:speedSource": "osm:maxspeed"
+        }
+      },
+      "osm_58692343_34_forward": {
+        "attributes": {
+          "id": "osm_58692343_34_forward",
+          "from": "13571707136",
+          "to": "333720788",
+          "length": "6.897093041968992",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "58692343",
+          "osm:highway": "residential",
+          "osm:name": "1a Avenida",
+          "osm:oneway": "yes",
+          "osm:source": "Yahoo Image",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_58692343_35_forward": {
+        "attributes": {
+          "id": "osm_58692343_35_forward",
+          "from": "333720788",
+          "to": "13571707134",
+          "length": "4.765947335676866",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "58692343",
+          "osm:highway": "residential",
+          "osm:name": "1a Avenida",
+          "osm:oneway": "yes",
+          "osm:source": "Yahoo Image",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_58692343_36_forward": {
+        "attributes": {
+          "id": "osm_58692343_36_forward",
+          "from": "13571707134",
+          "to": "13571793975",
+          "length": "61.30954573208418",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "58692343",
+          "osm:highway": "residential",
+          "osm:name": "1a Avenida",
+          "osm:oneway": "yes",
+          "osm:source": "Yahoo Image",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_58692343_37_forward": {
+        "attributes": {
+          "id": "osm_58692343_37_forward",
+          "from": "13571793975",
+          "to": "4074148401",
+          "length": "6.366592406122601",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "58692343",
+          "osm:highway": "residential",
+          "osm:name": "1a Avenida",
+          "osm:oneway": "yes",
+          "osm:source": "Yahoo Image",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_58692343_3_forward": {
+        "attributes": {
+          "id": "osm_58692343_3_forward",
+          "from": "333831974",
+          "to": "333831865",
+          "length": "80.81607483808416",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "58692343",
+          "osm:highway": "residential",
+          "osm:name": "1a Avenida",
+          "osm:oneway": "yes",
+          "osm:source": "Yahoo Image",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_58692343_4_forward": {
+        "attributes": {
+          "id": "osm_58692343_4_forward",
+          "from": "333831865",
+          "to": "333831825",
+          "length": "139.85961472356826",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "58692343",
+          "osm:highway": "residential",
+          "osm:name": "1a Avenida",
+          "osm:oneway": "yes",
+          "osm:source": "Yahoo Image",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_58692343_5_forward": {
+        "attributes": {
+          "id": "osm_58692343_5_forward",
+          "from": "333831825",
+          "to": "333831787",
+          "length": "136.9950468454136",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "58692343",
+          "osm:highway": "residential",
+          "osm:name": "1a Avenida",
+          "osm:oneway": "yes",
+          "osm:source": "Yahoo Image",
+          "osm:surface": "asphalt",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_58692359_0_backward": {
+        "attributes": {
+          "id": "osm_58692359_0_backward",
+          "from": "4076046676",
+          "to": "727294263",
+          "length": "139.94626444434613",
+          "freespeed": "4.166666666666667",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "58692359",
+          "osm:highway": "service",
+          "osm:name": "Avenida Centro América B",
+          "osm:service": "alley",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "15",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_58692359_0_forward": {
+        "attributes": {
+          "id": "osm_58692359_0_forward",
+          "from": "727294263",
+          "to": "4076046676",
+          "length": "139.94626444434613",
+          "freespeed": "4.166666666666667",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "58692359",
+          "osm:highway": "service",
+          "osm:name": "Avenida Centro América B",
+          "osm:service": "alley",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "15",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_65786237_1_forward": {
+        "attributes": {
+          "id": "osm_65786237_1_forward",
+          "from": "13571707137",
+          "to": "333720788",
+          "length": "6.199400818822609",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "65786237",
+          "osm:highway": "residential",
+          "osm:name": "5a Calle",
+          "osm:old_name": "Calle de la Merced",
+          "osm:oneway": "yes",
+          "osm:source": "Yahoo Image",
+          "osm:surface": "concrete",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      },
+      "osm_65786237_2_forward": {
+        "attributes": {
+          "id": "osm_65786237_2_forward",
+          "from": "333720788",
+          "to": "13571707135",
+          "length": "6.088913628598343",
+          "freespeed": "8.333333333333334",
+          "capacity": "2000.0",
+          "permlanes": "1.0",
+          "oneway": "1",
+          "modes": "car"
+        },
+        "metadata": {
+          "origid": "65786237",
+          "osm:highway": "residential",
+          "osm:name": "5a Calle",
+          "osm:old_name": "Calle de la Merced",
+          "osm:oneway": "yes",
+          "osm:source": "Yahoo Image",
+          "osm:surface": "concrete",
+          "physical:capacityFactor": "1.0",
+          "physical:capacityModel": "ideal_per_lane_times_lanes_times_factor",
+          "physical:idealCapacityPerLane": "2000.0",
+          "physical:lanesSource": "assumed:one_lane",
+          "physical:modeledMaxSpeedKmh": "30",
+          "physical:speedSource": "assumed:highway_default"
+        }
+      }
+    },
+    "nodes": {
+      "11166229843": {
+        "id": "11166229843",
+        "x": "768719.735526",
+        "y": "1619534.819346"
+      },
+      "11685273344": {
+        "id": "11685273344",
+        "x": "768703.191343",
+        "y": "1619544.467956"
+      },
+      "11884173159": {
+        "id": "11884173159",
+        "x": "768716.291594",
+        "y": "1619535.312824"
+      },
+      "13571707134": {
+        "id": "13571707134",
+        "x": "767211.491593",
+        "y": "1620446.426906"
+      },
+      "13571707135": {
+        "id": "13571707135",
+        "x": "767216.8776",
+        "y": "1620440.817786"
+      },
+      "13571707136": {
+        "id": "13571707136",
+        "x": "767209.893581",
+        "y": "1620434.873901"
+      },
+      "13571707137": {
+        "id": "13571707137",
+        "x": "767204.711345",
+        "y": "1620442.544375"
+      },
+      "13571793975": {
+        "id": "13571793975",
+        "x": "767219.707532",
+        "y": "1620507.183459"
+      },
+      "13574817725": {
+        "id": "13574817725",
+        "x": "768614.448301",
+        "y": "1619552.270246"
+      },
+      "13575296450": {
+        "id": "13575296450",
+        "x": "768720.604999",
+        "y": "1619542.002698"
+      },
+      "13575296451": {
+        "id": "13575296451",
+        "x": "768714.445699",
+        "y": "1619542.41093"
+      },
+      "13575296452": {
+        "id": "13575296452",
+        "x": "768713.035849",
+        "y": "1619530.461251"
+      },
+      "13575296453": {
+        "id": "13575296453",
+        "x": "768719.103149",
+        "y": "1619529.598109"
+      },
+      "13575296480": {
+        "id": "13575296480",
+        "x": "768724.539886",
+        "y": "1619534.119432"
+      },
+      "2969173544": {
+        "id": "2969173544",
+        "x": "768713.668106",
+        "y": "1619535.693557"
+      },
+      "333720788": {
+        "id": "333720788",
+        "x": "767210.853504",
+        "y": "1620441.703867"
+      },
+      "333831787": {
+        "id": "333831787",
+        "x": "767102.771973",
+        "y": "1619637.729933"
+      },
+      "333831825": {
+        "id": "333831825",
+        "x": "767081.066775",
+        "y": "1619502.465277"
+      },
+      "333831865": {
+        "id": "333831865",
+        "x": "767061.001704",
+        "y": "1619364.052471"
+      },
+      "333831974": {
+        "id": "333831974",
+        "x": "767050.204224",
+        "y": "1619283.960946"
+      },
+      "333831990": {
+        "id": "333831990",
+        "x": "767148.622337",
+        "y": "1619492.222561"
+      },
+      "333831995": {
+        "id": "333831995",
+        "x": "767130.68627",
+        "y": "1619353.33476"
+      },
+      "4074148401": {
+        "id": "4074148401",
+        "x": "767220.565373",
+        "y": "1620513.491994"
+      },
+      "4076046676": {
+        "id": "4076046676",
+        "x": "767033.233041",
+        "y": "1619368.187985"
+      },
+      "4077433638": {
+        "id": "4077433638",
+        "x": "768703.851567",
+        "y": "1619537.367869"
+      },
+      "4077433639": {
+        "id": "4077433639",
+        "x": "768697.223373",
+        "y": "1619469.71968"
+      },
+      "727294263": {
+        "id": "727294263",
+        "x": "767051.742773",
+        "y": "1619506.904771"
+      },
+      "727294302": {
+        "id": "727294302",
+        "x": "767028.670026",
+        "y": "1619510.405266"
+      }
+    },
+    "lane_assignments": [
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_1187726650_0_backward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_1187726650_0_backward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_1187726650_0_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_404273844_1_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_405565815_0_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "5.704574571429878"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_1187726650_0_backward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_1187726650_0_backward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "7.130718214287347"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_1187726650_0_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_1187726650_0_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_1187726650_0_backward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_1256935237_0_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "5.704574571429878"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_1187726650_0_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_1187726650_0_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "7.130718214287347"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_1204808699_5_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_1204808699_5_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_1204808699_6_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_390137502_7_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "4.207514593615977"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_1204808699_5_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_1204808699_5_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "5.2593932420199705"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_1204808699_6_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_1204808699_6_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_1204808699_7_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "5.788624918262697"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_1204808699_6_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_1204808699_6_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "7.235781147828371"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_293327433_3_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_293327433_3_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_293327433_4_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_404273844_0_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "5.409783647753905"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_293327433_3_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_293327433_3_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "6.762229559692381"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_293327433_4_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_293327433_4_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_293327433_5_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "4.216294062807123"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_293327433_4_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_293327433_4_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "5.270367578508903"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_390137502_6_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_390137502_6_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_1204808699_6_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_390137502_7_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "3.8840596670024645"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_390137502_6_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_390137502_6_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "4.855074583753081"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_390137502_7_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_390137502_7_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_390137502_8_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "2.7832865413127394"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_390137502_7_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_390137502_7_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "3.479108176640924"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_390137502_8_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_390137502_8_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_293327433_4_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_404273844_0_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "2.1207764980707484"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_390137502_8_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_390137502_8_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "2.6509706225884355"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_404273844_0_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_404273844_0_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_1187726650_0_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_404273844_1_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_405565815_0_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "7.966640608841576"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_404273844_0_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_404273844_0_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "9.95830076105197"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_404273844_1_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_404273844_1_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_404273844_2_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "72.5094195921789"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_404273844_1_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_404273844_1_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "90.63677449022363"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_405565815_0_backward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_405565815_0_backward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_1187726650_0_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_404273844_1_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_405565815_0_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "54.37770355209221"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_405565815_0_backward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_405565815_0_backward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "67.97212944011525"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_405565815_0_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_405565815_0_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_405394243_5_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_405565815_0_backward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "54.37770355209221"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_405565815_0_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_405565815_0_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "67.97212944011525"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_406843605_10_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_406843605_10_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_406843605_11_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692343_4_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "22.45993619887424"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_406843605_10_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_406843605_10_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "28.074920248592797"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_406843605_11_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_406843605_11_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_30288351_8_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_406843605_12_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "56.40316584360016"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_406843605_11_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_406843605_11_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "70.5039573045002"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_420120096_26_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_420120096_26_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_420120096_27_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692343_5_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "54.6621168837157"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "-2"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_420120096_26_forward.lane.1"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_420120096_27_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692343_5_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "54.6621168837157"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_420120096_26_forward.lane.2"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_420120096_27_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692343_5_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "54.6621168837157"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "2"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_420120096_26_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_420120096_26_forward.lane.0"
+                    }
+                  },
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_420120096_26_forward.lane.1"
+                    }
+                  },
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_420120096_26_forward.lane.2"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "3.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "6000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "68.32764610464461"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_420120096_27_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_420120096_27_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_420120096_28_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692359_0_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "23.726524640721337"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "-2"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_420120096_27_forward.lane.1"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_420120096_28_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692359_0_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "23.726524640721337"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_420120096_27_forward.lane.2"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_420120096_28_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692359_0_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "23.726524640721337"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "2"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_420120096_27_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_420120096_27_forward.lane.0"
+                    }
+                  },
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_420120096_27_forward.lane.1"
+                    }
+                  },
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_420120096_27_forward.lane.2"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "3.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "6000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "29.658155800901667"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_420120096_28_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_420120096_28_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_420120096_29_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692365_6_backward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "18.66942068477479"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "-2"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_420120096_28_forward.lane.1"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_420120096_29_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692365_6_backward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "18.66942068477479"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_420120096_28_forward.lane.2"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_420120096_29_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692365_6_backward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "18.66942068477479"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "2"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_420120096_28_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_420120096_28_forward.lane.0"
+                    }
+                  },
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_420120096_28_forward.lane.1"
+                    }
+                  },
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_420120096_28_forward.lane.2"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "3.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "6000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "23.336775855968483"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_58692343_34_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692343_34_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692343_35_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_65786237_2_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "5.517674433575194"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692343_34_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_58692343_34_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "6.897093041968992"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_58692343_35_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692343_35_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692343_36_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "3.8127578685414925"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692343_35_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_58692343_35_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "4.765947335676866"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_58692343_36_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692343_36_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692343_37_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "49.04763658566735"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692343_36_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_58692343_36_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "61.30954573208418"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_58692343_37_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692343_37_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_1272103887_1_backward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_384762175_0_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692343_38_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "5.093273924898082"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692343_37_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_58692343_37_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "6.366592406122601"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_58692343_3_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692343_3_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_406843605_11_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692343_4_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "64.65285987046734"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692343_3_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_58692343_3_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "80.81607483808416"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_58692343_4_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692343_4_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_420120096_27_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692343_5_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "100.0"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692343_4_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_58692343_4_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "139.85961472356826"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_58692343_5_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692343_5_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_384762193_2_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692343_6_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "100.0"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692343_5_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_58692343_5_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "136.9950468454136"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_58692359_0_backward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692359_0_backward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_420120096_28_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692359_0_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "100.0"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692359_0_backward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_58692359_0_backward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "139.94626444434613"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_58692359_0_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692359_0_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_406843605_10_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692359_0_backward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692359_1_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "100.0"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_58692359_0_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_58692359_0_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "139.94626444434613"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_65786237_1_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_65786237_1_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_58692343_35_forward"
+                    }
+                  },
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_65786237_2_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "4.959520655058087"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_65786237_1_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_65786237_1_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "6.199400818822609"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "lanesToLinkAssignment",
+        "attributes": {
+          "linkIdRef": "osm_65786237_2_forward"
+        },
+        "children": [
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_65786237_2_forward.lane.0"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLink",
+                    "attributes": {
+                      "refId": "osm_65786237_3_forward"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "4.871130902878675"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          },
+          {
+            "tag": "lane",
+            "attributes": {
+              "id": "osm_65786237_2_forward.original"
+            },
+            "children": [
+              {
+                "tag": "leadsTo",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "toLane",
+                    "attributes": {
+                      "refId": "osm_65786237_2_forward.lane.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "tag": "representedLanes",
+                "attributes": {
+                  "number": "1.0"
+                }
+              },
+              {
+                "tag": "capacity",
+                "attributes": {
+                  "vehiclesPerHour": "2000.0"
+                }
+              },
+              {
+                "tag": "startsAt",
+                "attributes": {
+                  "meterFromLinkEnd": "6.088913628598343"
+                }
+              },
+              {
+                "tag": "alignment",
+                "attributes": {},
+                "text": "0"
+              },
+              {
+                "tag": "attributes",
+                "attributes": {}
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "unavailable_before_arrival_z1_43360",
+      "classification": "Intervalo abierto o desconocido: closed interval with unavailable position",
+      "cause_confirmed_for_current_screenshot": false,
+      "journey_key": "9f33c3b0e130f07436363452320230303fd6988b29e2a1106ef1f80c44d7c21c",
+      "trip": {
+        "Departure": 43.0,
+        "Trip_ID": "z1_43360:trip:0001",
+        "Person_ID": "z1_43360",
+        "Trip_Index": 1,
+        "Status": "completed",
+        "Abort": null,
+        "Last_Observed_Time": 125.0,
+        "Observation_End": 86400.0,
+        "Observation_End_Provenance": "configured_horizon",
+        "Origin_Node": "565304238",
+        "Destination_Node": "13571793975",
+        "Arrival": 125.0,
+        "Origin_Position": [
+          -90.51997689999583,
+          14.64628899999966
+        ],
+        "Destination_Position": [
+          -90.51913739999694,
+          14.644835799996432
+        ],
+        "Agent_Type": null,
+        "Agent_Schema": null,
+        "Vehicle_Type": null,
+        "Vehicle_Type_Source": null,
+        "Vehicle_PCU": null
+      },
+      "segments": [
+        {
+          "sqlite_segment_id": 927,
+          "record": {
+            "vehicle": "z1_43360",
+            "Agent_ID": "z1_43360",
+            "Link_ID": "osm_58692343_35_forward",
+            "Profile": "Liebre",
+            "Speed_kmh": 8.578705204218359,
+            "Agent_Type": null,
+            "Agent_Schema": null,
+            "Vehicle_Type": "Liebre",
+            "Vehicle_Type_Source": "effective_vehicles",
+            "Vehicle_PCU": 1.0,
+            "color": [
+              245,
+              65,
+              65
+            ],
+            "path": [
+              [
+                -90.51922620000211,
+                14.644245199997133
+              ],
+              [
+                -90.51921980000434,
+                14.644287799998374
+              ]
+            ],
+            "timestamps": [
+              122.0,
+              124.0
+            ],
+            "Inferred": false,
+            "Distance_m": 4.765947335676866,
+            "Boundary_Provenance": {
+              "start": "entered link",
+              "end": "left link",
+              "start_relative": 0,
+              "end_relative": 1,
+              "distance": "network_length_fraction"
+            },
+            "Movement_End": 124.0,
+            "Motion_Speed_kmh": 8.578705204218359,
+            "Wait_Evidence": "none_estimated",
+            "Observed_Waits": {},
+            "Motion_Provenance": {
+              "method": "minimum_link_vehicle_speed_at_queue_entry",
+              "fallback_reason": null,
+              "vehicle_limit_mps": 25.0,
+              "link_speed_at_entry_mps": 8.333333333333334,
+              "minimum_link_speed_in_interval_mps": 8.333333333333334,
+              "changes_inside_interval": false,
+              "continuous_position_observed": false
+            },
+            "Replay_Journey_Key": "9f33c3b0e130f07436363452320230303fd6988b29e2a1106ef1f80c44d7c21c",
+            "Motion_Plan": {
+              "version": 1,
+              "phases": [
+                [
+                  122.0,
+                  123.59544807121534,
+                  0.0,
+                  0.0,
+                  2.6850946182385087
+                ],
+                [
+                  123.59544807121536,
+                  124.0,
+                  3.4173931538285998,
+                  4.283929029699324,
+                  -4.69891558191739
+                ]
+              ],
+              "distance_m": 4.765947335676866,
+              "start_time": 122.0,
+              "end_time": 124.0,
+              "cap_mps": 8.333333333333334,
+              "acceleration_mps2": 2.6850946182385087,
+              "deceleration_mps2": 4.69891558191739,
+              "reference_acceleration_mps2": 2.0,
+              "reference_deceleration_mps2": 3.5,
+              "rate_adaptation_factor": 1.3425473091192544,
+              "source": "continuous_link",
+              "fallback_reason": null,
+              "feasible": true,
+              "continuous_position_observed": false,
+              "hold_start": null,
+              "status": "kinematic",
+              "entry_speed_mps": 0.0,
+              "exit_speed_mps": 2.382973667838433,
+              "profile": "Liebre",
+              "profile_source": "recorded_profile",
+              "recorded_profile": "Liebre",
+              "rate_model": "visual_interpolation_only_not_qsim_acceleration",
+              "limits_complete": true,
+              "native_wait_boundary": null,
+              "entry_continuity": "matched",
+              "exit_continuity": "unavailable_boundary"
+            },
+            "Max_Speed_kmh": 35.55444883514874
+          }
+        },
+        {
+          "sqlite_segment_id": 939,
+          "record": {
+            "vehicle": "z1_43360",
+            "Agent_ID": "z1_43360",
+            "Link_ID": "osm_58692343_36_forward",
+            "Profile": "Liebre",
+            "Speed_kmh": 220.71436463550305,
+            "Agent_Type": null,
+            "Agent_Schema": null,
+            "Vehicle_Type": "Liebre",
+            "Vehicle_Type_Source": "effective_vehicles",
+            "Vehicle_PCU": 1.0,
+            "color": [
+              40,
+              210,
+              95
+            ],
+            "path": [
+              [
+                -90.51921980000434,
+                14.644287799998374
+              ],
+              [
+                -90.51913739999694,
+                14.644835799996432
+              ]
+            ],
+            "timestamps": [
+              124.0,
+              125.0
+            ],
+            "Inferred": false,
+            "Distance_m": 61.30954573208418,
+            "Boundary_Provenance": {
+              "start": "entered link",
+              "end": "vehicle leaves traffic",
+              "start_relative": 0,
+              "end_relative": 1.0,
+              "distance": "network_length_fraction"
+            },
+            "Movement_End": 125.0,
+            "Motion_Speed_kmh": 220.71436463550305,
+            "Wait_Evidence": "none_estimated",
+            "Observed_Waits": {},
+            "Motion_Provenance": {
+              "method": "minimum_link_vehicle_speed_at_queue_entry",
+              "fallback_reason": null,
+              "vehicle_limit_mps": 25.0,
+              "link_speed_at_entry_mps": 8.333333333333334,
+              "minimum_link_speed_in_interval_mps": 8.333333333333334,
+              "changes_inside_interval": false,
+              "continuous_position_observed": false
+            },
+            "Replay_Journey_Key": "9f33c3b0e130f07436363452320230303fd6988b29e2a1106ef1f80c44d7c21c",
+            "Motion_Plan": {
+              "version": 1,
+              "phases": [],
+              "distance_m": 61.30954573208418,
+              "start_time": 124.0,
+              "end_time": 125.0,
+              "cap_mps": 8.333333333333334,
+              "acceleration_mps2": 2.0,
+              "deceleration_mps2": 3.5,
+              "reference_acceleration_mps2": 2.0,
+              "reference_deceleration_mps2": 3.5,
+              "rate_adaptation_factor": 1.0,
+              "source": "boundary_preserving_fallback",
+              "fallback_reason": "distance_exceeds_speed_cap",
+              "feasible": false,
+              "continuous_position_observed": false,
+              "hold_start": null,
+              "status": "unavailable",
+              "entry_speed_mps": null,
+              "exit_speed_mps": null,
+              "profile": "Liebre",
+              "profile_source": "recorded_profile",
+              "recorded_profile": "Liebre",
+              "rate_model": "visual_interpolation_only_not_qsim_acceleration",
+              "limits_complete": true,
+              "native_wait_boundary": null,
+              "entry_continuity": "unavailable_boundary",
+              "exit_continuity": "unobserved_boundary"
+            },
+            "Max_Speed_kmh": 220.71436463550305
+          }
+        }
+      ],
+      "lane_events": [
+        {
+          "sqlite_seq": 3815,
+          "type": "entered lane",
+          "time": 123.0,
+          "vehicle": "z1_43360",
+          "link": "osm_58692343_35_forward",
+          "lane": "osm_58692343_35_forward.lane.0"
+        },
+        {
+          "sqlite_seq": 3844,
+          "type": "left lane",
+          "time": 124.0,
+          "vehicle": "z1_43360",
+          "link": "osm_58692343_35_forward",
+          "lane": "osm_58692343_35_forward.lane.0",
+          "entry_observed": true
+        },
+        {
+          "sqlite_seq": 3845,
+          "type": "entered lane",
+          "time": 124.0,
+          "vehicle": "z1_43360",
+          "link": "osm_58692343_36_forward",
+          "lane": "osm_58692343_36_forward.original"
+        },
+        {
+          "sqlite_seq": 3902,
+          "type": "vehicle leaves traffic",
+          "time": 125.0,
+          "vehicle": "z1_43360"
+        }
+      ],
+      "trace": [
+        {
+          "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+          "iteration": 0,
+          "vehicle_id": "z1_43360",
+          "person_id": "z1_43360",
+          "trip_id": "z1_43360:trip:0001",
+          "simulated_time": 123.999,
+          "sqlite_segment_id": 927,
+          "link_id": "osm_58692343_35_forward",
+          "native_lane_id": "osm_58692343_35_forward.lane.0",
+          "native_lane_last_event": {
+            "sqlite_seq": 3815,
+            "type": "entered lane",
+            "time": 123.0,
+            "vehicle": "z1_43360",
+            "link": "osm_58692343_35_forward",
+            "lane": "osm_58692343_35_forward.lane.0"
+          },
+          "position_centerline_model_lonlat": [
+            -90.5192198032075,
+            14.64428777867729
+          ],
+          "position_rendered_lonlat": null,
+          "position_provenance": "stored Motion_Plan on centerline; not lane/queue/body placement",
+          "native_dimensions_m": null,
+          "client_nominal_dimensions_m": [
+            4.5,
+            1.8
+          ],
+          "dimensions_provenance": "simz1_visual_queues.js defaults, not measured native dimensions",
+          "native_active_interval_count": 1,
+          "visibility_reason": "active_native_interval_render_unknown",
+          "visibility_reason_provenance": "native metadata and stored Motion_Plan; browser not observed",
+          "browser_visibility": "not_observed",
+          "qsim_forced_movement": "not_established_by_this_evidence"
+        },
+        {
+          "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+          "iteration": 0,
+          "vehicle_id": "z1_43360",
+          "person_id": "z1_43360",
+          "trip_id": "z1_43360:trip:0001",
+          "simulated_time": 124.0,
+          "sqlite_segment_id": 939,
+          "link_id": "osm_58692343_36_forward",
+          "native_lane_id": "osm_58692343_36_forward.original",
+          "native_lane_last_event": {
+            "sqlite_seq": 3845,
+            "type": "entered lane",
+            "time": 124.0,
+            "vehicle": "z1_43360",
+            "link": "osm_58692343_36_forward",
+            "lane": "osm_58692343_36_forward.original"
+          },
+          "position_centerline_model_lonlat": null,
+          "position_rendered_lonlat": null,
+          "position_provenance": "stored Motion_Plan on centerline; not lane/queue/body placement",
+          "native_dimensions_m": null,
+          "client_nominal_dimensions_m": [
+            4.5,
+            1.8
+          ],
+          "dimensions_provenance": "simz1_visual_queues.js defaults, not measured native dimensions",
+          "native_active_interval_count": 1,
+          "visibility_reason": "motion_plan_unavailable:distance_exceeds_speed_cap",
+          "visibility_reason_provenance": "native metadata and stored Motion_Plan; browser not observed",
+          "browser_visibility": "not_observed",
+          "qsim_forced_movement": "not_established_by_this_evidence"
+        },
+        {
+          "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+          "iteration": 0,
+          "vehicle_id": "z1_43360",
+          "person_id": "z1_43360",
+          "trip_id": "z1_43360:trip:0001",
+          "simulated_time": 124.5,
+          "sqlite_segment_id": 939,
+          "link_id": "osm_58692343_36_forward",
+          "native_lane_id": "osm_58692343_36_forward.original",
+          "native_lane_last_event": {
+            "sqlite_seq": 3845,
+            "type": "entered lane",
+            "time": 124.0,
+            "vehicle": "z1_43360",
+            "link": "osm_58692343_36_forward",
+            "lane": "osm_58692343_36_forward.original"
+          },
+          "position_centerline_model_lonlat": null,
+          "position_rendered_lonlat": null,
+          "position_provenance": "stored Motion_Plan on centerline; not lane/queue/body placement",
+          "native_dimensions_m": null,
+          "client_nominal_dimensions_m": [
+            4.5,
+            1.8
+          ],
+          "dimensions_provenance": "simz1_visual_queues.js defaults, not measured native dimensions",
+          "native_active_interval_count": 1,
+          "visibility_reason": "motion_plan_unavailable:distance_exceeds_speed_cap",
+          "visibility_reason_provenance": "native metadata and stored Motion_Plan; browser not observed",
+          "browser_visibility": "not_observed",
+          "qsim_forced_movement": "not_established_by_this_evidence"
+        },
+        {
+          "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+          "iteration": 0,
+          "vehicle_id": "z1_43360",
+          "person_id": "z1_43360",
+          "trip_id": "z1_43360:trip:0001",
+          "simulated_time": 124.999,
+          "sqlite_segment_id": 939,
+          "link_id": "osm_58692343_36_forward",
+          "native_lane_id": "osm_58692343_36_forward.original",
+          "native_lane_last_event": {
+            "sqlite_seq": 3845,
+            "type": "entered lane",
+            "time": 124.0,
+            "vehicle": "z1_43360",
+            "link": "osm_58692343_36_forward",
+            "lane": "osm_58692343_36_forward.original"
+          },
+          "position_centerline_model_lonlat": null,
+          "position_rendered_lonlat": null,
+          "position_provenance": "stored Motion_Plan on centerline; not lane/queue/body placement",
+          "native_dimensions_m": null,
+          "client_nominal_dimensions_m": [
+            4.5,
+            1.8
+          ],
+          "dimensions_provenance": "simz1_visual_queues.js defaults, not measured native dimensions",
+          "native_active_interval_count": 1,
+          "visibility_reason": "motion_plan_unavailable:distance_exceeds_speed_cap",
+          "visibility_reason_provenance": "native metadata and stored Motion_Plan; browser not observed",
+          "browser_visibility": "not_observed",
+          "qsim_forced_movement": "not_established_by_this_evidence"
+        },
+        {
+          "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+          "iteration": 0,
+          "vehicle_id": "z1_43360",
+          "person_id": "z1_43360",
+          "trip_id": "z1_43360:trip:0001",
+          "simulated_time": 125.0,
+          "sqlite_segment_id": null,
+          "link_id": null,
+          "native_lane_id": null,
+          "native_lane_last_event": {
+            "sqlite_seq": 3902,
+            "type": "vehicle leaves traffic",
+            "time": 125.0,
+            "vehicle": "z1_43360"
+          },
+          "position_centerline_model_lonlat": null,
+          "position_rendered_lonlat": null,
+          "position_provenance": "stored Motion_Plan on centerline; not lane/queue/body placement",
+          "native_dimensions_m": null,
+          "client_nominal_dimensions_m": [
+            4.5,
+            1.8
+          ],
+          "dimensions_provenance": "simz1_visual_queues.js defaults, not measured native dimensions",
+          "native_active_interval_count": 0,
+          "visibility_reason": "recorded_arrival",
+          "visibility_reason_provenance": "native metadata and stored Motion_Plan; browser not observed",
+          "browser_visibility": "not_observed",
+          "qsim_forced_movement": "not_established_by_this_evidence"
+        },
+        {
+          "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+          "iteration": 0,
+          "vehicle_id": "z1_43360",
+          "person_id": "z1_43360",
+          "trip_id": "z1_43360:trip:0001",
+          "simulated_time": 125.001,
+          "sqlite_segment_id": null,
+          "link_id": null,
+          "native_lane_id": null,
+          "native_lane_last_event": {
+            "sqlite_seq": 3902,
+            "type": "vehicle leaves traffic",
+            "time": 125.0,
+            "vehicle": "z1_43360"
+          },
+          "position_centerline_model_lonlat": null,
+          "position_rendered_lonlat": null,
+          "position_provenance": "stored Motion_Plan on centerline; not lane/queue/body placement",
+          "native_dimensions_m": null,
+          "client_nominal_dimensions_m": [
+            4.5,
+            1.8
+          ],
+          "dimensions_provenance": "simz1_visual_queues.js defaults, not measured native dimensions",
+          "native_active_interval_count": 0,
+          "visibility_reason": "recorded_arrival",
+          "visibility_reason_provenance": "native metadata and stored Motion_Plan; browser not observed",
+          "browser_visibility": "not_observed",
+          "qsim_forced_movement": "not_established_by_this_evidence"
+        }
+      ]
+    },
+    {
+      "case_id": "short_link_native_wait_z1_38616",
+      "classification": "Ocultación por solapamiento o desborde: candidate only; renderer/roster not executed",
+      "cause_confirmed_for_current_screenshot": false,
+      "journey_key": "64faefb6f85badc99cb6cd8dd879789ff612e3cd04bff3428a7a466425c9d375",
+      "trip": {
+        "Departure": 15.0,
+        "Trip_ID": "z1_38616:trip:0001",
+        "Person_ID": "z1_38616",
+        "Trip_Index": 1,
+        "Status": "completed",
+        "Abort": null,
+        "Last_Observed_Time": 447.0,
+        "Observation_End": 86400.0,
+        "Observation_End_Provenance": "configured_horizon",
+        "Origin_Node": "2969173543",
+        "Destination_Node": "11292265001",
+        "Arrival": 447.0,
+        "Origin_Position": [
+          -90.50545830000145,
+          14.635305800001284
+        ],
+        "Destination_Position": [
+          -90.51624749999647,
+          14.641199900001569
+        ],
+        "Agent_Type": null,
+        "Agent_Schema": null,
+        "Vehicle_Type": null,
+        "Vehicle_Type_Source": null,
+        "Vehicle_PCU": null
+      },
+      "segments": [
+        {
+          "sqlite_segment_id": 115,
+          "record": {
+            "vehicle": "z1_38616",
+            "Agent_ID": "z1_38616",
+            "Link_ID": "osm_390137502_7_forward",
+            "Profile": "Normal",
+            "Speed_kmh": 6.262394717953664,
+            "Agent_Type": null,
+            "Agent_Schema": null,
+            "Vehicle_Type": "Normal",
+            "Vehicle_Type_Source": "effective_vehicles",
+            "Vehicle_PCU": 1.0,
+            "color": [
+              245,
+              65,
+              65
+            ],
+            "path": [
+              [
+                -90.50531990000373,
+                14.635903700003803
+              ],
+              [
+                -90.50535179999656,
+                14.635908500001808
+              ]
+            ],
+            "timestamps": [
+              37.0,
+              39.0
+            ],
+            "Inferred": false,
+            "Distance_m": 3.479108176640924,
+            "Boundary_Provenance": {
+              "start": "entered link",
+              "end": "left link",
+              "start_relative": 0,
+              "end_relative": 1,
+              "distance": "network_length_fraction"
+            },
+            "Movement_End": 39.0,
+            "Motion_Speed_kmh": 6.262394717953664,
+            "Wait_Evidence": "none_estimated",
+            "Observed_Waits": {},
+            "Motion_Provenance": {
+              "method": "minimum_link_vehicle_speed_at_queue_entry",
+              "fallback_reason": null,
+              "vehicle_limit_mps": 13.88888888888889,
+              "link_speed_at_entry_mps": 8.333333333333334,
+              "minimum_link_speed_in_interval_mps": 8.333333333333334,
+              "changes_inside_interval": false,
+              "continuous_position_observed": false
+            },
+            "Replay_Journey_Key": "64faefb6f85badc99cb6cd8dd879789ff612e3cd04bff3428a7a466425c9d375",
+            "Motion_Plan": {
+              "version": 1,
+              "phases": [
+                [
+                  37.0,
+                  37.97253563317238,
+                  0.0,
+                  2.6296966210099852,
+                  -1.3908144664208422
+                ],
+                [
+                  37.97253563317238,
+                  38.027464366827616,
+                  1.8997397341227666,
+                  1.2770799932840846,
+                  1.5
+                ],
+                [
+                  38.027464366827616,
+                  39.0,
+                  1.9721509952660277,
+                  1.3594730937669424,
+                  0.39081446642084205
+                ]
+              ],
+              "distance_m": 3.479108176640924,
+              "start_time": 37.0,
+              "end_time": 39.0,
+              "cap_mps": 8.333333333333334,
+              "acceleration_mps2": 1.5,
+              "deceleration_mps2": 2.5,
+              "reference_acceleration_mps2": 1.5,
+              "reference_deceleration_mps2": 2.5,
+              "rate_adaptation_factor": 1.0,
+              "source": "continuous_link",
+              "fallback_reason": null,
+              "feasible": true,
+              "continuous_position_observed": false,
+              "hold_start": null,
+              "status": "kinematic",
+              "entry_speed_mps": 2.6296966210099852,
+              "exit_speed_mps": 1.739554088320462,
+              "profile": "Normal",
+              "profile_source": "recorded_profile",
+              "recorded_profile": "Normal",
+              "rate_model": "visual_interpolation_only_not_qsim_acceleration",
+              "limits_complete": true,
+              "native_wait_boundary": null,
+              "entry_continuity": "matched",
+              "exit_continuity": "matched"
+            },
+            "Max_Speed_kmh": 25.329889299354086
+          }
+        },
+        {
+          "sqlite_segment_id": 151,
+          "record": {
+            "vehicle": "z1_38616",
+            "Agent_ID": "z1_38616",
+            "Link_ID": "osm_390137502_8_forward",
+            "Profile": "Normal",
+            "Speed_kmh": 1.3633563201883383,
+            "Agent_Type": null,
+            "Agent_Schema": null,
+            "Vehicle_Type": "Normal",
+            "Vehicle_Type_Source": "effective_vehicles",
+            "Vehicle_PCU": 1.0,
+            "color": [
+              245,
+              65,
+              65
+            ],
+            "path": [
+              [
+                -90.50535179999656,
+                14.635908500001808
+              ],
+              [
+                -90.5053761,
+                14.6359121999987
+              ]
+            ],
+            "timestamps": [
+              39.0,
+              46.0
+            ],
+            "Inferred": false,
+            "Distance_m": 2.6509706225884355,
+            "Boundary_Provenance": {
+              "start": "entered link",
+              "end": "left link",
+              "start_relative": 0,
+              "end_relative": 1,
+              "distance": "network_length_fraction"
+            },
+            "Movement_End": 41.0,
+            "Motion_Speed_kmh": 4.771747120659184,
+            "Wait_Evidence": "native_wait_observation",
+            "Observed_Waits": {
+              "priority_stop": {
+                "first": 41.0,
+                "last": 45.0,
+                "attempts": 5,
+                "sources": [
+                  "MATSim15_QNode_native_branch"
+                ],
+                "position_evidence": "queue_exit",
+                "wait_category": "mandatory_stop"
+              }
+            },
+            "Motion_Provenance": {
+              "method": "native_queue_wait_boundary",
+              "fallback_reason": null,
+              "vehicle_limit_mps": 13.88888888888889,
+              "link_speed_at_entry_mps": 8.333333333333334,
+              "minimum_link_speed_in_interval_mps": 8.333333333333334,
+              "changes_inside_interval": false,
+              "continuous_position_observed": false
+            },
+            "Replay_Journey_Key": "64faefb6f85badc99cb6cd8dd879789ff612e3cd04bff3428a7a466425c9d375",
+            "Motion_Plan": {
+              "version": 1,
+              "phases": [
+                [
+                  39.0,
+                  39.69582163532819,
+                  0.0,
+                  1.739554088320462,
+                  0.1689841741567526
+                ],
+                [
+                  39.69582163532819,
+                  39.815111477919885,
+                  1.2513277140176513,
+                  1.8571369327267966,
+                  1.0008690653087822
+                ],
+                [
+                  39.815111477919885,
+                  41.0,
+                  1.479986503095227,
+                  1.9765304459823825,
+                  -1.6681151088479704
+                ],
+                [
+                  41.0,
+                  46.0,
+                  2.6509706225884355,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "distance_m": 2.6509706225884355,
+              "start_time": 39.0,
+              "end_time": 46.0,
+              "cap_mps": 8.333333333333334,
+              "acceleration_mps2": 1.5,
+              "deceleration_mps2": 2.5,
+              "reference_acceleration_mps2": 1.5,
+              "reference_deceleration_mps2": 2.5,
+              "rate_adaptation_factor": 1.0,
+              "source": "native_wait",
+              "fallback_reason": null,
+              "feasible": true,
+              "continuous_position_observed": false,
+              "hold_start": 41.0,
+              "status": "kinematic",
+              "entry_speed_mps": 1.739554088320462,
+              "exit_speed_mps": 0.0,
+              "profile": "Normal",
+              "profile_source": "recorded_profile",
+              "recorded_profile": "Normal",
+              "rate_model": "visual_interpolation_only_not_qsim_acceleration",
+              "limits_complete": true,
+              "native_wait_boundary": 41.0,
+              "entry_continuity": "matched",
+              "exit_continuity": "matched"
+            },
+            "Max_Speed_kmh": 25.329889299354086
+          }
+        },
+        {
+          "sqlite_segment_id": 169,
+          "record": {
+            "vehicle": "z1_38616",
+            "Agent_ID": "z1_38616",
+            "Link_ID": "osm_404273844_0_forward",
+            "Profile": "Normal",
+            "Speed_kmh": 17.924941369893546,
+            "Agent_Type": null,
+            "Agent_Schema": null,
+            "Vehicle_Type": "Normal",
+            "Vehicle_Type_Source": "effective_vehicles",
+            "Vehicle_PCU": 1.0,
+            "color": [
+              255,
+              210,
+              40
+            ],
+            "path": [
+              [
+                -90.5053761,
+                14.6359121999987
+              ],
+              [
+                -90.50546700000122,
+                14.63592830000368
+              ]
+            ],
+            "timestamps": [
+              46.0,
+              48.0
+            ],
+            "Inferred": false,
+            "Distance_m": 9.95830076105197,
+            "Boundary_Provenance": {
+              "start": "entered link",
+              "end": "left link",
+              "start_relative": 0,
+              "end_relative": 1,
+              "distance": "network_length_fraction"
+            },
+            "Movement_End": 48.0,
+            "Motion_Speed_kmh": 17.924941369893546,
+            "Wait_Evidence": "none_estimated",
+            "Observed_Waits": {},
+            "Motion_Provenance": {
+              "method": "minimum_link_vehicle_speed_at_queue_entry",
+              "fallback_reason": null,
+              "vehicle_limit_mps": 13.88888888888889,
+              "link_speed_at_entry_mps": 8.333333333333334,
+              "minimum_link_speed_in_interval_mps": 8.333333333333334,
+              "changes_inside_interval": false,
+              "continuous_position_observed": false
+            },
+            "Replay_Journey_Key": "64faefb6f85badc99cb6cd8dd879789ff612e3cd04bff3428a7a466425c9d375",
+            "Motion_Plan": {
+              "version": 1,
+              "phases": [
+                [
+                  46.0,
+                  47.61000781962769,
+                  0.0,
+                  0.0,
+                  5.175958297681063
+                ],
+                [
+                  47.61000781962769,
+                  48.0,
+                  6.708365915115372,
+                  8.333333333333334,
+                  0.0
+                ]
+              ],
+              "distance_m": 9.95830076105197,
+              "start_time": 46.0,
+              "end_time": 48.0,
+              "cap_mps": 8.333333333333334,
+              "acceleration_mps2": 5.175958297681063,
+              "deceleration_mps2": 8.626597162801772,
+              "reference_acceleration_mps2": 1.5,
+              "reference_deceleration_mps2": 2.5,
+              "rate_adaptation_factor": 3.450638865120709,
+              "source": "continuous_link",
+              "fallback_reason": null,
+              "feasible": true,
+              "continuous_position_observed": false,
+              "hold_start": null,
+              "status": "kinematic",
+              "entry_speed_mps": 0.0,
+              "exit_speed_mps": 8.333333333333334,
+              "profile": "Normal",
+              "profile_source": "recorded_profile",
+              "recorded_profile": "Normal",
+              "rate_model": "visual_interpolation_only_not_qsim_acceleration",
+              "limits_complete": true,
+              "native_wait_boundary": null,
+              "entry_continuity": "matched",
+              "exit_continuity": "matched"
+            },
+            "Max_Speed_kmh": 25.329889299354086
+          }
+        }
+      ],
+      "lane_events": [
+        {
+          "sqlite_seq": 492,
+          "type": "entered lane",
+          "time": 38.0,
+          "vehicle": "z1_38616",
+          "link": "osm_390137502_7_forward",
+          "lane": "osm_390137502_7_forward.lane.0"
+        },
+        {
+          "sqlite_seq": 507,
+          "type": "left lane",
+          "time": 39.0,
+          "vehicle": "z1_38616",
+          "link": "osm_390137502_7_forward",
+          "lane": "osm_390137502_7_forward.lane.0",
+          "entry_observed": true
+        },
+        {
+          "sqlite_seq": 508,
+          "type": "entered lane",
+          "time": 39.0,
+          "vehicle": "z1_38616",
+          "link": "osm_390137502_8_forward",
+          "lane": "osm_390137502_8_forward.original"
+        },
+        {
+          "sqlite_seq": 534,
+          "type": "left lane",
+          "time": 40.0,
+          "vehicle": "z1_38616",
+          "link": "osm_390137502_8_forward",
+          "lane": "osm_390137502_8_forward.original",
+          "entry_observed": true
+        },
+        {
+          "sqlite_seq": 536,
+          "type": "entered lane",
+          "time": 40.0,
+          "vehicle": "z1_38616",
+          "link": "osm_390137502_8_forward",
+          "lane": "osm_390137502_8_forward.lane.0"
+        },
+        {
+          "sqlite_seq": 659,
+          "type": "left lane",
+          "time": 46.0,
+          "vehicle": "z1_38616",
+          "link": "osm_390137502_8_forward",
+          "lane": "osm_390137502_8_forward.lane.0",
+          "entry_observed": true
+        },
+        {
+          "sqlite_seq": 660,
+          "type": "entered lane",
+          "time": 46.0,
+          "vehicle": "z1_38616",
+          "link": "osm_404273844_0_forward",
+          "lane": "osm_404273844_0_forward.original"
+        }
+      ],
+      "trace": [
+        {
+          "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+          "iteration": 0,
+          "vehicle_id": "z1_38616",
+          "person_id": "z1_38616",
+          "trip_id": "z1_38616:trip:0001",
+          "simulated_time": 38.999,
+          "sqlite_segment_id": 115,
+          "link_id": "osm_390137502_7_forward",
+          "native_lane_id": "osm_390137502_7_forward.lane.0",
+          "native_lane_last_event": {
+            "sqlite_seq": 492,
+            "type": "entered lane",
+            "time": 38.0,
+            "vehicle": "z1_38616",
+            "link": "osm_390137502_7_forward",
+            "lane": "osm_390137502_7_forward.lane.0"
+          },
+          "position_centerline_model_lonlat": [
+            -90.50535178404836,
+            14.635908497602077
+          ],
+          "position_rendered_lonlat": null,
+          "position_provenance": "stored Motion_Plan on centerline; not lane/queue/body placement",
+          "native_dimensions_m": null,
+          "client_nominal_dimensions_m": [
+            4.5,
+            1.8
+          ],
+          "dimensions_provenance": "simz1_visual_queues.js defaults, not measured native dimensions",
+          "native_active_interval_count": 1,
+          "visibility_reason": "active_native_interval_render_unknown",
+          "visibility_reason_provenance": "native metadata and stored Motion_Plan; browser not observed",
+          "browser_visibility": "not_observed",
+          "qsim_forced_movement": "not_established_by_this_evidence"
+        },
+        {
+          "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+          "iteration": 0,
+          "vehicle_id": "z1_38616",
+          "person_id": "z1_38616",
+          "trip_id": "z1_38616:trip:0001",
+          "simulated_time": 39.0,
+          "sqlite_segment_id": 151,
+          "link_id": "osm_390137502_8_forward",
+          "native_lane_id": "osm_390137502_8_forward.original",
+          "native_lane_last_event": {
+            "sqlite_seq": 508,
+            "type": "entered lane",
+            "time": 39.0,
+            "vehicle": "z1_38616",
+            "link": "osm_390137502_8_forward",
+            "lane": "osm_390137502_8_forward.original"
+          },
+          "position_centerline_model_lonlat": [
+            -90.50535179999656,
+            14.635908500001808
+          ],
+          "position_rendered_lonlat": null,
+          "position_provenance": "stored Motion_Plan on centerline; not lane/queue/body placement",
+          "native_dimensions_m": null,
+          "client_nominal_dimensions_m": [
+            4.5,
+            1.8
+          ],
+          "dimensions_provenance": "simz1_visual_queues.js defaults, not measured native dimensions",
+          "native_active_interval_count": 1,
+          "visibility_reason": "active_native_interval_render_unknown",
+          "visibility_reason_provenance": "native metadata and stored Motion_Plan; browser not observed",
+          "browser_visibility": "not_observed",
+          "qsim_forced_movement": "not_established_by_this_evidence"
+        },
+        {
+          "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+          "iteration": 0,
+          "vehicle_id": "z1_38616",
+          "person_id": "z1_38616",
+          "trip_id": "z1_38616:trip:0001",
+          "simulated_time": 40.999,
+          "sqlite_segment_id": 151,
+          "link_id": "osm_390137502_8_forward",
+          "native_lane_id": "osm_390137502_8_forward.lane.0",
+          "native_lane_last_event": {
+            "sqlite_seq": 536,
+            "type": "entered lane",
+            "time": 40.0,
+            "vehicle": "z1_38616",
+            "link": "osm_390137502_8_forward",
+            "lane": "osm_390137502_8_forward.lane.0"
+          },
+          "position_centerline_model_lonlat": [
+            -90.50537609999236,
+            14.635912199997536
+          ],
+          "position_rendered_lonlat": null,
+          "position_provenance": "stored Motion_Plan on centerline; not lane/queue/body placement",
+          "native_dimensions_m": null,
+          "client_nominal_dimensions_m": [
+            4.5,
+            1.8
+          ],
+          "dimensions_provenance": "simz1_visual_queues.js defaults, not measured native dimensions",
+          "native_active_interval_count": 1,
+          "visibility_reason": "active_native_interval_render_unknown",
+          "visibility_reason_provenance": "native metadata and stored Motion_Plan; browser not observed",
+          "browser_visibility": "not_observed",
+          "qsim_forced_movement": "not_established_by_this_evidence"
+        },
+        {
+          "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+          "iteration": 0,
+          "vehicle_id": "z1_38616",
+          "person_id": "z1_38616",
+          "trip_id": "z1_38616:trip:0001",
+          "simulated_time": 41.0,
+          "sqlite_segment_id": 151,
+          "link_id": "osm_390137502_8_forward",
+          "native_lane_id": "osm_390137502_8_forward.lane.0",
+          "native_lane_last_event": {
+            "sqlite_seq": 536,
+            "type": "entered lane",
+            "time": 40.0,
+            "vehicle": "z1_38616",
+            "link": "osm_390137502_8_forward",
+            "lane": "osm_390137502_8_forward.lane.0"
+          },
+          "position_centerline_model_lonlat": [
+            -90.5053761,
+            14.6359121999987
+          ],
+          "position_rendered_lonlat": null,
+          "position_provenance": "stored Motion_Plan on centerline; not lane/queue/body placement",
+          "native_dimensions_m": null,
+          "client_nominal_dimensions_m": [
+            4.5,
+            1.8
+          ],
+          "dimensions_provenance": "simz1_visual_queues.js defaults, not measured native dimensions",
+          "native_active_interval_count": 1,
+          "visibility_reason": "active_native_interval_render_unknown",
+          "visibility_reason_provenance": "native metadata and stored Motion_Plan; browser not observed",
+          "browser_visibility": "not_observed",
+          "qsim_forced_movement": "not_established_by_this_evidence"
+        },
+        {
+          "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+          "iteration": 0,
+          "vehicle_id": "z1_38616",
+          "person_id": "z1_38616",
+          "trip_id": "z1_38616:trip:0001",
+          "simulated_time": 45.999,
+          "sqlite_segment_id": 151,
+          "link_id": "osm_390137502_8_forward",
+          "native_lane_id": "osm_390137502_8_forward.lane.0",
+          "native_lane_last_event": {
+            "sqlite_seq": 536,
+            "type": "entered lane",
+            "time": 40.0,
+            "vehicle": "z1_38616",
+            "link": "osm_390137502_8_forward",
+            "lane": "osm_390137502_8_forward.lane.0"
+          },
+          "position_centerline_model_lonlat": [
+            -90.5053761,
+            14.6359121999987
+          ],
+          "position_rendered_lonlat": null,
+          "position_provenance": "stored Motion_Plan on centerline; not lane/queue/body placement",
+          "native_dimensions_m": null,
+          "client_nominal_dimensions_m": [
+            4.5,
+            1.8
+          ],
+          "dimensions_provenance": "simz1_visual_queues.js defaults, not measured native dimensions",
+          "native_active_interval_count": 1,
+          "visibility_reason": "active_native_interval_render_unknown",
+          "visibility_reason_provenance": "native metadata and stored Motion_Plan; browser not observed",
+          "browser_visibility": "not_observed",
+          "qsim_forced_movement": "not_established_by_this_evidence"
+        },
+        {
+          "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+          "iteration": 0,
+          "vehicle_id": "z1_38616",
+          "person_id": "z1_38616",
+          "trip_id": "z1_38616:trip:0001",
+          "simulated_time": 46.0,
+          "sqlite_segment_id": 169,
+          "link_id": "osm_404273844_0_forward",
+          "native_lane_id": "osm_404273844_0_forward.original",
+          "native_lane_last_event": {
+            "sqlite_seq": 660,
+            "type": "entered lane",
+            "time": 46.0,
+            "vehicle": "z1_38616",
+            "link": "osm_404273844_0_forward",
+            "lane": "osm_404273844_0_forward.original"
+          },
+          "position_centerline_model_lonlat": [
+            -90.5053761,
+            14.6359121999987
+          ],
+          "position_rendered_lonlat": null,
+          "position_provenance": "stored Motion_Plan on centerline; not lane/queue/body placement",
+          "native_dimensions_m": null,
+          "client_nominal_dimensions_m": [
+            4.5,
+            1.8
+          ],
+          "dimensions_provenance": "simz1_visual_queues.js defaults, not measured native dimensions",
+          "native_active_interval_count": 1,
+          "visibility_reason": "active_native_interval_render_unknown",
+          "visibility_reason_provenance": "native metadata and stored Motion_Plan; browser not observed",
+          "browser_visibility": "not_observed",
+          "qsim_forced_movement": "not_established_by_this_evidence"
+        },
+        {
+          "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+          "iteration": 0,
+          "vehicle_id": "z1_38616",
+          "person_id": "z1_38616",
+          "trip_id": "z1_38616:trip:0001",
+          "simulated_time": 46.001,
+          "sqlite_segment_id": 169,
+          "link_id": "osm_404273844_0_forward",
+          "native_lane_id": "osm_404273844_0_forward.original",
+          "native_lane_last_event": {
+            "sqlite_seq": 660,
+            "type": "entered lane",
+            "time": 46.0,
+            "vehicle": "z1_38616",
+            "link": "osm_404273844_0_forward",
+            "lane": "osm_404273844_0_forward.original"
+          },
+          "position_centerline_model_lonlat": [
+            -90.50537610002362,
+            14.635912200002883
+          ],
+          "position_rendered_lonlat": null,
+          "position_provenance": "stored Motion_Plan on centerline; not lane/queue/body placement",
+          "native_dimensions_m": null,
+          "client_nominal_dimensions_m": [
+            4.5,
+            1.8
+          ],
+          "dimensions_provenance": "simz1_visual_queues.js defaults, not measured native dimensions",
+          "native_active_interval_count": 1,
+          "visibility_reason": "active_native_interval_render_unknown",
+          "visibility_reason_provenance": "native metadata and stored Motion_Plan; browser not observed",
+          "browser_visibility": "not_observed",
+          "qsim_forced_movement": "not_established_by_this_evidence"
+        }
+      ]
+    },
+    {
+      "case_id": "arrival_zero_duration_z1_167074",
+      "classification": "Salida del dominio o llegada real",
+      "cause_confirmed_for_current_screenshot": false,
+      "journey_key": "39a4bd9537f74fc4c0d1f1a82f54765bdf4eab602f34d995336c3a229a45cfdb",
+      "trip": {
+        "Departure": 7.0,
+        "Trip_ID": "z1_167074:trip:0001",
+        "Person_ID": "z1_167074",
+        "Trip_Index": 1,
+        "Status": "completed",
+        "Abort": null,
+        "Last_Observed_Time": 169.0,
+        "Observation_End": 86400.0,
+        "Observation_End_Provenance": "configured_horizon",
+        "Origin_Node": "6569186604",
+        "Destination_Node": "727294263",
+        "Arrival": 169.0,
+        "Origin_Position": [
+          -90.52246759999781,
+          14.636889900001162
+        ],
+        "Destination_Position": [
+          -90.52079729999829,
+          14.635816899996483
+        ],
+        "Agent_Type": null,
+        "Agent_Schema": null,
+        "Vehicle_Type": null,
+        "Vehicle_Type_Source": null,
+        "Vehicle_PCU": null
+      },
+      "segments": [
+        {
+          "sqlite_segment_id": 1682,
+          "record": {
+            "vehicle": "z1_167074",
+            "Agent_ID": "z1_167074",
+            "Link_ID": "osm_58692343_4_forward",
+            "Profile": "Normal",
+            "Speed_kmh": 12.910118282175532,
+            "Agent_Type": null,
+            "Agent_Schema": null,
+            "Vehicle_Type": "Normal",
+            "Vehicle_Type_Source": "effective_vehicles",
+            "Vehicle_PCU": 1.0,
+            "color": [
+              245,
+              65,
+              65
+            ],
+            "path": [
+              [
+                -90.52072590000085,
+                14.634525599999991
+              ],
+              [
+                -90.520525699998,
+                14.6357739000031
+              ]
+            ],
+            "timestamps": [
+              130.0,
+              169.0
+            ],
+            "Inferred": false,
+            "Distance_m": 139.85961472356826,
+            "Boundary_Provenance": {
+              "start": "entered link",
+              "end": "left link",
+              "start_relative": 0,
+              "end_relative": 1,
+              "distance": "network_length_fraction"
+            },
+            "Movement_End": 146.78315376682818,
+            "Motion_Speed_kmh": 30.000000000000025,
+            "Wait_Evidence": "native_queue_delay_position_unknown",
+            "Observed_Waits": {
+              "congestion_queue": {
+                "first": 167.0,
+                "last": 167.0,
+                "attempts": 1,
+                "sources": [
+                  "MATSim15_queue_post_step"
+                ],
+                "position_evidence": "unknown_queue_position",
+                "wait_category": "congestion"
+              }
+            },
+            "Motion_Provenance": {
+              "method": "minimum_link_vehicle_speed_at_queue_entry",
+              "fallback_reason": null,
+              "vehicle_limit_mps": 13.88888888888889,
+              "link_speed_at_entry_mps": 8.333333333333334,
+              "minimum_link_speed_in_interval_mps": 8.333333333333334,
+              "changes_inside_interval": false,
+              "continuous_position_observed": false
+            },
+            "Replay_Journey_Key": "39a4bd9537f74fc4c0d1f1a82f54765bdf4eab602f34d995336c3a229a45cfdb",
+            "Motion_Plan": {
+              "version": 1,
+              "phases": [
+                [
+                  130.00000000000006,
+                  168.99999999999997,
+                  0.0,
+                  3.586143967271048,
+                  0.0
+                ]
+              ],
+              "distance_m": 139.85961472356826,
+              "start_time": 130.0,
+              "end_time": 169.0,
+              "cap_mps": 8.333333333333334,
+              "acceleration_mps2": 1.5,
+              "deceleration_mps2": 2.5,
+              "reference_acceleration_mps2": 1.5,
+              "reference_deceleration_mps2": 2.5,
+              "rate_adaptation_factor": 1.0,
+              "source": "queue_delay_estimate",
+              "fallback_reason": null,
+              "feasible": true,
+              "continuous_position_observed": false,
+              "hold_start": null,
+              "status": "constant",
+              "entry_speed_mps": 3.586143967270981,
+              "exit_speed_mps": 3.586143967270981,
+              "profile": "Normal",
+              "profile_source": "recorded_profile",
+              "recorded_profile": "Normal",
+              "rate_model": "visual_interpolation_only_not_qsim_acceleration",
+              "limits_complete": true,
+              "native_wait_boundary": null,
+              "entry_continuity": "matched",
+              "exit_continuity": "unavailable_boundary"
+            },
+            "Max_Speed_kmh": 39.53069570078013
+          }
+        },
+        {
+          "sqlite_segment_id": 1684,
+          "record": {
+            "vehicle": "z1_167074",
+            "Agent_ID": "z1_167074",
+            "Link_ID": "osm_420120096_27_forward",
+            "Profile": "Normal",
+            "Speed_kmh": null,
+            "Agent_Type": null,
+            "Agent_Schema": null,
+            "Vehicle_Type": "Normal",
+            "Vehicle_Type_Source": "effective_vehicles",
+            "Vehicle_PCU": 1.0,
+            "color": [
+              255,
+              255,
+              255
+            ],
+            "path": [
+              [
+                -90.520525699998,
+                14.6357739000031
+              ],
+              [
+                -90.52079729999829,
+                14.635816899996483
+              ]
+            ],
+            "timestamps": [
+              169.0,
+              169.0
+            ],
+            "Inferred": false,
+            "Distance_m": 29.658155800901667,
+            "Boundary_Provenance": {
+              "start": "entered link",
+              "end": "vehicle leaves traffic",
+              "start_relative": 0,
+              "end_relative": 1.0,
+              "distance": "network_length_fraction"
+            },
+            "Movement_End": 169.0,
+            "Motion_Speed_kmh": 0,
+            "Wait_Evidence": "none_estimated",
+            "Observed_Waits": {},
+            "Motion_Provenance": {
+              "method": "minimum_link_vehicle_speed_at_queue_entry",
+              "fallback_reason": null,
+              "vehicle_limit_mps": 13.88888888888889,
+              "link_speed_at_entry_mps": 11.11111111111111,
+              "minimum_link_speed_in_interval_mps": 11.11111111111111,
+              "changes_inside_interval": false,
+              "continuous_position_observed": false
+            },
+            "Replay_Journey_Key": "39a4bd9537f74fc4c0d1f1a82f54765bdf4eab602f34d995336c3a229a45cfdb",
+            "Motion_Plan": {
+              "version": 1,
+              "phases": [],
+              "distance_m": 29.658155800901667,
+              "start_time": 169.0,
+              "end_time": 169.0,
+              "cap_mps": 11.11111111111111,
+              "acceleration_mps2": 1.5,
+              "deceleration_mps2": 2.5,
+              "reference_acceleration_mps2": 1.5,
+              "reference_deceleration_mps2": 2.5,
+              "rate_adaptation_factor": 1.0,
+              "source": "boundary_preserving_fallback",
+              "fallback_reason": "zero_duration_positive_distance",
+              "feasible": false,
+              "continuous_position_observed": false,
+              "hold_start": null,
+              "status": "unavailable",
+              "entry_speed_mps": null,
+              "exit_speed_mps": null,
+              "profile": "Normal",
+              "profile_source": "recorded_profile",
+              "recorded_profile": "Normal",
+              "rate_model": "visual_interpolation_only_not_qsim_acceleration",
+              "limits_complete": true,
+              "native_wait_boundary": null,
+              "entry_continuity": "unavailable_boundary",
+              "exit_continuity": "unobserved_boundary"
+            },
+            "Max_Speed_kmh": 39.53069570078013
+          }
+        }
+      ],
+      "lane_events": [
+        {
+          "sqlite_seq": 4718,
+          "type": "entered lane",
+          "time": 138.0,
+          "vehicle": "z1_167074",
+          "link": "osm_58692343_4_forward",
+          "lane": "osm_58692343_4_forward.lane.0"
+        },
+        {
+          "sqlite_seq": 6882,
+          "type": "left lane",
+          "time": 169.0,
+          "vehicle": "z1_167074",
+          "link": "osm_58692343_4_forward",
+          "lane": "osm_58692343_4_forward.lane.0",
+          "entry_observed": true
+        },
+        {
+          "sqlite_seq": 6883,
+          "type": "entered lane",
+          "time": 169.0,
+          "vehicle": "z1_167074",
+          "link": "osm_420120096_27_forward",
+          "lane": "osm_420120096_27_forward.original"
+        },
+        {
+          "sqlite_seq": 6914,
+          "type": "vehicle leaves traffic",
+          "time": 169.0,
+          "vehicle": "z1_167074"
+        }
+      ],
+      "trace": [
+        {
+          "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+          "iteration": 0,
+          "vehicle_id": "z1_167074",
+          "person_id": "z1_167074",
+          "trip_id": "z1_167074:trip:0001",
+          "simulated_time": 168.999,
+          "sqlite_segment_id": 1682,
+          "link_id": "osm_58692343_4_forward",
+          "native_lane_id": "osm_58692343_4_forward.lane.0",
+          "native_lane_last_event": {
+            "sqlite_seq": 4718,
+            "type": "entered lane",
+            "time": 138.0,
+            "vehicle": "z1_167074",
+            "link": "osm_58692343_4_forward",
+            "lane": "osm_58692343_4_forward.lane.0"
+          },
+          "position_centerline_model_lonlat": [
+            -90.52052570513133,
+            14.635773867995407
+          ],
+          "position_rendered_lonlat": null,
+          "position_provenance": "stored Motion_Plan on centerline; not lane/queue/body placement",
+          "native_dimensions_m": null,
+          "client_nominal_dimensions_m": [
+            4.5,
+            1.8
+          ],
+          "dimensions_provenance": "simz1_visual_queues.js defaults, not measured native dimensions",
+          "native_active_interval_count": 1,
+          "visibility_reason": "active_native_interval_render_unknown",
+          "visibility_reason_provenance": "native metadata and stored Motion_Plan; browser not observed",
+          "browser_visibility": "not_observed",
+          "qsim_forced_movement": "not_established_by_this_evidence"
+        },
+        {
+          "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+          "iteration": 0,
+          "vehicle_id": "z1_167074",
+          "person_id": "z1_167074",
+          "trip_id": "z1_167074:trip:0001",
+          "simulated_time": 169.0,
+          "sqlite_segment_id": null,
+          "link_id": null,
+          "native_lane_id": null,
+          "native_lane_last_event": {
+            "sqlite_seq": 6914,
+            "type": "vehicle leaves traffic",
+            "time": 169.0,
+            "vehicle": "z1_167074"
+          },
+          "position_centerline_model_lonlat": null,
+          "position_rendered_lonlat": null,
+          "position_provenance": "stored Motion_Plan on centerline; not lane/queue/body placement",
+          "native_dimensions_m": null,
+          "client_nominal_dimensions_m": [
+            4.5,
+            1.8
+          ],
+          "dimensions_provenance": "simz1_visual_queues.js defaults, not measured native dimensions",
+          "native_active_interval_count": 0,
+          "visibility_reason": "recorded_arrival",
+          "visibility_reason_provenance": "native metadata and stored Motion_Plan; browser not observed",
+          "browser_visibility": "not_observed",
+          "qsim_forced_movement": "not_established_by_this_evidence"
+        },
+        {
+          "run_id": "simz1-0dd152dabbc24d1d84d9b738c449cc35",
+          "iteration": 0,
+          "vehicle_id": "z1_167074",
+          "person_id": "z1_167074",
+          "trip_id": "z1_167074:trip:0001",
+          "simulated_time": 169.001,
+          "sqlite_segment_id": null,
+          "link_id": null,
+          "native_lane_id": null,
+          "native_lane_last_event": {
+            "sqlite_seq": 6914,
+            "type": "vehicle leaves traffic",
+            "time": 169.0,
+            "vehicle": "z1_167074"
+          },
+          "position_centerline_model_lonlat": null,
+          "position_rendered_lonlat": null,
+          "position_provenance": "stored Motion_Plan on centerline; not lane/queue/body placement",
+          "native_dimensions_m": null,
+          "client_nominal_dimensions_m": [
+            4.5,
+            1.8
+          ],
+          "dimensions_provenance": "simz1_visual_queues.js defaults, not measured native dimensions",
+          "native_active_interval_count": 0,
+          "visibility_reason": "recorded_arrival",
+          "visibility_reason_provenance": "native metadata and stored Motion_Plan; browser not observed",
+          "browser_visibility": "not_observed",
+          "qsim_forced_movement": "not_established_by_this_evidence"
+        }
+      ]
+    }
+  ]
+}

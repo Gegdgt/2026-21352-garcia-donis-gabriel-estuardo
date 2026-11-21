@@ -1,0 +1,2657 @@
+{
+  "version": "simz1-access-model-review-v2-20261101",
+  "status": "BLOCKED",
+  "reason": "Restricciones OSM pendientes (2): 17478998, 17884471. Se requiere una nueva version de red/restricciones; no se publica demanda ni se modifica la historica",
+  "source_evidence_hashes": {
+    "geography-review.json": "63d6ddf7430746954ea6f308893fee807f86d3d91263dad4cbf3911f0233a69d",
+    "network-access-inventory.csv": "1568916dbb299efe6c9b27c7312bfa5807de76de8e3031e54e6c307c4d6dc934",
+    "osm-turn-evidence.json": "0d550ba45e30b4be11bd6b2c6cbd61971787e32b609a652ef7234682d9084d35",
+    "perimeter.geojson": "441e7ca4fefff91d7b475d26f12a600415c67b862c5bb2195cd13f486b015688"
+  },
+  "access_sha256": "3ef90aa7e3ad4a7351e84fdd870a441ca625d68f6866dd114ba2395c5476e540",
+  "effective_hashes": {
+    "osm": "707684e17858e305324d72ce5df05a489138e3b819442b3c34e2a21c864d8c6b",
+    "network": "f328c84e34f7b7ba7c3a204bb97bb9907b107dbf77d53c301e3c6c44fe487029",
+    "lanes": "e86e9a4f8055b737af3652f13b0aa2e0073c7c67e3e39a3965482d99fca469b6"
+  },
+  "preserved_freight_route_checks": [
+    {
+      "route_id": "south-north-7avenida",
+      "links": 112,
+      "directed_movements_pass": true
+    },
+    {
+      "route_id": "north-south-2avenida",
+      "links": 114,
+      "directed_movements_pass": true
+    },
+    {
+      "route_id": "east-west-14calle",
+      "links": 61,
+      "directed_movements_pass": true
+    },
+    {
+      "route_id": "west-north-elena",
+      "links": 45,
+      "directed_movements_pass": true
+    }
+  ],
+  "preserved_transit_route_checks": [
+    {
+      "service_id": "transmetro_L1",
+      "part_id": "L1_14034049_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "transmetro_L1",
+      "part_id": "L1_14099833_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "transmetro_L2",
+      "part_id": "L2_14110814_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "transmetro_L2",
+      "part_id": "L2_14110815_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "transmetro_L6",
+      "part_id": "L6_14091640_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "transmetro_L6",
+      "part_id": "L6_14091641_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "transmetro_L7",
+      "part_id": "L7_10123492_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "transmetro_L7",
+      "part_id": "L7_14100221_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "transmetro_L12",
+      "part_id": "L12_906046_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "transmetro_L12",
+      "part_id": "L12_14106867_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": [
+        "osm_34993910_0_forward"
+      ]
+    },
+    {
+      "service_id": "transmetro_L13",
+      "part_id": "L13_936950_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "transmetro_L13",
+      "part_id": "L13_14107352_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": [
+        "osm_34993910_0_forward"
+      ]
+    },
+    {
+      "service_id": "transmetro_L18",
+      "part_id": "L18_6245758_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "transmetro_L18",
+      "part_id": "L18_14099910_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "tubus_R5",
+      "part_id": "R5_18672965_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "tubus_R5",
+      "part_id": "R5_18672966_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "tubus_R5",
+      "part_id": "R5_18672966_part2",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "tubus_104",
+      "part_id": "TuBus_104_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "tubus_104",
+      "part_id": "TuBus_104_part2",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "tubus_105",
+      "part_id": "TuBus_105_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "tubus_105",
+      "part_id": "TuBus_105_part2",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "tubus_105",
+      "part_id": "TuBus_105_part3",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "tubus_105",
+      "part_id": "TuBus_105_part4",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    },
+    {
+      "service_id": "tubus_802",
+      "part_id": "TuBus_802_part1",
+      "conflicts_with_removed_movements": [],
+      "forbidden_via_sequence": false,
+      "incomplete_relation_target_links": []
+    }
+  ],
+  "class_eligibility": [
+    {
+      "od_type": "external-external",
+      "body_m": 4.5,
+      "eligible_origin_links": [
+        "osm_260936848_14_forward",
+        "osm_381667651_0_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_3_forward",
+        "osm_400043601_5_forward",
+        "osm_406843605_1_forward",
+        "osm_406872394_4_backward",
+        "osm_44486997_0_backward",
+        "osm_511820719_6_forward",
+        "osm_762765906_1_forward"
+      ],
+      "destination_counts": {
+        "osm_260936848_14_forward": 11,
+        "osm_381667651_0_forward": 12,
+        "osm_381667651_19_forward": 11,
+        "osm_381667651_3_forward": 11,
+        "osm_400043601_5_forward": 12,
+        "osm_406843605_1_forward": 12,
+        "osm_406872394_4_backward": 11,
+        "osm_44486997_0_backward": 12,
+        "osm_511820719_6_forward": 12,
+        "osm_762765906_1_forward": 11
+      },
+      "scope": "Directed lane reachability and whole body only; global OSM guard remains BLOCKED"
+    },
+    {
+      "od_type": "external-external",
+      "body_m": 2.1,
+      "eligible_origin_links": [
+        "osm_260936848_14_forward",
+        "osm_381667651_0_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_3_forward",
+        "osm_400043601_5_forward",
+        "osm_406843605_1_forward",
+        "osm_406872394_4_backward",
+        "osm_44486997_0_backward",
+        "osm_511820719_6_forward",
+        "osm_762765906_1_forward"
+      ],
+      "destination_counts": {
+        "osm_260936848_14_forward": 11,
+        "osm_381667651_0_forward": 12,
+        "osm_381667651_19_forward": 11,
+        "osm_381667651_3_forward": 11,
+        "osm_400043601_5_forward": 12,
+        "osm_406843605_1_forward": 12,
+        "osm_406872394_4_backward": 11,
+        "osm_44486997_0_backward": 12,
+        "osm_511820719_6_forward": 12,
+        "osm_762765906_1_forward": 11
+      },
+      "scope": "Directed lane reachability and whole body only; global OSM guard remains BLOCKED"
+    },
+    {
+      "od_type": "external-internal",
+      "body_m": 4.5,
+      "eligible_origin_links": [
+        "osm_260936848_14_forward",
+        "osm_381667651_0_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_3_forward",
+        "osm_400043601_5_forward",
+        "osm_406843605_1_forward",
+        "osm_406872394_4_backward",
+        "osm_44486997_0_backward",
+        "osm_511820719_6_forward",
+        "osm_762765906_1_forward"
+      ],
+      "destination_counts": {
+        "osm_260936848_14_forward": 1541,
+        "osm_381667651_0_forward": 1541,
+        "osm_381667651_19_forward": 1542,
+        "osm_381667651_3_forward": 1541,
+        "osm_400043601_5_forward": 1544,
+        "osm_406843605_1_forward": 1541,
+        "osm_406872394_4_backward": 1541,
+        "osm_44486997_0_backward": 1541,
+        "osm_511820719_6_forward": 1544,
+        "osm_762765906_1_forward": 1541
+      },
+      "scope": "Directed lane reachability and whole body only; global OSM guard remains BLOCKED"
+    },
+    {
+      "od_type": "external-internal",
+      "body_m": 2.1,
+      "eligible_origin_links": [
+        "osm_260936848_14_forward",
+        "osm_381667651_0_forward",
+        "osm_381667651_19_forward",
+        "osm_381667651_3_forward",
+        "osm_400043601_5_forward",
+        "osm_406843605_1_forward",
+        "osm_406872394_4_backward",
+        "osm_44486997_0_backward",
+        "osm_511820719_6_forward",
+        "osm_762765906_1_forward"
+      ],
+      "destination_counts": {
+        "osm_260936848_14_forward": 2351,
+        "osm_381667651_0_forward": 2351,
+        "osm_381667651_19_forward": 2353,
+        "osm_381667651_3_forward": 2351,
+        "osm_400043601_5_forward": 2362,
+        "osm_406843605_1_forward": 2353,
+        "osm_406872394_4_backward": 2351,
+        "osm_44486997_0_backward": 2351,
+        "osm_511820719_6_forward": 2354,
+        "osm_762765906_1_forward": 2351
+      },
+      "scope": "Directed lane reachability and whole body only; global OSM guard remains BLOCKED"
+    },
+    {
+      "od_type": "internal-external",
+      "body_m": 4.5,
+      "eligible_origin_links": [
+        "osm_1095527693_1_backward",
+        "osm_1095527695_0_backward",
+        "osm_1095551808_2_backward",
+        "osm_1095551811_2_backward",
+        "osm_1095760001_3_backward",
+        "osm_1095760094_0_backward",
+        "osm_1095760124_0_backward",
+        "osm_1107835856_7_forward",
+        "osm_1159529860_0_backward",
+        "osm_1174627092_0_backward",
+        "osm_1196002697_9_backward",
+        "osm_1197017583_1_forward",
+        "osm_1214455884_0_backward",
+        "osm_1218656796_0_forward",
+        "osm_1272882110_0_forward",
+        "osm_1274275468_9_backward",
+        "osm_1392432467_0_backward",
+        "osm_1392432602_0_backward",
+        "osm_390176418_0_forward",
+        "osm_406701907_9_backward",
+        "osm_488464043_0_backward",
+        "osm_989735832_1_forward"
+      ],
+      "destination_counts": {
+        "osm_1095527693_1_backward": 12,
+        "osm_1095527695_0_backward": 12,
+        "osm_1095551808_2_backward": 12,
+        "osm_1095551811_2_backward": 12,
+        "osm_1095760001_3_backward": 12,
+        "osm_1095760094_0_backward": 12,
+        "osm_1095760124_0_backward": 12,
+        "osm_1107835856_7_forward": 12,
+        "osm_1159529860_0_backward": 12,
+        "osm_1174627092_0_backward": 12,
+        "osm_1196002697_9_backward": 12,
+        "osm_1197017583_1_forward": 12,
+        "osm_1214455884_0_backward": 12,
+        "osm_1218656796_0_forward": 12,
+        "osm_1272882110_0_forward": 12,
+        "osm_1274275468_9_backward": 12,
+        "osm_1392432467_0_backward": 12,
+        "osm_1392432602_0_backward": 12,
+        "osm_390176418_0_forward": 12,
+        "osm_406701907_9_backward": 12,
+        "osm_488464043_0_backward": 12,
+        "osm_989735832_1_forward": 12
+      },
+      "scope": "Directed lane reachability and whole body only; global OSM guard remains BLOCKED"
+    },
+    {
+      "od_type": "internal-external",
+      "body_m": 2.1,
+      "eligible_origin_links": [
+        "osm_1095527693_1_backward",
+        "osm_1095527695_0_backward",
+        "osm_1095551808_2_backward",
+        "osm_1095551811_2_backward",
+        "osm_1095760001_3_backward",
+        "osm_1095760094_0_backward",
+        "osm_1095760124_0_backward",
+        "osm_1107835856_7_forward",
+        "osm_1159529860_0_backward",
+        "osm_1174627092_0_backward",
+        "osm_1196002697_9_backward",
+        "osm_1197017583_1_forward",
+        "osm_1214455884_0_backward",
+        "osm_1218656796_0_forward",
+        "osm_1272882110_0_forward",
+        "osm_1274275468_9_backward",
+        "osm_1392432467_0_backward",
+        "osm_1392432602_0_backward",
+        "osm_390176418_0_forward",
+        "osm_406701907_9_backward",
+        "osm_488464043_0_backward",
+        "osm_989735832_1_forward"
+      ],
+      "destination_counts": {
+        "osm_1095527693_1_backward": 12,
+        "osm_1095527695_0_backward": 12,
+        "osm_1095551808_2_backward": 12,
+        "osm_1095551811_2_backward": 12,
+        "osm_1095760001_3_backward": 12,
+        "osm_1095760094_0_backward": 12,
+        "osm_1095760124_0_backward": 12,
+        "osm_1107835856_7_forward": 12,
+        "osm_1159529860_0_backward": 12,
+        "osm_1174627092_0_backward": 12,
+        "osm_1196002697_9_backward": 12,
+        "osm_1197017583_1_forward": 12,
+        "osm_1214455884_0_backward": 12,
+        "osm_1218656796_0_forward": 12,
+        "osm_1272882110_0_forward": 12,
+        "osm_1274275468_9_backward": 12,
+        "osm_1392432467_0_backward": 12,
+        "osm_1392432602_0_backward": 12,
+        "osm_390176418_0_forward": 12,
+        "osm_406701907_9_backward": 12,
+        "osm_488464043_0_backward": 12,
+        "osm_989735832_1_forward": 12
+      },
+      "scope": "Directed lane reachability and whole body only; global OSM guard remains BLOCKED"
+    },
+    {
+      "od_type": "internal-internal",
+      "body_m": 4.5,
+      "eligible_origin_links": [
+        "osm_1095527693_1_backward",
+        "osm_1095527695_0_backward",
+        "osm_1095551808_2_backward",
+        "osm_1095551811_2_backward",
+        "osm_1095760001_3_backward",
+        "osm_1095760094_0_backward",
+        "osm_1095760124_0_backward",
+        "osm_1107835856_7_forward",
+        "osm_1159529860_0_backward",
+        "osm_1174627092_0_backward",
+        "osm_1196002697_9_backward",
+        "osm_1197017583_1_forward",
+        "osm_1214455884_0_backward",
+        "osm_1218656796_0_forward",
+        "osm_1272882110_0_forward",
+        "osm_1274275468_9_backward",
+        "osm_1392432467_0_backward",
+        "osm_1392432602_0_backward",
+        "osm_390176418_0_forward",
+        "osm_406701907_9_backward",
+        "osm_488464043_0_backward",
+        "osm_989735832_1_forward"
+      ],
+      "destination_counts": {
+        "osm_1095527693_1_backward": 1540,
+        "osm_1095527695_0_backward": 1540,
+        "osm_1095551808_2_backward": 1540,
+        "osm_1095551811_2_backward": 1540,
+        "osm_1095760001_3_backward": 1540,
+        "osm_1095760094_0_backward": 1540,
+        "osm_1095760124_0_backward": 1540,
+        "osm_1107835856_7_forward": 1540,
+        "osm_1159529860_0_backward": 1540,
+        "osm_1174627092_0_backward": 1542,
+        "osm_1196002697_9_backward": 1540,
+        "osm_1197017583_1_forward": 1540,
+        "osm_1214455884_0_backward": 1540,
+        "osm_1218656796_0_forward": 1540,
+        "osm_1272882110_0_forward": 1540,
+        "osm_1274275468_9_backward": 1540,
+        "osm_1392432467_0_backward": 1540,
+        "osm_1392432602_0_backward": 1540,
+        "osm_390176418_0_forward": 1540,
+        "osm_406701907_9_backward": 1540,
+        "osm_488464043_0_backward": 1540,
+        "osm_989735832_1_forward": 1540
+      },
+      "scope": "Directed lane reachability and whole body only; global OSM guard remains BLOCKED"
+    },
+    {
+      "od_type": "internal-internal",
+      "body_m": 2.1,
+      "eligible_origin_links": [
+        "osm_1095527693_1_backward",
+        "osm_1095527695_0_backward",
+        "osm_1095551808_2_backward",
+        "osm_1095551811_2_backward",
+        "osm_1095760001_3_backward",
+        "osm_1095760094_0_backward",
+        "osm_1095760124_0_backward",
+        "osm_1107835856_7_forward",
+        "osm_1159529860_0_backward",
+        "osm_1174627092_0_backward",
+        "osm_1196002697_9_backward",
+        "osm_1197017583_1_forward",
+        "osm_1214455884_0_backward",
+        "osm_1218656796_0_forward",
+        "osm_1272882110_0_forward",
+        "osm_1274275468_9_backward",
+        "osm_1392432467_0_backward",
+        "osm_1392432602_0_backward",
+        "osm_390176418_0_forward",
+        "osm_406701907_9_backward",
+        "osm_488464043_0_backward",
+        "osm_989735832_1_forward"
+      ],
+      "destination_counts": {
+        "osm_1095527693_1_backward": 2350,
+        "osm_1095527695_0_backward": 2350,
+        "osm_1095551808_2_backward": 2350,
+        "osm_1095551811_2_backward": 2350,
+        "osm_1095760001_3_backward": 2350,
+        "osm_1095760094_0_backward": 2350,
+        "osm_1095760124_0_backward": 2350,
+        "osm_1107835856_7_forward": 2350,
+        "osm_1159529860_0_backward": 2350,
+        "osm_1174627092_0_backward": 2353,
+        "osm_1196002697_9_backward": 2350,
+        "osm_1197017583_1_forward": 2350,
+        "osm_1214455884_0_backward": 2350,
+        "osm_1218656796_0_forward": 2350,
+        "osm_1272882110_0_forward": 2350,
+        "osm_1274275468_9_backward": 2350,
+        "osm_1392432467_0_backward": 2350,
+        "osm_1392432602_0_backward": 2350,
+        "osm_390176418_0_forward": 2350,
+        "osm_406701907_9_backward": 2350,
+        "osm_488464043_0_backward": 2350,
+        "osm_989735832_1_forward": 2350
+      },
+      "scope": "Directed lane reachability and whole body only; global OSM guard remains BLOCKED"
+    }
+  ],
+  "copied_freight_changes": [
+    "routes.json: lanes_sha256 only",
+    "service-composition-v3.json: relative osm_file only"
+  ],
+  "decisions": [
+    {
+      "role": "entry",
+      "id": "entry-osm_292876837_2_forward",
+      "anchor_link": "osm_292876837_1_forward",
+      "crossing_link": "osm_292876837_2_forward",
+      "status": "REJECTED",
+      "useful_length_m": 18.92272515931643,
+      "budget_pcu_h": 2000.0,
+      "reason": "Local chain exists but no whole-body connected OD pair from/to the modeled interior"
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_292876837_2_forward",
+      "anchor_link": "osm_45494968_0_forward",
+      "crossing_link": "osm_292876837_2_forward",
+      "status": "REJECTED",
+      "reason": "Alternative of a crossing with no whole-body connected OD pair; no additional capacity"
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_30279782_2_forward",
+      "anchor_link": "osm_30279782_1_forward",
+      "crossing_link": "osm_30279782_2_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [[0.9999999761606478, 1.0]], \"inventory_classification\": \"entry_crossing\", \"link_id\": \"osm_30279782_2_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_30288333_3_forward",
+      "anchor_link": "osm_30288333_1_forward",
+      "crossing_link": "osm_30288333_3_forward",
+      "status": "REJECTED",
+      "reason": "Alternative of an already selected physical crossing/anchor; no additional capacity",
+      "selected_anchor": "osm_381667651_0_forward"
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_30288333_3_forward",
+      "anchor_link": "osm_381667651_0_forward",
+      "crossing_link": "osm_30288333_3_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 15.367432066096114,
+      "budget_pcu_h": 2000.0
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_363667895_6_forward",
+      "anchor_link": "osm_363667895_5_forward",
+      "crossing_link": "osm_363667895_6_forward",
+      "status": "REJECTED",
+      "reason": "Alternative of an already selected physical crossing/anchor; no additional capacity",
+      "selected_anchor": "osm_762765906_1_forward"
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_363667895_6_forward",
+      "anchor_link": "osm_762765906_1_forward",
+      "crossing_link": "osm_363667895_6_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 95.78774785950094,
+      "budget_pcu_h": 2000.0
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_381097595_5_forward",
+      "anchor_link": "osm_381097595_4_forward",
+      "crossing_link": "osm_381097595_5_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [[0.9999999702549036, 1.0]], \"inventory_classification\": \"entry_crossing\", \"link_id\": \"osm_381097595_5_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_400043601_9_forward",
+      "anchor_link": "osm_400043601_5_forward",
+      "crossing_link": "osm_400043601_9_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 4.917381816437192,
+      "budget_pcu_h": 4000.0
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_405188986_0_forward",
+      "anchor_link": "osm_1274240312_0_forward",
+      "crossing_link": "osm_405188986_0_forward",
+      "status": "REJECTED",
+      "reason": "Alternative of an already selected physical crossing/anchor; no additional capacity",
+      "selected_anchor": "osm_381667651_3_forward"
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_405188986_0_forward",
+      "anchor_link": "osm_381667651_3_forward",
+      "crossing_link": "osm_405188986_0_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 13.704514699403035,
+      "budget_pcu_h": 2000.0
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_406843605_2_forward",
+      "anchor_link": "osm_381667651_16_forward",
+      "crossing_link": "osm_406843605_2_forward",
+      "status": "REJECTED",
+      "reason": "Alternative of an already selected physical crossing/anchor; no additional capacity",
+      "selected_anchor": "osm_406843605_1_forward"
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_406843605_2_forward",
+      "anchor_link": "osm_406843605_1_forward",
+      "crossing_link": "osm_406843605_2_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 30.96361259723281,
+      "budget_pcu_h": 2000.0
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_406872394_3_backward",
+      "anchor_link": "osm_406872394_4_backward",
+      "crossing_link": "osm_406872394_3_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 5.926451513424485,
+      "budget_pcu_h": 2000.0
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_511820719_13_forward",
+      "anchor_link": "osm_511820719_6_forward",
+      "crossing_link": "osm_511820719_13_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 18.3037504893325,
+      "budget_pcu_h": 4000.0
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_59566215_6_forward",
+      "anchor_link": "osm_59566215_4_forward",
+      "crossing_link": "osm_59566215_6_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [], \"inventory_classification\": \"external\", \"link_id\": \"osm_59566215_5_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_65754263_0_forward",
+      "anchor_link": "osm_44486997_0_backward",
+      "crossing_link": "osm_65754263_0_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 12.788039120288701,
+      "budget_pcu_h": 2000.0
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_65777805_7_forward",
+      "anchor_link": "osm_65777805_5_forward",
+      "crossing_link": "osm_65777805_7_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [[0.9999999034647835, 1.0]], \"inventory_classification\": \"entry_crossing\", \"link_id\": \"osm_65777805_7_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_65786237_0_forward",
+      "anchor_link": "osm_65792798_1_forward",
+      "crossing_link": "osm_65786237_0_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [], \"inventory_classification\": \"external\", \"link_id\": \"osm_65792798_1_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_65786237_0_forward",
+      "anchor_link": "osm_699533700_5_forward",
+      "crossing_link": "osm_65786237_0_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [[5.905360849029958e-09, 1.0]], \"inventory_classification\": \"external\", \"link_id\": \"osm_699533700_5_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_65786237_0_forward",
+      "anchor_link": "osm_699533700_6_backward",
+      "crossing_link": "osm_65786237_0_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [[0.0, 1.0]], \"inventory_classification\": \"external\", \"link_id\": \"osm_699533700_6_backward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_699533700_4_backward",
+      "anchor_link": "osm_30279775_3_forward",
+      "crossing_link": "osm_699533700_4_backward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [[0.0, 1.0]], \"inventory_classification\": \"entry_crossing\", \"link_id\": \"osm_699533700_4_backward\", \"start_inside\": false}, {\"end_inside\": true, \"intervals\": [[0.0, 1.0]], \"inventory_classification\": \"interior\", \"link_id\": \"osm_699533700_3_backward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_699533700_4_backward",
+      "anchor_link": "osm_699533700_5_backward",
+      "crossing_link": "osm_699533700_4_backward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [[0.0, 0.999999994094639]], \"inventory_classification\": \"external\", \"link_id\": \"osm_699533700_5_backward\", \"start_inside\": false}, {\"end_inside\": false, \"intervals\": [[0.0, 1.0]], \"inventory_classification\": \"entry_crossing\", \"link_id\": \"osm_699533700_4_backward\", \"start_inside\": false}, {\"end_inside\": true, \"intervals\": [[0.0, 1.0]], \"inventory_classification\": \"interior\", \"link_id\": \"osm_699533700_3_backward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_917940877_0_forward",
+      "anchor_link": "osm_1273145790_1_forward",
+      "crossing_link": "osm_917940877_0_forward",
+      "status": "REJECTED",
+      "reason": "Alternative of an already selected physical crossing/anchor; no additional capacity",
+      "selected_anchor": "osm_260936848_14_forward"
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_917940877_0_forward",
+      "anchor_link": "osm_260936848_14_forward",
+      "crossing_link": "osm_917940877_0_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 7.878168147238057,
+      "budget_pcu_h": 2000.0
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_930035054_6_forward",
+      "anchor_link": "osm_381667651_19_forward",
+      "crossing_link": "osm_930035054_6_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 13.00767255118398,
+      "budget_pcu_h": 2000.0
+    },
+    {
+      "role": "entry",
+      "id": "entry-osm_930035054_6_forward",
+      "anchor_link": "osm_930035054_4_forward",
+      "crossing_link": "osm_930035054_6_forward",
+      "status": "REJECTED",
+      "reason": "Alternative of an already selected physical crossing/anchor; no additional capacity",
+      "selected_anchor": "osm_381667651_19_forward"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_1051440046_6_forward",
+      "anchor_link": "osm_1051440046_7_forward",
+      "crossing_link": "osm_1051440046_6_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 35.834239717756056,
+      "budget_pcu_h": 2000.0
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_1270930401_0_forward",
+      "anchor_link": "osm_1273145790_0_forward",
+      "crossing_link": "osm_1270930401_0_forward",
+      "status": "REJECTED",
+      "reason": "Violates via-way restriction 17478998"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_1270930401_0_forward",
+      "anchor_link": "osm_260940553_0_forward",
+      "crossing_link": "osm_1270930401_0_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 10.55261671881027,
+      "budget_pcu_h": 2000.0
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_1275050774_0_forward",
+      "anchor_link": "osm_1243273719_0_forward",
+      "crossing_link": "osm_1275050774_0_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [[0.0, 1.5678454859688376e-08]], \"inventory_classification\": \"exit_crossing\", \"link_id\": \"osm_1275050774_0_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_1275050774_0_forward",
+      "anchor_link": "osm_45494968_0_forward",
+      "crossing_link": "osm_1275050774_0_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [[0.0, 1.5678454859688376e-08]], \"inventory_classification\": \"exit_crossing\", \"link_id\": \"osm_1275050774_0_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_30263020_51_forward",
+      "anchor_link": "osm_30263020_52_forward",
+      "crossing_link": "osm_30263020_51_forward",
+      "status": "REJECTED",
+      "reason": "Alternative of an already selected physical crossing/anchor; no additional capacity",
+      "selected_anchor": "osm_381667651_19_forward"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_30263020_51_forward",
+      "anchor_link": "osm_381667651_19_forward",
+      "crossing_link": "osm_30263020_51_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 13.00767255118398,
+      "budget_pcu_h": 2000.0
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_30279769_73_forward",
+      "anchor_link": "osm_30279769_75_forward",
+      "crossing_link": "osm_30279769_73_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [], \"inventory_classification\": \"external\", \"link_id\": \"osm_30279769_74_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_30289506_12_forward",
+      "anchor_link": "osm_30289506_13_forward",
+      "crossing_link": "osm_30289506_12_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 21.001835199908427,
+      "budget_pcu_h": 4000.0
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_359045350_9_forward",
+      "anchor_link": "osm_359045350_10_forward",
+      "crossing_link": "osm_359045350_9_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [[0.0, 5.6441276173647165e-09]], \"inventory_classification\": \"exit_crossing\", \"link_id\": \"osm_359045350_9_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_381158277_4_forward",
+      "anchor_link": "osm_381158277_5_forward",
+      "crossing_link": "osm_381158277_4_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [[0.0, 2.2067416544346483e-09]], \"inventory_classification\": \"exit_crossing\", \"link_id\": \"osm_381158277_4_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_382465689_1_forward",
+      "anchor_link": "osm_382465689_5_forward",
+      "crossing_link": "osm_382465689_1_forward",
+      "status": "REJECTED",
+      "useful_length_m": 7.692734229142587,
+      "budget_pcu_h": 4000.0,
+      "reason": "Local chain exists but no whole-body connected OD pair from/to the modeled interior"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_382465690_6_forward",
+      "anchor_link": "osm_382465690_8_forward",
+      "crossing_link": "osm_382465690_6_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [], \"inventory_classification\": \"external\", \"link_id\": \"osm_382465690_7_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_400843677_5_forward",
+      "anchor_link": "osm_400843677_6_forward",
+      "crossing_link": "osm_400843677_5_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 15.949542992910786,
+      "budget_pcu_h": 6000.0
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_405188986_0_backward",
+      "anchor_link": "osm_1274240312_0_backward",
+      "crossing_link": "osm_405188986_0_backward",
+      "status": "REJECTED",
+      "reason": "Alternative of an already selected physical crossing/anchor; no additional capacity",
+      "selected_anchor": "osm_381667651_4_forward"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_405188986_0_backward",
+      "anchor_link": "osm_381667651_4_forward",
+      "crossing_link": "osm_405188986_0_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 19.078167470735693,
+      "budget_pcu_h": 2000.0
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_406872394_3_forward",
+      "anchor_link": "osm_406872394_4_forward",
+      "crossing_link": "osm_406872394_3_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 5.926451513424485,
+      "budget_pcu_h": 2000.0
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_420120096_33_forward",
+      "anchor_link": "osm_381667651_15_forward",
+      "crossing_link": "osm_420120096_33_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 15.187282227144706,
+      "budget_pcu_h": 6000.0
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_58673255_6_forward",
+      "anchor_link": "osm_58673255_12_forward",
+      "crossing_link": "osm_58673255_6_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 6.963549485842815,
+      "budget_pcu_h": 4000.0
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_58692312_4_forward",
+      "anchor_link": "osm_381667651_21_forward",
+      "crossing_link": "osm_58692312_4_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 66.32478509072868,
+      "budget_pcu_h": 4000.0
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_58692312_4_forward",
+      "anchor_link": "osm_58692312_5_forward",
+      "crossing_link": "osm_58692312_4_forward",
+      "status": "REJECTED",
+      "reason": "Alternative of an already selected physical crossing/anchor; no additional capacity",
+      "selected_anchor": "osm_381667651_21_forward"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_58692343_53_forward",
+      "anchor_link": "osm_58692343_54_forward",
+      "crossing_link": "osm_58692343_53_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [[0.0, 9.694337478491844e-09]], \"inventory_classification\": \"exit_crossing\", \"link_id\": \"osm_58692343_53_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_60237264_2_forward",
+      "anchor_link": "osm_60237264_3_forward",
+      "crossing_link": "osm_60237264_2_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 13.436846803250923,
+      "budget_pcu_h": 2000.0
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_699533700_4_forward",
+      "anchor_link": "osm_30279775_3_backward",
+      "crossing_link": "osm_699533700_4_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [[0.0, 1.0]], \"inventory_classification\": \"interior\", \"link_id\": \"osm_699533700_3_forward\", \"start_inside\": true}, {\"end_inside\": false, \"intervals\": [[0.0, 1.0]], \"inventory_classification\": \"exit_crossing\", \"link_id\": \"osm_699533700_4_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_699533700_4_forward",
+      "anchor_link": "osm_699533700_5_forward",
+      "crossing_link": "osm_699533700_4_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [[0.0, 1.0]], \"inventory_classification\": \"interior\", \"link_id\": \"osm_699533700_3_forward\", \"start_inside\": true}, {\"end_inside\": false, \"intervals\": [[0.0, 1.0]], \"inventory_classification\": \"exit_crossing\", \"link_id\": \"osm_699533700_4_forward\", \"start_inside\": false}, {\"end_inside\": false, \"intervals\": [[5.905360849029958e-09, 1.0]], \"inventory_classification\": \"external\", \"link_id\": \"osm_699533700_5_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_699533700_8_backward",
+      "anchor_link": "osm_699533700_7_backward",
+      "crossing_link": "osm_699533700_8_backward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": false, \"intervals\": [[0.0, 1.0]], \"inventory_classification\": \"exit_crossing\", \"link_id\": \"osm_699533700_8_backward\", \"start_inside\": false}, {\"end_inside\": false, \"intervals\": [[0.0, 1.0]], \"inventory_classification\": \"external\", \"link_id\": \"osm_699533700_7_backward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_734011348_14_forward",
+      "anchor_link": "osm_44486997_1_backward",
+      "crossing_link": "osm_734011348_14_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": true, \"intervals\": [[0.0, 1.0]], \"inventory_classification\": \"interior\", \"link_id\": \"osm_699533700_2_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_734011348_14_forward",
+      "anchor_link": "osm_44487200_0_forward",
+      "crossing_link": "osm_734011348_14_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": true, \"intervals\": [[0.0, 1.0]], \"inventory_classification\": \"interior\", \"link_id\": \"osm_699533700_2_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_734011348_14_forward",
+      "anchor_link": "osm_734011348_16_forward",
+      "crossing_link": "osm_734011348_14_forward",
+      "status": "REJECTED",
+      "reason": "Unclassified in effective boundary contract: [{\"end_inside\": true, \"intervals\": [[0.0, 1.0]], \"inventory_classification\": \"interior\", \"link_id\": \"osm_699533700_2_forward\", \"start_inside\": false}]"
+    },
+    {
+      "role": "exit",
+      "id": "exit-osm_762765906_0_forward",
+      "anchor_link": "osm_762765906_1_forward",
+      "crossing_link": "osm_762765906_0_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "useful_length_m": 95.78774785950094,
+      "budget_pcu_h": 4000.0
+    }
+  ],
+  "internal_origin_decisions": [
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095527693_1_backward",
+      "component": "osm_1095527693_0_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 11.139094075570405
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095527693_1_forward",
+      "component": "osm_1095527693_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1095527693_1_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095527695_0_backward",
+      "component": "osm_1095527695_0_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 7.515499692472687
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095527695_0_forward",
+      "component": "osm_1095527695_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1095527695_0_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095551808_0_backward",
+      "component": "osm_1095551807_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1095551808_2_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095551808_0_forward",
+      "component": "osm_1095551807_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1095551808_2_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095551808_2_backward",
+      "component": "osm_1095551807_0_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 7.040738777279092
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095551808_2_forward",
+      "component": "osm_1095551807_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1095551808_2_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095551811_1_backward",
+      "component": "osm_1095551811_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1095551811_2_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095551811_1_forward",
+      "component": "osm_1095551811_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1095551811_2_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095551811_2_backward",
+      "component": "osm_1095551811_0_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 6.724267976360348
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095551811_2_forward",
+      "component": "osm_1095551811_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1095551811_2_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095760001_3_backward",
+      "component": "osm_1095760001_0_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 6.8445939335693815
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095760001_3_forward",
+      "component": "osm_1095760001_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1095760001_3_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095760094_0_backward",
+      "component": "osm_1095760094_0_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 7.482712775991164
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095760094_0_forward",
+      "component": "osm_1095760094_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1095760094_0_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095760124_0_backward",
+      "component": "osm_1095760123_0_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 12.019104914560842
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1095760124_0_forward",
+      "component": "osm_1095760123_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1095760124_0_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1107835856_7_forward",
+      "component": "osm_1107835856_0_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 5.278878808894699
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1159529860_0_backward",
+      "component": "osm_1159529859_0_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 5.260211494286203
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1159529860_0_forward",
+      "component": "osm_1159529859_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1159529860_0_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1174627092_0_backward",
+      "component": "osm_1174627092_0_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 4.8405802105050455
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1174627092_0_forward",
+      "component": "osm_1174627092_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1174627092_0_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1196002697_3_backward",
+      "component": "osm_1196002697_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1196002697_9_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1196002697_3_forward",
+      "component": "osm_1196002697_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1196002697_9_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1196002697_9_backward",
+      "component": "osm_1196002697_0_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 6.581527373763333
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1196002697_9_forward",
+      "component": "osm_1196002697_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1196002697_9_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1196283990_1_backward",
+      "status": "REJECTED",
+      "reason": "No directed interior path from this service component to the street network"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1196283990_1_forward",
+      "status": "REJECTED",
+      "reason": "No directed interior path from this service component to the street network"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1196283991_2_backward",
+      "status": "REJECTED",
+      "reason": "No directed interior path from this service component to the street network"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1196283991_2_forward",
+      "status": "REJECTED",
+      "reason": "No directed interior path from this service component to the street network"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1197017583_1_forward",
+      "component": "osm_1197017583_0_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 5.651273132590781
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1214455884_0_backward",
+      "component": "osm_1214455884_0_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 7.68581865267107
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1214455884_0_forward",
+      "component": "osm_1214455884_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1214455884_0_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1214455884_4_backward",
+      "component": "osm_1214455884_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1214455884_0_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1214455884_4_forward",
+      "component": "osm_1214455884_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1214455884_0_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1218656796_0_forward",
+      "component": "osm_1218656796_0_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 7.211070184628667
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1218656796_2_forward",
+      "component": "osm_1218656796_0_forward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1218656796_0_forward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1267242423_1_forward",
+      "component": "osm_1267242423_0_forward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_989735832_1_forward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1272882110_0_forward",
+      "component": "osm_1272882110_0_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 8.388995060961989
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1272882111_12_forward",
+      "component": "osm_1272882110_0_forward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1272882110_0_forward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1272882111_5_forward",
+      "component": "osm_1272882110_0_forward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1272882110_0_forward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1274275468_3_backward",
+      "component": "osm_1274275468_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1274275468_9_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1274275468_3_forward",
+      "component": "osm_1274275468_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1274275468_9_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1274275468_9_backward",
+      "component": "osm_1274275468_0_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 6.034808013206856
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1274275468_9_forward",
+      "component": "osm_1274275468_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1274275468_9_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1392432467_0_backward",
+      "component": "osm_1392432467_0_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 7.89291412388172
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1392432467_0_forward",
+      "component": "osm_1392432467_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1392432467_0_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1392432602_0_backward",
+      "component": "osm_1392432602_0_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 5.93241480041392
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_1392432602_0_forward",
+      "component": "osm_1392432602_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_1392432602_0_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_390176417_2_forward",
+      "component": "osm_390176415_0_forward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_390176418_0_forward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_390176418_0_forward",
+      "component": "osm_390176415_0_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 10.890789633029435
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_390176418_1_forward",
+      "component": "osm_390176415_0_forward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_390176418_0_forward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_390176419_0_forward",
+      "component": "osm_390176415_0_forward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_390176418_0_forward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_406701906_3_forward",
+      "component": "osm_1430102759_0_forward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_406701907_9_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_406701907_9_backward",
+      "component": "osm_1430102759_0_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 8.317607221917186
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_406701907_9_forward",
+      "component": "osm_1430102759_0_forward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_406701907_9_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_488464043_0_backward",
+      "component": "osm_488464043_0_backward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 7.665619423080667
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_488464043_0_forward",
+      "component": "osm_488464043_0_backward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_488464043_0_backward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_989735829_1_forward",
+      "component": "osm_1267242423_0_forward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_989735832_1_forward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_989735831_1_forward",
+      "component": "osm_1267242423_0_forward",
+      "status": "REJECTED",
+      "reason": "Same connected service facility; only one modeled origin/budget",
+      "selected_link": "osm_989735832_1_forward"
+    },
+    {
+      "role": "internal_origin",
+      "link_id": "osm_989735832_1_forward",
+      "component": "osm_1267242423_0_forward",
+      "status": "APPROVED_MODEL_ONLY",
+      "budget_pcu_h": 2000.0,
+      "useful_length_m": 10.396150321879205
+    }
+  ],
+  "original_blocked_crossings": [
+    {
+      "link_id": "osm_30263035_0_forward",
+      "from_node": "333531505",
+      "to_node": "14045368121",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [],
+      "allowed_successors": [
+        "osm_30263035_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_30263036_0_forward",
+      "from_node": "3745025187",
+      "to_node": "12676972230",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [],
+      "allowed_successors": [
+        "osm_30263036_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_59566258_0_forward",
+      "from_node": "738886780",
+      "to_node": "9890753391",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [
+        "osm_59566258_0_backward"
+      ],
+      "allowed_successors": [
+        "osm_59566258_0_backward",
+        "osm_59566258_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_59566258_0_backward",
+      "from_node": "9890753391",
+      "to_node": "738886780",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [
+        "osm_59566258_0_forward",
+        "osm_59566258_1_backward"
+      ],
+      "allowed_successors": [
+        "osm_59566258_0_forward"
+      ]
+    },
+    {
+      "link_id": "osm_67112965_0_forward",
+      "from_node": "568190395",
+      "to_node": "410441414",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [],
+      "allowed_successors": [
+        "osm_1358273945_0_forward",
+        "osm_34994099_0_forward"
+      ]
+    },
+    {
+      "link_id": "osm_142995412_0_forward",
+      "from_node": "1564620804",
+      "to_node": "13571809980",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [],
+      "allowed_successors": [
+        "osm_142995412_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_381158292_0_forward",
+      "from_node": "333864549",
+      "to_node": "565307547",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [],
+      "allowed_successors": [
+        "osm_381158292_1_forward",
+        "osm_384747970_0_forward"
+      ]
+    },
+    {
+      "link_id": "osm_405703103_1_forward",
+      "from_node": "333864477",
+      "to_node": "333864557",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [
+        "osm_384747970_1_forward",
+        "osm_384747970_2_backward",
+        "osm_405703103_0_forward",
+        "osm_405703103_1_backward"
+      ],
+      "allowed_successors": [
+        "osm_405703103_1_backward"
+      ]
+    },
+    {
+      "link_id": "osm_405703103_1_backward",
+      "from_node": "333864557",
+      "to_node": "333864477",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [
+        "osm_405703103_1_forward"
+      ],
+      "allowed_successors": [
+        "osm_384747970_1_backward",
+        "osm_384747970_2_forward",
+        "osm_405703103_0_backward",
+        "osm_405703103_1_forward"
+      ]
+    },
+    {
+      "link_id": "osm_699533700_8_forward",
+      "reason": "No immediately connected interior observation respecting lanes"
+    },
+    {
+      "link_id": "osm_732305247_8_forward",
+      "from_node": "13575036647",
+      "to_node": "1903163097",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [
+        "osm_732305247_7_forward"
+      ],
+      "allowed_successors": []
+    },
+    {
+      "link_id": "osm_1467361288_0_forward",
+      "from_node": "518265473",
+      "to_node": "12120749824",
+      "reason": "No existing permitted exterior chain <=250 m with native first queue >= body + 0.10 m",
+      "exterior_links": [],
+      "allowed_predecessors": [],
+      "allowed_successors": [
+        "osm_1308865948_0_forward",
+        "osm_1467361288_1_forward"
+      ]
+    }
+  ],
+  "entry_exit_pairs": [
+    {
+      "entry": "osm_381667651_0_forward",
+      "exit": "osm_1051440046_7_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 57
+    },
+    {
+      "entry": "osm_381667651_0_forward",
+      "exit": "osm_260940553_0_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 35
+    },
+    {
+      "entry": "osm_381667651_0_forward",
+      "exit": "osm_381667651_19_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 45
+    },
+    {
+      "entry": "osm_381667651_0_forward",
+      "exit": "osm_30289506_13_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 45
+    },
+    {
+      "entry": "osm_381667651_0_forward",
+      "exit": "osm_400843677_6_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 83
+    },
+    {
+      "entry": "osm_381667651_0_forward",
+      "exit": "osm_381667651_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 28
+    },
+    {
+      "entry": "osm_381667651_0_forward",
+      "exit": "osm_406872394_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 50
+    },
+    {
+      "entry": "osm_381667651_0_forward",
+      "exit": "osm_381667651_15_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 39
+    },
+    {
+      "entry": "osm_381667651_0_forward",
+      "exit": "osm_58673255_12_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 104
+    },
+    {
+      "entry": "osm_381667651_0_forward",
+      "exit": "osm_381667651_21_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 42
+    },
+    {
+      "entry": "osm_381667651_0_forward",
+      "exit": "osm_60237264_3_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 89
+    },
+    {
+      "entry": "osm_381667651_0_forward",
+      "exit": "osm_762765906_1_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 107
+    },
+    {
+      "entry": "osm_762765906_1_forward",
+      "exit": "osm_1051440046_7_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 124
+    },
+    {
+      "entry": "osm_762765906_1_forward",
+      "exit": "osm_260940553_0_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 88
+    },
+    {
+      "entry": "osm_762765906_1_forward",
+      "exit": "osm_381667651_19_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 65
+    },
+    {
+      "entry": "osm_762765906_1_forward",
+      "exit": "osm_30289506_13_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 72
+    },
+    {
+      "entry": "osm_762765906_1_forward",
+      "exit": "osm_400843677_6_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 66
+    },
+    {
+      "entry": "osm_762765906_1_forward",
+      "exit": "osm_381667651_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 81
+    },
+    {
+      "entry": "osm_762765906_1_forward",
+      "exit": "osm_406872394_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 77
+    },
+    {
+      "entry": "osm_762765906_1_forward",
+      "exit": "osm_381667651_15_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 77
+    },
+    {
+      "entry": "osm_762765906_1_forward",
+      "exit": "osm_58673255_12_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 26
+    },
+    {
+      "entry": "osm_762765906_1_forward",
+      "exit": "osm_381667651_21_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 62
+    },
+    {
+      "entry": "osm_762765906_1_forward",
+      "exit": "osm_60237264_3_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 66
+    },
+    {
+      "entry": "osm_762765906_1_forward",
+      "exit": "osm_762765906_1_forward",
+      "status": "REJECTED",
+      "reason": "No whole-body eligible directed through pair"
+    },
+    {
+      "entry": "osm_400043601_5_forward",
+      "exit": "osm_1051440046_7_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 164
+    },
+    {
+      "entry": "osm_400043601_5_forward",
+      "exit": "osm_260940553_0_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 75
+    },
+    {
+      "entry": "osm_400043601_5_forward",
+      "exit": "osm_381667651_19_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 54
+    },
+    {
+      "entry": "osm_400043601_5_forward",
+      "exit": "osm_30289506_13_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 40
+    },
+    {
+      "entry": "osm_400043601_5_forward",
+      "exit": "osm_400843677_6_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 62
+    },
+    {
+      "entry": "osm_400043601_5_forward",
+      "exit": "osm_381667651_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 68
+    },
+    {
+      "entry": "osm_400043601_5_forward",
+      "exit": "osm_406872394_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 35
+    },
+    {
+      "entry": "osm_400043601_5_forward",
+      "exit": "osm_381667651_15_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 64
+    },
+    {
+      "entry": "osm_400043601_5_forward",
+      "exit": "osm_58673255_12_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 102
+    },
+    {
+      "entry": "osm_400043601_5_forward",
+      "exit": "osm_381667651_21_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 47
+    },
+    {
+      "entry": "osm_400043601_5_forward",
+      "exit": "osm_60237264_3_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 68
+    },
+    {
+      "entry": "osm_400043601_5_forward",
+      "exit": "osm_762765906_1_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 105
+    },
+    {
+      "entry": "osm_381667651_3_forward",
+      "exit": "osm_1051440046_7_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 61
+    },
+    {
+      "entry": "osm_381667651_3_forward",
+      "exit": "osm_260940553_0_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 11
+    },
+    {
+      "entry": "osm_381667651_3_forward",
+      "exit": "osm_381667651_19_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 48
+    },
+    {
+      "entry": "osm_381667651_3_forward",
+      "exit": "osm_30289506_13_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 48
+    },
+    {
+      "entry": "osm_381667651_3_forward",
+      "exit": "osm_400843677_6_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 87
+    },
+    {
+      "entry": "osm_381667651_3_forward",
+      "exit": "osm_381667651_4_forward",
+      "status": "REJECTED",
+      "reason": "No whole-body eligible directed through pair"
+    },
+    {
+      "entry": "osm_381667651_3_forward",
+      "exit": "osm_406872394_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 53
+    },
+    {
+      "entry": "osm_381667651_3_forward",
+      "exit": "osm_381667651_15_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 42
+    },
+    {
+      "entry": "osm_381667651_3_forward",
+      "exit": "osm_58673255_12_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 108
+    },
+    {
+      "entry": "osm_381667651_3_forward",
+      "exit": "osm_381667651_21_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 45
+    },
+    {
+      "entry": "osm_381667651_3_forward",
+      "exit": "osm_60237264_3_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 93
+    },
+    {
+      "entry": "osm_381667651_3_forward",
+      "exit": "osm_762765906_1_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 111
+    },
+    {
+      "entry": "osm_406843605_1_forward",
+      "exit": "osm_1051440046_7_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 73
+    },
+    {
+      "entry": "osm_406843605_1_forward",
+      "exit": "osm_260940553_0_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 30
+    },
+    {
+      "entry": "osm_406843605_1_forward",
+      "exit": "osm_381667651_19_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 12
+    },
+    {
+      "entry": "osm_406843605_1_forward",
+      "exit": "osm_30289506_13_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 17
+    },
+    {
+      "entry": "osm_406843605_1_forward",
+      "exit": "osm_400843677_6_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 45
+    },
+    {
+      "entry": "osm_406843605_1_forward",
+      "exit": "osm_381667651_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 23
+    },
+    {
+      "entry": "osm_406843605_1_forward",
+      "exit": "osm_406872394_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 22
+    },
+    {
+      "entry": "osm_406843605_1_forward",
+      "exit": "osm_381667651_15_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 10
+    },
+    {
+      "entry": "osm_406843605_1_forward",
+      "exit": "osm_58673255_12_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 63
+    },
+    {
+      "entry": "osm_406843605_1_forward",
+      "exit": "osm_381667651_21_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 14
+    },
+    {
+      "entry": "osm_406843605_1_forward",
+      "exit": "osm_60237264_3_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 51
+    },
+    {
+      "entry": "osm_406843605_1_forward",
+      "exit": "osm_762765906_1_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 66
+    },
+    {
+      "entry": "osm_406872394_4_backward",
+      "exit": "osm_1051440046_7_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 147
+    },
+    {
+      "entry": "osm_406872394_4_backward",
+      "exit": "osm_260940553_0_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 41
+    },
+    {
+      "entry": "osm_406872394_4_backward",
+      "exit": "osm_381667651_19_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 30
+    },
+    {
+      "entry": "osm_406872394_4_backward",
+      "exit": "osm_30289506_13_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 11
+    },
+    {
+      "entry": "osm_406872394_4_backward",
+      "exit": "osm_400843677_6_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 45
+    },
+    {
+      "entry": "osm_406872394_4_backward",
+      "exit": "osm_381667651_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 34
+    },
+    {
+      "entry": "osm_406872394_4_backward",
+      "exit": "osm_406872394_4_forward",
+      "status": "REJECTED",
+      "reason": "No whole-body eligible directed through pair"
+    },
+    {
+      "entry": "osm_406872394_4_backward",
+      "exit": "osm_381667651_15_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 30
+    },
+    {
+      "entry": "osm_406872394_4_backward",
+      "exit": "osm_58673255_12_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 85
+    },
+    {
+      "entry": "osm_406872394_4_backward",
+      "exit": "osm_381667651_21_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 15
+    },
+    {
+      "entry": "osm_406872394_4_backward",
+      "exit": "osm_60237264_3_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 51
+    },
+    {
+      "entry": "osm_406872394_4_backward",
+      "exit": "osm_762765906_1_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 88
+    },
+    {
+      "entry": "osm_511820719_6_forward",
+      "exit": "osm_1051440046_7_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 139
+    },
+    {
+      "entry": "osm_511820719_6_forward",
+      "exit": "osm_260940553_0_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 103
+    },
+    {
+      "entry": "osm_511820719_6_forward",
+      "exit": "osm_381667651_19_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 80
+    },
+    {
+      "entry": "osm_511820719_6_forward",
+      "exit": "osm_30289506_13_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 87
+    },
+    {
+      "entry": "osm_511820719_6_forward",
+      "exit": "osm_400843677_6_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 81
+    },
+    {
+      "entry": "osm_511820719_6_forward",
+      "exit": "osm_381667651_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 96
+    },
+    {
+      "entry": "osm_511820719_6_forward",
+      "exit": "osm_406872394_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 92
+    },
+    {
+      "entry": "osm_511820719_6_forward",
+      "exit": "osm_381667651_15_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 92
+    },
+    {
+      "entry": "osm_511820719_6_forward",
+      "exit": "osm_58673255_12_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 41
+    },
+    {
+      "entry": "osm_511820719_6_forward",
+      "exit": "osm_381667651_21_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 77
+    },
+    {
+      "entry": "osm_511820719_6_forward",
+      "exit": "osm_60237264_3_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 81
+    },
+    {
+      "entry": "osm_511820719_6_forward",
+      "exit": "osm_762765906_1_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 30
+    },
+    {
+      "entry": "osm_44486997_0_backward",
+      "exit": "osm_1051440046_7_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 33
+    },
+    {
+      "entry": "osm_44486997_0_backward",
+      "exit": "osm_260940553_0_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 62
+    },
+    {
+      "entry": "osm_44486997_0_backward",
+      "exit": "osm_381667651_19_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 72
+    },
+    {
+      "entry": "osm_44486997_0_backward",
+      "exit": "osm_30289506_13_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 72
+    },
+    {
+      "entry": "osm_44486997_0_backward",
+      "exit": "osm_400843677_6_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 103
+    },
+    {
+      "entry": "osm_44486997_0_backward",
+      "exit": "osm_381667651_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 55
+    },
+    {
+      "entry": "osm_44486997_0_backward",
+      "exit": "osm_406872394_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 77
+    },
+    {
+      "entry": "osm_44486997_0_backward",
+      "exit": "osm_381667651_15_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 66
+    },
+    {
+      "entry": "osm_44486997_0_backward",
+      "exit": "osm_58673255_12_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 124
+    },
+    {
+      "entry": "osm_44486997_0_backward",
+      "exit": "osm_381667651_21_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 69
+    },
+    {
+      "entry": "osm_44486997_0_backward",
+      "exit": "osm_60237264_3_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 109
+    },
+    {
+      "entry": "osm_44486997_0_backward",
+      "exit": "osm_762765906_1_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 127
+    },
+    {
+      "entry": "osm_260936848_14_forward",
+      "exit": "osm_1051440046_7_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 50
+    },
+    {
+      "entry": "osm_260936848_14_forward",
+      "exit": "osm_260940553_0_forward",
+      "status": "REJECTED",
+      "reason": "No whole-body eligible directed through pair"
+    },
+    {
+      "entry": "osm_260936848_14_forward",
+      "exit": "osm_381667651_19_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 55
+    },
+    {
+      "entry": "osm_260936848_14_forward",
+      "exit": "osm_30289506_13_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 55
+    },
+    {
+      "entry": "osm_260936848_14_forward",
+      "exit": "osm_400843677_6_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 86
+    },
+    {
+      "entry": "osm_260936848_14_forward",
+      "exit": "osm_381667651_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 38
+    },
+    {
+      "entry": "osm_260936848_14_forward",
+      "exit": "osm_406872394_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 60
+    },
+    {
+      "entry": "osm_260936848_14_forward",
+      "exit": "osm_381667651_15_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 49
+    },
+    {
+      "entry": "osm_260936848_14_forward",
+      "exit": "osm_58673255_12_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 107
+    },
+    {
+      "entry": "osm_260936848_14_forward",
+      "exit": "osm_381667651_21_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 52
+    },
+    {
+      "entry": "osm_260936848_14_forward",
+      "exit": "osm_60237264_3_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 92
+    },
+    {
+      "entry": "osm_260936848_14_forward",
+      "exit": "osm_762765906_1_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 110
+    },
+    {
+      "entry": "osm_381667651_19_forward",
+      "exit": "osm_1051440046_7_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 76
+    },
+    {
+      "entry": "osm_381667651_19_forward",
+      "exit": "osm_260940553_0_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 33
+    },
+    {
+      "entry": "osm_381667651_19_forward",
+      "exit": "osm_381667651_19_forward",
+      "status": "REJECTED",
+      "reason": "No whole-body eligible directed through pair"
+    },
+    {
+      "entry": "osm_381667651_19_forward",
+      "exit": "osm_30289506_13_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 14
+    },
+    {
+      "entry": "osm_381667651_19_forward",
+      "exit": "osm_400843677_6_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 42
+    },
+    {
+      "entry": "osm_381667651_19_forward",
+      "exit": "osm_381667651_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 26
+    },
+    {
+      "entry": "osm_381667651_19_forward",
+      "exit": "osm_406872394_4_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 19
+    },
+    {
+      "entry": "osm_381667651_19_forward",
+      "exit": "osm_381667651_15_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 13
+    },
+    {
+      "entry": "osm_381667651_19_forward",
+      "exit": "osm_58673255_12_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 60
+    },
+    {
+      "entry": "osm_381667651_19_forward",
+      "exit": "osm_381667651_21_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 11
+    },
+    {
+      "entry": "osm_381667651_19_forward",
+      "exit": "osm_60237264_3_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 48
+    },
+    {
+      "entry": "osm_381667651_19_forward",
+      "exit": "osm_762765906_1_forward",
+      "status": "static_shortest_path_admissible",
+      "links": 63
+    }
+  ],
+  "fixed_experiment": {
+    "N": 180000,
+    "cars": 79200,
+    "motorcycles": 99000,
+    "compact_freight": 1800,
+    "buses_additional": 269,
+    "private": 178200,
+    "seed": 20261023,
+    "iteration": 0,
+    "OD_percent": {
+      "EE": 50,
+      "EI": 20,
+      "IE": 20,
+      "II": 10
+    },
+    "OD_counts": {
+      "EE": 89100,
+      "EI": 35640,
+      "IE": 35640,
+      "II": 17820
+    }
+  },
+  "budget_totals_pcu_h": {
+    "entry": 24000.0,
+    "exit": 40000.0,
+    "internal_origin": 44000.0
+  },
+  "hourly_expectations": [
+    {
+      "hour": 0,
+      "probability": 0.010416666666666666,
+      "expected_private_vehicles": 1856.25,
+      "expected_private_pcu": 1082.8125,
+      "expected_entry_pcu": 757.96875,
+      "expected_exit_cohort_pcu": 757.96875,
+      "expected_internal_origin_pcu": 324.84375
+    },
+    {
+      "hour": 1,
+      "probability": 0.007291666666666666,
+      "expected_private_vehicles": 1299.3749999999998,
+      "expected_private_pcu": 757.96875,
+      "expected_entry_pcu": 530.578125,
+      "expected_exit_cohort_pcu": 530.578125,
+      "expected_internal_origin_pcu": 227.390625
+    },
+    {
+      "hour": 2,
+      "probability": 0.005208333333333333,
+      "expected_private_vehicles": 928.125,
+      "expected_private_pcu": 541.40625,
+      "expected_entry_pcu": 378.984375,
+      "expected_exit_cohort_pcu": 378.984375,
+      "expected_internal_origin_pcu": 162.421875
+    },
+    {
+      "hour": 3,
+      "probability": 0.005208333333333333,
+      "expected_private_vehicles": 928.125,
+      "expected_private_pcu": 541.40625,
+      "expected_entry_pcu": 378.984375,
+      "expected_exit_cohort_pcu": 378.984375,
+      "expected_internal_origin_pcu": 162.421875
+    },
+    {
+      "hour": 4,
+      "probability": 0.008333333333333333,
+      "expected_private_vehicles": 1485.0,
+      "expected_private_pcu": 866.25,
+      "expected_entry_pcu": 606.375,
+      "expected_exit_cohort_pcu": 606.375,
+      "expected_internal_origin_pcu": 259.875
+    },
+    {
+      "hour": 5,
+      "probability": 0.020833333333333332,
+      "expected_private_vehicles": 3712.5,
+      "expected_private_pcu": 2165.625,
+      "expected_entry_pcu": 1515.9375,
+      "expected_exit_cohort_pcu": 1515.9375,
+      "expected_internal_origin_pcu": 649.6875
+    },
+    {
+      "hour": 6,
+      "probability": 0.0625,
+      "expected_private_vehicles": 11137.5,
+      "expected_private_pcu": 6496.875,
+      "expected_entry_pcu": 4547.8125,
+      "expected_exit_cohort_pcu": 4547.8125,
+      "expected_internal_origin_pcu": 1949.0625
+    },
+    {
+      "hour": 7,
+      "probability": 0.09375,
+      "expected_private_vehicles": 16706.25,
+      "expected_private_pcu": 9745.3125,
+      "expected_entry_pcu": 6821.71875,
+      "expected_exit_cohort_pcu": 6821.71875,
+      "expected_internal_origin_pcu": 2923.59375
+    },
+    {
+      "hour": 8,
+      "probability": 0.08333333333333333,
+      "expected_private_vehicles": 14850.0,
+      "expected_private_pcu": 8662.5,
+      "expected_entry_pcu": 6063.75,
+      "expected_exit_cohort_pcu": 6063.75,
+      "expected_internal_origin_pcu": 2598.75
+    },
+    {
+      "hour": 9,
+      "probability": 0.052083333333333336,
+      "expected_private_vehicles": 9281.25,
+      "expected_private_pcu": 5414.0625,
+      "expected_entry_pcu": 3789.84375,
+      "expected_exit_cohort_pcu": 3789.84375,
+      "expected_internal_origin_pcu": 1624.21875
+    },
+    {
+      "hour": 10,
+      "probability": 0.041666666666666664,
+      "expected_private_vehicles": 7425.0,
+      "expected_private_pcu": 4331.25,
+      "expected_entry_pcu": 3031.875,
+      "expected_exit_cohort_pcu": 3031.875,
+      "expected_internal_origin_pcu": 1299.375
+    },
+    {
+      "hour": 11,
+      "probability": 0.052083333333333336,
+      "expected_private_vehicles": 9281.25,
+      "expected_private_pcu": 5414.0625,
+      "expected_entry_pcu": 3789.84375,
+      "expected_exit_cohort_pcu": 3789.84375,
+      "expected_internal_origin_pcu": 1624.21875
+    },
+    {
+      "hour": 12,
+      "probability": 0.0625,
+      "expected_private_vehicles": 11137.5,
+      "expected_private_pcu": 6496.875,
+      "expected_entry_pcu": 4547.8125,
+      "expected_exit_cohort_pcu": 4547.8125,
+      "expected_internal_origin_pcu": 1949.0625
+    },
+    {
+      "hour": 13,
+      "probability": 0.052083333333333336,
+      "expected_private_vehicles": 9281.25,
+      "expected_private_pcu": 5414.0625,
+      "expected_entry_pcu": 3789.84375,
+      "expected_exit_cohort_pcu": 3789.84375,
+      "expected_internal_origin_pcu": 1624.21875
+    },
+    {
+      "hour": 14,
+      "probability": 0.041666666666666664,
+      "expected_private_vehicles": 7425.0,
+      "expected_private_pcu": 4331.25,
+      "expected_entry_pcu": 3031.875,
+      "expected_exit_cohort_pcu": 3031.875,
+      "expected_internal_origin_pcu": 1299.375
+    },
+    {
+      "hour": 15,
+      "probability": 0.041666666666666664,
+      "expected_private_vehicles": 7425.0,
+      "expected_private_pcu": 4331.25,
+      "expected_entry_pcu": 3031.875,
+      "expected_exit_cohort_pcu": 3031.875,
+      "expected_internal_origin_pcu": 1299.375
+    },
+    {
+      "hour": 16,
+      "probability": 0.0625,
+      "expected_private_vehicles": 11137.5,
+      "expected_private_pcu": 6496.875,
+      "expected_entry_pcu": 4547.8125,
+      "expected_exit_cohort_pcu": 4547.8125,
+      "expected_internal_origin_pcu": 1949.0625
+    },
+    {
+      "hour": 17,
+      "probability": 0.09375,
+      "expected_private_vehicles": 16706.25,
+      "expected_private_pcu": 9745.3125,
+      "expected_entry_pcu": 6821.71875,
+      "expected_exit_cohort_pcu": 6821.71875,
+      "expected_internal_origin_pcu": 2923.59375
+    },
+    {
+      "hour": 18,
+      "probability": 0.08333333333333333,
+      "expected_private_vehicles": 14850.0,
+      "expected_private_pcu": 8662.5,
+      "expected_entry_pcu": 6063.75,
+      "expected_exit_cohort_pcu": 6063.75,
+      "expected_internal_origin_pcu": 2598.75
+    },
+    {
+      "hour": 19,
+      "probability": 0.041666666666666664,
+      "expected_private_vehicles": 7425.0,
+      "expected_private_pcu": 4331.25,
+      "expected_entry_pcu": 3031.875,
+      "expected_exit_cohort_pcu": 3031.875,
+      "expected_internal_origin_pcu": 1299.375
+    },
+    {
+      "hour": 20,
+      "probability": 0.03125,
+      "expected_private_vehicles": 5568.75,
+      "expected_private_pcu": 3248.4375,
+      "expected_entry_pcu": 2273.90625,
+      "expected_exit_cohort_pcu": 2273.90625,
+      "expected_internal_origin_pcu": 974.53125
+    },
+    {
+      "hour": 21,
+      "probability": 0.020833333333333332,
+      "expected_private_vehicles": 3712.5,
+      "expected_private_pcu": 2165.625,
+      "expected_entry_pcu": 1515.9375,
+      "expected_exit_cohort_pcu": 1515.9375,
+      "expected_internal_origin_pcu": 649.6875
+    },
+    {
+      "hour": 22,
+      "probability": 0.015625,
+      "expected_private_vehicles": 2784.375,
+      "expected_private_pcu": 1624.21875,
+      "expected_entry_pcu": 1136.953125,
+      "expected_exit_cohort_pcu": 1136.953125,
+      "expected_internal_origin_pcu": 487.265625
+    },
+    {
+      "hour": 23,
+      "probability": 0.010416666666666666,
+      "expected_private_vehicles": 1856.25,
+      "expected_private_pcu": 1082.8125,
+      "expected_entry_pcu": 757.96875,
+      "expected_exit_cohort_pcu": 757.96875,
+      "expected_internal_origin_pcu": 324.84375
+    }
+  ],
+  "hourly_expectation_basis": "Analytical probabilities only; not seeded scheduled requests. Aggregate sums are ceilings and shared links remain common constraints.",
+  "scheduled_requests_per_gateway_hour": null,
+  "insufficient_scheduled_budgets": null,
+  "scheduled_exit_concentration": null,
+  "schedule_status": "NOT_GENERATED: unresolved OSM restrictions; massive DryRun/population prohibited by user",
+  "observed_dependencies": {
+    "flow_counts": null,
+    "merge_rates": null,
+    "property_permissions": null,
+    "surveyed_storage": null
+  },
+  "observed_dependencies_scope": "Not prerequisites for explicitly synthetic eligibility; cannot claim field calibration or actual insertion/discharge",
+  "production_model_available": false,
+  "simulation_started": false
+}

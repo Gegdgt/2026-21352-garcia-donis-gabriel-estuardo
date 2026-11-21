@@ -1,0 +1,219 @@
+{
+  "date_local": "2026-11-20",
+  "scope": "small unit tests; no MATSim/QSim, no run1K/run10K/run55K",
+  "python": "3.10.11",
+  "interpreter": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\.venv\\Scripts\\python.exe",
+  "working_directory": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\2026-21352-garcia-donis-gabriel-estuardo\\src",
+  "environment": "existing original virtualenv interpreter, copy-only project imports; not a clean installation",
+  "environment_variables": {
+    "PYTHONPATH": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\2026-21352-garcia-donis-gabriel-estuardo\\src\\python",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TEMP": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\2026-21352-garcia-donis-gabriel-estuardo\\src\\runtime\\validacion-entrega\\tmp",
+    "TMP": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\2026-21352-garcia-donis-gabriel-estuardo\\src\\runtime\\validacion-entrega\\tmp",
+    "MPLCONFIGDIR": "C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\2026-21352-garcia-donis-gabriel-estuardo\\src\\runtime\\validacion-entrega\\matplotlib"
+  }
+}
+Matplotlib is building the font cache; this may take a moment.
+DEPENDENCIES {
+  "pandas": {
+    "version": "2.3.3",
+    "import": "PASS"
+  },
+  "numpy": {
+    "version": "2.2.6",
+    "import": "PASS"
+  },
+  "matplotlib": {
+    "version": "3.10.9",
+    "import": "PASS"
+  },
+  "PyYAML": {
+    "version": "6.0.3",
+    "import": "PASS"
+  },
+  "contextily": {
+    "version": "1.7.1",
+    "import": "PASS"
+  },
+  "pyproj": {
+    "version": "3.7.1",
+    "import": "PASS"
+  },
+  "openpyxl": {
+    "version": "3.1.5",
+    "import": "PASS"
+  },
+  "seaborn": {
+    "version": "0.13.2",
+    "import": "PASS"
+  },
+  "pydeck": {
+    "version": "0.9.3",
+    "import": "PASS"
+  },
+  "Pillow": {
+    "version": "12.3.0",
+    "import": "PASS"
+  },
+  "pytest": {
+    "version": "9.1.1",
+    "import": "PASS"
+  }
+}
+PROJECT IMPORTS {
+  "prepare_simz1": {
+    "status": "PASS",
+    "relative_path": "python/prepare_simz1.py"
+  },
+  "generate_demand_z1": {
+    "status": "PASS",
+    "relative_path": "python/generate_demand_z1.py"
+  },
+  "generate_montecarlo_z1": {
+    "status": "PASS",
+    "relative_path": "python/generate_montecarlo_z1.py"
+  },
+  "ejecutar_simz1": {
+    "status": "PASS",
+    "relative_path": "python/ejecutar_simz1.py"
+  },
+  "simz1_weekday_transit": {
+    "status": "PASS",
+    "relative_path": "python/simz1_weekday_transit.py"
+  },
+  "simz1_analysis": {
+    "status": "PASS",
+    "relative_path": "python/simz1_analysis.py"
+  },
+  "generar_graficas_z1": {
+    "status": "PASS",
+    "relative_path": "python/generar_graficas_z1.py"
+  },
+  "serve_simz1_continuous": {
+    "status": "PASS",
+    "relative_path": "python/serve_simz1_continuous.py"
+  },
+  "simz1_continuous_replay": {
+    "status": "PASS",
+    "relative_path": "python/simz1_continuous_replay.py"
+  },
+  "simz1_paged_replay": {
+    "status": "PASS",
+    "relative_path": "python/simz1_paged_replay.py"
+  },
+  "simz1_motion": {
+    "status": "PASS",
+    "relative_path": "python/simz1_motion.py"
+  }
+}
+test_access_allowlist_cannot_grant_non_car_links (test_simz1_agent_types.SixCategoryTests) ... ok
+test_catalog_rejects_ambiguous_units_unknown_types_bad_ranges (test_simz1_agent_types.SixCategoryTests) ... ok
+test_departures_reproducible_disjoint_person_streams_in_horizon (test_simz1_agent_types.SixCategoryTests) ... ok
+test_integer_rounding_exact_small_counts_and_reproducible_seed (test_simz1_agent_types.SixCategoryTests) ... ok
+test_manifest_snapshot_is_serializable_stable_and_not_aliasing (test_simz1_agent_types.SixCategoryTests) ... ok
+test_no_fabricated_fixed_transit_or_heavy_execution (test_simz1_agent_types.SixCategoryTests) ... ok
+test_peak_day_and_proposed_night_windows (test_simz1_agent_types.SixCategoryTests) ... ok
+test_road_only_variant_is_explicit_and_manifest_separates_unavailable_capabilities (test_simz1_agent_types.SixCategoryTests) ... ok
+test_six_types_exact_person_denominator_and_target_shares (test_simz1_agent_types.SixCategoryTests) ... ok
+test_vehicle_pcu_and_speed_no_fabricated_heavy_or_passenger_vehicle (test_simz1_agent_types.SixCategoryTests) ... ok
+test_xml_v2_namespace_pce_and_explicit_schema_without_new_physics (test_simz1_agent_types.SixCategoryTests) ... ok
+test_disconnected_or_forbidden_transition_has_evidence (test_simz1_event_validation.MovementAuditTests) ... ok
+test_enabled_lane_target_union_and_route_failure (test_simz1_event_validation.MovementAuditTests) ... ok
+test_first_last_repeated_links_return_to_origin_and_two_trips (test_simz1_event_validation.MovementAuditTests) ... ok
+test_known_link_requires_leave_but_partial_first_event_is_allowed (test_simz1_event_validation.MovementAuditTests) ... ok
+test_pending_horizon_and_abort_are_distinct (test_simz1_event_validation.MovementAuditTests) ... ok
+test_step_aggregates_and_only_changed_candidates_are_installations (test_simz1_event_validation.MovementAuditTests) ... ok
+test_step_budget_invalid_metrics_and_disabled_work_are_rejected (test_simz1_event_validation.MovementAuditTests) ... ok
+test_vehicle_trip_boundary_resets_transition_state (test_simz1_event_validation.MovementAuditTests) ... ok
+test_all_six_person_categories_survive_without_turning_passengers_into_buses (test_simz1_agent_metadata.AgentMetadataTests) ... ok
+test_export_and_visual_fallback_preserve_identity_without_using_pcu_as_geometry (test_simz1_agent_metadata.AgentMetadataTests) ... ok
+test_old_profiles_do_not_gain_new_agent_categories (test_simz1_agent_metadata.AgentMetadataTests) ... ok
+test_pcu_is_optional_and_invalid_values_fail (test_simz1_agent_metadata.AgentMetadataTests) ... ok
+test_recorded_vehicle_values_and_legacy_speed_reader_contract (test_simz1_agent_metadata.AgentMetadataTests) ... ok
+test_abort_and_native_duplicate_close_before_next_trip (test_simz1_selection_metadata.SelectionMetadataTests) ... ok
+test_arrival_releases_old_vehicle_before_person_uses_a_different_one (test_simz1_selection_metadata.SelectionMetadataTests) ... ok
+test_censoring_does_not_use_other_person_or_global_event_as_last_observation (test_simz1_selection_metadata.SelectionMetadataTests) ... ok
+test_completion_is_real_arrival_even_after_geometry_ends (test_simz1_selection_metadata.SelectionMetadataTests) ... ok
+test_horizon_abort_is_censoring_and_midnight_stays_absolute (test_simz1_selection_metadata.SelectionMetadataTests) ... ok
+test_individual_wait_extends_observation_without_inventing_a_segment (test_simz1_selection_metadata.SelectionMetadataTests) ... ok
+test_intermediate_gap_keeps_one_trip_until_real_arrival (test_simz1_selection_metadata.SelectionMetadataTests) ... ok
+test_invalid_horizons_fail_without_invented_boundary (test_simz1_selection_metadata.SelectionMetadataTests) ... ok
+test_last_event_in_stream_is_observation_not_an_exclusive_horizon (test_simz1_selection_metadata.SelectionMetadataTests) ... ok
+test_reassignment_with_an_open_interval_is_an_error (test_simz1_selection_metadata.SelectionMetadataTests) ... ok
+test_reused_vehicle_does_not_belong_to_person_with_delayed_arrival_or_abort (test_simz1_selection_metadata.SelectionMetadataTests) ... ok
+test_two_trips_same_person_and_vehicle_have_independent_lifetimes (test_simz1_selection_metadata.SelectionMetadataTests) ... ok
+test_current_application_and_daily_config_served_without_socket_or_export (test_simz1_daily_window.DailyWindowTests) ... ok
+test_daily_bounds_keep_original_metrics_explicit_and_source_unchanged (test_simz1_daily_window.DailyWindowTests) ... ok
+test_endpoints_internal_window_and_native_cross_midnight_records (test_simz1_daily_window.DailyWindowTests) ... ok
+test_short_explicit_fixture_and_invalid_post_day_range (test_simz1_daily_window.DailyWindowTests) ... ok
+test_cycle2_config (test_prepare_simz1.SimZ1Tests) ... FAIL
+test_direction_projection_and_incomplete_input (test_prepare_simz1.SimZ1Tests) ... ok
+test_exported_connectivity_and_facilities (test_prepare_simz1.SimZ1Tests) ... ok
+test_vehicle_filter_and_specific_access (test_prepare_simz1.SimZ1Tests) ... ok
+test_directed_car_component_not_weak_or_pedestrian (test_generate_demand_z1.DemandTests) ... ok
+test_invalid_arguments_preserve_input (test_generate_demand_z1.DemandTests) ... ok
+test_single_debug_agent_structure_and_repeatability (test_generate_demand_z1.DemandTests) ... ok
+
+======================================================================
+FAIL: test_cycle2_config (test_prepare_simz1.SimZ1Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\gegdg\Documents\.UVG\Sim\2026-21352-garcia-donis-gabriel-estuardo\src\python\test_prepare_simz1.py", line 76, in test_cycle2_config
+    self.assertEqual(values['qsim']['startTime'], '07:59:00')
+AssertionError: '00:00:00' != '07:59:00'
+- 00:00:00
++ 07:59:00
+
+
+----------------------------------------------------------------------
+Ran 47 tests in 3.222s
+
+FAILED (failures=1)
+PROJECT MODULE PATH CHECK {"copy_modules": 54, "original_project_modules": []}
+PIP CHECK {"exit_code": 0, "stdout": "No broken requirements found.", "stderr": ""}
+SUMMARY {
+  "modules": [
+    "test_simz1_agent_types",
+    "test_simz1_event_validation",
+    "test_simz1_agent_metadata",
+    "test_simz1_selection_metadata",
+    "test_simz1_daily_window",
+    "test_prepare_simz1",
+    "test_generate_demand_z1"
+  ],
+  "run": 47,
+  "failures": 1,
+  "errors": 0,
+  "skipped": 0,
+  "success": false,
+  "duration_seconds": 3.281,
+  "failures_detail": [
+    {
+      "test": "test_cycle2_config (test_prepare_simz1.SimZ1Tests)",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\2026-21352-garcia-donis-gabriel-estuardo\\src\\python\\test_prepare_simz1.py\", line 76, in test_cycle2_config\n    self.assertEqual(values['qsim']['startTime'], '07:59:00')\nAssertionError: '00:00:00' != '07:59:00'\n- 00:00:00\n+ 07:59:00\n\n"
+    }
+  ]
+}
+
+SOURCE/COPY SHA256 EVIDENCE
+{
+  "python/test_prepare_simz1.py": {
+    "original_sha256": "b8d91c354c626427a7eb724fd9a654790fdebdab208b8e8da2da079599cafefb",
+    "copy_sha256": "b8d91c354c626427a7eb724fd9a654790fdebdab208b8e8da2da079599cafefb",
+    "identical": true
+  },
+  "scenarios/zona1/config-simz1.xml": {
+    "original_sha256": "33e5a3b7ee2c7b31dce3d04d527f686b36d9de6d50734dd107fe410686ffa640",
+    "copy_sha256": "33e5a3b7ee2c7b31dce3d04d527f686b36d9de6d50734dd107fe410686ffa640",
+    "identical": true
+  }
+}
+FAILED ASSERTION CONTEXT
+{
+  "test": "test_prepare_simz1.SimZ1Tests.test_cycle2_config",
+  "expected_startTime": "07:59:00",
+  "actual_startTime": "00:00:00",
+  "expected_endTime_also_in_test": "15:00:00",
+  "actual_endTime": "24:00:00",
+  "action": "Reported source inconsistency; no changes to test or configuration."
+}

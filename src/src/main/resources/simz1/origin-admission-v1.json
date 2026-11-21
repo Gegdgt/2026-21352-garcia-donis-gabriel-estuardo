@@ -1,0 +1,37 @@
+{
+  "schema": "simz1-origin-admission-policy-v1",
+  "version": "physical-gap-origin-v1",
+  "legacy_policy": "empty-slot-origin-v1",
+  "default_policy": "empty-slot-origin-v1",
+  "mechanism_ids": [1, 2, 5],
+  "insertion_anchor": "native_original_queue_buffer_endpoint",
+  "minimum_body_gap_m": 0.10,
+  "nominal_lane_width_m": 3.0,
+  "full_body_support": true,
+  "route_occurrence_and_reach_required": true,
+  "explicit_direct_original_terminal_connectivity": true,
+  "represented_original_lane_count_matches_domain": true,
+  "finite_positive_body_and_pcu": true,
+  "preserve_committed_anchor_on_reroute": true,
+  "bilateral_clearance": true,
+  "overtake_existing_body": false,
+  "fifo": "existing_shared_origin_waiting_list_head",
+  "flow": "native_pcu_credit_debt_single_debit",
+  "storage": "native_activity_buffer_and_corridor_body_reservations",
+  "offer": "pure_geometry_then_revalidated_serial_origin_commit",
+  "required": {
+    "storage_policy": "strict-receiver-v1",
+    "whole_vehicle_reservation": true,
+    "qsim_threads": 1,
+    "traffic_dynamics": "queue",
+    "link_dynamics": "FIFO"
+  },
+  "legacy_fallbacks": [
+    "bus", "null_driver", "terminal", "short_origin", "passage",
+    "unmanaged_origin", "unrepresented_original", "unrepresented_movement",
+    "complex_or_mixed_topology", "representation_mismatch"
+  ],
+  "adds_capacity": false,
+  "changes_departure_schedule": false,
+  "changes_network_signals_bodies_or_fixed_services": false
+}

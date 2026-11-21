@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE config SYSTEM "http://www.matsim.org/files/dtd/config_v2.dtd">
+<config>
+  <module name="vehicles">
+    <param name="vehiclesFile" value="C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\scenarios\zona1\montecarlo\run-bg180-590679ae2497441c84440d14f9530e83\inputs\vehicles.xml" />
+  </module>
+  <module name="signalsystems">
+    <param name="useSignalsystems" value="true" />
+    <param name="signalsystems" value="C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\scenarios\zona1\montecarlo\run-bg180-590679ae2497441c84440d14f9530e83\inputs\signalsystems-signalsystems.xml" />
+    <param name="signalgroups" value="C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\scenarios\zona1\montecarlo\run-bg180-590679ae2497441c84440d14f9530e83\inputs\signalsystems-signalgroups.xml" />
+    <param name="signalcontrol" value="C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\scenarios\zona1\montecarlo\run-bg180-590679ae2497441c84440d14f9530e83\inputs\signalsystems-signalcontrol.xml" />
+    <param name="useAmbertimes" value="true" />
+    <param name="useIntergreentimes" value="false" />
+  </module>
+  <module name="zona1Priority">
+    <param name="enabled" value="true" />
+    <param name="stopSeconds" value="5" />
+    <param name="maxYieldSeconds" value="30" />
+    <param name="classification" value="osm-hierarchy" />
+    <param name="conflicts" value="geometric" />
+  </module>
+  <module name="zona1WithinDayRouting">
+    <param name="enabled" value="true" />
+    <param name="agentShare" value="0.5" />
+    <param name="routingPolicy" value="fastest-time" />
+  </module>
+  <module name="global">
+    <param name="coordinateSystem" value="EPSG:32615" />
+    <param name="randomSeed" value="20261023" />
+    <param name="numberOfThreads" value="12" />
+  </module>
+  <module name="network">
+    <param name="inputNetworkFile" value="C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\scenarios\zona1\montecarlo\run-bg180-590679ae2497441c84440d14f9530e83\inputs\transit-weekday\network.xml" />
+    <param name="laneDefinitionsFile" value="C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\scenarios\zona1\montecarlo\run-bg180-590679ae2497441c84440d14f9530e83\inputs\transit-weekday\lanes.xml" />
+    <param name="timeVariantNetwork" value="true" />
+  </module>
+  <module name="facilities">
+    <param name="inputFacilitiesFile" value="C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\scenarios\zona1\montecarlo\run-bg180-590679ae2497441c84440d14f9530e83\inputs\facilities-inputFacilitiesFile.xml" />
+  </module>
+  <module name="plans">
+    <param name="inputPlansFile" value="C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\scenarios\zona1\montecarlo\run-bg180-590679ae2497441c84440d14f9530e83\plans.xml" />
+  </module>
+  <module name="controler">
+    <param name="outputDirectory" value="C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\scenarios\zona1\montecarlo\run-bg180-590679ae2497441c84440d14f9530e83\output" />
+    <param name="lastIteration" value="0" />
+    <param name="overwriteFiles" value="failIfDirectoryExists" />
+    <param name="firstIteration" value="0" />
+    <param name="routingAlgorithmType" value="Dijkstra" />
+    <param name="enableLinkToLinkRouting" value="true" />
+    <param name="writeEventsInterval" value="10" />
+    <param name="writePlansInterval" value="10" />
+  </module>
+  <module name="qsim">
+    <param name="useLanes" value="true" />
+    <param name="usingFastCapacityUpdate" value="false" />
+    <param name="startTime" value="00:00:00" />
+    <param name="endTime" value="24:00:00" />
+    <param name="numberOfThreads" value="1" />
+    <param name="simStarttimeInterpretation" value="onlyUseStarttime" />
+    <param name="simEndtimeInterpretation" value="onlyUseEndtime" />
+    <param name="flowCapacityFactor" value="1.0" />
+    <param name="storageCapacityFactor" value="1.0" />
+    <param name="removeStuckVehicles" value="false" />
+    <param name="stuckTime" value="10" />
+    <param name="mainMode" value="bus,car" />
+  </module>
+  <module name="planCalcScore">
+    <parameterset type="activityParams">
+      <param name="activityType" value="home" />
+      <param name="typicalDuration" value="06:00:00" />
+      <param name="scoringThisActivityAtAll" value="false" />
+    </parameterset>
+    <parameterset type="activityParams">
+      <param name="activityType" value="work" />
+      <param name="typicalDuration" value="06:00:00" />
+      <param name="scoringThisActivityAtAll" value="false" />
+    </parameterset>
+    <parameterset type="modeParams">
+      <param name="mode" value="car" />
+      <param name="marginalUtilityOfTraveling_util_hr" value="-6" />
+      <param name="monetaryDistanceRate" value="0" />
+      <param name="marginalUtilityOfDistance_util_m" value="0" />
+      <param name="constant" value="0" />
+    </parameterset>
+  </module>
+  <module name="travelTimeCalculator">
+    <param name="calculateLinkTravelTimes" value="true" />
+    <param name="calculateLinkToLinkTravelTimes" value="true" />
+    <param name="separateModes" value="false" />
+    <param name="travelTimeBinSize" value="60" />
+    <param name="maxTime" value="86400" />
+  </module>
+  <module name="strategy">
+    <param name="maxAgentPlanMemorySize" value="5" />
+    <param name="fractionOfIterationsToDisableInnovation" value="0.8" />
+    <parameterset type="strategysettings">
+      <param name="strategyName" value="ChangeExpBeta" />
+      <param name="weight" value="0.8" />
+    </parameterset>
+    <parameterset type="strategysettings">
+      <param name="strategyName" value="ReRoute" />
+      <param name="weight" value="0.2" />
+    </parameterset>
+  </module>
+  <module name="zona1Diagnostics">
+    <param name="incidentsEnabled" value="false" />
+  </module>
+  <module name="simz1Admission">
+    <param name="storagePolicy" value="strict-receiver-v1" />
+    <param name="wholeVehicleReservation" value="true" />
+  </module>
+  <module name="transit">
+    <param name="useTransit" value="true" />
+    <param name="usingTransitInMobsim" value="true" />
+    <param name="transitModes" value="pt" />
+    <param name="transitScheduleFile" value="C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\scenarios\zona1\montecarlo\run-bg180-590679ae2497441c84440d14f9530e83\inputs\transit-weekday\transitSchedule.xml" />
+    <param name="vehiclesFile" value="C:\Users\gegdg\Documents\.UVG\Sim\matsim-guatemala\scenarios\zona1\montecarlo\run-bg180-590679ae2497441c84440d14f9530e83\inputs\transit-weekday\transitVehicles.xml" />
+  </module>
+</config>

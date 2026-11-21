@@ -1,0 +1,3888 @@
+{
+  "schema_version": "simz1-osm-transit-evidence-v1",
+  "review_date": "2026-10-22",
+  "production_enabled": false,
+  "source": {
+    "source_id": "osm-snapshot",
+    "path": "scenarios/zona1/map.osm",
+    "sha256": "707684e17858e305324d72ce5df05a489138e3b819442b3c34e2a21c864d8c6b",
+    "sha256_lf": "f18296d0479d0efd095a5b6534f9685928fbd2be9d90705b9200864b3a697a0a",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "acquired_at": null,
+    "element_timestamps_are_not_acquisition_dates": true
+  },
+  "boundary": {
+    "relation_id": "9283360",
+    "version": "34",
+    "timestamp": "2026-08-29T14:55:45Z",
+    "outer_way_count": 59,
+    "missing_outer_way_ids": [
+      "667730659",
+      "30279779",
+      "642056166",
+      "642056167",
+      "699533697",
+      "30262998",
+      "679340482",
+      "30263031",
+      "699533696",
+      "699530403",
+      "930046779",
+      "1078931128",
+      "64401273",
+      "381133551",
+      "30274222",
+      "699533706",
+      "381382147",
+      "381382150",
+      "370803767",
+      "384766457",
+      "1553431372",
+      "405680516",
+      "390137509",
+      "699533707",
+      "699533708",
+      "699533710",
+      "667737049",
+      "761388502",
+      "761388508",
+      "1317915883",
+      "404964205",
+      "404412301",
+      "699533705",
+      "244226326",
+      "1028513519",
+      "1058042641",
+      "1028513518",
+      "675891013",
+      "384908710",
+      "45498034",
+      "1273924493",
+      "1264280718",
+      "699533699"
+    ],
+    "approved": false
+  },
+  "stops": [
+    {
+      "stop_id": "osm:node:410383055",
+      "name": null,
+      "coordinates": [
+        -90.5093527,
+        14.6237183
+      ],
+      "crs": "EPSG:4326",
+      "version": "8",
+      "timestamp": "2025-04-26T12:39:55Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:616765366",
+      "name": "Linea Dorada",
+      "coordinates": [
+        -90.5106713,
+        14.6317445
+      ],
+      "crs": "EPSG:4326",
+      "version": "3",
+      "timestamp": "2016-03-17T18:11:54Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Linea Dorada"
+      }
+    },
+    {
+      "stop_id": "osm:node:637591059",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:644825734",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:644828949",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:644829865",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:726943187",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:726943191",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:726943192",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:726943195",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:726943197",
+      "name": "Transmetro: El Calvario",
+      "coordinates": [
+        -90.5155957,
+        14.6300936
+      ],
+      "crs": "EPSG:4326",
+      "version": "7",
+      "timestamp": "2022-05-05T04:21:00Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: El Calvario",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:726943198",
+      "name": "Transmetro: Plaza El Amate",
+      "coordinates": [
+        -90.5168379,
+        14.631305
+      ],
+      "crs": "EPSG:4326",
+      "version": "4",
+      "timestamp": "2022-05-04T20:45:11Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Plaza El Amate",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:726943199",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:726943203",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:726965570",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:726965573",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:726965575",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:727188031",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:727188034",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:727188035",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:727188036",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:727293935",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:798546385",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:798546390",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:798546391",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:806433959",
+      "name": "3 Avenida y 9 Calle Zona 1",
+      "coordinates": [
+        -90.5169732,
+        14.6406857
+      ],
+      "crs": "EPSG:4326",
+      "version": "2",
+      "timestamp": "2024-11-24T23:49:13Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "location": "3 Avenida y 9 Calle Zona 1",
+        "name": "3 Avenida y 9 Calle Zona 1",
+        "network": "Transurbano",
+        "operator": "Transurbano",
+        "public_transport": "platform",
+        "ref": "C20"
+      }
+    },
+    {
+      "stop_id": "osm:node:806433965",
+      "name": "3 Avenida y 23 Calle Zona 1",
+      "coordinates": [
+        -90.5198915,
+        14.6273672
+      ],
+      "crs": "EPSG:4326",
+      "version": "1",
+      "timestamp": "2010-07-08T09:27:04Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "location": "3 Avenida y 23 Calle Zona 1",
+        "name": "3 Avenida y 23 Calle Zona 1",
+        "operator": "Transurbano",
+        "ref": "C17"
+      }
+    },
+    {
+      "stop_id": "osm:node:806433966",
+      "name": "3 Avenida y 15 Calle Zona 1",
+      "coordinates": [
+        -90.517971,
+        14.6340214
+      ],
+      "crs": "EPSG:4326",
+      "version": "2",
+      "timestamp": "2024-11-24T23:49:13Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "location": "3 Avenida y 15 Calle Zona 1",
+        "name": "3 Avenida y 15 Calle Zona 1",
+        "network": "Transurbano",
+        "operator": "Transurbano",
+        "public_transport": "platform",
+        "ref": "C18"
+      }
+    },
+    {
+      "stop_id": "osm:node:806433967",
+      "name": "3 Avenida y 13 Calle Zona 1",
+      "coordinates": [
+        -90.5176384,
+        14.6364401
+      ],
+      "crs": "EPSG:4326",
+      "version": "2",
+      "timestamp": "2024-11-24T23:49:13Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "location": "3 Avenida y 13 Calle Zona 1",
+        "name": "3 Avenida y 13 Calle Zona 1",
+        "network": "Transurbano",
+        "operator": "Transurbano",
+        "public_transport": "platform",
+        "ref": "C19"
+      }
+    },
+    {
+      "stop_id": "osm:node:806433973",
+      "name": "Avenida Bolívar y 24 Calle Zona 1",
+      "coordinates": [
+        -90.5200953,
+        14.6263498
+      ],
+      "crs": "EPSG:4326",
+      "version": "2",
+      "timestamp": "2024-11-24T23:49:13Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "location": "Avenida Bolívar y 24 Calle Zona 1",
+        "name": "Avenida Bolívar y 24 Calle Zona 1",
+        "network": "Transurbano",
+        "operator": "Transurbano",
+        "public_transport": "platform",
+        "ref": "C05"
+      }
+    },
+    {
+      "stop_id": "osm:node:806433974",
+      "name": "3 Avenida \"C\" y 25 Calle Zona 1",
+      "coordinates": [
+        -90.5190439,
+        14.625291
+      ],
+      "crs": "EPSG:4326",
+      "version": "2",
+      "timestamp": "2024-11-24T23:49:13Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "location": "3 Avenida \"C\" y 25 Calle Zona 1",
+        "name": "3 Avenida \"C\" y 25 Calle Zona 1",
+        "network": "Transurbano",
+        "operator": "Transurbano",
+        "public_transport": "platform",
+        "ref": "C06"
+      }
+    },
+    {
+      "stop_id": "osm:node:806433979",
+      "name": "3 Avenida y 5 Calle Zona 1",
+      "coordinates": [
+        -90.5166772,
+        14.643739
+      ],
+      "crs": "EPSG:4326",
+      "version": "3",
+      "timestamp": "2024-11-24T23:49:13Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "location": "3 Avenida y 5 Calle Zona 1",
+        "name": "3 Avenida y 5 Calle Zona 1",
+        "network": "Transurbano",
+        "operator": "Transurbano",
+        "public_transport": "platform",
+        "ref": "C21"
+      }
+    },
+    {
+      "stop_id": "osm:node:806433980",
+      "name": "4 Avenida y 11 Calle Zona 1",
+      "coordinates": [
+        -90.5162416,
+        14.6386514
+      ],
+      "crs": "EPSG:4326",
+      "version": "3",
+      "timestamp": "2024-11-24T23:49:13Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "location": "4 Avenida y 11 Calle Zona 1",
+        "name": "4 Avenida y 11 Calle Zona 1",
+        "network": "Transurbano",
+        "operator": "Transurbano",
+        "public_transport": "platform",
+        "ref": "C02"
+      }
+    },
+    {
+      "stop_id": "osm:node:806433981",
+      "name": "4 Avenida y 14 Calle Zona 1",
+      "coordinates": [
+        -90.5168338,
+        14.6353813
+      ],
+      "crs": "EPSG:4326",
+      "version": "2",
+      "timestamp": "2024-11-24T23:49:13Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "location": "4 Avenida y 14 Calle Zona 1",
+        "name": "4 Avenida y 14 Calle Zona 1",
+        "network": "Transurbano",
+        "operator": "Transurbano",
+        "public_transport": "platform",
+        "ref": "C03"
+      }
+    },
+    {
+      "stop_id": "osm:node:806433982",
+      "name": "4 Avenida y 16 Calle Zona 1",
+      "coordinates": [
+        -90.5171731,
+        14.6327772
+      ],
+      "crs": "EPSG:4326",
+      "version": "3",
+      "timestamp": "2024-11-24T23:49:13Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "location": "4 Avenida y 16 Calle Zona 1",
+        "name": "4 Avenida y 16 Calle Zona 1",
+        "network": "Transurbano",
+        "operator": "Transurbano",
+        "public_transport": "platform",
+        "ref": "C04"
+      }
+    },
+    {
+      "stop_id": "osm:node:1434405746",
+      "name": "Monja Blanca",
+      "coordinates": [
+        -90.512787,
+        14.6328437
+      ],
+      "crs": "EPSG:4326",
+      "version": "7",
+      "timestamp": "2025-11-14T00:34:16Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "addr:full": "8a Avenida 15-16 Zona 1",
+        "addr:housenumber": "15-16",
+        "addr:street": "8a Avenida",
+        "amenity": "bus_station",
+        "name": "Monja Blanca",
+        "operator": "Monja Blanca",
+        "public_transport": "station"
+      }
+    },
+    {
+      "stop_id": "osm:node:1653790779",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:2454738413",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:2642147371",
+      "name": "Transmetro: San Sebastián",
+      "coordinates": [
+        -90.5130566,
+        14.6458228
+      ],
+      "crs": "EPSG:4326",
+      "version": "8",
+      "timestamp": "2026-01-30T02:29:32Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: San Sebastián",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:3630249597",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:3771348502",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:3771407467",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:3771442271",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:4038754535",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:4072239289",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:4077385859",
+      "name": "Transurbano",
+      "coordinates": [
+        -90.5078182,
+        14.6394786
+      ],
+      "crs": "EPSG:4326",
+      "version": "6",
+      "timestamp": "2022-05-09T22:16:06Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transurbano",
+        "network": "Transurbano",
+        "operator": "Transurbano",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:4201078674",
+      "name": "Transmetro: Capuchinas",
+      "coordinates": [
+        -90.5099174,
+        14.6384294
+      ],
+      "crs": "EPSG:4326",
+      "version": "7",
+      "timestamp": "2026-09-01T18:30:28Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Capuchinas",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:4201078676",
+      "name": "Transmetro: Beatas de Belén",
+      "coordinates": [
+        -90.5127685,
+        14.633371
+      ],
+      "crs": "EPSG:4326",
+      "version": "7",
+      "timestamp": "2022-05-02T21:05:00Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Beatas de Belén",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:4201162083",
+      "name": "Transmetro: Plaza Barrios-FEGUA",
+      "coordinates": [
+        -90.5117932,
+        14.6305113
+      ],
+      "crs": "EPSG:4326",
+      "version": "4",
+      "timestamp": "2022-05-02T22:01:23Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Plaza Barrios-FEGUA",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:4201162084",
+      "name": "Transmetro: Francos y Monroy",
+      "coordinates": [
+        -90.5093743,
+        14.6326799
+      ],
+      "crs": "EPSG:4326",
+      "version": "5",
+      "timestamp": "2023-11-27T04:02:01Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Francos y Monroy",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:4201162890",
+      "name": "Transmetro: Colón",
+      "coordinates": [
+        -90.5083218,
+        14.6399636
+      ],
+      "crs": "EPSG:4326",
+      "version": "12",
+      "timestamp": "2022-05-03T02:59:42Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Colón",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:4341705993",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:4360586690",
+      "name": null,
+      "coordinates": [
+        -90.5110713,
+        14.629915
+      ],
+      "crs": "EPSG:4326",
+      "version": "1",
+      "timestamp": "2016-08-21T21:11:52Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop"
+      }
+    },
+    {
+      "stop_id": "osm:node:4444854315",
+      "name": "Transmetro: Banco de Guatemala",
+      "coordinates": [
+        -90.514621,
+        14.6261203
+      ],
+      "crs": "EPSG:4326",
+      "version": "4",
+      "timestamp": "2022-05-05T04:21:00Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Banco de Guatemala",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:4475741090",
+      "name": null,
+      "coordinates": [
+        -90.5163849,
+        14.6287733
+      ],
+      "crs": "EPSG:4326",
+      "version": "2",
+      "timestamp": "2025-06-05T19:35:48Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop"
+      }
+    },
+    {
+      "stop_id": "osm:node:4584196120",
+      "name": "Fuente del Norte",
+      "coordinates": [
+        -90.512471,
+        14.6312545
+      ],
+      "crs": "EPSG:4326",
+      "version": "4",
+      "timestamp": "2025-12-29T14:31:47Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "addr:street": "17 Calle",
+        "amenity": "bus_station",
+        "name": "Fuente del Norte",
+        "public_transport": "station"
+      }
+    },
+    {
+      "stop_id": "osm:node:4702824090",
+      "name": "Litegua",
+      "coordinates": [
+        -90.5101734,
+        14.6328006
+      ],
+      "crs": "EPSG:4326",
+      "version": "5",
+      "timestamp": "2025-12-22T21:27:06Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "addr:housenumber": "40",
+        "addr:street": "15 Calle",
+        "amenity": "bus_station",
+        "name": "Litegua",
+        "public_transport": "station"
+      }
+    },
+    {
+      "stop_id": "osm:node:4735674022",
+      "name": "Transmetro: Parque Centenario",
+      "coordinates": [
+        -90.5147795,
+        14.6420623
+      ],
+      "crs": "EPSG:4326",
+      "version": "6",
+      "timestamp": "2022-05-05T05:01:55Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Parque Centenario",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:4735676121",
+      "name": "Transmetro: Correos",
+      "coordinates": [
+        -90.512223,
+        14.63716
+      ],
+      "crs": "EPSG:4326",
+      "version": "5",
+      "timestamp": "2022-05-05T05:01:55Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Correos",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:4735676221",
+      "name": "TuBus: Parque Colón",
+      "coordinates": [
+        -90.5072051,
+        14.6397793
+      ],
+      "crs": "EPSG:4326",
+      "version": "4",
+      "timestamp": "2025-02-09T03:38:06Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "TuBus: Parque Colón",
+        "network": "TuBus",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:5517399773",
+      "name": "Transmetro: Plaza Municipal",
+      "coordinates": [
+        -90.5158275,
+        14.6275878
+      ],
+      "crs": "EPSG:4326",
+      "version": "4",
+      "timestamp": "2022-05-05T05:01:55Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Plaza Municipal",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:5738525321",
+      "name": "ADN Autobuses del Norte",
+      "coordinates": [
+        -90.5129507,
+        14.631778
+      ],
+      "crs": "EPSG:4326",
+      "version": "3",
+      "timestamp": "2025-11-14T00:34:16Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "addr:housenumber": "16-41",
+        "addr:street": "8a Avenida",
+        "amenity": "bus_station",
+        "name": "ADN Autobuses del Norte",
+        "public_transport": "station"
+      }
+    },
+    {
+      "stop_id": "osm:node:5859958886",
+      "name": "Transmetro: San Agustín",
+      "coordinates": [
+        -90.5152513,
+        14.6386892
+      ],
+      "crs": "EPSG:4326",
+      "version": "4",
+      "timestamp": "2022-05-03T02:59:42Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: San Agustín",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:5859958985",
+      "name": "Transmetro: Gómez Carrillo",
+      "coordinates": [
+        -90.5157783,
+        14.6345922
+      ],
+      "crs": "EPSG:4326",
+      "version": "6",
+      "timestamp": "2022-05-09T22:16:06Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Gómez Carrillo",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:5897874286",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6076306386",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6076315085",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6076315285",
+      "name": "Transmetro: Mercado Central",
+      "coordinates": [
+        -90.5114949,
+        14.6424248
+      ],
+      "crs": "EPSG:4326",
+      "version": "4",
+      "timestamp": "2022-05-03T02:59:42Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Mercado Central",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:6076315385",
+      "name": "Transmetro: Plaza Barrios",
+      "coordinates": [
+        -90.5122463,
+        14.6301308
+      ],
+      "crs": "EPSG:4326",
+      "version": "2",
+      "timestamp": "2022-05-04T05:01:23Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Plaza Barrios",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:6317617468",
+      "name": "Transmetro: La Merced",
+      "coordinates": [
+        -90.5078812,
+        14.6434904
+      ],
+      "crs": "EPSG:4326",
+      "version": "4",
+      "timestamp": "2022-05-03T02:59:42Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: La Merced",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:6441895185",
+      "name": "Cristóbal Colón",
+      "coordinates": [
+        -90.5106651,
+        14.6318509
+      ],
+      "crs": "EPSG:4326",
+      "version": "2",
+      "timestamp": "2024-11-24T23:49:13Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "amenity": "bus_station",
+        "name": "Cristóbal Colón",
+        "public_transport": "station"
+      }
+    },
+    {
+      "stop_id": "osm:node:6456984488",
+      "name": "Monja Blanca",
+      "coordinates": [
+        -90.5128917,
+        14.6329136
+      ],
+      "crs": "EPSG:4326",
+      "version": "5",
+      "timestamp": "2026-07-21T22:30:09Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "amenity": "bus_station",
+        "name": "Monja Blanca",
+        "public_transport": "station"
+      }
+    },
+    {
+      "stop_id": "osm:node:6574883598",
+      "name": "Transurbano 311-18 Calle",
+      "coordinates": [
+        -90.5096709,
+        14.6301482
+      ],
+      "crs": "EPSG:4326",
+      "version": "2",
+      "timestamp": "2024-11-24T23:49:13Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transurbano 311-18 Calle",
+        "network": "Transurbano",
+        "operator": "Transurbano",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:6580574444",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580586451",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580586452",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580586739",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580586740",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580586742",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580586743",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580586744",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580586745",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580611894",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580611895",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580619511",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580619512",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580619513",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580619514",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580763760",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580764749",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580764750",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580790034",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580802626",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580802627",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580802629",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580802630",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6580827198",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:6670504886",
+      "name": "Transmetro: Paseo de las Letras",
+      "coordinates": [
+        -90.5133215,
+        14.6298943
+      ],
+      "crs": "EPSG:4326",
+      "version": "6",
+      "timestamp": "2023-12-09T15:24:25Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Paseo de las Letras",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:6715960486",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:9644444129",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:9644649735",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:9662312674",
+      "name": "Transmetro: Centro Cívico",
+      "coordinates": [
+        -90.5148952,
+        14.6277255
+      ],
+      "crs": "EPSG:4326",
+      "version": "5",
+      "timestamp": "2024-02-04T00:49:07Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Centro Cívico",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:9662312675",
+      "name": "Transmetro: Sur 2",
+      "coordinates": [
+        -90.5163157,
+        14.6312852
+      ],
+      "crs": "EPSG:4326",
+      "version": "4",
+      "timestamp": "2024-08-18T04:32:31Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Sur 2",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:9662333548",
+      "name": "Transmetro: Tipografía",
+      "coordinates": [
+        -90.5143834,
+        14.6308335
+      ],
+      "crs": "EPSG:4326",
+      "version": "2",
+      "timestamp": "2022-05-05T01:45:32Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Tipografía",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:9704058589",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:9704058590",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:9704058591",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:9704058592",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:9704058593",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:9704058594",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:9704058595",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:9704497036",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:9704497037",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:9704497038",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:9704497039",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:9704497040",
+      "name": "Transmetro: Santa Teresa",
+      "coordinates": [
+        -90.5091401,
+        14.6441785
+      ],
+      "crs": "EPSG:4326",
+      "version": "3",
+      "timestamp": "2026-09-01T18:24:46Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Santa Teresa",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:9710451664",
+      "name": "Transmetro: Cruz Roja",
+      "coordinates": [
+        -90.5109387,
+        14.6442455
+      ],
+      "crs": "EPSG:4326",
+      "version": "2",
+      "timestamp": "2022-05-03T04:12:32Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Cruz Roja",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:9710451665",
+      "name": "Transmetro: Archivo General",
+      "coordinates": [
+        -90.5156999,
+        14.6424152
+      ],
+      "crs": "EPSG:4326",
+      "version": "3",
+      "timestamp": "2023-12-09T15:31:36Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Archivo General",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:9710451666",
+      "name": "Transmetro: Santuario de Guadalupe",
+      "coordinates": [
+        -90.519051,
+        14.642031
+      ],
+      "crs": "EPSG:4326",
+      "version": "2",
+      "timestamp": "2022-05-03T04:12:32Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Santuario de Guadalupe",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:9710451668",
+      "name": "Transmetro: San Juan de Dios",
+      "coordinates": [
+        -90.5189133,
+        14.6411986
+      ],
+      "crs": "EPSG:4326",
+      "version": "2",
+      "timestamp": "2022-05-03T04:12:32Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: San Juan de Dios",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:9710451669",
+      "name": "Transmetro: Pasaje Aycinena",
+      "coordinates": [
+        -90.5130673,
+        14.6402925
+      ],
+      "crs": "EPSG:4326",
+      "version": "2",
+      "timestamp": "2022-05-03T04:12:32Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Pasaje Aycinena",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:9716086615",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:9716924061",
+      "name": "Transmetro: Plaza Barrios (Temporal)",
+      "coordinates": [
+        -90.5123818,
+        14.6295694
+      ],
+      "crs": "EPSG:4326",
+      "version": "1",
+      "timestamp": "2022-05-05T01:45:32Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Transmetro: Plaza Barrios (Temporal)",
+        "network": "Transmetro",
+        "operator": "Municipalidad de Guatemala",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:9719106157",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:10914752814",
+      "name": null,
+      "coordinates": [
+        -90.5145145,
+        14.6262105
+      ],
+      "crs": "EPSG:4326",
+      "version": "2",
+      "timestamp": "2024-11-24T23:49:13Z",
+      "status": "verified_snapshot_record_not_operator_confirmed",
+      "tags": {
+        "highway": "bus_stop",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "stop_id": "osm:node:11378836911",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:11935055709",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:12570390876",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:12570390877",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:12570390878",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:12570390879",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:12570390880",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:12570390881",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:12570390882",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:12570390883",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:12570390884",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:12570390885",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:12570390886",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    },
+    {
+      "stop_id": "osm:node:12570390887",
+      "name": null,
+      "coordinates": null,
+      "status": "missing_from_extract"
+    }
+  ],
+  "routes": [
+    {
+      "relation_id": "906046",
+      "version": "41",
+      "timestamp": "2025-05-11T19:45:29Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "L12",
+      "name": "Transmetro L12: Plaza Barrios -> Centra Sur",
+      "from_stop": "Plaza Barrios",
+      "to_stop": "Centra Sur",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:6076315385",
+          "role": "platform",
+          "source_member_index": 0
+        },
+        {
+          "stop_id": "osm:node:726943198",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:727293935",
+          "role": "platform",
+          "source_member_index": 2
+        },
+        {
+          "stop_id": "osm:node:726965570",
+          "role": "platform",
+          "source_member_index": 3
+        },
+        {
+          "stop_id": "osm:node:4072239289",
+          "role": "platform",
+          "source_member_index": 4
+        },
+        {
+          "stop_id": "osm:node:726965575",
+          "role": "platform",
+          "source_member_index": 5
+        },
+        {
+          "stop_id": "osm:node:4341705993",
+          "role": "platform",
+          "source_member_index": 6
+        },
+        {
+          "stop_id": "osm:node:727188034",
+          "role": "platform",
+          "source_member_index": 7
+        },
+        {
+          "stop_id": "osm:node:727188035",
+          "role": "platform",
+          "source_member_index": 8
+        },
+        {
+          "stop_id": "osm:node:1653790779",
+          "role": "platform",
+          "source_member_index": 9
+        },
+        {
+          "stop_id": "osm:node:727188036",
+          "role": "platform",
+          "source_member_index": 10
+        },
+        {
+          "stop_id": "osm:node:3630249597",
+          "role": "platform",
+          "source_member_index": 11
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "58682121",
+        "1057416028",
+        "420138103",
+        "60237269",
+        "1274975831",
+        "384746799",
+        "1057486078",
+        "1274975829",
+        "45497717",
+        "1274975825",
+        "1057416031",
+        "1057717601",
+        "60237270",
+        "30279778",
+        "405158905",
+        "384907703",
+        "1272828335",
+        "381158266",
+        "384906420",
+        "405703106",
+        "405703104",
+        "1273924492",
+        "1058042641",
+        "1028513518",
+        "1057416041",
+        "1057416045",
+        "58675123",
+        "1057416032",
+        "1057416033",
+        "25835312",
+        "25835515",
+        "58675137",
+        "786420130",
+        "58675132",
+        "58682148",
+        "58682150",
+        "58682040",
+        "58682128",
+        "394493658",
+        "394493657",
+        "394493656",
+        "394493654",
+        "394493650",
+        "58682031",
+        "1057416050",
+        "58682016",
+        "633073987",
+        "1268240691",
+        "58682122"
+      ],
+      "missing_way_ids": [
+        "58682121",
+        "405703106",
+        "405703104",
+        "1273924492",
+        "1058042641",
+        "1028513518",
+        "1057416041",
+        "1057416045",
+        "58675123",
+        "1057416032",
+        "1057416033",
+        "25835312",
+        "25835515",
+        "58675137",
+        "786420130",
+        "58675132",
+        "58682148",
+        "58682150",
+        "58682040",
+        "58682128",
+        "394493658",
+        "394493657",
+        "394493656",
+        "394493654",
+        "394493650",
+        "58682031",
+        "1057416050",
+        "58682016",
+        "633073987",
+        "1268240691",
+        "58682122"
+      ],
+      "missing_stop_ids": [
+        "727293935",
+        "726965570",
+        "4072239289",
+        "726965575",
+        "4341705993",
+        "727188034",
+        "727188035",
+        "1653790779",
+        "727188036",
+        "3630249597"
+      ],
+      "raw_opening_hours": "Mo-Fr 04:30-21:00; Sa-Su 04:30-21:00",
+      "raw_interval": "00:15:00",
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "936950",
+      "version": "84",
+      "timestamp": "2026-05-25T07:10:22Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "L13",
+      "name": "Transmetro L13: Tipografía -> Hangares",
+      "from_stop": "Tipografía",
+      "to_stop": "Hangares",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:9662333548",
+          "role": "platform",
+          "source_member_index": 0
+        },
+        {
+          "stop_id": "osm:node:726943197",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:726943203",
+          "role": "platform",
+          "source_member_index": 2
+        },
+        {
+          "stop_id": "osm:node:726943199",
+          "role": "platform",
+          "source_member_index": 3
+        },
+        {
+          "stop_id": "osm:node:644825734",
+          "role": "platform",
+          "source_member_index": 4
+        },
+        {
+          "stop_id": "osm:node:6715960486",
+          "role": "platform",
+          "source_member_index": 5
+        },
+        {
+          "stop_id": "osm:node:644828949",
+          "role": "platform",
+          "source_member_index": 6
+        },
+        {
+          "stop_id": "osm:node:644829865",
+          "role": "platform",
+          "source_member_index": 7
+        },
+        {
+          "stop_id": "osm:node:798546385",
+          "role": "platform",
+          "source_member_index": 8
+        },
+        {
+          "stop_id": "osm:node:798546391",
+          "role": "platform",
+          "source_member_index": 9
+        },
+        {
+          "stop_id": "osm:node:2454738413",
+          "role": "platform",
+          "source_member_index": 10
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "1274975829",
+        "45497717",
+        "34994240",
+        "1265232221",
+        "1308544715",
+        "1521207433",
+        "1479108617",
+        "1469339314",
+        "1267837104",
+        "1476973268",
+        "1521187866",
+        "1479129349",
+        "1521189360",
+        "1521189359",
+        "1265235952",
+        "39750130",
+        "1057486153",
+        "1232526995",
+        "1057486156",
+        "400055794",
+        "34994607",
+        "695877462",
+        "762876501",
+        "39750113",
+        "1305653954",
+        "1305653949",
+        "1305653947",
+        "380143272",
+        "1057486157",
+        "1305653943",
+        "1172880544",
+        "1305653955",
+        "1057486159",
+        "1308040076",
+        "42322330"
+      ],
+      "missing_way_ids": [
+        "1479108617",
+        "1469339314",
+        "1267837104",
+        "1476973268",
+        "1521187866",
+        "1479129349",
+        "1521189360",
+        "1521189359",
+        "1265235952",
+        "39750130",
+        "1057486153",
+        "1232526995",
+        "1057486156",
+        "400055794",
+        "34994607",
+        "695877462",
+        "762876501",
+        "39750113",
+        "1305653954",
+        "1305653949",
+        "1305653947",
+        "380143272",
+        "1057486157",
+        "1305653943",
+        "1172880544",
+        "1305653955",
+        "1057486159",
+        "1308040076",
+        "42322330"
+      ],
+      "missing_stop_ids": [
+        "726943203",
+        "726943199",
+        "644825734",
+        "6715960486",
+        "644828949",
+        "644829865",
+        "798546385",
+        "798546391",
+        "2454738413"
+      ],
+      "raw_opening_hours": "Mo-Fr 05:00-21:00; Sa-Su 05:00-20:00",
+      "raw_interval": "00:15:00",
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "6245758",
+      "version": "40",
+      "timestamp": "2026-01-09T11:56:19Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "L18",
+      "name": "Transmetro L18: Atlántida -> Plaza Barrios-FEGUA",
+      "from_stop": "Atlántida",
+      "to_stop": "Plaza Barrios-FEGUA",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:9644649735",
+          "role": "platform",
+          "source_member_index": 0
+        },
+        {
+          "stop_id": "osm:node:3771348502",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:3771442271",
+          "role": "platform",
+          "source_member_index": 2
+        },
+        {
+          "stop_id": "osm:node:4201078674",
+          "role": "platform",
+          "source_member_index": 3
+        },
+        {
+          "stop_id": "osm:node:4201162083",
+          "role": "platform",
+          "source_member_index": 4
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "832425203",
+        "1058398207",
+        "1058398206",
+        "1105948678",
+        "1049464611",
+        "832425214",
+        "832425222",
+        "420140153",
+        "1054979505",
+        "314935824",
+        "65624269",
+        "65624304",
+        "1237456137",
+        "405686656",
+        "1049498243",
+        "45763184",
+        "405680527",
+        "405680515",
+        "1465602529",
+        "1465602526",
+        "45763089",
+        "30274237",
+        "420120087",
+        "420120089",
+        "638818907",
+        "30279752",
+        "58673370",
+        "638928451",
+        "45683154",
+        "49009942",
+        "1358273950",
+        "384766442",
+        "1358273951",
+        "732305246",
+        "1049482885",
+        "420138110",
+        "384766449",
+        "384731375",
+        "42839777",
+        "420120094",
+        "420120095",
+        "1274975830",
+        "420120098",
+        "420138103",
+        "1056730555"
+      ],
+      "missing_way_ids": [
+        "832425203",
+        "1058398207",
+        "1058398206",
+        "1105948678",
+        "1049464611",
+        "832425214",
+        "832425222",
+        "420140153",
+        "1054979505",
+        "314935824",
+        "65624269",
+        "65624304",
+        "1237456137",
+        "405686656",
+        "1049498243",
+        "45763184",
+        "405680527",
+        "405680515",
+        "1465602529",
+        "1465602526",
+        "45763089",
+        "30274237",
+        "420120087",
+        "420120089",
+        "638818907",
+        "30279752",
+        "58673370",
+        "638928451",
+        "45683154"
+      ],
+      "missing_stop_ids": [
+        "9644649735",
+        "3771348502",
+        "3771442271"
+      ],
+      "raw_opening_hours": "Mo-Fr 05:00-21:00; Sa 05:00-20:00; Su 06:00-20:00",
+      "raw_interval": "00:15:00",
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "10123492",
+      "version": "15",
+      "timestamp": "2025-05-11T19:47:49Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "L7",
+      "name": "Transmetro L7: La Merced -> USAC Periférico",
+      "from_stop": "La Merced",
+      "to_stop": "USAC Periférico",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:6317617468",
+          "role": "platform",
+          "source_member_index": 0
+        },
+        {
+          "stop_id": "osm:node:9710451664",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:9710451665",
+          "role": "platform",
+          "source_member_index": 2
+        },
+        {
+          "stop_id": "osm:node:9710451666",
+          "role": "platform",
+          "source_member_index": 3
+        },
+        {
+          "stop_id": "osm:node:6580764750",
+          "role": "platform",
+          "source_member_index": 4
+        },
+        {
+          "stop_id": "osm:node:6580802629",
+          "role": "platform",
+          "source_member_index": 5
+        },
+        {
+          "stop_id": "osm:node:6580802627",
+          "role": "platform",
+          "source_member_index": 6
+        },
+        {
+          "stop_id": "osm:node:6580763760",
+          "role": "platform",
+          "source_member_index": 7
+        },
+        {
+          "stop_id": "osm:node:6580619513",
+          "role": "platform",
+          "source_member_index": 8
+        },
+        {
+          "stop_id": "osm:node:6580619511",
+          "role": "platform",
+          "source_member_index": 9
+        },
+        {
+          "stop_id": "osm:node:6580586451",
+          "role": "platform",
+          "source_member_index": 10
+        },
+        {
+          "stop_id": "osm:node:6580611895",
+          "role": "platform",
+          "source_member_index": 11
+        },
+        {
+          "stop_id": "osm:node:6580586744",
+          "role": "platform",
+          "source_member_index": 12
+        },
+        {
+          "stop_id": "osm:node:6580586742",
+          "role": "platform",
+          "source_member_index": 13
+        },
+        {
+          "stop_id": "osm:node:6580586740",
+          "role": "platform",
+          "source_member_index": 14
+        },
+        {
+          "stop_id": "osm:node:6580574444",
+          "role": "platform",
+          "source_member_index": 15
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "1056782163",
+        "384762167",
+        "734011347",
+        "930035058",
+        "734011349",
+        "1270930401",
+        "260940553",
+        "48273208",
+        "1075226611",
+        "977586307",
+        "65795096",
+        "65795093",
+        "1011113744",
+        "44116868",
+        "41949241",
+        "700577060",
+        "40477088",
+        "67818098",
+        "1056782164",
+        "1030993331",
+        "405708369",
+        "381172780",
+        "381172779",
+        "1030993330",
+        "1056782165",
+        "41950587",
+        "1056782167",
+        "49406015",
+        "1056782177",
+        "1056782168",
+        "49406008",
+        "41405263",
+        "1270127241",
+        "40512990",
+        "1011113748",
+        "40512991",
+        "1046355598",
+        "44814832",
+        "734011351"
+      ],
+      "missing_way_ids": [
+        "48273208",
+        "1075226611",
+        "977586307",
+        "65795096",
+        "65795093",
+        "1011113744",
+        "44116868",
+        "41949241",
+        "700577060",
+        "40477088",
+        "67818098",
+        "1056782164",
+        "1030993331",
+        "405708369",
+        "381172780",
+        "381172779",
+        "1030993330",
+        "1056782165",
+        "41950587",
+        "1056782167",
+        "49406015",
+        "1056782177",
+        "1056782168",
+        "49406008",
+        "41405263",
+        "1270127241",
+        "40512990",
+        "1011113748",
+        "40512991",
+        "1046355598",
+        "44814832",
+        "734011351"
+      ],
+      "missing_stop_ids": [
+        "6580764750",
+        "6580802629",
+        "6580802627",
+        "6580763760",
+        "6580619513",
+        "6580619511",
+        "6580586451",
+        "6580611895",
+        "6580586744",
+        "6580586742",
+        "6580586740",
+        "6580574444"
+      ],
+      "raw_opening_hours": "Mo-Fr 05:00-21:00; Sa 05:00-20:00; Su 06:00-20:00",
+      "raw_interval": "00:15:00",
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "14034049",
+      "version": "7",
+      "timestamp": "2025-05-11T19:31:23Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "L1",
+      "name": "Transmetro L1: Centro Cívico -> San Sebastián",
+      "from_stop": "Centro Cívico",
+      "to_stop": "San Sebastían",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:9662312674",
+          "role": "platform",
+          "source_member_index": 0
+        },
+        {
+          "stop_id": "osm:node:9662312675",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:5859958985",
+          "role": "platform",
+          "source_member_index": 2
+        },
+        {
+          "stop_id": "osm:node:5859958886",
+          "role": "platform",
+          "source_member_index": 3
+        },
+        {
+          "stop_id": "osm:node:4735674022",
+          "role": "platform",
+          "source_member_index": 4
+        },
+        {
+          "stop_id": "osm:node:2642147371",
+          "role": "platform",
+          "source_member_index": 5
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "1056722244",
+        "39931882",
+        "1265232222",
+        "1308544716",
+        "559513163",
+        "1057486079",
+        "30279772",
+        "60237262",
+        "60237261",
+        "930035053",
+        "48553870",
+        "390137512",
+        "231755973",
+        "231755974",
+        "1051440047",
+        "1056722243"
+      ],
+      "missing_way_ids": [],
+      "missing_stop_ids": [],
+      "raw_opening_hours": "Mo-Fr 05:30-20:00; Sa 05:30-19:00; Su 06:30-19:00",
+      "raw_interval": "00:15:00",
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "14091640",
+      "version": "5",
+      "timestamp": "2025-05-11T19:50:57Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "L6",
+      "name": "Transmetro L6: Proyectos -> Plaza Barrios-FEGUA",
+      "from_stop": "Proyectos",
+      "to_stop": "Plaza Barrios-FEGUA",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:9704058595",
+          "role": "platform",
+          "source_member_index": 0
+        },
+        {
+          "stop_id": "osm:node:9704058594",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:9704058593",
+          "role": "platform",
+          "source_member_index": 2
+        },
+        {
+          "stop_id": "osm:node:9704497036",
+          "role": "platform",
+          "source_member_index": 3
+        },
+        {
+          "stop_id": "osm:node:9704497037",
+          "role": "platform",
+          "source_member_index": 4
+        },
+        {
+          "stop_id": "osm:node:9704497038",
+          "role": "platform",
+          "source_member_index": 5
+        },
+        {
+          "stop_id": "osm:node:9704497039",
+          "role": "platform",
+          "source_member_index": 6
+        },
+        {
+          "stop_id": "osm:node:9704497040",
+          "role": "platform",
+          "source_member_index": 7
+        },
+        {
+          "stop_id": "osm:node:4201078674",
+          "role": "platform",
+          "source_member_index": 8
+        },
+        {
+          "stop_id": "osm:node:4201162083",
+          "role": "platform",
+          "source_member_index": 9
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "1056144027",
+        "1056144028",
+        "201918844",
+        "49002748",
+        "1056144031",
+        "49001465",
+        "1032736874",
+        "1032736875",
+        "180639103",
+        "180639101",
+        "30274225",
+        "556875803",
+        "420138113",
+        "381133551",
+        "64401273",
+        "1078931128",
+        "930046779",
+        "51780527",
+        "64401270",
+        "384766449",
+        "384731375",
+        "42839777",
+        "420120094",
+        "420120095",
+        "1274975830",
+        "420120098",
+        "1056144032"
+      ],
+      "missing_way_ids": [
+        "1056144027",
+        "1056144028",
+        "201918844",
+        "49002748",
+        "1056144031",
+        "49001465",
+        "1032736874",
+        "1032736875",
+        "180639103",
+        "180639101",
+        "30274225",
+        "556875803",
+        "420138113",
+        "381133551",
+        "64401273",
+        "1078931128",
+        "930046779"
+      ],
+      "missing_stop_ids": [
+        "9704058595",
+        "9704058594",
+        "9704058593",
+        "9704497036",
+        "9704497037",
+        "9704497038",
+        "9704497039"
+      ],
+      "raw_opening_hours": "Mo-Fr 05:00-21:00; Sa 05:00-20:00; Su 06:00-20:00",
+      "raw_interval": "00:15:00",
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "14091641",
+      "version": "8",
+      "timestamp": "2025-05-11T19:50:57Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "L6",
+      "name": "Transmetro L6: Plaza Barrios-FEGUA -> Proyectos",
+      "from_stop": "Plaza Barrios-FEGUA",
+      "to_stop": "Proyectos",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:4201162083",
+          "role": "platform",
+          "source_member_index": 0
+        },
+        {
+          "stop_id": "osm:node:4201162890",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:9704497039",
+          "role": "platform",
+          "source_member_index": 2
+        },
+        {
+          "stop_id": "osm:node:9704058589",
+          "role": "platform",
+          "source_member_index": 3
+        },
+        {
+          "stop_id": "osm:node:9704058590",
+          "role": "platform",
+          "source_member_index": 4
+        },
+        {
+          "stop_id": "osm:node:9704058591",
+          "role": "platform",
+          "source_member_index": 5
+        },
+        {
+          "stop_id": "osm:node:9704058592",
+          "role": "platform",
+          "source_member_index": 6
+        },
+        {
+          "stop_id": "osm:node:9704058593",
+          "role": "platform",
+          "source_member_index": 7
+        },
+        {
+          "stop_id": "osm:node:9704058594",
+          "role": "platform",
+          "source_member_index": 8
+        },
+        {
+          "stop_id": "osm:node:9704058595",
+          "role": "platform",
+          "source_member_index": 9
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "420138102",
+        "1056144033",
+        "420120100",
+        "420120099",
+        "1208137406",
+        "1208137405",
+        "643206233",
+        "732305246",
+        "1049482885",
+        "420138111",
+        "1056782163",
+        "732305247",
+        "1078931128",
+        "64401273",
+        "381133551",
+        "30274222",
+        "699533706",
+        "381382147",
+        "381382150",
+        "1032736873",
+        "381382152",
+        "384766446",
+        "1056144034",
+        "381382160",
+        "49001468",
+        "388504060",
+        "49002764",
+        "201918845"
+      ],
+      "missing_way_ids": [
+        "1078931128",
+        "64401273",
+        "381133551",
+        "30274222",
+        "699533706",
+        "381382147",
+        "381382150",
+        "1032736873",
+        "381382152",
+        "384766446",
+        "1056144034",
+        "381382160",
+        "49001468",
+        "388504060",
+        "49002764",
+        "201918845"
+      ],
+      "missing_stop_ids": [
+        "9704497039",
+        "9704058589",
+        "9704058590",
+        "9704058591",
+        "9704058592",
+        "9704058593",
+        "9704058594",
+        "9704058595"
+      ],
+      "raw_opening_hours": "Mo-Fr 05:00-21:00; Sa 05:00-20:00; Su 06:00-20:00",
+      "raw_interval": "00:15:00",
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "14099833",
+      "version": "4",
+      "timestamp": "2025-05-11T19:31:23Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "L1",
+      "name": "Transmetro L1: San Sebastían -> Centro Cívico",
+      "from_stop": "San Sebastían",
+      "to_stop": "Centro Cívico",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:2642147371",
+          "role": "platform",
+          "source_member_index": 0
+        },
+        {
+          "stop_id": "osm:node:6076315285",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:4735676121",
+          "role": "platform",
+          "source_member_index": 2
+        },
+        {
+          "stop_id": "osm:node:4201078676",
+          "role": "platform",
+          "source_member_index": 3
+        },
+        {
+          "stop_id": "osm:node:6670504886",
+          "role": "platform",
+          "source_member_index": 4
+        },
+        {
+          "stop_id": "osm:node:9662312674",
+          "role": "platform",
+          "source_member_index": 5
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "749676932",
+        "1051440043",
+        "51770227",
+        "381133555",
+        "381133556",
+        "30262982",
+        "420120095",
+        "1274975830",
+        "420120097",
+        "381144595",
+        "1051440044",
+        "42839658"
+      ],
+      "missing_way_ids": [],
+      "missing_stop_ids": [],
+      "raw_opening_hours": "Mo-Fr 05:30-20:00; Sa 05:30-19:00; Su 06:30-19:00",
+      "raw_interval": "00:15:00",
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "14099910",
+      "version": "10",
+      "timestamp": "2026-08-29T14:55:45Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "L18",
+      "name": "Transmetro L18: Plaza Barrios-FEGUA -> Atlántida",
+      "from_stop": "Plaza Barrios-FEGUA",
+      "to_stop": "Atlántida",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:4201162083",
+          "role": "platform",
+          "source_member_index": 0
+        },
+        {
+          "stop_id": "osm:node:4201162084",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:4201162890",
+          "role": "platform",
+          "source_member_index": 2
+        },
+        {
+          "stop_id": "osm:node:9704497039",
+          "role": "platform",
+          "source_member_index": 3
+        },
+        {
+          "stop_id": "osm:node:3771407467",
+          "role": "platform",
+          "source_member_index": 4
+        },
+        {
+          "stop_id": "osm:node:3771348502",
+          "role": "platform",
+          "source_member_index": 5
+        },
+        {
+          "stop_id": "osm:node:9644444129",
+          "role": "platform",
+          "source_member_index": 6
+        },
+        {
+          "stop_id": "osm:node:9644649735",
+          "role": "platform",
+          "source_member_index": 7
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "45497702",
+        "420120100",
+        "420120099",
+        "1208137406",
+        "643206232",
+        "1049482885",
+        "420138111",
+        "1056782163",
+        "732305247",
+        "1078931128",
+        "64401273",
+        "381133551",
+        "30274222",
+        "699533706",
+        "381382147",
+        "381382150",
+        "370803767",
+        "384766457",
+        "1553431372",
+        "405680516",
+        "405680517",
+        "405680527",
+        "45763184",
+        "1049498243",
+        "1049498242",
+        "405686657",
+        "65624266",
+        "65624267",
+        "398637998",
+        "243838261",
+        "49022000",
+        "180763152",
+        "1056730554",
+        "1111197045"
+      ],
+      "missing_way_ids": [
+        "1078931128",
+        "64401273",
+        "381133551",
+        "30274222",
+        "699533706",
+        "381382147",
+        "381382150",
+        "370803767",
+        "384766457",
+        "1553431372",
+        "405680516",
+        "405680517",
+        "405680527",
+        "45763184",
+        "1049498243",
+        "1049498242",
+        "405686657",
+        "65624266",
+        "65624267",
+        "398637998",
+        "243838261",
+        "49022000",
+        "180763152",
+        "1056730554",
+        "1111197045"
+      ],
+      "missing_stop_ids": [
+        "9704497039",
+        "3771407467",
+        "3771348502",
+        "9644444129",
+        "9644649735"
+      ],
+      "raw_opening_hours": "Mo-Fr 05:00-21:00; Sa 05:00-20:00; Su 06:00-20:00",
+      "raw_interval": "00:15:00",
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "14100221",
+      "version": "11",
+      "timestamp": "2025-05-11T19:47:49Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "L7",
+      "name": "Transmetro L7: USAC Periférico -> La Merced",
+      "from_stop": "USAC Periférico",
+      "to_stop": "La Merced",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:6580574444",
+          "role": "platform",
+          "source_member_index": 0
+        },
+        {
+          "stop_id": "osm:node:6580586739",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:6580586743",
+          "role": "platform",
+          "source_member_index": 2
+        },
+        {
+          "stop_id": "osm:node:6580586745",
+          "role": "platform",
+          "source_member_index": 3
+        },
+        {
+          "stop_id": "osm:node:6580611894",
+          "role": "platform",
+          "source_member_index": 4
+        },
+        {
+          "stop_id": "osm:node:6580586452",
+          "role": "platform",
+          "source_member_index": 5
+        },
+        {
+          "stop_id": "osm:node:6580619512",
+          "role": "platform",
+          "source_member_index": 6
+        },
+        {
+          "stop_id": "osm:node:6580619514",
+          "role": "platform",
+          "source_member_index": 7
+        },
+        {
+          "stop_id": "osm:node:6580790034",
+          "role": "platform",
+          "source_member_index": 8
+        },
+        {
+          "stop_id": "osm:node:6580802626",
+          "role": "platform",
+          "source_member_index": 9
+        },
+        {
+          "stop_id": "osm:node:6580802630",
+          "role": "platform",
+          "source_member_index": 10
+        },
+        {
+          "stop_id": "osm:node:6580764749",
+          "role": "platform",
+          "source_member_index": 11
+        },
+        {
+          "stop_id": "osm:node:9710451668",
+          "role": "platform",
+          "source_member_index": 12
+        },
+        {
+          "stop_id": "osm:node:9710451669",
+          "role": "platform",
+          "source_member_index": 13
+        },
+        {
+          "stop_id": "osm:node:6317617468",
+          "role": "platform",
+          "source_member_index": 14
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "734011352",
+        "1030999348",
+        "302579452",
+        "39328854",
+        "1031005923",
+        "40512988",
+        "1031005924",
+        "1056782170",
+        "80879355",
+        "41405259",
+        "1267131800",
+        "81104686",
+        "1056782169",
+        "41950571",
+        "1056782172",
+        "64377930",
+        "64377931",
+        "64377927",
+        "1056782174",
+        "1273138048",
+        "41949609",
+        "1266573301",
+        "796552744",
+        "1266577747",
+        "794220588",
+        "794220589",
+        "67818080",
+        "67818081",
+        "44116869",
+        "1011113745",
+        "44116871",
+        "65795087",
+        "1056782176",
+        "44486665",
+        "260936848",
+        "917940877",
+        "48273209",
+        "1159234896",
+        "384736604",
+        "643204393",
+        "420138111"
+      ],
+      "missing_way_ids": [
+        "734011352",
+        "1030999348",
+        "302579452",
+        "39328854",
+        "1031005923",
+        "40512988",
+        "1031005924",
+        "1056782170",
+        "80879355",
+        "41405259",
+        "1267131800",
+        "81104686",
+        "1056782169",
+        "41950571",
+        "1056782172",
+        "64377930",
+        "64377931",
+        "64377927",
+        "1056782174",
+        "1273138048",
+        "41949609",
+        "1266573301",
+        "796552744",
+        "1266577747",
+        "794220588",
+        "794220589",
+        "67818080",
+        "67818081",
+        "44116869",
+        "1011113745",
+        "44116871",
+        "65795087",
+        "1056782176",
+        "44486665"
+      ],
+      "missing_stop_ids": [
+        "6580574444",
+        "6580586739",
+        "6580586743",
+        "6580586745",
+        "6580611894",
+        "6580586452",
+        "6580619512",
+        "6580619514",
+        "6580790034",
+        "6580802626",
+        "6580802630",
+        "6580764749"
+      ],
+      "raw_opening_hours": "Mo-Fr 05:00-21:00; Sa 05:00-20:00; Su 06:00-20:00",
+      "raw_interval": "00:15:00",
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "14106867",
+      "version": "15",
+      "timestamp": "2026-05-25T07:18:29Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "L12",
+      "name": "Transmetro L12: Centra Sur -> Plaza Barrios",
+      "from_stop": "Centra Sur",
+      "to_stop": "Plaza Barrios",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:3630249597",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:727188036",
+          "role": "platform",
+          "source_member_index": 2
+        },
+        {
+          "stop_id": "osm:node:9716086615",
+          "role": "platform",
+          "source_member_index": 3
+        },
+        {
+          "stop_id": "osm:node:727188035",
+          "role": "platform",
+          "source_member_index": 4
+        },
+        {
+          "stop_id": "osm:node:727188031",
+          "role": "platform",
+          "source_member_index": 5
+        },
+        {
+          "stop_id": "osm:node:637591059",
+          "role": "platform",
+          "source_member_index": 6
+        },
+        {
+          "stop_id": "osm:node:726965575",
+          "role": "platform",
+          "source_member_index": 7
+        },
+        {
+          "stop_id": "osm:node:4072239289",
+          "role": "platform",
+          "source_member_index": 8
+        },
+        {
+          "stop_id": "osm:node:726965573",
+          "role": "platform",
+          "source_member_index": 9
+        },
+        {
+          "stop_id": "osm:node:727293935",
+          "role": "platform",
+          "source_member_index": 10
+        },
+        {
+          "stop_id": "osm:node:5517399773",
+          "role": "platform",
+          "source_member_index": 11
+        },
+        {
+          "stop_id": "osm:node:6076315385",
+          "role": "platform",
+          "source_member_index": 12
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "58682121",
+        "58682112",
+        "633073988",
+        "58682016",
+        "1057416050",
+        "58682031",
+        "394493650",
+        "394493654",
+        "394493656",
+        "394493657",
+        "394493658",
+        "58682128",
+        "58682033",
+        "58682150",
+        "58682149",
+        "58675132",
+        "40512992",
+        "58675120",
+        "58675122",
+        "58675123",
+        "1057416045",
+        "1057416041",
+        "1028513518",
+        "1058042641",
+        "58692345",
+        "1057416055",
+        "1057416056",
+        "792918640",
+        "381158282",
+        "1521208741",
+        "64387808",
+        "60237257",
+        "64387809",
+        "60237259",
+        "400843678",
+        "1521207432",
+        "60237256",
+        "1057486080",
+        "34994087",
+        "1241482280",
+        "1305621751",
+        "1057416059",
+        "34993910",
+        "1304369291",
+        "1479114531",
+        "60237266",
+        "1057416062",
+        "1057066512"
+      ],
+      "missing_way_ids": [
+        "58682121",
+        "58682112",
+        "633073988",
+        "58682016",
+        "1057416050",
+        "58682031",
+        "394493650",
+        "394493654",
+        "394493656",
+        "394493657",
+        "394493658",
+        "58682128",
+        "58682033",
+        "58682150",
+        "58682149",
+        "58675132",
+        "40512992",
+        "58675120",
+        "58675122",
+        "58675123",
+        "1057416045",
+        "1057416041",
+        "1028513518",
+        "1058042641",
+        "58692345",
+        "1057416055"
+      ],
+      "missing_stop_ids": [
+        "3630249597",
+        "727188036",
+        "9716086615",
+        "727188035",
+        "727188031",
+        "637591059",
+        "726965575",
+        "4072239289",
+        "726965573",
+        "727293935"
+      ],
+      "raw_opening_hours": "Mo-Fr 04:30-21:00; Sa-Su 04:30-21:00",
+      "raw_interval": "00:15:00",
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "14107352",
+      "version": "17",
+      "timestamp": "2026-05-25T06:59:57Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "L13",
+      "name": "Transmetro L13: Hangares -> Tipografía",
+      "from_stop": "Hangares",
+      "to_stop": "Tipografía",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:2454738413",
+          "role": "platform",
+          "source_member_index": 0
+        },
+        {
+          "stop_id": "osm:node:4038754535",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:798546390",
+          "role": "platform",
+          "source_member_index": 2
+        },
+        {
+          "stop_id": "osm:node:726943192",
+          "role": "platform",
+          "source_member_index": 3
+        },
+        {
+          "stop_id": "osm:node:726943191",
+          "role": "platform",
+          "source_member_index": 4
+        },
+        {
+          "stop_id": "osm:node:5897874286",
+          "role": "platform",
+          "source_member_index": 5
+        },
+        {
+          "stop_id": "osm:node:726943187",
+          "role": "platform",
+          "source_member_index": 6
+        },
+        {
+          "stop_id": "osm:node:726943195",
+          "role": "platform",
+          "source_member_index": 7
+        },
+        {
+          "stop_id": "osm:node:11378836911",
+          "role": "platform",
+          "source_member_index": 8
+        },
+        {
+          "stop_id": "osm:node:4444854315",
+          "role": "platform",
+          "source_member_index": 9
+        },
+        {
+          "stop_id": "osm:node:9716924061",
+          "role": "platform_exit_only",
+          "source_member_index": 10
+        },
+        {
+          "stop_id": "osm:node:9662333548",
+          "role": "platform",
+          "source_member_index": 11
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "1057486160",
+        "81528344",
+        "1300961936",
+        "1300961935",
+        "1300961939",
+        "1300961937",
+        "1057486161",
+        "48133808",
+        "42322955",
+        "1057486163",
+        "42322334",
+        "1430929882",
+        "378590690",
+        "42321419",
+        "404407988",
+        "39750159",
+        "1241484340",
+        "1273855652",
+        "1479129352",
+        "1479129351",
+        "1479142556",
+        "1479142558",
+        "1273871888",
+        "67116034",
+        "1273871887",
+        "1272087763",
+        "1467361286",
+        "1521202579",
+        "1521202580",
+        "1305621751",
+        "1057416059",
+        "34993910",
+        "1304369291",
+        "1479114531",
+        "60237266",
+        "1057416061",
+        "381144599",
+        "420138103",
+        "60237269",
+        "1274975831",
+        "384746799",
+        "1057486078"
+      ],
+      "missing_way_ids": [
+        "1057486160",
+        "81528344",
+        "1300961936",
+        "1300961935",
+        "1300961939",
+        "1300961937",
+        "1057486161",
+        "48133808",
+        "42322955",
+        "1057486163",
+        "42322334",
+        "1430929882",
+        "378590690",
+        "42321419",
+        "404407988",
+        "39750159",
+        "1241484340",
+        "1273855652",
+        "1479129352",
+        "1479129351",
+        "1479142556",
+        "1479142558",
+        "1273871888",
+        "67116034",
+        "1273871887",
+        "1272087763",
+        "1467361286",
+        "1521202579"
+      ],
+      "missing_stop_ids": [
+        "2454738413",
+        "4038754535",
+        "798546390",
+        "726943192",
+        "726943191",
+        "5897874286",
+        "726943187",
+        "726943195",
+        "11378836911"
+      ],
+      "raw_opening_hours": "Mo-Fr 05:00-21:00; Sa-Su 05:00-20:00",
+      "raw_interval": "00:15:00",
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "14110587",
+      "version": "8",
+      "timestamp": "2026-05-25T07:18:29Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "D12",
+      "name": "Transmetro D12: Directo Centra Sur -> Plaza El Amate",
+      "from_stop": "Centra Sur",
+      "to_stop": "Plaza El Amate",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:726965575",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:726943198",
+          "role": "platform",
+          "source_member_index": 2
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "58682121",
+        "58682112",
+        "633073988",
+        "58682016",
+        "1057416050",
+        "58682031",
+        "394493650",
+        "394493654",
+        "394493656",
+        "394493657",
+        "394493658",
+        "58682128",
+        "58682033",
+        "58682150",
+        "58682149",
+        "58675132",
+        "40512992",
+        "58675120",
+        "58675122",
+        "58675123",
+        "1057416045",
+        "1057416041",
+        "1028513518",
+        "58692347",
+        "60238191",
+        "699533703",
+        "405701908",
+        "792918640",
+        "381158282",
+        "1521208741",
+        "559513165",
+        "60237258",
+        "381158240",
+        "1392373016",
+        "1001524018",
+        "60237262",
+        "60237261",
+        "1057416031"
+      ],
+      "missing_way_ids": [
+        "58682121",
+        "58682112",
+        "633073988",
+        "58682016",
+        "1057416050",
+        "58682031",
+        "394493650",
+        "394493654",
+        "394493656",
+        "394493657",
+        "394493658",
+        "58682128",
+        "58682033",
+        "58682150",
+        "58682149",
+        "58675132",
+        "40512992",
+        "58675120",
+        "58675122",
+        "58675123",
+        "1057416045",
+        "1057416041",
+        "1028513518",
+        "58692347",
+        "60238191",
+        "699533703"
+      ],
+      "missing_stop_ids": [
+        "726965575"
+      ],
+      "raw_opening_hours": "Mo-Fr 04:30-08:30,16:30-19:00; Sa 04:30-08:30,11:30-13:30",
+      "raw_interval": null,
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "14110588",
+      "version": "9",
+      "timestamp": "2025-05-11T19:45:29Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "D12",
+      "name": "Transmetro D12: Directo Plaza El Amate -> Centra Sur",
+      "from_stop": "Plaza El Amate",
+      "to_stop": "Centra Sur",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:726943198",
+          "role": "platform",
+          "source_member_index": 0
+        },
+        {
+          "stop_id": "osm:node:726965575",
+          "role": "platform",
+          "source_member_index": 1
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "58682121",
+        "1057717601",
+        "60237270",
+        "30279778",
+        "405158905",
+        "384907703",
+        "1272828335",
+        "381158266",
+        "384906420",
+        "405703106",
+        "405703104",
+        "1273924492",
+        "1058042641",
+        "1028513518",
+        "1057416041",
+        "1057416045",
+        "58675123",
+        "1057416032",
+        "1057416033",
+        "25835312",
+        "25835515",
+        "58675137",
+        "786420130",
+        "58675132",
+        "58682148",
+        "58682150",
+        "58682040",
+        "58682128",
+        "394493658",
+        "394493657",
+        "394493656",
+        "394493654",
+        "394493650",
+        "58682031",
+        "1057416050",
+        "58682016",
+        "633073987",
+        "1268240691",
+        "58682122"
+      ],
+      "missing_way_ids": [
+        "58682121",
+        "405703106",
+        "405703104",
+        "1273924492",
+        "1058042641",
+        "1028513518",
+        "1057416041",
+        "1057416045",
+        "58675123",
+        "1057416032",
+        "1057416033",
+        "25835312",
+        "25835515",
+        "58675137",
+        "786420130",
+        "58675132",
+        "58682148",
+        "58682150",
+        "58682040",
+        "58682128",
+        "394493658",
+        "394493657",
+        "394493656",
+        "394493654",
+        "394493650",
+        "58682031",
+        "1057416050",
+        "58682016",
+        "633073987",
+        "1268240691",
+        "58682122"
+      ],
+      "missing_stop_ids": [
+        "726965575"
+      ],
+      "raw_opening_hours": "Mo-Fr 04:30-08:30,16:30-19:00; Sa 04:30-08:30,11:30-13:30",
+      "raw_interval": null,
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "14110814",
+      "version": "10",
+      "timestamp": "2025-05-11T19:33:01Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "L2",
+      "name": "Transmetro L2: San Sebastían -> Hipódromo del Norte",
+      "from_stop": "San Sebastían",
+      "to_stop": "Hipódromo del Norte",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:2642147371",
+          "role": "platform",
+          "source_member_index": 0
+        },
+        {
+          "stop_id": "osm:node:9719106157",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:6076306386",
+          "role": "platform",
+          "source_member_index": 2
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "749676932",
+        "1057741805",
+        "1174627097",
+        "699533697",
+        "699533698",
+        "406692234",
+        "1272100335",
+        "1029478049",
+        "59468050",
+        "1174598547",
+        "1057741806",
+        "1174598546",
+        "1174598543",
+        "1174598542",
+        "65774717"
+      ],
+      "missing_way_ids": [
+        "1174627097",
+        "699533697",
+        "699533698",
+        "406692234",
+        "1272100335",
+        "1029478049",
+        "59468050",
+        "1174598547",
+        "1057741806",
+        "1174598546",
+        "1174598543",
+        "1174598542",
+        "65774717"
+      ],
+      "missing_stop_ids": [
+        "9719106157",
+        "6076306386"
+      ],
+      "raw_opening_hours": "Mo-Fr 05:30-20:00; Sa 05:30-19:00; Su 06:30-19:00",
+      "raw_interval": "00:15:00",
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "14110815",
+      "version": "5",
+      "timestamp": "2025-05-11T19:33:01Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "L2",
+      "name": "Transmetro L2: Hipódromo del Norte -> San Sebastían",
+      "from_stop": "Hipódromo del Norte",
+      "to_stop": "San Sebastían",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:6076306386",
+          "role": "platform",
+          "source_member_index": 0
+        },
+        {
+          "stop_id": "osm:node:6076315085",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:6580827198",
+          "role": "platform",
+          "source_member_index": 2
+        },
+        {
+          "stop_id": "osm:node:2642147371",
+          "role": "platform",
+          "source_member_index": 3
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "1308046952",
+        "65774717",
+        "1174598542",
+        "1174598543",
+        "1174598546",
+        "1057741806",
+        "1174598547",
+        "65774732",
+        "699530413",
+        "917940874",
+        "381097606",
+        "699530414",
+        "41991901",
+        "381097595",
+        "1056722243",
+        "1174598555"
+      ],
+      "missing_way_ids": [
+        "1308046952",
+        "65774717",
+        "1174598542",
+        "1174598543",
+        "1174598546",
+        "1057741806",
+        "1174598547",
+        "65774732",
+        "699530413",
+        "917940874",
+        "381097606",
+        "699530414",
+        "41991901",
+        "1174598555"
+      ],
+      "missing_stop_ids": [
+        "6076306386",
+        "6076315085",
+        "6580827198"
+      ],
+      "raw_opening_hours": "Mo-Fr 05:30-20:00; Sa 05:30-19:00; Su 06:30-19:00",
+      "raw_interval": "00:15:00",
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "18672965",
+      "version": "9",
+      "timestamp": "2026-04-22T05:10:35Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "R5",
+      "name": "TuBus R5: Parque Colón -> Penitenciaría",
+      "from_stop": "Parque Colón",
+      "to_stop": "Penitenciaría",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:4735676221",
+          "role": "platform",
+          "source_member_index": 0
+        },
+        {
+          "stop_id": "osm:node:12570390876",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:12570390877",
+          "role": "platform",
+          "source_member_index": 2
+        },
+        {
+          "stop_id": "osm:node:12570390878",
+          "role": "platform",
+          "source_member_index": 3
+        },
+        {
+          "stop_id": "osm:node:12570390879",
+          "role": "platform",
+          "source_member_index": 4
+        },
+        {
+          "stop_id": "osm:node:12570390880",
+          "role": "platform",
+          "source_member_index": 5
+        },
+        {
+          "stop_id": "osm:node:12570390881",
+          "role": "platform",
+          "source_member_index": 6
+        },
+        {
+          "stop_id": "osm:node:12570390882",
+          "role": "platform",
+          "source_member_index": 7
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "1358273942",
+        "1159234897",
+        "381382165",
+        "381382168",
+        "1358273948",
+        "45683154",
+        "638928491",
+        "420120090",
+        "762737223",
+        "762737224",
+        "762737222",
+        "34980547",
+        "1111162012",
+        "398273229",
+        "762953659",
+        "762953693",
+        "762953690",
+        "45494414",
+        "109460729",
+        "67109774",
+        "1241709732",
+        "67112981",
+        "67112985",
+        "401505601"
+      ],
+      "missing_way_ids": [
+        "45683154",
+        "638928491",
+        "420120090",
+        "762737223",
+        "762737224",
+        "762737222",
+        "34980547",
+        "1111162012",
+        "398273229",
+        "762953659",
+        "762953693",
+        "762953690",
+        "45494414",
+        "109460729",
+        "67109774",
+        "1241709732",
+        "67112981",
+        "67112985",
+        "401505601"
+      ],
+      "missing_stop_ids": [
+        "12570390876",
+        "12570390877",
+        "12570390878",
+        "12570390879",
+        "12570390880",
+        "12570390881",
+        "12570390882"
+      ],
+      "raw_opening_hours": "Mo-Sa 05:30-19:00; Su 06:00-18:00",
+      "raw_interval": "00:15:00",
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    },
+    {
+      "relation_id": "18672966",
+      "version": "5",
+      "timestamp": "2026-08-10T00:18:10Z",
+      "source_id": "osm-snapshot",
+      "operator": "Municipalidad de Guatemala",
+      "line": "R5",
+      "name": "TuBus R5: Penitenciaría -> Parque Colón",
+      "from_stop": "Penitenciaría",
+      "to_stop": "Parque Colón",
+      "stop_sequence": [
+        {
+          "stop_id": "osm:node:12570390882",
+          "role": "platform",
+          "source_member_index": 0
+        },
+        {
+          "stop_id": "osm:node:12570390883",
+          "role": "platform",
+          "source_member_index": 1
+        },
+        {
+          "stop_id": "osm:node:12570390884",
+          "role": "platform",
+          "source_member_index": 2
+        },
+        {
+          "stop_id": "osm:node:12570390885",
+          "role": "platform",
+          "source_member_index": 3
+        },
+        {
+          "stop_id": "osm:node:12570390878",
+          "role": "platform",
+          "source_member_index": 4
+        },
+        {
+          "stop_id": "osm:node:12570390886",
+          "role": "platform",
+          "source_member_index": 5
+        },
+        {
+          "stop_id": "osm:node:12570390887",
+          "role": "platform",
+          "source_member_index": 6
+        },
+        {
+          "stop_id": "osm:node:11935055709",
+          "role": "platform",
+          "source_member_index": 7
+        },
+        {
+          "stop_id": "osm:node:4735676221",
+          "role": "platform",
+          "source_member_index": 8
+        }
+      ],
+      "order_scope": "OSM relation member order only; not certified current stop sequence",
+      "ways_in_source_order": [
+        "67112965",
+        "34994099",
+        "60237264",
+        "1267837108",
+        "401505599",
+        "401505600",
+        "67112969",
+        "67112970",
+        "35150591",
+        "1306644141",
+        "381133561",
+        "1306644142",
+        "1302146437",
+        "35137678",
+        "762953658",
+        "41889016",
+        "762953669",
+        "762953670",
+        "444354355",
+        "762953673",
+        "762953672",
+        "762953674",
+        "762953671",
+        "398273230",
+        "398273227",
+        "762737216",
+        "1472890074",
+        "201122808",
+        "762737220",
+        "420120090",
+        "638928491",
+        "45683154",
+        "1358273948",
+        "1358273949",
+        "384766442",
+        "1358273952"
+      ],
+      "missing_way_ids": [
+        "1267837108",
+        "401505599",
+        "401505600",
+        "67112969",
+        "67112970",
+        "35150591",
+        "1306644141",
+        "381133561",
+        "1306644142",
+        "1302146437",
+        "35137678",
+        "762953658",
+        "41889016",
+        "762953669",
+        "762953670",
+        "444354355",
+        "762953673",
+        "762953672",
+        "762953674",
+        "762953671",
+        "398273230",
+        "398273227",
+        "762737216",
+        "1472890074",
+        "201122808",
+        "762737220",
+        "420120090",
+        "638928491",
+        "45683154"
+      ],
+      "missing_stop_ids": [
+        "12570390882",
+        "12570390883",
+        "12570390884",
+        "12570390885",
+        "12570390878",
+        "12570390886",
+        "12570390887",
+        "11935055709"
+      ],
+      "raw_opening_hours": "Mo-Sa 05:30-19:00; Su 06:00-18:00",
+      "raw_interval": "00:15:00",
+      "calendar_status": "unconfirmed_community_tags_not_adopted",
+      "geometry": null,
+      "geometry_status": "not_reconstructed_from_partial_members",
+      "production_enabled": false
+    }
+  ]
+}

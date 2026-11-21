@@ -1,0 +1,19 @@
+{
+  "schema": "simz1-freight-completion-policy",
+  "version": "freight-entry-and-completion-close-plus3600-v2",
+  "assumption_status": "synthetic_experiment_not_legal_permission",
+  "nominal_windows_seconds": [[0, 18000], [32400, 57600], [75600, 104400]],
+  "tolerance_seconds": 3600,
+  "deadline_inclusive": true,
+  "window_assignment": "original_roster_planned_departure",
+  "entry_policy": "assigned_window_close_plus3600_inclusive",
+  "entry_deadline_equals_completion_deadline": true,
+  "demand_end_seconds_exclusive": 86400,
+  "observation_policy": "fixed-day-24h-v1",
+  "observation_end_seconds": 86400,
+  "completion_requires": ["native_arrival", "traffic_exit", "native_body_plus_0.10m_clearance"],
+  "nominal_violation_retained": true,
+  "deadline_does_not_interrupt_qsim": true,
+  "expired_origin_behavior": "retain_native_fifo_wait_until_normal_day_census_and_cleanup",
+  "historical_runs_reinterpreted": false
+}

@@ -1,0 +1,65 @@
+{
+  "utc": "2026-11-02T20:51:03.188944+00:00",
+  "run_id": "simz1-9d7db3ba801841f9b501209229f58bfc",
+  "iteration": 0,
+  "source_fingerprint": "bb6d1453a566405281d76968e9470615ff0e1d66e8bd50d598511a190bb26563",
+  "phase": "diagnosed_acceptance_failure_no_additional_demonstrated_software_defect",
+  "new_native_attempt_authorized_by_evidence": false,
+  "native_state": "failed/invalid interrupted",
+  "remaining_first_window_violations": 13,
+  "proven_repair": {
+    "mechanism": "Fixed lane iteration repeatedly preferred newly exposed heads over an older competing head",
+    "source": "Zona1QNodeImpl.moveLink",
+    "before_exit": 1,
+    "after_exit": 0,
+    "validate_exit": 0,
+    "dry_run_exit": 0,
+    "run_exit": 1,
+    "focus_426_link43_residence_before_seconds": 6195,
+    "focus_426_link43_residence_after_seconds": 551,
+    "focus_426_arrival_before": 18826,
+    "focus_426_arrival_after": 15148
+  },
+  "remaining_chain": {
+    "truck": "freight_000546",
+    "link11_interval": [
+      16646,
+      17506
+    ],
+    "own_head_delay_seconds": 3,
+    "preceding_native_lane_head": "z1_160867",
+    "head_wait_interval": [
+      17177,
+      17494
+    ],
+    "rejected_receipt": "osm_1272882109_1_forward",
+    "receipt_useful_meters": 9.19681537810697,
+    "each_car_footprint_meters": 4.6,
+    "receipt_owner": "z1_84173",
+    "owner_hold_interval": [
+      12464,
+      17494
+    ],
+    "owner_future_movement": "osm_1272882108_1_forward -> osm_48273209_13_forward",
+    "historical_control_change_samples": 123,
+    "samples_with_main_cross_same_or_next_tick": 123,
+    "main_crossings_during_owner_hold": 169,
+    "native_fixture": "side-priority-pinned-_ui2f7yk/execution.json",
+    "native_fixture_exit": 0
+  },
+  "interpretation": "The sampled receiving rejection, FIFO dependence and future-priority veto are consistent with the existing physical/priority contract. No stale reservation or false independence was demonstrated for this remaining chain.",
+  "policy_limit": "maxYieldSeconds=30 applies to an actual head at the priority node. A head held before a whole-body passage does not receive future-node fairness. Current code explicitly preserves executable main-road priority for this lookahead.",
+  "possible_scope_change": "Define and validate fairness for real upstream heads requesting an entire passage, including all future controls and physical exclusions. This changes the current scope of the synthetic priority rule; it is not established here as a software repair and is not applied. It would not guarantee that all 13 deadlines or the full day pass.",
+  "uncertainty": "This chain does not apportion all delay of all 13 vehicles, and does not establish inherent physical infeasibility of the real street network. A new 180000 attempt without a further demonstrated correction would repeat an invalid revision.",
+  "reconciliation_matches_live_observer": true,
+  "observer_exit": 0,
+  "full_native_completion": false,
+  "screening": "not_executed",
+  "official_plots": "not_generated_no_accepted_run",
+  "viewer": "not_generated_no_accepted_run",
+  "free_disk_bytes": 105138114560,
+  "free_disk_gib": 97.91749954223633,
+  "required_free_gib": 100,
+  "process_verification": "runtime\\2avenida-20261102\\final-process-check.json",
+  "processes_verified_utc": "2026-11-02T20:53:11.5320856Z"
+}

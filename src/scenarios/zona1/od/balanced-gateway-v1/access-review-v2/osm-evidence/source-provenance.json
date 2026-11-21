@@ -1,0 +1,26 @@
+{
+  "retrieved_utc": "2026-11-01T15:01:10.003153+00:00",
+  "attribution": "OpenStreetMap contributors; ODbL 1.0",
+  "sources": {
+    "relation-17478998-full.osm": {
+      "url": "https://api.openstreetmap.org/api/0.6/relation/17478998/full",
+      "sha256": "5c59f1b6df35c2a0578248756e6726dfaf6934e249766a32a9bc806e8abae56a",
+      "bytes": 2743
+    },
+    "relation-17884471-full.osm": {
+      "url": "https://api.openstreetmap.org/api/0.6/relation/17884471/full",
+      "sha256": "a8c6cebc9f000db4d22cf91c89baf922bb3986f000462f3118e8945da947f977",
+      "bytes": 1284
+    },
+    "relation-17884471-history.osm": {
+      "url": "https://api.openstreetmap.org/api/0.6/relation/17884471/history",
+      "sha256": "0de8189aa2b375ac227a599e97aae84bde26c1e5a2f32af3297d82067ff254ad",
+      "bytes": 947
+    },
+    "way-381158225-history.osm": {
+      "url": "https://api.openstreetmap.org/api/0.6/way/381158225/history",
+      "sha256": "b9e7713f22785de5ce2836a4bd13d42035d0d4b48d7e1288441d48e00d5258e6",
+      "bytes": 4880
+    }
+  }
+}

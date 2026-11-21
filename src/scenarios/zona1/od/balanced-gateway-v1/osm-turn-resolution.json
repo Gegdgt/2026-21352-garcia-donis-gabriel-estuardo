@@ -1,0 +1,839 @@
+{
+  "version": "simz1-access-model-review-v2-20261101",
+  "source_hashes": {
+    "osm": "707684e17858e305324d72ce5df05a489138e3b819442b3c34e2a21c864d8c6b",
+    "network": "f328c84e34f7b7ba7c3a204bb97bb9907b107dbf77d53c301e3c6c44fe487029",
+    "lanes": "0aa6ab72f694ea239d6de697b051f7a1ffb44b85f063cbbc63b85dca06eaeab7"
+  },
+  "effective_hashes": {
+    "osm": "707684e17858e305324d72ce5df05a489138e3b819442b3c34e2a21c864d8c6b",
+    "network": "f328c84e34f7b7ba7c3a204bb97bb9907b107dbf77d53c301e3c6c44fe487029",
+    "lanes": "e86e9a4f8055b737af3652f13b0aa2e0073c7c67e3e39a3965482d99fca469b6"
+  },
+  "changes": [
+    {
+      "relation_id": "6008781",
+      "from_link": "osm_1308544716_0_forward",
+      "to_link": "osm_400252217_0_forward",
+      "terminal_lanes": [
+        "osm_1308544716_0_forward.lane.0",
+        "osm_1308544716_0_forward.lane.1",
+        "osm_1308544716_0_forward.lane.2"
+      ],
+      "removed_targets": 3
+    },
+    {
+      "relation_id": "6016436",
+      "from_link": "osm_400252217_0_forward",
+      "to_link": "osm_400843678_0_forward",
+      "terminal_lanes": [
+        "osm_400252217_0_forward.lane.0",
+        "osm_400252217_0_forward.lane.1",
+        "osm_400252217_0_forward.lane.2"
+      ],
+      "removed_targets": 3
+    },
+    {
+      "relation_id": "17146405",
+      "from_link": "osm_403151302_0_forward",
+      "to_link": "osm_559513165_0_forward",
+      "terminal_lanes": [
+        "osm_403151302_0_forward.lane.0"
+      ],
+      "removed_targets": 1
+    },
+    {
+      "relation_id": "17146406",
+      "from_link": "osm_403151302_0_forward",
+      "to_link": "osm_64387808_0_forward",
+      "terminal_lanes": [
+        "osm_403151302_0_forward.lane.0"
+      ],
+      "removed_targets": 1
+    },
+    {
+      "relation_id": "17373677",
+      "from_link": "osm_1274975828_1_forward",
+      "to_link": "osm_1265232222_0_forward",
+      "terminal_lanes": [
+        "osm_1274975828_1_forward.lane.0",
+        "osm_1274975828_1_forward.lane.1",
+        "osm_1274975828_1_forward.lane.2"
+      ],
+      "removed_targets": 3
+    },
+    {
+      "relation_id": "17475192",
+      "from_link": "osm_1272828335_0_forward",
+      "to_link": "osm_1272828334_0_forward",
+      "terminal_lanes": [
+        "osm_1272828335_0_forward.lane.0",
+        "osm_1272828335_0_forward.lane.1"
+      ],
+      "removed_targets": 2
+    },
+    {
+      "relation_id": "17502672",
+      "from_link": "osm_60237269_2_forward",
+      "to_link": "osm_1274975830_0_forward",
+      "terminal_lanes": [
+        "osm_60237269_2_forward.lane.0"
+      ],
+      "removed_targets": 1
+    },
+    {
+      "relation_id": "17947071",
+      "from_link": "osm_1274975827_3_forward",
+      "to_link": "osm_559513163_0_forward",
+      "terminal_lanes": [
+        "osm_1274975827_3_forward.lane.0",
+        "osm_1274975827_3_forward.lane.1",
+        "osm_1274975827_3_forward.lane.2"
+      ],
+      "removed_targets": 3
+    },
+    {
+      "relation_id": "20224530",
+      "from_link": "osm_258164128_5_forward",
+      "to_link": "osm_1479114530_0_forward",
+      "terminal_lanes": [
+        "osm_258164128_5_forward.lane.0",
+        "osm_258164128_5_forward.lane.1"
+      ],
+      "removed_targets": 2
+    },
+    {
+      "relation_id": "20224531",
+      "from_link": "osm_39931882_2_forward",
+      "to_link": "osm_1265264312_0_forward",
+      "terminal_lanes": [
+        "osm_39931882_2_forward.lane.0",
+        "osm_39931882_2_forward.lane.1",
+        "osm_39931882_2_forward.lane.2"
+      ],
+      "removed_targets": 3
+    }
+  ],
+  "relations": [
+    {
+      "before": {
+        "relation_id": "6008781",
+        "restriction": "no_left_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "1308544716",
+        "via_nodes": "631824824",
+        "via_ways": "",
+        "to_ways": "400252217",
+        "from_links": "osm_1308544716_0_forward",
+        "to_links": "osm_400252217_0_forward",
+        "lanes_admit_prohibited_target": "true",
+        "admitting_movements": "osm_1308544716_0_forward>osm_400252217_0_forward",
+        "admitting_terminal_lanes": "osm_1308544716_0_forward.lane.0;osm_1308544716_0_forward.lane.1;osm_1308544716_0_forward.lane.2",
+        "lane_check": "reachable_terminal_lane_admits",
+        "osm_tags": "{\"restriction\": \"no_left_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "after": {
+        "relation_id": "6008781",
+        "restriction": "no_left_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "1308544716",
+        "via_nodes": "631824824",
+        "via_ways": "",
+        "to_ways": "400252217",
+        "from_links": "osm_1308544716_0_forward",
+        "to_links": "osm_400252217_0_forward",
+        "lanes_admit_prohibited_target": "false",
+        "admitting_movements": "",
+        "admitting_terminal_lanes": "",
+        "lane_check": "lane_graph_excludes",
+        "osm_tags": "{\"restriction\": \"no_left_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "status": "RESOLVED_IN_ISOLATED_COPY",
+      "correction": {
+        "relation_id": "6008781",
+        "from_link": "osm_1308544716_0_forward",
+        "to_link": "osm_400252217_0_forward",
+        "terminal_lanes": [
+          "osm_1308544716_0_forward.lane.0",
+          "osm_1308544716_0_forward.lane.1",
+          "osm_1308544716_0_forward.lane.2"
+        ],
+        "removed_targets": 3
+      }
+    },
+    {
+      "before": {
+        "relation_id": "6016436",
+        "restriction": "no_left_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "400252217",
+        "via_nodes": "410442286",
+        "via_ways": "",
+        "to_ways": "400843678",
+        "from_links": "osm_400252217_0_forward",
+        "to_links": "osm_400843678_0_forward",
+        "lanes_admit_prohibited_target": "true",
+        "admitting_movements": "osm_400252217_0_forward>osm_400843678_0_forward",
+        "admitting_terminal_lanes": "osm_400252217_0_forward.lane.0;osm_400252217_0_forward.lane.1;osm_400252217_0_forward.lane.2",
+        "lane_check": "reachable_terminal_lane_admits",
+        "osm_tags": "{\"restriction\": \"no_left_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "after": {
+        "relation_id": "6016436",
+        "restriction": "no_left_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "400252217",
+        "via_nodes": "410442286",
+        "via_ways": "",
+        "to_ways": "400843678",
+        "from_links": "osm_400252217_0_forward",
+        "to_links": "osm_400843678_0_forward",
+        "lanes_admit_prohibited_target": "false",
+        "admitting_movements": "",
+        "admitting_terminal_lanes": "",
+        "lane_check": "lane_graph_excludes",
+        "osm_tags": "{\"restriction\": \"no_left_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "status": "RESOLVED_IN_ISOLATED_COPY",
+      "correction": {
+        "relation_id": "6016436",
+        "from_link": "osm_400252217_0_forward",
+        "to_link": "osm_400843678_0_forward",
+        "terminal_lanes": [
+          "osm_400252217_0_forward.lane.0",
+          "osm_400252217_0_forward.lane.1",
+          "osm_400252217_0_forward.lane.2"
+        ],
+        "removed_targets": 3
+      }
+    },
+    {
+      "before": {
+        "relation_id": "17146405",
+        "restriction": "no_left_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "403151302",
+        "via_nodes": "410437788",
+        "via_ways": "",
+        "to_ways": "559513165",
+        "from_links": "osm_403151302_0_forward",
+        "to_links": "osm_559513165_0_forward",
+        "lanes_admit_prohibited_target": "true",
+        "admitting_movements": "osm_403151302_0_forward>osm_559513165_0_forward",
+        "admitting_terminal_lanes": "osm_403151302_0_forward.lane.0",
+        "lane_check": "reachable_terminal_lane_admits",
+        "osm_tags": "{\"restriction\": \"no_left_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "after": {
+        "relation_id": "17146405",
+        "restriction": "no_left_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "403151302",
+        "via_nodes": "410437788",
+        "via_ways": "",
+        "to_ways": "559513165",
+        "from_links": "osm_403151302_0_forward",
+        "to_links": "osm_559513165_0_forward",
+        "lanes_admit_prohibited_target": "false",
+        "admitting_movements": "",
+        "admitting_terminal_lanes": "",
+        "lane_check": "lane_graph_excludes",
+        "osm_tags": "{\"restriction\": \"no_left_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "status": "RESOLVED_IN_ISOLATED_COPY",
+      "correction": {
+        "relation_id": "17146405",
+        "from_link": "osm_403151302_0_forward",
+        "to_link": "osm_559513165_0_forward",
+        "terminal_lanes": [
+          "osm_403151302_0_forward.lane.0"
+        ],
+        "removed_targets": 1
+      }
+    },
+    {
+      "before": {
+        "relation_id": "17146406",
+        "restriction": "no_left_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "403151302",
+        "via_nodes": "410437788",
+        "via_ways": "",
+        "to_ways": "64387808",
+        "from_links": "osm_403151302_0_forward",
+        "to_links": "osm_64387808_0_forward",
+        "lanes_admit_prohibited_target": "true",
+        "admitting_movements": "osm_403151302_0_forward>osm_64387808_0_forward",
+        "admitting_terminal_lanes": "osm_403151302_0_forward.lane.0",
+        "lane_check": "reachable_terminal_lane_admits",
+        "osm_tags": "{\"restriction\": \"no_left_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "after": {
+        "relation_id": "17146406",
+        "restriction": "no_left_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "403151302",
+        "via_nodes": "410437788",
+        "via_ways": "",
+        "to_ways": "64387808",
+        "from_links": "osm_403151302_0_forward",
+        "to_links": "osm_64387808_0_forward",
+        "lanes_admit_prohibited_target": "false",
+        "admitting_movements": "",
+        "admitting_terminal_lanes": "",
+        "lane_check": "lane_graph_excludes",
+        "osm_tags": "{\"restriction\": \"no_left_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "status": "RESOLVED_IN_ISOLATED_COPY",
+      "correction": {
+        "relation_id": "17146406",
+        "from_link": "osm_403151302_0_forward",
+        "to_link": "osm_64387808_0_forward",
+        "terminal_lanes": [
+          "osm_403151302_0_forward.lane.0"
+        ],
+        "removed_targets": 1
+      }
+    },
+    {
+      "before": {
+        "relation_id": "17373677",
+        "restriction": "no_right_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "1274975828",
+        "via_nodes": "11583002439",
+        "via_ways": "",
+        "to_ways": "1265232222",
+        "from_links": "osm_1274975828_1_forward",
+        "to_links": "osm_1265232222_0_forward",
+        "lanes_admit_prohibited_target": "true",
+        "admitting_movements": "osm_1274975828_1_forward>osm_1265232222_0_forward",
+        "admitting_terminal_lanes": "osm_1274975828_1_forward.lane.0;osm_1274975828_1_forward.lane.1;osm_1274975828_1_forward.lane.2",
+        "lane_check": "reachable_terminal_lane_admits",
+        "osm_tags": "{\"implicit\": \"yes\", \"restriction\": \"no_right_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "after": {
+        "relation_id": "17373677",
+        "restriction": "no_right_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "1274975828",
+        "via_nodes": "11583002439",
+        "via_ways": "",
+        "to_ways": "1265232222",
+        "from_links": "osm_1274975828_1_forward",
+        "to_links": "osm_1265232222_0_forward",
+        "lanes_admit_prohibited_target": "false",
+        "admitting_movements": "",
+        "admitting_terminal_lanes": "",
+        "lane_check": "lane_graph_excludes",
+        "osm_tags": "{\"implicit\": \"yes\", \"restriction\": \"no_right_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "status": "RESOLVED_IN_ISOLATED_COPY",
+      "correction": {
+        "relation_id": "17373677",
+        "from_link": "osm_1274975828_1_forward",
+        "to_link": "osm_1265232222_0_forward",
+        "terminal_lanes": [
+          "osm_1274975828_1_forward.lane.0",
+          "osm_1274975828_1_forward.lane.1",
+          "osm_1274975828_1_forward.lane.2"
+        ],
+        "removed_targets": 3
+      }
+    },
+    {
+      "before": {
+        "relation_id": "17475192",
+        "restriction": "no_left_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "1272828335",
+        "via_nodes": "333864438",
+        "via_ways": "",
+        "to_ways": "1272828334",
+        "from_links": "osm_1272828335_0_forward",
+        "to_links": "osm_1272828334_0_forward",
+        "lanes_admit_prohibited_target": "true",
+        "admitting_movements": "osm_1272828335_0_forward>osm_1272828334_0_forward",
+        "admitting_terminal_lanes": "osm_1272828335_0_forward.lane.0;osm_1272828335_0_forward.lane.1",
+        "lane_check": "reachable_terminal_lane_admits",
+        "osm_tags": "{\"restriction\": \"no_left_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "after": {
+        "relation_id": "17475192",
+        "restriction": "no_left_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "1272828335",
+        "via_nodes": "333864438",
+        "via_ways": "",
+        "to_ways": "1272828334",
+        "from_links": "osm_1272828335_0_forward",
+        "to_links": "osm_1272828334_0_forward",
+        "lanes_admit_prohibited_target": "false",
+        "admitting_movements": "",
+        "admitting_terminal_lanes": "",
+        "lane_check": "lane_graph_excludes",
+        "osm_tags": "{\"restriction\": \"no_left_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "status": "RESOLVED_IN_ISOLATED_COPY",
+      "correction": {
+        "relation_id": "17475192",
+        "from_link": "osm_1272828335_0_forward",
+        "to_link": "osm_1272828334_0_forward",
+        "terminal_lanes": [
+          "osm_1272828335_0_forward.lane.0",
+          "osm_1272828335_0_forward.lane.1"
+        ],
+        "removed_targets": 2
+      }
+    },
+    {
+      "before": {
+        "relation_id": "17478998",
+        "restriction": "no_u_turn",
+        "status": "via_way_unsupported",
+        "detail": "Requires a path-aware restriction; no node shortcut inferred",
+        "from_ways": "1273145789",
+        "via_nodes": "",
+        "via_ways": "1270930401",
+        "to_ways": "1273145790",
+        "from_links": "osm_1273145789_0_forward",
+        "to_links": "osm_1273145790_0_forward",
+        "lanes_admit_prohibited_target": "not_evaluated",
+        "admitting_movements": "",
+        "admitting_terminal_lanes": "",
+        "lane_check": "",
+        "osm_tags": "{\"restriction\": \"no_u_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "mapped",
+        "directed_sequences": "[[\"osm_1273145789_0_forward\", \"osm_1270930401_0_forward\", \"osm_1273145790_0_forward\"]]",
+        "sequence_lane_checks": "[[{\"admitted\": true, \"check\": \"reachable_terminal_lane_admits\", \"from_link\": \"osm_1273145789_0_forward\", \"terminal_lanes\": [\"osm_1273145789_0_forward.lane.0\", \"osm_1273145789_0_forward.lane.1\"], \"to_link\": \"osm_1270930401_0_forward\"}, {\"admitted\": true, \"check\": \"reachable_terminal_lane_admits\", \"from_link\": \"osm_1270930401_0_forward\", \"terminal_lanes\": [\"osm_1270930401_0_forward.lane.0\", \"osm_1270930401_0_forward.lane.1\"], \"to_link\": \"osm_1273145790_0_forward\"}]]",
+        "lanes_admit_sequence": "true"
+      },
+      "after": {
+        "relation_id": "17478998",
+        "restriction": "no_u_turn",
+        "status": "via_way_unsupported",
+        "detail": "Requires a path-aware restriction; no node shortcut inferred",
+        "from_ways": "1273145789",
+        "via_nodes": "",
+        "via_ways": "1270930401",
+        "to_ways": "1273145790",
+        "from_links": "osm_1273145789_0_forward",
+        "to_links": "osm_1273145790_0_forward",
+        "lanes_admit_prohibited_target": "not_evaluated",
+        "admitting_movements": "",
+        "admitting_terminal_lanes": "",
+        "lane_check": "",
+        "osm_tags": "{\"restriction\": \"no_u_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "mapped",
+        "directed_sequences": "[[\"osm_1273145789_0_forward\", \"osm_1270930401_0_forward\", \"osm_1273145790_0_forward\"]]",
+        "sequence_lane_checks": "[[{\"admitted\": true, \"check\": \"reachable_terminal_lane_admits\", \"from_link\": \"osm_1273145789_0_forward\", \"terminal_lanes\": [\"osm_1273145789_0_forward.lane.0\", \"osm_1273145789_0_forward.lane.1\"], \"to_link\": \"osm_1270930401_0_forward\"}, {\"admitted\": true, \"check\": \"reachable_terminal_lane_admits\", \"from_link\": \"osm_1270930401_0_forward\", \"terminal_lanes\": [\"osm_1270930401_0_forward.lane.0\", \"osm_1270930401_0_forward.lane.1\"], \"to_link\": \"osm_1273145790_0_forward\"}]]",
+        "lanes_admit_sequence": "true"
+      },
+      "status": "BLOCKED",
+      "reason": "History-dependent via-way prohibition; pair removal would also ban another approach.",
+      "via_predecessors": [
+        "osm_1273145789_0_forward",
+        "osm_734011349_14_forward"
+      ],
+      "required": "Exact path-aware enforcement; no safe lane-only equivalence in this graph"
+    },
+    {
+      "before": {
+        "relation_id": "17502672",
+        "restriction": "no_left_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "60237269",
+        "via_nodes": "333531343",
+        "via_ways": "",
+        "to_ways": "1274975830",
+        "from_links": "osm_60237269_2_forward",
+        "to_links": "osm_1274975830_0_forward",
+        "lanes_admit_prohibited_target": "true",
+        "admitting_movements": "osm_60237269_2_forward>osm_1274975830_0_forward",
+        "admitting_terminal_lanes": "osm_60237269_2_forward.lane.0",
+        "lane_check": "reachable_terminal_lane_admits",
+        "osm_tags": "{\"restriction\": \"no_left_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "after": {
+        "relation_id": "17502672",
+        "restriction": "no_left_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "60237269",
+        "via_nodes": "333531343",
+        "via_ways": "",
+        "to_ways": "1274975830",
+        "from_links": "osm_60237269_2_forward",
+        "to_links": "osm_1274975830_0_forward",
+        "lanes_admit_prohibited_target": "false",
+        "admitting_movements": "",
+        "admitting_terminal_lanes": "",
+        "lane_check": "lane_graph_excludes",
+        "osm_tags": "{\"restriction\": \"no_left_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "status": "RESOLVED_IN_ISOLATED_COPY",
+      "correction": {
+        "relation_id": "17502672",
+        "from_link": "osm_60237269_2_forward",
+        "to_link": "osm_1274975830_0_forward",
+        "terminal_lanes": [
+          "osm_60237269_2_forward.lane.0"
+        ],
+        "removed_targets": 1
+      }
+    },
+    {
+      "before": {
+        "relation_id": "17884471",
+        "restriction": "no_straight_on",
+        "status": "incomplete_or_unsupported_members",
+        "detail": "Expected one from way, via node and to way in supplied OSM",
+        "from_ways": "",
+        "via_nodes": "",
+        "via_ways": "",
+        "to_ways": "34993910",
+        "from_links": "",
+        "to_links": "",
+        "lanes_admit_prohibited_target": "not_evaluated",
+        "admitting_movements": "",
+        "admitting_terminal_lanes": "",
+        "lane_check": "",
+        "osm_tags": "{\"restriction\": \"no_straight_on\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "after": {
+        "relation_id": "17884471",
+        "restriction": "no_straight_on",
+        "status": "incomplete_or_unsupported_members",
+        "detail": "Expected one from way, via node and to way in supplied OSM",
+        "from_ways": "",
+        "via_nodes": "",
+        "via_ways": "",
+        "to_ways": "34993910",
+        "from_links": "",
+        "to_links": "",
+        "lanes_admit_prohibited_target": "not_evaluated",
+        "admitting_movements": "",
+        "admitting_terminal_lanes": "",
+        "lane_check": "",
+        "osm_tags": "{\"restriction\": \"no_straight_on\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "status": "BLOCKED",
+      "reason": "Local OSM v2 contains only to=34993910; from and via are absent, target exists in car network.",
+      "members": [
+        {
+          "type": "way",
+          "ref": "34993910",
+          "role": "to"
+        }
+      ],
+      "affected_to_links": [
+        "osm_34993910_0_forward"
+      ],
+      "required": "Complete authoritative relation members; turn and lanes cannot be identified from this source"
+    },
+    {
+      "before": {
+        "relation_id": "17947071",
+        "restriction": "no_right_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "1274975827",
+        "via_nodes": "631824824",
+        "via_ways": "",
+        "to_ways": "559513163",
+        "from_links": "osm_1274975827_3_forward",
+        "to_links": "osm_559513163_0_forward",
+        "lanes_admit_prohibited_target": "true",
+        "admitting_movements": "osm_1274975827_3_forward>osm_559513163_0_forward",
+        "admitting_terminal_lanes": "osm_1274975827_3_forward.lane.0;osm_1274975827_3_forward.lane.1;osm_1274975827_3_forward.lane.2",
+        "lane_check": "reachable_terminal_lane_admits",
+        "osm_tags": "{\"restriction\": \"no_right_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "after": {
+        "relation_id": "17947071",
+        "restriction": "no_right_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "1274975827",
+        "via_nodes": "631824824",
+        "via_ways": "",
+        "to_ways": "559513163",
+        "from_links": "osm_1274975827_3_forward",
+        "to_links": "osm_559513163_0_forward",
+        "lanes_admit_prohibited_target": "false",
+        "admitting_movements": "",
+        "admitting_terminal_lanes": "",
+        "lane_check": "lane_graph_excludes",
+        "osm_tags": "{\"restriction\": \"no_right_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "status": "RESOLVED_IN_ISOLATED_COPY",
+      "correction": {
+        "relation_id": "17947071",
+        "from_link": "osm_1274975827_3_forward",
+        "to_link": "osm_559513163_0_forward",
+        "terminal_lanes": [
+          "osm_1274975827_3_forward.lane.0",
+          "osm_1274975827_3_forward.lane.1",
+          "osm_1274975827_3_forward.lane.2"
+        ],
+        "removed_targets": 3
+      }
+    },
+    {
+      "before": {
+        "relation_id": "20224530",
+        "restriction": "no_right_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "258164128",
+        "via_nodes": "9716924073",
+        "via_ways": "",
+        "to_ways": "1479114530",
+        "from_links": "osm_258164128_5_forward",
+        "to_links": "osm_1479114530_0_forward",
+        "lanes_admit_prohibited_target": "true",
+        "admitting_movements": "osm_258164128_5_forward>osm_1479114530_0_forward",
+        "admitting_terminal_lanes": "osm_258164128_5_forward.lane.0;osm_258164128_5_forward.lane.1",
+        "lane_check": "reachable_terminal_lane_admits",
+        "osm_tags": "{\"restriction\": \"no_right_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "after": {
+        "relation_id": "20224530",
+        "restriction": "no_right_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "258164128",
+        "via_nodes": "9716924073",
+        "via_ways": "",
+        "to_ways": "1479114530",
+        "from_links": "osm_258164128_5_forward",
+        "to_links": "osm_1479114530_0_forward",
+        "lanes_admit_prohibited_target": "false",
+        "admitting_movements": "",
+        "admitting_terminal_lanes": "",
+        "lane_check": "lane_graph_excludes",
+        "osm_tags": "{\"restriction\": \"no_right_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "status": "RESOLVED_IN_ISOLATED_COPY",
+      "correction": {
+        "relation_id": "20224530",
+        "from_link": "osm_258164128_5_forward",
+        "to_link": "osm_1479114530_0_forward",
+        "terminal_lanes": [
+          "osm_258164128_5_forward.lane.0",
+          "osm_258164128_5_forward.lane.1"
+        ],
+        "removed_targets": 2
+      }
+    },
+    {
+      "before": {
+        "relation_id": "20224531",
+        "restriction": "no_left_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "39931882",
+        "via_nodes": "11583002439",
+        "via_ways": "",
+        "to_ways": "1265264312",
+        "from_links": "osm_39931882_2_forward",
+        "to_links": "osm_1265264312_0_forward",
+        "lanes_admit_prohibited_target": "true",
+        "admitting_movements": "osm_39931882_2_forward>osm_1265264312_0_forward",
+        "admitting_terminal_lanes": "osm_39931882_2_forward.lane.0;osm_39931882_2_forward.lane.1;osm_39931882_2_forward.lane.2",
+        "lane_check": "reachable_terminal_lane_admits",
+        "osm_tags": "{\"restriction\": \"no_left_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "after": {
+        "relation_id": "20224531",
+        "restriction": "no_left_turn",
+        "status": "mappable",
+        "detail": "Directed from/to links share the OSM via node",
+        "from_ways": "39931882",
+        "via_nodes": "11583002439",
+        "via_ways": "",
+        "to_ways": "1265264312",
+        "from_links": "osm_39931882_2_forward",
+        "to_links": "osm_1265264312_0_forward",
+        "lanes_admit_prohibited_target": "false",
+        "admitting_movements": "",
+        "admitting_terminal_lanes": "",
+        "lane_check": "lane_graph_excludes",
+        "osm_tags": "{\"restriction\": \"no_left_turn\", \"type\": \"restriction\"}",
+        "missing_members": "[]",
+        "semantics_review": "",
+        "path_status": "",
+        "directed_sequences": "[]",
+        "sequence_lane_checks": "[]",
+        "lanes_admit_sequence": "not_evaluated"
+      },
+      "status": "RESOLVED_IN_ISOLATED_COPY",
+      "correction": {
+        "relation_id": "20224531",
+        "from_link": "osm_39931882_2_forward",
+        "to_link": "osm_1265264312_0_forward",
+        "terminal_lanes": [
+          "osm_39931882_2_forward.lane.0",
+          "osm_39931882_2_forward.lane.1",
+          "osm_39931882_2_forward.lane.2"
+        ],
+        "removed_targets": 3
+      }
+    }
+  ],
+  "unchanged_copied_files": {
+    "config-simz1.xml": "33e5a3b7ee2c7b31dce3d04d527f686b36d9de6d50734dd107fe410686ffa640",
+    "network.xml": "f328c84e34f7b7ba7c3a204bb97bb9907b107dbf77d53c301e3c6c44fe487029",
+    "map.osm": "707684e17858e305324d72ce5df05a489138e3b819442b3c34e2a21c864d8c6b",
+    "facilities.xml": "34383bd8d84d89871b649a2f20f4e052cc1ad9b707a7a58181702daf50e7016f",
+    "plans.xml": "57e2bbaba6126aa26b48650b4c47ef7e772b1420ffe95a79f87bdfb14d2a9a74",
+    "vehicle-types.xml": "ddd524c8b83d4921144c41e6105ecf74fc1dcccd3aa61f0267308d5055f935f8",
+    "signalSystems.xml": "ded58aa884a4424e67100c31b379556c221e295e9687eca315b235daf0389233",
+    "signalGroups.xml": "d29f8d1a05eec8361e801430d543879dcb09223621d804a588cc3a0e30f72416",
+    "signalControl.xml": "192c50b9bf42935b7aa7126cc601a787e671da67c5fa60e25cb8c65e0d95ea50"
+  },
+  "validation_error": "Restricciones OSM pendientes (2): 17478998, 17884471. Se requiere una nueva version de red/restricciones; no se publica demanda ni se modifica la historica"
+}

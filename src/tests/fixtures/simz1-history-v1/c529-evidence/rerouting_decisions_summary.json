@@ -1,0 +1,154 @@
+{
+  "cohort_size": 89100,
+  "cohort_arithmetic": "Collections.shuffle(sorted private IDs, java.util.Random(20261023)), first 50%; excludes freight; diagnostic reimplementation, no Java execution",
+  "cases": {
+    "z1_106044": {
+      "selected": false,
+      "events": []
+    },
+    "z1_49500": {
+      "selected": false,
+      "events": []
+    },
+    "z1_111853": {
+      "selected": true,
+      "events": []
+    },
+    "z1_39556": {
+      "selected": true,
+      "events": []
+    },
+    "z1_109982": {
+      "selected": false,
+      "events": []
+    },
+    "z1_60650": {
+      "selected": true,
+      "events": [
+        {
+          "event_index": 283199,
+          "xml_line": 283201,
+          "time": "720.0",
+          "type": "zona1WithinDayReroute",
+          "remainingTimeModel": "estimated_turn_minus_elapsed",
+          "changed": "true",
+          "currentLink": "osm_30288333_3_forward",
+          "estimateSource": "recent_observed_turn_else_link_else_freeflow_profile_vehicle",
+          "oldRoute": "[osm_381667651_0_forward, osm_381667651_1_forward, osm_30288333_3_forward, osm_30288333_4_forward, osm_30288333_5_forward, osm_30288333_6_forward, osm_1272820758_0_forward, osm_58692343_17_forward, osm_58692343_18_forward, osm_58692343_19_forward, osm_48273209_6_forward, osm_48273209_7_forward, osm_48273209_8_forward, osm_48273209_9_forward, osm_48273209_10_forward, osm_48273209_11_forward, osm_48273209_12_forward, osm_48273209_13_forward, osm_48273209_14_forward, osm_48273209_15_forward, osm_48273209_16_forward, osm_48273209_17_forward, osm_734011350_5_forward, osm_734011350_6_forward, osm_734011350_7_forward, osm_734011350_8_forward, osm_734011350_9_forward, osm_734011350_10_forward, osm_734011350_11_forward, osm_734011350_12_forward, osm_734011350_13_forward, osm_734011350_14_forward, osm_734011350_15_forward, osm_734011350_16_forward, osm_734011350_17_forward, osm_734011350_18_forward, osm_734011350_19_forward, osm_734011350_20_forward, osm_734011350_21_forward, osm_734011350_22_forward, osm_734011350_23_forward, osm_734011350_24_forward, osm_734011350_25_forward, osm_734011350_26_forward, osm_734011350_27_forward, osm_734011350_28_forward, osm_734011350_29_forward, osm_734011350_30_forward, osm_734011350_31_forward, osm_734011350_32_forward, osm_734011350_33_forward, osm_734011350_34_forward, osm_734011350_35_forward, osm_734011350_36_forward, osm_734011350_37_forward, osm_734011350_38_forward, osm_734011350_39_forward, osm_734011350_40_forward, osm_734011350_41_forward, osm_734011350_42_forward, osm_734011350_43_forward, osm_734011350_44_forward, osm_734011350_45_forward, osm_734011350_46_forward, osm_381158231_0_forward, osm_381158231_1_forward, osm_381158231_2_forward, osm_34988850_0_forward, osm_381158238_0_forward, osm_64388019_0_forward, osm_64388019_1_forward, osm_406682663_0_forward, osm_406682663_1_forward, osm_60237259_0_forward, osm_60237259_1_forward, osm_60237259_2_forward, osm_400843678_0_forward, osm_1521207432_0_forward, osm_60237256_0_forward, osm_1057486080_0_forward, osm_1057486080_1_forward, osm_1057486080_2_forward, osm_1358273946_0_forward, osm_60237264_0_forward, osm_60237264_1_forward, osm_1196283991_0_forward, osm_1196283991_0_backward, osm_60237264_2_forward, osm_60237264_3_forward]",
+          "estimateSnapshotTime": "720.0",
+          "traversedLinks": "[osm_381667651_0_forward, osm_381667651_1_forward, osm_30288333_3_forward]",
+          "estimateObservationTtlSeconds": "300",
+          "reason": "validated_improvement",
+          "estimatedOldSeconds": "488.0",
+          "physicalLink": "osm_30288333_3_forward",
+          "candidateDiffers": "true",
+          "vehicle": "z1_60650",
+          "currentLinkEntryTime": "719.0",
+          "estimatedOldCost": "488.0",
+          "estimatedCandidateSeconds": "358.4584364096904",
+          "trigger": "congestion_or_capacity_reduction",
+          "routingPolicy": "fastest-time",
+          "candidateRoute": "[osm_381667651_0_forward, osm_381667651_1_forward, osm_30288333_3_forward, osm_30288333_4_forward, osm_30288333_5_forward, osm_30288333_6_forward, osm_1272820758_0_forward, osm_1272820758_1_forward, osm_1272820758_2_forward, osm_1272820758_3_forward, osm_65777805_49_forward, osm_65777805_50_forward, osm_65777805_51_forward, osm_65777805_52_forward, osm_65777805_53_forward, osm_65777805_54_forward, osm_65777805_55_forward, osm_65777805_56_forward, osm_65777805_57_forward, osm_65777805_58_forward, osm_65777805_59_forward, osm_65777805_60_forward, osm_65777805_61_forward, osm_65777805_62_forward, osm_65777805_63_forward, osm_65777805_64_forward, osm_65777805_65_forward, osm_65777805_66_forward, osm_65777805_67_forward, osm_65777805_68_forward, osm_65777805_69_forward, osm_65777805_70_forward, osm_65777805_71_forward, osm_65777805_72_forward, osm_65777805_73_forward, osm_65777805_74_forward, osm_65777805_75_forward, osm_65777805_76_forward, osm_65777805_77_forward, osm_65777805_78_forward, osm_65777805_79_forward, osm_65777805_80_forward, osm_65777805_81_forward, osm_65777805_82_forward, osm_65777805_83_forward, osm_405158906_2_forward, osm_405158906_3_forward, osm_405158906_4_forward, osm_405158906_5_forward, osm_405158906_6_forward, osm_1208184514_0_forward, osm_1208184514_1_forward, osm_1208184514_2_forward, osm_1208184514_3_forward, osm_42841172_0_forward, osm_42841172_1_forward, osm_42841172_2_forward, osm_42841172_3_forward, osm_42841172_4_forward, osm_42841172_5_forward, osm_406682663_0_forward, osm_406682663_1_forward, osm_60237259_0_forward, osm_60237259_1_forward, osm_60237259_2_forward, osm_400843678_0_forward, osm_1521207432_0_forward, osm_60237256_0_forward, osm_1057486080_0_forward, osm_1057486080_1_forward, osm_1057486080_2_forward, osm_1358273946_0_forward, osm_60237264_0_forward, osm_60237264_1_forward, osm_60237264_2_forward, osm_60237264_3_forward]",
+          "person": "z1_60650",
+          "estimatedCandidateCost": "358.45843640969036",
+          "lane": "osm_30288333_3_forward.original",
+          "routeIndex": "2",
+          "routingCostUnit": "seconds",
+          "iteration": "0"
+        },
+        {
+          "event_index": 473626,
+          "xml_line": 473628,
+          "time": "1020.0",
+          "type": "zona1RerouteRejected",
+          "remainingTimeModel": "estimated_turn_minus_elapsed",
+          "changed": "false",
+          "currentLink": "osm_42841172_1_forward",
+          "estimateSource": "recent_observed_turn_else_link_else_freeflow_profile_vehicle",
+          "oldRoute": "[osm_381667651_0_forward, osm_381667651_1_forward, osm_30288333_3_forward, osm_30288333_4_forward, osm_30288333_5_forward, osm_30288333_6_forward, osm_1272820758_0_forward, osm_1272820758_1_forward, osm_1272820758_2_forward, osm_1272820758_3_forward, osm_65777805_49_forward, osm_65777805_50_forward, osm_65777805_51_forward, osm_65777805_52_forward, osm_65777805_53_forward, osm_65777805_54_forward, osm_65777805_55_forward, osm_65777805_56_forward, osm_65777805_57_forward, osm_65777805_58_forward, osm_65777805_59_forward, osm_65777805_60_forward, osm_65777805_61_forward, osm_65777805_62_forward, osm_65777805_63_forward, osm_65777805_64_forward, osm_65777805_65_forward, osm_65777805_66_forward, osm_65777805_67_forward, osm_65777805_68_forward, osm_65777805_69_forward, osm_65777805_70_forward, osm_65777805_71_forward, osm_65777805_72_forward, osm_65777805_73_forward, osm_65777805_74_forward, osm_65777805_75_forward, osm_65777805_76_forward, osm_65777805_77_forward, osm_65777805_78_forward, osm_65777805_79_forward, osm_65777805_80_forward, osm_65777805_81_forward, osm_65777805_82_forward, osm_65777805_83_forward, osm_405158906_2_forward, osm_405158906_3_forward, osm_405158906_4_forward, osm_405158906_5_forward, osm_405158906_6_forward, osm_1208184514_0_forward, osm_1208184514_1_forward, osm_1208184514_2_forward, osm_1208184514_3_forward, osm_42841172_0_forward, osm_42841172_1_forward, osm_42841172_2_forward, osm_42841172_3_forward, osm_42841172_4_forward, osm_42841172_5_forward, osm_406682663_0_forward, osm_406682663_1_forward, osm_60237259_0_forward, osm_60237259_1_forward, osm_60237259_2_forward, osm_400843678_0_forward, osm_1521207432_0_forward, osm_60237256_0_forward, osm_1057486080_0_forward, osm_1057486080_1_forward, osm_1057486080_2_forward, osm_1358273946_0_forward, osm_60237264_0_forward, osm_60237264_1_forward, osm_60237264_2_forward, osm_60237264_3_forward]",
+          "estimateSnapshotTime": "1020.0",
+          "traversedLinks": "[osm_381667651_0_forward, osm_381667651_1_forward, osm_30288333_3_forward, osm_30288333_4_forward, osm_30288333_5_forward, osm_30288333_6_forward, osm_1272820758_0_forward, osm_1272820758_1_forward, osm_1272820758_2_forward, osm_1272820758_3_forward, osm_65777805_49_forward, osm_65777805_50_forward, osm_65777805_51_forward, osm_65777805_52_forward, osm_65777805_53_forward, osm_65777805_54_forward, osm_65777805_55_forward, osm_65777805_56_forward, osm_65777805_57_forward, osm_65777805_58_forward, osm_65777805_59_forward, osm_65777805_60_forward, osm_65777805_61_forward, osm_65777805_62_forward, osm_65777805_63_forward, osm_65777805_64_forward, osm_65777805_65_forward, osm_65777805_66_forward, osm_65777805_67_forward, osm_65777805_68_forward, osm_65777805_69_forward, osm_65777805_70_forward, osm_65777805_71_forward, osm_65777805_72_forward, osm_65777805_73_forward, osm_65777805_74_forward, osm_65777805_75_forward, osm_65777805_76_forward, osm_65777805_77_forward, osm_65777805_78_forward, osm_65777805_79_forward, osm_65777805_80_forward, osm_65777805_81_forward, osm_65777805_82_forward, osm_65777805_83_forward, osm_405158906_2_forward, osm_405158906_3_forward, osm_405158906_4_forward, osm_405158906_5_forward, osm_405158906_6_forward, osm_1208184514_0_forward, osm_1208184514_1_forward, osm_1208184514_2_forward, osm_1208184514_3_forward, osm_42841172_0_forward, osm_42841172_1_forward]",
+          "estimateObservationTtlSeconds": "300",
+          "reason": "no_expected_improvement",
+          "estimatedOldSeconds": "191.0",
+          "physicalLink": "osm_42841172_1_forward",
+          "candidateDiffers": "false",
+          "vehicle": "z1_60650",
+          "currentLinkEntryTime": "1018.0",
+          "estimatedOldCost": "191.0",
+          "estimatedCandidateSeconds": "191.0",
+          "trigger": "congestion_or_capacity_reduction",
+          "routingPolicy": "fastest-time",
+          "candidateRoute": "[osm_381667651_0_forward, osm_381667651_1_forward, osm_30288333_3_forward, osm_30288333_4_forward, osm_30288333_5_forward, osm_30288333_6_forward, osm_1272820758_0_forward, osm_1272820758_1_forward, osm_1272820758_2_forward, osm_1272820758_3_forward, osm_65777805_49_forward, osm_65777805_50_forward, osm_65777805_51_forward, osm_65777805_52_forward, osm_65777805_53_forward, osm_65777805_54_forward, osm_65777805_55_forward, osm_65777805_56_forward, osm_65777805_57_forward, osm_65777805_58_forward, osm_65777805_59_forward, osm_65777805_60_forward, osm_65777805_61_forward, osm_65777805_62_forward, osm_65777805_63_forward, osm_65777805_64_forward, osm_65777805_65_forward, osm_65777805_66_forward, osm_65777805_67_forward, osm_65777805_68_forward, osm_65777805_69_forward, osm_65777805_70_forward, osm_65777805_71_forward, osm_65777805_72_forward, osm_65777805_73_forward, osm_65777805_74_forward, osm_65777805_75_forward, osm_65777805_76_forward, osm_65777805_77_forward, osm_65777805_78_forward, osm_65777805_79_forward, osm_65777805_80_forward, osm_65777805_81_forward, osm_65777805_82_forward, osm_65777805_83_forward, osm_405158906_2_forward, osm_405158906_3_forward, osm_405158906_4_forward, osm_405158906_5_forward, osm_405158906_6_forward, osm_1208184514_0_forward, osm_1208184514_1_forward, osm_1208184514_2_forward, osm_1208184514_3_forward, osm_42841172_0_forward, osm_42841172_1_forward, osm_42841172_2_forward, osm_42841172_3_forward, osm_42841172_4_forward, osm_42841172_5_forward, osm_406682663_0_forward, osm_406682663_1_forward, osm_60237259_0_forward, osm_60237259_1_forward, osm_60237259_2_forward, osm_400843678_0_forward, osm_1521207432_0_forward, osm_60237256_0_forward, osm_1057486080_0_forward, osm_1057486080_1_forward, osm_1057486080_2_forward, osm_1358273946_0_forward, osm_60237264_0_forward, osm_60237264_1_forward, osm_60237264_2_forward, osm_60237264_3_forward]",
+          "person": "z1_60650",
+          "estimatedCandidateCost": "191.0",
+          "lane": "osm_42841172_1_forward.lane.0",
+          "routeIndex": "55",
+          "routingCostUnit": "seconds",
+          "iteration": "0"
+        }
+      ]
+    },
+    "freight_000016": {
+      "selected": false,
+      "events": []
+    }
+  },
+  "counts": [
+    {
+      "type": "zona1WithinDayReroute",
+      "reason": "validated_improvement",
+      "count": 2724
+    },
+    {
+      "type": "zona1RerouteRejected",
+      "reason": "physical_vehicle_or_lane_not_ready",
+      "count": 21891
+    },
+    {
+      "type": "zona1RerouteRejected",
+      "reason": "no_expected_improvement",
+      "count": 1607
+    },
+    {
+      "type": "zona1RerouteRejected",
+      "reason": "occupancy_active_passage_prefix",
+      "count": 5
+    },
+    {
+      "type": "zona1RerouteRejected",
+      "reason": "occupancy_active_passage_clearance",
+      "count": 5
+    },
+    {
+      "type": "zona1RerouteRejected",
+      "reason": "occupancy_incompatible_passage_signals",
+      "count": 1
+    }
+  ],
+  "changed": {
+    "true": 2724,
+    "false": 23509
+  },
+  "last_decision": {
+    "event_index": 30854423,
+    "xml_line": 30854425,
+    "time": "31920.0",
+    "type": "zona1RerouteRejected",
+    "person": "z1_21945",
+    "lane": "unavailable",
+    "oldRoute": "[osm_1159529860_0_backward, osm_1159529860_0_forward, osm_1159529859_0_forward, osm_1159529861_0_forward, osm_1159529861_1_forward, osm_1159529861_2_forward, osm_384736604_2_forward, osm_384736604_3_forward, osm_384736604_4_forward, osm_30262982_4_forward, osm_30262982_5_forward, osm_30262982_6_forward, osm_30262982_7_forward, osm_30262982_8_forward, osm_30262982_9_forward, osm_30262982_10_forward, osm_30262982_11_forward, osm_30262982_12_forward, osm_30262982_13_forward, osm_30262982_14_forward, osm_30262982_15_forward, osm_30262982_16_forward, osm_30262982_17_forward, osm_30262982_18_forward, osm_30262982_19_forward, osm_30262982_20_forward, osm_30262982_21_forward, osm_30262982_22_forward, osm_30262982_23_forward, osm_30262982_24_forward, osm_30262982_25_forward, osm_30262982_26_forward, osm_420120095_0_forward, osm_420120095_1_forward, osm_420120095_2_forward, osm_420120095_3_forward, osm_420120095_4_forward, osm_420120095_5_forward, osm_420120095_6_forward, osm_420120095_7_forward, osm_420120095_8_forward, osm_420120095_9_forward, osm_420120095_10_forward, osm_420120095_11_forward, osm_420120095_12_forward, osm_420120095_13_forward, osm_420120095_14_forward, osm_420120095_15_forward, osm_420120095_16_forward, osm_1274975830_0_forward, osm_420120097_0_forward, osm_420120097_1_forward, osm_420120097_2_forward, osm_420120097_3_forward, osm_381144595_0_forward, osm_381144595_1_forward, osm_381144595_2_forward, osm_381144595_3_forward, osm_381144595_4_forward, osm_381144595_5_forward, osm_381144595_6_forward, osm_381144595_7_forward, osm_381144595_8_forward, osm_381144595_9_forward, osm_42839982_4_forward, osm_42839982_5_forward, osm_1274975826_0_forward, osm_1274975826_1_forward, osm_1274975826_2_forward, osm_1274975826_3_forward, osm_1274975828_0_forward, osm_1274975828_1_forward, osm_1265264312_0_forward, osm_60237256_0_forward, osm_1057486080_0_forward, osm_1057486080_1_forward, osm_1057486080_2_forward, osm_1358273946_0_forward, osm_60237264_0_forward, osm_60237264_1_forward, osm_1196283991_0_forward, osm_1196283991_0_backward, osm_60237264_2_forward, osm_60237264_3_forward]",
+    "candidateDiffers": "false",
+    "currentLink": "osm_1159529860_0_backward",
+    "candidateRoute": "unavailable",
+    "physicalLink": "unavailable",
+    "routingPolicy": "fastest-time",
+    "changed": "false",
+    "vehicle": "z1_21945",
+    "traversedLinks": "null",
+    "routingCostUnit": "seconds",
+    "reason": "physical_vehicle_or_lane_not_ready",
+    "routeIndex": "0",
+    "iteration": "0"
+  }
+}

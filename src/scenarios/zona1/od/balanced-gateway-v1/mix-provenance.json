@@ -1,0 +1,8 @@
+{
+  "version": "synthetic-ee50-ei20-ie20-ii10-v1",
+  "empirical_calibration": false,
+  "source": "Explicit user-authorized experimental assumption; not Guatemala observed traffic counts",
+  "scope": "Private road demand only; freight and 269 buses retain their services and schedules",
+  "mix_sha256": "1c52da3bc06f93cbc2d253b8dbb9f31577860eb3374cc077e6719a75ce33a57e",
+  "date": "2026-11-01"
+}

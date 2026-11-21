@@ -1,0 +1,235 @@
+{
+  "provenance": {
+    "run_id": "simz1-ca9b7469f9bb480fb8764daf6a582455",
+    "iteration": 0,
+    "source_version": "1caa14e1c5e122ff56acbcdcc31b4b3b592499c202c147352bcf0b2537c4bf5e"
+  },
+  "visual_lanes": {
+    "schema_version": 1,
+    "available": true,
+    "lane_width_m": 3,
+    "links": {
+      "osm_488464043_0_forward": {
+        "num_lanes": 1,
+        "path": [
+          [
+            -90.5122285000015,
+            14.633692699998988
+          ],
+          [
+            -90.51187810000309,
+            14.633633699999223
+          ]
+        ],
+        "geometry_source": "effective_link_chord",
+        "length_m": 38.328097115403345,
+        "from_node": "4807590205",
+        "to_node": "12089065256",
+        "native_lanes": {
+          "osm_488464043_0_forward.lane.0": {
+            "index": 0,
+            "represented_lanes": 1.0,
+            "start_m": 30.66247769232268,
+            "to_links": [
+              "osm_488464043_0_backward",
+              "osm_488464043_1_forward"
+            ],
+            "to_lanes": []
+          },
+          "osm_488464043_0_forward.original": {
+            "index": null,
+            "represented_lanes": 1.0,
+            "start_m": 38.328097115403345,
+            "to_links": [],
+            "to_lanes": [
+              "osm_488464043_0_forward.lane.0"
+            ]
+          }
+        },
+        "source_way": "488464043",
+        "reverse_link": "osm_488464043_0_backward",
+        "opposing_lanes": 1,
+        "offset_eligible": true,
+        "lane_width_m": 3.0,
+        "width_source": "nominal_visual_estimate",
+        "lane_count_source": "effective_network_permlanes",
+        "lane_import_source": "assumed:one_lane",
+        "osm_tags": {
+          "highway": "service"
+        },
+        "missing_osm_tags": [
+          "oneway",
+          "lanes",
+          "lanes:forward",
+          "lanes:backward",
+          "lanes:both_ways",
+          "motorcar",
+          "motor_vehicle",
+          "vehicle",
+          "access",
+          "bridge",
+          "tunnel",
+          "layer",
+          "width",
+          "name"
+        ],
+        "pairing": "shared_axis_reverse_pair",
+        "movement_source": "effective_lane_definitions",
+        "allowed_to_links": [
+          "osm_488464043_0_backward",
+          "osm_488464043_1_forward"
+        ]
+      }
+    }
+  },
+  "segment": {
+    "vehicle": "ctx_pre_00311",
+    "Agent_ID": "ctx_pre_00311",
+    "Link_ID": "osm_488464043_0_forward",
+    "Profile": "tortuga",
+    "Speed_kmh": 137.98114961545204,
+    "Agent_Type": "Tortuga",
+    "Agent_Schema": "simz1-road-profiles-v1",
+    "Vehicle_Type": "Tortuga",
+    "Vehicle_Type_Source": "effective_vehicles",
+    "Vehicle_PCU": 1.0,
+    "Vehicle_Dimensions": {
+      "length_m": 4.5,
+      "width_m": 1.8,
+      "source": "Explicit synthetic scenario assumption; not measured geometry",
+      "assumed": true,
+      "provenance": {
+        "vehicle_type": "Tortuga",
+        "artifact_source": "effective_vehicles",
+        "artifact_sha256": "f148af0f94a00b74a15796d84a6992b87b80f1e32a7f5471d8300ebea8329dd7"
+      }
+    },
+    "Driving_Profile": "tortuga",
+    "Vehicle_Physical_Dimensions": {
+      "length_m": 4.5,
+      "width_m": 1.8,
+      "source": "MATSim_VehicleType_XML",
+      "nature": "configured",
+      "measurement_status": "not_established_by_vehicle_type",
+      "assumed": true,
+      "provenance": {
+        "vehicle_type": "Tortuga",
+        "artifact_source": "effective_vehicles",
+        "artifact_path": "output/output_vehicles.xml.gz",
+        "artifact_sha256": "f148af0f94a00b74a15796d84a6992b87b80f1e32a7f5471d8300ebea8329dd7"
+      }
+    },
+    "color": [
+      40,
+      210,
+      95
+    ],
+    "path": [
+      [
+        -90.5122285000015,
+        14.633692699998988
+      ],
+      [
+        -90.51187810000309,
+        14.633633699999223
+      ]
+    ],
+    "timestamps": [
+      21624.0,
+      21625.0
+    ],
+    "Inferred": false,
+    "Distance_m": 38.328097115403345,
+    "Boundary_Provenance": {
+      "start": "entered link",
+      "end": "vehicle leaves traffic",
+      "start_relative": 0,
+      "end_relative": 1.0,
+      "distance": "network_length_fraction"
+    },
+    "Movement_End": 21625.0,
+    "Motion_Speed_kmh": 137.98114961545204,
+    "Wait_Evidence": "none_estimated",
+    "Observed_Waits": {},
+    "Motion_Provenance": {
+      "method": "minimum_link_vehicle_speed_at_queue_entry",
+      "fallback_reason": null,
+      "vehicle_limit_mps": 6.944444444444445,
+      "link_speed_at_entry_mps": 4.166666666666667,
+      "minimum_link_speed_in_interval_mps": 4.166666666666667,
+      "changes_inside_interval": false,
+      "continuous_position_observed": false
+    },
+    "Replay_Journey_Key": "cde7a28acf4a28fadff2f6f8d7fb86404bf1302cc210407e0960a0032c25c07f",
+    "Motion_Plan": {
+      "version": 1,
+      "phases": [],
+      "distance_m": 38.328097115403345,
+      "start_time": 21624.0,
+      "end_time": 21625.0,
+      "cap_mps": 4.166666666666667,
+      "acceleration_mps2": 1.5,
+      "deceleration_mps2": 2.5,
+      "reference_acceleration_mps2": 1.5,
+      "reference_deceleration_mps2": 2.5,
+      "rate_adaptation_factor": 1.0,
+      "source": "boundary_preserving_fallback",
+      "fallback_reason": "distance_exceeds_speed_cap",
+      "feasible": false,
+      "continuous_position_observed": false,
+      "hold_start": null,
+      "status": "unavailable",
+      "entry_speed_mps": null,
+      "exit_speed_mps": null,
+      "profile": "Normal",
+      "profile_source": "default_visual_reference",
+      "recorded_profile": "tortuga",
+      "rate_model": "visual_interpolation_only_not_qsim_acceleration",
+      "limits_complete": true,
+      "native_wait_boundary": null,
+      "entry_continuity": "unavailable_boundary",
+      "exit_continuity": "unobserved_boundary"
+    },
+    "Max_Speed_kmh": 137.98114961545204
+  },
+  "trip": {
+    "Departure": 21219.0,
+    "Trip_ID": "ctx_pre_00311:trip:0001",
+    "Person_ID": "ctx_pre_00311",
+    "Trip_Index": 1,
+    "Status": "completed",
+    "Abort": null,
+    "Last_Observed_Time": 21625.0,
+    "Observation_End": 136800.0,
+    "Observation_End_Provenance": "configured_horizon",
+    "Origin_Node": "12093678822",
+    "Destination_Node": "12089065256",
+    "Arrival": 21625.0,
+    "Origin_Position": [
+      -90.52151499999731,
+      14.625742499999939
+    ],
+    "Destination_Position": [
+      -90.51187810000309,
+      14.633633699999223
+    ],
+    "Traffic_Entry": 21219.0,
+    "Traffic_Exit": 21625.0,
+    "Traffic_Retirement": null,
+    "Traffic_Intervals": [
+      {
+        "vehicle": "ctx_pre_00311",
+        "start": 21219.0,
+        "end": 21625.0,
+        "start_event": "vehicle enters traffic",
+        "end_event": "vehicle leaves traffic",
+        "entry_link": "osm_1305763181_4_forward"
+      }
+    ],
+    "Agent_Type": "Tortuga",
+    "Agent_Schema": "simz1-road-profiles-v1",
+    "Vehicle_Type": "Tortuga",
+    "Vehicle_Type_Source": "person_attribute",
+    "Vehicle_PCU": null
+  }
+}

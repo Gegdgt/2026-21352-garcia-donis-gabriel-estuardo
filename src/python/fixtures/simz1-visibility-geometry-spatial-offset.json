@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "case_id": "lane_offset_leaves_display_polygon",
+  "evidence_kind": "synthetic_minimal_code_path; reproduction_not_executed",
+  "run_id": "fixture:spatial-offset",
+  "iteration": 0,
+  "replay_source": "in_memory_native_interval_fixture",
+  "classification": "Error de colocacion o geometria",
+  "causal_note": "An allowed native centreline lies on the polygon edge, but its 1.5 m visual lane offset is outside. Spatial filtering tests the displayed centre, so spatial_filter alone cannot establish a real exit from the native domain.",
+  "boundary_m": [[-50,0],[100,0],[100,100],[-50,100],[-50,0]],
+  "links": {
+    "before": {"from_node":"n0","to_node":"j1","path_m":[[0,40],[0,0]],"allowed_to_links":["edge"],"opposing_lanes":1,"reverse_link":"before-reverse"},
+    "edge": {"from_node":"j1","to_node":"j2","path_m":[[0,0],[40,0]],"allowed_to_links":["after"],"opposing_lanes":1,"reverse_link":"edge-reverse"},
+    "after": {"from_node":"j2","to_node":"n3","path_m":[[40,0],[40,40]],"allowed_to_links":[],"opposing_lanes":1,"reverse_link":"after-reverse"}
+  },
+  "segments": [
+    {"vehicle_id":"boundary-car","person_id":"boundary-person","trip_id":"boundary-trip","link_id":"before","start":0,"end":10},
+    {"vehicle_id":"boundary-car","person_id":"boundary-person","trip_id":"boundary-trip","link_id":"edge","start":10,"end":20},
+    {"vehicle_id":"boundary-car","person_id":"boundary-person","trip_id":"boundary-trip","link_id":"after","start":20,"end":30}
+  ],
+  "probes": [
+    {"time":9,"vehicle_id":"boundary-car","expected_visible":true},
+    {"time":10.001,"vehicle_id":"boundary-car","expected_visible":false,"expected_reason":"spatial_filter","expected_native_inside":true},
+    {"time":15,"vehicle_id":"boundary-car","expected_visible":false,"expected_reason":"spatial_filter","expected_native_inside":true},
+    {"time":19.999,"vehicle_id":"boundary-car","expected_visible":false,"expected_reason":"spatial_filter","expected_native_inside":true},
+    {"time":21,"vehicle_id":"boundary-car","expected_visible":true}
+  ]
+}

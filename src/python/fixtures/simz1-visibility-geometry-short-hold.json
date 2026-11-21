@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "case_id": "short_link_wait_omission",
+  "evidence_kind": "synthetic_minimal_code_path; reproduction_not_executed",
+  "run_id": "fixture:short-link-wait",
+  "iteration": 0,
+  "replay_source": "in_memory_native_interval_fixture",
+  "classification": "Ocultacion por solapamiento o desborde",
+  "causal_note": "A 2 m link cannot contain the current 4.5 m queue body; head is at least 2.25 m. A different street cannot supply upstream storage. The active native interval is omitted with storage_exceeded, then its successor becomes visible.",
+  "links": {
+    "before": {"from_node":"west","to_node":"j1","path_m":[[-40,0],[0,0]],"allowed_to_links":["short"],"source_way":"west-street"},
+    "short": {"from_node":"j1","to_node":"j2","path_m":[[0,0],[0,2]],"allowed_to_links":["after"],"source_way":"short-street"},
+    "after": {"from_node":"j2","to_node":"north","path_m":[[0,2],[0,42]],"allowed_to_links":[],"source_way":"north-street"}
+  },
+  "segments": [
+    {"vehicle_id":"short-car","person_id":"short-person","trip_id":"short-trip","link_id":"before","start":0,"end":10},
+    {"vehicle_id":"short-car","person_id":"short-person","trip_id":"short-trip","link_id":"short","start":10,"end":12,"hold":10.5},
+    {"vehicle_id":"short-car","person_id":"short-person","trip_id":"short-trip","link_id":"after","start":12,"end":22}
+  ],
+  "probes": [
+    {"time":9.999,"vehicle_id":"short-car","expected_visible":true},
+    {"time":10.001,"vehicle_id":"short-car","expected_visible":false,"expected_reason":"storage_exceeded"},
+    {"time":10.5,"vehicle_id":"short-car","expected_visible":false,"expected_reason":"storage_exceeded"},
+    {"time":11.999,"vehicle_id":"short-car","expected_visible":false,"expected_reason":"storage_exceeded"},
+    {"time":12,"vehicle_id":"short-car","expected_visible":true},
+    {"time":12.001,"vehicle_id":"short-car","expected_visible":true}
+  ]
+}

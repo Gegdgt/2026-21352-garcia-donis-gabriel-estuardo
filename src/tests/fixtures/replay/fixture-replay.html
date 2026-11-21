@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zona 1 — MATSim</title>
+<style>html,body,#deck-container{margin:0;width:100%;height:100%;background:#101820}#load-status{position:fixed;bottom:12px;left:12px;color:white;z-index:200;font:14px sans-serif}</style>
+<!-- Bloqueante y version fijada: disponible antes de inicializar el visor. -->
+<script src="https://cdn.jsdelivr.net/npm/deck.gl@9.1.14/dist.min.js"></script>
+</head>
+<body>
+<div id="deck-container"></div>
+<div id="load-status">Cargando visor…</div>
+<script id="replay-data" type="application/json">{"initialViewState":{"bearing":0,"latitude":14.636,"longitude":-90.513,"pitch":45,"zoom":14.5},"layers":[{"@@type":"LineLayer","data":[{"freespeed":10.0,"from":[-90.518,14.636],"from_node":"free_a_from","length":100.0,"to":[-90.518,14.636899999999999],"to_node":"free_a_to"},{"freespeed":10.0,"from":[-90.51650000000001,14.636],"from_node":"red_a_from","length":100.0,"to":[-90.51650000000001,14.636899999999999],"to_node":"red_a_to"},{"freespeed":10.0,"from":[-90.51650000000001,14.636899999999999],"from_node":"red_a_to","length":100.0,"to":[-90.51650000000001,14.637799999999999],"to_node":"red_b_to"},{"freespeed":10.0,"from":[-90.515,14.636],"from_node":"stop_a_from","length":100.0,"to":[-90.515,14.636899999999999],"to_node":"stop_a_to"},{"freespeed":10.0,"from":[-90.51350000000001,14.636],"from_node":"congestion_a_from","length":100.0,"to":[-90.51350000000001,14.636899999999999],"to_node":"congestion_a_to"},{"freespeed":10.0,"from":[-90.512,14.636],"from_node":"slow10_a_from","length":100.0,"to":[-90.512,14.636899999999999],"to_node":"slow10_a_to"},{"freespeed":10.0,"from":[-90.51050000000001,14.636],"from_node":"insufficient_a_from","length":100.0,"to":[-90.51050000000001,14.636899999999999],"to_node":"insufficient_a_to"},{"freespeed":10.0,"from":[-90.509,14.636],"from_node":"midnight_a_from","length":100.0,"to":[-90.509,14.636899999999999],"to_node":"midnight_a_to"},{"freespeed":11.11111111111111,"from":[-90.513,14.639],"from_node":"math_from","length":24.691358024691358,"to":[-90.513,14.639222222444443],"to_node":"math_to"},{"freespeed":11.11111111111111,"from":[-90.513,14.639222222444443],"from_node":"math_from","length":0,"to":[-90.513,14.639222222444443],"to_node":"math_to"}],"getColor":[110,120,130],"getSourcePosition":"@@=from","getTargetPosition":"@@=to","getWidth":1,"id":"roads","widthMinPixels":1},{"@@type":"PathLayer","data":[],"getColor":[0,139,184],"getPath":"@@=path","id":"selected-history","pickable":false,"widthMinPixels":4},{"@@type":"PathLayer","data":[],"getColor":[135,225,255],"getPath":"@@=path","id":"selected-future","pickable":false,"widthMinPixels":4},{"@@type":"ScatterplotLayer","data":[{"Agent_ID":"person_free","Boundary_Provenance":{"distance":"network_length_fraction","end":"vehicle leaves traffic","end_relative":1.0,"start":"vehicle enters traffic","start_relative":0.0},"Distance_m":100.0,"Inferred":false,"Link_ID":"free_a","Motion_Plan":{"acceleration_mps2":1.5,"cap_mps":10.0,"continuous_position_observed":false,"deceleration_mps2":2.5,"distance_m":100.0,"end_time":20.0,"entry_continuity":"unobserved_boundary","entry_speed_mps":5.0,"exit_continuity":"unobserved_boundary","exit_speed_mps":5.0,"fallback_reason":null,"feasible":true,"hold_start":null,"limits_complete":true,"native_wait_boundary":null,"phases":[[4.7369515717340014e-14,19.99999999999997,0.0,5.000000000000071,0.0]],"profile":"Normal","profile_source":"recorded_profile","rate_adaptation_factor":1.0,"reference_acceleration_mps2":1.5,"reference_deceleration_mps2":2.5,"source":"continuous_link","start_time":0.0,"status":"constant","version":1},"Motion_Provenance":{"changes_inside_interval":false,"continuous_position_observed":false,"fallback_reason":null,"link_speed_at_entry_mps":10.0,"method":"minimum_link_vehicle_speed_at_queue_entry","minimum_link_speed_in_interval_mps":10.0,"vehicle_limit_mps":10.0},"Motion_Speed_kmh":36.0,"Movement_End":10.0,"Observed_Waits":{},"Profile":"Normal","Speed_kmh":18.0,"Trip":{"Abort":null,"Arrival":20.0,"Departure":0.0,"Destination_Node":"free_a_to","Destination_Position":[-90.518,14.636899999999999],"Last_Observed_Time":20.0,"Observation_End":86430,"Observation_End_Provenance":"configured_horizon","Origin_Node":"free_a_from","Origin_Position":[-90.518,14.636],"Person_ID":"person_free","Status":"completed","Trip_ID":"person_free:trip:0001","Trip_Index":1},"Wait_Evidence":"estimated_residual_unknown_cause","color":[255,210,40],"path":[[-90.518,14.636],[-90.518,14.636899999999999]],"timestamps":[0.0,20.0],"vehicle":"vehicle_free"},{"Agent_ID":"person_red","Boundary_Provenance":{"distance":"network_length_fraction","end":"left link","end_relative":1,"start":"vehicle enters traffic","start_relative":0.0},"Distance_m":100.0,"Inferred":false,"Link_ID":"red_a","Motion_Plan":{"acceleration_mps2":1.5,"cap_mps":10.0,"continuous_position_observed":false,"deceleration_mps2":2.5,"distance_m":100.0,"end_time":55.0,"entry_continuity":"unobserved_boundary","entry_speed_mps":10.0,"exit_continuity":"matched","exit_speed_mps":0.0,"fallback_reason":null,"feasible":true,"hold_start":45.0,"limits_complete":true,"native_wait_boundary":45.0,"phases":[[30.0,34.0,0.0,10.0,-0.6818181818181818],[34.0,41.0,34.54545454545455,7.272727272727273,0.0],[41.0,45.0,85.45454545454545,7.272727272727273,-1.8181818181818183],[45.0,55.0,100.0,0.0,0.0]],"profile":"Normal","profile_source":"recorded_profile","rate_adaptation_factor":1.0,"reference_acceleration_mps2":1.5,"reference_deceleration_mps2":2.5,"source":"native_wait","start_time":30.0,"status":"kinematic","version":1},"Motion_Provenance":{"changes_inside_interval":false,"continuous_position_observed":false,"fallback_reason":null,"link_speed_at_entry_mps":10.0,"method":"native_queue_wait_boundary","minimum_link_speed_in_interval_mps":10.0,"vehicle_limit_mps":10.0},"Motion_Speed_kmh":24.0,"Movement_End":45.0,"Observed_Waits":{"signal_red":{"attempts":10,"first":45.0,"last":54.0,"position_evidence":"queue_exit","sources":["MATSim15_QNode_native_branch"]}},"Profile":"Normal","Speed_kmh":14.4,"Trip":{"Abort":null,"Arrival":75.0,"Departure":30.0,"Destination_Node":"red_b_to","Destination_Position":[-90.51650000000001,14.637799999999999],"Last_Observed_Time":75.0,"Observation_End":86430,"Observation_End_Provenance":"configured_horizon","Origin_Node":"red_a_from","Origin_Position":[-90.51650000000001,14.636],"Person_ID":"person_red","Status":"completed","Trip_ID":"person_red:trip:0001","Trip_Index":1},"Wait_Evidence":"native_wait_observation","color":[245,65,65],"path":[[-90.51650000000001,14.636],[-90.51650000000001,14.636899999999999]],"timestamps":[30.0,55.0],"vehicle":"vehicle_red"},{"Agent_ID":"person_red","Boundary_Provenance":{"distance":"network_length_fraction","end":"vehicle leaves traffic","end_relative":1.0,"start":"entered link","start_relative":0},"Distance_m":100.0,"Inferred":false,"Link_ID":"red_b","Motion_Plan":{"acceleration_mps2":1.5,"cap_mps":10.0,"continuous_position_observed":false,"deceleration_mps2":2.5,"distance_m":100.0,"end_time":75.0,"entry_continuity":"matched","entry_speed_mps":0.0,"exit_continuity":"unobserved_boundary","exit_speed_mps":5.0,"fallback_reason":null,"feasible":true,"hold_start":null,"limits_complete":true,"native_wait_boundary":null,"phases":[[55.0,58.67217781462685,0.0,0.0,1.5],[58.67217781462685,74.79669331122389,10.113667426678216,5.508266721940274,0.0],[74.79669331122389,75.0,98.93179954399395,5.508266721940274,-2.5]],"profile":"Normal","profile_source":"recorded_profile","rate_adaptation_factor":1.0,"reference_acceleration_mps2":1.5,"reference_deceleration_mps2":2.5,"source":"continuous_link","start_time":55.0,"status":"kinematic","version":1},"Motion_Provenance":{"changes_inside_interval":false,"continuous_position_observed":false,"fallback_reason":null,"link_speed_at_entry_mps":10.0,"method":"minimum_link_vehicle_speed_at_queue_entry","minimum_link_speed_in_interval_mps":10.0,"vehicle_limit_mps":10.0},"Motion_Speed_kmh":36.0,"Movement_End":65.0,"Observed_Waits":{},"Profile":"Normal","Speed_kmh":18.0,"Trip":{"Abort":null,"Arrival":75.0,"Departure":30.0,"Destination_Node":"red_b_to","Destination_Position":[-90.51650000000001,14.637799999999999],"Last_Observed_Time":75.0,"Observation_End":86430,"Observation_End_Provenance":"configured_horizon","Origin_Node":"red_a_from","Origin_Position":[-90.51650000000001,14.636],"Person_ID":"person_red","Status":"completed","Trip_ID":"person_red:trip:0001","Trip_Index":1},"Wait_Evidence":"estimated_residual_unknown_cause","color":[255,210,40],"path":[[-90.51650000000001,14.636899999999999],[-90.51650000000001,14.637799999999999]],"timestamps":[55.0,75.0],"vehicle":"vehicle_red"},{"Agent_ID":"person_stop","Boundary_Provenance":{"distance":"network_length_fraction","end":"vehicle leaves traffic","end_relative":1.0,"start":"vehicle enters traffic","start_relative":0.0},"Distance_m":100.0,"Inferred":false,"Link_ID":"stop_a","Motion_Plan":{"acceleration_mps2":1.5,"cap_mps":10.0,"continuous_position_observed":false,"deceleration_mps2":2.5,"distance_m":100.0,"end_time":90.0,"entry_continuity":"unobserved_boundary","entry_speed_mps":10.0,"exit_continuity":"unobserved_boundary","exit_speed_mps":0.0,"fallback_reason":null,"feasible":true,"hold_start":85.0,"limits_complete":true,"native_wait_boundary":85.0,"phases":[[70.0,74.0,0.0,10.0,-0.6818181818181818],[74.0,81.0,34.54545454545455,7.272727272727273,0.0],[81.0,85.0,85.45454545454545,7.272727272727273,-1.8181818181818183],[85.0,90.0,100.0,0.0,0.0]],"profile":"Normal","profile_source":"recorded_profile","rate_adaptation_factor":1.0,"reference_acceleration_mps2":1.5,"reference_deceleration_mps2":2.5,"source":"native_wait","start_time":70.0,"status":"kinematic","version":1},"Motion_Provenance":{"changes_inside_interval":false,"continuous_position_observed":false,"fallback_reason":null,"link_speed_at_entry_mps":10.0,"method":"native_queue_wait_boundary","minimum_link_speed_in_interval_mps":10.0,"vehicle_limit_mps":10.0},"Motion_Speed_kmh":24.0,"Movement_End":85.0,"Observed_Waits":{"priority_stop":{"attempts":5,"first":85.0,"last":89.0,"position_evidence":"queue_exit","sources":["MATSim15_QNode_native_branch"]}},"Profile":"Normal","Speed_kmh":18.0,"Trip":{"Abort":null,"Arrival":90.0,"Departure":70.0,"Destination_Node":"stop_a_to","Destination_Position":[-90.515,14.636899999999999],"Last_Observed_Time":90.0,"Observation_End":86430,"Observation_End_Provenance":"configured_horizon","Origin_Node":"stop_a_from","Origin_Position":[-90.515,14.636],"Person_ID":"person_stop","Status":"completed","Trip_ID":"person_stop:trip:0001","Trip_Index":1},"Wait_Evidence":"native_wait_observation","color":[255,210,40],"path":[[-90.515,14.636],[-90.515,14.636899999999999]],"timestamps":[70.0,90.0],"vehicle":"vehicle_stop"},{"Agent_ID":"person_congestion","Boundary_Provenance":{"distance":"network_length_fraction","end":"vehicle leaves traffic","end_relative":1.0,"start":"vehicle enters traffic","start_relative":0.0},"Distance_m":100.0,"Inferred":false,"Link_ID":"congestion_a","Motion_Plan":{"acceleration_mps2":1.5,"cap_mps":10.0,"continuous_position_observed":false,"deceleration_mps2":2.5,"distance_m":100.0,"end_time":130.0,"entry_continuity":"unobserved_boundary","entry_speed_mps":3.3333333333333335,"exit_continuity":"unobserved_boundary","exit_speed_mps":3.3333333333333335,"fallback_reason":null,"feasible":true,"hold_start":null,"limits_complete":true,"native_wait_boundary":null,"phases":[[100.00000000000006,129.99999999999997,0.0,3.333333333333428,0.0]],"profile":"Normal","profile_source":"recorded_profile","rate_adaptation_factor":1.0,"reference_acceleration_mps2":1.5,"reference_deceleration_mps2":2.5,"source":"queue_delay_estimate","start_time":100.0,"status":"constant","version":1},"Motion_Provenance":{"changes_inside_interval":false,"continuous_position_observed":false,"fallback_reason":null,"link_speed_at_entry_mps":10.0,"method":"minimum_link_vehicle_speed_at_queue_entry","minimum_link_speed_in_interval_mps":10.0,"vehicle_limit_mps":10.0},"Motion_Speed_kmh":36.0,"Movement_End":110.0,"Observed_Waits":{"congestion_queue":{"attempts":11,"first":115.0,"last":125.0,"position_evidence":"unknown_queue_position","sources":["MATSim15_queue_post_step"]}},"Profile":"Normal","Speed_kmh":12.0,"Trip":{"Abort":null,"Arrival":130.0,"Departure":100.0,"Destination_Node":"congestion_a_to","Destination_Position":[-90.51350000000001,14.636899999999999],"Last_Observed_Time":130.0,"Observation_End":86430,"Observation_End_Provenance":"configured_horizon","Origin_Node":"congestion_a_from","Origin_Position":[-90.51350000000001,14.636],"Person_ID":"person_congestion","Status":"completed","Trip_ID":"person_congestion:trip:0001","Trip_Index":1},"Wait_Evidence":"native_queue_delay_position_unknown","color":[245,65,65],"path":[[-90.51350000000001,14.636],[-90.51350000000001,14.636899999999999]],"timestamps":[100.0,130.0],"vehicle":"vehicle_congestion"},{"Agent_ID":"person_slow10","Boundary_Provenance":{"distance":"network_length_fraction","end":"vehicle leaves traffic","end_relative":1.0,"start":"vehicle enters traffic","start_relative":0.0},"Distance_m":100.0,"Inferred":false,"Link_ID":"slow10_a","Motion_Plan":{"acceleration_mps2":1.0,"cap_mps":2.7777777777777777,"continuous_position_observed":false,"deceleration_mps2":1.5,"distance_m":100.0,"end_time":176.0,"entry_continuity":"unobserved_boundary","entry_speed_mps":2.7777777777777777,"exit_continuity":"unobserved_boundary","exit_speed_mps":2.7777777777777777,"fallback_reason":null,"feasible":true,"hold_start":null,"limits_complete":true,"native_wait_boundary":null,"phases":[[140.0,176.0,0.0,2.7777777777777777,0.0]],"profile":"Tortuga","profile_source":"recorded_profile","rate_adaptation_factor":1.0,"reference_acceleration_mps2":1.0,"reference_deceleration_mps2":1.5,"source":"continuous_link","start_time":140.0,"status":"constant","version":1},"Motion_Provenance":{"changes_inside_interval":false,"continuous_position_observed":false,"fallback_reason":null,"link_speed_at_entry_mps":10.0,"method":"minimum_link_vehicle_speed_at_queue_entry","minimum_link_speed_in_interval_mps":10.0,"vehicle_limit_mps":2.7777777777777777},"Motion_Speed_kmh":10.0,"Movement_End":176.0,"Observed_Waits":{},"Profile":"Tortuga","Speed_kmh":10.0,"Trip":{"Abort":null,"Arrival":176.0,"Departure":140.0,"Destination_Node":"slow10_a_to","Destination_Position":[-90.512,14.636899999999999],"Last_Observed_Time":176.0,"Observation_End":86430,"Observation_End_Provenance":"configured_horizon","Origin_Node":"slow10_a_from","Origin_Position":[-90.512,14.636],"Person_ID":"person_slow10","Status":"completed","Trip_ID":"person_slow10:trip:0001","Trip_Index":1},"Wait_Evidence":"none_estimated","color":[245,65,65],"path":[[-90.512,14.636],[-90.512,14.636899999999999]],"timestamps":[140.0,176.0],"vehicle":"vehicle_slow10"},{"Agent_ID":"person_insufficient","Boundary_Provenance":{"distance":"network_length_fraction","end":"vehicle leaves traffic","end_relative":1.0,"start":"vehicle enters traffic","start_relative":0.0},"Distance_m":100.0,"Inferred":false,"Link_ID":"insufficient_a","Motion_Plan":{"acceleration_mps2":1.5,"cap_mps":10.0,"continuous_position_observed":false,"deceleration_mps2":2.5,"distance_m":100.0,"end_time":215.0,"entry_continuity":"unobserved_boundary","entry_speed_mps":4.0,"exit_continuity":"unobserved_boundary","exit_speed_mps":4.0,"fallback_reason":"missing_speed_limit","feasible":false,"hold_start":null,"limits_complete":false,"native_wait_boundary":null,"phases":[[190.0,215.0,0.0,4.0,0.0]],"profile":"Normal","profile_source":"recorded_profile","rate_adaptation_factor":1.0,"reference_acceleration_mps2":1.5,"reference_deceleration_mps2":2.5,"source":"boundary_preserving_fallback","start_time":190.0,"status":"fallback","version":1},"Motion_Provenance":{"changes_inside_interval":false,"continuous_position_observed":false,"fallback_reason":"unknown_vehicle_limit","link_speed_at_entry_mps":10.0,"method":"bounded_interval_fallback","minimum_link_speed_in_interval_mps":10.0,"vehicle_limit_mps":null},"Motion_Speed_kmh":14.4,"Movement_End":215.0,"Observed_Waits":{},"Profile":"Normal","Speed_kmh":14.4,"Trip":{"Abort":null,"Arrival":215.0,"Departure":190.0,"Destination_Node":"insufficient_a_to","Destination_Position":[-90.51050000000001,14.636899999999999],"Last_Observed_Time":215.0,"Observation_End":86430,"Observation_End_Provenance":"configured_horizon","Origin_Node":"insufficient_a_from","Origin_Position":[-90.51050000000001,14.636],"Person_ID":"person_insufficient","Status":"completed","Trip_ID":"person_insufficient:trip:0001","Trip_Index":1},"Wait_Evidence":"none_estimated","color":[245,65,65],"path":[[-90.51050000000001,14.636],[-90.51050000000001,14.636899999999999]],"timestamps":[190.0,215.0],"vehicle":"vehicle_insufficient"},{"Agent_ID":"person_midnight","Boundary_Provenance":{"distance":"network_length_fraction","end":"vehicle leaves traffic","end_relative":1.0,"start":"vehicle enters traffic","start_relative":0.0},"Distance_m":100.0,"Inferred":false,"Link_ID":"midnight_a","Motion_Plan":{"acceleration_mps2":1.5,"cap_mps":10.0,"continuous_position_observed":false,"deceleration_mps2":2.5,"distance_m":100.0,"end_time":86415.0,"entry_continuity":"unobserved_boundary","entry_speed_mps":5.0,"exit_continuity":"unobserved_boundary","exit_speed_mps":5.0,"fallback_reason":null,"feasible":true,"hold_start":null,"limits_complete":true,"native_wait_boundary":null,"phases":[[86395.0,86415.0,0.0,5.000000000000071,0.0]],"profile":"Normal","profile_source":"recorded_profile","rate_adaptation_factor":1.0,"reference_acceleration_mps2":1.5,"reference_deceleration_mps2":2.5,"source":"continuous_link","start_time":86395.0,"status":"constant","version":1},"Motion_Provenance":{"changes_inside_interval":false,"continuous_position_observed":false,"fallback_reason":null,"link_speed_at_entry_mps":10.0,"method":"minimum_link_vehicle_speed_at_queue_entry","minimum_link_speed_in_interval_mps":10.0,"vehicle_limit_mps":10.0},"Motion_Speed_kmh":36.0,"Movement_End":86405.0,"Observed_Waits":{},"Profile":"Normal","Speed_kmh":18.0,"Trip":{"Abort":null,"Arrival":86415.0,"Departure":86395.0,"Destination_Node":"midnight_a_to","Destination_Position":[-90.509,14.636899999999999],"Last_Observed_Time":86415.0,"Observation_End":86430,"Observation_End_Provenance":"configured_horizon","Origin_Node":"midnight_a_from","Origin_Position":[-90.509,14.636],"Person_ID":"person_midnight","Status":"completed","Trip_ID":"person_midnight:trip:0001","Trip_Index":1},"Wait_Evidence":"estimated_residual_unknown_cause","color":[255,210,40],"path":[[-90.509,14.636],[-90.509,14.636899999999999]],"timestamps":[86395.0,86415.0],"vehicle":"vehicle_midnight"},{"Agent_ID":"mathematical40","Distance_m":24.691358024691358,"Inferred":true,"Link_ID":"math40_braking","Motion_Plan":{"acceleration_mps2":2.0,"cap_mps":11.11111111111111,"continuous_position_observed":false,"deceleration_mps2":2.5,"distance_m":24.691358024691358,"end_time":304.44444444444446,"entry_speed_mps":11.11111111111111,"exit_speed_mps":0.0,"fallback_reason":null,"feasible":true,"hold_start":null,"phases":[[300.0,304.44444444444446,0.0,11.11111111111111,-2.5]],"rate_adaptation_factor":1.0,"reference_acceleration_mps2":2.0,"reference_deceleration_mps2":2.5,"source":"mathematical_fixture_assumed_entry_speed","start_time":300.0,"status":"kinematic","version":1},"Motion_Provenance":{"continuous_position_observed":false,"initial_speed_assumption_mps":11.11111111111111,"link_speed_at_entry_mps":11.11111111111111,"method":"mathematical_reference","vehicle_limit_mps":11.11111111111111},"Motion_Speed_kmh":19.999999999999943,"Movement_End":304.44444444444446,"Observed_Waits":{},"Profile":"Supuesto matematico: entrada a 40 km/h","Speed_kmh":19.999999999999943,"Trip":{"Abort":null,"Arrival":309.44444444444446,"Departure":300,"Destination_Node":"math_to","Destination_Position":[-90.513,14.639222222444443],"Last_Observed_Time":309.44444444444446,"Observation_End":86430,"Origin_Node":"math_from","Origin_Position":[-90.513,14.639],"Person_ID":"mathematical40","Status":"completed","Trip_ID":"math40:assumed-entry-speed","Trip_Index":1},"Wait_Evidence":"mathematical_fixture_not_observed","color":[255,210,40],"path":[[-90.513,14.639],[-90.513,14.639222222444443]],"timestamps":[300,304.44444444444446],"vehicle":"math40"},{"Agent_ID":"mathematical40","Distance_m":0,"Inferred":true,"Link_ID":"math40_hold","Motion_Plan":{"acceleration_mps2":2.0,"cap_mps":11.11111111111111,"continuous_position_observed":false,"deceleration_mps2":2.5,"distance_m":0.0,"end_time":309.44444444444446,"entry_speed_mps":0.0,"exit_speed_mps":0.0,"fallback_reason":null,"feasible":true,"hold_start":null,"phases":[[304.44444444444446,309.44444444444446,0.0,0.0,0.0]],"rate_adaptation_factor":1.0,"reference_acceleration_mps2":2.0,"reference_deceleration_mps2":2.5,"source":"mathematical_fixture_assumed_entry_speed","start_time":304.44444444444446,"status":"stationary","version":1},"Motion_Provenance":{"continuous_position_observed":false,"initial_speed_assumption_mps":0,"link_speed_at_entry_mps":11.11111111111111,"method":"mathematical_reference","vehicle_limit_mps":11.11111111111111},"Motion_Speed_kmh":0.0,"Movement_End":309.44444444444446,"Observed_Waits":{},"Profile":"Supuesto matematico: entrada a 40 km/h","Speed_kmh":0.0,"Trip":{"Abort":null,"Arrival":309.44444444444446,"Departure":300,"Destination_Node":"math_to","Destination_Position":[-90.513,14.639222222444443],"Last_Observed_Time":309.44444444444446,"Observation_End":86430,"Origin_Node":"math_from","Origin_Position":[-90.513,14.639],"Person_ID":"mathematical40","Status":"completed","Trip_ID":"math40:assumed-entry-speed","Trip_Index":1},"Wait_Evidence":"mathematical_fixture_not_observed","color":[255,210,40],"path":[[-90.513,14.639222222444443],[-90.513,14.639222222444443]],"timestamps":[304.44444444444446,309.44444444444446],"vehicle":"math40"}],"getFillColor":"@@=color","getPosition":"@@=position","getRadius":3,"id":"trips","opacity":1,"pickable":true,"radiusMaxPixels":5,"radiusMinPixels":3,"radiusUnits":"pixels","visible":false},{"@@type":"IconLayer","billboard":true,"data":[],"getAngle":"@@=angle","getIcon":"@@=icon","getPixelOffset":[0,0],"getPosition":"@@=position","getSize":32,"iconAtlas":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAABQCAYAAABPunpEAAAEdElEQVR4nO2cPWsUURSG7w5bpRWC4AdsUKbxoxQl2KQQTJl/EAJGRBQDooiQysZCRCQBQwpLIaKQKAqpBbGyEAeLhWghgoX5AxGCC3G/Zufec+fsvfd5mkB27rx73n3PTLJ7zxoDAABp0ig7YGNre89VZG52plQHffzXyF/Dp3CVJ4I+/mvkr1Emvrgw7yy8urY+9Emgj/9a+ct8i3efp6yz0cd/U2P+ehpAWtz2fOjjvySD8vRfA3S6Qzp83U9i0F0Affw3Nedv4B0AIAWatgt/HT/c87vJnZ+mLlon857ftb8Vyejjfy7if1PC+O7HfDZCv+B1P+YziNr6+J+L+p9JmW9znGT4bI4LTR//c3H/R26AqqGWboKqoZIOobY+/ude/M98hlmqCWzDJBVCbX38z735z7tAkDSZ76u463rXq2jo6/E/9+o/dwBIGhoAkoYGgKShASBpShvA9VNd1/Wun6qGvh7/C6/+cweApMl8XoWk9gTZXkWl9uRo6+N/4c3/zNeLIL0hrmqYpDekaevjf+HF/8zHi+BrN+ioRfnajamtj/+FuP9N2xdBaz96pzit/fja+vhfiPpvPRBT5/BLP+ocPhlHffwvRHzkXSBIGhoAkoYGgKRpBjsU/q73m1UmL1l/BWllqD+P4ksJmsENhfcJfvdjPhuB+vOovpQgC2oofEj4bY6rCvXnoj7Z+H/29CmzvvLYPH/21ExfOOesnwUzFF4x1NJNQP25V79GPd/Sjatm+cFDc+vOfXPz2hVn/SyIoXDLMEs1AfXntfo27DwvNl6bne8/zJ/dXTMxMeGsz7tAEBSbb9/v/zwxNWW+fHX/XyMb+6Fwx6u463rqz8fSv4vT583LV5vO+twBIEiOHT1iPnz85HweGgCC5NGTFbO35/4/Hg0AQbJ877bIeWgACJLrS3fraQD1oXDHT3Vd11N/EbR/DMUDuP4JpD4UbnkVl9oTRP1Frb7V6X8WzFB4xTBLb4ij/sKrX1r+Z0ENhY8Yal+7Qam/EPVpHPxvBjcU/i/cWvMA1F9E9aUEzWCHwmscfukH9RdR+M/nAJA0NAAkDQ0ASRPsULy2/qHPl3t+9/vMm2Tqb0WiH9xQvLZ+v+B3P+azEbTrb0WmH9RQvLb+sPDbHBda/a0I9YMZitfWrxpq6SbQrr8VqX4QQ/Ha+rZhlmoC7fpbEevzLhAkzdgPxWuvd72Ku67Xrr8V+XruAJA0NAAkDQ0ASUMDQNKM/VC89nrXT3Vd12vX3458PXcASJoghuK19W2v4lJ7grTrb0esH8xQvLZ+1TBLb4jTrr8dqX5QQ/Ha+qOG2tduUO362xHqBzcUr63fCbfWPIB2/e3I9Hsmyze2tve/bmFxYd5Is7q2vv9zbnZm4EQ7+vhvasxfVnawtLiv49HHf5s89TTAwe6QCuHB8wy7+qOP/3M156/0TxFJysKPPv7Xnb9GHU+kSvDRx/868ycaTJego4//GvljKwQkDQ0ASUMDQNLQAJA0NAAkDQ0AJmX+AvkMPYwcJZo2AAAAAElFTkSuQmCC","iconMapping":{"green":{"anchorX":16,"anchorY":80,"height":80,"mask":false,"width":32,"x":64,"y":0},"off":{"anchorX":16,"anchorY":80,"height":80,"mask":false,"width":32,"x":128,"y":0},"red":{"anchorX":16,"anchorY":80,"height":80,"mask":false,"width":32,"x":0,"y":0},"redyellow":{"anchorX":16,"anchorY":80,"height":80,"mask":false,"width":32,"x":96,"y":0},"unknown":{"anchorX":16,"anchorY":80,"height":80,"mask":false,"width":32,"x":160,"y":0},"yellow":{"anchorX":16,"anchorY":80,"height":80,"mask":false,"width":32,"x":32,"y":0}},"id":"signals","pickable":true,"sizeUnits":"pixels"},{"@@type":"IconLayer","billboard":true,"data":[],"getIcon":"@@=icon","getPosition":"@@=position","getSize":38,"iconAtlas":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACK0lEQVR4nO2aTUrEQBCFq59BXMngxqV/CC7HO+jKpSvBG3gebyB4At3oHTJLQfxbupFBEEQQxUWGTExPVyXpriSdB8MY0l3V1d+rmdgM0aBBqhqPRj+a+dGG4jU3ARS5oJW4SF3LBaDIBY2kNtoaLgApK73dUc2P0AldlEO7ANQC+pouQMhkXLohXQBSUpG6lgsQKpGUaigXgBRko63hAoRIUpVmCBeAAstFObQL4DtBniK3uPw43y6Az+BNLd7nJoACSWrtUK2Q+ArMobZ2+Dj7++1m2xlvMp0a6qIDUgdNW/EhXIA20G8ybusckFakz53fug0Ye6Ivid8aB6RC+raN8emCRJt+2XXIbwSQJ3GoSVrBlwug3ftF2i76knxqDkgttLLi/t6zVxNx68jUmby5O2ZTeLpcEj0Nbp18s9fxfD8xnT0W1xYockEzueSfIV8fiKDIZaQTrjb2Zrt9trzCnnf+9Tl3ffr++o/+9fEHNRH76OWOXRcociV1Jhd3XiJXz9eJLREocoEiFyhyoUs/afOxTlDkQt/oS9cLilxJ1d3MP8ldrK5b53LH+YjNOTpD3eLLrqXjfMZ2tQKoQz9p87FOs+hmcfeywJyzPcm4KnNc4/YPHubu2VoB1DP60vXCdmNR73BPcquc+PqKbavHcCZ0jX5e+VYoawP04aGHq7K64JrUZfqc9SMW+rb60Gf6nDpMTPTzyj4QQZELMdKPsd5BgwYNojL9AozwBVnXexkZAAAAAElFTkSuQmCC","iconMapping":{"crash":{"anchorX":32,"anchorY":32,"height":64,"mask":false,"width":64,"x":0,"y":0}},"id":"incidents","pickable":true,"sizeUnits":"pixels","visible":false},{"@@type":"ScatterplotLayer","data":[],"getFillColor":[255,255,255],"getLineColor":[20,30,40],"getPosition":"@@=position","getRadius":8,"id":"selected-origin","lineWidthMinPixels":2,"pickable":false,"radiusUnits":"pixels","stroked":true},{"@@type":"IconLayer","billboard":true,"data":[],"getIcon":"@@=icon","getPosition":"@@=position","getSize":44,"iconAtlas":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAxklEQVR4nO3aMU4DMRBA0e+vPUDooEvuf6jQQQc3AKWhY1crRYTk+zUuRmPZ08zIMkzTNIWNteDh+fh1WT/ezjySMcbPvZdrb/70clqNbxXzr/MlTuIkTuIkTuIkbnn0Pr9F4iRO4iRO4iRO4pa9Cf+9z8/3gJ0kTuIkTuIkTuKWvQn31ue3SJzESZzESZzESdxYC84PEr8MIZ/vr6uFuycSJ3ESJ3ESJ3ESJ3ESJ3ESJ3ESJ3ESJ3ESJ3ESJ3He+gDTNHFL394HMjJg0O8sAAAAAElFTkSuQmCC","iconMapping":{"finish":{"anchorX":10,"anchorY":60,"height":64,"mask":false,"width":64,"x":0,"y":0}},"id":"selected-destination","pickable":false,"sizeUnits":"pixels"}],"views":[{"@@type":"MapView","controller":true}],"visual_motion":{"settings":{"enabled":true,"profiles":{"Tortuga":{"acceleration_mps2":1.0,"deceleration_mps2":1.5},"Normal":{"acceleration_mps2":1.5,"deceleration_mps2":2.5},"Liebre":{"acceleration_mps2":2.0,"deceleration_mps2":3.5}},"max_rate_multiplier":4.0,"minimum_ramp_seconds":0.15},"note":"Interpolacion visual experimental; no modifica eventos, metricas ni dinamica de QSim"},"hud":{"reconstructed_vehicles":8,"run_id":"synthetic-visual-motion-fixture","demand_seed":null,"matsim_seed":null,"iteration":0,"planned_persons":7,"planned_trips":7,"observed_departures":7,"priority":null},"trajectory_stats":{"observed_departures":7,"observed_boundary_segments":8,"zero_duration_intervals":0,"observed_persons":7,"observed_vehicles":7,"reconstructed_vehicles":7,"selected_vehicles":7,"vehicles_without_segments":0,"drawable_vehicles":7,"vehicles_without_drawable_segments":0,"unsampled_vehicles":0,"pending_link_intervals":0,"segments":8,"visual_motion":{"version":1,"enabled":true,"segments":8,"counts":{"constant":4,"adapted_rates":0,"native_wait_holds":2,"kinematic":3,"fallback":1},"settings":{"enabled":true,"profiles":{"Tortuga":{"acceleration_mps2":1.0,"deceleration_mps2":1.5},"Normal":{"acceleration_mps2":1.5,"deceleration_mps2":2.5},"Liebre":{"acceleration_mps2":2.0,"deceleration_mps2":3.5}},"max_rate_multiplier":4.0,"minimum_ramp_seconds":0.15}}},"motion_sources":{},"trajectories_only":false,"time_horizon":{"start_seconds":0,"end_seconds":86430},"demand_window":null,"replay_window":{"start_seconds":0,"end_seconds":86430},"selection_warning":"FIXTURE SINTETICO: eventos de prueba, no una corrida MATSim ni geometria de campo."}</script>
+<script>
+(() => {
+  'use strict';
+  const status = document.getElementById('load-status');
+  const reportError = error => { status.hidden=false; status.textContent='No se pudo cargar el visor: '+error.message; console.error(error); };
+  try {
+    const rawPayload = document.getElementById('replay-data').textContent.trim();
+    if (!rawPayload || rawPayload.startsWith('__')) {
+      throw new Error('Esta es la plantilla sin datos. Ejecute python/visualizador_z1.py y abra animacion_zona1.html, o abra el auditor.html generado.');
+    }
+    if (!window.deck) throw new Error('CDN deck.gl no disponible. Verifique la conexion a Internet.');
+    const config = JSON.parse(rawPayload);
+    const replaySegments = config.layers.find(layer => layer.id === 'trips').data;
+    const incidentRecords = config.layers.find(layer => layer.id === 'incidents').data;
+    // Funciones JS explicitas: nunca evaluar cadenas @@= ni expresiones arbitrarias.
+    const accessors = {
+      getPath: d => d.path, getTimestamps: d => d.timestamps,
+      getSourcePosition: d => d.from, getTargetPosition: d => d.to,
+      getPosition: d => d.position, getFillColor: d => d.color, getIcon: d => d.icon,
+      getAngle: d => d.angle
+    };
+    const types = {PathLayer:deck.PathLayer, LineLayer:deck.LineLayer, ScatterplotLayer:deck.ScatterplotLayer, IconLayer:deck.IconLayer};
+    let layers = config.layers.map(spec => {
+      const props = {...spec};
+      const Constructor = types[props['@@type']];
+      delete props['@@type'];
+      if (!Constructor) throw new Error('Tipo de capa no soportado');
+      for (const [name,value] of Object.entries(props)) {
+        if (typeof value === 'string' && value.startsWith('@@=')) {
+          if (!accessors[name]) throw new Error('Accesor no soportado: '+name);
+          props[name] = accessors[name];
+        }
+      }
+      if (props.id === 'trips' || props.id === 'incidents') props.data = [];
+      return new Constructor(props);
+    });
+    const deckInstance = new deck.Deck({parent:document.getElementById('deck-container'),
+      initialViewState:config.initialViewState, controller:true, layers,
+      onLoad:()=>{status.hidden=true;}, onError:reportError});
+    // One ordered native series per system/group. Upper bound includes the exact
+// timestamp, with original event order for multiple initialization states.
+const signalTimelines = new Map();
+for (const series of config.signal_replay?.series || []) {
+  const key = JSON.stringify([series.system_id,series.group_id]);
+  if (signalTimelines.has(key)) throw new Error('Duplicate native signal group: '+key);
+  signalTimelines.set(key,series.states);
+}
+function signalObservationAt(system, group, time) {
+  const events = signalTimelines.get(JSON.stringify([system,group])) || [];
+  let lo=0, hi=events.length;
+  while (lo<hi) { const mid=(lo+hi)>>>1; if (events[mid][0]<=time) lo=mid+1; else hi=mid; }
+  return events[lo-1] ?? null;
+}
+function signalStateAt(system,group,time) { return signalObservationAt(system,group,time)?.[1] ?? 'UNKNOWN'; }
+function signalIcon(object,time) { return signalStateAt(object.system_id,object.group_id,time).toLowerCase(); }
+let lastSignalTime = null;
+const TIEMPO_INICIAL = config.replay_window?.start_seconds ?? config.time_horizon?.start_seconds ?? 0, TIEMPO_FINAL = config.replay_window?.end_seconds ?? config.time_horizon?.end_seconds ?? 86400;
+const INITIAL = TIEMPO_INICIAL, FINAL = TIEMPO_FINAL, SPEED = 120;
+let current = INITIAL, previous = null, paused = false, speed = SPEED;
+const timelines = new Map();
+const laneTimelines = new Map();
+for (const event of config.lane_replay?.events || []) {
+  if (!laneTimelines.has(event.vehicle)) laneTimelines.set(event.vehicle, []);
+  laneTimelines.get(event.vehicle).push(event);
+}
+// Stable order preserves native leave/enter order within the same QSim step.
+for (const events of laneTimelines.values()) events.sort((a,b) => a.time-b.time);
+function laneObservationAt(vehicle, link, time) {
+  const events = laneTimelines.get(vehicle) || [];
+  let lo = 0, hi = events.length;
+  while (lo < hi) { const mid = (lo + hi) >>> 1; if (events[mid].time <= time) lo = mid+1; else hi = mid; }
+  const event = events[lo-1] || null;
+  const lane = event?.type === 'entered lane' && event.link === link ? event.lane : null;
+  return {lane, event};
+}
+const incidents = incidentRecords;
+let incidentKey = null;
+function incidentActive(incident,time) { return incident.start <= time && (incident.end == null || time < incident.end); }
+for (const segment of replaySegments) {
+  if (!timelines.has(segment.vehicle)) timelines.set(segment.vehicle, []);
+  timelines.get(segment.vehicle).push(segment);
+}
+// The exported array contains link segments; count only unique vehicle keys.
+const trajectoriesByVehicle = Object.fromEntries(timelines);
+const totalVehicleCount = Object.keys(trajectoriesByVehicle).length;
+for (const records of timelines.values()) {
+  records.sort((a,b) => a.timestamps[0]-b.timestamps[0]);
+  let tripKey = null, maximum = null;
+  for (const record of records) {
+    const key = record.Agent_ID + ':' + record.Trip?.Departure;
+    if (key !== tripKey) { maximum = null; tripKey = key; }
+    if (Number.isFinite(record.Speed_kmh)) maximum = maximum == null ? record.Speed_kmh : Math.max(maximum,record.Speed_kmh);
+    record.Max_Speed_kmh = maximum;
+  }
+}
+function activeSegment(vehicle, time) {
+  const records = timelines.get(vehicle) || [];
+  let lo = 0, hi = records.length;
+  while (lo < hi) { const mid = (lo + hi) >>> 1; if (records[mid].timestamps[0] <= time) lo = mid+1; else hi = mid; }
+  const record = records[lo-1];
+  return record && time < record.timestamps[1] ? record : null;
+}
+// Centered interval index: queries inspect active intervals rather than every
+// vehicle in the population. Arbitrary forward/backward seeks use the same index.
+function buildIntervalIndex(records) {
+  if (!records.length) return null;
+  const sorted=records.filter(r=>r.timestamps[1]>r.timestamps[0]).sort((a,b)=>a.timestamps[0]-b.timestamps[0]);
+  if (!sorted.length) return null;
+  const center=sorted[sorted.length>>>1].timestamps[0], left=[],right=[],cross=[];
+  for (const record of sorted) {
+    if (record.timestamps[1]<=center) left.push(record);
+    else if(record.timestamps[0]>center) right.push(record);
+    else cross.push(record);
+  }
+  return {center,byStart:cross,byEnd:[...cross].sort((a,b)=>b.timestamps[1]-a.timestamps[1]),
+    left:buildIntervalIndex(left),right:buildIntervalIndex(right)};
+}
+let intervalIndex=buildIntervalIndex(replaySegments);
+function activeRecordsAt(time, node=intervalIndex, result=[]) {
+  if (!node) return result;
+  if(time<node.center) {
+    for(const record of node.byStart){if(record.timestamps[0]>time)break;result.push(record);}
+    return activeRecordsAt(time,node.left,result);
+  }
+  for(const record of node.byEnd){if(record.timestamps[1]<=time)break;result.push(record);}
+  return activeRecordsAt(time,node.right,result);
+}
+const hud = document.createElement('div');
+hud.style.cssText = 'position:fixed;top:16px;left:16px;z-index:100;background:#101820ed;color:white;padding:14px;font:16px monospace;border-radius:8px';
+const clock = document.createElement('div');
+clock.style.cssText = 'position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:101;background:#101820ed;color:white;padding:14px;border-radius:8px;font:18px monospace;pointer-events:none';
+document.body.appendChild(clock);
+const totalAgents = document.createElement('div');
+totalAgents.style.cssText = 'position:fixed;bottom:16px;right:16px;z-index:101;background:#101820ed;color:white;padding:14px;border-radius:8px;font:14px monospace;pointer-events:none';
+totalAgents.textContent = 'Vehiculos reconstruidos: ' + totalVehicleCount.toLocaleString('en-US');
+const metadata = config.hud || {};
+if (metadata.run_id) {
+  totalAgents.style.whiteSpace = 'pre-line';
+  totalAgents.textContent += '\nPersonas planificadas: ' + metadata.planned_persons +
+    ' | Viajes planificados: ' + metadata.planned_trips +
+    '\nSalidas registradas (etapas): ' + metadata.observed_departures +
+    '\nCorrida: ' + metadata.run_id + '\nSemilla demanda: ' + metadata.demand_seed +
+    ' | MATSim: ' + metadata.matsim_seed + ' | Iteracion: ' + metadata.iteration;
+}
+if (config.lane_replay) {
+  totalAgents.style.whiteSpace = 'pre-line';
+  const configuredLanes = config.lane_replay.use_lanes;
+  totalAgents.textContent += '\nCarriles configurados: ' + (configuredLanes == null ? 'no disponible' :
+    configuredLanes ? 'activados' : 'desactivados') +
+    '\nEventos de cola registrados (muestra): ' + config.lane_replay.event_count +
+    ' | Vehiculos con eventos: ' + config.lane_replay.vehicles_with_events;
+}
+if (metadata.priority) {
+  totalAgents.style.whiteSpace = 'pre-line';
+  totalAgents.textContent += '\nPrioridad sin semaforo: ' + (metadata.priority.enabled ? 'activada' : 'desactivada') +
+    ' | Parada en cabecera: ' + metadata.priority.stop_seconds + ' s' +
+    '\nClasificacion: ' + metadata.priority.classification + ' | Conflictos: ' + metadata.priority.conflicts;
+}
+if (config.trajectory_stats) {
+  totalAgents.style.whiteSpace='pre-line';
+  totalAgents.textContent += '\nPersonas en eventos: '+config.trajectory_stats.observed_persons+
+    ' | Vehiculos sin tramo dibujable: '+config.trajectory_stats.vehicles_without_drawable_segments+
+    ' | Excluidos por muestreo: '+config.trajectory_stats.unsampled_vehicles;
+}
+document.body.appendChild(totalAgents);
+if (config.selection_warning) {
+  const warning = document.createElement('div');
+  warning.setAttribute('role', 'alert');
+  warning.style.cssText = 'position:fixed;bottom:220px;right:16px;max-width:540px;z-index:102;background:#fff3cd;color:#422900;padding:14px;border:2px solid #d68b00;border-radius:8px;font:14px sans-serif';
+  warning.textContent = config.selection_warning;
+  document.body.appendChild(warning);
+}
+const toggle = document.createElement('button');
+toggle.textContent = 'Pausar';
+const legend = document.createElement('div');
+legend.style.cssText = 'font:12px sans-serif;line-height:1.7;margin-top:8px';
+legend.innerHTML = '<span style="color:#28d25f">Verde &gt;40 km/h</span> | <span style="color:#ffd228">Amarillo 15-40</span> | <span style="color:#f54141">Rojo &lt;15 en movimiento</span><br>Semaforos: estados nativos por sistema/grupo; ? = desconocido sin evento previo<br>Blanco: detenido (hasta 0.0001 km/h) | Color: velocidad visual estimada | Sin estelas';
+legend.innerHTML += '<br>Triangulo con vehiculos: incidente registrado activo';
+if (!config.signal_replay?.event_count) legend.innerHTML += '<br>Sin eventos semaforicos nativos disponibles: no se calculan fases ilustrativas.';
+legend.innerHTML += '<br>Semaforos por enlace entrante: horizontales girados 90 grados.';
+const seeker = document.createElement('input');
+seeker.type = 'range'; seeker.min = INITIAL; seeker.max = FINAL; seeker.step = 1;
+seeker.setAttribute('aria-label', 'Hora de simulacion dentro del horizonte de la corrida');
+seeker.style.cssText = 'display:block;width:100%;margin:12px 0;cursor:pointer';
+const controls = document.createElement('div');
+controls.style.cssText = 'display:flex;flex-wrap:wrap;gap:6px;max-width:360px';
+const realtime = document.createElement('button');
+realtime.textContent = 'Tiempo real (1x)';
+const original = document.createElement('button');
+original.textContent = 'Original (120x)';
+controls.append(toggle,realtime,original);
+hud.append(seeker,controls,legend); document.body.appendChild(hud);
+legend.innerHTML += '<br>Clic: recorrido celeste oscuro, futuro celeste claro y O-D durante el viaje activo.<br>Futuro del replay registrado, no prediccion. Clic al fondo o fuera del mapa: limpiar.';
+legend.innerHTML += '<br>Origen: circulo blanco. Destino: bandera de meta.';
+legend.innerHTML += '<br>Movimiento estimado con limites de enlace/vehiculo; espera residual de causa desconocida salvo evidencia nativa.';
+legend.innerHTML += '<br>Aceleracion y frenado interpolados entre eventos; no son velocidades instantaneas medidas por MATSim.';
+legend.innerHTML += '<br>Datos insuficientes: interpolacion durante todo el intervalo, sin agregar espera.';
+legend.innerHTML += '<br>Intervalo incompatible con los limites: sin marcador ni tramo inventado. Gris: velocidad desconocida.';
+legend.innerHTML += '<br>QSim con carriles: colas, sin cambio lateral ni car-following continuo.';
+legend.innerHTML += '<br>Posicion dibujada: eje interpolado; posicion lateral no observada.';
+if (config.demand_window) {
+  legend.innerHTML += '<br>Demanda planificada: [' + formatDuration(config.demand_window.start_seconds) + ', ' +
+    formatDuration(config.demand_window.end_seconds) + '); pesos sinteticos, no aforos.';
+  legend.innerHTML += '<br>Simulacion hasta ' + formatDuration(config.time_horizon.end_seconds) +
+    '; replay hasta ' + formatDuration(TIEMPO_FINAL) + '. El deslizador no genera viajes.';
+}
+if (config.lane_replay?.event_count) {
+  legend.innerHTML += '<br>ID de cola y tiempos registrados; no son trayectorias de rebase.';
+} else {
+  legend.innerHTML += '<br>Sin eventos de carril disponibles: no se asignan carriles visuales.';
+}
+let hovered = null, pinned = null;
+let selectedHistory = [], selectedEndpoints = [], selectionChanged = true;
+function tripKey(object) {
+  if (!object?.vehicle) return null;
+  const trip = object.Trip;
+  return JSON.stringify([object.Agent_ID ?? trip?.Person_ID ?? null,
+    trip?.Trip_ID != null ? ['id',trip.Trip_ID] : Number.isFinite(trip?.Departure) ? ['departure',trip.Departure] :
+      ['segment',object.vehicle,...object.timestamps]]);
+}
+const recordsByTrip = new Map();
+for (const record of replaySegments) {
+  const key=tripKey(record);
+  if (!recordsByTrip.has(key)) recordsByTrip.set(key,[]);
+  recordsByTrip.get(key).push(record);
+}
+for (const records of recordsByTrip.values()) records.sort((a,b)=>a.timestamps[0]-b.timestamps[0]);
+function recordsForTrip(object) {
+  const key=tripKey(object);
+  if (key==null) return [];
+  return recordsByTrip.get(key) || (timelines.get(object.vehicle) || []).filter(r=>tripKey(r)===key);
+}
+function selectionAt(object, time, records=null) {
+  const key=tripKey(object);
+  if (key==null) return {visible:false,reason:'no_trip',active:null};
+  records=records ?? recordsForTrip(object);
+  const trip=object.Trip || {};
+  const departure=Number.isFinite(trip.Departure) ? trip.Departure : records[0]?.timestamps[0];
+  let reason=null;
+  if (!Number.isFinite(departure) || time<departure) reason='before_departure';
+  else if (Number.isFinite(trip.Arrival)) {
+    if (time>=trip.Arrival) reason='arrived'; // Arrival is exclusive, including zero-length trips.
+  } else if (Number.isFinite(trip.Abort) && trip.Status!=='censored') {
+    if (time>=trip.Abort) reason='aborted';
+  } else {
+    // A censored trip has no observed arrival. Never extend visibility to the
+    // global replay clock merely because other agents still produce events.
+    const last=Number.isFinite(trip.Last_Observed_Time) ? trip.Last_Observed_Time :
+      records.reduce((end,record)=>Math.max(end,record.timestamps[1]),-Infinity);
+    if (time>last) reason='after_last_observation';
+    else if (Number.isFinite(trip.Observation_End) && trip.Observation_End_Provenance!=='last_event_in_stream' &&
+             time>=trip.Observation_End) reason='observation_cutoff';
+  }
+  let active=null;
+  if (!reason) for (const record of records) {
+    if (record.timestamps[0]>time) break;
+    if (time<record.timestamps[1]) active=record;
+  }
+  return {key,trip,records,visible:!reason,reason:reason || (active ? 'measured_segment' : 'event_gap'),active};
+}
+function selectAgent(object) {
+  selectedHistory = []; selectedEndpoints = []; selectionChanged = true;
+  if (!object?.vehicle) return;
+  selectedHistory = recordsForTrip(object);
+  const trip = object.Trip;
+  const origin = trip?.Origin_Position || selectedHistory[0]?.path[0];
+  if (origin) selectedEndpoints.push({position:origin,kind:'origin'});
+  if (trip?.Destination_Position) selectedEndpoints.push({position:trip.Destination_Position,kind:'destination',icon:'finish'});
+}
+const info = document.createElement('div');
+info.id = 'simz1-active-telemetry';
+info.style.cssText = 'display:none;position:fixed;right:16px;top:16px;z-index:100;background:#101820ed;color:white;padding:14px;white-space:pre-line;font:14px monospace;pointer-events:none';
+document.body.appendChild(info);
+function tooltipText(object) {
+  if (!object) return null;
+  if (object.incident) return 'Incidente registrado\nEnlace: ' + object.Link_ID +
+    '\nEstado: ' + (incidentActive(object,current) ? 'Activo' : current < object.start ? 'Aun no iniciado' : 'Recuperado') +
+    '\nInicio: ' + formatClock(object.start) + '\nRecuperacion: ' + (object.end == null ? 'No registrada' : formatClock(object.end)) +
+    '\nCapacidad reducida: ' + object.capacity + ' veh/h\nVelocidad libre reducida: ' + (object.speed == null ? 'desconocida' : object.speed.toFixed(1)+' km/h');
+  if (object.system_id != null || object.node) return 'Semaforo: ' + (object.system_id ?? object.node) + '\nEnlace entrante: ' +
+    (object.Link_ID ?? 'Sin geometria disponible') +
+    '\nGrupo nativo: ' + (object.group_id ?? 'Sin correspondencia') +
+    '\nCarriles controlados: ' + (object.lane_ids?.join(', ') || 'Control por enlace / no disponible') +
+    '\nEstado nativo: ' + signalStateAt(object.system_id,object.group_id,current) +
+    '\nUltima emision: ' + (signalObservationAt(object.system_id,object.group_id,current)?.[0] ?? 'sin evento previo') +
+    ' s; no se extrapolan ciclos';
+  const state = selectionAt(object,current);
+  if (!state.visible) return null;
+  const active = state.active;
+  const vehicle = active?.vehicle ?? object.vehicle;
+  const visual = active ? markerAt(active, current) : null;
+  const motion = active ? motionAt(active,current) : null;
+  const trip = state.trip;
+  const elapsed = trip?.Departure == null ? 'No disponible' : formatDuration(Math.max(0,Math.min(current,trip.Arrival ?? current)-trip.Departure));
+  const lane = active ? laneObservationAt(vehicle, active.Link_ID, current) : {lane:null,event:null};
+  const laneText = lane.lane ? '\nCola/carril registrado: ' + lane.lane +
+    '\nEntrada registrada: ' + lane.event.time + ' s; ubicacion continua no observada' :
+    '\nCola/carril actual: sin pertenencia observada en este instante';
+  const lastLaneEvent = lane.event && !lane.lane && lane.event.lane ?
+    '\nUltimo evento de cola: ' + (lane.event.type === 'left lane' ? 'salida' : 'entrada') +
+    ' ' + lane.event.lane + ' a ' + lane.event.time + ' s' +
+    (lane.event.entry_observed === false ? ' (sin entrada registrada)' : '') : '';
+  return 'Agente: ' + object.Agent_ID + ' | Perfil: ' + ((active || object).Profile || 'No disponible') + '\nVehiculo: ' + vehicle + '\n' +
+    'Viaje: ' + (trip?.Trip_ID ?? 'ID no disponible en este archivo') + '\n' +
+    'Nodo de origen: ' + (trip?.Origin_Node ?? 'No disponible') + '\n' +
+    'Nodo de destino: ' + (trip?.Destination_Node ?? 'No disponible (sin llegada)') + '\n' +
+    (active ? 'Velocidad media medida del tramo: ' + (Number.isFinite(active.Speed_kmh) ? active.Speed_kmh.toFixed(1)+' km/h' : 'no disponible (limites inferidos o intervalo nulo)') + '\nVelocidad maxima hasta aqui: ' + (Number.isFinite(active.Max_Speed_kmh) ? active.Max_Speed_kmh.toFixed(1)+' km/h' : 'no disponible') + '\nEnlace actual: ' + active.Link_ID : 'Sin tramo medido activo en este instante') +
+    (visual ? '\nVelocidad visual estimada: ' + (Number.isFinite(visual.Visual_Speed_kmh) ? visual.Visual_Speed_kmh.toFixed(1) + ' km/h' : 'no disponible') +
+      (visual.Waiting ? ' | Detenido en la interpolacion: '+(active.Wait_Evidence || 'causa no observada') : '') +
+      '\nMovimiento visual: '+motionStatusLabel(visual.Visual_Motion_Status)+'; estimado entre eventos, no velocidad instantanea medida'+
+      (visual.Visual_Motion_Fallback_Reason ? '\nMotivo del respaldo: '+visual.Visual_Motion_Fallback_Reason : '')+
+      '\nWAIT nativo registrado: '+(Object.keys(active.Observed_Waits || {}).join(', ') || 'sin evidencia') : '') +
+    (motion && !motion.available ? '\nMovimiento visual: no disponible; se conserva el intervalo nativo sin dibujar una trayectoria'+
+      (motion.fallback_reason ? '\nMotivo: '+motion.fallback_reason : '') : '') +
+    laneText + lastLaneEvent + (visual ? '\nPosicion: interpolada sobre el eje, sin offset lateral' : '\nPosicion actual: desconocida; no se unen huecos de eventos') +
+    (!Number.isFinite(trip.Arrival) ? '\nSin llegada registrada; seleccion limitada a la evidencia individual disponible' : '') +
+    '\nTiempo transcurrido: ' + elapsed;
+}
+function formatDuration(seconds) {
+  return [Math.floor(seconds/3600),Math.floor(seconds%3600/60),Math.floor(seconds%60)].map(v=>String(v).padStart(2,'0')).join(':');
+}
+function formatClock(seconds) {
+  // Simulation time only: no calendar date or host timezone.
+  if (seconds >= 86400) return formatDuration(Math.floor(seconds)) + ' (dia ' + (Math.floor(seconds/86400)+1) + ')';
+  const time = ((Math.floor(seconds) % 86400) + 86400) % 86400;
+  const hour = Math.floor(time / 3600);
+  return [hour % 12 || 12, Math.floor(time % 3600 / 60), time % 60]
+    .map(v => String(v).padStart(2, '0')).join(':') + (hour < 12 ? ' AM' : ' PM');
+}
+// White means an actually stationary visual state, allowing only numerical
+// roundoff up to 0.0001 km/h. A slow moving vehicle (e.g. 10 km/h) stays red.
+const MOTION_STOP_TOLERANCE_KMH = 1e-4;
+function motionStatusLabel(status) {
+  return ({kinematic:'aceleracion y frenado progresivos',constant:'velocidad constante',
+    stationary:'posicion fija',fallback:'interpolacion de respaldo',legacy:'interpolacion heredada',
+    unavailable:'movimiento no disponible'})[status] || 'interpolacion estimada';
+}
+function visualSpeedColor(speed) {
+  if (!Number.isFinite(speed)) return [160,160,180];
+  if (speed <= MOTION_STOP_TOLERANCE_KMH) return [255,255,255];
+  return speed > 40 ? [40,210,95] : speed >= 15 ? [255,210,40] : [245,65,65];
+}
+function motionAt(segment, time) {
+  const [start, end] = segment.timestamps;
+  const plan = segment.Motion_Plan;
+  const phases = plan?.phases;
+  const epsilon = 1e-7;
+  const unavailable = reason => ({available:false,status:'unavailable',source:plan?.source || 'estimated_motion_phases',
+    fallback_reason:reason || 'intervalo incompatible con una trayectoria visual acotada'});
+  if (plan?.status === 'unavailable') return unavailable(plan.fallback_reason);
+  const distanceEpsilon = epsilon*Math.max(1,plan?.distance_m || 0);
+  const phaseDistanceEnd = phase => phase[2]+phase[3]*(phase[1]-phase[0])+0.5*phase[4]*(phase[1]-phase[0])**2;
+  // Evaluation depends only on absolute simulation time. No frame integration,
+  // wall-clock speed, previous position or day wrapping enters the trajectory.
+  const valid = plan?.version === 1 && Number.isFinite(plan.distance_m) && plan.distance_m >= 0 &&
+    Array.isArray(phases) && phases.length > 0 && phases.every((phase,index) =>
+      Array.isArray(phase) && phase.length >= 5 && phase.slice(0,5).every(Number.isFinite) &&
+      phase[1] >= phase[0] && phase[3]>=-epsilon && phase[3]+phase[4]*(phase[1]-phase[0])>=-epsilon &&
+      phase[2]>=-distanceEpsilon && phaseDistanceEnd(phase)<=plan.distance_m+distanceEpsilon &&
+      (!Number.isFinite(plan.cap_mps) || Math.max(phase[3],phase[3]+phase[4]*(phase[1]-phase[0]))<=plan.cap_mps+epsilon) &&
+      (!index || Math.abs(phase[0]-phases[index-1][1]) <= epsilon && Math.abs(phase[2]-phaseDistanceEnd(phases[index-1]))<=distanceEpsilon)) &&
+    Math.abs(phases[0][0]-start) <= epsilon && Math.abs(phases[phases.length-1][1]-end) <= epsilon &&
+    Math.abs(phases[0][2])<=distanceEpsilon && Math.abs(phaseDistanceEnd(phases[phases.length-1])-plan.distance_m)<=distanceEpsilon;
+  if (valid) {
+    const absoluteTime = Math.max(start,Math.min(end,time));
+    let lo=0, hi=phases.length;
+    while (lo<hi) { const mid=(lo+hi)>>>1; if(phases[mid][0]<=absoluteTime) lo=mid+1; else hi=mid; }
+    const phase = phases[Math.max(0,lo-1)];
+    const [t0,t1,s0,v0,a] = phase;
+    const dt = Math.max(0,Math.min(t1-t0,absoluteTime-t0));
+    const distance = Math.max(0,Math.min(plan.distance_m,s0+v0*dt+0.5*a*dt*dt));
+    const speed = Math.max(0,v0+a*dt)*3.6;
+    return {available:true,fraction:plan.distance_m > 0 ? distance/plan.distance_m : 0,
+      distance_m:distance,speed_kmh:speed,acceleration_mps2:a,
+      waiting:time>=start && time<end && speed<=MOTION_STOP_TOLERANCE_KMH,
+      status:plan.status || 'kinematic',source:plan.source || 'estimated_motion_phases',
+      fallback_reason:plan.fallback_reason || null};
+  }
+  if (plan) return unavailable('plan de movimiento incompleto o incompatible');
+  // Preserve old exports explicitly as a fallback; their native timestamps and
+  // measured Speed_kmh remain unchanged. Unknown speed is never painted white.
+  const moveEnd = Math.max(start,Math.min(end,segment.Movement_End ?? end));
+  const fraction = moveEnd > start ? Math.max(0,Math.min(1,(time-start)/(moveEnd-start))) : 1;
+  const stationary = segment.path[0].every((value,i) => value === segment.path[1][i]);
+  const fixed = stationary || time >= moveEnd;
+  const estimate = segment.Motion_Speed_kmh ?? segment.Speed_kmh;
+  const speed = fixed ? 0 : Number.isFinite(estimate) ? Math.max(0,estimate) : null;
+  return {available:true,fraction,distance_m:null,speed_kmh:speed,acceleration_mps2:null,
+    waiting:time>=start && time<end && Number.isFinite(speed) && speed<=MOTION_STOP_TOLERANCE_KMH,
+    status:plan ? 'fallback' : 'legacy',source:segment.Motion_Provenance?.method || 'legacy_interval_interpolation',
+    fallback_reason:plan ? 'plan de movimiento incompleto o incompatible' :
+      segment.Motion_Provenance?.fallback_reason || 'archivo anterior sin fases de aceleracion'};
+}
+function markerAt(segment, time) {
+  const motion = motionAt(segment,time);
+  if (!motion.available) return null;
+  const lane = laneObservationAt(segment.vehicle, segment.Link_ID, time);
+  return {...segment, Waiting:motion.waiting, Visual_Speed_kmh:motion.speed_kmh,
+    Visual_Acceleration_mps2:motion.acceleration_mps2, Visual_Distance_m:motion.distance_m,
+    Visual_Motion_Status:motion.status, Visual_Motion_Source:motion.source,
+    Visual_Motion_Fallback_Reason:motion.fallback_reason, color:visualSpeedColor(motion.speed_kmh),
+    Observed_Queue_ID:lane.lane, Position_Evidence:'interpolated_link_centerline',
+    position: segment.path[0].map((value,i) => value + motion.fraction*(segment.path[1][i]-value))};
+}
+function splitSelectedRoute(records, time) {
+  const history = [], future = [];
+  if (!records.length || !selectionAt(records[0],time,records).visible) return {history,future};
+  // Keep measured segments separate: never bridge missing events across links.
+  for (const segment of records) {
+    const [start, end] = segment.timestamps;
+    if (!motionAt(segment,Math.max(start,Math.min(end,time))).available) continue;
+    if (time >= end) history.push({path:segment.path});
+    else if (time <= start) future.push({path:segment.path});
+    else {
+      const position = markerAt(segment, time).position;
+      history.push({path:[segment.path[0], position]});
+      future.push({path:[position, segment.path[1]]});
+    }
+  }
+  return {history, future};
+}
+let lastMarkerTime = null;
+let activeAgentCount = 0;
+
+function clearSelection() {
+  pinned=null;hovered=null;selectAgent(null);render();
+}
+function visibleInspection(object, hover=false) {
+  if (!object) return null;
+  if (object.vehicle) {
+    const state=selectionAt(object,current);
+    return state.visible && (!hover || state.active) ? object : null;
+  }
+  if (object.incident) return incidentActive(object,current) ? object : null;
+  return object.system_id!=null || object.node ? object : null;
+}
+deckInstance.setProps({
+  getTooltip: null,
+  onHover: ({object}) => { hovered = object || null; render(); },
+  onClick: ({object}) => { hovered=null; pinned = object || null; selectAgent(pinned); render(); }
+});
+document.addEventListener('pointerdown', event => {
+  const canvas=deckInstance.getCanvas?.();
+  // Timeline/buttons are controls for the selected trip, so seeking preserves
+  // its identity. A click elsewhere explicitly clears both pin and hover.
+  if (canvas?.contains?.(event.target) || hud.contains?.(event.target) || info.contains?.(event.target)) return;
+  clearSelection();
+});
+function render() {
+  const activeIncidents = incidents.filter(incident => incidentActive(incident,current));
+  const nextIncidentKey = activeIncidents.map(incident => incident.Link_ID + ':' + incident.start).join('|');
+  const updateSignals = lastSignalTime !== current;
+  const frameTime = current;
+  const updateMarkers = lastMarkerTime !== current;
+  if (updateMarkers && hovered?.vehicle) hovered=null; // Pointer has not followed the moving vehicle.
+  hovered=visibleInspection(hovered,true);
+  const markers = [];
+  if (updateMarkers) {
+    const activeAgents = new Set();
+    const activeByVehicle=new Map();
+    for(const record of activeRecordsAt(current)) {
+      const prior=activeByVehicle.get(record.vehicle);
+      if(!prior || prior.timestamps[0]<=record.timestamps[0])activeByVehicle.set(record.vehicle,record);
+    }
+    for (const segment of activeByVehicle.values()) {
+        const marker=markerAt(segment,current);
+        if (!marker) continue;
+        markers.push(marker);
+        if(segment.Agent_ID != null) activeAgents.add(segment.Agent_ID);
+    }
+    activeAgentCount = activeAgents.size;
+    lastMarkerTime = current;
+  }
+  const selection = selectionAt(pinned,current,selectedHistory);
+  const updateSelection = updateMarkers || selectionChanged;
+  const route = updateSelection ? (selection.visible ? splitSelectedRoute(selectedHistory,current) : {history:[],future:[]}) : null;
+  const endpoints=selection.visible ? selectedEndpoints : [];
+  layers = layers.map(layer => {
+    if (layer.id === 'selected-history' && route) return layer.clone({data:route.history});
+    if (layer.id === 'selected-future' && route) return layer.clone({data:route.future});
+    if (layer.id === 'selected-origin' && updateSelection) return layer.clone({data:endpoints.filter(p=>p.kind==='origin')});
+    if (layer.id === 'selected-destination' && updateSelection) return layer.clone({data:endpoints.filter(p=>p.kind==='destination')});
+    if (layer.id === 'incidents' && nextIncidentKey !== incidentKey) return layer.clone({data:activeIncidents,visible:true});
+    if (layer.id === 'trips' && updateMarkers) return layer.clone({data: markers, visible: true, getPosition: object => object.position});
+    if (layer.id === 'signals' && updateSignals) return layer.clone({
+      getIcon: object => signalIcon(object,frameTime), updateTriggers: {getIcon:frameTime}
+    });
+    return layer;
+  });
+  deckInstance.setProps({layers});
+  selectionChanged = false;
+  lastSignalTime = current;
+  incidentKey = nextIncidentKey;
+  const timeLabel = formatClock(current);
+  clock.textContent = timeLabel + ' | Agentes activos visibles: ' + activeAgentCount.toLocaleString('en-US') +
+    ' | ' + speed + 'x' + (paused ? ' | Pausa' : '');
+  seeker.value = current;
+  seeker.setAttribute('aria-valuetext',timeLabel);
+  realtime.setAttribute('aria-pressed',String(speed === 1));
+  original.setAttribute('aria-pressed',String(speed === SPEED));
+  realtime.style.background = speed === 1 ? '#a8d5ff' : '';
+  original.style.background = speed === SPEED ? '#a8d5ff' : '';
+  info.textContent = tooltipText(visibleInspection(pinned) || hovered) || '';
+  info.style.display = info.textContent ? 'block' : 'none';
+}
+function advance(timestamp) {
+  if (previous !== null && !paused && !document.hidden && timestamp > previous) current = INITIAL + ((current-INITIAL+(timestamp-previous)/1000*speed)%(FINAL-INITIAL));
+  previous = timestamp;
+}
+toggle.onclick = () => { advance(performance.now()); paused = !paused; toggle.textContent = paused ? 'Reproducir' : 'Pausar'; render(); };
+function setSpeed(value) { advance(performance.now()); speed = value; render(); }
+realtime.onclick = () => setSpeed(1);
+original.onclick = () => setSpeed(SPEED);
+seeker.oninput = () => {
+  const requested = Number(seeker.value);
+  if (!Number.isFinite(requested)) return;
+  current = Math.max(INITIAL,Math.min(FINAL,requested));
+  previous = performance.now();
+  render();
+};
+function animate(timestamp) { advance(timestamp); render(); requestAnimationFrame(animate); }
+document.addEventListener('visibilitychange', () => { previous = null; });
+render(); requestAnimationFrame(animate);
+    // Explicit synthetic QA overlay, injected only in this fixture HTML.
+    paused=true;toggle.textContent='Reproducir';
+    const motionPanel=document.createElement('div');motionPanel.id='motion-fixture-panel';
+    motionPanel.style.cssText='position:fixed;right:14px;top:54px;z-index:1000;background:#071321ee;border:1px solid #6ca4ce;color:#e5f3ff;padding:12px;max-width:410px;font:12px monospace;border-radius:8px';
+    const motionTitle=document.createElement('div');motionTitle.textContent='PRUEBAS VISUALES SINTETICAS · no son eventos de campo';motionPanel.appendChild(motionTitle);
+    const motionResult=document.createElement('pre');motionResult.id='motion-fixture-result';
+    motionResult.style.cssText='white-space:pre-wrap;color:#a4ffc0;margin:8px 0';
+    motionPanel.appendChild(motionResult);document.body.appendChild(motionPanel);
+    let savedMotionSample=null;
+    function motionFixtureSample(label,link,time,expect,rate=null){
+      paused=true;toggle.textContent='Reproducir';
+      const segment=replaySegments.find(row=>row.Link_ID===link);
+      seeker.value=time;seeker.oninput();
+      if(rate!==null)setSpeed(rate);
+      deckInstance.props.onClick({object:segment});render();
+      const marker=layers.find(row=>row.id==='trips').props.data.find(row=>row.vehicle===segment.vehicle);
+      const plan=segment.Motion_Plan;
+      const phase=plan.phases.find(row=>time>=row[0]&&time<row[1])||plan.phases[plan.phases.length-1];
+      const velocity=marker?.Visual_Speed_kmh;
+      let pass=!!marker&&Number.isFinite(velocity)&&marker.position.every(Number.isFinite);
+      if(expect==='brake')pass=pass&&phase[4]<0&&velocity>0;
+      if(expect==='forty')pass=pass&&Math.abs(velocity-40)<1e-5;
+      if(expect==='wait')pass=pass&&Math.abs(velocity)<1e-7&&marker.Waiting&&marker.color.every(v=>v===255);
+      if(expect==='accel')pass=pass&&phase[4]>0&&velocity>0;
+      if(expect==='slow')pass=pass&&Math.abs(velocity-10)<1e-5&&marker.color.join(',')==='245,65,65';
+      if(expect==='fallback')pass=pass&&plan.status==='fallback'&&!!plan.fallback_reason;
+      if(expect==='midnight')pass=pass&&current>86400&&formatClock(current).includes('dia 2');
+      if(expect==='reverse'&&savedMotionSample)pass=pass&&marker.position.every((v,i)=>Math.abs(v-savedMotionSample[i])<1e-10);
+      if(expect==='save')savedMotionSample=marker?.position.slice();
+      if(rate!==null)pass=pass&&speed===rate&&current===time;
+      motionResult.textContent=(pass?'PASS':'FAIL')+' '+label+'\nt='+current.toFixed(6)+' s | '+formatClock(current)+
+        '\nVelocidad del marcador: '+(velocity==null?'no disponible':velocity.toFixed(4)+' km/h')+
+        '\nPosicion real dibujada: '+JSON.stringify(marker?.position)+
+        '\nColor: '+JSON.stringify(marker?.color)+' | fase a='+(phase?.[4]??'n/a')+' m/s2'+
+        '\nEstado: '+plan.status+' | '+plan.source+
+        '\nMotivo fallback: '+(plan.fallback_reason||'ninguno')+
+        '\nIntervalo conservado: '+JSON.stringify(segment.timestamps)+' | media: '+segment.Speed_kmh.toFixed(3)+' km/h'+
+        '\nReferencia a/b: '+JSON.stringify(plan.reference_acceleration_mps2??plan.acceleration_mps2??'ver procedencia')+'/'+JSON.stringify(plan.reference_deceleration_mps2??plan.deceleration_mps2??'ver procedencia')+
+        '\nPerfil: '+segment.Profile+' | reproduccion '+speed+'x';
+      motionResult.dataset.result=pass?'pass':'fail';
+    }
+    const fixtureRed=replaySegments.find(row=>row.Link_ID==='red_a');
+    const fixtureAccel=replaySegments.find(row=>row.Link_ID==='red_b');
+    const brakePhase=fixtureRed.Motion_Plan.phases.find(row=>row[4]<0);
+    const finalBrakePhase=fixtureRed.Motion_Plan.phases.filter(row=>row[4]<0).slice(-1)[0];
+    const accelPhase=fixtureAccel.Motion_Plan.phases.find(row=>row[4]>0);
+    const samplePhase=(phase,fraction,otherwise)=>phase?phase[0]+(phase[1]-phase[0])*fraction:otherwise;
+    const mathBrake=replaySegments.find(row=>row.Link_ID==='math40_braking');
+    const mathHold=replaySegments.find(row=>row.Link_ID==='math40_hold');
+    const fixtureActions=[
+      ['Freno inicio',()=>motionFixtureSample('Freno inicio','red_a',samplePhase(brakePhase,.1,40),'brake')],
+      ['Freno final',()=>motionFixtureSample('Freno final','red_a',samplePhase(finalBrakePhase,.9,44),'brake')],
+      ['Espera inmovil',()=>motionFixtureSample('Espera roja observada','red_a',50,'wait')],
+      ['Aceleracion',()=>motionFixtureSample('Aceleracion despues de espera','red_b',samplePhase(accelPhase,.5,56),'accel')],
+      ['Lento 10 rojo',()=>motionFixtureSample('Lento 10 km/h, rojo','slow10_a',160,'slow')],
+      ['Datos insuficientes',()=>motionFixtureSample('Datos insuficientes, fallback','insufficient_a',200,'fallback')],
+      ['Medianoche',()=>motionFixtureSample('Tiempo absoluto dia 2','midnight_a',86405,'midnight')],
+      ['Guardar muestra',()=>motionFixtureSample('Guardar muestra antes de seek','free_a',12,'save')],
+      ['Retroceder',()=>{seeker.value=86405;seeker.oninput();motionFixtureSample('Retroceso restaura posicion','free_a',12,'reverse');}],
+      ['Misma muestra 1x',()=>motionFixtureSample('Muestra invariante a 1x','free_a',12,'none',1)],
+      ['Misma muestra 120x',()=>motionFixtureSample('Muestra invariante a 120x','free_a',12,'none',120)],
+      ['40 km/h supuesto',()=>motionFixtureSample('40 km/h inicial supuesto matematico','math40_braking',300,'forty')],
+      ['40 hacia cero',()=>motionFixtureSample('Freno matematico 40 hacia cero','math40_braking',mathBrake.timestamps[1]-.1,'brake')],
+      ['Cero matematico',()=>motionFixtureSample('Cero matematico tras freno','math40_hold',(mathHold.timestamps[0]+mathHold.timestamps[1])/2,'wait')]
+    ];
+    for(const [label,action]of fixtureActions){const button=document.createElement('button');button.textContent=label;button.onclick=action;button.style.cssText='margin:2px;padding:5px';motionPanel.appendChild(button);}
+    fixtureActions[0][1]();
+    
+
+  } catch (error) { reportError(error); }
+})();
+</script>
+</body>
+</html>

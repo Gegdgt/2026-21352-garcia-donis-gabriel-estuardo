@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (719685 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="333720771" visible="true" version="18" changeset="163613318" timestamp="2025-03-14T14:47:33Z" user="luisrobledomx1" uid="10119349" lat="14.6424788" lon="-90.5215303"/>
+ <node id="333720775" visible="true" version="13" changeset="63961663" timestamp="2018-10-28T22:46:42Z" user="raskeep" uid="3100894" lat="14.6416040" lon="-90.5216714"/>
+ <node id="579746202" visible="true" version="13" changeset="163613318" timestamp="2025-03-14T14:47:33Z" user="luisrobledomx1" uid="10119349" lat="14.6424896" lon="-90.5216179"/>
+ <node id="579746257" visible="true" version="5" changeset="56155886" timestamp="2018-02-07T17:44:47Z" user="Red_Ranger" uid="7149978" lat="14.6416155" lon="-90.5217473"/>
+ <node id="12093678858" visible="true" version="1" changeset="154854803" timestamp="2024-08-05T14:56:47Z" user="LogoneRiver" uid="19895166" lat="14.6418624" lon="-90.5217103"/>
+ <way id="1270930401" visible="true" version="1" changeset="149742652" timestamp="2024-04-08T16:23:13Z" user="GbabethemapGod" uid="15314242">
+  <nd ref="333720771"/>
+  <nd ref="579746202"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="2"/>
+  <tag k="name" v="8a Calle"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="source" v="Yahoo Image"/>
+  <tag k="surface" v="paved"/>
+ </way>
+ <way id="1273145789" visible="true" version="1" changeset="150095663" timestamp="2024-04-16T17:18:54Z" user="Corban8" uid="4240913">
+  <nd ref="333720775"/>
+  <nd ref="333720771"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="2"/>
+  <tag k="maxspeed" v="40"/>
+  <tag k="name" v="Avenida Elena"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="source" v="Yahoo Image"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="1273145790" visible="true" version="2" changeset="154854803" timestamp="2024-08-05T14:56:47Z" user="LogoneRiver" uid="19895166">
+  <nd ref="579746202"/>
+  <nd ref="12093678858"/>
+  <nd ref="579746257"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lanes" v="3"/>
+  <tag k="maxspeed" v="40"/>
+  <tag k="name" v="Avenida Elena"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <relation id="17478998" visible="true" version="1" changeset="150095663" timestamp="2024-04-16T17:18:54Z" user="Corban8" uid="4240913">
+  <member type="way" ref="1273145789" role="from"/>
+  <member type="way" ref="1270930401" role="via"/>
+  <member type="way" ref="1273145790" role="to"/>
+  <tag k="restriction" v="no_u_turn"/>
+  <tag k="type" v="restriction"/>
+ </relation>
+</osm>

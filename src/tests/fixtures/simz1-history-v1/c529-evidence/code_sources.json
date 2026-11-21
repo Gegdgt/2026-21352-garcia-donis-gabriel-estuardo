@@ -1,0 +1,218 @@
+[
+  {
+    "path": "src/main/java/gt/edu/uvg/sim/zona1/SimZ1Freight.java",
+    "sha256": "8623b0d798d901fffbda5d4e33d7978081bd90a34b92b2cdcd096d6b7dc51612",
+    "ranges": [
+      [
+        70,
+        80
+      ],
+      [
+        153,
+        180
+      ],
+      [
+        186,
+        195
+      ],
+      [
+        201,
+        264
+      ]
+    ]
+  },
+  {
+    "path": "src/main/java/gt/edu/uvg/sim/zona1/CongestionAwareRerouting.java",
+    "sha256": "e3de1c295f18e17b95de6f58e3860b1796ac3d1cf8435891850ccdb3114a7897",
+    "ranges": [
+      [
+        47,
+        55
+      ],
+      [
+        76,
+        155
+      ],
+      [
+        232,
+        354
+      ]
+    ]
+  },
+  {
+    "path": "src/main/java/gt/edu/uvg/sim/zona1/Zona1RoutingConfigGroup.java",
+    "sha256": "cfc8ab6b38da1405294da2515c53478e19c4d87ed58cc57dedfaa17b2277233f",
+    "ranges": [
+      [
+        1,
+        90
+      ]
+    ]
+  },
+  {
+    "path": "src/main/java/gt/edu/uvg/sim/zona1/SimZ1RouteSafety.java",
+    "sha256": "323102eafde262881b44a24e7db24395176bb760fd48ed78d44635e4e34b3ce7",
+    "ranges": [
+      [
+        250,
+        272
+      ]
+    ]
+  },
+  {
+    "path": "src/main/java/gt/edu/uvg/sim/zona1/ExperiencedTimeRouting.java",
+    "sha256": "08abb5460c8d5d2675ac3aae974aec8bf46dc50933acc5275c7c226701092136",
+    "ranges": [
+      [
+        60,
+        70
+      ],
+      [
+        79,
+        100
+      ]
+    ]
+  },
+  {
+    "path": "src/main/java/gt/edu/uvg/sim/zona1/SimZ1TurnRouter.java",
+    "sha256": "43e787803802f09c08989456b3edb2c45b6fbe961feb01fa513ffccc82a11f2c",
+    "ranges": [
+      [
+        74,
+        112
+      ]
+    ]
+  },
+  {
+    "path": "src/main/java/gt/edu/uvg/sim/zona1/UnsignalizedPriority.java",
+    "sha256": "253a76f88fba3a288058182f3cf664edf0aa077d7f1459d6135e58235d2aba06",
+    "ranges": [
+      [
+        149,
+        223
+      ]
+    ]
+  },
+  {
+    "path": "src/main/java/gt/edu/uvg/sim/zona1/PriorityMovements.java",
+    "sha256": "65c01865fda15fe7c57726c5cadc05ad743863c676038d2dba1ad19739c74f5b",
+    "ranges": [
+      [
+        43,
+        88
+      ]
+    ]
+  },
+  {
+    "path": "src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/SimZ1CorridorOccupancy.java",
+    "sha256": "a8a3c23a6db8c0c26ecc6e786b1af3c2898a0e545a2b03a16137485ab50b4f14",
+    "ranges": [
+      [
+        456,
+        472
+      ],
+      [
+        478,
+        507
+      ],
+      [
+        548,
+        564
+      ],
+      [
+        648,
+        658
+      ],
+      [
+        820,
+        844
+      ],
+      [
+        846,
+        874
+      ]
+    ]
+  },
+  {
+    "path": "src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/Zona1QNodeImpl.java",
+    "sha256": "f2cc41d059257c66722fbef7438544185fbc2c044d9f00bf5af5c4a198aab749",
+    "ranges": [
+      [
+        489,
+        510
+      ],
+      [
+        532,
+        539
+      ],
+      [
+        570,
+        585
+      ]
+    ]
+  },
+  {
+    "path": "src/main/java/org/matsim/core/mobsim/qsim/qnetsimengine/QueueWithBuffer.java",
+    "sha256": "42bf532a1c118dfdaa4392713c86810610fe01ad4cfb46cc08e8b5f4efc0423d",
+    "ranges": [
+      [
+        349,
+        354
+      ],
+      [
+        373,
+        417
+      ],
+      [
+        775,
+        783
+      ]
+    ]
+  },
+  {
+    "path": "src/main/java/gt/edu/uvg/sim/zona1/SimZ1Diagnostics.java",
+    "sha256": "98251bda980f118fae755f7b269190b2d6f0e75953e529940d10d2293172132f",
+    "ranges": [
+      [
+        47,
+        58
+      ],
+      [
+        112,
+        140
+      ]
+    ]
+  },
+  {
+    "path": "python/simz1_balanced_od_audit.py",
+    "sha256": "e9a3fdb6272b23adf0cb0c8416a3272783702de9c10aee1f236a70c7a1ae474a",
+    "ranges": [
+      [
+        274,
+        306
+      ],
+      [
+        339,
+        344
+      ],
+      [
+        371,
+        397
+      ]
+    ]
+  },
+  {
+    "path": "python/simz1_balanced_launch_report.py",
+    "sha256": "04544e28b6534f5b03f0cdc685e299118dcb8496f27727398d1c76569470c2f0",
+    "ranges": [
+      [
+        113,
+        130
+      ],
+      [
+        231,
+        270
+      ]
+    ]
+  }
+]

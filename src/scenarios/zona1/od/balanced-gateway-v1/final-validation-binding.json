@@ -1,0 +1,24 @@
+{
+  "status": "BLOCKED",
+  "check": "Read-only fingerprint comparison; Validate was not executed",
+  "receipt_path": "runtime/workflow/validated-balanced-gateway-v1.json",
+  "receipt_sha256": "cec20a291daa3dcac86149c8fe75cfde91795d421a307098c6563a48babfd349",
+  "receipt": {
+    "schema_version": 1,
+    "status": "integrated_validate_pass",
+    "source_fingerprint": "a9b9206b703abb8bde1f74541d8f277ccb741323707d7f8110235663fca59a01",
+    "completed_utc": "2026-11-01T13:56:04.8136038Z",
+    "od_mode": "balanced-gateway-v1"
+  },
+  "current_fingerprint": "0e90642a28041355f9af92645987f7ad4345c004b8eaec43b193f7076ee8707c",
+  "matches": false,
+  "test_results": {
+    "new_focused_tests": 12,
+    "existing_affected_contract_tests": 13,
+    "wrapper_regressions": 2,
+    "total_distinct_passed": 27,
+    "final_connectivity_assertion": "PASS after removing both unusable gateways",
+    "diff_check": "PASS"
+  },
+  "forbidden_executions_performed": []
+}

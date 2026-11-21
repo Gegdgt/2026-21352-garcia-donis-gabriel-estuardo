@@ -1,0 +1,67 @@
+{
+  "ideal_capacity_per_lane_veh_h": 2000.0,
+  "capacity_factor": 1.0,
+  "lane_sources": {
+    "osm:lanes": 1255,
+    "assumed:one_lane": 4876,
+    "assumed:equal_direction_split": 52
+  },
+  "speed_sources": {
+    "assumed:highway_default": 5952,
+    "osm:maxspeed": 231
+  },
+  "source_sha256": "f18296d0479d0efd095a5b6534f9685928fbd2be9d90705b9200864b3a697a0a",
+  "crs": "EPSG:32615",
+  "source_bounds": {
+    "minlat": "14.6250000",
+    "minlon": "-90.5220000",
+    "maxlat": "14.6460000",
+    "maxlon": "-90.5050000"
+  },
+  "nodes": 4214,
+  "links": 6183,
+  "accepted_ways": 897,
+  "exclusions": {
+    "non_car_highway_or_area": 2226,
+    "restricted_access": 39,
+    "segments_blocked_node": 21
+  },
+  "warnings": {
+    "ways_default_speed": 873,
+    "ways_default_lanes": 768
+  },
+  "strong_components": 514,
+  "largest_component_nodes": 3470,
+  "critical_3a_avenida": "shared nodes and continuous northbound route retained",
+  "osm_facilities": 504,
+  "synthetic_facilities": 2,
+  "ignored_turn_restriction_relations": [
+    "6008781",
+    "6016436",
+    "14106857",
+    "17146405",
+    "17146406",
+    "17275374",
+    "17354173",
+    "17373677",
+    "17475192",
+    "17478998",
+    "17502672",
+    "17884471",
+    "17947071",
+    "20224473",
+    "20224530",
+    "20224531",
+    "20739957",
+    "20739958",
+    "20739983"
+  ],
+  "limitations": [
+    "No inferred signal plans; OSM traffic_signals retained as metadata",
+    "Turn restrictions are reported, not enforced by the link graph",
+    "Facilities use node positions / mean of way vertices; relations not converted",
+    "Facility hours and capacities unknown; no real demand supplied",
+    "Speed, capacity and missing lane counts use explicit modeling defaults",
+    "All accepted components retained; smoke demand uses largest directed component"
+  ]
+}

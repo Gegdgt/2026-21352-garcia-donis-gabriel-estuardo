@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "case_id": "free_movements_cross_at_native_instant",
+  "evidence_kind": "synthetic_minimal_code_path; reproduction_not_executed",
+  "run_id": "fixture:free-crossing",
+  "iteration": 0,
+  "replay_source": "in_memory_native_interval_fixture",
+  "classification": "Error de colocacion o geometria",
+  "causal_note": "Two interpolated free movements reach the same node together. Current renderer preserves both IDs and reports unresolved graphical overlap; it does not establish physical incompatibility or a QSim forced move.",
+  "links": {
+    "west": {"from_node":"w","to_node":"j","path_m":[[-50,0],[0,0]],"allowed_to_links":["east"]},
+    "east": {"from_node":"j","to_node":"e","path_m":[[0,0],[50,0]],"allowed_to_links":[]},
+    "south": {"from_node":"s","to_node":"j","path_m":[[0,-50],[0,0]],"allowed_to_links":["north"]},
+    "north": {"from_node":"j","to_node":"n","path_m":[[0,0],[0,50]],"allowed_to_links":[]}
+  },
+  "segments": [
+    {"vehicle_id":"eastbound-car","person_id":"eastbound-person","trip_id":"eastbound-trip","link_id":"west","start":0,"end":10},
+    {"vehicle_id":"eastbound-car","person_id":"eastbound-person","trip_id":"eastbound-trip","link_id":"east","start":10,"end":20},
+    {"vehicle_id":"northbound-car","person_id":"northbound-person","trip_id":"northbound-trip","link_id":"south","start":0,"end":10},
+    {"vehicle_id":"northbound-car","person_id":"northbound-person","trip_id":"northbound-trip","link_id":"north","start":10,"end":20}
+  ],
+  "probes": [
+    {"time":9,"vehicle_id":"eastbound-car","expected_visible":true,"expected_unresolved":0},
+    {"time":9,"vehicle_id":"northbound-car","expected_visible":true,"expected_unresolved":0},
+    {"time":9.999,"vehicle_id":"eastbound-car","expected_visible":true,"expected_unresolved":1},
+    {"time":9.999,"vehicle_id":"northbound-car","expected_visible":true,"expected_unresolved":1},
+    {"time":10,"vehicle_id":"eastbound-car","expected_visible":true,"expected_unresolved":1},
+    {"time":10,"vehicle_id":"northbound-car","expected_visible":true,"expected_unresolved":1},
+    {"time":10.001,"vehicle_id":"eastbound-car","expected_visible":true,"expected_unresolved":1},
+    {"time":10.001,"vehicle_id":"northbound-car","expected_visible":true,"expected_unresolved":1},
+    {"time":11,"vehicle_id":"eastbound-car","expected_visible":true,"expected_unresolved":0},
+    {"time":11,"vehicle_id":"northbound-car","expected_visible":true,"expected_unresolved":0}
+  ]
+}

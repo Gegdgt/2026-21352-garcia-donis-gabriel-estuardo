@@ -1,0 +1,104 @@
+{
+  "fecha": "2026-11-20",
+  "estado": "PASS",
+  "alcance": "Verificacion de seleccion e integridad de conversion Git. No se realizaron staging, commit, git config ni escritura de objetos Git. hash-object se ejecuto sin -w.",
+  "archivos_seleccionados": 937,
+  "archivos_no_presentes": [],
+  "check_ignore": {
+    "comando": "git check-ignore --no-index --stdin -z",
+    "prefijo_aplicado_a_cada_ruta": "src/",
+    "codigo_salida": 1,
+    "interpretacion": "Codigo 1 y salida vacia significan que ningun archivo seleccionado esta ignorado. Se uso salida no verbose, por lo que reglas de negacion no se cuentan como ignorados.",
+    "ignorados": []
+  },
+  "preservacion_bytes": [
+    {
+      "ruta": "src/scenarios/zona1/network.xml",
+      "bytes": 7826179,
+      "lineas_crlf": 98415,
+      "lineas_lf": 98415,
+      "atributos_git": {
+        "text": "unset",
+        "eol": "lf"
+      },
+      "sha1_git_blob_bytes_originales": "803872847b4209a347f51dbe1141deae3d7446a3",
+      "sha1_git_hash_object_core_autocrlf_true": "803872847b4209a347f51dbe1141deae3d7446a3",
+      "bytes_preservados": true
+    },
+    {
+      "ruta": "src/scenarios/zona1/map.osm",
+      "bytes": 4289056,
+      "lineas_crlf": 62205,
+      "lineas_lf": 62205,
+      "atributos_git": {
+        "text": "unset",
+        "eol": "lf"
+      },
+      "sha1_git_blob_bytes_originales": "e220659e09364a4019e57c7e7ef08a993b565db4",
+      "sha1_git_hash_object_core_autocrlf_true": "e220659e09364a4019e57c7e7ef08a993b565db4",
+      "bytes_preservados": true
+    },
+    {
+      "ruta": "src/scenarios/zona1/transit/weekday-v2/service.json",
+      "bytes": 7516,
+      "lineas_crlf": 0,
+      "lineas_lf": 191,
+      "atributos_git": {
+        "text": "unset",
+        "eol": "lf"
+      },
+      "sha1_git_blob_bytes_originales": "d01947c249cb65440c69d0b2c4b8ac9c2427489a",
+      "sha1_git_hash_object_core_autocrlf_true": "d01947c249cb65440c69d0b2c4b8ac9c2427489a",
+      "bytes_preservados": true
+    },
+    {
+      "ruta": "src/scenarios/zona1/transit/weekday-v2/route-bundle.json",
+      "bytes": 125196,
+      "lineas_crlf": 0,
+      "lineas_lf": 3541,
+      "atributos_git": {
+        "text": "unset",
+        "eol": "lf"
+      },
+      "sha1_git_blob_bytes_originales": "840e62a5663f7e1043f2a805d0e319b039d225c9",
+      "sha1_git_hash_object_core_autocrlf_true": "840e62a5663f7e1043f2a805d0e319b039d225c9",
+      "bytes_preservados": true
+    },
+    {
+      "ruta": "src/scenarios/zona1/transit/review-2026-10-22/catalog.json",
+      "bytes": 133559,
+      "lineas_crlf": 4021,
+      "lineas_lf": 4021,
+      "atributos_git": {
+        "text": "unset",
+        "eol": "lf"
+      },
+      "sha1_git_blob_bytes_originales": "faac0d642fa05637aaa8b62a95301e95dae96381",
+      "sha1_git_hash_object_core_autocrlf_true": "faac0d642fa05637aaa8b62a95301e95dae96381",
+      "bytes_preservados": true
+    },
+    {
+      "ruta": "src/scenarios/zona1/transit/review-2026-10-22/municipal-gis.json",
+      "bytes": 380455,
+      "lineas_crlf": 0,
+      "lineas_lf": 1,
+      "atributos_git": {
+        "text": "unset",
+        "eol": "lf"
+      },
+      "sha1_git_blob_bytes_originales": "8ea4f11ea10d58d3d0e98a1dd38672bd120041db",
+      "sha1_git_hash_object_core_autocrlf_true": "8ea4f11ea10d58d3d0e98a1dd38672bd120041db",
+      "bytes_preservados": true
+    }
+  ],
+  "adaptaciones_empaquetado": [
+    "src/scenarios/.gitattributes",
+    "src/scenarios/.gitignore"
+  ],
+  "indice_git": {
+    "sha256_antes": "6a8ab72e0c9493b4a53a74caae44e854a286e0d5567befb630cc70ed78f03efc",
+    "sha256_despues": "6a8ab72e0c9493b4a53a74caae44e854a286e0d5567befb630cc70ed78f03efc",
+    "sin_cambios": true
+  },
+  "limitacion": "Se verifico el filtro de entrada a Git con autocrlf=true y atributos presentes; no se creo un commit ni se efectuo un clon real."
+}

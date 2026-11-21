@@ -1,0 +1,53 @@
+{
+  "status": "OSM_BLOCKERS_RESOLVED_FOCUSED_REGRESSIONS_PASS",
+  "contract": "2dc457548aaf57a5551d09928688be8bdc2b84cdbf383fda691f3eb5a4b7d254",
+  "relation_17478998": "ENFORCED_BY_SHARED_SEQUENCE_DFA",
+  "relation_17884471": "MALFORMED_SOURCE_NO_EXECUTABLE_MANEUVER",
+  "focal_python_tests": {
+    "run": 16,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "additional_python_suites": {
+    "access_tests": 12,
+    "osm_and_gateway_tests": 20,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "java_probe": {
+    "status": "PASS",
+    "checks": 28,
+    "controller_started": false,
+    "qsim_started": false
+  },
+  "existing_java_suites": [
+    "RouteSafetyCheck",
+    "FastestTimeRoutingCheck",
+    "GatewayRouteSafetyCheck"
+  ],
+  "nonrouting_main_java_unchanged": 48,
+  "preserved_previous_evidence_hashes": 108,
+  "validation_binding": {
+    "receipt_sha256": "765cbd1fe8eb7d1e407a479f5332bdf5aa2a67c273da2aa594519931f5d52178",
+    "approved_fingerprint": "0e90642a28041355f9af92645987f7ad4345c004b8eaec43b193f7076ee8707c",
+    "current_fingerprint": "8560c984e4a5ae654ffaa77bf603b4d0934f78ea54dd3e027738ed814f3e797f",
+    "matches": false,
+    "receipt_modified": false
+  },
+  "pending_manual": [
+    "Validate integrated",
+    "DryRun 180000",
+    "user-approved single 180000 simulation"
+  ],
+  "validate_executed": false,
+  "dry_run_executed": false,
+  "controller_started": false,
+  "qsim_started": false,
+  "run1000_executed": false,
+  "massive_generated": false,
+  "massive_executed": false,
+  "scope": "Static/focused routing and source integrity only; no 180K scheduled load or capacity acceptance",
+  "initial_receipt_already_differed_from_previous_diagnostic": true
+}

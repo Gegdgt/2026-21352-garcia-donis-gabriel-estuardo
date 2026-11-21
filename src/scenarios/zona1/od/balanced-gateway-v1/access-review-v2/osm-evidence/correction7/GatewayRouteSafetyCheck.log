@@ -1,0 +1,77 @@
+2026-11-01T09:52:56,746  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:56,859  INFO Version:21 HV000001: Hibernate Validator 8.0.0.Final
+2026-11-01T09:52:57,061  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:57,061  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:57,061  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:57,061  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:57,335  INFO ConfigGroup:67 [name=zona1SpatialRouting][nOfParams=2][allowedLinks=entry	inside
+exit][mode=gateway-od][paramName=allowedLinks,oldValue=entry	inside
+exit,value=entry inside exit outside-a outside-b value replaced]
+2026-11-01T09:52:57,336  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:57,338  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:57,338  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:57,338  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:57,338  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:57,340  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:57,340  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:57,340  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:57,340  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:57,340  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:57,340  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:57,340  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:57,340  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:57,340  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:57,340  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:57,340  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:57,340  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:57,340  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:57,340  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:57,340  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:57,340  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:57,340  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:57,340  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:57,340  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:57,340  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:57,340  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:57,353  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:57,353  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:57,353  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:57,353  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:57,353  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:57,353  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:57,353  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:57,353  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:57,353  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:57,353  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:57,353  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:57,353  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:57,353  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:57,353  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:57,353  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:57,360  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:57,360  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:57,360  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:57,360  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:57,360  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:57,360  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:57,360  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:57,360  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:57,360  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:57,360  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:57,360  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:57,360  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:57,360  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:57,360  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:57,360  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:57,360  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:57,360  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:57,360  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:57,360  INFO NetworkImpl:161  link # 4
+2026-11-01T09:52:57,360  INFO Config:602 setting context to [file:/C:/Users/gegdg/Documents/.UVG/Sim/matsim-guatemala/]
+2026-11-01T09:52:57,360  INFO NetworkImpl:165  node # 1
+2026-11-01T09:52:57,360  INFO NetworkImpl:165  node # 4
+2026-11-01T09:52:57,360  INFO NetworkImpl:161  link # 1
+2026-11-01T09:52:57,360  INFO NetworkImpl:161  link # 4
+PASS: spatial whitelist excludes external shortcuts, from/to movement leakage and invalid endpoints; legacy module absence preserved
+PASS: primary/within-day shared safety, link-to-link requirement, lane intersections, immutable whitelist and malformed-config rejection; no QSim
+2026-11-01T09:52:57,302  WARN SimZ1SequenceContract:58 MALFORMED_SOURCE_NO_EXECUTABLE_MANEUVER: OSM 17884471 v2 lacks from/via in the authoritative source; no maneuver can be inferred. Historical from-way 381158225 was deleted. This does not establish unrestricted legal access to the destination.

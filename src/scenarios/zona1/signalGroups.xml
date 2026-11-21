@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<signalGroups xsi:schemaLocation="http://www.matsim.org/files/dtd http://www.matsim.org/files/dtd/signalGroups_v2.0.xsd" xmlns="http://www.matsim.org/files/dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <signalSystem refId="11583002439">
+        <signalGroup id="avenida">
+            <signal refId="osm_1274975828_1_forward"/>
+            <signal refId="osm_39931882_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1438391835">
+        <signalGroup id="avenida">
+            <signal refId="osm_384736603_0_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_930035055_3_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1564620801">
+        <signalGroup id="avenida">
+            <signal refId="osm_734011347_2_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_65786237_10_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1564620830">
+        <signalGroup id="avenida">
+            <signal refId="osm_142995412_8_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762167_27_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1903163086">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120099_20_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_30263014_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1903163087">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120099_3_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_30263020_4_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1903163090">
+        <signalGroup id="avenida">
+            <signal refId="osm_643204393_3_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_1049482885_0_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1903163091">
+        <signalGroup id="avenida">
+            <signal refId="osm_1056782163_1_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_200691268_3_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1903163098">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120099_41_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384736604_17_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1903163100">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120099_1_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_130661591_8_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1903163101">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120099_23_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762193_41_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1903163102">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120099_13_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_398276348_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1903163103">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120099_9_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_381097538_19_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1903163105">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120099_6_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_30263019_1_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1903163106">
+        <signalGroup id="avenida">
+            <signal refId="osm_420138111_3_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_420120092_8_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1903163108">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120099_36_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_1283027704_23_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1903163109">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120099_31_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_30263010_38_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1903163110">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120099_28_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384737905_5_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1903166224">
+        <signalGroup id="avenida">
+            <signal refId="osm_381133556_3_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="1903167489">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120093_9_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_30263020_6_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="2106538528">
+        <signalGroup id="avenida">
+            <signal refId="osm_381097552_10_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762167_8_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="281797834">
+        <signalGroup id="avenida">
+            <signal refId="osm_792918640_0_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_400043601_28_forward"/>
+            <signal refId="osm_404966050_9_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531313">
+        <signalGroup id="avenida">
+            <signal refId="osm_637366830_10_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_749676932_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531314">
+        <signalGroup id="avenida">
+            <signal refId="osm_637366830_7_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762167_15_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531315">
+        <signalGroup id="avenida">
+            <signal refId="osm_637366830_4_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_65786237_21_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531316">
+        <signalGroup id="avenida">
+            <signal refId="osm_381133559_15_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_381133554_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531318">
+        <signalGroup id="avenida">
+            <signal refId="osm_384736603_33_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_1159234896_4_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531319">
+        <signalGroup id="avenida">
+            <signal refId="osm_384736603_29_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_64401414_16_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531320">
+        <signalGroup id="avenida">
+            <signal refId="osm_384736603_26_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_30263010_24_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531321">
+        <signalGroup id="avenida">
+            <signal refId="osm_384736603_22_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384737905_18_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531322">
+        <signalGroup id="avenida">
+            <signal refId="osm_384736603_17_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762193_25_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531323">
+        <signalGroup id="avenida">
+            <signal refId="osm_384736603_13_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_420120096_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531324">
+        <signalGroup id="avenida">
+            <signal refId="osm_384736603_6_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_381097538_3_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531327">
+        <signalGroup id="avenida">
+            <signal refId="osm_384746799_0_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_1274975831_1_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531331">
+        <signalGroup id="avenida">
+            <signal refId="osm_51770227_2_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762167_12_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531334">
+        <signalGroup id="avenida">
+            <signal refId="osm_30262982_3_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384736604_4_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531335">
+        <signalGroup id="avenida">
+            <signal refId="osm_30262982_7_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_64401414_12_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531337">
+        <signalGroup id="avenida">
+            <signal refId="osm_30262982_14_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384737905_15_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531338">
+        <signalGroup id="avenida">
+            <signal refId="osm_30262982_20_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762193_29_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531339">
+        <signalGroup id="avenida">
+            <signal refId="osm_30262982_26_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_420120094_7_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531341">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120095_10_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_30263020_12_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531343">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120095_16_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_60237269_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531349">
+        <signalGroup id="avenida">
+            <signal refId="osm_381097552_13_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_749676931_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531358">
+        <signalGroup id="avenida">
+            <signal refId="osm_381097552_4_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_292876836_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531360">
+        <signalGroup id="avenida">
+            <signal refId="osm_60237267_40_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384766447_3_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531361">
+        <signalGroup id="avenida">
+            <signal refId="osm_60237267_37_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384736604_7_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531362">
+        <signalGroup id="avenida">
+            <signal refId="osm_60237267_33_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_64401414_9_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531364">
+        <signalGroup id="avenida">
+            <signal refId="osm_60237267_25_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384737905_11_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531365">
+        <signalGroup id="avenida">
+            <signal refId="osm_60237267_22_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762193_32_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531366">
+        <signalGroup id="avenida">
+            <signal refId="osm_60237267_17_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_420120094_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531367">
+        <signalGroup id="avenida">
+            <signal refId="osm_60237267_13_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_398276348_8_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531368">
+        <signalGroup id="avenida">
+            <signal refId="osm_60237267_9_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_381097538_11_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531372">
+        <signalGroup id="avenida">
+            <signal refId="osm_420138103_0_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531385">
+        <signalGroup id="avenida">
+            <signal refId="osm_64401270_6_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_420138110_7_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531386">
+        <signalGroup id="avenida">
+            <signal refId="osm_384766449_2_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384736604_11_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531387">
+        <signalGroup id="avenida">
+            <signal refId="osm_384731375_4_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_64401414_4_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531388">
+        <signalGroup id="avenida">
+            <signal refId="osm_384731375_7_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_30263010_35_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531389">
+        <signalGroup id="avenida">
+            <signal refId="osm_384731375_10_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384737905_8_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531390">
+        <signalGroup id="avenida">
+            <signal refId="osm_384731375_14_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762193_36_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531392">
+        <signalGroup id="avenida">
+            <signal refId="osm_42839777_3_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_64401484_21_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531394">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120093_1_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_398276348_4_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531399">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120093_15_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_45497702_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531458">
+        <signalGroup id="avenida">
+            <signal refId="osm_1358273941_13_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384766442_6_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531459">
+        <signalGroup id="avenida">
+            <signal refId="osm_1358273942_1_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_1208137071_3_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531460">
+        <signalGroup id="avenida">
+            <signal refId="osm_398276347_2_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_1283027704_19_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531462">
+        <signalGroup id="avenida">
+            <signal refId="osm_398276347_7_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384737905_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531463">
+        <signalGroup id="avenida">
+            <signal refId="osm_398276347_10_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_30288345_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531464">
+        <signalGroup id="avenida">
+            <signal refId="osm_398276347_13_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762193_44_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531466">
+        <signalGroup id="avenida">
+            <signal refId="osm_398276347_17_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_64401484_13_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531467">
+        <signalGroup id="avenida">
+            <signal refId="osm_398276347_20_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_30263017_0_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531468">
+        <signalGroup id="avenida">
+            <signal refId="osm_398276347_23_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_381097538_22_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531472">
+        <signalGroup id="avenida">
+            <signal refId="osm_398276347_29_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384738828_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531473">
+        <signalGroup id="avenida">
+            <signal refId="osm_398276347_30_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_30263022_5_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531474">
+        <signalGroup id="avenida">
+            <signal refId="osm_398276347_32_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_64401501_1_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531519">
+        <signalGroup id="calle">
+            <signal refId="osm_1358273948_0_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531534">
+        <signalGroup id="avenida">
+            <signal refId="osm_381382165_1_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384766442_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531535">
+        <signalGroup id="avenida">
+            <signal refId="osm_1358273949_1_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_1358273950_0_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531537">
+        <signalGroup id="avenida">
+            <signal refId="osm_201122807_0_backward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_1159234897_1_forward"/>
+            <signal refId="osm_381382166_0_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531550">
+        <signalGroup id="avenida">
+            <signal refId="osm_30263028_25_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_404273844_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531556">
+        <signalGroup id="avenida">
+            <signal refId="osm_30263028_19_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762193_47_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531564">
+        <signalGroup id="avenida">
+            <signal refId="osm_30263028_16_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_64401484_10_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531605">
+        <signalGroup id="avenida">
+            <signal refId="osm_30263028_22_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_405394243_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531616">
+        <signalGroup id="avenida">
+            <signal refId="osm_231755974_7_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762167_24_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531618">
+        <signalGroup id="avenida">
+            <signal refId="osm_231755974_10_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_65754263_23_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531621">
+        <signalGroup id="avenida">
+            <signal refId="osm_231755974_4_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_65786237_14_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333531623">
+        <signalGroup id="avenida">
+            <signal refId="osm_390137512_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720785">
+        <signalGroup id="avenida">
+            <signal refId="osm_58692343_40_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_734011348_10_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720790">
+        <signalGroup id="avenida">
+            <signal refId="osm_58692343_31_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_406701908_32_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720791">
+        <signalGroup id="avenida">
+            <signal refId="osm_58692343_28_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_292876837_5_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720792">
+        <signalGroup id="avenida">
+            <signal refId="osm_58692343_24_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_734011349_10_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720796">
+        <signalGroup id="avenida">
+            <signal refId="osm_58692343_19_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_48273209_5_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720804">
+        <signalGroup id="avenida">
+            <signal refId="osm_65777805_26_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_734011348_7_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720808">
+        <signalGroup id="avenida">
+            <signal refId="osm_65777805_35_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_406701908_29_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720809">
+        <signalGroup id="avenida">
+            <signal refId="osm_65777805_38_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_292876837_8_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720811">
+        <signalGroup id="avenida">
+            <signal refId="osm_65777805_41_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_734011349_5_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720814">
+        <signalGroup id="avenida">
+            <signal refId="osm_65777805_45_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_48273209_9_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720822">
+        <signalGroup id="avenida">
+            <signal refId="osm_30279769_59_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_734011348_3_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720824">
+        <signalGroup id="avenida">
+            <signal refId="osm_30279769_55_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_65786237_7_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720825">
+        <signalGroup id="avenida">
+            <signal refId="osm_30279769_52_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_406701908_25_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720826">
+        <signalGroup id="avenida">
+            <signal refId="osm_30279769_49_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_292876837_11_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720827">
+        <signalGroup id="avenida">
+            <signal refId="osm_30279769_46_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_734011349_3_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720828">
+        <signalGroup id="avenida">
+            <signal refId="osm_30279769_41_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_48273209_14_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720841">
+        <signalGroup id="avenida">
+            <signal refId="osm_1057741813_4_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762167_21_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720842">
+        <signalGroup id="avenida">
+            <signal refId="osm_1057741813_7_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_65786237_17_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333720845">
+        <signalGroup id="calle">
+            <signal refId="osm_48273209_29_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831552">
+        <signalGroup id="avenida">
+            <signal refId="osm_48553870_35_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_48273209_23_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831699">
+        <signalGroup id="avenida">
+            <signal refId="osm_65777805_49_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_64401414_39_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831702">
+        <signalGroup id="avenida">
+            <signal refId="osm_30279769_36_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_64401414_37_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831705">
+        <signalGroup id="avenida">
+            <signal refId="osm_48553870_29_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_64401414_25_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831717">
+        <signalGroup id="calle">
+            <signal refId="osm_384737905_22_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831719">
+        <signalGroup id="avenida">
+            <signal refId="osm_48553870_20_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384737905_26_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831722">
+        <signalGroup id="avenida">
+            <signal refId="osm_30279769_28_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384737905_32_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831723">
+        <signalGroup id="avenida">
+            <signal refId="osm_65777805_54_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384737905_36_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831725">
+        <signalGroup id="avenida">
+            <signal refId="osm_58692343_7_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384737905_39_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831759">
+        <signalGroup id="calle">
+            <signal refId="osm_384762193_21_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831765">
+        <signalGroup id="avenida">
+            <signal refId="osm_48553870_13_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762193_18_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831774">
+        <signalGroup id="avenida">
+            <signal refId="osm_30279769_22_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762193_9_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831782">
+        <signalGroup id="avenida">
+            <signal refId="osm_65777805_63_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762193_5_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831787">
+        <signalGroup id="avenida">
+            <signal refId="osm_58692343_5_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384762193_1_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831797">
+        <signalGroup id="calle">
+            <signal refId="osm_420120096_9_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831802">
+        <signalGroup id="avenida">
+            <signal refId="osm_48553870_10_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_420120096_13_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831813">
+        <signalGroup id="avenida">
+            <signal refId="osm_30279769_18_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_420120096_20_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831818">
+        <signalGroup id="avenida">
+            <signal refId="osm_65777805_66_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_420120096_23_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831825">
+        <signalGroup id="avenida">
+            <signal refId="osm_58692343_4_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_420120096_26_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831843">
+        <signalGroup id="calle">
+            <signal refId="osm_406843605_30_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831845">
+        <signalGroup id="avenida">
+            <signal refId="osm_48553870_6_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_406843605_26_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831855">
+        <signalGroup id="avenida">
+            <signal refId="osm_30279769_13_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_406843605_19_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831860">
+        <signalGroup id="avenida">
+            <signal refId="osm_65777805_70_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_406843605_13_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831865">
+        <signalGroup id="avenida">
+            <signal refId="osm_58692343_3_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_406843605_10_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831890">
+        <signalGroup id="avenida">
+            <signal refId="osm_381097546_5_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_420120096_5_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831896">
+        <signalGroup id="avenida">
+            <signal refId="osm_30288348_17_forward"/>
+            <signal refId="osm_381097546_0_backward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_406843605_33_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831990">
+        <signalGroup id="avenida">
+            <signal refId="osm_30288351_8_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_420120096_25_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333831995">
+        <signalGroup id="avenida">
+            <signal refId="osm_30288351_7_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_406843605_11_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333864397">
+        <signalGroup id="avenida">
+            <signal refId="osm_60237264_5_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333864439">
+        <signalGroup id="avenida">
+            <signal refId="osm_381158282_3_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_1272828333_1_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="333864569">
+        <signalGroup id="calle">
+            <signal refId="osm_381158277_3_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="4065411322">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120093_3_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_381097538_16_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="4065417892">
+        <signalGroup id="avenida">
+            <signal refId="osm_381144611_3_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="4065427850">
+        <signalGroup id="calle">
+            <signal refId="osm_64401414_22_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="410383126">
+        <signalGroup id="avenida">
+            <signal refId="osm_363667895_4_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="410439150">
+        <signalGroup id="avenida">
+            <signal refId="osm_1056144033_0_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_420138102_3_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="410441329">
+        <signalGroup id="avenida">
+            <signal refId="osm_1358273945_1_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_34994087_5_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="410442286">
+        <signalGroup id="avenida">
+            <signal refId="osm_400252217_0_forward"/>
+            <signal refId="osm_60237259_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="4169928307">
+        <signalGroup id="avenida">
+            <signal refId="osm_699533700_2_forward"/>
+            <signal refId="osm_699533700_3_backward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_734011348_13_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="4201078675">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120095_12_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_130661591_0_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="479440975">
+        <signalGroup id="avenida">
+            <signal refId="osm_400843677_7_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="536073974">
+        <signalGroup id="avenida">
+            <signal refId="osm_30262980_10_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_42839982_5_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="536073977">
+        <signalGroup id="avenida">
+            <signal refId="osm_30288348_5_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_1274975826_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="536073981">
+        <signalGroup id="avenida">
+            <signal refId="osm_39931896_3_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_1274975826_3_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="536073994">
+        <signalGroup id="avenida">
+            <signal refId="osm_34994240_6_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_1274975826_5_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="568091127">
+        <signalGroup id="avenida">
+            <signal refId="osm_44804130_9_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_400043601_22_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="579787032">
+        <signalGroup id="avenida">
+            <signal refId="osm_381144599_3_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_420120098_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="579787180">
+        <signalGroup id="avenida">
+            <signal refId="osm_30288348_8_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="579787183">
+        <signalGroup id="avenida">
+            <signal refId="osm_1174627094_0_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384746792_0_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="579787184">
+        <signalGroup id="avenida">
+            <signal refId="osm_1274975830_0_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="6008992418">
+        <signalGroup id="avenida">
+            <signal refId="osm_384736603_38_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="631824824">
+        <signalGroup id="avenida">
+            <signal refId="osm_1274975827_3_forward"/>
+            <signal refId="osm_1308544716_0_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="660745080">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120099_17_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_64401484_18_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="737519118">
+        <signalGroup id="avenida">
+            <signal refId="osm_732305247_5_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_1078848061_4_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="738884323">
+        <signalGroup id="avenida">
+            <signal refId="osm_732305247_2_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_749676931_12_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="738887787">
+        <signalGroup id="avenida">
+            <signal refId="osm_64401270_3_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_420120092_2_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="792283404">
+        <signalGroup id="avenida">
+            <signal refId="osm_420120095_3_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_381097538_7_forward"/>
+        </signalGroup>
+    </signalSystem>
+    <signalSystem refId="792483516">
+        <signalGroup id="avenida">
+            <signal refId="osm_420138111_6_forward"/>
+        </signalGroup>
+        <signalGroup id="calle">
+            <signal refId="osm_384766456_9_forward"/>
+        </signalGroup>
+    </signalSystem>
+</signalGroups>

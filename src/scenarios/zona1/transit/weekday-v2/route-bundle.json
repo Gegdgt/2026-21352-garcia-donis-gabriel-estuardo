@@ -1,0 +1,3541 @@
+{
+  "schema_version": "simz1-transit-route-bundle-v2",
+  "network_sha256": "de142214973698d15d2482823e31645e80f0fa110edf91f2c4a6caacc3ff229d",
+  "route_geometry_is_empirically_calibrated": false,
+  "sources": [
+    {
+      "path": "../../map.osm",
+      "sha256": "f18296d0479d0efd095a5b6534f9685928fbd2be9d90705b9200864b3a697a0a"
+    },
+    {
+      "path": "../review-2026-10-22/municipal-gis.json",
+      "sha256": "b291a578e29064f6df28f7bd2f39670f3f81084a592a104222d2ea318810d9c8"
+    },
+    {
+      "path": "../review-2026-10-22/catalog.json",
+      "sha256": "ffdf70d4aa255d5ce29df87bc1949a0177369b7423bd8610802733398d7aa970"
+    }
+  ],
+  "services": [
+    {
+      "service_id": "transmetro_L1",
+      "sources": [
+        "map.osm relations 14034049,14099833"
+      ],
+      "mapping_basis": "ordered OSM relation fragments; exterior ways absent from snapshot are not invented",
+      "parts": [
+        {
+          "part_id": "L1_14034049_part1",
+          "link_ids": [
+            "osm_1056722244_0_forward",
+            "osm_1056722244_1_forward",
+            "osm_1056722244_2_forward",
+            "osm_1056722244_3_forward",
+            "osm_1056722244_4_forward",
+            "osm_1056722244_5_forward",
+            "osm_1056722244_6_forward",
+            "osm_1056722244_7_forward",
+            "osm_39931882_0_forward",
+            "osm_39931882_1_forward",
+            "osm_39931882_2_forward",
+            "osm_1265232222_0_forward",
+            "osm_1308544716_0_forward",
+            "osm_559513163_0_forward",
+            "osm_559513163_1_forward",
+            "osm_1057486079_0_forward",
+            "osm_1057486079_1_forward",
+            "osm_1057486079_2_forward",
+            "osm_1057486079_3_forward",
+            "osm_1057486079_4_forward",
+            "osm_30279772_0_forward",
+            "osm_30279772_1_forward",
+            "osm_30279772_2_forward",
+            "osm_30279772_3_forward",
+            "osm_30279772_4_forward",
+            "osm_30279772_5_forward",
+            "osm_30279772_6_forward",
+            "osm_60237262_0_forward",
+            "osm_60237261_0_forward",
+            "osm_60237261_1_forward",
+            "osm_930035053_0_forward",
+            "osm_930035053_1_forward",
+            "osm_930035053_2_forward",
+            "osm_930035053_3_forward",
+            "osm_930035053_4_forward",
+            "osm_48553870_0_forward",
+            "osm_48553870_1_forward",
+            "osm_48553870_2_forward",
+            "osm_48553870_3_forward",
+            "osm_48553870_4_forward",
+            "osm_48553870_5_forward",
+            "osm_48553870_6_forward",
+            "osm_48553870_7_forward",
+            "osm_48553870_8_forward",
+            "osm_48553870_9_forward",
+            "osm_48553870_10_forward",
+            "osm_48553870_11_forward",
+            "osm_48553870_12_forward",
+            "osm_48553870_13_forward",
+            "osm_48553870_14_forward",
+            "osm_48553870_15_forward",
+            "osm_48553870_16_forward",
+            "osm_48553870_17_forward",
+            "osm_48553870_18_forward",
+            "osm_48553870_19_forward",
+            "osm_48553870_20_forward",
+            "osm_48553870_21_forward",
+            "osm_48553870_22_forward",
+            "osm_48553870_23_forward",
+            "osm_48553870_24_forward",
+            "osm_48553870_25_forward",
+            "osm_48553870_26_forward",
+            "osm_48553870_27_forward",
+            "osm_48553870_28_forward",
+            "osm_48553870_29_forward",
+            "osm_48553870_30_forward",
+            "osm_48553870_31_forward",
+            "osm_48553870_32_forward",
+            "osm_48553870_33_forward",
+            "osm_48553870_34_forward",
+            "osm_48553870_35_forward",
+            "osm_390137512_0_forward",
+            "osm_390137512_1_forward",
+            "osm_390137512_2_forward",
+            "transit_osm_231755973_0_forward",
+            "transit_osm_231755973_1_forward",
+            "transit_osm_231755973_2_forward",
+            "transit_osm_231755973_3_forward",
+            "transit_osm_231755973_4_forward",
+            "transit_osm_231755973_5_forward",
+            "transit_osm_231755973_6_forward",
+            "transit_osm_231755973_7_forward",
+            "transit_osm_231755973_8_forward",
+            "transit_osm_231755973_9_forward",
+            "osm_231755974_0_forward",
+            "osm_231755974_1_forward",
+            "osm_231755974_2_forward",
+            "osm_231755974_3_forward",
+            "osm_231755974_4_forward",
+            "osm_231755974_5_forward",
+            "osm_231755974_6_forward",
+            "osm_231755974_7_forward",
+            "osm_231755974_8_forward",
+            "osm_231755974_9_forward",
+            "osm_231755974_10_forward",
+            "osm_1051440047_0_forward",
+            "osm_1051440047_1_forward",
+            "osm_1051440047_2_forward",
+            "osm_1056722243_0_forward",
+            "osm_1056722243_1_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "gis_station_1",
+              "link_index": 99,
+              "name": "Estación San Sebastián",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 1",
+              "source_position": [
+                -90.512990528419,
+                14.645826177666
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_29",
+              "link_index": 79,
+              "name": "Estación Parque Centenario",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 29",
+              "source_position": [
+                -90.5148040607893,
+                14.6420646743274
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_30",
+              "link_index": 61,
+              "name": "Estación San Agustín",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 30",
+              "source_position": [
+                -90.5152606268375,
+                14.6384943998804
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_31",
+              "link_index": 43,
+              "name": "Estación Gómez Carrillo",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 31",
+              "source_position": [
+                -90.5157815544809,
+                14.6345858774563
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_35",
+              "link_index": 0,
+              "name": "Estación Centro Cívico",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 35",
+              "source_position": [
+                -90.5148197516624,
+                14.6277275505691
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_36",
+              "link_index": 31,
+              "name": "Estación Sur 2",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 36",
+              "source_position": [
+                -90.5162887145442,
+                14.6313136403142
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            }
+          ],
+          "direction_basis": "ordered route relation 14034049; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "terminal",
+            "minimum_seconds": 180,
+            "basis": "explicit turnaround assumption at geographically shared terminal"
+          }
+        },
+        {
+          "part_id": "L1_14099833_part1",
+          "link_ids": [
+            "osm_749676932_0_forward",
+            "osm_749676932_1_forward",
+            "osm_749676932_2_forward",
+            "osm_1051440043_0_forward",
+            "osm_1051440043_1_forward",
+            "osm_1051440043_2_forward",
+            "osm_51770227_0_forward",
+            "osm_51770227_1_forward",
+            "osm_51770227_2_forward",
+            "osm_51770227_3_forward",
+            "osm_51770227_4_forward",
+            "osm_51770227_5_forward",
+            "osm_51770227_6_forward",
+            "osm_51770227_7_forward",
+            "osm_51770227_8_forward",
+            "osm_51770227_9_forward",
+            "osm_51770227_10_forward",
+            "osm_381133555_0_backward",
+            "osm_381133556_0_forward",
+            "osm_381133556_1_forward",
+            "osm_381133556_2_forward",
+            "osm_381133556_3_forward",
+            "osm_30262982_0_forward",
+            "osm_30262982_1_forward",
+            "osm_30262982_2_forward",
+            "osm_30262982_3_forward",
+            "osm_30262982_4_forward",
+            "osm_30262982_5_forward",
+            "osm_30262982_6_forward",
+            "osm_30262982_7_forward",
+            "osm_30262982_8_forward",
+            "osm_30262982_9_forward",
+            "osm_30262982_10_forward",
+            "osm_30262982_11_forward",
+            "osm_30262982_12_forward",
+            "osm_30262982_13_forward",
+            "osm_30262982_14_forward",
+            "osm_30262982_15_forward",
+            "osm_30262982_16_forward",
+            "osm_30262982_17_forward",
+            "osm_30262982_18_forward",
+            "osm_30262982_19_forward",
+            "osm_30262982_20_forward",
+            "osm_30262982_21_forward",
+            "osm_30262982_22_forward",
+            "osm_30262982_23_forward",
+            "osm_30262982_24_forward",
+            "osm_30262982_25_forward",
+            "osm_30262982_26_forward",
+            "osm_420120095_0_forward",
+            "osm_420120095_1_forward",
+            "osm_420120095_2_forward",
+            "osm_420120095_3_forward",
+            "osm_420120095_4_forward",
+            "osm_420120095_5_forward",
+            "osm_420120095_6_forward",
+            "osm_420120095_7_forward",
+            "osm_420120095_8_forward",
+            "osm_420120095_9_forward",
+            "osm_420120095_10_forward",
+            "osm_420120095_11_forward",
+            "osm_420120095_12_forward",
+            "osm_420120095_13_forward",
+            "osm_420120095_14_forward",
+            "osm_420120095_15_forward",
+            "osm_420120095_16_forward",
+            "osm_1274975830_0_forward",
+            "osm_420120097_0_forward",
+            "osm_420120097_1_forward",
+            "osm_420120097_2_forward",
+            "osm_420120097_3_forward",
+            "osm_381144595_0_forward",
+            "osm_381144595_1_forward",
+            "osm_381144595_2_forward",
+            "osm_381144595_3_forward",
+            "osm_381144595_4_forward",
+            "osm_381144595_5_forward",
+            "osm_381144595_6_forward",
+            "osm_381144595_7_forward",
+            "osm_381144595_8_forward",
+            "osm_381144595_9_forward",
+            "osm_381144595_10_forward",
+            "osm_381144595_11_forward",
+            "osm_381144595_12_forward",
+            "osm_381144595_13_forward",
+            "transit_osm_1051440044_0_forward",
+            "osm_42839658_0_forward",
+            "osm_42839658_1_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "gis_station_1",
+              "link_index": 0,
+              "name": "Estación San Sebastián",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 1",
+              "source_position": [
+                -90.512990528419,
+                14.645826177666
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_7",
+              "link_index": 50,
+              "name": "Estación Beatas de Belén",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 7",
+              "source_position": [
+                -90.512677241862,
+                14.6339209423095
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_27",
+              "link_index": 35,
+              "name": "Estación Correos",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 27",
+              "source_position": [
+                -90.5122483403313,
+                14.6371622775381
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_28",
+              "link_index": 15,
+              "name": "Estación Mercado Central",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 28",
+              "source_position": [
+                -90.5114996682038,
+                14.6423368501528
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_35",
+              "link_index": 87,
+              "name": "Estación Centro Cívico",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 35",
+              "source_position": [
+                -90.5148197516624,
+                14.6277275505691
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_37",
+              "link_index": 72,
+              "name": "Estación Paseo de las Letras",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 37",
+              "source_position": [
+                -90.5133536076939,
+                14.6299427067908
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            }
+          ],
+          "direction_basis": "ordered route relation 14099833; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "terminal",
+            "minimum_seconds": 180,
+            "basis": "explicit turnaround assumption at geographically shared terminal"
+          }
+        }
+      ],
+      "blockers": []
+    },
+    {
+      "service_id": "transmetro_L2",
+      "sources": [
+        "map.osm relations 14110814,14110815"
+      ],
+      "mapping_basis": "ordered OSM relation fragments; exterior ways absent from snapshot are not invented",
+      "parts": [
+        {
+          "part_id": "L2_14110814_part1",
+          "link_ids": [
+            "osm_749676932_0_forward",
+            "osm_749676932_1_forward",
+            "osm_749676932_2_forward",
+            "osm_1057741805_0_forward",
+            "osm_1057741805_1_forward",
+            "osm_1057741805_2_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "gis_station_1",
+              "link_index": 0,
+              "name": "Estación San Sebastián",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 1",
+              "source_position": [
+                -90.512990528419,
+                14.645826177666
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            }
+          ],
+          "direction_basis": "ordered route relation 14110814; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "exterior",
+            "minimum_seconds": 1800,
+            "basis": "scenario assumption for omitted outside route/terminal; not measured travel time"
+          }
+        },
+        {
+          "part_id": "L2_14110815_part1",
+          "link_ids": [
+            "osm_381097595_0_forward",
+            "osm_381097595_1_forward",
+            "osm_381097595_2_forward",
+            "osm_381097595_3_forward",
+            "osm_381097595_4_forward",
+            "osm_381097595_5_forward",
+            "osm_381097595_6_forward",
+            "osm_381097595_7_forward",
+            "osm_381097595_8_forward",
+            "osm_381097595_9_forward",
+            "osm_381097595_10_forward",
+            "osm_381097595_11_forward",
+            "osm_1056722243_0_forward",
+            "osm_1056722243_1_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "gis_station_1",
+              "link_index": 13,
+              "name": "Estación San Sebastián",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 1",
+              "source_position": [
+                -90.512990528419,
+                14.645826177666
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            }
+          ],
+          "direction_basis": "ordered route relation 14110815; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "terminal",
+            "minimum_seconds": 180,
+            "basis": "explicit turnaround assumption at geographically shared terminal"
+          }
+        }
+      ],
+      "blockers": []
+    },
+    {
+      "service_id": "transmetro_L6",
+      "sources": [
+        "map.osm relations 14091640,14091641"
+      ],
+      "mapping_basis": "ordered OSM relation fragments; exterior ways absent from snapshot are not invented",
+      "parts": [
+        {
+          "part_id": "L6_14091640_part1",
+          "link_ids": [
+            "osm_51780527_0_forward",
+            "osm_51780527_1_forward",
+            "osm_51780527_2_forward",
+            "osm_51780527_3_forward",
+            "osm_51780527_4_forward",
+            "osm_51780527_5_forward",
+            "osm_51780527_6_forward",
+            "osm_51780527_7_forward",
+            "osm_51780527_8_forward",
+            "osm_51780527_9_forward",
+            "osm_51780527_10_forward",
+            "osm_51780527_11_forward",
+            "osm_51780527_12_forward",
+            "osm_51780527_13_forward",
+            "osm_51780527_14_forward",
+            "osm_64401270_0_forward",
+            "osm_64401270_1_forward",
+            "osm_64401270_2_forward",
+            "osm_64401270_3_forward",
+            "osm_64401270_4_forward",
+            "osm_64401270_5_forward",
+            "osm_64401270_6_forward",
+            "osm_384766449_0_forward",
+            "osm_384766449_1_forward",
+            "osm_384766449_2_forward",
+            "osm_384731375_0_forward",
+            "osm_384731375_1_forward",
+            "osm_384731375_2_forward",
+            "osm_384731375_3_forward",
+            "osm_384731375_4_forward",
+            "osm_384731375_5_forward",
+            "osm_384731375_6_forward",
+            "osm_384731375_7_forward",
+            "osm_384731375_8_forward",
+            "osm_384731375_9_forward",
+            "osm_384731375_10_forward",
+            "osm_384731375_11_forward",
+            "osm_384731375_12_forward",
+            "osm_384731375_13_forward",
+            "osm_384731375_14_forward",
+            "osm_42839777_0_forward",
+            "osm_42839777_1_forward",
+            "osm_42839777_2_forward",
+            "osm_42839777_3_forward",
+            "osm_420120094_0_forward",
+            "osm_420120094_1_forward",
+            "osm_420120094_2_forward",
+            "osm_420120094_3_forward",
+            "osm_420120094_4_forward",
+            "osm_420120094_5_forward",
+            "osm_420120094_6_forward",
+            "osm_420120094_7_forward",
+            "osm_420120095_0_forward",
+            "osm_420120095_1_forward",
+            "osm_420120095_2_forward",
+            "osm_420120095_3_forward",
+            "osm_420120095_4_forward",
+            "osm_420120095_5_forward",
+            "osm_420120095_6_forward",
+            "osm_420120095_7_forward",
+            "osm_420120095_8_forward",
+            "osm_420120095_9_forward",
+            "osm_420120095_10_forward",
+            "osm_420120095_11_forward",
+            "osm_420120095_12_forward",
+            "osm_420120095_13_forward",
+            "osm_420120095_14_forward",
+            "osm_420120095_15_forward",
+            "osm_420120095_16_forward",
+            "osm_1274975830_0_forward",
+            "osm_420120098_0_forward",
+            "osm_420120098_1_forward",
+            "osm_420120098_2_forward",
+            "osm_1056144032_0_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "gis_station_7",
+              "link_index": 53,
+              "name": "Estación Beatas de Belén",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 7",
+              "source_position": [
+                -90.512677241862,
+                14.6339209423095
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_8",
+              "link_index": 27,
+              "name": "Estación Capuchinas",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 8",
+              "source_position": [
+                -90.5098994677472,
+                14.6386536665038
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_39",
+              "link_index": 10,
+              "name": "Estacion Santa Teresa",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 39",
+              "source_position": [
+                -90.5091358377719,
+                14.6441074471
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            }
+          ],
+          "direction_basis": "ordered route relation 14091640; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "terminal",
+            "minimum_seconds": 180,
+            "basis": "explicit turnaround assumption at geographically shared terminal"
+          }
+        },
+        {
+          "part_id": "L6_14091641_part1",
+          "link_ids": [
+            "osm_420138102_0_forward",
+            "osm_420138102_1_forward",
+            "osm_420138102_2_forward",
+            "osm_420138102_3_forward",
+            "transit_osm_1056144033_0_backward",
+            "transit_osm_420120100_0_forward",
+            "osm_420120099_0_forward",
+            "osm_420120099_1_forward",
+            "osm_420120099_2_forward",
+            "osm_420120099_3_forward",
+            "osm_420120099_4_forward",
+            "osm_420120099_5_forward",
+            "osm_420120099_6_forward",
+            "osm_420120099_7_forward",
+            "osm_420120099_8_forward",
+            "osm_420120099_9_forward",
+            "osm_420120099_10_forward",
+            "osm_420120099_11_forward",
+            "osm_420120099_12_forward",
+            "osm_420120099_13_forward",
+            "osm_420120099_14_forward",
+            "osm_420120099_15_forward",
+            "osm_420120099_16_forward",
+            "osm_420120099_17_forward",
+            "osm_420120099_18_forward",
+            "osm_420120099_19_forward",
+            "osm_420120099_20_forward",
+            "osm_420120099_21_forward",
+            "osm_420120099_22_forward",
+            "osm_420120099_23_forward",
+            "osm_420120099_24_forward",
+            "osm_420120099_25_forward",
+            "osm_420120099_26_forward",
+            "osm_420120099_27_forward",
+            "osm_420120099_28_forward",
+            "osm_420120099_29_forward",
+            "osm_420120099_30_forward",
+            "osm_420120099_31_forward",
+            "osm_420120099_32_forward",
+            "osm_420120099_33_forward",
+            "osm_420120099_34_forward",
+            "osm_420120099_35_forward",
+            "osm_420120099_36_forward",
+            "osm_420120099_37_forward",
+            "osm_420120099_38_forward",
+            "osm_420120099_39_forward",
+            "osm_420120099_40_forward",
+            "osm_420120099_41_forward",
+            "osm_1208137406_0_forward",
+            "osm_1208137405_0_forward",
+            "transit_osm_643206233_0_forward",
+            "transit_osm_643206233_1_forward",
+            "transit_osm_643206233_2_forward",
+            "transit_osm_643206233_3_forward",
+            "osm_732305246_0_forward",
+            "osm_1049482885_0_forward",
+            "osm_420138111_0_forward",
+            "osm_420138111_1_forward",
+            "osm_420138111_2_forward",
+            "osm_420138111_3_forward",
+            "osm_420138111_4_forward",
+            "osm_420138111_5_forward",
+            "osm_420138111_6_forward",
+            "osm_420138111_7_forward",
+            "osm_420138111_8_forward",
+            "osm_420138111_9_forward",
+            "osm_420138111_10_forward",
+            "osm_1056782163_0_forward",
+            "osm_1056782163_1_forward",
+            "osm_732305247_0_forward",
+            "osm_732305247_1_forward",
+            "osm_732305247_2_forward",
+            "osm_732305247_3_forward",
+            "osm_732305247_4_forward",
+            "osm_732305247_5_forward",
+            "osm_732305247_6_forward",
+            "osm_732305247_7_forward",
+            "osm_732305247_8_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "gis_station_6",
+              "link_index": 0,
+              "name": "Estación Plaza Barrios - Fegua",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 6",
+              "source_position": [
+                -90.5117312314262,
+                14.6305210977403
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_18",
+              "link_index": 52,
+              "name": "Colón - Líneas 6 y 18",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 18",
+              "source_position": [
+                -90.5083063927274,
+                14.6400530276294
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_19",
+              "link_index": 14,
+              "name": "Francos Monroy  - Líneas 6 y 18",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 19",
+              "source_position": [
+                -90.509330733561,
+                14.6326462831673
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_38",
+              "link_index": 66,
+              "name": "Estación La Merced",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 38",
+              "source_position": [
+                -90.5079219048026,
+                14.6434701089393
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            }
+          ],
+          "direction_basis": "ordered route relation 14091641; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "exterior",
+            "minimum_seconds": 1800,
+            "basis": "scenario assumption for omitted outside route/terminal; not measured travel time"
+          }
+        }
+      ],
+      "blockers": []
+    },
+    {
+      "service_id": "transmetro_L7",
+      "sources": [
+        "map.osm relations 10123492,14100221"
+      ],
+      "mapping_basis": "ordered OSM relation fragments; exterior ways absent from snapshot are not invented",
+      "parts": [
+        {
+          "part_id": "L7_10123492_part1",
+          "link_ids": [
+            "osm_1056782163_0_forward",
+            "osm_1056782163_1_forward",
+            "osm_384762167_0_forward",
+            "osm_384762167_1_forward",
+            "osm_384762167_2_forward",
+            "osm_384762167_3_forward",
+            "osm_384762167_4_forward",
+            "osm_384762167_5_forward",
+            "osm_384762167_6_forward",
+            "osm_384762167_7_forward",
+            "osm_384762167_8_forward",
+            "osm_384762167_9_forward",
+            "osm_384762167_10_forward",
+            "osm_384762167_11_forward",
+            "osm_384762167_12_forward",
+            "osm_384762167_13_forward",
+            "osm_384762167_14_forward",
+            "osm_384762167_15_forward",
+            "osm_384762167_16_forward",
+            "osm_384762167_17_forward",
+            "osm_384762167_18_forward",
+            "osm_384762167_19_forward",
+            "osm_384762167_20_forward",
+            "osm_384762167_21_forward",
+            "osm_384762167_22_forward",
+            "osm_384762167_23_forward",
+            "osm_384762167_24_forward",
+            "osm_384762167_25_forward",
+            "osm_384762167_26_forward",
+            "osm_384762167_27_forward",
+            "osm_734011347_0_forward",
+            "osm_734011347_1_forward",
+            "osm_734011347_2_forward",
+            "osm_734011347_3_forward",
+            "osm_734011347_4_forward",
+            "osm_734011347_5_forward",
+            "osm_930035058_0_forward",
+            "osm_930035058_1_forward",
+            "osm_930035058_2_forward",
+            "osm_930035058_3_forward",
+            "osm_930035058_4_forward",
+            "osm_930035058_5_forward",
+            "osm_734011349_0_forward",
+            "osm_734011349_1_forward",
+            "osm_734011349_2_forward",
+            "osm_734011349_3_forward",
+            "osm_734011349_4_forward",
+            "osm_734011349_5_forward",
+            "osm_734011349_6_forward",
+            "osm_734011349_7_forward",
+            "osm_734011349_8_forward",
+            "osm_734011349_9_forward",
+            "osm_734011349_10_forward",
+            "osm_734011349_11_forward",
+            "osm_734011349_12_forward",
+            "osm_734011349_13_forward",
+            "osm_734011349_14_forward",
+            "osm_1270930401_0_forward",
+            "osm_260940553_0_forward",
+            "osm_260940553_1_forward",
+            "osm_260940553_2_forward",
+            "osm_260940553_3_forward",
+            "osm_260940553_4_forward",
+            "osm_260940553_5_forward",
+            "osm_260940553_6_forward",
+            "osm_260940553_7_forward",
+            "osm_260940553_8_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "gis_station_38",
+              "link_index": 0,
+              "name": "Estación La Merced",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 38",
+              "source_position": [
+                -90.5079219048026,
+                14.6434701089393
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_164",
+              "link_index": 13,
+              "name": "Cruz Roja",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 164",
+              "source_position": [
+                -90.510946711129,
+                14.6442417794426
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_165",
+              "link_index": 51,
+              "name": "Santuario de Guadalupe",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 165",
+              "source_position": [
+                -90.519303264805,
+                14.6420879568877
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_169",
+              "link_index": 37,
+              "name": "Archivo General",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 169",
+              "source_position": [
+                -90.5156982608911,
+                14.6424275119056
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            }
+          ],
+          "direction_basis": "ordered route relation 10123492; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "exterior",
+            "minimum_seconds": 1800,
+            "basis": "scenario assumption for omitted outside route/terminal; not measured travel time"
+          }
+        },
+        {
+          "part_id": "L7_14100221_part1",
+          "link_ids": [
+            "osm_260936848_0_forward",
+            "osm_260936848_1_forward",
+            "osm_260936848_2_forward",
+            "osm_260936848_3_forward",
+            "osm_260936848_4_forward",
+            "osm_260936848_5_forward",
+            "osm_260936848_6_forward",
+            "osm_260936848_7_forward",
+            "osm_260936848_8_forward",
+            "osm_260936848_9_forward",
+            "osm_260936848_10_forward",
+            "osm_260936848_11_forward",
+            "osm_260936848_12_forward",
+            "osm_260936848_13_forward",
+            "osm_260936848_14_forward",
+            "osm_917940877_0_forward",
+            "osm_48273209_0_forward",
+            "osm_48273209_1_forward",
+            "osm_48273209_2_forward",
+            "osm_48273209_3_forward",
+            "osm_48273209_4_forward",
+            "osm_48273209_5_forward",
+            "osm_48273209_6_forward",
+            "osm_48273209_7_forward",
+            "osm_48273209_8_forward",
+            "osm_48273209_9_forward",
+            "osm_48273209_10_forward",
+            "osm_48273209_11_forward",
+            "osm_48273209_12_forward",
+            "osm_48273209_13_forward",
+            "osm_48273209_14_forward",
+            "osm_48273209_15_forward",
+            "osm_48273209_16_forward",
+            "osm_48273209_17_forward",
+            "osm_48273209_18_forward",
+            "osm_48273209_19_forward",
+            "osm_48273209_20_forward",
+            "osm_48273209_21_forward",
+            "osm_48273209_22_forward",
+            "osm_48273209_23_forward",
+            "osm_48273209_24_forward",
+            "osm_48273209_25_forward",
+            "osm_48273209_26_forward",
+            "osm_48273209_27_forward",
+            "osm_48273209_28_forward",
+            "osm_48273209_29_forward",
+            "osm_1159234896_0_forward",
+            "osm_1159234896_1_forward",
+            "osm_1159234896_2_forward",
+            "osm_1159234896_3_forward",
+            "osm_1159234896_4_forward",
+            "osm_384736604_0_forward",
+            "osm_384736604_1_forward",
+            "osm_384736604_2_forward",
+            "osm_384736604_3_forward",
+            "osm_384736604_4_forward",
+            "osm_384736604_5_forward",
+            "osm_384736604_6_forward",
+            "osm_384736604_7_forward",
+            "osm_384736604_8_forward",
+            "osm_384736604_9_forward",
+            "osm_384736604_10_forward",
+            "osm_384736604_11_forward",
+            "osm_384736604_12_forward",
+            "osm_384736604_13_forward",
+            "osm_384736604_14_forward",
+            "osm_384736604_15_forward",
+            "osm_384736604_16_forward",
+            "osm_384736604_17_forward",
+            "osm_643204393_0_forward",
+            "osm_643204393_1_forward",
+            "osm_643204393_2_forward",
+            "osm_643204393_3_forward",
+            "osm_420138111_0_forward",
+            "osm_420138111_1_forward",
+            "osm_420138111_2_forward",
+            "osm_420138111_3_forward",
+            "osm_420138111_4_forward",
+            "osm_420138111_5_forward",
+            "osm_420138111_6_forward",
+            "osm_420138111_7_forward",
+            "osm_420138111_8_forward",
+            "osm_420138111_9_forward",
+            "osm_420138111_10_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "gis_station_18",
+              "link_index": 70,
+              "name": "Colón - Líneas 6 y 18",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 18",
+              "source_position": [
+                -90.5083063927274,
+                14.6400530276294
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_38",
+              "link_index": 83,
+              "name": "Estación La Merced",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 38",
+              "source_position": [
+                -90.5079219048026,
+                14.6434701089393
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_162",
+              "link_index": 24,
+              "name": "San Juan de Dios",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 162",
+              "source_position": [
+                -90.5188896642785,
+                14.6412301291927
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_163",
+              "link_index": 49,
+              "name": "Pasaje Aycinena",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 163",
+              "source_position": [
+                -90.5130679066027,
+                14.6403189307001
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            }
+          ],
+          "direction_basis": "ordered route relation 14100221; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "terminal",
+            "minimum_seconds": 180,
+            "basis": "explicit turnaround assumption at geographically shared terminal"
+          }
+        }
+      ],
+      "blockers": []
+    },
+    {
+      "service_id": "transmetro_L12",
+      "sources": [
+        "map.osm relations 906046,14106867"
+      ],
+      "mapping_basis": "ordered OSM relation fragments; exterior ways absent from snapshot are not invented",
+      "parts": [
+        {
+          "part_id": "L12_906046_part1",
+          "link_ids": [
+            "transit_osm_1057416028_0_forward",
+            "transit_osm_1057416028_1_forward",
+            "transit_osm_1057416028_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward",
+            "osm_60237269_2_forward",
+            "osm_1274975831_0_forward",
+            "osm_1274975831_1_forward",
+            "transit_osm_384746799_0_backward",
+            "transit_osm_1057486078_0_forward",
+            "transit_osm_1057486078_1_forward",
+            "transit_osm_1274975829_0_forward",
+            "transit_osm_1274975829_1_forward",
+            "transit_osm_1274975829_2_forward",
+            "osm_45497717_0_forward",
+            "osm_45497717_1_forward",
+            "osm_45497717_2_forward",
+            "osm_45497717_3_forward",
+            "osm_45497717_4_forward",
+            "transit_osm_1274975825_0_forward",
+            "transit_osm_1057416031_0_forward",
+            "transit_osm_1057416031_1_forward",
+            "transit_osm_1057416031_2_forward",
+            "transit_osm_1057416031_3_forward",
+            "transit_osm_1057416031_4_forward",
+            "transit_osm_1057416031_5_forward",
+            "transit_osm_1057717601_0_forward",
+            "transit_osm_1057717601_1_forward",
+            "transit_osm_1057717601_2_forward",
+            "osm_60237270_0_forward",
+            "osm_60237270_1_forward",
+            "osm_60237270_2_forward",
+            "osm_60237270_3_forward",
+            "osm_60237270_4_forward",
+            "osm_60237270_5_forward",
+            "osm_60237270_6_forward",
+            "osm_30279778_0_forward",
+            "osm_405158905_0_forward",
+            "osm_384907703_0_forward",
+            "osm_1272828335_0_forward",
+            "osm_381158266_0_forward",
+            "osm_381158266_1_forward",
+            "osm_381158266_2_forward",
+            "osm_384906420_0_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "gis_station_36",
+              "link_index": 23,
+              "name": "Estación Sur 2",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 36",
+              "source_position": [
+                -90.5162887145442,
+                14.6313136403142
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_40",
+              "link_index": 0,
+              "name": "Estación Plaza Barrios",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 40",
+              "source_position": [
+                -90.5122245286881,
+                14.6301462926032
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_58",
+              "link_index": 26,
+              "name": "Estación Plaza El Amate",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 58",
+              "source_position": [
+                -90.5168112070528,
+                14.6313339331534
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_76",
+              "link_index": 12,
+              "name": "Estación Tipografía",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 76",
+              "source_position": [
+                -90.5144168949867,
+                14.6308695659088
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            }
+          ],
+          "direction_basis": "ordered route relation 906046; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "terminal",
+            "minimum_seconds": 180,
+            "basis": "explicit turnaround assumption at geographically shared terminal"
+          }
+        },
+        {
+          "part_id": "L12_14106867_part1",
+          "link_ids": [
+            "osm_1057416056_0_forward",
+            "osm_1057416056_1_forward",
+            "osm_792918640_0_forward",
+            "osm_381158282_0_forward",
+            "osm_381158282_1_forward",
+            "osm_381158282_2_forward",
+            "osm_381158282_3_forward",
+            "osm_381158282_4_forward",
+            "osm_381158282_5_forward",
+            "osm_1521208741_0_forward",
+            "osm_1521208741_1_forward",
+            "osm_1521208741_2_forward",
+            "osm_1521208741_3_forward",
+            "osm_64387808_0_forward",
+            "osm_64387808_1_forward",
+            "osm_64387808_2_forward",
+            "osm_64387808_3_forward",
+            "osm_60237257_0_forward",
+            "osm_60237257_1_forward",
+            "osm_60237257_2_forward",
+            "osm_60237257_3_forward",
+            "osm_60237257_4_forward",
+            "osm_60237257_5_forward",
+            "osm_64387809_0_forward",
+            "osm_64387809_1_forward",
+            "osm_64387809_2_forward",
+            "osm_64387809_3_forward",
+            "osm_64387809_4_forward",
+            "osm_64387809_5_forward",
+            "osm_64387809_6_forward",
+            "osm_64387809_7_forward",
+            "osm_60237259_0_forward",
+            "osm_60237259_1_forward",
+            "osm_60237259_2_forward",
+            "osm_400843678_0_forward",
+            "osm_1521207432_0_forward",
+            "osm_60237256_0_forward",
+            "osm_1057486080_0_forward",
+            "osm_1057486080_1_forward",
+            "osm_1057486080_2_forward",
+            "osm_34994087_0_forward",
+            "osm_34994087_1_forward",
+            "osm_34994087_2_forward",
+            "osm_34994087_3_forward",
+            "osm_34994087_4_forward",
+            "osm_34994087_5_forward",
+            "osm_1241482280_0_forward",
+            "osm_1241482280_1_forward",
+            "osm_1305621751_0_forward",
+            "osm_1057416059_0_forward",
+            "osm_1057416059_1_forward",
+            "osm_1057416059_2_forward",
+            "osm_1057416059_3_forward",
+            "osm_1057416059_4_forward",
+            "osm_1057416059_5_forward",
+            "osm_1057416059_6_forward",
+            "osm_1057416059_7_forward",
+            "osm_1057416059_8_forward",
+            "osm_34993910_0_forward",
+            "osm_1304369291_0_forward",
+            "osm_1304369291_1_forward",
+            "osm_1304369291_2_forward",
+            "osm_1304369291_3_forward",
+            "osm_1304369291_4_forward",
+            "osm_1479114531_0_forward",
+            "osm_60237266_0_forward",
+            "osm_60237266_1_forward",
+            "osm_60237266_2_forward",
+            "osm_60237266_3_forward",
+            "osm_60237266_4_forward",
+            "osm_60237266_5_forward",
+            "osm_60237266_6_forward",
+            "osm_60237266_7_forward",
+            "osm_60237266_8_forward",
+            "transit_osm_1057416062_0_forward",
+            "transit_osm_1057066512_0_forward",
+            "transit_osm_1057066512_1_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "gis_station_40",
+              "link_index": 76,
+              "name": "Estación Plaza Barrios",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 40",
+              "source_position": [
+                -90.5122245286881,
+                14.6301462926032
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_41",
+              "link_index": 38,
+              "name": "Estación Plaza Municipal",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 41",
+              "source_position": [
+                -90.5157923153997,
+                14.6275977209949
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            }
+          ],
+          "direction_basis": "ordered route relation 14106867; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "terminal",
+            "minimum_seconds": 180,
+            "basis": "explicit turnaround assumption at geographically shared terminal"
+          }
+        }
+      ],
+      "blockers": []
+    },
+    {
+      "service_id": "transmetro_L13",
+      "sources": [
+        "map.osm relations 936950,14107352"
+      ],
+      "mapping_basis": "ordered OSM relation fragments; exterior ways absent from snapshot are not invented",
+      "parts": [
+        {
+          "part_id": "L13_936950_part1",
+          "link_ids": [
+            "transit_osm_1274975829_0_forward",
+            "transit_osm_1274975829_1_forward",
+            "transit_osm_1274975829_2_forward",
+            "osm_45497717_0_forward",
+            "osm_45497717_1_forward",
+            "osm_45497717_2_forward",
+            "osm_45497717_3_forward",
+            "osm_45497717_4_forward",
+            "osm_34994240_0_forward",
+            "osm_34994240_1_forward",
+            "osm_34994240_2_forward",
+            "osm_34994240_3_forward",
+            "osm_34994240_4_forward",
+            "osm_34994240_5_forward",
+            "osm_34994240_6_forward",
+            "transit_osm_1265232221_0_forward",
+            "transit_osm_1265232221_1_forward",
+            "transit_osm_1265232221_2_forward",
+            "transit_osm_1308544715_0_forward",
+            "transit_osm_1521207433_0_forward",
+            "transit_osm_1521207433_1_forward",
+            "transit_osm_1521207433_2_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "gis_station_42",
+              "link_index": 13,
+              "name": "Estación El Calvario",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 42",
+              "source_position": [
+                -90.515624192101,
+                14.6298715505822
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_76",
+              "link_index": 0,
+              "name": "Estación Tipografía",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 76",
+              "source_position": [
+                -90.5144168949867,
+                14.6308695659088
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            }
+          ],
+          "direction_basis": "ordered route relation 936950; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "exterior",
+            "minimum_seconds": 1800,
+            "basis": "scenario assumption for omitted outside route/terminal; not measured travel time"
+          }
+        },
+        {
+          "part_id": "L13_14107352_part1",
+          "link_ids": [
+            "transit_osm_1521202580_0_forward",
+            "transit_osm_1521202580_1_forward",
+            "transit_osm_1521202580_2_forward",
+            "transit_osm_1521202580_3_forward",
+            "transit_osm_1521202580_4_forward",
+            "transit_osm_1521202580_5_forward",
+            "transit_osm_1521202580_6_forward",
+            "osm_1305621751_0_forward",
+            "osm_1057416059_0_forward",
+            "osm_1057416059_1_forward",
+            "osm_1057416059_2_forward",
+            "osm_1057416059_3_forward",
+            "osm_1057416059_4_forward",
+            "osm_1057416059_5_forward",
+            "osm_1057416059_6_forward",
+            "osm_1057416059_7_forward",
+            "osm_1057416059_8_forward",
+            "osm_34993910_0_forward",
+            "osm_1304369291_0_forward",
+            "osm_1304369291_1_forward",
+            "osm_1304369291_2_forward",
+            "osm_1304369291_3_forward",
+            "osm_1304369291_4_forward",
+            "osm_1479114531_0_forward",
+            "osm_60237266_0_forward",
+            "osm_60237266_1_forward",
+            "osm_60237266_2_forward",
+            "osm_60237266_3_forward",
+            "osm_60237266_4_forward",
+            "osm_60237266_5_forward",
+            "osm_60237266_6_forward",
+            "osm_60237266_7_forward",
+            "osm_60237266_8_forward",
+            "osm_1057416061_0_forward",
+            "osm_381144599_0_forward",
+            "osm_381144599_1_forward",
+            "osm_381144599_2_forward",
+            "osm_381144599_3_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward",
+            "osm_60237269_2_forward",
+            "osm_1274975831_0_forward",
+            "osm_1274975831_1_forward",
+            "transit_osm_384746799_0_backward",
+            "transit_osm_1057486078_0_forward",
+            "transit_osm_1057486078_1_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "gis_station_40",
+              "link_index": 35,
+              "name": "Estación Plaza Barrios",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 40",
+              "source_position": [
+                -90.5122245286881,
+                14.6301462926032
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_59",
+              "link_index": 5,
+              "name": "Estación Banco de Guatemala",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 59",
+              "source_position": [
+                -90.514629003395,
+                14.6261247161905
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_76",
+              "link_index": 46,
+              "name": "Estación Tipografía",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 76",
+              "source_position": [
+                -90.5144168949867,
+                14.6308695659088
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            }
+          ],
+          "direction_basis": "ordered route relation 14107352; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "terminal",
+            "minimum_seconds": 180,
+            "basis": "explicit turnaround assumption at geographically shared terminal"
+          }
+        }
+      ],
+      "blockers": []
+    },
+    {
+      "service_id": "transmetro_L18",
+      "sources": [
+        "map.osm relations 6245758,14099910"
+      ],
+      "mapping_basis": "ordered OSM relation fragments; exterior ways absent from snapshot are not invented",
+      "parts": [
+        {
+          "part_id": "L18_6245758_part1",
+          "link_ids": [
+            "osm_49009942_0_forward",
+            "osm_49009942_1_forward",
+            "osm_49009942_2_forward",
+            "osm_1358273950_0_forward",
+            "osm_384766442_0_forward",
+            "osm_384766442_1_forward",
+            "osm_384766442_2_forward",
+            "osm_384766442_3_forward",
+            "osm_384766442_4_forward",
+            "osm_384766442_5_forward",
+            "osm_384766442_6_forward",
+            "osm_1358273951_0_forward",
+            "osm_1358273951_1_forward",
+            "osm_1358273951_2_forward",
+            "osm_1358273951_3_forward",
+            "osm_1358273951_4_forward",
+            "osm_1358273951_5_forward",
+            "osm_1358273951_6_forward",
+            "osm_1358273951_7_forward",
+            "osm_1358273951_8_forward",
+            "osm_1358273951_9_forward",
+            "osm_1358273951_10_forward",
+            "osm_732305246_0_forward",
+            "osm_1049482885_0_forward",
+            "osm_420138110_0_forward",
+            "osm_420138110_1_forward",
+            "osm_420138110_2_forward",
+            "osm_420138110_3_forward",
+            "osm_420138110_4_forward",
+            "osm_420138110_5_forward",
+            "osm_420138110_6_forward",
+            "osm_420138110_7_forward",
+            "osm_384766449_0_forward",
+            "osm_384766449_1_forward",
+            "osm_384766449_2_forward",
+            "osm_384731375_0_forward",
+            "osm_384731375_1_forward",
+            "osm_384731375_2_forward",
+            "osm_384731375_3_forward",
+            "osm_384731375_4_forward",
+            "osm_384731375_5_forward",
+            "osm_384731375_6_forward",
+            "osm_384731375_7_forward",
+            "osm_384731375_8_forward",
+            "osm_384731375_9_forward",
+            "osm_384731375_10_forward",
+            "osm_384731375_11_forward",
+            "osm_384731375_12_forward",
+            "osm_384731375_13_forward",
+            "osm_384731375_14_forward",
+            "osm_42839777_0_forward",
+            "osm_42839777_1_forward",
+            "osm_42839777_2_forward",
+            "osm_42839777_3_forward",
+            "osm_420120094_0_forward",
+            "osm_420120094_1_forward",
+            "osm_420120094_2_forward",
+            "osm_420120094_3_forward",
+            "osm_420120094_4_forward",
+            "osm_420120094_5_forward",
+            "osm_420120094_6_forward",
+            "osm_420120094_7_forward",
+            "osm_420120095_0_forward",
+            "osm_420120095_1_forward",
+            "osm_420120095_2_forward",
+            "osm_420120095_3_forward",
+            "osm_420120095_4_forward",
+            "osm_420120095_5_forward",
+            "osm_420120095_6_forward",
+            "osm_420120095_7_forward",
+            "osm_420120095_8_forward",
+            "osm_420120095_9_forward",
+            "osm_420120095_10_forward",
+            "osm_420120095_11_forward",
+            "osm_420120095_12_forward",
+            "osm_420120095_13_forward",
+            "osm_420120095_14_forward",
+            "osm_420120095_15_forward",
+            "osm_420120095_16_forward",
+            "osm_1274975830_0_forward",
+            "osm_420120098_0_forward",
+            "osm_420120098_1_forward",
+            "osm_420120098_2_forward",
+            "osm_420138103_0_forward",
+            "osm_1056730555_0_forward",
+            "osm_1056730555_1_forward",
+            "osm_1056730555_2_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "gis_station_6",
+              "link_index": 86,
+              "name": "Estación Plaza Barrios - Fegua",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 6",
+              "source_position": [
+                -90.5117312314262,
+                14.6305210977403
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_7",
+              "link_index": 63,
+              "name": "Estación Beatas de Belén",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 7",
+              "source_position": [
+                -90.512677241862,
+                14.6339209423095
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_8",
+              "link_index": 37,
+              "name": "Estación Capuchinas",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 8",
+              "source_position": [
+                -90.5098994677472,
+                14.6386536665038
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            }
+          ],
+          "direction_basis": "ordered route relation 6245758; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "terminal",
+            "minimum_seconds": 180,
+            "basis": "explicit turnaround assumption at geographically shared terminal"
+          }
+        },
+        {
+          "part_id": "L18_14099910_part1",
+          "link_ids": [
+            "osm_45497702_0_forward",
+            "osm_45497702_1_forward",
+            "osm_45497702_2_forward",
+            "transit_osm_420120100_0_forward",
+            "osm_420120099_0_forward",
+            "osm_420120099_1_forward",
+            "osm_420120099_2_forward",
+            "osm_420120099_3_forward",
+            "osm_420120099_4_forward",
+            "osm_420120099_5_forward",
+            "osm_420120099_6_forward",
+            "osm_420120099_7_forward",
+            "osm_420120099_8_forward",
+            "osm_420120099_9_forward",
+            "osm_420120099_10_forward",
+            "osm_420120099_11_forward",
+            "osm_420120099_12_forward",
+            "osm_420120099_13_forward",
+            "osm_420120099_14_forward",
+            "osm_420120099_15_forward",
+            "osm_420120099_16_forward",
+            "osm_420120099_17_forward",
+            "osm_420120099_18_forward",
+            "osm_420120099_19_forward",
+            "osm_420120099_20_forward",
+            "osm_420120099_21_forward",
+            "osm_420120099_22_forward",
+            "osm_420120099_23_forward",
+            "osm_420120099_24_forward",
+            "osm_420120099_25_forward",
+            "osm_420120099_26_forward",
+            "osm_420120099_27_forward",
+            "osm_420120099_28_forward",
+            "osm_420120099_29_forward",
+            "osm_420120099_30_forward",
+            "osm_420120099_31_forward",
+            "osm_420120099_32_forward",
+            "osm_420120099_33_forward",
+            "osm_420120099_34_forward",
+            "osm_420120099_35_forward",
+            "osm_420120099_36_forward",
+            "osm_420120099_37_forward",
+            "osm_420120099_38_forward",
+            "osm_420120099_39_forward",
+            "osm_420120099_40_forward",
+            "osm_420120099_41_forward",
+            "osm_1208137406_0_forward",
+            "transit_osm_643206232_0_forward",
+            "transit_osm_643206232_1_forward",
+            "transit_osm_643206232_2_forward",
+            "osm_1049482885_0_forward",
+            "osm_420138111_0_forward",
+            "osm_420138111_1_forward",
+            "osm_420138111_2_forward",
+            "osm_420138111_3_forward",
+            "osm_420138111_4_forward",
+            "osm_420138111_5_forward",
+            "osm_420138111_6_forward",
+            "osm_420138111_7_forward",
+            "osm_420138111_8_forward",
+            "osm_420138111_9_forward",
+            "osm_420138111_10_forward",
+            "osm_1056782163_0_forward",
+            "osm_1056782163_1_forward",
+            "osm_732305247_0_forward",
+            "osm_732305247_1_forward",
+            "osm_732305247_2_forward",
+            "osm_732305247_3_forward",
+            "osm_732305247_4_forward",
+            "osm_732305247_5_forward",
+            "osm_732305247_6_forward",
+            "osm_732305247_7_forward",
+            "osm_732305247_8_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "gis_station_6",
+              "link_index": 0,
+              "name": "Estación Plaza Barrios - Fegua",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 6",
+              "source_position": [
+                -90.5117312314262,
+                14.6305210977403
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_18",
+              "link_index": 48,
+              "name": "Colón - Líneas 6 y 18",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 18",
+              "source_position": [
+                -90.5083063927274,
+                14.6400530276294
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_19",
+              "link_index": 12,
+              "name": "Francos Monroy  - Líneas 6 y 18",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 19",
+              "source_position": [
+                -90.509330733561,
+                14.6326462831673
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            },
+            {
+              "stop_id": "gis_station_38",
+              "link_index": 61,
+              "name": "Estación La Merced",
+              "role": "passenger_stop",
+              "source": "municipal transmetro-stations-gis feature 38",
+              "source_position": [
+                -90.5079219048026,
+                14.6434701089393
+              ],
+              "placement_basis": "GIS point to route link within 18m; endpoint for native dwell is inferred"
+            }
+          ],
+          "direction_basis": "ordered route relation 14099910; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "exterior",
+            "minimum_seconds": 1800,
+            "basis": "scenario assumption for omitted outside route/terminal; not measured travel time"
+          }
+        }
+      ],
+      "blockers": []
+    },
+    {
+      "service_id": "tubus_R5",
+      "sources": [
+        "map.osm relations 18672965,18672966"
+      ],
+      "mapping_basis": "ordered OSM relation fragments; exterior ways absent from snapshot are not invented",
+      "parts": [
+        {
+          "part_id": "R5_18672965_part1",
+          "link_ids": [
+            "osm_1358273942_0_forward",
+            "osm_1358273942_1_forward",
+            "osm_1159234897_0_forward",
+            "osm_1159234897_1_forward",
+            "osm_381382165_0_forward",
+            "osm_381382165_1_forward",
+            "osm_381382165_2_forward",
+            "osm_381382165_3_forward",
+            "osm_381382168_0_forward",
+            "osm_1358273948_0_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "osm:node:4735676221",
+              "link_index": 0,
+              "name": "TuBus: Parque Colón",
+              "source_position": [
+                -90.5072051,
+                14.6397793
+              ],
+              "source": "map.osm osm:node:4735676221",
+              "role": "passenger_stop",
+              "placement_basis": "OSM source platform point mapped to route within 30m"
+            }
+          ],
+          "direction_basis": "ordered route relation 18672965; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "exterior",
+            "minimum_seconds": 1800,
+            "basis": "scenario assumption for omitted outside route/terminal; not measured travel time"
+          }
+        },
+        {
+          "part_id": "R5_18672966_part1",
+          "link_ids": [
+            "osm_67112965_0_forward",
+            "osm_34994099_0_forward",
+            "osm_34994099_1_forward",
+            "osm_34994099_2_forward",
+            "osm_34994099_3_forward",
+            "osm_60237264_0_forward",
+            "osm_60237264_1_forward",
+            "osm_60237264_2_forward",
+            "osm_60237264_3_forward",
+            "osm_60237264_4_forward",
+            "osm_60237264_5_forward",
+            "osm_60237264_6_forward"
+          ],
+          "stops": [],
+          "direction_basis": "ordered route relation 18672966; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "exterior",
+            "minimum_seconds": 1800,
+            "basis": "scenario assumption for omitted outside route/terminal; not measured travel time"
+          }
+        },
+        {
+          "part_id": "R5_18672966_part2",
+          "link_ids": [
+            "transit_osm_1358273948_0_backward",
+            "osm_1358273949_0_forward",
+            "osm_1358273949_1_forward",
+            "osm_384766442_0_forward",
+            "osm_384766442_1_forward",
+            "osm_384766442_2_forward",
+            "osm_384766442_3_forward",
+            "osm_384766442_4_forward",
+            "osm_384766442_5_forward",
+            "osm_384766442_6_forward",
+            "osm_1358273952_0_forward",
+            "osm_1358273952_1_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "osm:node:4735676221",
+              "link_index": 11,
+              "name": "TuBus: Parque Colón",
+              "source_position": [
+                -90.5072051,
+                14.6397793
+              ],
+              "source": "map.osm osm:node:4735676221",
+              "role": "passenger_stop",
+              "placement_basis": "OSM source platform point mapped to route within 30m"
+            }
+          ],
+          "direction_basis": "ordered route relation 18672966; known direction conflicts require explicit scenario acceptance",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "terminal",
+            "minimum_seconds": 180,
+            "basis": "explicit turnaround assumption at geographically shared terminal"
+          }
+        }
+      ],
+      "blockers": []
+    },
+    {
+      "service_id": "tubus_104",
+      "sources": [
+        "municipal-gis.json tubus-routes-gis Codigoruta=104"
+      ],
+      "mapping_basis": "bounded directed GIS/OSM map matching, not shortest path through unrelated streets",
+      "parts": [
+        {
+          "part_id": "TuBus_104_part1",
+          "link_ids": [
+            "osm_1358273949_0_forward",
+            "osm_1358273949_1_forward",
+            "osm_384766442_0_forward",
+            "osm_384766442_1_forward",
+            "osm_384766442_2_forward",
+            "osm_384766442_3_forward",
+            "osm_384766442_4_forward",
+            "osm_384766442_5_forward",
+            "osm_384766442_6_forward",
+            "osm_1358273952_0_forward",
+            "osm_1358273952_1_forward",
+            "osm_1358273942_0_forward",
+            "osm_1358273942_1_forward",
+            "osm_398276347_0_forward",
+            "osm_398276347_1_forward",
+            "osm_398276347_2_forward",
+            "osm_398276347_3_forward",
+            "osm_398276347_4_forward",
+            "osm_398276347_5_forward",
+            "osm_398276347_6_forward",
+            "osm_398276347_7_forward",
+            "osm_398276347_8_forward",
+            "osm_398276347_9_forward",
+            "osm_398276347_10_forward",
+            "osm_398276347_11_forward",
+            "osm_398276347_12_forward",
+            "osm_398276347_13_forward",
+            "osm_398276347_14_forward",
+            "osm_398276347_15_forward",
+            "osm_398276347_16_forward",
+            "osm_398276347_17_forward",
+            "osm_398276347_18_forward",
+            "osm_398276347_19_forward",
+            "osm_398276347_20_forward",
+            "osm_398276347_21_forward",
+            "osm_398276347_22_forward",
+            "osm_398276347_23_forward",
+            "osm_398276347_24_forward",
+            "osm_398276347_25_forward",
+            "osm_398276347_26_forward",
+            "osm_398276347_27_forward",
+            "osm_398276347_28_forward",
+            "osm_398276347_29_forward",
+            "osm_398276347_30_forward",
+            "osm_398276347_31_forward",
+            "osm_398276347_32_forward",
+            "osm_398276347_33_forward",
+            "osm_762765908_0_forward",
+            "osm_762765908_1_forward",
+            "osm_762765908_2_forward",
+            "osm_762765908_3_forward",
+            "osm_762765906_0_forward",
+            "osm_762765906_1_forward",
+            "osm_762765906_2_forward"
+          ],
+          "stops": [],
+          "direction_basis": "municipal GIS vertex order constrained by directed OSM network",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "exterior",
+            "minimum_seconds": 1800,
+            "basis": "scenario assumption for omitted exterior segment; not observed timetable"
+          },
+          "mapping_tolerance_m": 30
+        },
+        {
+          "part_id": "TuBus_104_part2",
+          "link_ids": [
+            "osm_511820719_2_forward",
+            "osm_511820719_3_forward",
+            "osm_511820719_4_forward",
+            "osm_511820719_5_forward",
+            "osm_511820719_6_forward",
+            "osm_511820719_7_forward",
+            "osm_511820719_8_forward",
+            "osm_511820719_9_forward",
+            "osm_511820719_10_forward",
+            "osm_511820719_11_forward",
+            "osm_511820719_12_forward",
+            "osm_511820719_13_forward",
+            "osm_511820719_14_forward",
+            "osm_511820719_15_forward",
+            "osm_511820719_16_forward",
+            "osm_511820719_17_forward",
+            "osm_511820719_18_forward",
+            "osm_511820719_19_forward",
+            "osm_511820719_20_forward",
+            "osm_511820719_21_forward",
+            "osm_511820719_22_forward",
+            "osm_511820719_23_forward",
+            "osm_511820719_24_forward",
+            "osm_511820719_25_forward",
+            "osm_511820719_26_forward",
+            "osm_511820719_27_forward",
+            "osm_45491988_0_forward",
+            "osm_45491988_1_forward",
+            "osm_381144611_0_forward",
+            "osm_381144611_1_forward",
+            "osm_381144611_2_forward",
+            "osm_381144611_3_forward",
+            "osm_420120099_0_forward",
+            "osm_420120099_1_forward",
+            "osm_420120099_2_forward",
+            "osm_420120099_3_forward",
+            "osm_420120099_4_forward",
+            "osm_420120099_5_forward",
+            "osm_420120099_6_forward",
+            "osm_420120099_7_forward",
+            "osm_420120099_8_forward",
+            "osm_420120099_9_forward",
+            "osm_420120099_10_forward",
+            "osm_420120099_11_forward",
+            "osm_420120099_12_forward",
+            "osm_420120099_13_forward",
+            "osm_420120099_14_forward",
+            "osm_420120099_15_forward",
+            "osm_420120099_16_forward",
+            "osm_420120099_17_forward",
+            "osm_420120099_18_forward",
+            "osm_420120099_19_forward",
+            "osm_420120099_20_forward",
+            "osm_420120099_21_forward",
+            "osm_420120099_22_forward",
+            "osm_420120099_23_forward",
+            "osm_420120099_24_forward",
+            "osm_420120099_25_forward",
+            "osm_420120099_26_forward",
+            "osm_420120099_27_forward",
+            "osm_420120099_28_forward",
+            "osm_420120099_29_forward",
+            "osm_420120099_30_forward",
+            "osm_420120099_31_forward",
+            "osm_420120099_32_forward",
+            "osm_420120099_33_forward",
+            "osm_420120099_34_forward",
+            "osm_420120099_35_forward",
+            "osm_420120099_36_forward",
+            "osm_420120099_37_forward",
+            "osm_420120099_38_forward",
+            "osm_420120099_39_forward",
+            "osm_420120099_40_forward",
+            "osm_420120099_41_forward",
+            "osm_643204393_0_forward",
+            "osm_643204393_1_forward",
+            "osm_643204393_2_forward",
+            "osm_643204393_3_forward",
+            "osm_420138111_0_forward",
+            "osm_420138111_1_forward",
+            "osm_420138111_2_forward",
+            "osm_420138111_3_forward",
+            "osm_420138111_4_forward",
+            "osm_420138111_5_forward",
+            "osm_420138111_6_forward",
+            "osm_384766456_10_forward",
+            "osm_384766456_11_forward",
+            "osm_384766456_12_forward",
+            "osm_384766456_13_forward",
+            "osm_384766456_14_forward",
+            "osm_384766456_15_forward",
+            "osm_384766456_16_forward",
+            "osm_30279746_0_forward",
+            "osm_30279746_1_forward",
+            "osm_30279746_2_forward",
+            "osm_30279746_3_forward",
+            "osm_30279746_4_forward",
+            "osm_30279746_5_forward",
+            "osm_30279746_6_forward",
+            "osm_30279746_7_forward",
+            "osm_1483595622_0_forward"
+          ],
+          "stops": [],
+          "direction_basis": "municipal GIS vertex order constrained by directed OSM network",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "exterior",
+            "minimum_seconds": 1800,
+            "basis": "scenario assumption for omitted exterior segment; not observed timetable"
+          },
+          "mapping_tolerance_m": 30
+        }
+      ],
+      "blockers": []
+    },
+    {
+      "service_id": "tubus_105",
+      "sources": [
+        "municipal-gis.json tubus-routes-gis Codigoruta=105"
+      ],
+      "mapping_basis": "bounded directed GIS/OSM map matching, not shortest path through unrelated streets",
+      "parts": [
+        {
+          "part_id": "TuBus_105_part1",
+          "link_ids": [
+            "osm_65777805_25_forward",
+            "osm_65777805_26_forward",
+            "osm_734011348_8_forward",
+            "osm_734011348_9_forward",
+            "osm_734011348_10_forward",
+            "osm_734011348_11_forward",
+            "osm_734011348_12_forward",
+            "osm_734011348_13_forward"
+          ],
+          "stops": [],
+          "direction_basis": "municipal GIS vertex order constrained by directed OSM network",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "exterior",
+            "minimum_seconds": 1800,
+            "basis": "scenario assumption for omitted exterior segment; not observed timetable"
+          },
+          "mapping_tolerance_m": 30
+        },
+        {
+          "part_id": "TuBus_105_part2",
+          "link_ids": [
+            "osm_381158292_2_forward",
+            "osm_381158292_3_forward",
+            "osm_405158906_0_forward",
+            "osm_405158906_1_forward",
+            "osm_65777805_84_forward",
+            "osm_30289506_5_forward",
+            "osm_30289506_6_forward",
+            "osm_30289506_7_forward",
+            "osm_30289506_8_forward",
+            "osm_30289506_9_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "published_166",
+              "link_index": 3,
+              "name": "19 Calle / 2 Avenida",
+              "source_position": [
+                -90.5198381,
+                14.6309005
+              ],
+              "source": "catalog.json tubus-105 stop 166",
+              "role": "passenger_stop",
+              "placement_basis": "source street address; inferred OSM intersection anchor, not surveyed platform"
+            },
+            {
+              "stop_id": "published_168",
+              "link_index": 5,
+              "name": "20 Calle / 1 Avenida A",
+              "source_position": [
+                -90.5206846,
+                14.6300405
+              ],
+              "source": "catalog.json tubus-105 stop 168",
+              "role": "passenger_stop",
+              "placement_basis": "source street address; inferred OSM intersection anchor, not surveyed platform"
+            }
+          ],
+          "direction_basis": "municipal GIS vertex order constrained by directed OSM network",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "exterior",
+            "minimum_seconds": 1800,
+            "basis": "scenario assumption for omitted exterior segment; not observed timetable"
+          },
+          "mapping_tolerance_m": 30
+        },
+        {
+          "part_id": "TuBus_105_part3",
+          "link_ids": [
+            "osm_406654687_7_forward",
+            "osm_406654687_8_forward",
+            "osm_406654687_9_forward",
+            "osm_406654687_10_forward",
+            "osm_406654687_11_forward",
+            "osm_406654687_12_forward",
+            "osm_1273145789_0_forward",
+            "osm_1273145791_0_forward",
+            "osm_1273145791_1_forward",
+            "osm_699533700_8_backward",
+            "osm_699533700_7_backward",
+            "osm_699533700_6_backward",
+            "osm_699533700_5_backward",
+            "osm_699533700_4_backward",
+            "osm_699533700_3_backward"
+          ],
+          "stops": [],
+          "direction_basis": "municipal GIS vertex order constrained by directed OSM network",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "exterior",
+            "minimum_seconds": 1800,
+            "basis": "scenario assumption for omitted exterior segment; not observed timetable"
+          },
+          "mapping_tolerance_m": 30
+        },
+        {
+          "part_id": "TuBus_105_part4",
+          "link_ids": [
+            "osm_699533700_3_forward",
+            "osm_699533700_4_forward",
+            "osm_699533700_5_forward",
+            "osm_699533700_6_forward",
+            "osm_699533700_7_forward",
+            "osm_699533700_8_forward",
+            "osm_1275050774_0_forward",
+            "osm_45494968_0_forward",
+            "osm_45494968_1_forward",
+            "osm_1273145790_0_forward",
+            "osm_1273145790_1_forward",
+            "osm_381667651_0_forward",
+            "osm_381667651_1_forward",
+            "osm_381667651_2_forward"
+          ],
+          "stops": [],
+          "direction_basis": "municipal GIS vertex order constrained by directed OSM network",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "exterior",
+            "minimum_seconds": 1800,
+            "basis": "scenario assumption for omitted exterior segment; not observed timetable"
+          },
+          "mapping_tolerance_m": 30
+        }
+      ],
+      "blockers": []
+    },
+    {
+      "service_id": "tubus_802",
+      "sources": [
+        "municipal-gis.json tubus-routes-gis Codigoruta=802"
+      ],
+      "mapping_basis": "bounded directed GIS/OSM map matching, not shortest path through unrelated streets",
+      "parts": [
+        {
+          "part_id": "TuBus_802_part1",
+          "link_ids": [
+            "osm_142995412_7_forward",
+            "osm_142995412_8_forward",
+            "osm_734011347_0_forward",
+            "osm_734011347_1_forward",
+            "osm_734011347_2_forward",
+            "osm_734011347_3_forward",
+            "osm_734011347_4_forward",
+            "osm_734011347_5_forward",
+            "osm_930035058_0_forward",
+            "osm_930035058_1_forward",
+            "osm_930035058_2_forward",
+            "osm_930035058_3_forward",
+            "osm_930035058_4_forward",
+            "osm_930035058_5_forward",
+            "osm_734011350_0_forward",
+            "osm_734011350_1_forward",
+            "osm_734011350_2_forward",
+            "osm_734011350_3_forward",
+            "osm_734011350_4_forward",
+            "osm_734011350_5_forward",
+            "osm_734011350_6_forward",
+            "osm_734011350_7_forward",
+            "osm_734011350_8_forward",
+            "osm_734011350_9_forward",
+            "osm_734011350_10_forward",
+            "osm_734011350_11_forward",
+            "osm_734011350_12_forward",
+            "osm_734011350_13_forward",
+            "osm_734011350_14_forward",
+            "osm_734011350_15_forward",
+            "osm_734011350_16_forward",
+            "osm_734011350_17_forward",
+            "osm_734011350_18_forward",
+            "osm_734011350_19_forward",
+            "osm_734011350_20_forward",
+            "osm_734011350_21_forward",
+            "osm_734011350_22_forward",
+            "osm_734011350_23_forward",
+            "osm_734011350_24_forward",
+            "osm_734011350_25_forward",
+            "osm_734011350_26_forward",
+            "osm_734011350_27_forward",
+            "osm_734011350_28_forward",
+            "osm_734011350_29_forward",
+            "osm_734011350_30_forward",
+            "osm_734011350_31_forward",
+            "osm_734011350_32_forward",
+            "osm_734011350_33_forward",
+            "osm_734011350_34_forward",
+            "osm_734011350_35_forward",
+            "osm_734011350_36_forward",
+            "osm_734011350_37_forward",
+            "osm_734011350_38_forward",
+            "osm_734011350_39_forward",
+            "osm_734011350_40_forward",
+            "osm_734011350_41_forward",
+            "osm_734011350_42_forward",
+            "osm_734011350_43_forward",
+            "osm_734011350_44_forward",
+            "osm_734011350_45_forward",
+            "osm_734011350_46_forward",
+            "osm_381158231_0_forward",
+            "osm_381158231_1_forward",
+            "osm_381158231_2_forward",
+            "osm_381158233_0_forward",
+            "osm_381158233_1_forward",
+            "osm_381158233_2_forward",
+            "osm_381158233_3_forward",
+            "osm_658310050_0_forward",
+            "osm_658310050_1_forward",
+            "osm_381158230_0_forward",
+            "osm_30289506_0_forward",
+            "osm_30289506_1_forward",
+            "osm_30279769_1_forward",
+            "osm_30279769_2_forward",
+            "osm_30279769_3_forward",
+            "osm_30279769_4_forward",
+            "osm_30279769_5_forward",
+            "osm_30279769_6_forward",
+            "osm_30279769_7_forward",
+            "osm_30279769_8_forward",
+            "osm_30279769_9_forward",
+            "osm_30279769_10_forward",
+            "osm_30279769_11_forward",
+            "osm_30279769_12_forward",
+            "osm_30279769_13_forward",
+            "osm_30279769_14_forward",
+            "osm_30279769_15_forward",
+            "osm_30279769_16_forward",
+            "osm_30279769_17_forward",
+            "osm_30279769_18_forward",
+            "osm_30279769_19_forward",
+            "osm_30279769_20_forward",
+            "osm_30279769_21_forward",
+            "osm_30279769_22_forward",
+            "osm_30279769_23_forward",
+            "osm_30279769_24_forward",
+            "osm_30279769_25_forward",
+            "osm_30279769_26_forward",
+            "osm_30279769_27_forward",
+            "osm_30279769_28_forward",
+            "osm_30279769_29_forward",
+            "osm_30279769_30_forward",
+            "osm_30279769_31_forward",
+            "osm_30279769_32_forward",
+            "osm_30279769_33_forward",
+            "osm_30279769_34_forward",
+            "osm_30279769_35_forward",
+            "osm_30279769_36_forward",
+            "osm_30279769_37_forward",
+            "osm_30279769_38_forward",
+            "osm_30279769_39_forward",
+            "osm_30279769_40_forward",
+            "osm_30279769_41_forward",
+            "osm_30279769_42_forward",
+            "osm_30279769_43_forward",
+            "osm_30279769_44_forward",
+            "osm_30279769_45_forward",
+            "osm_30279769_46_forward",
+            "osm_30279769_47_forward",
+            "osm_30279769_48_forward",
+            "osm_30279769_49_forward",
+            "osm_30279769_50_forward",
+            "osm_30279769_51_forward",
+            "osm_30279769_52_forward",
+            "osm_30279769_53_forward",
+            "osm_30279769_54_forward",
+            "osm_30279769_55_forward",
+            "osm_30279769_56_forward",
+            "osm_30279769_57_forward",
+            "osm_30279769_58_forward",
+            "osm_30279769_59_forward",
+            "osm_734011348_4_forward",
+            "osm_734011348_5_forward",
+            "osm_734011348_6_forward",
+            "osm_734011348_7_forward",
+            "osm_734011348_8_forward",
+            "osm_734011348_9_forward",
+            "osm_734011348_10_forward",
+            "osm_734011348_11_forward",
+            "osm_734011348_12_forward",
+            "osm_734011348_13_forward"
+          ],
+          "stops": [
+            {
+              "stop_id": "published_117",
+              "link_index": 4,
+              "name": "4 Avenida / 5 Calle",
+              "source_position": [
+                -90.515484,
+                14.6436641
+              ],
+              "source": "catalog.json tubus-802 stop 117",
+              "role": "passenger_stop",
+              "placement_basis": "source street address; inferred OSM intersection anchor, not surveyed platform"
+            },
+            {
+              "stop_id": "published_118",
+              "link_index": 21,
+              "name": "4 Avenida / 9 Calle A",
+              "source_position": [
+                -90.5159983,
+                14.6400284
+              ],
+              "source": "catalog.json tubus-802 stop 118",
+              "role": "passenger_stop",
+              "placement_basis": "source street address; inferred OSM intersection anchor, not surveyed platform"
+            },
+            {
+              "stop_id": "published_119",
+              "link_index": 30,
+              "name": "4 Avenida / 11 Calle",
+              "source_position": [
+                -90.5162167,
+                14.6384586
+              ],
+              "source": "catalog.json tubus-802 stop 119",
+              "role": "passenger_stop",
+              "placement_basis": "source street address; inferred OSM intersection anchor, not surveyed platform"
+            },
+            {
+              "stop_id": "published_120",
+              "link_index": 50,
+              "name": "4 Avenida / 15 Calle",
+              "source_position": [
+                -90.5168305,
+                14.6339169
+              ],
+              "source": "catalog.json tubus-802 stop 120",
+              "role": "passenger_stop",
+              "placement_basis": "source street address; inferred OSM intersection anchor, not surveyed platform"
+            },
+            {
+              "stop_id": "published_122",
+              "link_index": 73,
+              "name": "3 Avenida / 19 Calle",
+              "source_position": [
+                -90.518601,
+                14.6307228
+              ],
+              "source": "catalog.json tubus-802 stop 122",
+              "role": "passenger_stop",
+              "placement_basis": "source street address; inferred OSM intersection anchor, not surveyed platform"
+            },
+            {
+              "stop_id": "published_123",
+              "link_index": 83,
+              "name": "3 Avenida / 15 Calle A",
+              "source_position": [
+                -90.5182074,
+                14.6334595
+              ],
+              "source": "catalog.json tubus-802 stop 123",
+              "role": "passenger_stop",
+              "placement_basis": "source street address; inferred OSM intersection anchor, not surveyed platform"
+            },
+            {
+              "stop_id": "published_124",
+              "link_index": 97,
+              "name": "3 Avenida / 12 Calle A",
+              "source_position": [
+                -90.5176767,
+                14.637187
+              ],
+              "source": "catalog.json tubus-802 stop 124",
+              "role": "passenger_stop",
+              "placement_basis": "source street address; inferred OSM intersection anchor, not surveyed platform"
+            },
+            {
+              "stop_id": "published_125",
+              "link_index": 113,
+              "name": "3 Avenida / 9 Calle",
+              "source_position": [
+                -90.5171584,
+                14.6408982
+              ],
+              "source": "catalog.json tubus-802 stop 125",
+              "role": "passenger_stop",
+              "placement_basis": "source street address; inferred OSM intersection anchor, not surveyed platform"
+            },
+            {
+              "stop_id": "published_126",
+              "link_index": 124,
+              "name": "3 Avenida / 6 Calle",
+              "source_position": [
+                -90.5168609,
+                14.6429987
+              ],
+              "source": "catalog.json tubus-802 stop 126",
+              "role": "passenger_stop",
+              "placement_basis": "source street address; inferred OSM intersection anchor, not surveyed platform"
+            },
+            {
+              "stop_id": "published_127",
+              "link_index": 135,
+              "name": "4 Calle / 2 Avenida",
+              "source_position": [
+                -90.5178014,
+                14.6452898
+              ],
+              "source": "catalog.json tubus-802 stop 127",
+              "role": "passenger_stop",
+              "placement_basis": "source street address; inferred OSM intersection anchor, not surveyed platform"
+            },
+            {
+              "stop_id": "published_128",
+              "link_index": 141,
+              "name": "4 Calle / Avenida Elena",
+              "source_position": [
+                -90.5210009,
+                14.6457839
+              ],
+              "source": "catalog.json tubus-802 stop 128",
+              "role": "passenger_stop",
+              "placement_basis": "source street address; inferred OSM intersection anchor, not surveyed platform"
+            }
+          ],
+          "direction_basis": "reversed municipal GIS vertex order to match OSM one-way roads and catalog 4a/3a Avenida stop order; inferred direction",
+          "running_way": "mixed",
+          "transfer_after": {
+            "kind": "exterior",
+            "minimum_seconds": 1800,
+            "basis": "scenario assumption for omitted exterior segment; not observed timetable"
+          },
+          "mapping_tolerance_m": 30
+        }
+      ],
+      "blockers": []
+    }
+  ],
+  "additional_nodes": [
+    {
+      "id": "10046526399",
+      "x": 767681.4761272108,
+      "y": 1620146.8728726506
+    },
+    {
+      "id": "10046526377",
+      "x": 767683.0508325178,
+      "y": 1620158.569602732
+    },
+    {
+      "id": "10046539955",
+      "x": 767683.6892143695,
+      "y": 1620163.2594587198
+    },
+    {
+      "id": "10046539953",
+      "x": 767685.8440959032,
+      "y": 1620185.933493005
+    },
+    {
+      "id": "10046526379",
+      "x": 767686.1830795446,
+      "y": 1620188.439161654
+    },
+    {
+      "id": "6379828197",
+      "x": 767688.3687397055,
+      "y": 1620206.3421176649
+    },
+    {
+      "id": "10046539950",
+      "x": 767690.315867368,
+      "y": 1620223.3900234227
+    },
+    {
+      "id": "10046539935",
+      "x": 767692.4173265598,
+      "y": 1620246.0191929967
+    },
+    {
+      "id": "10046539919",
+      "x": 767694.1485067427,
+      "y": 1620260.1531700974
+    },
+    {
+      "id": "9727962636",
+      "x": 768388.7318313266,
+      "y": 1619937.9234915911
+    },
+    {
+      "id": "6053536541",
+      "x": 768390.0121954835,
+      "y": 1619947.9343488107
+    },
+    {
+      "id": "6053536539",
+      "x": 768398.8832927598,
+      "y": 1620015.540602792
+    },
+    {
+      "id": "9716086546",
+      "x": 767978.1023751778,
+      "y": 1618888.3582947133
+    },
+    {
+      "id": "9712986074",
+      "x": 767984.3563649425,
+      "y": 1618927.4618079998
+    },
+    {
+      "id": "9712986067",
+      "x": 767984.5951124365,
+      "y": 1618929.28000406
+    },
+    {
+      "id": "9717052683",
+      "x": 767780.2413616513,
+      "y": 1618956.961967084
+    },
+    {
+      "id": "9716924053",
+      "x": 767748.5007512204,
+      "y": 1618961.507106122
+    },
+    {
+      "id": "9716924051",
+      "x": 767732.4824755918,
+      "y": 1618963.5123743445
+    },
+    {
+      "id": "9717052684",
+      "x": 767714.5228295997,
+      "y": 1618966.6034247067
+    },
+    {
+      "id": "9716086548",
+      "x": 767537.6579979309,
+      "y": 1618991.2343249032
+    },
+    {
+      "id": "9716086549",
+      "x": 767533.4661689615,
+      "y": 1618997.022577773
+    },
+    {
+      "id": "9716086550",
+      "x": 767528.5101908225,
+      "y": 1619003.6881029028
+    },
+    {
+      "id": "9716086551",
+      "x": 767521.523267546,
+      "y": 1619009.7778501157
+    },
+    {
+      "id": "9716086552",
+      "x": 767513.5378142556,
+      "y": 1619012.5576355208
+    },
+    {
+      "id": "9717106074",
+      "x": 767484.1525287218,
+      "y": 1619016.6196554264
+    },
+    {
+      "id": "9716086553",
+      "x": 767457.7361328618,
+      "y": 1619020.2603358512
+    },
+    {
+      "id": "9716086554",
+      "x": 767451.7948563022,
+      "y": 1619022.4093682645
+    },
+    {
+      "id": "9712986066",
+      "x": 767970.040931192,
+      "y": 1618838.1311592194
+    },
+    {
+      "id": "9712986092",
+      "x": 767973.6512803154,
+      "y": 1618860.7879784321
+    },
+    {
+      "id": "11753404927",
+      "x": 767607.9363409954,
+      "y": 1618809.4177565745
+    },
+    {
+      "id": "12435618858",
+      "x": 767596.3349624127,
+      "y": 1618714.2610013257
+    },
+    {
+      "id": "12079441060",
+      "x": 767539.2654117772,
+      "y": 1618255.0383849954
+    },
+    {
+      "id": "11532796489",
+      "x": 767534.9756577834,
+      "y": 1618212.6687189564
+    },
+    {
+      "id": "13568832045",
+      "x": 767533.859442927,
+      "y": 1618201.3977530526
+    },
+    {
+      "id": "13875377567",
+      "x": 767681.9058903498,
+      "y": 1618033.075345738
+    },
+    {
+      "id": "13875348035",
+      "x": 767683.5159970268,
+      "y": 1618047.4736342158
+    },
+    {
+      "id": "11812529721",
+      "x": 767697.2474460867,
+      "y": 1618164.7062662763
+    },
+    {
+      "id": "11812529719",
+      "x": 767703.6967348866,
+      "y": 1618219.5097633952
+    },
+    {
+      "id": "11812529718",
+      "x": 767713.6101309224,
+      "y": 1618307.3968469545
+    },
+    {
+      "id": "12079442901",
+      "x": 767730.1263908655,
+      "y": 1618432.1105814858
+    },
+    {
+      "id": "11812529717",
+      "x": 767734.5767073391,
+      "y": 1618465.6920887986
+    },
+    {
+      "id": "6053536540",
+      "x": 768383.6312581773,
+      "y": 1619948.9048102167
+    },
+    {
+      "id": "6053536538",
+      "x": 768392.2001161126,
+      "y": 1620016.5520172194
+    }
+  ],
+  "additional_links": [
+    {
+      "id": "transit_osm_231755973_0_forward",
+      "from": "333531623",
+      "to": "10046526399",
+      "length": 10.555709761245726,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "231755973",
+      "source_way_id": "231755973",
+      "name": "5a Avenida",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_231755973_1_forward",
+      "from": "10046526399",
+      "to": "10046526377",
+      "length": 11.802253657774074,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "231755973",
+      "source_way_id": "231755973",
+      "name": "5a Avenida",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_231755973_2_forward",
+      "from": "10046526377",
+      "to": "10046539955",
+      "length": 4.733104749919121,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "231755973",
+      "source_way_id": "231755973",
+      "name": "5a Avenida",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_231755973_3_forward",
+      "from": "10046539955",
+      "to": "10046539953",
+      "length": 22.776201289897415,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "231755973",
+      "source_way_id": "231755973",
+      "name": "5a Avenida",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_231755973_4_forward",
+      "from": "10046539953",
+      "to": "10046526379",
+      "length": 2.5284946682975664,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "231755973",
+      "source_way_id": "231755973",
+      "name": "5a Avenida",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_231755973_5_forward",
+      "from": "10046526379",
+      "to": "6379828197",
+      "length": 18.035879359291453,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "231755973",
+      "source_way_id": "231755973",
+      "name": "5a Avenida",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_231755973_6_forward",
+      "from": "6379828197",
+      "to": "10046539950",
+      "length": 17.1587411210878,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "231755973",
+      "source_way_id": "231755973",
+      "name": "5a Avenida",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_231755973_7_forward",
+      "from": "10046539950",
+      "to": "10046539935",
+      "length": 22.72653617126522,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "231755973",
+      "source_way_id": "231755973",
+      "name": "5a Avenida",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_231755973_8_forward",
+      "from": "10046539935",
+      "to": "10046539919",
+      "length": 14.239602996898364,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "231755973",
+      "source_way_id": "231755973",
+      "name": "5a Avenida",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_231755973_9_forward",
+      "from": "10046539919",
+      "to": "333531622",
+      "length": 12.68213724787978,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "231755973",
+      "source_way_id": "231755973",
+      "name": "5a Avenida",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1051440044_0_forward",
+      "from": "792297407",
+      "to": "333864725",
+      "length": 91.25154347612114,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1051440044",
+      "source_way_id": "1051440044",
+      "name": "21 Calle",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1056144033_0_backward",
+      "from": "410439150",
+      "to": "333531399",
+      "length": 9.442279909846178,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1056144033",
+      "source_way_id": "1056144033",
+      "name": "10a Avenida",
+      "access_basis": "ordered_OSM_bus_relation; explicit_scenario_bus_contraflow_assumption"
+    },
+    {
+      "id": "transit_osm_420120100_0_forward",
+      "from": "333531399",
+      "to": "4065417892",
+      "length": 138.74574623061486,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "420120100",
+      "source_way_id": "420120100",
+      "name": "18 Calle",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_643206233_0_forward",
+      "from": "6053536536",
+      "to": "9727962636",
+      "length": 6.000738564124701,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "643206233",
+      "source_way_id": "643206233",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_643206233_1_forward",
+      "from": "9727962636",
+      "to": "6053536541",
+      "length": 10.092402818213133,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "643206233",
+      "source_way_id": "643206233",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_643206233_2_forward",
+      "from": "6053536541",
+      "to": "6053536539",
+      "length": 68.18578989991953,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "643206233",
+      "source_way_id": "643206233",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_643206233_3_forward",
+      "from": "6053536539",
+      "to": "6053536537",
+      "length": 16.75299738651153,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "643206233",
+      "source_way_id": "643206233",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1057416028_0_forward",
+      "from": "9716086546",
+      "to": "9712986074",
+      "length": 39.60046892804103,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057416028",
+      "source_way_id": "1057416028",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1057416028_1_forward",
+      "from": "9712986074",
+      "to": "9712986067",
+      "length": 1.8338040459545895,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057416028",
+      "source_way_id": "1057416028",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1057416028_2_forward",
+      "from": "9712986067",
+      "to": "579787032",
+      "length": 8.796102424282607,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057416028",
+      "source_way_id": "1057416028",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_384746799_0_backward",
+      "from": "333531327",
+      "to": "579787183",
+      "length": 6.548361901964128,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "384746799",
+      "source_way_id": "384746799",
+      "name": "7a Avenida",
+      "access_basis": "ordered_OSM_bus_relation; explicit_scenario_bus_contraflow_assumption"
+    },
+    {
+      "id": "transit_osm_1057486078_0_forward",
+      "from": "579787183",
+      "to": "9717052683",
+      "length": 7.855427812750204,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057486078",
+      "source_way_id": "1057486078",
+      "name": "18 Calle",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1057486078_1_forward",
+      "from": "9717052683",
+      "to": "9716924053",
+      "length": 32.06438272295321,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057486078",
+      "source_way_id": "1057486078",
+      "name": "18 Calle",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1274975829_0_forward",
+      "from": "9716924053",
+      "to": "9716924051",
+      "length": 16.143303712577584,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1274975829",
+      "source_way_id": "1274975829",
+      "name": "18 Calle",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1274975829_1_forward",
+      "from": "9716924051",
+      "to": "9717052684",
+      "length": 18.223706442568535,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1274975829",
+      "source_way_id": "1274975829",
+      "name": "18 Calle",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1274975829_2_forward",
+      "from": "9717052684",
+      "to": "579787180",
+      "length": 4.925683678731141,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1274975829",
+      "source_way_id": "1274975829",
+      "name": "18 Calle",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1274975825_0_forward",
+      "from": "410442126",
+      "to": "410439024",
+      "length": 85.37096549629894,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1274975825",
+      "source_way_id": "1274975825",
+      "name": "18 Calle",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1057416031_0_forward",
+      "from": "410439024",
+      "to": "9716086548",
+      "length": 5.144516216955962,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057416031",
+      "source_way_id": "1057416031",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1057416031_1_forward",
+      "from": "9716086548",
+      "to": "9716086549",
+      "length": 7.146698636018899,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057416031",
+      "source_way_id": "1057416031",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1057416031_2_forward",
+      "from": "9716086549",
+      "to": "9716086550",
+      "length": 8.30607877215845,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057416031",
+      "source_way_id": "1057416031",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1057416031_3_forward",
+      "from": "9716086550",
+      "to": "9716086551",
+      "length": 9.268339548630975,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057416031",
+      "source_way_id": "1057416031",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1057416031_4_forward",
+      "from": "9716086551",
+      "to": "9716086552",
+      "length": 8.455452155373438,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057416031",
+      "source_way_id": "1057416031",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1057416031_5_forward",
+      "from": "9716086552",
+      "to": "9717106074",
+      "length": 29.66470986900023,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057416031",
+      "source_way_id": "1057416031",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1057717601_0_forward",
+      "from": "9717106074",
+      "to": "9716086553",
+      "length": 26.666093155721285,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057717601",
+      "source_way_id": "1057717601",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1057717601_1_forward",
+      "from": "9716086553",
+      "to": "9716086554",
+      "length": 6.317998691909683,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057717601",
+      "source_way_id": "1057717601",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1057717601_2_forward",
+      "from": "9716086554",
+      "to": "1564620835",
+      "length": 6.522717867980489,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057717601",
+      "source_way_id": "1057717601",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1057416062_0_forward",
+      "from": "9712986071",
+      "to": "9712986066",
+      "length": 9.42629386374057,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057416062",
+      "source_way_id": "1057416062",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1057066512_0_forward",
+      "from": "9712986066",
+      "to": "9712986092",
+      "length": 22.942669365840825,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057066512",
+      "source_way_id": "1057066512",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1057066512_1_forward",
+      "from": "9712986092",
+      "to": "9716086546",
+      "length": 27.927308952314327,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1057066512",
+      "source_way_id": "1057066512",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1265232221_0_forward",
+      "from": "536073994",
+      "to": "11753404927",
+      "length": 6.579473113979416,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1265232221",
+      "source_way_id": "1265232221",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1265232221_1_forward",
+      "from": "11753404927",
+      "to": "12435618858",
+      "length": 95.86135850536863,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1265232221",
+      "source_way_id": "1265232221",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1265232221_2_forward",
+      "from": "12435618858",
+      "to": "11753404925",
+      "length": 10.865926167590612,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1265232221",
+      "source_way_id": "1265232221",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1308544715_0_forward",
+      "from": "11753404925",
+      "to": "13875437303",
+      "length": 18.878807839055177,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1308544715",
+      "source_way_id": "1308544715",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1521207433_0_forward",
+      "from": "13875437303",
+      "to": "12079441060",
+      "length": 433.01102217822523,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1521207433",
+      "source_way_id": "1521207433",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1521207433_1_forward",
+      "from": "12079441060",
+      "to": "11532796489",
+      "length": 42.58627231378968,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1521207433",
+      "source_way_id": "1521207433",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1521207433_2_forward",
+      "from": "11532796489",
+      "to": "13568832045",
+      "length": 11.326102948927637,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1521207433",
+      "source_way_id": "1521207433",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1521202580_0_forward",
+      "from": "13875377567",
+      "to": "13875348035",
+      "length": 14.48803487702563,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1521202580",
+      "source_way_id": "1521202580",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1521202580_1_forward",
+      "from": "13875348035",
+      "to": "11812529721",
+      "length": 118.03407437314752,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1521202580",
+      "source_way_id": "1521202580",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1521202580_2_forward",
+      "from": "11812529721",
+      "to": "11812529719",
+      "length": 55.18166926147676,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1521202580",
+      "source_way_id": "1521202580",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1521202580_3_forward",
+      "from": "11812529719",
+      "to": "11812529718",
+      "length": 88.4444168815715,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1521202580",
+      "source_way_id": "1521202580",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1521202580_4_forward",
+      "from": "11812529718",
+      "to": "12079442901",
+      "length": 125.80263281527591,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1521202580",
+      "source_way_id": "1521202580",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1521202580_5_forward",
+      "from": "12079442901",
+      "to": "11812529717",
+      "length": 33.875108119636906,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1521202580",
+      "source_way_id": "1521202580",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1521202580_6_forward",
+      "from": "11812529717",
+      "to": "11812529716",
+      "length": 22.858686521043502,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1521202580",
+      "source_way_id": "1521202580",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_643206232_0_forward",
+      "from": "6053536535",
+      "to": "6053536540",
+      "length": 16.117300347218592,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "643206232",
+      "source_way_id": "643206232",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_643206232_1_forward",
+      "from": "6053536540",
+      "to": "6053536538",
+      "length": 68.18775507061437,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "643206232",
+      "source_way_id": "643206232",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_643206232_2_forward",
+      "from": "6053536538",
+      "to": "6053536534",
+      "length": 16.80023340951772,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "643206232",
+      "source_way_id": "643206232",
+      "name": "",
+      "access_basis": "ordered_OSM_bus_relation; bus_service_route_evidence"
+    },
+    {
+      "id": "transit_osm_1358273948_0_backward",
+      "from": "333531519",
+      "to": "333531518",
+      "length": 57.113424996341394,
+      "freespeed": 11.111111,
+      "capacity": 600,
+      "permlanes": 1,
+      "modes": "bus",
+      "origid": "1358273948",
+      "source_way_id": "1358273948",
+      "name": "7a Calle",
+      "access_basis": "ordered_OSM_bus_relation; explicit_scenario_bus_contraflow_assumption"
+    }
+  ],
+  "direction_assumptions": [
+    {
+      "relation_id": "14091641",
+      "way_id": "1056144033",
+      "issue": "ordered_bus_relation_conflicts_with_generic_oneway",
+      "decision": "explicit_scenario_bus_only_direction_override_not_field_verified"
+    },
+    {
+      "relation_id": "906046",
+      "way_id": "384746799",
+      "issue": "ordered_bus_relation_conflicts_with_generic_oneway",
+      "decision": "explicit_scenario_bus_only_direction_override_not_field_verified"
+    },
+    {
+      "relation_id": "14107352",
+      "way_id": "384746799",
+      "issue": "ordered_bus_relation_conflicts_with_generic_oneway",
+      "decision": "explicit_scenario_bus_only_direction_override_not_field_verified"
+    },
+    {
+      "relation_id": "18672966",
+      "way_id": "1358273948",
+      "issue": "ordered_bus_relation_conflicts_with_generic_oneway",
+      "decision": "explicit_scenario_bus_only_direction_override_not_field_verified"
+    }
+  ],
+  "restriction_conflicts": [],
+  "missing_routes": [
+    "TuBus305: supplied GIS subset does not establish a passage inside this computational domain"
+  ],
+  "domain_scope": "computational_network_not_admin_zone1",
+  "unmapped_stop_evidence": [
+    {
+      "service": "104",
+      "reason": "no_spatially_supported_passenger_stops; gateways_not_bus_stops"
+    },
+    {
+      "service": "105",
+      "stop": "4 Avenida / 20 Calle",
+      "reason": "intersection_not_uniquely_geocoded"
+    },
+    {
+      "service": "105",
+      "stop": "20 Calle / Avenida Elena",
+      "reason": "intersection_not_uniquely_geocoded"
+    },
+    {
+      "service": "802",
+      "stop": "1 Calle / 3 Avenida",
+      "reason": "intersection_not_uniquely_geocoded"
+    },
+    {
+      "service": "802",
+      "stop": "4 Avenida / 2 Calle",
+      "reason": "intersection_not_uniquely_geocoded"
+    },
+    {
+      "service": "802",
+      "stop": "4 Avenida / 19 Calle",
+      "reason": "intersection_not_uniquely_geocoded"
+    }
+  ],
+  "turn_audit_scope": {
+    "checked": "available OSM via-node restrictions on ordered route ways",
+    "not_certified": [
+      "via-way restrictions",
+      "missing relation members",
+      "field-specific bus permissions",
+      "temporary traffic orders"
+    ],
+    "all_movements_legal_claim": false
+  }
+}

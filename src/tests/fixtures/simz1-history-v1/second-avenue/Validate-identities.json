@@ -1,0 +1,29 @@
+﻿{
+    "verified_utc":  "2026-11-02T19:03:43.0036955Z",
+    "processes":  [
+                      {
+                          "ProcessId":  24624,
+                          "ParentProcessId":  27184,
+                          "CreationDate":  "\/Date(1793645676809)\/",
+                          "CommandLine":  "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/check_simz1_110k_balanced_gateway.ps1 -Action Validate -JavaHome \"C:\\Program Files\\Java\\jdk-17\""
+                      },
+                      {
+                          "ProcessId":  18644,
+                          "ParentProcessId":  24624,
+                          "CreationDate":  "\/Date(1793645678418)\/",
+                          "CommandLine":  "\"C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\scripts\\simz1_workflow.ps1 -Action Validate -OdMode balanced-gateway-v1 -Seed 20261023 -AgentCatalog C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\scenarios\\zona1\\agent-types-balanced-v1.json -DestinationPolicy lane-length-destinations-v1 -ShortLinkSignalCoordination none -FreightService C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\scenarios\\zona1\\freight\\weekday-compact-v3\\service-composition-v3.json -FreightServiceDate 2026-10-23 -ServiceDate 2026-10-23 -AcceptTransitRouteAssumptions"
+                      },
+                      {
+                          "ProcessId":  10976,
+                          "ParentProcessId":  18644,
+                          "CreationDate":  "\/Date(1793646160887)\/",
+                          "CommandLine":  "\"C:\\Users\\gegdg\\Documents\\.UVG\\Sim\\matsim-guatemala\\.venv\\Scripts\\python.exe\" -B .\\python\\test_simz1_temporal_passage.py --preflights"
+                      },
+                      {
+                          "ProcessId":  13840,
+                          "ParentProcessId":  10976,
+                          "CreationDate":  "\/Date(1793646160908)\/",
+                          "CommandLine":  "\"C:\\Users\\gegdg\\AppData\\Local\\Programs\\Python\\Python310\\python.exe\" -B .\\python\\test_simz1_temporal_passage.py --preflights"
+                      }
+                  ]
+}

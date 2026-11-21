@@ -1,0 +1,950 @@
+{
+  "provenance": {
+    "run_id": "simz1-f5719042ec80428bbbbc646191a65d19",
+    "events_sha256": "37f2354b7bbfac8e17e4a15c5e06e5d882527762d0463f605687f7786c5294ba",
+    "selection": "Unmodified attributes/order, first expedition of ptbus_transmetro_L12_001",
+    "context_scope": "Only the first expedition and its verified route links, facilities and queue endpoints; event attributes/timestamps unmodified."
+  },
+  "vehicle": "ptbus_transmetro_L12_001",
+  "driver": "pt_ptbus_transmetro_L12_001_Transmetro_RigidProxy",
+  "links": {
+    "osm_1272828335_0_forward": {
+      "from": [
+        -90.52154239999916,
+        14.629209399997837
+      ],
+      "to": [
+        -90.52170430000083,
+        14.628146499999872
+      ],
+      "from_node": "333864429",
+      "to_node": "333864438",
+      "length": 118.94837312889491,
+      "freespeed": 8.333333333333334
+    },
+    "osm_1274975831_0_forward": {
+      "from": [
+        -90.51317589999702,
+        14.630727499999493
+      ],
+      "to": [
+        -90.51329160000098,
+        14.630742200000595
+      ],
+      "from_node": "333531343",
+      "to_node": "9716924074",
+      "length": 12.576488206894187,
+      "freespeed": 8.333333333333334
+    },
+    "osm_1274975831_1_forward": {
+      "from": [
+        -90.51329160000098,
+        14.630742200000595
+      ],
+      "to": [
+        -90.51401449999767,
+        14.630824200001998
+      ],
+      "from_node": "9716924074",
+      "to_node": "333531327",
+      "length": 78.44496564351508,
+      "freespeed": 8.333333333333334
+    },
+    "osm_30279778_0_forward": {
+      "from": [
+        -90.52110019999982,
+        14.632035700000909
+      ],
+      "to": [
+        -90.5212458999963,
+        14.631062599997593
+      ],
+      "from_node": "333832042",
+      "to_node": "333832056",
+      "length": 108.8594050017965,
+      "freespeed": 8.333333333333334
+    },
+    "osm_381158266_0_forward": {
+      "from": [
+        -90.52170430000083,
+        14.628146499999872
+      ],
+      "to": [
+        -90.52180429999991,
+        14.627482399995651
+      ],
+      "from_node": "333864438",
+      "to_node": "333864452",
+      "length": 74.30078292145902,
+      "freespeed": 8.333333333333334
+    },
+    "osm_381158266_1_forward": {
+      "from": [
+        -90.52180429999991,
+        14.627482399995651
+      ],
+      "to": [
+        -90.52183309999822,
+        14.627291599999527
+      ],
+      "from_node": "333864452",
+      "to_node": "11829171256",
+      "length": 21.348155732338856,
+      "freespeed": 8.333333333333334
+    },
+    "osm_381158266_2_forward": {
+      "from": [
+        -90.52183309999822,
+        14.627291599999527
+      ],
+      "to": [
+        -90.52194759999644,
+        14.626531499998562
+      ],
+      "from_node": "11829171256",
+      "to_node": "333720797",
+      "length": 85.04213401963325,
+      "freespeed": 8.333333333333334
+    },
+    "osm_384906420_0_forward": {
+      "from": [
+        -90.52194759999644,
+        14.626531499998562
+      ],
+      "to": [
+        -90.52208710000349,
+        14.625605100000316
+      ],
+      "from_node": "333720797",
+      "to_node": "519799977",
+      "length": 103.6474405137088,
+      "freespeed": 13.88888888888889
+    },
+    "osm_384907703_0_forward": {
+      "from": [
+        -90.52138859999548,
+        14.630136700000131
+      ],
+      "to": [
+        -90.52154239999916,
+        14.629209399997837
+      ],
+      "from_node": "333864415",
+      "to_node": "333864429",
+      "length": 103.9806207454227,
+      "freespeed": 8.333333333333334
+    },
+    "osm_405158905_0_forward": {
+      "from": [
+        -90.5212458999963,
+        14.631062599997593
+      ],
+      "to": [
+        -90.52138859999548,
+        14.630136700000131
+      ],
+      "from_node": "333832056",
+      "to_node": "333864415",
+      "length": 103.64334362596243,
+      "freespeed": 8.333333333333334
+    },
+    "osm_420138103_0_forward": {
+      "from": [
+        -90.51226910000011,
+        14.630551699999298
+      ],
+      "to": [
+        -90.51225759999812,
+        14.630617799996449
+      ],
+      "from_node": "579787032",
+      "to_node": "333531372",
+      "length": 7.421461596057132,
+      "freespeed": 8.333333333333334
+    },
+    "osm_45497717_0_forward": {
+      "from": [
+        -90.51474799999757,
+        14.630880500000654
+      ],
+      "to": [
+        -90.51521889999883,
+        14.63095209999634
+      ],
+      "from_node": "579787180",
+      "to_node": "11532789656",
+      "length": 51.37116065817746,
+      "freespeed": 8.333333333333334
+    },
+    "osm_45497717_1_forward": {
+      "from": [
+        -90.51521889999883,
+        14.63095209999634
+      ],
+      "to": [
+        -90.5153476000039,
+        14.630967099998275
+      ],
+      "from_node": "11532789656",
+      "to_node": "13363271913",
+      "length": 13.97096944467285,
+      "freespeed": 8.333333333333334
+    },
+    "osm_45497717_2_forward": {
+      "from": [
+        -90.5153476000039,
+        14.630967099998275
+      ],
+      "to": [
+        -90.51542099999567,
+        14.630973800001495
+      ],
+      "from_node": "13363271913",
+      "to_node": "9717052690",
+      "length": 7.946114975599329,
+      "freespeed": 8.333333333333334
+    },
+    "osm_45497717_3_forward": {
+      "from": [
+        -90.51542099999567,
+        14.630973800001495
+      ],
+      "to": [
+        -90.51546690000076,
+        14.630981099997108
+      ],
+      "from_node": "9717052690",
+      "to_node": "13327382433",
+      "length": 5.012898691367392,
+      "freespeed": 8.333333333333334
+    },
+    "osm_45497717_4_forward": {
+      "from": [
+        -90.51546690000076,
+        14.630981099997108
+      ],
+      "to": [
+        -90.51551149999914,
+        14.630988200000466
+      ],
+      "from_node": "13327382433",
+      "to_node": "410442126",
+      "length": 4.871041434411576,
+      "freespeed": 8.333333333333334
+    },
+    "osm_60237269_0_forward": {
+      "from": [
+        -90.51225759999812,
+        14.630617799996449
+      ],
+      "to": [
+        -90.51233189999684,
+        14.630626699997043
+      ],
+      "from_node": "333531372",
+      "to_node": "9713012606",
+      "length": 8.068836954858254,
+      "freespeed": 8.333333333333334
+    },
+    "osm_60237269_1_forward": {
+      "from": [
+        -90.51233189999684,
+        14.630626699997043
+      ],
+      "to": [
+        -90.5131410999955,
+        14.63072370000091
+      ],
+      "from_node": "9713012606",
+      "to_node": "9713012632",
+      "length": 87.87846353629993,
+      "freespeed": 8.333333333333334
+    },
+    "osm_60237269_2_forward": {
+      "from": [
+        -90.5131410999955,
+        14.63072370000091
+      ],
+      "to": [
+        -90.51317589999702,
+        14.630727499999493
+      ],
+      "from_node": "9713012632",
+      "to_node": "333531343",
+      "length": 3.774445134461686,
+      "freespeed": 8.333333333333334
+    },
+    "osm_60237270_0_forward": {
+      "from": [
+        -90.51718340000173,
+        14.631436400002755
+      ],
+      "to": [
+        -90.51768520000374,
+        14.631510099995905
+      ],
+      "from_node": "1564620835",
+      "to_node": "12097174601",
+      "length": 54.69821522907821,
+      "freespeed": 8.333333333333334
+    },
+    "osm_60237270_1_forward": {
+      "from": [
+        -90.51768520000374,
+        14.631510099995905
+      ],
+      "to": [
+        -90.51800840000112,
+        14.63155750000083
+      ],
+      "from_node": "12097174601",
+      "to_node": "11103959680",
+      "length": 35.228943110636365,
+      "freespeed": 8.333333333333334
+    },
+    "osm_60237270_2_forward": {
+      "from": [
+        -90.51800840000112,
+        14.63155750000083
+      ],
+      "to": [
+        -90.51847199999942,
+        14.631625599997962
+      ],
+      "from_node": "11103959680",
+      "to_node": "333832051",
+      "length": 50.53437937698949,
+      "freespeed": 8.333333333333334
+    },
+    "osm_60237270_3_forward": {
+      "from": [
+        -90.51847199999942,
+        14.631625599997962
+      ],
+      "to": [
+        -90.51971080000246,
+        14.631818899995633
+      ],
+      "from_node": "333832051",
+      "to_node": "4066906837",
+      "length": 135.22707936075548,
+      "freespeed": 8.333333333333334
+    },
+    "osm_60237270_4_forward": {
+      "from": [
+        -90.51971080000246,
+        14.631818899995633
+      ],
+      "to": [
+        -90.52028389999997,
+        14.631907900002972
+      ],
+      "from_node": "4066906837",
+      "to_node": "12095723596",
+      "length": 62.55192960487539,
+      "freespeed": 8.333333333333334
+    },
+    "osm_60237270_5_forward": {
+      "from": [
+        -90.52028389999997,
+        14.631907900002972
+      ],
+      "to": [
+        -90.52043850000196,
+        14.631931899996035
+      ],
+      "from_node": "12095723596",
+      "to_node": "333832047",
+      "length": 16.873907230251834,
+      "freespeed": 8.333333333333334
+    },
+    "osm_60237270_6_forward": {
+      "from": [
+        -90.52043850000196,
+        14.631931899996035
+      ],
+      "to": [
+        -90.52110019999982,
+        14.632035700000909
+      ],
+      "from_node": "333832047",
+      "to_node": "333832042",
+      "length": 72.2404786026451,
+      "freespeed": 8.333333333333334
+    },
+    "transit_osm_1057416028_0_forward": {
+      "from": [
+        -90.5122661,
+        14.630137899999998
+      ],
+      "to": [
+        -90.5122041,
+        14.630490499999995
+      ],
+      "from_node": "9716086546",
+      "to_node": "9712986074",
+      "length": 39.60046892804103,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1057416028_1_forward": {
+      "from": [
+        -90.5122041,
+        14.630490499999995
+      ],
+      "to": [
+        -90.5122017,
+        14.6305069
+      ],
+      "from_node": "9712986074",
+      "to_node": "9712986067",
+      "length": 1.8338040459545895,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1057416028_2_forward": {
+      "from": [
+        -90.5122017,
+        14.6305069
+      ],
+      "to": [
+        -90.51226910000011,
+        14.630551699999298
+      ],
+      "from_node": "9712986067",
+      "to_node": "579787032",
+      "length": 8.796102424282607,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1057416031_0_forward": {
+      "from": [
+        -90.51629499999821,
+        14.631101200002107
+      ],
+      "to": [
+        -90.5163417,
+        14.631110800000002
+      ],
+      "from_node": "410439024",
+      "to_node": "9716086548",
+      "length": 5.144516216955962,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1057416031_1_forward": {
+      "from": [
+        -90.5163417,
+        14.631110800000002
+      ],
+      "to": [
+        -90.51638,
+        14.631163500000001
+      ],
+      "from_node": "9716086548",
+      "to_node": "9716086549",
+      "length": 7.146698636018899,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1057416031_2_forward": {
+      "from": [
+        -90.51638,
+        14.631163500000001
+      ],
+      "to": [
+        -90.5164253,
+        14.6312242
+      ],
+      "from_node": "9716086549",
+      "to_node": "9716086550",
+      "length": 8.30607877215845,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1057416031_3_forward": {
+      "from": [
+        -90.5164253,
+        14.6312242
+      ],
+      "to": [
+        -90.5164895,
+        14.631279899999996
+      ],
+      "from_node": "9716086550",
+      "to_node": "9716086551",
+      "length": 9.268339548630975,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1057416031_4_forward": {
+      "from": [
+        -90.5164895,
+        14.631279899999996
+      ],
+      "to": [
+        -90.51656330000002,
+        14.6313058
+      ],
+      "from_node": "9716086551",
+      "to_node": "9716086552",
+      "length": 8.455452155373438,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1057416031_5_forward": {
+      "from": [
+        -90.51656330000002,
+        14.6313058
+      ],
+      "to": [
+        -90.5168355,
+        14.6313454
+      ],
+      "from_node": "9716086552",
+      "to_node": "9717106074",
+      "length": 29.66470986900023,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1057486078_0_forward": {
+      "from": [
+        -90.51402279999759,
+        14.630765600004217
+      ],
+      "to": [
+        -90.51409470000002,
+        14.6307772
+      ],
+      "from_node": "579787183",
+      "to_node": "9717052683",
+      "length": 7.855427812750204,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1057486078_1_forward": {
+      "from": [
+        -90.51409470000002,
+        14.6307772
+      ],
+      "to": [
+        -90.5143887,
+        14.6308214
+      ],
+      "from_node": "9717052683",
+      "to_node": "9716924053",
+      "length": 32.06438272295321,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1057717601_0_forward": {
+      "from": [
+        -90.5168355,
+        14.6313454
+      ],
+      "to": [
+        -90.5170802,
+        14.631380900000002
+      ],
+      "from_node": "9717106074",
+      "to_node": "9716086553",
+      "length": 26.666093155721285,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1057717601_1_forward": {
+      "from": [
+        -90.5170802,
+        14.631380900000002
+      ],
+      "to": [
+        -90.5171351,
+        14.631400899999997
+      ],
+      "from_node": "9716086553",
+      "to_node": "9716086554",
+      "length": 6.317998691909683,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1057717601_2_forward": {
+      "from": [
+        -90.5171351,
+        14.631400899999997
+      ],
+      "to": [
+        -90.51718340000173,
+        14.631436400002755
+      ],
+      "from_node": "9716086554",
+      "to_node": "1564620835",
+      "length": 6.522717867980489,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1274975825_0_forward": {
+      "from": [
+        -90.51551149999914,
+        14.630988200000466
+      ],
+      "to": [
+        -90.51629499999821,
+        14.631101200002107
+      ],
+      "from_node": "410442126",
+      "to_node": "410439024",
+      "length": 85.37096549629894,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1274975829_0_forward": {
+      "from": [
+        -90.5143887,
+        14.6308214
+      ],
+      "to": [
+        -90.5145371,
+        14.6308411
+      ],
+      "from_node": "9716924053",
+      "to_node": "9716924051",
+      "length": 16.143303712577584,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1274975829_1_forward": {
+      "from": [
+        -90.5145371,
+        14.6308411
+      ],
+      "to": [
+        -90.5147034,
+        14.630870800000004
+      ],
+      "from_node": "9716924051",
+      "to_node": "9717052684",
+      "length": 18.223706442568535,
+      "freespeed": 11.111111
+    },
+    "transit_osm_1274975829_2_forward": {
+      "from": [
+        -90.5147034,
+        14.630870800000004
+      ],
+      "to": [
+        -90.51474799999757,
+        14.630880500000654
+      ],
+      "from_node": "9717052684",
+      "to_node": "579787180",
+      "length": 4.925683678731141,
+      "freespeed": 11.111111
+    },
+    "transit_osm_384746799_0_backward": {
+      "from": [
+        -90.51401449999767,
+        14.630824200001998
+      ],
+      "to": [
+        -90.51402279999759,
+        14.630765600004217
+      ],
+      "from_node": "333531327",
+      "to_node": "579787183",
+      "length": 6.548361901964128,
+      "freespeed": 11.111111
+    }
+  },
+  "contract": {
+    "vehicle_modes": {
+      "ptbus_transmetro_L12_001": "bus"
+    },
+    "departures": [
+      {
+        "key": [
+          "transmetro_L12",
+          "L12_906046_part1",
+          "ptbus_transmetro_L12_001_d0001"
+        ],
+        "value": {
+          "vehicle": "ptbus_transmetro_L12_001",
+          "links": [
+            "transit_osm_1057416028_0_forward",
+            "transit_osm_1057416028_1_forward",
+            "transit_osm_1057416028_2_forward",
+            "osm_420138103_0_forward",
+            "osm_60237269_0_forward",
+            "osm_60237269_1_forward",
+            "osm_60237269_2_forward",
+            "osm_1274975831_0_forward",
+            "osm_1274975831_1_forward",
+            "transit_osm_384746799_0_backward",
+            "transit_osm_1057486078_0_forward",
+            "transit_osm_1057486078_1_forward",
+            "transit_osm_1274975829_0_forward",
+            "transit_osm_1274975829_1_forward",
+            "transit_osm_1274975829_2_forward",
+            "osm_45497717_0_forward",
+            "osm_45497717_1_forward",
+            "osm_45497717_2_forward",
+            "osm_45497717_3_forward",
+            "osm_45497717_4_forward",
+            "transit_osm_1274975825_0_forward",
+            "transit_osm_1057416031_0_forward",
+            "transit_osm_1057416031_1_forward",
+            "transit_osm_1057416031_2_forward",
+            "transit_osm_1057416031_3_forward",
+            "transit_osm_1057416031_4_forward",
+            "transit_osm_1057416031_5_forward",
+            "transit_osm_1057717601_0_forward",
+            "transit_osm_1057717601_1_forward",
+            "transit_osm_1057717601_2_forward",
+            "osm_60237270_0_forward",
+            "osm_60237270_1_forward",
+            "osm_60237270_2_forward",
+            "osm_60237270_3_forward",
+            "osm_60237270_4_forward",
+            "osm_60237270_5_forward",
+            "osm_60237270_6_forward",
+            "osm_30279778_0_forward",
+            "osm_405158905_0_forward",
+            "osm_384907703_0_forward",
+            "osm_1272828335_0_forward",
+            "osm_381158266_0_forward",
+            "osm_381158266_1_forward",
+            "osm_381158266_2_forward",
+            "osm_384906420_0_forward"
+          ],
+          "opens_seconds": 16200.0,
+          "closes_seconds": 79200.0,
+          "transfer_kind": "terminal",
+          "transfer_seconds": 180.0,
+          "operator": "transmetro",
+          "service_id": "transmetro_L12",
+          "stops": [
+            "gis_station_40_L12_906046_part1",
+            "gis_station_76_L12_906046_part1",
+            "gis_station_36_L12_906046_part1",
+            "gis_station_58_L12_906046_part1",
+            "L12_906046_part1_exit_L12_906046_part1"
+          ]
+        }
+      }
+    ],
+    "domain_links": [
+      "osm_1272828335_0_forward",
+      "osm_1274975831_0_forward",
+      "osm_1274975831_1_forward",
+      "osm_30279778_0_forward",
+      "osm_381158266_0_forward",
+      "osm_381158266_1_forward",
+      "osm_381158266_2_forward",
+      "osm_384906420_0_forward",
+      "osm_384907703_0_forward",
+      "osm_405158905_0_forward",
+      "osm_420138103_0_forward",
+      "osm_45497717_0_forward",
+      "osm_45497717_1_forward",
+      "osm_45497717_2_forward",
+      "osm_45497717_3_forward",
+      "osm_45497717_4_forward",
+      "osm_60237269_0_forward",
+      "osm_60237269_1_forward",
+      "osm_60237269_2_forward",
+      "osm_60237270_0_forward",
+      "osm_60237270_1_forward",
+      "osm_60237270_2_forward",
+      "osm_60237270_3_forward",
+      "osm_60237270_4_forward",
+      "osm_60237270_5_forward",
+      "osm_60237270_6_forward",
+      "transit_osm_1057416028_0_forward",
+      "transit_osm_1057416028_1_forward",
+      "transit_osm_1057416028_2_forward",
+      "transit_osm_1057416031_0_forward",
+      "transit_osm_1057416031_1_forward",
+      "transit_osm_1057416031_2_forward",
+      "transit_osm_1057416031_3_forward",
+      "transit_osm_1057416031_4_forward",
+      "transit_osm_1057416031_5_forward",
+      "transit_osm_1057486078_0_forward",
+      "transit_osm_1057486078_1_forward",
+      "transit_osm_1057717601_0_forward",
+      "transit_osm_1057717601_1_forward",
+      "transit_osm_1057717601_2_forward",
+      "transit_osm_1274975825_0_forward",
+      "transit_osm_1274975829_0_forward",
+      "transit_osm_1274975829_1_forward",
+      "transit_osm_1274975829_2_forward",
+      "transit_osm_384746799_0_backward"
+    ],
+    "domain_scope": "computational_network",
+    "facilities": {
+      "gis_station_40_L12_906046_part1": "transit_osm_1057416028_0_forward",
+      "gis_station_76_L12_906046_part1": "transit_osm_1274975829_0_forward",
+      "gis_station_36_L12_906046_part1": "transit_osm_1057416031_2_forward",
+      "gis_station_58_L12_906046_part1": "transit_osm_1057416031_5_forward",
+      "L12_906046_part1_exit_L12_906046_part1": "osm_384906420_0_forward"
+    },
+    "facility_details": {
+      "gis_station_40_L12_906046_part1": {
+        "placement": "nonblocking_proxy",
+        "dwell_basis": "explicit_scenario_assumption",
+        "is_blocking_lane": false
+      },
+      "gis_station_76_L12_906046_part1": {
+        "placement": "nonblocking_proxy",
+        "dwell_basis": "explicit_scenario_assumption",
+        "is_blocking_lane": false
+      },
+      "gis_station_36_L12_906046_part1": {
+        "placement": "nonblocking_proxy",
+        "dwell_basis": "explicit_scenario_assumption",
+        "is_blocking_lane": false
+      },
+      "gis_station_58_L12_906046_part1": {
+        "placement": "nonblocking_proxy",
+        "dwell_basis": "explicit_scenario_assumption",
+        "is_blocking_lane": false
+      },
+      "L12_906046_part1_exit_L12_906046_part1": {
+        "placement": "nonblocking_proxy",
+        "dwell_basis": "explicit_scenario_assumption",
+        "is_blocking_lane": false
+      }
+    },
+    "source": {
+      "schedule_sha256": "6795369e848661696cb900d6a15b6d993d51871a3e72b1f0e69b719ccf68e46e",
+      "vehicles_sha256": "600cf55dce271c5142a2beb7d5b04449c92c41db099acb72f5082e626306e336",
+      "lanes_sha256": "9ce9b1191173408fbf1b77a211f1b7677b9ff092eb2760cf5439bf2ca48ce251"
+    },
+    "lane_exit_fractions": {
+      "osm_1272828335_0_forward": {
+        "osm_1272828335_0_forward.lane.0": 1,
+        "osm_1272828335_0_forward.lane.1": 1,
+        "osm_1272828335_0_forward.original": 0.19999999999999996
+      },
+      "osm_1274975831_0_forward": {
+        "osm_1274975831_0_forward.lane.0": 1,
+        "osm_1274975831_0_forward.original": 0.19999999999999996
+      },
+      "osm_1274975831_1_forward": {
+        "osm_1274975831_1_forward.lane.0": 1,
+        "osm_1274975831_1_forward.original": 0.19999999999999996
+      },
+      "osm_30279778_0_forward": {
+        "osm_30279778_0_forward.lane.0": 1,
+        "osm_30279778_0_forward.original": 0.19999999999999996
+      },
+      "osm_381158266_0_forward": {
+        "osm_381158266_0_forward.lane.0": 1,
+        "osm_381158266_0_forward.lane.1": 1,
+        "osm_381158266_0_forward.original": 0.19999999999999996
+      },
+      "osm_381158266_1_forward": {
+        "osm_381158266_1_forward.lane.0": 1,
+        "osm_381158266_1_forward.lane.1": 1,
+        "osm_381158266_1_forward.original": 0.19999999999999996
+      },
+      "osm_381158266_2_forward": {
+        "osm_381158266_2_forward.lane.0": 1,
+        "osm_381158266_2_forward.lane.1": 1,
+        "osm_381158266_2_forward.original": 0.20000000000000007
+      },
+      "osm_384906420_0_forward": {
+        "osm_384906420_0_forward.lane.0": 1,
+        "osm_384906420_0_forward.original": 0.19999999999999996
+      },
+      "osm_384907703_0_forward": {
+        "osm_384907703_0_forward.lane.0": 1,
+        "osm_384907703_0_forward.original": 0.19999999999999996
+      },
+      "osm_405158905_0_forward": {
+        "osm_405158905_0_forward.lane.0": 1,
+        "osm_405158905_0_forward.original": 0.19999999999999996
+      },
+      "osm_420138103_0_forward": {
+        "osm_420138103_0_forward.lane.0": 1,
+        "osm_420138103_0_forward.original": 0.19999999999999996
+      },
+      "osm_45497717_0_forward": {
+        "osm_45497717_0_forward.lane.0": 1,
+        "osm_45497717_0_forward.original": 0.19999999999999984
+      },
+      "osm_45497717_1_forward": {
+        "osm_45497717_1_forward.lane.0": 1,
+        "osm_45497717_1_forward.original": 0.19999999999999984
+      },
+      "osm_45497717_2_forward": {
+        "osm_45497717_2_forward.lane.0": 1,
+        "osm_45497717_2_forward.original": 0.19999999999999996
+      },
+      "osm_45497717_3_forward": {
+        "osm_45497717_3_forward.lane.0": 1,
+        "osm_45497717_3_forward.original": 0.19999999999999984
+      },
+      "osm_45497717_4_forward": {
+        "osm_45497717_4_forward.lane.0": 1,
+        "osm_45497717_4_forward.original": 0.19999999999999996
+      },
+      "osm_60237269_0_forward": {
+        "osm_60237269_0_forward.lane.0": 1,
+        "osm_60237269_0_forward.original": 0.19999999999999996
+      },
+      "osm_60237269_1_forward": {
+        "osm_60237269_1_forward.lane.0": 1,
+        "osm_60237269_1_forward.original": 0.20000000000000007
+      },
+      "osm_60237269_2_forward": {
+        "osm_60237269_2_forward.lane.0": 1,
+        "osm_60237269_2_forward.original": 0.19999999999999996
+      },
+      "osm_60237270_0_forward": {
+        "osm_60237270_0_forward.lane.0": 1,
+        "osm_60237270_0_forward.original": 0.19999999999999984
+      },
+      "osm_60237270_1_forward": {
+        "osm_60237270_1_forward.lane.0": 1,
+        "osm_60237270_1_forward.original": 0.19999999999999996
+      },
+      "osm_60237270_2_forward": {
+        "osm_60237270_2_forward.lane.0": 1,
+        "osm_60237270_2_forward.original": 0.19999999999999996
+      },
+      "osm_60237270_3_forward": {
+        "osm_60237270_3_forward.lane.0": 1,
+        "osm_60237270_3_forward.original": 0.26050314424655685
+      },
+      "osm_60237270_4_forward": {
+        "osm_60237270_4_forward.lane.0": 1,
+        "osm_60237270_4_forward.original": 0.19999999999999996
+      },
+      "osm_60237270_5_forward": {
+        "osm_60237270_5_forward.lane.0": 1,
+        "osm_60237270_5_forward.original": 0.19999999999999996
+      },
+      "osm_60237270_6_forward": {
+        "osm_60237270_6_forward.lane.0": 1,
+        "osm_60237270_6_forward.original": 0.19999999999999996
+      }
+    },
+    "single_queue_links": [
+      "transit_osm_1057416028_0_forward",
+      "transit_osm_1057416028_1_forward",
+      "transit_osm_1057416028_2_forward",
+      "transit_osm_1057416031_0_forward",
+      "transit_osm_1057416031_1_forward",
+      "transit_osm_1057416031_2_forward",
+      "transit_osm_1057416031_3_forward",
+      "transit_osm_1057416031_4_forward",
+      "transit_osm_1057416031_5_forward",
+      "transit_osm_1057486078_0_forward",
+      "transit_osm_1057486078_1_forward",
+      "transit_osm_1057717601_0_forward",
+      "transit_osm_1057717601_1_forward",
+      "transit_osm_1057717601_2_forward",
+      "transit_osm_1274975825_0_forward",
+      "transit_osm_1274975829_0_forward",
+      "transit_osm_1274975829_1_forward",
+      "transit_osm_1274975829_2_forward",
+      "transit_osm_384746799_0_backward"
+    ]
+  },
+  "vehicle_speed": 13.8888888889,
+  "vehicle_dimensions": {
+    "length_m": 13.5,
+    "width_m": 2.5,
+    "source": "verified_transit_vehicles:scenario_assumption_not_unit_measurement",
+    "assumed": true,
+    "articulated": false,
+    "provenance": {
+      "vehicle_type": "Transmetro_RigidProxy",
+      "artifact_source": "verified_transit_vehicles",
+      "artifact_sha256": "600cf55dce271c5142a2beb7d5b04449c92c41db099acb72f5082e626306e336"
+    }
+  }
+}

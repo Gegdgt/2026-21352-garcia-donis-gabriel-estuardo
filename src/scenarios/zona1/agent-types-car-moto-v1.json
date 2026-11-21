@@ -1,0 +1,308 @@
+{
+  "schema_version": "simz1-road-profiles-v1",
+  "scenario_version": "simz1-car-moto-v1-synthetic-20261023",
+  "description": "Executable car/motorcycle experiment. The unsupported heavy category has EXPLICIT zero weight; public transport remains a separately configured service. Existing prototype is unchanged. Relative active weights 40:25:10:10 normalize over 85, not 100; not measured Guatemalan shares.",
+  "denominator": "persons",
+  "horizon_seconds": 86400,
+  "assumption_status": "synthetic_not_observed",
+  "canonical_order": [
+    "Normal",
+    "MotocicletaLenta",
+    "Motociclista",
+    "MotocicletaRapida",
+    "Liebre",
+    "Tortuga",
+    "TransportePesado"
+  ],
+  "allocation": {
+    "rounding": "hierarchical_largest_remainder",
+    "tie_break": "canonical_order",
+    "previous_total_weight": 100,
+    "removed_public_transport_weight": 10,
+    "road_weights": {
+      "Normal": 40,
+      "Motociclista": 25,
+      "Liebre": 10,
+      "Tortuga": 10,
+      "TransportePesado": 0
+    },
+    "motorcycle_weights": {
+      "MotocicletaLenta": 1,
+      "Motociclista": 2,
+      "MotocicletaRapida": 1
+    }
+  },
+  "profiles": {
+    "Normal": {
+      "family": "carro",
+      "driving_profile": "normal",
+      "label": "Carro",
+      "population_role": "driver",
+      "mode": "car",
+      "vehicle_type": "Normal",
+      "pcu": 1,
+      "maximum_speed_kmh": 50,
+      "routing_preference": "fastest-time",
+      "dimensions": {
+        "length_m": 4.5,
+        "width_m": 1.8,
+        "assumed": true,
+        "source": "Explicit synthetic scenario assumption; not measured geometry"
+      },
+      "acceleration": {
+        "model": "not_integrated_by_QSim",
+        "m_s2": null
+      },
+      "departure_intervals": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 86400,
+          "weight": 1
+        }
+      ],
+      "access": {
+        "requires_authorized_links": false,
+        "authorized_link_ids": [],
+        "municipal_status": "not_claimed",
+        "source": null
+      }
+    },
+    "MotocicletaLenta": {
+      "family": "moto",
+      "driving_profile": "tortuga",
+      "label": "Moto tortuga",
+      "population_role": "driver",
+      "mode": "car",
+      "vehicle_type": "MotocicletaLenta",
+      "pcu": 0.25,
+      "maximum_speed_kmh": 30,
+      "routing_preference": "fastest-time",
+      "dimensions": {
+        "length_m": 2.1,
+        "width_m": 0.8,
+        "assumed": true,
+        "source": "Explicit synthetic scenario assumption; not measured geometry"
+      },
+      "acceleration": {
+        "model": "not_integrated_by_QSim",
+        "m_s2": null
+      },
+      "departure_intervals": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 86400,
+          "weight": 1
+        }
+      ],
+      "access": {
+        "requires_authorized_links": false,
+        "authorized_link_ids": [],
+        "municipal_status": "not_claimed",
+        "source": null
+      }
+    },
+    "Motociclista": {
+      "family": "moto",
+      "driving_profile": "normal",
+      "label": "Moto",
+      "population_role": "driver",
+      "mode": "car",
+      "vehicle_type": "Motociclista",
+      "pcu": 0.25,
+      "maximum_speed_kmh": 50,
+      "routing_preference": "fastest-time",
+      "dimensions": {
+        "length_m": 2.1,
+        "width_m": 0.8,
+        "assumed": true,
+        "source": "Explicit synthetic scenario assumption; not measured geometry"
+      },
+      "acceleration": {
+        "model": "not_integrated_by_QSim",
+        "m_s2": null
+      },
+      "departure_intervals": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 86400,
+          "weight": 1
+        }
+      ],
+      "access": {
+        "requires_authorized_links": false,
+        "authorized_link_ids": [],
+        "municipal_status": "not_claimed",
+        "source": null
+      }
+    },
+    "MotocicletaRapida": {
+      "family": "moto",
+      "driving_profile": "liebre",
+      "label": "Moto Liebre",
+      "population_role": "driver",
+      "mode": "car",
+      "vehicle_type": "MotocicletaRapida",
+      "pcu": 0.25,
+      "maximum_speed_kmh": 70,
+      "routing_preference": "fastest-time",
+      "dimensions": {
+        "length_m": 2.1,
+        "width_m": 0.8,
+        "assumed": true,
+        "source": "Explicit synthetic scenario assumption; not measured geometry"
+      },
+      "acceleration": {
+        "model": "not_integrated_by_QSim",
+        "m_s2": null
+      },
+      "departure_intervals": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 86400,
+          "weight": 1
+        }
+      ],
+      "access": {
+        "requires_authorized_links": false,
+        "authorized_link_ids": [],
+        "municipal_status": "not_claimed",
+        "source": null
+      }
+    },
+    "Liebre": {
+      "family": "carro",
+      "driving_profile": "liebre",
+      "label": "Carro liebre",
+      "population_role": "driver",
+      "mode": "car",
+      "vehicle_type": "Liebre",
+      "pcu": 1,
+      "maximum_speed_kmh": 90,
+      "routing_preference": "fastest-time",
+      "dimensions": {
+        "length_m": 4.5,
+        "width_m": 1.8,
+        "assumed": true,
+        "source": "Explicit synthetic scenario assumption; not measured geometry"
+      },
+      "acceleration": {
+        "model": "not_integrated_by_QSim",
+        "m_s2": null
+      },
+      "departure_intervals": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 86400,
+          "weight": 1
+        }
+      ],
+      "access": {
+        "requires_authorized_links": false,
+        "authorized_link_ids": [],
+        "municipal_status": "not_claimed",
+        "source": null
+      }
+    },
+    "Tortuga": {
+      "family": "carro",
+      "driving_profile": "tortuga",
+      "label": "Carro Tortuga",
+      "population_role": "driver",
+      "mode": "car",
+      "vehicle_type": "Tortuga",
+      "pcu": 1,
+      "maximum_speed_kmh": 25,
+      "routing_preference": "fastest-time",
+      "dimensions": {
+        "length_m": 4.5,
+        "width_m": 1.8,
+        "assumed": true,
+        "source": "Explicit synthetic scenario assumption; not measured geometry"
+      },
+      "acceleration": {
+        "model": "not_integrated_by_QSim",
+        "m_s2": null
+      },
+      "departure_intervals": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 86400,
+          "weight": 1
+        }
+      ],
+      "access": {
+        "requires_authorized_links": false,
+        "authorized_link_ids": [],
+        "municipal_status": "not_claimed",
+        "source": null
+      }
+    },
+    "TransportePesado": {
+      "family": "pesado",
+      "driving_profile": "normal",
+      "label": "Transporte pesado",
+      "population_role": "driver",
+      "mode": "car",
+      "vehicle_type": "TransportePesado",
+      "pcu": 3.5,
+      "maximum_speed_kmh": 50,
+      "routing_preference": "fastest-time",
+      "dimensions": {
+        "length_m": 10,
+        "width_m": 2.5,
+        "assumed": true,
+        "source": "Explicit synthetic scenario assumption; not measured geometry"
+      },
+      "acceleration": {
+        "model": "not_integrated_by_QSim",
+        "m_s2": null
+      },
+      "departure_intervals": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 86400,
+          "weight": 1
+        }
+      ],
+      "access": {
+        "requires_authorized_links": true,
+        "authorized_link_ids": [],
+        "municipal_status": "not_claimed",
+        "source": null
+      }
+    }
+  },
+  "transit_service": {
+    "in_random_population": false,
+    "implementation_status": "separate_service_required"
+  },
+  "temporal_demand": {
+    "source": "explicit-synthetic-hourly-v1",
+    "hourly_weights": [
+      1,
+      0.7,
+      0.5,
+      0.5,
+      0.8,
+      2,
+      6,
+      9,
+      8,
+      5,
+      4,
+      5,
+      6,
+      5,
+      4,
+      4,
+      6,
+      9,
+      8,
+      4,
+      3,
+      2,
+      1.5,
+      1
+    ]
+  }
+}

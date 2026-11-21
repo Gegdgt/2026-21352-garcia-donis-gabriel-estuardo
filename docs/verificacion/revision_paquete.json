@@ -1,0 +1,97 @@
+{
+  "integridad": {
+    "archivos": 937,
+    "diferencias": []
+  },
+  "archivos_publicables": 973,
+  "bytes_publicables": 134230327,
+  "mayores_25_MiB": [],
+  "alertas_credenciales": [],
+  "alcance_credenciales": "Nombres sensibles y patrones de tokens/claves privadas; no certifica secretos arbitrarios. Solo archivos publicables.",
+  "enlaces_readme": [
+    {
+      "destino": "docs/VERIFICACION.md",
+      "estado": "existe"
+    },
+    {
+      "destino": "docs/GUIA_EJECUCION.md",
+      "estado": "existe"
+    },
+    {
+      "destino": "src/requirements.txt",
+      "estado": "existe"
+    },
+    {
+      "destino": "src/requirements-test.txt",
+      "estado": "existe"
+    },
+    {
+      "destino": "docs/GUIA_EJECUCION.md",
+      "estado": "existe"
+    },
+    {
+      "destino": "docs/VERIFICACION.md",
+      "estado": "existe"
+    },
+    {
+      "destino": "docs/GUIA_EJECUCION.md",
+      "estado": "existe"
+    },
+    {
+      "destino": "docs/AUDITORIA_FUENTES.md",
+      "estado": "existe"
+    },
+    {
+      "destino": "docs/GUIA_EJECUCION.md",
+      "estado": "existe"
+    },
+    {
+      "destino": "docs/AUDITORIA_FUENTES.md",
+      "estado": "existe"
+    },
+    {
+      "destino": "docs/seleccion_fuentes.csv",
+      "estado": "existe"
+    },
+    {
+      "destino": "docs/inventario_excluidos_completo.csv.gz",
+      "estado": "existe"
+    },
+    {
+      "destino": "docs/extraccion/",
+      "estado": "existe"
+    },
+    {
+      "destino": "docs/VERIFICACION.md",
+      "estado": "existe"
+    },
+    {
+      "destino": "preparar_entrega_simz1.ps1",
+      "estado": "existe"
+    },
+    {
+      "destino": "capturas/",
+      "estado": "existe"
+    },
+    {
+      "destino": "demo/demo.mp4",
+      "estado": "pendiente_manual_declarado"
+    },
+    {
+      "destino": "docs/informe_final.pdf",
+      "estado": "pendiente_manual_declarado"
+    },
+    {
+      "destino": "docs/consentimiento_firmado.pdf",
+      "estado": "pendiente_manual_declarado"
+    },
+    {
+      "destino": "docs/CHECKLIST_ENTREGA.md",
+      "estado": "existe"
+    }
+  ],
+  "git_status": " M README.md\n?? .gitattributes\n?? .gitignore\n?? capturas/\n?? demo/\n?? docs/\n?? preparar_entrega_simz1.ps1\n?? src/\n",
+  "branch": "main",
+  "staged_files": [],
+  "commit": "3c2c46427f91715390757b710844929993f6cf9c"
+}

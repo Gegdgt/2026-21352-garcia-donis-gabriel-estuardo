@@ -1,0 +1,33 @@
+{
+  "source": "OpenStreetMap contributors",
+  "path": "scenarios/zona1/map.osm",
+  "osm_format": "0.6",
+  "generator": "openstreetmap-cgimap 2.1.0 (3484852 spike-08.openstreetmap.org)",
+  "attribution": "http://www.openstreetmap.org/copyright",
+  "license": "http://opendatacommons.org/licenses/odbl/1-0/",
+  "sha256_lf": "f18296d0479d0efd095a5b6534f9685928fbd2be9d90705b9200864b3a697a0a",
+  "hash_normalization": "CRLF to LF only; git stores LF; no XML reserialization",
+  "bounds": {
+    "minlat": "14.6250000",
+    "minlon": "-90.5220000",
+    "maxlat": "14.6460000",
+    "maxlon": "-90.5050000"
+  },
+  "counts": {
+    "node": 14558,
+    "way": 3174,
+    "relation": 93
+  },
+  "element_timestamp_min": "2009-05-24T09:07:58Z",
+  "element_timestamp_max": "2026-09-27T14:50:41Z",
+  "acquired_at": null,
+  "original_download_url": null,
+  "snapshot_git_commit": "28a9ffded286077d02f251da29ea9d998d732396",
+  "current_data_api_example": "https://api.openstreetmap.org/api/0.6/map?bbox=-90.522,14.625,-90.505,14.646",
+  "api_documentation": "https://wiki.openstreetmap.org/wiki/API_v0.6#Retrieving_map_data_by_bounding_box:_GET_/api/0.6/map",
+  "limitations": [
+    "Original acquisition date and URL are not recorded; element timestamps are not acquisition dates.",
+    "The API example returns current data, not this historical snapshot.",
+    "Bounds are the supplied extract rectangle, not a verified administrative boundary."
+  ]
+}

@@ -1,0 +1,8 @@
+# Fingerprinted source text: keep LF on Windows as well as Linux.
+# The weekday transit preflight also tolerates legacy CRLF checkouts.
+/scenarios/zona1/network.xml text eol=lf
+/scenarios/zona1/map.osm text eol=lf
+/scenarios/zona1/transit/weekday-v2/service.json text eol=lf
+/scenarios/zona1/transit/weekday-v2/route-bundle.json text eol=lf
+/scenarios/zona1/transit/review-2026-10-22/catalog.json text eol=lf
+/scenarios/zona1/transit/review-2026-10-22/municipal-gis.json text eol=lf

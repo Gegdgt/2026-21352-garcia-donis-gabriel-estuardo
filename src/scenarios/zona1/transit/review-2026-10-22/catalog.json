@@ -1,0 +1,4021 @@
+{
+  "schema_version": "simz1-transit-evidence-v1",
+  "review_date": "2026-10-22",
+  "production_enabled": false,
+  "scope": "SimZ1 transit source review. No simulation, population, bus fleet, historical replay, physics or server changed.",
+  "verification_semantics": {
+    "verified": "Verified as a record or statement in cited source, within field scope; not a claim of current operation.",
+    "scenario_assumption": "Explicit synthetic fixtures only, kept outside this catalog.",
+    "pending": "Unknown or unresolved operational field is null; claims and conflicts retain source versions."
+  },
+  "domain": {
+    "approved": false,
+    "geometry": null,
+    "reason": "approved_domain_not_supplied",
+    "download_rectangle": [
+      -90.522,
+      14.625,
+      -90.505,
+      14.646
+    ],
+    "rectangle_role": "Query filter only; not administrative or approved modelling boundary.",
+    "osm_boundary_relation": "9283360",
+    "osm_outer_ways": 59,
+    "missing_osm_outer_ways": 43,
+    "domain_artifact": null
+  },
+  "artifacts": [
+    {
+      "path": "municipal-gis.json",
+      "sha256": "b291a578e29064f6df28f7bd2f39670f3f81084a592a104222d2ea318810d9c8",
+      "bytes": 380455
+    },
+    {
+      "path": "osm-evidence.json",
+      "sha256": "0b303d019c884c5b6d167fbafbf51996c76b87ca4956422ceabd9819445a3024",
+      "bytes": 100205
+    }
+  ],
+  "geometry_policy": {
+    "municipal_gis": "Real published coordinates, accuracy not certified. Returned EPSG:4326; no schematic geocoding. Keep parts and vertices exactly as returned.",
+    "no_stop_order_from_feature_ids": true,
+    "no_connections_across_missing_geometry": true,
+    "no_schedule_from_generic_marketing_frequency": true,
+    "license_separation": "GIS CC-BY-4.0 and OSM ODbL-1.0 retain separate provenance. No open license inferred for PDF/articles/Moovit/operator pages.",
+    "reuse_status": "Evidence catalog only; do not merge databases or redistribute third-party route geometry without license review."
+  },
+  "screening_summary": {
+    "query": "Municipal spatialRelIntersects against download rectangle, whole features retained",
+    "transmetro_route_features": 11,
+    "tubus_route_features": 4,
+    "station_records": 52,
+    "station_records_are_not_unique_physical_stops": true,
+    "approved_domain_portions": null
+  },
+  "services": [
+    {
+      "operator": "Municipalidad de Guatemala / EMT",
+      "line": "L1",
+      "variant": null,
+      "direction": null,
+      "stop_sequences": [
+        {
+          "stops": [
+            "osm:node:9662312674",
+            "osm:node:9662312675",
+            "osm:node:5859958985",
+            "osm:node:5859958886",
+            "osm:node:4735674022",
+            "osm:node:2642147371"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "14034049",
+          "relation_version": "7",
+          "element_timestamp": "2025-05-11T19:31:23Z",
+          "from": "Centro Cívico",
+          "to": "San Sebastían",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": []
+        },
+        {
+          "stops": [
+            "osm:node:2642147371",
+            "osm:node:6076315285",
+            "osm:node:4735676121",
+            "osm:node:4201078676",
+            "osm:node:6670504886",
+            "osm:node:9662312674"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "14099833",
+          "relation_version": "4",
+          "element_timestamp": "2025-05-11T19:31:23Z",
+          "from": "San Sebastían",
+          "to": "Centro Cívico",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": []
+        }
+      ],
+      "coordinates": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-stations-gis",
+        "feature_ids": [
+          1,
+          27,
+          28,
+          29,
+          30,
+          31,
+          35,
+          36,
+          37,
+          99
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude,latitude",
+        "scope": "Published station records sharing route code within query rectangle. No inferred stop order, deduplication or exclusive route membership."
+      },
+      "route": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-routes-gis",
+        "feature_ids": [
+          1
+        ],
+        "published_route_code": 1000,
+        "geometry_type": "LineString",
+        "direction_confirmed": false,
+        "coordinates_crs": "EPSG:4326",
+        "scope": "Whole published feature intersecting extract rectangle. Not clipped, not map-matched, not a certified directed itinerary."
+      },
+      "calendar": null,
+      "schedule": null,
+      "service_id": "transmetro-l1",
+      "record_kind": "service_candidate",
+      "sources": [
+        "transmetro-routes-gis",
+        "tm-l1-2025",
+        "transmetro-stations-gis",
+        "osm-snapshot",
+        "contrast-tm-l1"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis",
+              "tm-l1-2025"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis",
+              "tm-l1-2025"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": {
+            "status": "verified",
+            "sources": [
+              "osm-snapshot"
+            ],
+            "scope": "Verifiable member sequences in local snapshot; not current service verification."
+          },
+          "coordinates": {
+            "status": "verified",
+            "sources": [
+              "transmetro-stations-gis"
+            ],
+            "scope": "Published coordinates, not surveyed or operator-certified positions."
+          },
+          "route": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Geometry published by municipality; current operation and direction pending."
+          },
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "source_stop_order_geometry_and_current_variant_reconciliation_pending"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "osm_route_relations",
+          "value": [
+            "14034049",
+            "14099833"
+          ],
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Partial OSM evidence, no straight-line reconstruction across missing ways."
+        },
+        {
+          "field": "endpoints",
+          "value": "San Sebastián / Centro Cívico",
+          "sources": [
+            "tm-l1-2025"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Dated source assertion; not adopted as current operational data."
+        },
+        {
+          "field": "direction",
+          "value": {
+            "directions_in_osm": [
+              {
+                "relation_id": "14034049",
+                "from": "Centro Cívico",
+                "to": "San Sebastían"
+              },
+              {
+                "relation_id": "14099833",
+                "from": "San Sebastían",
+                "to": "Centro Cívico"
+              }
+            ]
+          },
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Source-specific endpoints; do not reverse GIS path or merge variants automatically."
+        },
+        {
+          "field": "service_hours",
+          "value": {
+            "Mon-Fri": [
+              "05:30",
+              "20:00"
+            ],
+            "Sat": [
+              "05:30",
+              "19:00"
+            ],
+            "Sun": [
+              "06:30",
+              "19:00"
+            ]
+          },
+          "sources": [
+            "tm-l1-2025"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Dated source assertion; not adopted as current operational data."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "service_hours",
+          "detail": "Municipal 2025 article opens 05:30 Monday-Saturday; third-party version opens 05:00. No automatic preference by access date.",
+          "sources": [
+            "tm-l1-2025",
+            "contrast-tm-l1"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null,
+      "extract_rectangle_screen": {
+        "status": "published_geometry_intersects_download_rectangle",
+        "feature_ids": [
+          1
+        ],
+        "source_id": "transmetro-routes-gis",
+        "approved_domain_intersection": false
+      }
+    },
+    {
+      "operator": "Municipalidad de Guatemala / EMT",
+      "line": "L2",
+      "variant": null,
+      "direction": null,
+      "stop_sequences": [
+        {
+          "stops": [
+            "osm:node:2642147371",
+            "osm:node:9719106157",
+            "osm:node:6076306386"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "14110814",
+          "relation_version": "10",
+          "element_timestamp": "2025-05-11T19:33:01Z",
+          "from": "San Sebastían",
+          "to": "Hipódromo del Norte",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": [
+            "9719106157",
+            "6076306386"
+          ]
+        },
+        {
+          "stops": [
+            "osm:node:6076306386",
+            "osm:node:6076315085",
+            "osm:node:6580827198",
+            "osm:node:2642147371"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "14110815",
+          "relation_version": "5",
+          "element_timestamp": "2025-05-11T19:33:01Z",
+          "from": "Hipódromo del Norte",
+          "to": "San Sebastían",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": [
+            "6076306386",
+            "6076315085",
+            "6580827198"
+          ]
+        }
+      ],
+      "coordinates": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-stations-gis",
+        "feature_ids": [
+          87
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude,latitude",
+        "scope": "Published station records sharing route code within query rectangle. No inferred stop order, deduplication or exclusive route membership."
+      },
+      "route": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-routes-gis",
+        "feature_ids": [
+          2
+        ],
+        "published_route_code": 2000,
+        "geometry_type": "LineString",
+        "direction_confirmed": false,
+        "coordinates_crs": "EPSG:4326",
+        "scope": "Whole published feature intersecting extract rectangle. Not clipped, not map-matched, not a certified directed itinerary."
+      },
+      "calendar": null,
+      "schedule": null,
+      "service_id": "transmetro-l2",
+      "record_kind": "service_candidate",
+      "sources": [
+        "transmetro-routes-gis",
+        "tm-l2-2025",
+        "transmetro-stations-gis",
+        "osm-snapshot",
+        "contrast-tm-l2"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis",
+              "tm-l2-2025"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis",
+              "tm-l2-2025"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": {
+            "status": "verified",
+            "sources": [
+              "osm-snapshot"
+            ],
+            "scope": "Verifiable member sequences in local snapshot; not current service verification."
+          },
+          "coordinates": {
+            "status": "verified",
+            "sources": [
+              "transmetro-stations-gis"
+            ],
+            "scope": "Published coordinates, not surveyed or operator-certified positions."
+          },
+          "route": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Geometry published by municipality; current operation and direction pending."
+          },
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "source_stop_order_geometry_and_current_variant_reconciliation_pending"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "osm_route_relations",
+          "value": [
+            "14110814",
+            "14110815"
+          ],
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Partial OSM evidence, no straight-line reconstruction across missing ways."
+        },
+        {
+          "field": "endpoints",
+          "value": "San Sebastián / Hipódromo del Norte",
+          "sources": [
+            "tm-l2-2025"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Dated source assertion; not adopted as current operational data."
+        },
+        {
+          "field": "direction",
+          "value": {
+            "directions_in_osm": [
+              {
+                "relation_id": "14110814",
+                "from": "San Sebastían",
+                "to": "Hipódromo del Norte"
+              },
+              {
+                "relation_id": "14110815",
+                "from": "Hipódromo del Norte",
+                "to": "San Sebastían"
+              }
+            ]
+          },
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Source-specific endpoints; do not reverse GIS path or merge variants automatically."
+        },
+        {
+          "field": "service_hours",
+          "value": {
+            "Mon-Fri": [
+              "05:30",
+              "19:45"
+            ],
+            "Sat": [
+              "05:30",
+              "19:00"
+            ],
+            "Sun": [
+              "06:30",
+              "19:00"
+            ]
+          },
+          "sources": [
+            "tm-l2-2025"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Dated source assertion; not adopted as current operational data."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "stop_order",
+          "detail": "Municipal text lists Simeón Cañas before Hipódromo and San José de la Montaña after; contrast orders San José de la Montaña before Hipódromo and Simeón Cañas after. Text listing alone does not settle direction.",
+          "sources": [
+            "tm-l2-2025",
+            "contrast-tm-l2"
+          ],
+          "resolution": "pending"
+        },
+        {
+          "field": "service_hours",
+          "detail": "Municipal weekday close 19:45 vs contrast 20:00.",
+          "sources": [
+            "tm-l2-2025",
+            "contrast-tm-l2"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null,
+      "extract_rectangle_screen": {
+        "status": "published_geometry_intersects_download_rectangle",
+        "feature_ids": [
+          2
+        ],
+        "source_id": "transmetro-routes-gis",
+        "approved_domain_intersection": false
+      }
+    },
+    {
+      "operator": "Municipalidad de Guatemala / EMT",
+      "line": "L6",
+      "variant": null,
+      "direction": null,
+      "stop_sequences": [
+        {
+          "stops": [
+            "osm:node:9704058595",
+            "osm:node:9704058594",
+            "osm:node:9704058593",
+            "osm:node:9704497036",
+            "osm:node:9704497037",
+            "osm:node:9704497038",
+            "osm:node:9704497039",
+            "osm:node:9704497040",
+            "osm:node:4201078674",
+            "osm:node:4201162083"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "14091640",
+          "relation_version": "5",
+          "element_timestamp": "2025-05-11T19:50:57Z",
+          "from": "Proyectos",
+          "to": "Plaza Barrios-FEGUA",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": [
+            "9704058595",
+            "9704058594",
+            "9704058593",
+            "9704497036",
+            "9704497037",
+            "9704497038",
+            "9704497039"
+          ]
+        },
+        {
+          "stops": [
+            "osm:node:4201162083",
+            "osm:node:4201162890",
+            "osm:node:9704497039",
+            "osm:node:9704058589",
+            "osm:node:9704058590",
+            "osm:node:9704058591",
+            "osm:node:9704058592",
+            "osm:node:9704058593",
+            "osm:node:9704058594",
+            "osm:node:9704058595"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "14091641",
+          "relation_version": "8",
+          "element_timestamp": "2025-05-11T19:50:57Z",
+          "from": "Plaza Barrios-FEGUA",
+          "to": "Proyectos",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": [
+            "9704497039",
+            "9704058589",
+            "9704058590",
+            "9704058591",
+            "9704058592",
+            "9704058593",
+            "9704058594",
+            "9704058595"
+          ]
+        }
+      ],
+      "coordinates": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-stations-gis",
+        "feature_ids": [
+          6,
+          7,
+          8,
+          18,
+          19,
+          38,
+          39
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude,latitude",
+        "scope": "Published station records sharing route code within query rectangle. No inferred stop order, deduplication or exclusive route membership."
+      },
+      "route": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-routes-gis",
+        "feature_ids": [
+          3
+        ],
+        "published_route_code": 6000,
+        "geometry_type": "LineString",
+        "direction_confirmed": false,
+        "coordinates_crs": "EPSG:4326",
+        "scope": "Whole published feature intersecting extract rectangle. Not clipped, not map-matched, not a certified directed itinerary."
+      },
+      "calendar": null,
+      "schedule": null,
+      "service_id": "transmetro-l6",
+      "record_kind": "service_candidate",
+      "sources": [
+        "transmetro-routes-gis",
+        "tm-l6-2025",
+        "transmetro-stations-gis",
+        "osm-snapshot",
+        "tm-map-2024-02"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis",
+              "tm-l6-2025"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis",
+              "tm-l6-2025"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": {
+            "status": "verified",
+            "sources": [
+              "osm-snapshot"
+            ],
+            "scope": "Verifiable member sequences in local snapshot; not current service verification."
+          },
+          "coordinates": {
+            "status": "verified",
+            "sources": [
+              "transmetro-stations-gis"
+            ],
+            "scope": "Published coordinates, not surveyed or operator-certified positions."
+          },
+          "route": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Geometry published by municipality; current operation and direction pending."
+          },
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "source_stop_order_geometry_and_current_variant_reconciliation_pending"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "osm_route_relations",
+          "value": [
+            "14091640",
+            "14091641"
+          ],
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Partial OSM evidence, no straight-line reconstruction across missing ways."
+        },
+        {
+          "field": "endpoints",
+          "value": "FEGUA / Proyectos",
+          "sources": [
+            "tm-l6-2025"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Dated source assertion; not adopted as current operational data."
+        },
+        {
+          "field": "direction",
+          "value": {
+            "directions_in_osm": [
+              {
+                "relation_id": "14091640",
+                "from": "Proyectos",
+                "to": "Plaza Barrios-FEGUA"
+              },
+              {
+                "relation_id": "14091641",
+                "from": "Plaza Barrios-FEGUA",
+                "to": "Proyectos"
+              }
+            ]
+          },
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Source-specific endpoints; do not reverse GIS path or merge variants automatically."
+        },
+        {
+          "field": "ordered_stop_sequences",
+          "value": [
+            {
+              "direction": "FEGUA hacia Proyectos",
+              "stops": [
+                "FEGUA",
+                "Francos y Monroy",
+                "Parque Colón",
+                "Cerro del Carmen",
+                "Parroquia",
+                "IGSS Zona 6",
+                "Centro Zona 6",
+                "Academia",
+                "Cipresales",
+                "Proyectos 4-4",
+                "Proyectos"
+              ]
+            },
+            {
+              "direction": "Proyectos hacia FEGUA",
+              "stops": [
+                "Proyectos",
+                "Quintanal",
+                "Corpus Christi",
+                "José Martí",
+                "Cerro del Carmen",
+                "Santa Teresa",
+                "Capuchinas",
+                "FEGUA"
+              ]
+            }
+          ],
+          "sources": [
+            "tm-l6-2025"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Explicit directions in municipal article; not crosswalked to station geometry."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "station_address",
+          "detail": "Centro Zona 6: article places it at 16 Avenida / 14 Calle; FEB24 map and GIS use 16 Avenida / 10 Calle. No automatic geocoding.",
+          "sources": [
+            "tm-l6-2025",
+            "tm-map-2024-02",
+            "transmetro-stations-gis"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null,
+      "extract_rectangle_screen": {
+        "status": "published_geometry_intersects_download_rectangle",
+        "feature_ids": [
+          3
+        ],
+        "source_id": "transmetro-routes-gis",
+        "approved_domain_intersection": false
+      }
+    },
+    {
+      "operator": "Municipalidad de Guatemala / EMT",
+      "line": "L7",
+      "variant": null,
+      "direction": null,
+      "stop_sequences": [
+        {
+          "stops": [
+            "osm:node:6317617468",
+            "osm:node:9710451664",
+            "osm:node:9710451665",
+            "osm:node:9710451666",
+            "osm:node:6580764750",
+            "osm:node:6580802629",
+            "osm:node:6580802627",
+            "osm:node:6580763760",
+            "osm:node:6580619513",
+            "osm:node:6580619511",
+            "osm:node:6580586451",
+            "osm:node:6580611895",
+            "osm:node:6580586744",
+            "osm:node:6580586742",
+            "osm:node:6580586740",
+            "osm:node:6580574444"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "10123492",
+          "relation_version": "15",
+          "element_timestamp": "2025-05-11T19:47:49Z",
+          "from": "La Merced",
+          "to": "USAC Periférico",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": [
+            "6580764750",
+            "6580802629",
+            "6580802627",
+            "6580763760",
+            "6580619513",
+            "6580619511",
+            "6580586451",
+            "6580611895",
+            "6580586744",
+            "6580586742",
+            "6580586740",
+            "6580574444"
+          ]
+        },
+        {
+          "stops": [
+            "osm:node:6580574444",
+            "osm:node:6580586739",
+            "osm:node:6580586743",
+            "osm:node:6580586745",
+            "osm:node:6580611894",
+            "osm:node:6580586452",
+            "osm:node:6580619512",
+            "osm:node:6580619514",
+            "osm:node:6580790034",
+            "osm:node:6580802626",
+            "osm:node:6580802630",
+            "osm:node:6580764749",
+            "osm:node:9710451668",
+            "osm:node:9710451669",
+            "osm:node:6317617468"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "14100221",
+          "relation_version": "11",
+          "element_timestamp": "2025-05-11T19:47:49Z",
+          "from": "USAC Periférico",
+          "to": "La Merced",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": [
+            "6580574444",
+            "6580586739",
+            "6580586743",
+            "6580586745",
+            "6580611894",
+            "6580586452",
+            "6580619512",
+            "6580619514",
+            "6580790034",
+            "6580802626",
+            "6580802630",
+            "6580764749"
+          ]
+        }
+      ],
+      "coordinates": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-stations-gis",
+        "feature_ids": [
+          82,
+          83,
+          162,
+          163,
+          164,
+          165,
+          169
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude,latitude",
+        "scope": "Published station records sharing route code within query rectangle. No inferred stop order, deduplication or exclusive route membership."
+      },
+      "route": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-routes-gis",
+        "feature_ids": [
+          8
+        ],
+        "published_route_code": 7000,
+        "geometry_type": "LineString",
+        "direction_confirmed": false,
+        "coordinates_crs": "EPSG:4326",
+        "scope": "Whole published feature intersecting extract rectangle. Not clipped, not map-matched, not a certified directed itinerary."
+      },
+      "calendar": null,
+      "schedule": null,
+      "service_id": "transmetro-l7",
+      "record_kind": "service_candidate",
+      "sources": [
+        "transmetro-routes-gis",
+        "tm-l7-2019",
+        "transmetro-stations-gis",
+        "osm-snapshot",
+        "contrast-tm-l7"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis",
+              "tm-l7-2019"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis",
+              "tm-l7-2019"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": {
+            "status": "verified",
+            "sources": [
+              "osm-snapshot"
+            ],
+            "scope": "Verifiable member sequences in local snapshot; not current service verification."
+          },
+          "coordinates": {
+            "status": "verified",
+            "sources": [
+              "transmetro-stations-gis"
+            ],
+            "scope": "Published coordinates, not surveyed or operator-certified positions."
+          },
+          "route": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Geometry published by municipality; current operation and direction pending."
+          },
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "source_stop_order_geometry_and_current_variant_reconciliation_pending"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "osm_route_relations",
+          "value": [
+            "10123492",
+            "14100221"
+          ],
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Partial OSM evidence, no straight-line reconstruction across missing ways."
+        },
+        {
+          "field": "endpoints",
+          "value": "La Merced / USAC Periférico",
+          "sources": [
+            "tm-l7-2019"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Dated source assertion; not adopted as current operational data."
+        },
+        {
+          "field": "direction",
+          "value": {
+            "directions_in_osm": [
+              {
+                "relation_id": "10123492",
+                "from": "La Merced",
+                "to": "USAC Periférico"
+              },
+              {
+                "relation_id": "14100221",
+                "from": "USAC Periférico",
+                "to": "La Merced"
+              }
+            ]
+          },
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Source-specific endpoints; do not reverse GIS path or merge variants automatically."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "variant",
+          "detail": "2019 municipal endpoints Merced/USAC; third-party circuit title Colón, with Merced among its visits. Title alone does not prove replacement or two separate services.",
+          "sources": [
+            "tm-l7-2019",
+            "contrast-tm-l7"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null,
+      "extract_rectangle_screen": {
+        "status": "published_geometry_intersects_download_rectangle",
+        "feature_ids": [
+          8
+        ],
+        "source_id": "transmetro-routes-gis",
+        "approved_domain_intersection": false
+      }
+    },
+    {
+      "operator": "Municipalidad de Guatemala / EMT",
+      "line": "L12",
+      "variant": null,
+      "direction": null,
+      "stop_sequences": [
+        {
+          "stops": [
+            "osm:node:6076315385",
+            "osm:node:726943198",
+            "osm:node:727293935",
+            "osm:node:726965570",
+            "osm:node:4072239289",
+            "osm:node:726965575",
+            "osm:node:4341705993",
+            "osm:node:727188034",
+            "osm:node:727188035",
+            "osm:node:1653790779",
+            "osm:node:727188036",
+            "osm:node:3630249597"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "906046",
+          "relation_version": "41",
+          "element_timestamp": "2025-05-11T19:45:29Z",
+          "from": "Plaza Barrios",
+          "to": "Centra Sur",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": [
+            "727293935",
+            "726965570",
+            "4072239289",
+            "726965575",
+            "4341705993",
+            "727188034",
+            "727188035",
+            "1653790779",
+            "727188036",
+            "3630249597"
+          ]
+        },
+        {
+          "stops": [
+            "osm:node:3630249597",
+            "osm:node:727188036",
+            "osm:node:9716086615",
+            "osm:node:727188035",
+            "osm:node:727188031",
+            "osm:node:637591059",
+            "osm:node:726965575",
+            "osm:node:4072239289",
+            "osm:node:726965573",
+            "osm:node:727293935",
+            "osm:node:5517399773",
+            "osm:node:6076315385"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "14106867",
+          "relation_version": "15",
+          "element_timestamp": "2026-05-25T07:18:29Z",
+          "from": "Centra Sur",
+          "to": "Plaza Barrios",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": [
+            "3630249597",
+            "727188036",
+            "9716086615",
+            "727188035",
+            "727188031",
+            "637591059",
+            "726965575",
+            "4072239289",
+            "726965573",
+            "727293935"
+          ]
+        }
+      ],
+      "coordinates": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-stations-gis",
+        "feature_ids": [
+          41,
+          58,
+          88,
+          89,
+          90
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude,latitude",
+        "scope": "Published station records sharing route code within query rectangle. No inferred stop order, deduplication or exclusive route membership."
+      },
+      "route": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-routes-gis",
+        "feature_ids": [
+          4
+        ],
+        "published_route_code": 12000,
+        "geometry_type": "LineString",
+        "direction_confirmed": false,
+        "coordinates_crs": "EPSG:4326",
+        "scope": "Whole published feature intersecting extract rectangle. Not clipped, not map-matched, not a certified directed itinerary."
+      },
+      "calendar": null,
+      "schedule": null,
+      "service_id": "transmetro-l12",
+      "record_kind": "service_candidate",
+      "sources": [
+        "transmetro-routes-gis",
+        "tm-l12-2025",
+        "transmetro-stations-gis",
+        "osm-snapshot",
+        "tm-map-2024-02"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis",
+              "tm-l12-2025"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis",
+              "tm-l12-2025"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": {
+            "status": "verified",
+            "sources": [
+              "osm-snapshot"
+            ],
+            "scope": "Verifiable member sequences in local snapshot; not current service verification."
+          },
+          "coordinates": {
+            "status": "verified",
+            "sources": [
+              "transmetro-stations-gis"
+            ],
+            "scope": "Published coordinates, not surveyed or operator-certified positions."
+          },
+          "route": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Geometry published by municipality; current operation and direction pending."
+          },
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "source_stop_order_geometry_and_current_variant_reconciliation_pending"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "osm_route_relations",
+          "value": [
+            "906046",
+            "14106867"
+          ],
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Partial OSM evidence, no straight-line reconstruction across missing ways."
+        },
+        {
+          "field": "endpoints",
+          "value": "Plaza Barrios / Centra Sur",
+          "sources": [
+            "tm-l12-2025"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Dated source assertion; not adopted as current operational data."
+        },
+        {
+          "field": "direction",
+          "value": {
+            "directions_in_osm": [
+              {
+                "relation_id": "906046",
+                "from": "Plaza Barrios",
+                "to": "Centra Sur"
+              },
+              {
+                "relation_id": "14106867",
+                "from": "Centra Sur",
+                "to": "Plaza Barrios"
+              }
+            ]
+          },
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Source-specific endpoints; do not reverse GIS path or merge variants automatically."
+        },
+        {
+          "field": "service_hours",
+          "value": {
+            "daily": [
+              "04:30",
+              "21:00"
+            ]
+          },
+          "sources": [
+            "tm-l12-2025"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Dated source assertion; not adopted as current operational data."
+        },
+        {
+          "field": "corridor",
+          "value": [
+            "Aguilar Batres",
+            "Trébol",
+            "Bolívar",
+            "Centro Cívico"
+          ],
+          "sources": [
+            "tm-l12-2025"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Named corridor only; no exact directed lane trajectory."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "station_address",
+          "detail": "Don Bosco: municipal article 1 Avenida / 25 Calle vs FEB24 map 1 Avenida / 26 Calle.",
+          "sources": [
+            "tm-l12-2025",
+            "tm-map-2024-02"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null,
+      "extract_rectangle_screen": {
+        "status": "published_geometry_intersects_download_rectangle",
+        "feature_ids": [
+          4
+        ],
+        "source_id": "transmetro-routes-gis",
+        "approved_domain_intersection": false
+      }
+    },
+    {
+      "operator": "Municipalidad de Guatemala / EMT",
+      "line": "L13",
+      "variant": null,
+      "direction": null,
+      "stop_sequences": [
+        {
+          "stops": [
+            "osm:node:9662333548",
+            "osm:node:726943197",
+            "osm:node:726943203",
+            "osm:node:726943199",
+            "osm:node:644825734",
+            "osm:node:6715960486",
+            "osm:node:644828949",
+            "osm:node:644829865",
+            "osm:node:798546385",
+            "osm:node:798546391",
+            "osm:node:2454738413"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "936950",
+          "relation_version": "84",
+          "element_timestamp": "2026-05-25T07:10:22Z",
+          "from": "Tipografía",
+          "to": "Hangares",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": [
+            "726943203",
+            "726943199",
+            "644825734",
+            "6715960486",
+            "644828949",
+            "644829865",
+            "798546385",
+            "798546391",
+            "2454738413"
+          ]
+        },
+        {
+          "stops": [
+            "osm:node:2454738413",
+            "osm:node:4038754535",
+            "osm:node:798546390",
+            "osm:node:726943192",
+            "osm:node:726943191",
+            "osm:node:5897874286",
+            "osm:node:726943187",
+            "osm:node:726943195",
+            "osm:node:11378836911",
+            "osm:node:4444854315",
+            "osm:node:9716924061",
+            "osm:node:9662333548"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "14107352",
+          "relation_version": "17",
+          "element_timestamp": "2026-05-25T06:59:57Z",
+          "from": "Hangares",
+          "to": "Tipografía",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": [
+            "2454738413",
+            "4038754535",
+            "798546390",
+            "726943192",
+            "726943191",
+            "5897874286",
+            "726943187",
+            "726943195",
+            "11378836911"
+          ]
+        }
+      ],
+      "coordinates": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-stations-gis",
+        "feature_ids": [
+          40,
+          42,
+          59,
+          76
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude,latitude",
+        "scope": "Published station records sharing route code within query rectangle. No inferred stop order, deduplication or exclusive route membership."
+      },
+      "route": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-routes-gis",
+        "feature_ids": [
+          5
+        ],
+        "published_route_code": 13000,
+        "geometry_type": "LineString",
+        "direction_confirmed": false,
+        "coordinates_crs": "EPSG:4326",
+        "scope": "Whole published feature intersecting extract rectangle. Not clipped, not map-matched, not a certified directed itinerary."
+      },
+      "calendar": null,
+      "schedule": null,
+      "service_id": "transmetro-l13",
+      "record_kind": "service_candidate",
+      "sources": [
+        "transmetro-routes-gis",
+        "tm-map-2023-11",
+        "transmetro-stations-gis",
+        "osm-snapshot",
+        "tm-memo-2021",
+        "contrast-tm-l13",
+        "tm-map-2024-02"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis",
+              "tm-map-2023-11"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis",
+              "tm-map-2023-11"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": {
+            "status": "verified",
+            "sources": [
+              "osm-snapshot"
+            ],
+            "scope": "Verifiable member sequences in local snapshot; not current service verification."
+          },
+          "coordinates": {
+            "status": "verified",
+            "sources": [
+              "transmetro-stations-gis"
+            ],
+            "scope": "Published coordinates, not surveyed or operator-certified positions."
+          },
+          "route": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Geometry published by municipality; current operation and direction pending."
+          },
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "source_stop_order_geometry_and_current_variant_reconciliation_pending"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "osm_route_relations",
+          "value": [
+            "936950",
+            "14107352"
+          ],
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Partial OSM evidence, no straight-line reconstruction across missing ways."
+        },
+        {
+          "field": "endpoints",
+          "value": "Tipografía / Hangares",
+          "sources": [
+            "tm-map-2023-11"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Dated source assertion; not adopted as current operational data."
+        },
+        {
+          "field": "direction",
+          "value": {
+            "directions_in_osm": [
+              {
+                "relation_id": "936950",
+                "from": "Tipografía",
+                "to": "Hangares"
+              },
+              {
+                "relation_id": "14107352",
+                "from": "Hangares",
+                "to": "Tipografía"
+              }
+            ]
+          },
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Source-specific endpoints; do not reverse GIS path or merge variants automatically."
+        },
+        {
+          "field": "historical_endpoint_versions",
+          "value": [
+            {
+              "version": "annual_report_2021",
+              "endpoints": "Plaza Berlín / Plaza Barrios"
+            },
+            {
+              "version": "NOV23_schematic",
+              "endpoints": "Hangares / Tipografía"
+            },
+            {
+              "version": "Moovit_251703136",
+              "title": "Tipografía / Plaza Argentina",
+              "direction_label": "Tipografía / Hangares"
+            }
+          ],
+          "sources": [
+            "tm-memo-2021",
+            "tm-map-2023-11",
+            "contrast-tm-l13"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Dated source assertion; not adopted as current operational data."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "variant_and_stop_inventory",
+          "detail": "Different dated endpoints cannot be merged. Moovit includes Hangares and Plaza Argentina in one circuit; FEB24 includes 4 Grados Sur and Seis 26 omitted from contrast. Calle Zona 4 is not equated automatically to Cantón Exposición.",
+          "sources": [
+            "tm-memo-2021",
+            "tm-map-2023-11",
+            "tm-map-2024-02",
+            "contrast-tm-l13"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null,
+      "extract_rectangle_screen": {
+        "status": "published_geometry_intersects_download_rectangle",
+        "feature_ids": [
+          5
+        ],
+        "source_id": "transmetro-routes-gis",
+        "approved_domain_intersection": false
+      }
+    },
+    {
+      "operator": "Municipalidad de Guatemala / EMT",
+      "line": "L18",
+      "variant": null,
+      "direction": null,
+      "stop_sequences": [
+        {
+          "stops": [
+            "osm:node:9644649735",
+            "osm:node:3771348502",
+            "osm:node:3771442271",
+            "osm:node:4201078674",
+            "osm:node:4201162083"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "6245758",
+          "relation_version": "40",
+          "element_timestamp": "2026-01-09T11:56:19Z",
+          "from": "Atlántida",
+          "to": "Plaza Barrios-FEGUA",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": [
+            "9644649735",
+            "3771348502",
+            "3771442271"
+          ]
+        },
+        {
+          "stops": [
+            "osm:node:4201162083",
+            "osm:node:4201162084",
+            "osm:node:4201162890",
+            "osm:node:9704497039",
+            "osm:node:3771407467",
+            "osm:node:3771348502",
+            "osm:node:9644444129",
+            "osm:node:9644649735"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "14099910",
+          "relation_version": "10",
+          "element_timestamp": "2026-08-29T14:55:45Z",
+          "from": "Plaza Barrios-FEGUA",
+          "to": "Atlántida",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": [
+            "9704497039",
+            "3771407467",
+            "3771348502",
+            "9644444129",
+            "9644649735"
+          ]
+        }
+      ],
+      "coordinates": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-stations-gis",
+        "feature_ids": [
+          84,
+          93,
+          94,
+          95,
+          97,
+          98
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude,latitude",
+        "scope": "Published station records sharing route code within query rectangle. No inferred stop order, deduplication or exclusive route membership."
+      },
+      "route": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-routes-gis",
+        "feature_ids": [
+          7
+        ],
+        "published_route_code": 18000,
+        "geometry_type": "MultiLineString",
+        "direction_confirmed": false,
+        "coordinates_crs": "EPSG:4326",
+        "scope": "Whole published feature intersecting extract rectangle. Not clipped, not map-matched, not a certified directed itinerary."
+      },
+      "calendar": null,
+      "schedule": null,
+      "service_id": "transmetro-l18",
+      "record_kind": "service_candidate",
+      "sources": [
+        "transmetro-routes-gis",
+        "tm-memo-2023",
+        "transmetro-stations-gis",
+        "osm-snapshot",
+        "tm-map-2024-02",
+        "contrast-tm-l18"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis",
+              "tm-memo-2023"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis",
+              "tm-memo-2023"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": {
+            "status": "verified",
+            "sources": [
+              "osm-snapshot"
+            ],
+            "scope": "Verifiable member sequences in local snapshot; not current service verification."
+          },
+          "coordinates": {
+            "status": "verified",
+            "sources": [
+              "transmetro-stations-gis"
+            ],
+            "scope": "Published coordinates, not surveyed or operator-certified positions."
+          },
+          "route": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Geometry published by municipality; current operation and direction pending."
+          },
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "source_stop_order_geometry_and_current_variant_reconciliation_pending"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "osm_route_relations",
+          "value": [
+            "6245758",
+            "14099910"
+          ],
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Partial OSM evidence, no straight-line reconstruction across missing ways."
+        },
+        {
+          "field": "endpoints",
+          "value": "FEGUA / Atlántida",
+          "sources": [
+            "tm-memo-2023"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Dated source assertion; not adopted as current operational data."
+        },
+        {
+          "field": "direction",
+          "value": {
+            "directions_in_osm": [
+              {
+                "relation_id": "6245758",
+                "from": "Atlántida",
+                "to": "Plaza Barrios-FEGUA"
+              },
+              {
+                "relation_id": "14099910",
+                "from": "Plaza Barrios-FEGUA",
+                "to": "Atlántida"
+              }
+            ]
+          },
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Source-specific endpoints; do not reverse GIS path or merge variants automatically."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "stop_inventory",
+          "detail": "Portales appears in municipal map inventory but not in the compared regular circuit. Variant and current stop status pending.",
+          "sources": [
+            "tm-map-2024-02",
+            "contrast-tm-l18"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null,
+      "extract_rectangle_screen": {
+        "status": "published_geometry_intersects_download_rectangle",
+        "feature_ids": [
+          7
+        ],
+        "source_id": "transmetro-routes-gis",
+        "approved_domain_intersection": false
+      }
+    },
+    {
+      "operator": "Municipalidad de Guatemala / EMT",
+      "line": "L12",
+      "variant": "Directo Amate",
+      "direction": null,
+      "stop_sequences": [
+        {
+          "stops": [
+            "osm:node:726965575",
+            "osm:node:726943198"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "14110587",
+          "relation_version": "8",
+          "element_timestamp": "2026-05-25T07:18:29Z",
+          "from": "Centra Sur",
+          "to": "Plaza El Amate",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": [
+            "726965575"
+          ]
+        },
+        {
+          "stops": [
+            "osm:node:726943198",
+            "osm:node:726965575"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "14110588",
+          "relation_version": "9",
+          "element_timestamp": "2025-05-11T19:45:29Z",
+          "from": "Plaza El Amate",
+          "to": "Centra Sur",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": [
+            "726965575"
+          ]
+        }
+      ],
+      "coordinates": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-stations-gis",
+        "feature_ids": [
+          101,
+          117,
+          118,
+          119,
+          120
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude,latitude",
+        "scope": "Published station records sharing route code within query rectangle. No inferred stop order, deduplication or exclusive route membership."
+      },
+      "route": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-routes-gis",
+        "feature_ids": [
+          10
+        ],
+        "published_route_code": 12001,
+        "geometry_type": "LineString",
+        "direction_confirmed": false,
+        "coordinates_crs": "EPSG:4326",
+        "scope": "Whole published feature intersecting extract rectangle. Not clipped, not map-matched, not a certified directed itinerary."
+      },
+      "calendar": null,
+      "schedule": null,
+      "service_id": "transmetro-l12-directo-amate",
+      "record_kind": "service_candidate",
+      "sources": [
+        "transmetro-routes-gis",
+        "transmetro-stations-gis",
+        "tm-l12-2025",
+        "contrast-tm-l12-express",
+        "osm-snapshot"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Published layer label only; actual stopping pattern not established."
+          },
+          "direction": "pending",
+          "stop_sequences": {
+            "status": "verified",
+            "sources": [
+              "osm-snapshot"
+            ],
+            "scope": "Verifiable member sequences in local snapshot; not current service verification."
+          },
+          "coordinates": {
+            "status": "verified",
+            "sources": [
+              "transmetro-stations-gis"
+            ],
+            "scope": "Published coordinates, not surveyed or operator-certified positions."
+          },
+          "route": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Geometry published by municipality; current operation and direction pending."
+          },
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "express_stopping_pattern_and_variant_mapping_unknown"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "express_service_hours",
+          "value": {
+            "Mon-Fri": [
+              [
+                "04:30",
+                "08:30"
+              ],
+              [
+                "16:30",
+                "19:00"
+              ]
+            ],
+            "Sat": [
+              [
+                "04:30",
+                "08:30"
+              ],
+              [
+                "11:30",
+                "13:30"
+              ]
+            ],
+            "Sun": null
+          },
+          "sources": [
+            "tm-l12-2025"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Article groups express Centra Sur / Trébol / El Amate; mapping to each GIS variant pending. Sunday not published does not mean no service."
+        },
+        {
+          "field": "osm_route_relations",
+          "value": [
+            "14110587",
+            "14110588"
+          ],
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Partial OSM evidence, no straight-line reconstruction across missing ways."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "geometry",
+          "detail": "Exact geometry equality among published FIDs [4, 10, 11]. This does not establish identical services or stopping patterns.",
+          "sources": [
+            "transmetro-routes-gis"
+          ],
+          "resolution": "pending"
+        },
+        {
+          "field": "express_service_hours",
+          "detail": "Contrast shows continuous weekday 04:30-19:00 and Sunday 04:30-13:30; municipal article describes split windows and omits Sunday.",
+          "sources": [
+            "tm-l12-2025",
+            "contrast-tm-l12-express"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null,
+      "extract_rectangle_screen": {
+        "status": "published_geometry_intersects_download_rectangle",
+        "feature_ids": [
+          10
+        ],
+        "source_id": "transmetro-routes-gis",
+        "approved_domain_intersection": false
+      }
+    },
+    {
+      "operator": "Municipalidad de Guatemala / EMT",
+      "line": "L12",
+      "variant": "Directo Trébol",
+      "direction": null,
+      "stop_sequences": null,
+      "coordinates": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-stations-gis",
+        "feature_ids": [
+          121,
+          137,
+          138,
+          139,
+          140
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude,latitude",
+        "scope": "Published station records sharing route code within query rectangle. No inferred stop order, deduplication or exclusive route membership."
+      },
+      "route": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-routes-gis",
+        "feature_ids": [
+          11
+        ],
+        "published_route_code": 12002,
+        "geometry_type": "LineString",
+        "direction_confirmed": false,
+        "coordinates_crs": "EPSG:4326",
+        "scope": "Whole published feature intersecting extract rectangle. Not clipped, not map-matched, not a certified directed itinerary."
+      },
+      "calendar": null,
+      "schedule": null,
+      "service_id": "transmetro-l12-directo-trebol",
+      "record_kind": "service_candidate",
+      "sources": [
+        "transmetro-routes-gis",
+        "transmetro-stations-gis",
+        "tm-l12-2025",
+        "contrast-tm-l12-express"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Published layer label only; actual stopping pattern not established."
+          },
+          "direction": "pending",
+          "stop_sequences": "pending",
+          "coordinates": {
+            "status": "verified",
+            "sources": [
+              "transmetro-stations-gis"
+            ],
+            "scope": "Published coordinates, not surveyed or operator-certified positions."
+          },
+          "route": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Geometry published by municipality; current operation and direction pending."
+          },
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "express_stopping_pattern_and_variant_mapping_unknown",
+          "directo_trebol_schedule_not_established_do_not_borrow_amate_windows"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [],
+      "conflicts": [
+        {
+          "field": "geometry",
+          "detail": "Exact geometry equality among published FIDs [4, 10, 11]. This does not establish identical services or stopping patterns.",
+          "sources": [
+            "transmetro-routes-gis"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null,
+      "extract_rectangle_screen": {
+        "status": "published_geometry_intersects_download_rectangle",
+        "feature_ids": [
+          11
+        ],
+        "source_id": "transmetro-routes-gis",
+        "approved_domain_intersection": false
+      }
+    },
+    {
+      "operator": "Municipalidad de Guatemala / EMT",
+      "line": "L18",
+      "variant": "Expres Directo Plaza Barrios",
+      "direction": null,
+      "stop_sequences": null,
+      "coordinates": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-stations-gis",
+        "feature_ids": [
+          143
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude,latitude",
+        "scope": "Published station records sharing route code within query rectangle. No inferred stop order, deduplication or exclusive route membership."
+      },
+      "route": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-routes-gis",
+        "feature_ids": [
+          9
+        ],
+        "published_route_code": 18002,
+        "geometry_type": "LineString",
+        "direction_confirmed": false,
+        "coordinates_crs": "EPSG:4326",
+        "scope": "Whole published feature intersecting extract rectangle. Not clipped, not map-matched, not a certified directed itinerary."
+      },
+      "calendar": null,
+      "schedule": null,
+      "service_id": "transmetro-l18-directo-plaza-barrios",
+      "record_kind": "service_candidate",
+      "sources": [
+        "transmetro-routes-gis",
+        "transmetro-stations-gis"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Published layer label only; actual stopping pattern not established."
+          },
+          "direction": "pending",
+          "stop_sequences": "pending",
+          "coordinates": {
+            "status": "verified",
+            "sources": [
+              "transmetro-stations-gis"
+            ],
+            "scope": "Published coordinates, not surveyed or operator-certified positions."
+          },
+          "route": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Geometry published by municipality; current operation and direction pending."
+          },
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "express_stopping_pattern_and_variant_mapping_unknown"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [],
+      "conflicts": [
+        {
+          "field": "geometry",
+          "detail": "Exact geometry equality among published FIDs [9, 12]. This does not establish identical services or stopping patterns.",
+          "sources": [
+            "transmetro-routes-gis"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null,
+      "extract_rectangle_screen": {
+        "status": "published_geometry_intersects_download_rectangle",
+        "feature_ids": [
+          9
+        ],
+        "source_id": "transmetro-routes-gis",
+        "approved_domain_intersection": false
+      }
+    },
+    {
+      "operator": "Municipalidad de Guatemala / EMT",
+      "line": "L18",
+      "variant": "Expres Directo San Rafael",
+      "direction": null,
+      "stop_sequences": null,
+      "coordinates": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-stations-gis",
+        "feature_ids": [
+          100
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude,latitude",
+        "scope": "Published station records sharing route code within query rectangle. No inferred stop order, deduplication or exclusive route membership."
+      },
+      "route": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-routes-gis",
+        "feature_ids": [
+          12
+        ],
+        "published_route_code": 18001,
+        "geometry_type": "LineString",
+        "direction_confirmed": false,
+        "coordinates_crs": "EPSG:4326",
+        "scope": "Whole published feature intersecting extract rectangle. Not clipped, not map-matched, not a certified directed itinerary."
+      },
+      "calendar": null,
+      "schedule": null,
+      "service_id": "transmetro-l18-directo-san-rafael",
+      "record_kind": "service_candidate",
+      "sources": [
+        "transmetro-routes-gis",
+        "transmetro-stations-gis"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Published layer label only; actual stopping pattern not established."
+          },
+          "direction": "pending",
+          "stop_sequences": "pending",
+          "coordinates": {
+            "status": "verified",
+            "sources": [
+              "transmetro-stations-gis"
+            ],
+            "scope": "Published coordinates, not surveyed or operator-certified positions."
+          },
+          "route": {
+            "status": "verified",
+            "sources": [
+              "transmetro-routes-gis"
+            ],
+            "scope": "Geometry published by municipality; current operation and direction pending."
+          },
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "express_stopping_pattern_and_variant_mapping_unknown"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [],
+      "conflicts": [
+        {
+          "field": "geometry",
+          "detail": "Exact geometry equality among published FIDs [9, 12]. This does not establish identical services or stopping patterns.",
+          "sources": [
+            "transmetro-routes-gis"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null,
+      "extract_rectangle_screen": {
+        "status": "published_geometry_intersects_download_rectangle",
+        "feature_ids": [
+          12
+        ],
+        "source_id": "transmetro-routes-gis",
+        "approved_domain_intersection": false
+      }
+    },
+    {
+      "operator": "Municipalidad de Guatemala / EMT",
+      "line": "L13",
+      "variant": null,
+      "direction": null,
+      "stop_sequences": null,
+      "coordinates": null,
+      "route": null,
+      "calendar": null,
+      "schedule": null,
+      "service_id": "transmetro-l13-extension",
+      "record_kind": "service_candidate",
+      "sources": [
+        "contrast-tm-l13-extension",
+        "tm-map-2023-11",
+        "transmetro-routes-gis"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "contrast-tm-l13-extension",
+              "tm-map-2023-11"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": {
+            "status": "verified",
+            "sources": [
+              "contrast-tm-l13-extension",
+              "tm-map-2023-11"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": "pending",
+          "coordinates": "pending",
+          "route": "pending",
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "variant",
+          "value": "GIS inventory FID 6 / code 13001 is labelled Línea 13 Extención; no feature returned by rectangle-intersection query.",
+          "sources": [
+            "transmetro-routes-gis"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Inventory observation, geometry not included in bounded artifact. Does not prove absence from an approved domain."
+        },
+        {
+          "field": "stops",
+          "value": [
+            "Plaza Argentina",
+            "Plaza Berlín",
+            "Juan Pablo II",
+            "Plaza Argentina"
+          ],
+          "sources": [
+            "contrast-tm-l13-extension"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Third-party circuit only; repeated visit retained, not certified municipal stop order."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "endpoint_label",
+          "detail": "Contrast title Plaza Argentina / Plaza Berlín differs from direction label Hangares / Plaza Berlín; do not merge with L13 regular.",
+          "sources": [
+            "contrast-tm-l13-extension"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null,
+      "extract_rectangle_screen": {
+        "status": "not_returned_in_bounded_gis_query",
+        "source_id": "transmetro-routes-gis",
+        "approved_domain_intersection": false
+      }
+    },
+    {
+      "operator": "Municipalidad de Guatemala / TuBus",
+      "line": "104",
+      "variant": null,
+      "direction": null,
+      "stop_sequences": null,
+      "coordinates": null,
+      "route": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "tubus-routes-gis",
+        "feature_ids": [
+          2
+        ],
+        "published_route_code": "104",
+        "geometry_type": "LineString",
+        "direction_confirmed": false,
+        "coordinates_crs": "EPSG:4326",
+        "scope": "Whole published feature intersecting extract rectangle. Not clipped, not map-matched, not a certified directed itinerary."
+      },
+      "calendar": null,
+      "schedule": null,
+      "service_id": "tubus-104",
+      "record_kind": "service_candidate",
+      "sources": [
+        "tubus-routes-gis",
+        "tubus-104-v8",
+        "tubus-article-2025"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "tubus-routes-gis",
+              "tubus-104-v8",
+              "tubus-article-2025"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": {
+            "status": "verified",
+            "sources": [
+              "tubus-routes-gis",
+              "tubus-104-v8",
+              "tubus-article-2025"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": "pending",
+          "coordinates": "pending",
+          "route": {
+            "status": "verified",
+            "sources": [
+              "tubus-routes-gis"
+            ],
+            "scope": "Geometry published by municipality; current operation and direction pending."
+          },
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "endpoints",
+          "value": "Barrio San Antonio Zona 6 / Cementerio La Villa Zona 14",
+          "sources": [
+            "tubus-104-v8",
+            "tubus-article-2025"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Dated source assertion; not adopted as current operational data."
+        },
+        {
+          "field": "service_hours",
+          "value": {
+            "Mon-Sat": [
+              "05:30",
+              "19:00"
+            ],
+            "Sun-holidays": [
+              "06:00",
+              "18:00"
+            ]
+          },
+          "sources": [
+            "tubus-article-2025"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Published service opening window; no trip departures, stop times or service calendar validity inferred."
+        }
+      ],
+      "conflicts": [],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null,
+      "extract_rectangle_screen": {
+        "status": "published_geometry_intersects_download_rectangle",
+        "feature_ids": [
+          2
+        ],
+        "source_id": "tubus-routes-gis",
+        "approved_domain_intersection": false
+      }
+    },
+    {
+      "operator": "Municipalidad de Guatemala / TuBus",
+      "line": "802",
+      "variant": null,
+      "direction": null,
+      "stop_sequences": [
+        {
+          "stops": [
+            {
+              "published_stop_id": "115",
+              "address": "1 Calle / 3 Avenida"
+            },
+            {
+              "published_stop_id": "116",
+              "address": "4 Avenida / 2 Calle"
+            },
+            {
+              "published_stop_id": "117",
+              "address": "4 Avenida / 5 Calle"
+            },
+            {
+              "published_stop_id": "118",
+              "address": "4 Avenida / 9 Calle A"
+            },
+            {
+              "published_stop_id": "119",
+              "address": "4 Avenida / 11 Calle"
+            },
+            {
+              "published_stop_id": "120",
+              "address": "4 Avenida / 15 Calle"
+            },
+            {
+              "published_stop_id": "121",
+              "address": "4 Avenida / 19 Calle"
+            },
+            {
+              "published_stop_id": "122",
+              "address": "3 Avenida / 19 Calle"
+            },
+            {
+              "published_stop_id": "123",
+              "address": "3 Avenida / 15 Calle A"
+            },
+            {
+              "published_stop_id": "124",
+              "address": "3 Avenida / 12 Calle A"
+            },
+            {
+              "published_stop_id": "125",
+              "address": "3 Avenida / 9 Calle"
+            },
+            {
+              "published_stop_id": "126",
+              "address": "3 Avenida / 6 Calle"
+            },
+            {
+              "published_stop_id": "127",
+              "address": "4 Calle / 2 Avenida"
+            },
+            {
+              "published_stop_id": "128",
+              "address": "4 Calle / Avenida Elena"
+            }
+          ],
+          "order_explicit": true,
+          "sources": [
+            "tubus-802-v4"
+          ],
+          "page": 3,
+          "direction_label": null,
+          "scope": "Ordered local fragment printed in rutero, not complete service; no inferred ida/regreso or coordinates."
+        }
+      ],
+      "coordinates": null,
+      "route": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "tubus-routes-gis",
+        "feature_ids": [
+          3
+        ],
+        "published_route_code": "802",
+        "geometry_type": "LineString",
+        "direction_confirmed": false,
+        "coordinates_crs": "EPSG:4326",
+        "scope": "Whole published feature intersecting extract rectangle. Not clipped, not map-matched, not a certified directed itinerary."
+      },
+      "calendar": null,
+      "schedule": null,
+      "service_id": "tubus-802",
+      "record_kind": "service_candidate",
+      "sources": [
+        "tubus-routes-gis",
+        "tubus-802-v4",
+        "tubus-article-2025"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "tubus-routes-gis",
+              "tubus-802-v4",
+              "tubus-article-2025"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": {
+            "status": "verified",
+            "sources": [
+              "tubus-routes-gis",
+              "tubus-802-v4",
+              "tubus-article-2025"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": {
+            "status": "verified",
+            "sources": [
+              "tubus-802-v4"
+            ],
+            "scope": "Ordered fragment in municipal sheet effective March 2025; present operation pending."
+          },
+          "coordinates": "pending",
+          "route": {
+            "status": "verified",
+            "sources": [
+              "tubus-routes-gis"
+            ],
+            "scope": "Geometry published by municipality; current operation and direction pending."
+          },
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "endpoints",
+          "value": "Parque Los Pinos Zona 7 / 4a Avenida y 19 Calle Zona 1",
+          "sources": [
+            "tubus-802-v4"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Dated source assertion; not adopted as current operational data."
+        },
+        {
+          "field": "service_hours",
+          "value": {
+            "Mon-Sat": [
+              "05:30",
+              "19:00"
+            ],
+            "Sun-holidays": [
+              "06:00",
+              "18:00"
+            ]
+          },
+          "sources": [
+            "tubus-802-v4"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Endpoint opening hours; no trip departures, stop times or service calendar validity inferred."
+        }
+      ],
+      "conflicts": [],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null,
+      "extract_rectangle_screen": {
+        "status": "published_geometry_intersects_download_rectangle",
+        "feature_ids": [
+          3
+        ],
+        "source_id": "tubus-routes-gis",
+        "approved_domain_intersection": false
+      }
+    },
+    {
+      "operator": "Municipalidad de Guatemala / TuBus",
+      "line": "105",
+      "variant": null,
+      "direction": null,
+      "stop_sequences": [
+        {
+          "stops": [
+            {
+              "published_stop_id": "165",
+              "address": "Avenida Elena / 18 Calle"
+            },
+            {
+              "published_stop_id": "166",
+              "address": "19 Calle / 2 Avenida"
+            },
+            {
+              "published_stop_id": "167",
+              "address": "4 Avenida / 20 Calle"
+            },
+            {
+              "published_stop_id": "168",
+              "address": "20 Calle / 1 Avenida A"
+            },
+            {
+              "published_stop_id": "169",
+              "address": "20 Calle / Avenida Elena"
+            }
+          ],
+          "order_explicit": true,
+          "sources": [
+            "tubus-105-v1"
+          ],
+          "page": 3,
+          "direction_label": null,
+          "scope": "Ordered local fragment only. Preserve source order; stop 128 occurs between 160 and 161 elsewhere in sheet, so never sort numerically."
+        }
+      ],
+      "coordinates": null,
+      "route": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "tubus-routes-gis",
+        "feature_ids": [
+          4
+        ],
+        "published_route_code": "105",
+        "geometry_type": "LineString",
+        "direction_confirmed": false,
+        "coordinates_crs": "EPSG:4326",
+        "scope": "Whole published feature intersecting extract rectangle. Not clipped, not map-matched, not a certified directed itinerary."
+      },
+      "calendar": null,
+      "schedule": null,
+      "service_id": "tubus-105",
+      "record_kind": "service_candidate",
+      "sources": [
+        "tubus-routes-gis",
+        "tubus-105-v1",
+        "tubus-article-2025"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "tubus-routes-gis",
+              "tubus-105-v1",
+              "tubus-article-2025"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": {
+            "status": "verified",
+            "sources": [
+              "tubus-routes-gis",
+              "tubus-105-v1",
+              "tubus-article-2025"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": {
+            "status": "verified",
+            "sources": [
+              "tubus-105-v1"
+            ],
+            "scope": "Ordered fragment in municipal sheet effective March 2025; present operation pending."
+          },
+          "coordinates": "pending",
+          "route": {
+            "status": "verified",
+            "sources": [
+              "tubus-routes-gis"
+            ],
+            "scope": "Geometry published by municipality; current operation and direction pending."
+          },
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "endpoints",
+          "value": "Parque Jocotenango Zona 2 / 9a Avenida y 9a Calle Zona 7",
+          "sources": [
+            "tubus-105-v1"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Dated source assertion; not adopted as current operational data."
+        },
+        {
+          "field": "service_hours",
+          "value": {
+            "Mon-Sat": [
+              "05:30",
+              "19:00"
+            ],
+            "Sun-holidays": [
+              "06:00",
+              "18:00"
+            ]
+          },
+          "sources": [
+            "tubus-105-v1"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Endpoint opening hours; no trip departures, stop times or service calendar validity inferred."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "endpoints_and_hours",
+          "detail": "September 2025 article heading says Zona 2 / Zona 7 en prueba, but body says Vista Hermosa / Terminal and 06:00-18:00 daily. V1 PDF says Jocotenango / Zona 7 and differentiated weekday/Sunday hours. No silent resolution.",
+          "sources": [
+            "tubus-article-2025",
+            "tubus-105-v1"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null,
+      "extract_rectangle_screen": {
+        "status": "published_geometry_intersects_download_rectangle",
+        "feature_ids": [
+          4
+        ],
+        "source_id": "tubus-routes-gis",
+        "approved_domain_intersection": false
+      }
+    },
+    {
+      "operator": "Municipalidad de Guatemala / TuBus",
+      "line": "5",
+      "variant": null,
+      "direction": null,
+      "stop_sequences": [
+        {
+          "stops": [
+            "osm:node:4735676221",
+            "osm:node:12570390876",
+            "osm:node:12570390877",
+            "osm:node:12570390878",
+            "osm:node:12570390879",
+            "osm:node:12570390880",
+            "osm:node:12570390881",
+            "osm:node:12570390882"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "18672965",
+          "relation_version": "9",
+          "element_timestamp": "2026-04-22T05:10:35Z",
+          "from": "Parque Colón",
+          "to": "Penitenciaría",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": [
+            "12570390876",
+            "12570390877",
+            "12570390878",
+            "12570390879",
+            "12570390880",
+            "12570390881",
+            "12570390882"
+          ]
+        },
+        {
+          "stops": [
+            "osm:node:12570390882",
+            "osm:node:12570390883",
+            "osm:node:12570390884",
+            "osm:node:12570390885",
+            "osm:node:12570390878",
+            "osm:node:12570390886",
+            "osm:node:12570390887",
+            "osm:node:11935055709",
+            "osm:node:4735676221"
+          ],
+          "order_explicit": true,
+          "sources": [
+            "osm-snapshot"
+          ],
+          "relation_id": "18672966",
+          "relation_version": "5",
+          "element_timestamp": "2026-08-10T00:18:10Z",
+          "from": "Penitenciaría",
+          "to": "Parque Colón",
+          "scope": "OSM member order only; partial snapshot, missing referenced nodes retained. Not a current operator-certified sequence.",
+          "artifact": "osm-evidence.json",
+          "missing_stop_ids": [
+            "12570390882",
+            "12570390883",
+            "12570390884",
+            "12570390885",
+            "12570390878",
+            "12570390886",
+            "12570390887",
+            "11935055709"
+          ]
+        }
+      ],
+      "coordinates": {
+        "artifact": "osm-evidence.json",
+        "stop_ids": [
+          "osm:node:4735676221",
+          "osm:node:12570390876",
+          "osm:node:12570390877",
+          "osm:node:12570390878",
+          "osm:node:12570390879",
+          "osm:node:12570390880",
+          "osm:node:12570390881",
+          "osm:node:12570390882",
+          "osm:node:12570390883",
+          "osm:node:12570390884",
+          "osm:node:12570390885",
+          "osm:node:12570390886",
+          "osm:node:12570390887",
+          "osm:node:11935055709"
+        ],
+        "crs": "EPSG:4326",
+        "order": "longitude,latitude",
+        "scope": "Community node coordinates when present; missing nodes remain null. Not measured stop positions."
+      },
+      "route": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "tubus-routes-gis",
+        "feature_ids": [
+          8
+        ],
+        "published_route_code": "5",
+        "geometry_type": "LineString",
+        "direction_confirmed": false,
+        "coordinates_crs": "EPSG:4326",
+        "scope": "Whole published feature intersecting extract rectangle. Not clipped, not map-matched, not a certified directed itinerary."
+      },
+      "calendar": null,
+      "schedule": null,
+      "service_id": "tubus-5",
+      "record_kind": "service_candidate",
+      "sources": [
+        "tubus-routes-gis",
+        "tubus-5-v1",
+        "tubus-article-2025",
+        "osm-snapshot"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "tubus-routes-gis",
+              "tubus-5-v1",
+              "tubus-article-2025"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": {
+            "status": "verified",
+            "sources": [
+              "tubus-routes-gis",
+              "tubus-5-v1",
+              "tubus-article-2025"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": {
+            "status": "verified",
+            "sources": [
+              "osm-snapshot"
+            ],
+            "scope": "Verifiable member sequences in local snapshot; not current service verification."
+          },
+          "coordinates": {
+            "status": "verified",
+            "sources": [
+              "osm-snapshot"
+            ],
+            "scope": "Coordinates present in community snapshot only."
+          },
+          "route": {
+            "status": "verified",
+            "sources": [
+              "tubus-routes-gis"
+            ],
+            "scope": "Geometry published by municipality; current operation and direction pending."
+          },
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "endpoints",
+          "value": "Parque Colón / Puente de la Penitenciaría",
+          "sources": [
+            "tubus-5-v1",
+            "tubus-article-2025"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Dated source assertion; not adopted as current operational data."
+        },
+        {
+          "field": "service_hours",
+          "value": {
+            "Mon-Sat": [
+              "05:30",
+              "19:00"
+            ],
+            "Sun-holidays": [
+              "06:00",
+              "18:00"
+            ]
+          },
+          "sources": [
+            "tubus-article-2025"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Published service opening window; no trip departures, stop times or service calendar validity inferred."
+        },
+        {
+          "field": "osm_route_relations",
+          "value": [
+            "18672965",
+            "18672966"
+          ],
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Partial OSM evidence, no straight-line reconstruction across missing ways."
+        }
+      ],
+      "conflicts": [],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null,
+      "extract_rectangle_screen": {
+        "status": "published_geometry_intersects_download_rectangle",
+        "feature_ids": [
+          8
+        ],
+        "source_id": "tubus-routes-gis",
+        "approved_domain_intersection": false
+      }
+    },
+    {
+      "operator": null,
+      "line": "282",
+      "variant": null,
+      "direction": null,
+      "stop_sequences": null,
+      "coordinates": null,
+      "route": null,
+      "calendar": null,
+      "schedule": null,
+      "service_id": "transurbano-282",
+      "record_kind": "service_candidate",
+      "sources": [
+        "contrast-transurbano",
+        "contrast-transurbano-2026",
+        "municipal-operators-2026"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": "pending",
+          "line": {
+            "status": "verified",
+            "sources": [
+              "contrast-transurbano"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": "pending",
+          "coordinates": "pending",
+          "route": "pending",
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "current_operator_route_and_public_boarding_unverified"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "network_label",
+          "value": "Transurbano",
+          "sources": [
+            "contrast-transurbano"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Brand shown by third party; legal/current operator unknown."
+        },
+        {
+          "field": "destination_reference",
+          "value": "Parque Central",
+          "sources": [
+            "contrast-transurbano"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Third-party line destination label; current service and stops unconfirmed."
+        },
+        {
+          "field": "operator_coverage_reference",
+          "value": "4 Avenida 6-40",
+          "sources": [
+            "contrast-transurbano"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Operator coverage endpoint described by third party; not assigned as a stop of this line."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "current_service",
+          "detail": "Moovit listing conflicts with September 2026 reported remaining Transurbano coverage. Municipal transition announcement does not certify these numbers or make January 2027 planned services current.",
+          "sources": [
+            "contrast-transurbano",
+            "contrast-transurbano-2026",
+            "municipal-operators-2026"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null
+    },
+    {
+      "operator": null,
+      "line": "285",
+      "variant": null,
+      "direction": null,
+      "stop_sequences": null,
+      "coordinates": null,
+      "route": null,
+      "calendar": null,
+      "schedule": null,
+      "service_id": "transurbano-285",
+      "record_kind": "service_candidate",
+      "sources": [
+        "contrast-transurbano",
+        "contrast-transurbano-2026",
+        "municipal-operators-2026"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": "pending",
+          "line": {
+            "status": "verified",
+            "sources": [
+              "contrast-transurbano"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": "pending",
+          "coordinates": "pending",
+          "route": "pending",
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "current_operator_route_and_public_boarding_unverified"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "network_label",
+          "value": "Transurbano",
+          "sources": [
+            "contrast-transurbano"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Brand shown by third party; legal/current operator unknown."
+        },
+        {
+          "field": "destination_reference",
+          "value": "Parque Central",
+          "sources": [
+            "contrast-transurbano"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Third-party line destination label; current service and stops unconfirmed."
+        },
+        {
+          "field": "operator_coverage_reference",
+          "value": "4 Avenida 6-40",
+          "sources": [
+            "contrast-transurbano"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Operator coverage endpoint described by third party; not assigned as a stop of this line."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "current_service",
+          "detail": "Moovit listing conflicts with September 2026 reported remaining Transurbano coverage. Municipal transition announcement does not certify these numbers or make January 2027 planned services current.",
+          "sources": [
+            "contrast-transurbano",
+            "contrast-transurbano-2026",
+            "municipal-operators-2026"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null
+    },
+    {
+      "operator": null,
+      "line": "287",
+      "variant": null,
+      "direction": null,
+      "stop_sequences": null,
+      "coordinates": null,
+      "route": null,
+      "calendar": null,
+      "schedule": null,
+      "service_id": "transurbano-287",
+      "record_kind": "service_candidate",
+      "sources": [
+        "contrast-transurbano",
+        "contrast-transurbano-2026",
+        "municipal-operators-2026"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": "pending",
+          "line": {
+            "status": "verified",
+            "sources": [
+              "contrast-transurbano"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": "pending",
+          "coordinates": "pending",
+          "route": "pending",
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "current_operator_route_and_public_boarding_unverified"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "network_label",
+          "value": "Transurbano",
+          "sources": [
+            "contrast-transurbano"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Brand shown by third party; legal/current operator unknown."
+        },
+        {
+          "field": "destination_reference",
+          "value": "Parque Central",
+          "sources": [
+            "contrast-transurbano"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Third-party line destination label; current service and stops unconfirmed."
+        },
+        {
+          "field": "operator_coverage_reference",
+          "value": "4 Avenida 6-40",
+          "sources": [
+            "contrast-transurbano"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Operator coverage endpoint described by third party; not assigned as a stop of this line."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "current_service",
+          "detail": "Moovit listing conflicts with September 2026 reported remaining Transurbano coverage. Municipal transition announcement does not certify these numbers or make January 2027 planned services current.",
+          "sources": [
+            "contrast-transurbano",
+            "contrast-transurbano-2026",
+            "municipal-operators-2026"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null
+    },
+    {
+      "operator": "Litegua",
+      "line": null,
+      "variant": null,
+      "direction": null,
+      "stop_sequences": null,
+      "coordinates": null,
+      "route": null,
+      "calendar": null,
+      "schedule": null,
+      "service_id": "litegua-z1-agency-lead",
+      "record_kind": "agency_lead_not_verified_service",
+      "sources": [
+        "litegua-agencies"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "litegua-agencies"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": "pending",
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": "pending",
+          "coordinates": "pending",
+          "route": "pending",
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "agency_does_not_establish_a_service_or_public_stop"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "agency_address",
+          "value": "15 Calle 10-40 Zona 1",
+          "sources": [
+            "litegua-agencies"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Operator directory confirms an agency, not a public stop, complete route or departures."
+        }
+      ],
+      "conflicts": [],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null
+    },
+    {
+      "operator": "Transportes Monja Blanca",
+      "line": null,
+      "variant": "Transbordo en coaster",
+      "direction": "Centra Norte a oficinas Zona 1 y viceversa",
+      "stop_sequences": null,
+      "coordinates": null,
+      "route": null,
+      "calendar": null,
+      "schedule": null,
+      "service_id": "tmb-z1-centra-norte-transfer",
+      "record_kind": "service_candidate",
+      "sources": [
+        "tmb-transfer",
+        "tmb-agencies",
+        "tmb-schedules",
+        "osm-snapshot"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "tmb-transfer",
+              "tmb-agencies",
+              "tmb-schedules"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": "pending",
+          "variant": {
+            "status": "verified",
+            "sources": [
+              "tmb-transfer"
+            ],
+            "scope": "Operator describes a transfer, separate from mainline Pullman service."
+          },
+          "direction": {
+            "status": "verified",
+            "sources": [
+              "tmb-transfer"
+            ],
+            "scope": "Both directions stated by operator; exact street path unknown."
+          },
+          "stop_sequences": "pending",
+          "coordinates": "pending",
+          "route": "pending",
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "boarding",
+          "value": "8a Avenida 15-16 Zona 1; paid ticket required before boarding transfer",
+          "sources": [
+            "tmb-transfer"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Evidence of this transfer boarding, not a general public bus stop."
+        },
+        {
+          "field": "operator_claim",
+          "value": "Pullman units do not enter Zona 1 because of a municipal disposition",
+          "sources": [
+            "tmb-transfer"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Claim not treated as verified law or current mode restriction; instrument/scope pending."
+        },
+        {
+          "field": "community_location_reference",
+          "value": "osm:node:1434405746",
+          "sources": [
+            "osm-snapshot"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Community Monja Blanca point corroborates location name only; not adopted as operator boarding coordinates."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "schedule_scope",
+          "detail": "Agency office hours and Guatemala/Cobán mainline timetable do not establish transfer departures or timings.",
+          "sources": [
+            "tmb-agencies",
+            "tmb-schedules",
+            "tmb-transfer"
+          ],
+          "resolution": "pending"
+        }
+      ],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null
+    },
+    {
+      "operator": "Transportes Fuente del Norte",
+      "line": null,
+      "variant": null,
+      "direction": null,
+      "stop_sequences": null,
+      "coordinates": null,
+      "route": null,
+      "calendar": null,
+      "schedule": null,
+      "service_id": "fuente-del-norte-z1-station-lead",
+      "record_kind": "station_lead_not_verified_service",
+      "sources": [
+        "fdn-stations"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": {
+            "status": "verified",
+            "sources": [
+              "fdn-stations"
+            ],
+            "scope": "Identity in cited source; current operation not certified."
+          },
+          "line": "pending",
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": "pending",
+          "coordinates": "pending",
+          "route": "pending",
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "station_does_not_establish_specific_route"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "station_address",
+          "value": "17 Calle 8-46 Zona 1",
+          "sources": [
+            "fdn-stations"
+          ],
+          "status": "verified_in_source_only",
+          "scope": "Station listing, not a verified street route or public stopping permission. Distinct from Zona 12 station."
+        }
+      ],
+      "conflicts": [],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null
+    },
+    {
+      "operator": null,
+      "line": null,
+      "variant": null,
+      "direction": null,
+      "stop_sequences": null,
+      "coordinates": null,
+      "route": null,
+      "calendar": null,
+      "schedule": null,
+      "service_id": "urbanos-z1-unidentified",
+      "record_kind": "unresolved_reference_not_verified_service",
+      "sources": [
+        "municipal-operators-2026"
+      ],
+      "review_date": "2026-10-22",
+      "license": {
+        "id": null,
+        "status": "mixed_sources_see_field_citations_and_registry"
+      },
+      "verification": {
+        "status": "pending",
+        "field_status": {
+          "operator": "pending",
+          "line": "pending",
+          "variant": "pending",
+          "direction": "pending",
+          "stop_sequences": "pending",
+          "coordinates": "pending",
+          "route": "pending",
+          "calendar": "pending",
+          "schedule": "pending"
+        },
+        "blockers": [
+          "approved_domain_not_supplied",
+          "current_operating_version_not_certified",
+          "directed_network_route_and_stop_mapping_pending",
+          "departure_calendar_fleet_and_exterior_times_unknown",
+          "specific_line_operator_and_route_evidence_missing"
+        ]
+      },
+      "production_enabled": false,
+      "domain_intersection": {
+        "status": "blocked_no_approved_domain",
+        "parts": null
+      },
+      "evidence_claims": [
+        {
+          "field": "scope",
+          "value": "Unidentified urban services on 18 Calle / 4a-5a / 8a-9a Avenida remain leads; original reference URLs not supplied.",
+          "sources": [],
+          "status": "pending_local_review_finding",
+          "scope": "Review finding, not a statement attributed to the municipal article. Line/operator/street-route evidence missing."
+        }
+      ],
+      "conflicts": [],
+      "fleet_size": null,
+      "headway_seconds": null,
+      "exterior_travel_times": null,
+      "production_route": null
+    }
+  ],
+  "location_checks": [
+    {
+      "reference": "Litegua / 18 Calle / 8a-9a Avenida",
+      "finding": "Operator only confirms agency at 15 Calle 10-40 Zona 1. No specific Litegua public stop or route on referenced avenues established.",
+      "sources": [
+        "litegua-agencies"
+      ],
+      "status": "agency_verified_service_pending",
+      "coordinates": null
+    },
+    {
+      "reference": "El Amate / 4a Avenida",
+      "finding": "Transmetro FEB24: 18 Calle / 4 Avenida. TuBus 105 stop 167: 4 Avenida / 20 Calle, Plaza El Amate. TuBus 802 stop 121: 4 Avenida / 19 Calle. Distinct points, not aliases to merge.",
+      "sources": [
+        "tm-map-2024-02",
+        "tubus-105-v1",
+        "tubus-802-v4"
+      ],
+      "status": "distinct_source_addresses",
+      "coordinates": null
+    },
+    {
+      "reference": "18 Calle / 9a Avenida",
+      "finding": "Plaza Barrios municipal station reference. Does not confirm every urban or extraurban service along 18 Calle.",
+      "sources": [
+        "tm-map-2024-02",
+        "transmetro-stations-gis"
+      ],
+      "status": "municipal_station_record_only",
+      "coordinates_reference": {
+        "artifact": "municipal-gis.json",
+        "layer_source_id": "transmetro-stations-gis",
+        "feature_ids": [
+          138
+        ]
+      }
+    },
+    {
+      "reference": "8a Avenida / boarding",
+      "finding": "TMB confirms paid-ticket coaster transfer boarding at 8 Avenida 15-16; Fuente del Norte lists a separate station at 17 Calle 8-46. Neither establishes a through-route on all of 8a/9a Avenida.",
+      "sources": [
+        "tmb-transfer",
+        "fdn-stations"
+      ],
+      "status": "operator_location_claims",
+      "coordinates": null
+    },
+    {
+      "reference": "5a Avenida / unspecified urban routes",
+      "finding": "No service-level primary route evidence established in this review; do not infer from nearby agencies or parallel avenues.",
+      "sources": [],
+      "status": "pending",
+      "coordinates": null
+    }
+  ],
+  "remaining_work": [
+    "Obtain approved domain polygon with version and provenance before intersection or OD classification.",
+    "Reconcile present service variants, ordered stops, direction and coordinates with municipality/operators.",
+    "Obtain operating dates, exceptions, actual departures, fleet and exterior timing evidence; do not convert opening windows to frequencies.",
+    "Map verified stop/route geometry to a new scenario directed network, preserving access, lane and signal compatibility.",
+    "Resolve PDF/article licensing for reuse separately from explicitly licensed GIS/OSM.",
+    "Inspect November 2024 municipal map visually before using its contents."
+  ],
+  "synthetic_fixtures": {
+    "path": "python/test_simz1_transit_catalog.py",
+    "scope": "In-memory synthetic names and source URLs; never imported by scenario or catalog.",
+    "executed": false
+  },
+  "execution": {
+    "public_source_research": true,
+    "bounded_local_evidence_extraction": true,
+    "functional_tests_run": false,
+    "simulation_run": false
+  }
+}

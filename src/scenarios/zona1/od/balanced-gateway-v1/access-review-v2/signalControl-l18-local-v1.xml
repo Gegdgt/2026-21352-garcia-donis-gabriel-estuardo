@@ -1,0 +1,3016 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<signalControl xsi:schemaLocation="http://www.matsim.org/files/dtd http://www.matsim.org/files/dtd/signalControl_v2.0.xsd" xmlns="http://www.matsim.org/files/dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <signalSystem refId="11583002439">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1438391835">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1564620801">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1564620830">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1903163086">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1903163087">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1903163090">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1903163091">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1903163098">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1903163100">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1903163101">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1903163102">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1903163103">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1903163105">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1903163106">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1903163108">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1903163109">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1903163110">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1903166224">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="1903167489">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="2106538528">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="281797834">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531313">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531314">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531315">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531316">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531318">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531319">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531320">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531321">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531322">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531323">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531324">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531327">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531331">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531334">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531335">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531337">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531338">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531339">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531341">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531343">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531349">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531358">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531360">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531361">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531362">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531364">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531365">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531366">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531367">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531368">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531372">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="60"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531385">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531386">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531387">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531388">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531389">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531390">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531392">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531394">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531399">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531458">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531459">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531460">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531462">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531463">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531464">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531466">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531467">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531468">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531472">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531473">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531474">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531519">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531534">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531535">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531537">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531550">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531556">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531564">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531605">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531616">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531618">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531621">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333531623">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720785">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720790">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720791">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720792">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720796">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720804">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720808">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720809">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720811">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720814">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720822">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720824">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720825">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720826">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720827">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720828">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720841">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720842">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333720845">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831552">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831699">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831702">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831705">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831717">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831719">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831722">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831723">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831725">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831759">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831765">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831774">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831782">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831787">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831797">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831802">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831813">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831818">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831825">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831843">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831845">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831855">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831860">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831865">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831890">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831896">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831990">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333831995">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333864397">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333864439">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="333864569">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="4065411322">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="4065417892">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="4065427850">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="410383126">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="410439150">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="410441329">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="410442286">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="4169928307">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="4201078675">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="479440975">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="536073974">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="536073977">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="536073981">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="536073994">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="568091127">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="579787032">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="579787180">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="579787183">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="579787184">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="6008992418">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="631824824">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="660745080">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="737519118">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="738884323">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="738887787">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="792283404">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+    <signalSystem refId="792483516">
+        <signalSystemController>
+            <controllerIdentifier>Zona1FixedTime</controllerIdentifier>
+            <signalPlan id="daily">
+                <start daytime="00:00:00"/>
+                <stop daytime="00:00:00"/>
+                <cycleTime sec="80"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="avenida">
+                    <onset sec="0"/>
+                    <dropping sec="47"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="calle">
+                    <onset sec="49"/>
+                    <dropping sec="78"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+</signalControl>
